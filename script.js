@@ -2,11 +2,11 @@
    Laid Off To 8 Figures — interactions
    ========================================================= */
 
-/* ---- Episode data ----------------------------------------------------
-   Replace these with your real episodes. `latest: true` flags the newest.
-   Order them newest-first; the list renders in this order.
+/* ---- Fallback episode data -------------------------------------------
+   Shown only if episodes.json hasn't been generated yet. Once the YouTube
+   sync (GitHub Action) runs, episodes.json overrides this automatically.
 --------------------------------------------------------------------- */
-const EPISODES = [
+const FALLBACK_EPISODES = [
   { num: 34, title: "The Layoff", duration: "1:53:06", latest: true },
   { num: 33, title: "Rock Bottom", duration: "2:17:21" },
   { num: 32, title: "First Dollar", duration: "2:23:22" },
@@ -14,21 +14,74 @@ const EPISODES = [
   { num: 30, title: "Seven Figures", duration: "2:15:52" },
 ];
 
+const INITIAL_VISIBLE = 6; // episodes shown before "VIEW MORE"
+
+let episodes = FALLBACK_EPISODES;
+let visible = INITIAL_VISIBLE;
+
+/* ---- Helpers ---------------------------------------------------------- */
+function escapeHtml(str) {
+  return String(str).replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+  })[c]);
+}
+
+/* ---- Load episodes.json (falls back gracefully) ----------------------- */
+async function loadEpisodes() {
+  try {
+    const res = await fetch("episodes.json", { cache: "no-cache" });
+    if (!res.ok) return;
+    const data = await res.json();
+    if (Array.isArray(data.episodes) && data.episodes.length) {
+      episodes = data.episodes;
+    }
+  } catch {
+    /* offline or file missing — keep fallback */
+  }
+}
+
 /* ---- Render episodes -------------------------------------------------- */
 function renderEpisodes() {
   const list = document.getElementById("episode-list");
   if (!list) return;
-  list.innerHTML = EPISODES.map((ep) => {
+
+  const shown = episodes.slice(0, visible);
+  list.innerHTML = shown.map((ep) => {
     const meta = ep.latest
-      ? `<span class="ep-meta">${ep.duration}<span class="ep-latest">LATEST</span></span>`
-      : `<span class="ep-meta">${ep.duration}</span>`;
+      ? `<span class="ep-meta">${escapeHtml(ep.duration || "")}<span class="ep-latest">LATEST</span></span>`
+      : `<span class="ep-meta">${escapeHtml(ep.duration || "")}</span>`;
+    const href = ep.url || "#episodes";
+    const ext = ep.url ? ' target="_blank" rel="noopener"' : "";
     return `
-      <li class="episode-row" data-num="${ep.num}">
-        <span class="ep-num">${String(ep.num).padStart(2, "0")}</span>
-        <h2 class="ep-title">${ep.title}</h2>
-        ${meta}
+      <li>
+        <a class="episode-row" href="${escapeHtml(href)}"${ext} data-num="${ep.num}">
+          <span class="ep-num">${String(ep.num).padStart(2, "0")}</span>
+          <span class="ep-title">${escapeHtml(ep.title)}</span>
+          ${meta}
+        </a>
       </li>`;
   }).join("");
+
+  // Toggle the VIEW MORE link based on remaining episodes
+  const viewMore = document.querySelector(".view-more");
+  if (viewMore) {
+    if (visible >= episodes.length) {
+      viewMore.hidden = true;
+    } else {
+      viewMore.hidden = false;
+      viewMore.textContent = `VIEW MORE (${episodes.length - visible})`;
+    }
+  }
+}
+
+function initViewMore() {
+  const viewMore = document.querySelector(".view-more");
+  if (!viewMore) return;
+  viewMore.addEventListener("click", (e) => {
+    e.preventDefault();
+    visible = episodes.length; // reveal all
+    renderEpisodes();
+  });
 }
 
 /* ---- Menu toggle ------------------------------------------------------ */
@@ -42,7 +95,6 @@ function initMenu() {
     toggle.setAttribute("aria-expanded", String(open));
   });
 
-  // Close menu when a link is clicked
   menu.querySelectorAll(".menu-list a").forEach((a) =>
     a.addEventListener("click", () => {
       menu.classList.remove("open");
@@ -73,21 +125,23 @@ function initSearch() {
   const runSearch = (q) => {
     const query = q.trim().toLowerCase();
     const matches = query
-      ? EPISODES.filter((e) => e.title.toLowerCase().includes(query))
-      : EPISODES;
+      ? episodes.filter((e) => (e.title || "").toLowerCase().includes(query))
+      : episodes;
     results.innerHTML = matches.length
       ? matches
-          .map(
-            (e) => `
+          .map((e) => {
+            const href = e.url || "#episodes";
+            const ext = e.url ? ' target="_blank" rel="noopener"' : "";
+            return `
         <li>
-          <a href="#episodes">
-            <span class="r-title">${e.title}</span>
-            <span class="r-meta">EP ${String(e.num).padStart(2, "0")} · ${e.duration}</span>
+          <a href="${escapeHtml(href)}"${ext}>
+            <span class="r-title">${escapeHtml(e.title)}</span>
+            <span class="r-meta">EP ${String(e.num).padStart(2, "0")} · ${escapeHtml(e.duration || "")}</span>
           </a>
-        </li>`
-          )
+        </li>`;
+          })
           .join("")
-      : `<li class="search-empty">No episodes match “${q}”.</li>`;
+      : `<li class="search-empty">No episodes match “${escapeHtml(q)}”.</li>`;
   };
 
   openBtn.addEventListener("click", open);
@@ -97,7 +151,6 @@ function initSearch() {
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && !overlay.hidden) close();
   });
-  // Clicking a result closes the overlay
   results.addEventListener("click", (e) => {
     if (e.target.closest("a")) close();
   });
@@ -132,10 +185,13 @@ function initYear() {
 }
 
 /* ---- Init ------------------------------------------------------------- */
-document.addEventListener("DOMContentLoaded", () => {
-  renderEpisodes();
+document.addEventListener("DOMContentLoaded", async () => {
   initMenu();
   initSearch();
   initJoin();
   initYear();
+  initViewMore();
+  renderEpisodes();      // paint fallback immediately
+  await loadEpisodes();  // then upgrade to live YouTube data
+  renderEpisodes();
 });

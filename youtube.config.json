@@ -1,0 +1,7 @@
+{
+  "comment": "Set EITHER handle (e.g. \"@laidoffto8figures\") OR channelId (starts with UC...). channelId is most reliable. Then add a YOUTUBE_API_KEY repo secret. See README.",
+  "handle": "@laidoffto8figures",
+  "channelId": "",
+  "maxEpisodes": 200,
+  "minDurationSeconds": 0
+}

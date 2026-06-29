@@ -257,6 +257,7 @@ a { color: inherit; text-decoration: none; }
   transition: color 0.2s, border-color 0.2s;
 }
 .view-more:hover { color: var(--fg); border-color: var(--fg); }
+.view-more[hidden] { display: none; }
 
 .scroll-down {
   position: absolute;
