@@ -1,12 +1,977 @@
 {
-  "channel": "Laid Off To 8 Figures",
-  "updatedAt": "2026-06-29T00:00:00.000Z",
-  "count": 5,
+  "channel": "David DiNardo, MBA",
+  "updatedAt": "2026-06-29T18:47:33.871Z",
+  "count": 97,
   "episodes": [
-    { "num": 34, "title": "The Layoff", "duration": "1:53:06", "url": "#episodes", "latest": true },
-    { "num": 33, "title": "Rock Bottom", "duration": "2:17:21", "url": "#episodes" },
-    { "num": 32, "title": "First Dollar", "duration": "2:23:22", "url": "#episodes" },
-    { "num": 31, "title": "Six Figures", "duration": "1:58:51", "url": "#episodes" },
-    { "num": 30, "title": "Seven Figures", "duration": "2:15:52", "url": "#episodes" }
+    {
+      "num": 97,
+      "title": "Once you hit 100k in revenue, you should think of incorporating in Canada. 🔥 #tax #new #incorporate",
+      "duration": "0:31",
+      "url": "https://www.youtube.com/watch?v=gR0kEbadtvE",
+      "videoId": "gR0kEbadtvE",
+      "thumbnail": "https://i.ytimg.com/vi/gR0kEbadtvE/maxresdefault.jpg",
+      "publishedAt": "2026-06-29T18:03:34Z",
+      "latest": true
+    },
+    {
+      "num": 96,
+      "title": "3 Reasons It’s Easier to Build a Business in Canada Than the U.S #canada #business #tax #stocks",
+      "duration": "0:42",
+      "url": "https://www.youtube.com/watch?v=lnUDJat4lwo",
+      "videoId": "lnUDJat4lwo",
+      "thumbnail": "https://i.ytimg.com/vi/lnUDJat4lwo/maxresdefault.jpg",
+      "publishedAt": "2026-06-29T13:56:54Z",
+      "latest": false
+    },
+    {
+      "num": 95,
+      "title": "There are 4 types of entrepreneurs//comment “entrepreneur” to find out what type you are 🔥",
+      "duration": "0:54",
+      "url": "https://www.youtube.com/watch?v=plEqca4zqxs",
+      "videoId": "plEqca4zqxs",
+      "thumbnail": "https://i.ytimg.com/vi/plEqca4zqxs/maxresdefault.jpg",
+      "publishedAt": "2026-06-29T00:53:27Z",
+      "latest": false
+    },
+    {
+      "num": 94,
+      "title": "3 Reasons It's Easier to Build a Business in Canada Than the U.S.",
+      "duration": "8:10",
+      "url": "https://www.youtube.com/watch?v=DzzdXvubIq4",
+      "videoId": "DzzdXvubIq4",
+      "thumbnail": "https://i.ytimg.com/vi/DzzdXvubIq4/maxresdefault.jpg",
+      "publishedAt": "2026-06-29T00:37:46Z",
+      "latest": false
+    },
+    {
+      "num": 93,
+      "title": "Entrepreneurs = Simplify your routine for maximum productivity… #entrepreneurship #podcast #business",
+      "duration": "0:38",
+      "url": "https://www.youtube.com/watch?v=5M9feqdI8Aw",
+      "videoId": "5M9feqdI8Aw",
+      "thumbnail": "https://i.ytimg.com/vi/5M9feqdI8Aw/maxresdefault.jpg",
+      "publishedAt": "2026-06-28T14:09:18Z",
+      "latest": false
+    },
+    {
+      "num": 92,
+      "title": "Find your superpower 🔥 #entrepreneurship #podcast #why #purpose #new #superpower #exciting",
+      "duration": "0:46",
+      "url": "https://www.youtube.com/watch?v=qL3Dsrxuxts",
+      "videoId": "qL3Dsrxuxts",
+      "thumbnail": "https://i.ytimg.com/vi/qL3Dsrxuxts/maxresdefault.jpg",
+      "publishedAt": "2026-06-28T13:47:36Z",
+      "latest": false
+    },
+    {
+      "num": 91,
+      "title": "This is how you get high employee turnover.. #entrepreneurship #new #business #businesstips",
+      "duration": "0:32",
+      "url": "https://www.youtube.com/watch?v=ix3Hrwc4Z-0",
+      "videoId": "ix3Hrwc4Z-0",
+      "thumbnail": "https://i.ytimg.com/vi/ix3Hrwc4Z-0/maxresdefault.jpg",
+      "publishedAt": "2026-06-27T21:45:31Z",
+      "latest": false
+    },
+    {
+      "num": 90,
+      "title": "You Don't Find Your Purpose. You Build It.",
+      "duration": "0:34",
+      "url": "https://www.youtube.com/watch?v=l6BfrkHOPH8",
+      "videoId": "l6BfrkHOPH8",
+      "thumbnail": "https://i.ytimg.com/vi/l6BfrkHOPH8/maxresdefault.jpg",
+      "publishedAt": "2026-06-26T19:40:25Z",
+      "latest": false
+    },
+    {
+      "num": 89,
+      "title": "The Founder & CEO Confidante on Burnout, Success & \"What's Next\" | Sheri Chiprout",
+      "duration": "1:26:07",
+      "url": "https://www.youtube.com/watch?v=sZE-JkYaML4",
+      "videoId": "sZE-JkYaML4",
+      "thumbnail": "https://i.ytimg.com/vi/sZE-JkYaML4/maxresdefault.jpg",
+      "publishedAt": "2026-06-26T02:01:00Z",
+      "latest": false
+    },
+    {
+      "num": 88,
+      "title": "The AI Customer Service Agent I'm Still Training",
+      "duration": "0:38",
+      "url": "https://www.youtube.com/watch?v=SsBxuk__9vg",
+      "videoId": "SsBxuk__9vg",
+      "thumbnail": "https://i.ytimg.com/vi/SsBxuk__9vg/maxresdefault.jpg",
+      "publishedAt": "2026-06-24T15:38:09Z",
+      "latest": false
+    },
+    {
+      "num": 87,
+      "title": "I'm Building Bookkeeping That You Never Touch",
+      "duration": "0:20",
+      "url": "https://www.youtube.com/watch?v=umA2z7mEQ-8",
+      "videoId": "umA2z7mEQ-8",
+      "thumbnail": "https://i.ytimg.com/vi/umA2z7mEQ-8/maxresdefault.jpg",
+      "publishedAt": "2026-06-24T15:36:55Z",
+      "latest": false
+    },
+    {
+      "num": 86,
+      "title": "This AI Built My App While I Slept",
+      "duration": "0:45",
+      "url": "https://www.youtube.com/watch?v=PTj7sUVRe84",
+      "videoId": "PTj7sUVRe84",
+      "thumbnail": "https://i.ytimg.com/vi/PTj7sUVRe84/maxresdefault.jpg",
+      "publishedAt": "2026-06-24T15:35:00Z",
+      "latest": false
+    },
+    {
+      "num": 85,
+      "title": "This AI Is Replacing Figma",
+      "duration": "0:33",
+      "url": "https://www.youtube.com/watch?v=_3KVQWC2yJY",
+      "videoId": "_3KVQWC2yJY",
+      "thumbnail": "https://i.ytimg.com/vi/_3KVQWC2yJY/maxresdefault.jpg",
+      "publishedAt": "2026-06-24T15:33:09Z",
+      "latest": false
+    },
+    {
+      "num": 84,
+      "title": "Most People Are Stuck on Level 1 AI",
+      "duration": "0:38",
+      "url": "https://www.youtube.com/watch?v=UOiMgJambIg",
+      "videoId": "UOiMgJambIg",
+      "thumbnail": "https://i.ytimg.com/vi/UOiMgJambIg/maxresdefault.jpg",
+      "publishedAt": "2026-06-24T15:31:47Z",
+      "latest": false
+    },
+    {
+      "num": 83,
+      "title": "How I Make a Reel in Under 30 Minutes",
+      "duration": "0:47",
+      "url": "https://www.youtube.com/watch?v=qGP56XaDG8U",
+      "videoId": "qGP56XaDG8U",
+      "thumbnail": "https://i.ytimg.com/vi/qGP56XaDG8U/maxresdefault.jpg",
+      "publishedAt": "2026-06-24T15:30:17Z",
+      "latest": false
+    },
+    {
+      "num": 82,
+      "title": "This AI Killed My $60 Thumbnail Budget",
+      "duration": "0:40",
+      "url": "https://www.youtube.com/watch?v=YCrXif6gIPw",
+      "videoId": "YCrXif6gIPw",
+      "thumbnail": "https://i.ytimg.com/vi/YCrXif6gIPw/maxresdefault.jpg",
+      "publishedAt": "2026-06-24T15:28:48Z",
+      "latest": false
+    },
+    {
+      "num": 81,
+      "title": "The #1 AI Tool I Use to Run My Business",
+      "duration": "0:41",
+      "url": "https://www.youtube.com/watch?v=2fG3MdB2UDs",
+      "videoId": "2fG3MdB2UDs",
+      "thumbnail": "https://i.ytimg.com/vi/2fG3MdB2UDs/maxresdefault.jpg",
+      "publishedAt": "2026-06-24T15:26:47Z",
+      "latest": false
+    },
+    {
+      "num": 80,
+      "title": "I Ranked ChatGPT an \"F\" — Here's Why",
+      "duration": "0:51",
+      "url": "https://www.youtube.com/watch?v=CL8NIMrtwYk",
+      "videoId": "CL8NIMrtwYk",
+      "thumbnail": "https://i.ytimg.com/vi/CL8NIMrtwYk/maxresdefault.jpg",
+      "publishedAt": "2026-06-24T15:10:12Z",
+      "latest": false
+    },
+    {
+      "num": 79,
+      "title": "I Tested 100+ AI Apps to Build My Business — My Ranked Stack for 2026",
+      "duration": "17:43",
+      "url": "https://www.youtube.com/watch?v=kDP2UYr8XRY",
+      "videoId": "kDP2UYr8XRY",
+      "thumbnail": "https://i.ytimg.com/vi/kDP2UYr8XRY/maxresdefault.jpg",
+      "publishedAt": "2026-06-23T17:43:36Z",
+      "latest": false
+    },
+    {
+      "num": 78,
+      "title": "Keeping hitting those new payroll thresholds in business 🤑",
+      "duration": "0:58",
+      "url": "https://www.youtube.com/watch?v=jkhv3toGIBU",
+      "videoId": "jkhv3toGIBU",
+      "thumbnail": "https://i.ytimg.com/vi/jkhv3toGIBU/maxresdefault.jpg",
+      "publishedAt": "2026-06-18T13:42:59Z",
+      "latest": false
+    },
+    {
+      "num": 77,
+      "title": "Why High Achievers Burn Out — And How to Rebuild | Emilie on the Neuroscience of Stress & Recovery",
+      "duration": "1:35:36",
+      "url": "https://www.youtube.com/watch?v=5Ulaowuimxs",
+      "videoId": "5Ulaowuimxs",
+      "thumbnail": "https://i.ytimg.com/vi/5Ulaowuimxs/maxresdefault.jpg",
+      "publishedAt": "2026-06-17T17:57:14Z",
+      "latest": false
+    },
+    {
+      "num": 76,
+      "title": "\"Most Business Owners Have No Idea This Is Happening\" — The Truth About SEO + AI | Brock Murray",
+      "duration": "1:24:25",
+      "url": "https://www.youtube.com/watch?v=4mLqStouVHU",
+      "videoId": "4mLqStouVHU",
+      "thumbnail": "https://i.ytimg.com/vi/4mLqStouVHU/maxresdefault.jpg",
+      "publishedAt": "2026-05-14T10:23:56Z",
+      "latest": false
+    },
+    {
+      "num": 75,
+      "title": "AI Is Not The Strategy: How to Build Leverage in the AI Era | Nish",
+      "duration": "1:51:12",
+      "url": "https://www.youtube.com/watch?v=OtPl2SPxjHs",
+      "videoId": "OtPl2SPxjHs",
+      "thumbnail": "https://i.ytimg.com/vi/OtPl2SPxjHs/maxresdefault.jpg",
+      "publishedAt": "2026-05-06T15:23:57Z",
+      "latest": false
+    },
+    {
+      "num": 74,
+      "title": "David DiNardo, MBA Live Stream",
+      "duration": "0:00",
+      "url": "https://www.youtube.com/watch?v=9wOQBXDBV88",
+      "videoId": "9wOQBXDBV88",
+      "thumbnail": "https://i.ytimg.com/vi/9wOQBXDBV88/maxresdefault_live.jpg",
+      "publishedAt": "2026-04-30T15:07:48Z",
+      "latest": false
+    },
+    {
+      "num": 73,
+      "title": "Why Personal Brand Matters More in the AI Era",
+      "duration": "1:14:50",
+      "url": "https://www.youtube.com/watch?v=FNTY227C6yg",
+      "videoId": "FNTY227C6yg",
+      "thumbnail": "https://i.ytimg.com/vi/FNTY227C6yg/maxresdefault.jpg",
+      "publishedAt": "2026-04-30T14:00:49Z",
+      "latest": false
+    },
+    {
+      "num": 72,
+      "title": "How To File Taxes in Canada 2026 | Sole Proprietor & Individual Tax Tips",
+      "duration": "36:23",
+      "url": "https://www.youtube.com/watch?v=9dtAHLgYqYk",
+      "videoId": "9dtAHLgYqYk",
+      "thumbnail": "https://i.ytimg.com/vi/9dtAHLgYqYk/maxresdefault.jpg",
+      "publishedAt": "2026-04-16T15:22:17Z",
+      "latest": false
+    },
+    {
+      "num": 71,
+      "title": "Tiffany Drummond: Why The Early Years Shape More Than We Realize",
+      "duration": "1:35:36",
+      "url": "https://www.youtube.com/watch?v=PusZQFtbjx8",
+      "videoId": "PusZQFtbjx8",
+      "thumbnail": "https://i.ytimg.com/vi/PusZQFtbjx8/maxresdefault.jpg",
+      "publishedAt": "2026-04-08T17:37:59Z",
+      "latest": false
+    },
+    {
+      "num": 70,
+      "title": "Alfonso Cuadra: How Personal Brand Built His Real Estate Empire",
+      "duration": "1:54:01",
+      "url": "https://www.youtube.com/watch?v=uX6eeY5CxMo",
+      "videoId": "uX6eeY5CxMo",
+      "thumbnail": "https://i.ytimg.com/vi/uX6eeY5CxMo/maxresdefault.jpg",
+      "publishedAt": "2026-04-01T16:05:47Z",
+      "latest": false
+    },
+    {
+      "num": 69,
+      "title": "David Ross: How He Built a $500M Video Tech Empire from Canada",
+      "duration": "1:48:24",
+      "url": "https://www.youtube.com/watch?v=jnoiZ96L_wQ",
+      "videoId": "jnoiZ96L_wQ",
+      "thumbnail": "https://i.ytimg.com/vi/jnoiZ96L_wQ/maxresdefault.jpg",
+      "publishedAt": "2026-03-25T14:09:07Z",
+      "latest": false
+    },
+    {
+      "num": 68,
+      "title": "Trust Before Tech: Why AI Needs Human Trust to Work (Taxifi Journey)",
+      "duration": "6:16",
+      "url": "https://www.youtube.com/watch?v=FFFd9VZsGac",
+      "videoId": "FFFd9VZsGac",
+      "thumbnail": "https://i.ytimg.com/vi/FFFd9VZsGac/maxresdefault.jpg",
+      "publishedAt": "2026-03-24T11:00:22Z",
+      "latest": false
+    },
+    {
+      "num": 67,
+      "title": "How Taxifi Files Your Taxes in Minutes — Quick Walkthrough",
+      "duration": "1:09",
+      "url": "https://www.youtube.com/watch?v=HklRBpc4QbM",
+      "videoId": "HklRBpc4QbM",
+      "thumbnail": "https://i.ytimg.com/vi/HklRBpc4QbM/maxresdefault.jpg",
+      "publishedAt": "2026-03-21T15:16:31Z",
+      "latest": false
+    },
+    {
+      "num": 66,
+      "title": "From Construction Worker to CEO: Shawn Watts on How an Injury Built Corfix",
+      "duration": "1:10:36",
+      "url": "https://www.youtube.com/watch?v=enGnb5Fng1o",
+      "videoId": "enGnb5Fng1o",
+      "thumbnail": "https://i.ytimg.com/vi/enGnb5Fng1o/maxresdefault.jpg",
+      "publishedAt": "2026-03-20T15:00:25Z",
+      "latest": false
+    },
+    {
+      "num": 65,
+      "title": "How to Add an Authorized Representative on CRA My Account (Step-by-Step Guide)",
+      "duration": "2:13",
+      "url": "https://www.youtube.com/watch?v=m7eY4Zc8hS4",
+      "videoId": "m7eY4Zc8hS4",
+      "thumbnail": "https://i.ytimg.com/vi/m7eY4Zc8hS4/maxresdefault.jpg",
+      "publishedAt": "2026-03-17T15:59:23Z",
+      "latest": false
+    },
+    {
+      "num": 64,
+      "title": "How Pierce Ujjainwalla Built Knak from a Marketer’s Pain Point",
+      "duration": "1:20:33",
+      "url": "https://www.youtube.com/watch?v=MGVW-NRrPrk",
+      "videoId": "MGVW-NRrPrk",
+      "thumbnail": "https://i.ytimg.com/vi/MGVW-NRrPrk/maxresdefault.jpg",
+      "publishedAt": "2026-03-13T08:44:21Z",
+      "latest": false
+    },
+    {
+      "num": 63,
+      "title": "From Promoter to Fighter: Ivan Grubisic and Clash of Cartier 2026",
+      "duration": "1:07:35",
+      "url": "https://www.youtube.com/watch?v=pKFpsWNPRtg",
+      "videoId": "pKFpsWNPRtg",
+      "thumbnail": "https://i.ytimg.com/vi/pKFpsWNPRtg/maxresdefault.jpg",
+      "publishedAt": "2026-03-07T14:11:41Z",
+      "latest": false
+    },
+    {
+      "num": 62,
+      "title": "Taxifi Live Launch: File Your Taxes in 15 to 30 Minutes (Live Demo)",
+      "duration": "48:31",
+      "url": "https://www.youtube.com/watch?v=dkDvdePLRYE",
+      "videoId": "dkDvdePLRYE",
+      "thumbnail": "https://i.ytimg.com/vi/dkDvdePLRYE/maxresdefault.jpg",
+      "publishedAt": "2026-03-02T02:52:42Z",
+      "latest": false
+    },
+    {
+      "num": 61,
+      "title": "Taxifi Live Launch Demo: File Your Taxes in 15-30 Minutes (For Freelancers & Solopreneurs)",
+      "duration": "0:47",
+      "url": "https://www.youtube.com/watch?v=rbd2UcS3nFU",
+      "videoId": "rbd2UcS3nFU",
+      "thumbnail": "https://i.ytimg.com/vi/rbd2UcS3nFU/maxresdefault.jpg",
+      "publishedAt": "2026-02-27T22:34:44Z",
+      "latest": false
+    },
+    {
+      "num": 60,
+      "title": "How to Authorize a Representative on CRA My Account (Step-by-Step for Taxifi Users)",
+      "duration": "1:21",
+      "url": "https://www.youtube.com/watch?v=2JwlqJzwdRA",
+      "videoId": "2JwlqJzwdRA",
+      "thumbnail": "https://i.ytimg.com/vi/2JwlqJzwdRA/maxresdefault.jpg",
+      "publishedAt": "2026-02-27T22:29:20Z",
+      "latest": false
+    },
+    {
+      "num": 59,
+      "title": "From Stylist to Business Builder: How Adamo DiNardo Built Hair by Adamo & Co.",
+      "duration": "1:07:27",
+      "url": "https://www.youtube.com/watch?v=F87Cb-F_3ow",
+      "videoId": "F87Cb-F_3ow",
+      "thumbnail": "https://i.ytimg.com/vi/F87Cb-F_3ow/maxresdefault.jpg",
+      "publishedAt": "2026-02-26T17:29:37Z",
+      "latest": false
+    },
+    {
+      "num": 58,
+      "title": "Building a 25-Year Ottawa Business: Service, Reviews, and the ePowerd Future | Masood Yarmand",
+      "duration": "1:09:54",
+      "url": "https://www.youtube.com/watch?v=YruhlGGwmCE",
+      "videoId": "YruhlGGwmCE",
+      "thumbnail": "https://i.ytimg.com/vi/YruhlGGwmCE/maxresdefault.jpg",
+      "publishedAt": "2026-02-20T03:47:29Z",
+      "latest": false
+    },
+    {
+      "num": 57,
+      "title": "Before You Use Taxifi: Upload Your 2024 T1 + Connect Your Bank (Quick Demo) | Build in Public",
+      "duration": "6:07",
+      "url": "https://www.youtube.com/watch?v=a8ZQO4mRLhM",
+      "videoId": "a8ZQO4mRLhM",
+      "thumbnail": "https://i.ytimg.com/vi/a8ZQO4mRLhM/maxresdefault.jpg",
+      "publishedAt": "2026-02-17T17:44:33Z",
+      "latest": false
+    },
+    {
+      "num": 56,
+      "title": "How to Build a High Trust Specialty Practice: Systems, Standards, and Reputation | Dr. Rob Clark",
+      "duration": "1:16:48",
+      "url": "https://www.youtube.com/watch?v=V2nfvnRQ5tI",
+      "videoId": "V2nfvnRQ5tI",
+      "thumbnail": "https://i.ytimg.com/vi/V2nfvnRQ5tI/maxresdefault.jpg",
+      "publishedAt": "2026-02-11T18:12:51Z",
+      "latest": false
+    },
+    {
+      "num": 55,
+      "title": "I Got Reviewed by CRA: The Checklist I Use to Kill the Anxiety and Get Through It",
+      "duration": "7:55",
+      "url": "https://www.youtube.com/watch?v=MtOdDWQBq84",
+      "videoId": "MtOdDWQBq84",
+      "thumbnail": "https://i.ytimg.com/vi/MtOdDWQBq84/maxresdefault.jpg",
+      "publishedAt": "2026-02-09T18:00:03Z",
+      "latest": false
+    },
+    {
+      "num": 54,
+      "title": "Co-Parenting Expenses Without the Conflict: Building Simple Split | Nancy Gharib",
+      "duration": "1:23:13",
+      "url": "https://www.youtube.com/watch?v=7JKqnALeUsg",
+      "videoId": "7JKqnALeUsg",
+      "thumbnail": "https://i.ytimg.com/vi/7JKqnALeUsg/maxresdefault.jpg",
+      "publishedAt": "2026-02-05T16:18:28Z",
+      "latest": false
+    },
+    {
+      "num": 53,
+      "title": "30 Days to Launch: What You Get Day 1 in Taxifi (OCR, AI Categorization, File) | Build in Public",
+      "duration": "5:35",
+      "url": "https://www.youtube.com/watch?v=kFpviGU2gIc",
+      "videoId": "kFpviGU2gIc",
+      "thumbnail": "https://i.ytimg.com/vi/kFpviGU2gIc/maxresdefault.jpg",
+      "publishedAt": "2026-02-02T17:57:02Z",
+      "latest": false
+    },
+    {
+      "num": 52,
+      "title": "AI That Actually Pays Off: ROI, Automation, and What Firms Should Do First | Julian White",
+      "duration": "1:24:14",
+      "url": "https://www.youtube.com/watch?v=RlPGf_Ubhg8",
+      "videoId": "RlPGf_Ubhg8",
+      "thumbnail": "https://i.ytimg.com/vi/RlPGf_Ubhg8/maxresdefault.jpg",
+      "publishedAt": "2026-01-28T18:50:19Z",
+      "latest": false
+    },
+    {
+      "num": 51,
+      "title": "Personal Brand = Trust: Community First, Ads Second (My Taxifi Lesson)",
+      "duration": "7:49",
+      "url": "https://www.youtube.com/watch?v=KE8kTP6RL5Y",
+      "videoId": "KE8kTP6RL5Y",
+      "thumbnail": "https://i.ytimg.com/vi/KE8kTP6RL5Y/maxresdefault.jpg",
+      "publishedAt": "2026-01-26T18:20:54Z",
+      "latest": false
+    },
+    {
+      "num": 50,
+      "title": "Tax Planning Without the Panic: Building Better Systems for Business Owners | Larry Hasson",
+      "duration": "1:05:47",
+      "url": "https://www.youtube.com/watch?v=-6_ZivS5tKM",
+      "videoId": "-6_ZivS5tKM",
+      "thumbnail": "https://i.ytimg.com/vi/-6_ZivS5tKM/maxresdefault.jpg",
+      "publishedAt": "2026-01-21T16:27:27Z",
+      "latest": false
+    },
+    {
+      "num": 49,
+      "title": "AI Shipped It in 2 to 4 Hours: My First End-to-End Test as a Tech Founder: Building Taxifi in Public",
+      "duration": "9:57",
+      "url": "https://www.youtube.com/watch?v=OcPkerf1urM",
+      "videoId": "OcPkerf1urM",
+      "thumbnail": "https://i.ytimg.com/vi/OcPkerf1urM/maxresdefault.jpg",
+      "publishedAt": "2026-01-19T19:00:19Z",
+      "latest": false
+    },
+    {
+      "num": 48,
+      "title": "Community Is the Product: How The Fitness Lab Builds Loyalty | Adam Bracken",
+      "duration": "1:26:33",
+      "url": "https://www.youtube.com/watch?v=COdM0mCzWmY",
+      "videoId": "COdM0mCzWmY",
+      "thumbnail": "https://i.ytimg.com/vi/COdM0mCzWmY/maxresdefault.jpg",
+      "publishedAt": "2026-01-14T22:30:05Z",
+      "latest": false
+    },
+    {
+      "num": 47,
+      "title": "The Founder Marketing Workshop: The Questions That Clarified Taxifi (Build in Public)",
+      "duration": "9:50",
+      "url": "https://www.youtube.com/watch?v=il1J9YZ6lE0",
+      "videoId": "il1J9YZ6lE0",
+      "thumbnail": "https://i.ytimg.com/vi/il1J9YZ6lE0/maxresdefault.jpg",
+      "publishedAt": "2026-01-13T03:30:41Z",
+      "latest": false
+    },
+    {
+      "num": 46,
+      "title": "How to Build a Business You Can Actually Sell",
+      "duration": "1:13:23",
+      "url": "https://www.youtube.com/watch?v=FRbseEJqbzA",
+      "videoId": "FRbseEJqbzA",
+      "thumbnail": "https://i.ytimg.com/vi/FRbseEJqbzA/maxresdefault.jpg",
+      "publishedAt": "2026-01-07T03:00:30Z",
+      "latest": false
+    },
+    {
+      "num": 45,
+      "title": "Nobody Wants a Tax App: 5 Lessons From Building Taxifi in Public.",
+      "duration": "13:25",
+      "url": "https://www.youtube.com/watch?v=jcpe3_jU8UE",
+      "videoId": "jcpe3_jU8UE",
+      "thumbnail": "https://i.ytimg.com/vi/jcpe3_jU8UE/maxresdefault.jpg",
+      "publishedAt": "2026-01-06T00:15:11Z",
+      "latest": false
+    },
+    {
+      "num": 44,
+      "title": "Cash Flow Clarity: The Fractional CFO Playbook for Founders | Kyle Soutar",
+      "duration": "1:24:55",
+      "url": "https://www.youtube.com/watch?v=xAbqrAEN5tE",
+      "videoId": "xAbqrAEN5tE",
+      "thumbnail": "https://i.ytimg.com/vi/xAbqrAEN5tE/maxresdefault.jpg",
+      "publishedAt": "2025-12-24T16:15:08Z",
+      "latest": false
+    },
+    {
+      "num": 43,
+      "title": "Content First, Clients Second: Why Every Founder Is a Media Company in 2025.",
+      "duration": "14:57",
+      "url": "https://www.youtube.com/watch?v=eyNJCmvfoXw",
+      "videoId": "eyNJCmvfoXw",
+      "thumbnail": "https://i.ytimg.com/vi/eyNJCmvfoXw/maxresdefault.jpg",
+      "publishedAt": "2025-12-22T18:31:03Z",
+      "latest": false
+    },
+    {
+      "num": 42,
+      "title": "Practical AI for Founders: The Questions That Create Real Leverage | Chris Dore",
+      "duration": "1:37:59",
+      "url": "https://www.youtube.com/watch?v=zVob3LZ3lDE",
+      "videoId": "zVob3LZ3lDE",
+      "thumbnail": "https://i.ytimg.com/vi/zVob3LZ3lDE/maxresdefault.jpg",
+      "publishedAt": "2025-12-17T12:02:02Z",
+      "latest": false
+    },
+    {
+      "num": 41,
+      "title": "full video",
+      "duration": "12:21",
+      "url": "https://www.youtube.com/watch?v=5o1lKD8B0yk",
+      "videoId": "5o1lKD8B0yk",
+      "thumbnail": "https://i.ytimg.com/vi/5o1lKD8B0yk/maxresdefault.jpg",
+      "publishedAt": "2025-12-15T15:11:36Z",
+      "latest": false
+    },
+    {
+      "num": 40,
+      "title": "How Boho and Glow Turned Candles Into a Community",
+      "duration": "51:46",
+      "url": "https://www.youtube.com/watch?v=3tzCNsF-r6E",
+      "videoId": "3tzCNsF-r6E",
+      "thumbnail": "https://i.ytimg.com/vi/3tzCNsF-r6E/maxresdefault.jpg",
+      "publishedAt": "2025-11-28T15:23:13Z",
+      "latest": false
+    },
+    {
+      "num": 39,
+      "title": "A vote for opportunity, innovation & every small-biz dream. #canada #vote #smallbusiness",
+      "duration": "0:03",
+      "url": "https://www.youtube.com/watch?v=Ol8ihcdLPjw",
+      "videoId": "Ol8ihcdLPjw",
+      "thumbnail": "https://i.ytimg.com/vi/Ol8ihcdLPjw/maxresdefault.jpg",
+      "publishedAt": "2025-04-28T18:01:41Z",
+      "latest": false
+    },
+    {
+      "num": 38,
+      "title": "72h till CRA deadline—pay tax, auto-RRSP, upload receipts now. Drop “tax” for checklist. #taxseason",
+      "duration": "0:50",
+      "url": "https://www.youtube.com/watch?v=OaCxP5YQkaw",
+      "videoId": "OaCxP5YQkaw",
+      "thumbnail": "https://i.ytimg.com/vi/OaCxP5YQkaw/maxresdefault.jpg",
+      "publishedAt": "2025-04-28T15:33:34Z",
+      "latest": false
+    },
+    {
+      "num": 37,
+      "title": "The AI Race Isn’t Just Global—It’s a Business Threat Too #business #entrepreneur #ai #swot",
+      "duration": "1:00",
+      "url": "https://www.youtube.com/watch?v=aQR_LuYuA_4",
+      "videoId": "aQR_LuYuA_4",
+      "thumbnail": "https://i.ytimg.com/vi/aQR_LuYuA_4/maxresdefault.jpg",
+      "publishedAt": "2025-04-25T17:02:53Z",
+      "latest": false
+    },
+    {
+      "num": 36,
+      "title": "ChatGPT Is the New Search Engine—Are You Ready? #ai #chatgpt #searchengineranking",
+      "duration": "1:00",
+      "url": "https://www.youtube.com/watch?v=Mw4e23KWxtM",
+      "videoId": "Mw4e23KWxtM",
+      "thumbnail": "https://i.ytimg.com/vi/Mw4e23KWxtM/maxresdefault.jpg",
+      "publishedAt": "2025-04-25T14:47:47Z",
+      "latest": false
+    },
+    {
+      "num": 35,
+      "title": "Used ChatGPT 03 to stage my rental before renos finished—AI saves time & money. #LaidOffTo8Figures",
+      "duration": "0:41",
+      "url": "https://www.youtube.com/watch?v=ViwWpewY2B4",
+      "videoId": "ViwWpewY2B4",
+      "thumbnail": "https://i.ytimg.com/vi/ViwWpewY2B4/maxresdefault.jpg",
+      "publishedAt": "2025-04-24T18:35:19Z",
+      "latest": false
+    },
+    {
+      "num": 34,
+      "title": "AI isn’t just replacing jobs—it could replace small businesses too. #LaidOffTo8Figures",
+      "duration": "1:00",
+      "url": "https://www.youtube.com/watch?v=okg-xalWfMI",
+      "videoId": "okg-xalWfMI",
+      "thumbnail": "https://i.ytimg.com/vi/okg-xalWfMI/maxresdefault.jpg",
+      "publishedAt": "2025-04-24T16:56:42Z",
+      "latest": false
+    },
+    {
+      "num": 33,
+      "title": "AI will flood the market with products—your brand is how you’ll stand out. #LaidOffTo8Figures",
+      "duration": "0:56",
+      "url": "https://www.youtube.com/watch?v=SQFH_9WxHPk",
+      "videoId": "SQFH_9WxHPk",
+      "thumbnail": "https://i.ytimg.com/vi/SQFH_9WxHPk/maxresdefault.jpg",
+      "publishedAt": "2025-04-23T17:47:18Z",
+      "latest": false
+    },
+    {
+      "num": 32,
+      "title": "Coding will be 100% automated soon—this changes everything for small biz. #LaidOffTo8Figures",
+      "duration": "0:56",
+      "url": "https://www.youtube.com/watch?v=UN81l2nxoT4",
+      "videoId": "UN81l2nxoT4",
+      "thumbnail": "https://i.ytimg.com/vi/UN81l2nxoT4/maxresdefault.jpg",
+      "publishedAt": "2025-04-23T16:36:27Z",
+      "latest": false
+    },
+    {
+      "num": 31,
+      "title": "Rental depreciation can drop your taxes to $0—use this strategy to save big. #LaidOffTo8Figures",
+      "duration": "0:59",
+      "url": "https://www.youtube.com/watch?v=u3kHco4vYlA",
+      "videoId": "u3kHco4vYlA",
+      "thumbnail": "https://i.ytimg.com/vi/u3kHco4vYlA/maxresdefault.jpg",
+      "publishedAt": "2025-04-22T17:41:33Z",
+      "latest": false
+    },
+    {
+      "num": 30,
+      "title": "The 9-to-5 Job Will Be Extinct by 2034—Here’s What That Means for Your Business. #timefreedom",
+      "duration": "0:58",
+      "url": "https://www.youtube.com/watch?v=Qo8stUroHFA",
+      "videoId": "Qo8stUroHFA",
+      "thumbnail": "https://i.ytimg.com/vi/Qo8stUroHFA/maxresdefault.jpg",
+      "publishedAt": "2025-04-22T14:19:56Z",
+      "latest": false
+    },
+    {
+      "num": 29,
+      "title": "Real success = picking up your kids, not chasing paychecks. Build freedom first. #LaidOffTo8Figures",
+      "duration": "0:03",
+      "url": "https://www.youtube.com/watch?v=ee_mVO5_J0E",
+      "videoId": "ee_mVO5_J0E",
+      "thumbnail": "https://i.ytimg.com/vi/ee_mVO5_J0E/maxresdefault.jpg",
+      "publishedAt": "2025-04-22T11:33:59Z",
+      "latest": false
+    },
+    {
+      "num": 28,
+      "title": "Know your numbers! #socialmedia #finance #business #numbers #advice #entrepreneurship",
+      "duration": "0:52",
+      "url": "https://www.youtube.com/watch?v=Lp6yEpnbTOM",
+      "videoId": "Lp6yEpnbTOM",
+      "thumbnail": "https://i.ytimg.com/vi/Lp6yEpnbTOM/maxresdefault.jpg",
+      "publishedAt": "2025-04-17T19:00:32Z",
+      "latest": false
+    },
+    {
+      "num": 27,
+      "title": "Gemini 2.5 AI just raised the bar—small biz owners, this is your edge. Use it before others do. #ai",
+      "duration": "1:45",
+      "url": "https://www.youtube.com/watch?v=MHtW7Uw_CSQ",
+      "videoId": "MHtW7Uw_CSQ",
+      "thumbnail": "https://i.ytimg.com/vi/MHtW7Uw_CSQ/maxresdefault.jpg",
+      "publishedAt": "2025-04-16T17:05:31Z",
+      "latest": false
+    },
+    {
+      "num": 26,
+      "title": "Rant post! Supporting the small business community! #competition #smallbusiness",
+      "duration": "0:57",
+      "url": "https://www.youtube.com/watch?v=DOIC8ifUW88",
+      "videoId": "DOIC8ifUW88",
+      "thumbnail": "https://i.ytimg.com/vi/DOIC8ifUW88/maxresdefault.jpg",
+      "publishedAt": "2025-04-16T16:16:20Z",
+      "latest": false
+    },
+    {
+      "num": 25,
+      "title": "Here are 5 steps to start a business! #incorporate #banking #accounting #insurance #paymentprocess",
+      "duration": "0:56",
+      "url": "https://www.youtube.com/watch?v=kZ944eVtE2E",
+      "videoId": "kZ944eVtE2E",
+      "thumbnail": "https://i.ytimg.com/vi/kZ944eVtE2E/maxresdefault.jpg",
+      "publishedAt": "2025-04-16T15:15:58Z",
+      "latest": false
+    },
+    {
+      "num": 24,
+      "title": "Sam Altman Just Said This About AI—Every Small Business Owner Needs to Hear It #ai #smallbusiness",
+      "duration": "0:58",
+      "url": "https://www.youtube.com/watch?v=jmGSzvMaQVk",
+      "videoId": "jmGSzvMaQVk",
+      "thumbnail": "https://i.ytimg.com/vi/jmGSzvMaQVk/maxresdefault.jpg",
+      "publishedAt": "2025-04-15T19:37:48Z",
+      "latest": false
+    },
+    {
+      "num": 23,
+      "title": "If I had to Invest 10k today! #bookkeeping #10k #startup #smallbusiness #entrepreneurship",
+      "duration": "1:00",
+      "url": "https://www.youtube.com/watch?v=OO4o_-8dnU0",
+      "videoId": "OO4o_-8dnU0",
+      "thumbnail": "https://i.ytimg.com/vi/OO4o_-8dnU0/maxresdefault.jpg",
+      "publishedAt": "2025-04-15T17:42:36Z",
+      "latest": false
+    },
+    {
+      "num": 22,
+      "title": "GPT-4.1 can now build websites—small biz owners, this is your sign to start using AI now. #ai #gpt",
+      "duration": "1:00",
+      "url": "https://www.youtube.com/watch?v=YFVYcwrZwP0",
+      "videoId": "YFVYcwrZwP0",
+      "thumbnail": "https://i.ytimg.com/vi/YFVYcwrZwP0/maxresdefault.jpg",
+      "publishedAt": "2025-04-14T18:31:42Z",
+      "latest": false
+    },
+    {
+      "num": 21,
+      "title": "Its never been so easy to start a business! #content #creator #businessideas #entrepreneurship",
+      "duration": "0:44",
+      "url": "https://www.youtube.com/watch?v=XskzoFTnG5k",
+      "videoId": "XskzoFTnG5k",
+      "thumbnail": "https://i.ytimg.com/vi/XskzoFTnG5k/maxresdefault.jpg",
+      "publishedAt": "2025-04-14T17:25:37Z",
+      "latest": false
+    },
+    {
+      "num": 20,
+      "title": "How I became a millionaire by age 34! #workonthrbusiness #technology #socialmedia",
+      "duration": "1:00",
+      "url": "https://www.youtube.com/watch?v=iRneXCETybg",
+      "videoId": "iRneXCETybg",
+      "thumbnail": "https://i.ytimg.com/vi/iRneXCETybg/maxresdefault.jpg",
+      "publishedAt": "2025-04-14T17:00:09Z",
+      "latest": false
+    },
+    {
+      "num": 19,
+      "title": "This Simple Business Has 7-Figure Potential—and Almost No One’s Doing It Yet #entrepreneurship",
+      "duration": "0:55",
+      "url": "https://www.youtube.com/watch?v=WKS2CXhHx5o",
+      "videoId": "WKS2CXhHx5o",
+      "thumbnail": "https://i.ytimg.com/vi/WKS2CXhHx5o/maxresdefault.jpg",
+      "publishedAt": "2025-04-11T18:12:02Z",
+      "latest": false
+    },
+    {
+      "num": 18,
+      "title": "The Marketing Hack Every Small Business Owner Needs to See #content #fast #ai #cheap",
+      "duration": "0:58",
+      "url": "https://www.youtube.com/watch?v=agREVXZyWb8",
+      "videoId": "agREVXZyWb8",
+      "thumbnail": "https://i.ytimg.com/vi/agREVXZyWb8/maxresdefault.jpg",
+      "publishedAt": "2025-04-11T17:07:41Z",
+      "latest": false
+    },
+    {
+      "num": 17,
+      "title": "Shopify Said No New Hires Without AI—Small Biz Owners, This Is Your Signal. #ai #smallbusiness",
+      "duration": "1:00",
+      "url": "https://www.youtube.com/watch?v=nLZYFVG2C2Y",
+      "videoId": "nLZYFVG2C2Y",
+      "thumbnail": "https://i.ytimg.com/vi/nLZYFVG2C2Y/maxresdefault.jpg",
+      "publishedAt": "2025-04-10T21:25:01Z",
+      "latest": false
+    },
+    {
+      "num": 16,
+      "title": "From 3 weekends off to 8 figures—small steps now = freedom later. Show Up!. #LaidOffTo8Figures",
+      "duration": "0:28",
+      "url": "https://www.youtube.com/watch?v=l2H771vvy-0",
+      "videoId": "l2H771vvy-0",
+      "thumbnail": "https://i.ytimg.com/vi/l2H771vvy-0/maxresdefault.jpg",
+      "publishedAt": "2025-04-09T15:02:12Z",
+      "latest": false
+    },
+    {
+      "num": 15,
+      "title": "“If you’re self-employed and hate bookkeeping—this changes the game.” #bookkeeping #aiagent",
+      "duration": "0:56",
+      "url": "https://www.youtube.com/watch?v=cGKBTz-lBL8",
+      "videoId": "cGKBTz-lBL8",
+      "thumbnail": "https://i.ytimg.com/vi/cGKBTz-lBL8/maxresdefault.jpg",
+      "publishedAt": "2025-04-07T18:39:58Z",
+      "latest": false
+    },
+    {
+      "num": 14,
+      "title": "From laid off at 24 to 8 figures—this is the mindset that changed everything. #entrepreneurship",
+      "duration": "0:04",
+      "url": "https://www.youtube.com/watch?v=tu1_VWZeZ5w",
+      "videoId": "tu1_VWZeZ5w",
+      "thumbnail": "https://i.ytimg.com/vi/tu1_VWZeZ5w/maxresdefault.jpg",
+      "publishedAt": "2025-04-07T14:04:22Z",
+      "latest": false
+    },
+    {
+      "num": 13,
+      "title": "News freaking you out? Here’s how I turn market fear into opportunity #entrepreneurship #market",
+      "duration": "0:04",
+      "url": "https://www.youtube.com/watch?v=1iUw5Z1fSiQ",
+      "videoId": "1iUw5Z1fSiQ",
+      "thumbnail": "https://i.ytimg.com/vi/1iUw5Z1fSiQ/maxresdefault.jpg",
+      "publishedAt": "2025-04-04T17:39:50Z",
+      "latest": false
+    },
+    {
+      "num": 12,
+      "title": "Don’t Start in These Trades…#interview #raw #material #entrepreneurship",
+      "duration": "1:00",
+      "url": "https://www.youtube.com/watch?v=yZ0OQwYnqsY",
+      "videoId": "yZ0OQwYnqsY",
+      "thumbnail": "https://i.ytimg.com/vi/yZ0OQwYnqsY/maxresdefault.jpg",
+      "publishedAt": "2025-04-04T10:39:48Z",
+      "latest": false
+    },
+    {
+      "num": 11,
+      "title": "Stock Market Today April 3rd an noon! #longgame #diversify #cash",
+      "duration": "1:00",
+      "url": "https://www.youtube.com/watch?v=BWPlS4SS0qo",
+      "videoId": "BWPlS4SS0qo",
+      "thumbnail": "https://i.ytimg.com/vi/BWPlS4SS0qo/maxresdefault.jpg",
+      "publishedAt": "2025-04-03T16:25:26Z",
+      "latest": false
+    },
+    {
+      "num": 10,
+      "title": "Financial Freedom Choices! Mine are time freedom and financial freedom at a young age. #howaboutyou?",
+      "duration": "0:04",
+      "url": "https://www.youtube.com/watch?v=yqfRELWu4l8",
+      "videoId": "yqfRELWu4l8",
+      "thumbnail": "https://i.ytimg.com/vi/yqfRELWu4l8/maxresdefault.jpg",
+      "publishedAt": "2025-04-03T15:06:36Z",
+      "latest": false
+    },
+    {
+      "num": 9,
+      "title": "AI is moving so fast! #receipt #cra #audit #smallbusiness #fyp",
+      "duration": "0:31",
+      "url": "https://www.youtube.com/watch?v=Bsto4uE12MQ",
+      "videoId": "Bsto4uE12MQ",
+      "thumbnail": "https://i.ytimg.com/vi/Bsto4uE12MQ/maxresdefault.jpg",
+      "publishedAt": "2025-04-02T18:58:03Z",
+      "latest": false
+    },
+    {
+      "num": 8,
+      "title": "Choose your hard! #laidoffto8figures #entrepreneurship #selfemployed",
+      "duration": "0:07",
+      "url": "https://www.youtube.com/watch?v=1uYCYHdD9Ns",
+      "videoId": "1uYCYHdD9Ns",
+      "thumbnail": "https://i.ytimg.com/vi/1uYCYHdD9Ns/maxresdefault.jpg",
+      "publishedAt": "2025-04-02T14:12:46Z",
+      "latest": false
+    },
+    {
+      "num": 7,
+      "title": "How The Rich Play This Game! #entrepreneurship #wealth #smallbusiness",
+      "duration": "1:00",
+      "url": "https://www.youtube.com/watch?v=ACafG_l2WCY",
+      "videoId": "ACafG_l2WCY",
+      "thumbnail": "https://i.ytimg.com/vi/ACafG_l2WCY/maxresdefault.jpg",
+      "publishedAt": "2025-04-02T11:05:01Z",
+      "latest": false
+    },
+    {
+      "num": 6,
+      "title": "Quesada Vs Chipotle. What it takes for these two franchise owners to make it! #entrepreneurship",
+      "duration": "1:44",
+      "url": "https://www.youtube.com/watch?v=7Di-jUH_l5Q",
+      "videoId": "7Di-jUH_l5Q",
+      "thumbnail": "https://i.ytimg.com/vi/7Di-jUH_l5Q/maxresdefault.jpg",
+      "publishedAt": "2025-04-01T19:04:32Z",
+      "latest": false
+    },
+    {
+      "num": 5,
+      "title": "How to get rich in your 20s #LaidOffTo8Figures #selfemployed #entrepreneur",
+      "duration": "0:57",
+      "url": "https://www.youtube.com/watch?v=8FUZmGssX08",
+      "videoId": "8FUZmGssX08",
+      "thumbnail": "https://i.ytimg.com/vi/8FUZmGssX08/maxresdefault.jpg",
+      "publishedAt": "2025-03-31T18:39:31Z",
+      "latest": false
+    },
+    {
+      "num": 4,
+      "title": "Escape the 50 year trap! #laidoffto8figures #smallbusiness #entrepreneur",
+      "duration": "0:16",
+      "url": "https://www.youtube.com/watch?v=QpvTG2hSSu0",
+      "videoId": "QpvTG2hSSu0",
+      "thumbnail": "https://i.ytimg.com/vi/QpvTG2hSSu0/maxresdefault.jpg",
+      "publishedAt": "2025-03-28T11:00:13Z",
+      "latest": false
+    },
+    {
+      "num": 3,
+      "title": "Caught Adam off guard in my backyard—he dropped real estate investing gems in for rentals!",
+      "duration": "1:52",
+      "url": "https://www.youtube.com/watch?v=7AJyyWp4ZhY",
+      "videoId": "7AJyyWp4ZhY",
+      "thumbnail": "https://i.ytimg.com/vi/7AJyyWp4ZhY/maxresdefault.jpg",
+      "publishedAt": "2025-03-27T23:39:47Z",
+      "latest": false
+    },
+    {
+      "num": 2,
+      "title": "Being laid off at 24 lit a fire in me. It wasn’t luck that brought me here - #LaidOffTo8figures",
+      "duration": "0:16",
+      "url": "https://www.youtube.com/watch?v=tC9v_bg-J98",
+      "videoId": "tC9v_bg-J98",
+      "thumbnail": "https://i.ytimg.com/vi/tC9v_bg-J98/maxresdefault.jpg",
+      "publishedAt": "2025-03-27T14:10:37Z",
+      "latest": false
+    },
+    {
+      "num": 1,
+      "title": "Make $10K/month consulting CPAs with ChatGPT! Comment for a full series! #LaidOffTo8Figures #ai",
+      "duration": "1:00",
+      "url": "https://www.youtube.com/watch?v=PdS0-DD24iY",
+      "videoId": "PdS0-DD24iY",
+      "thumbnail": "https://i.ytimg.com/vi/PdS0-DD24iY/maxresdefault.jpg",
+      "publishedAt": "2025-03-26T17:40:34Z",
+      "latest": false
+    }
   ]
 }
