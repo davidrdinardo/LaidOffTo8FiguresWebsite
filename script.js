@@ -54,7 +54,7 @@ function renderEpisodes() {
     const ext = ep.url ? ' target="_blank" rel="noopener"' : "";
     return `
       <li>
-        <a class="episode-row" href="${escapeHtml(href)}"${ext} data-num="${ep.num}">
+        <a class="episode-row" href="${escapeHtml(href)}"${ext} data-num="${ep.num}" title="${escapeHtml(ep.title)}">
           <span class="ep-num">${String(ep.num).padStart(2, "0")}</span>
           <span class="ep-title">${escapeHtml(ep.title)}</span>
           ${meta}

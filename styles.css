@@ -200,6 +200,7 @@ a { color: inherit; text-decoration: none; }
 .episode-list .episode-row:hover { opacity: 1; }
 
 .ep-num {
+  flex: none;
   font-family: var(--mono);
   font-size: clamp(0.7rem, 0.9vw, 0.85rem);
   color: var(--muted);
@@ -211,9 +212,14 @@ a { color: inherit; text-decoration: none; }
 .ep-num::before { content: "— "; }
 
 .ep-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-weight: 700;
-  font-size: clamp(2.6rem, 8.2vw, 7.2rem);
-  line-height: 0.92;
+  font-size: clamp(1.7rem, 5vw, 4.4rem);
+  line-height: 1.04;
   letter-spacing: -0.03em;
   margin: 0;
   transition: color 0.2s;
@@ -221,6 +227,7 @@ a { color: inherit; text-decoration: none; }
 .episode-row:hover .ep-title { color: #fff; }
 
 .ep-meta {
+  flex: none;
   font-family: var(--mono);
   font-size: clamp(0.7rem, 0.9vw, 0.85rem);
   color: var(--muted);
