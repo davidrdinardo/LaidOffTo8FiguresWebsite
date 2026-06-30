@@ -156,27 +156,9 @@ function initSearch() {
   });
 }
 
-/* ---- Newsletter form (front-end only; wire to a backend later) -------- */
-function initJoin() {
-  const form = document.getElementById("join-form");
-  const status = document.getElementById("join-status");
-  if (!form || !status) return;
-
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const email = form.email.value.trim();
-    const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    if (!valid) {
-      status.textContent = "Please enter a valid email.";
-      status.className = "join-status err";
-      return;
-    }
-    // TODO: POST to your email provider (ConvertKit, Beehiiv, Mailchimp…).
-    status.textContent = "You're in. Check your inbox to confirm.";
-    status.className = "join-status ok";
-    form.reset();
-  });
-}
+/* ---- Newsletter ------------------------------------------------------
+   Handled by the Beehiiv embed in index.html (#join .join-embed).
+--------------------------------------------------------------------- */
 
 /* ---- Footer year ------------------------------------------------------ */
 function initYear() {
@@ -188,7 +170,6 @@ function initYear() {
 document.addEventListener("DOMContentLoaded", async () => {
   initMenu();
   initSearch();
-  initJoin();
   initYear();
   initViewMore();
   renderEpisodes();      // paint fallback immediately
