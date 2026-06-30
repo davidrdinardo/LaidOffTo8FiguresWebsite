@@ -106,13 +106,33 @@
     <!-- Join -->
     <section class="join" id="join">
       <div class="section-label"><span>03</span> JOIN</div>
-      <div class="join-inner">
-        <h2 class="join-headline">Join the list.</h2>
-        <p class="join-sub">New episodes, build notes, and the occasional spreadsheet. No spam, ever.</p>
-        <div class="join-embed">
-          <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="aec6e9c6-726f-49a6-bc9c-11e1477ef783"></script>
+
+      <div class="join-grid">
+        <h2 class="join-headline">One email,<br />every week.</h2>
+        <div class="join-whats">
+          <div class="join-whats-label">WHAT'S IN IT</div>
+          <ul class="join-list">
+            <li><strong>New episode.</strong> Every drop, a day before it's public.</li>
+            <li><strong>The playbook.</strong> One concrete move pulled from that week's guest.</li>
+            <li><strong>Build notes.</strong> What David's testing, reading, and rethinking.</li>
+          </ul>
         </div>
       </div>
+
+      <div class="join-form-wrap">
+        <div class="join-email-label">YOUR EMAIL</div>
+        <form class="join-form" id="join-form" method="post"
+              action="https://embeds.beehiiv.com/aec6e9c6-726f-49a6-bc9c-11e1477ef783"
+              target="bh-sink" novalidate>
+          <span class="bracket" aria-hidden="true">[</span>
+          <input type="email" name="email" placeholder="you@company.com" autocomplete="email" required />
+          <span class="bracket" aria-hidden="true">]</span>
+          <button type="submit">JOIN <span aria-hidden="true">&rarr;</span></button>
+        </form>
+        <p class="join-note" id="join-note" role="status">Free every week. Unsubscribe anytime.</p>
+      </div>
+
+      <iframe name="bh-sink" class="bh-sink" title="subscribe" aria-hidden="true" tabindex="-1"></iframe>
     </section>
   </main>
 

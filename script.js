@@ -156,9 +156,28 @@ function initSearch() {
   });
 }
 
-/* ---- Newsletter ------------------------------------------------------
-   Handled by the Beehiiv embed in index.html (#join .join-embed).
---------------------------------------------------------------------- */
+/* ---- Newsletter (custom form -> Beehiiv via hidden iframe) ------------ */
+function initJoin() {
+  const form = document.getElementById("join-form");
+  const note = document.getElementById("join-note");
+  if (!form || !note) return;
+
+  form.addEventListener("submit", (e) => {
+    const email = form.email.value.trim();
+    const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!valid) {
+      e.preventDefault(); // block the POST; show error
+      note.textContent = "Please enter a valid email.";
+      note.className = "join-note err";
+      return;
+    }
+    // Valid: let the form POST to Beehiiv (targets the hidden iframe so the
+    // page doesn't navigate), then show confirmation.
+    note.textContent = "You're in — check your inbox to confirm.";
+    note.className = "join-note ok";
+    setTimeout(() => form.reset(), 50);
+  });
+}
 
 /* ---- Footer year ------------------------------------------------------ */
 function initYear() {
@@ -170,6 +189,7 @@ function initYear() {
 document.addEventListener("DOMContentLoaded", async () => {
   initMenu();
   initSearch();
+  initJoin();
   initYear();
   initViewMore();
   renderEpisodes();      // paint fallback immediately
