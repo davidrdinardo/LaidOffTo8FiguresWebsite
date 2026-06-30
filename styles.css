@@ -597,8 +597,15 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
   .social { grid-template-columns: 1fr; }
   .ep-meta { display: none; }
   .menu { top: 4rem; }
-  /* episodes hero: top-align so there's no huge empty gap on mobile */
-  .hero { min-height: auto; align-items: flex-start; padding-top: clamp(5rem, 16vw, 6.5rem); }
+  /* Mobile: compact banner (no full empty screen) so episodes follow closely */
+  .intro {
+    min-height: auto;
+    justify-content: flex-start;
+    padding: clamp(6.5rem, 22vw, 8.5rem) var(--gutter) clamp(1.5rem, 6vw, 2.5rem);
+  }
+  .intro .scroll-down { display: none; }
+  /* episodes hero: top-align with a small gap, not a huge void */
+  .hero { min-height: auto; align-items: flex-start; padding-top: clamp(1.5rem, 6vw, 2.5rem); }
   .hero-inner { padding-bottom: clamp(3rem, 8vw, 4rem); }
 }
 
