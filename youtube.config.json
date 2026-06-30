@@ -3,5 +3,6 @@
   "handle": "",
   "channelId": "UCkawS1ZSCfr9cAcGgWRcZxg",
   "maxEpisodes": 200,
-  "minDurationSeconds": 180
+  "minDurationSeconds": 180,
+  "tidyTitles": true
 }

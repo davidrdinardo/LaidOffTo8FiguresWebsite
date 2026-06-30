@@ -37,7 +37,23 @@ async function loadConfig() {
   const channelId = process.env.YOUTUBE_CHANNEL_ID || cfg.channelId || "";
   const maxEpisodes = Number(cfg.maxEpisodes ?? 200);
   const minDurationSeconds = Number(cfg.minDurationSeconds ?? 0); // >0 filters out Shorts
-  return { handle, channelId, maxEpisodes, minDurationSeconds };
+  const tidyTitles = cfg.tidyTitles !== false; // default true
+  return { handle, channelId, maxEpisodes, minDurationSeconds, tidyTitles };
+}
+
+/* ---- Tidy a raw YouTube title for display ----------------------------
+   Drops a trailing " | …" suffix (guest name / channel tag) and any
+   #hashtags, then collapses whitespace. Returns the original if cleaning
+   would leave nothing. Toggle off with "tidyTitles": false in config.
+--------------------------------------------------------------------- */
+function cleanTitle(raw) {
+  let t = String(raw);
+  const pipe = t.indexOf(" | ");
+  if (pipe !== -1) t = t.slice(0, pipe);        // strip suffix after first " | "
+  t = t.replace(/#[^\s#]+/g, " ");               // remove hashtags
+  t = t.replace(/\s{2,}/g, " ").trim();          // collapse whitespace
+  t = t.replace(/[\s|:–—-]+$/u, "").trim();       // trim dangling separators
+  return t || String(raw).trim();
 }
 
 /* ---- API helper ------------------------------------------------------- */
@@ -149,7 +165,7 @@ async function main() {
   const total = videos.length;
   const episodes = videos.map((v, i) => ({
     num: total - i, // newest gets the highest number
-    title: v.title,
+    title: cfg.tidyTitles ? cleanTitle(v.title) : v.title,
     duration: v.duration,
     url: `https://www.youtube.com/watch?v=${v.videoId}`,
     videoId: v.videoId,
