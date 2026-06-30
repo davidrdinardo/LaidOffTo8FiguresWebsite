@@ -82,7 +82,7 @@ a { color: inherit; text-decoration: none; }
 
 /* Menu ----------------------------------------------------------------- */
 .menu {
-  position: fixed;
+  position: absolute; /* scrolls away with the page so it never floats over content */
   top: clamp(4.2rem, 8vw, 5.5rem);
   left: var(--gutter);
   z-index: 35;
@@ -329,7 +329,7 @@ a { color: inherit; text-decoration: none; }
 @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
 
 /* Generic section scaffolding ----------------------------------------- */
-section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); }
+section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clamp(4rem, 11vw, 5.5rem); }
 
 .section-label {
   font-family: var(--mono);
@@ -597,6 +597,9 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); }
   .social { grid-template-columns: 1fr; }
   .ep-meta { display: none; }
   .menu { top: 4rem; }
+  /* episodes hero: top-align so there's no huge empty gap on mobile */
+  .hero { min-height: auto; align-items: flex-start; padding-top: clamp(5rem, 16vw, 6.5rem); }
+  .hero-inner { padding-bottom: clamp(3rem, 8vw, 4rem); }
 }
 
 @media (max-width: 520px) {
