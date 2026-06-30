@@ -54,7 +54,7 @@ function renderEpisodes() {
     const ext = ep.url ? ' target="_blank" rel="noopener"' : "";
     return `
       <li>
-        <a class="episode-row" href="${escapeHtml(href)}"${ext} data-num="${ep.num}" title="${escapeHtml(ep.title)}">
+        <a class="episode-row" href="${escapeHtml(href)}"${ext} data-num="${ep.num}" data-thumb="${escapeHtml(ep.thumbnail || "")}" title="${escapeHtml(ep.title)}">
           <span class="ep-num">${String(ep.num).padStart(2, "0")}</span>
           <span class="ep-title">${escapeHtml(ep.title)}</span>
           ${meta}
@@ -72,6 +72,34 @@ function renderEpisodes() {
       viewMore.textContent = `VIEW MORE (${episodes.length - visible})`;
     }
   }
+}
+
+/* ---- Hover an episode -> reveal its YouTube thumbnail behind the list -- */
+function initHoverThumb() {
+  const list = document.getElementById("episode-list");
+  const thumb = document.getElementById("hero-thumb");
+  if (!list || !thumb) return;
+
+  // Preload thumbnails so the first hover is instant
+  const preload = () => {
+    list.querySelectorAll(".episode-row[data-thumb]").forEach((row) => {
+      const src = row.getAttribute("data-thumb");
+      if (src) { const img = new Image(); img.src = src; }
+    });
+  };
+
+  list.addEventListener("mouseover", (e) => {
+    const row = e.target.closest(".episode-row");
+    if (!row) return;
+    const src = row.getAttribute("data-thumb");
+    if (src) {
+      thumb.style.backgroundImage = `url("${src}")`;
+      thumb.classList.add("show");
+    }
+  });
+  list.addEventListener("mouseleave", () => thumb.classList.remove("show"));
+
+  return preload;
 }
 
 function initViewMore() {
@@ -172,7 +200,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   initSearch();
   initYear();
   initViewMore();
+  const preloadThumbs = initHoverThumb();
   renderEpisodes();      // paint fallback immediately
   await loadEpisodes();  // then upgrade to live YouTube data
   renderEpisodes();
+  if (preloadThumbs) preloadThumbs();
 });
