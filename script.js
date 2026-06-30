@@ -80,12 +80,16 @@ function initHoverThumb() {
   const thumb = document.getElementById("hero-thumb");
   if (!list || !thumb) return;
 
-  // Preload thumbnails so the first hover is instant
-  const preload = () => {
-    list.querySelectorAll(".episode-row[data-thumb]").forEach((row) => {
-      const src = row.getAttribute("data-thumb");
-      if (src) { const img = new Image(); img.src = src; }
-    });
+  // Show the latest episode's thumbnail by default, and preload the rest
+  // so the first hover is instant.
+  const applyThumbs = () => {
+    const first = episodes.find((e) => e.thumbnail);
+    if (first) {
+      thumb.dataset.default = first.thumbnail;
+      thumb.style.backgroundImage = `url("${first.thumbnail}")`;
+      thumb.classList.add("has-image");
+    }
+    episodes.forEach((e) => { if (e.thumbnail) { const img = new Image(); img.src = e.thumbnail; } });
   };
 
   list.addEventListener("mouseover", (e) => {
@@ -97,9 +101,12 @@ function initHoverThumb() {
       thumb.classList.add("show");
     }
   });
-  list.addEventListener("mouseleave", () => thumb.classList.remove("show"));
+  list.addEventListener("mouseleave", () => {
+    thumb.classList.remove("show");
+    if (thumb.dataset.default) thumb.style.backgroundImage = `url("${thumb.dataset.default}")`;
+  });
 
-  return preload;
+  return applyThumbs;
 }
 
 function initViewMore() {
@@ -200,9 +207,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   initSearch();
   initYear();
   initViewMore();
-  const preloadThumbs = initHoverThumb();
+  const applyThumbs = initHoverThumb();
   renderEpisodes();      // paint fallback immediately
   await loadEpisodes();  // then upgrade to live YouTube data
   renderEpisodes();
-  if (preloadThumbs) preloadThumbs();
+  if (applyThumbs) applyThumbs();
 });
