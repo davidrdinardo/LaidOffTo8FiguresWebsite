@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://laidoffto8figures.com/sitemap.xml
