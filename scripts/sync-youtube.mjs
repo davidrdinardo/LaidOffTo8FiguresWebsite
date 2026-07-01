@@ -182,6 +182,54 @@ async function main() {
   };
   await writeFile(join(ROOT, "episodes.json"), JSON.stringify(payload, null, 2) + "\n");
   console.log(`✔ Wrote episodes.json (${episodes.length} episodes).`);
+
+  await updateEpisodeStructuredData(episodes);
+}
+
+/* ---- Inject per-episode JSON-LD into index.html --------------------- */
+async function updateEpisodeStructuredData(episodes) {
+  const START = "<!-- EPISODES_JSONLD_START -->";
+  const END = "<!-- EPISODES_JSONLD_END -->";
+  const file = join(ROOT, "index.html");
+  let html;
+  try { html = await readFile(file, "utf8"); } catch { return; }
+  const s = html.indexOf(START);
+  const e = html.indexOf(END);
+  if (s === -1 || e === -1 || e < s) return;
+
+  const jsonld = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Episodes — Laid Off To 8 Figures",
+    itemListElement: episodes.map((ep, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "PodcastEpisode",
+        name: ep.title,
+        url: ep.url,
+        ...(ep.publishedAt ? { datePublished: ep.publishedAt } : {}),
+        ...(ep.thumbnail ? { image: ep.thumbnail } : {}),
+        partOfSeries: {
+          "@type": "PodcastSeries",
+          name: "Laid Off To 8 Figures",
+          url: "https://laidoffto8figures.com/",
+        },
+      },
+    })),
+  };
+
+  const block =
+    START +
+    '\n  <script type="application/ld+json">\n' +
+    JSON.stringify(jsonld, null, 2) +
+    "\n  </script>\n  " +
+    END;
+  const out = html.slice(0, s) + block + html.slice(e + END.length);
+  if (out !== html) {
+    await writeFile(file, out);
+    console.log(`✔ Updated episode structured data in index.html.`);
+  }
 }
 
 main().catch((err) => {

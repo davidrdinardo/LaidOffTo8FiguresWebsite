@@ -33,14 +33,14 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: node scripts/sync-youtube.mjs
 
-      - name: Commit episodes.json if it changed
+      - name: Commit updated files if they changed
         run: |
-          if [[ -n "$(git status --porcelain episodes.json)" ]]; then
+          if [[ -n "$(git status --porcelain episodes.json index.html)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add episodes.json
+            git add episodes.json index.html
             git commit -m "chore: sync episodes from YouTube"
             git push
           else
-            echo "No changes to episodes.json."
+            echo "No changes to sync."
           fi
