@@ -1,8 +1,18 @@
 {
   "channel": "David DiNardo, MBA",
-  "updatedAt": "2026-07-03T13:01:42.626Z",
-  "count": 36,
+  "updatedAt": "2026-07-03T15:55:53.656Z",
+  "count": 37,
   "episodes": [
+    {
+      "num": 37,
+      "title": "Is SEO Dead? 30 Years of Marketing Secrets for the AI Era",
+      "duration": "1:54:57",
+      "url": "https://www.youtube.com/watch?v=C1c404BaQ48",
+      "videoId": "C1c404BaQ48",
+      "thumbnail": "https://i.ytimg.com/vi/C1c404BaQ48/maxresdefault.jpg",
+      "publishedAt": "2026-07-03T13:28:51Z",
+      "latest": true
+    },
     {
       "num": 36,
       "title": "3 Reasons It's Easier to Build a Business in Canada Than the U.S.",
@@ -11,7 +21,7 @@
       "videoId": "DzzdXvubIq4",
       "thumbnail": "https://i.ytimg.com/vi/DzzdXvubIq4/maxresdefault.jpg",
       "publishedAt": "2026-06-29T00:37:46Z",
-      "latest": true
+      "latest": false
     },
     {
       "num": 35,
