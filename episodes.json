@@ -1,8 +1,18 @@
 {
   "channel": "David DiNardo, MBA",
-  "updatedAt": "2026-07-06T09:06:34.355Z",
-  "count": 37,
+  "updatedAt": "2026-07-06T13:54:31.912Z",
+  "count": 38,
   "episodes": [
+    {
+      "num": 38,
+      "title": "Getting Laid Off at 24 Was the Best Thing That Ever Happened to Me",
+      "duration": "4:16",
+      "url": "https://www.youtube.com/watch?v=eYw2_KY4Nog",
+      "videoId": "eYw2_KY4Nog",
+      "thumbnail": "https://i.ytimg.com/vi/eYw2_KY4Nog/maxresdefault.jpg",
+      "publishedAt": "2026-07-06T13:51:08Z",
+      "latest": true
+    },
     {
       "num": 37,
       "title": "Is SEO Dead? 30 Years of Marketing Secrets for the AI Era",
@@ -11,7 +21,7 @@
       "videoId": "C1c404BaQ48",
       "thumbnail": "https://i.ytimg.com/vi/C1c404BaQ48/maxresdefault.jpg",
       "publishedAt": "2026-07-03T13:28:51Z",
-      "latest": true
+      "latest": false
     },
     {
       "num": 36,
