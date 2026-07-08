@@ -1,8 +1,18 @@
 {
   "channel": "David DiNardo, MBA",
-  "updatedAt": "2026-07-08T12:27:22.543Z",
-  "count": 38,
+  "updatedAt": "2026-07-08T15:28:25.040Z",
+  "count": 39,
   "episodes": [
+    {
+      "num": 39,
+      "title": "A Flood Destroyed Her Fashion Business. She Rebuilt in People's Closets",
+      "duration": "53:12",
+      "url": "https://www.youtube.com/watch?v=rad1uFC6444",
+      "videoId": "rad1uFC6444",
+      "thumbnail": "https://i.ytimg.com/vi/rad1uFC6444/maxresdefault.jpg",
+      "publishedAt": "2026-07-08T14:56:19Z",
+      "latest": true
+    },
     {
       "num": 38,
       "title": "Getting Laid Off at 24 Was the Best Thing That Ever Happened to Me",
@@ -11,7 +21,7 @@
       "videoId": "eYw2_KY4Nog",
       "thumbnail": "https://i.ytimg.com/vi/eYw2_KY4Nog/maxresdefault.jpg",
       "publishedAt": "2026-07-06T13:51:08Z",
-      "latest": true
+      "latest": false
     },
     {
       "num": 37,
