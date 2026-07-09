@@ -186,6 +186,20 @@ a { color: inherit; text-decoration: none; }
   color: #d8d6d2;
   margin: clamp(0.9rem, 2.5vw, 1.8rem) 0 0;
 }
+.intro-cta {
+  display: inline-block;
+  margin-top: clamp(1.6rem, 4vw, 2.6rem);
+  background: var(--fg);
+  color: #0a0a0a;
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: clamp(0.78rem, 1.1vw, 0.9rem);
+  letter-spacing: 0.14em;
+  padding: 1rem 2rem;
+  transition: background 0.2s, transform 0.1s;
+}
+.intro-cta:hover { background: #fff; }
+.intro-cta:active { transform: scale(0.97); }
 
 /* Hero ----------------------------------------------------------------- */
 .hero {
@@ -610,6 +624,7 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
 }
 
 @media (max-width: 520px) {
+  .intro-cta { display: block; text-align: center; padding: 1rem 1.2rem; }
   .site-footer { flex-direction: column; align-items: flex-start; }
   .join-form { flex-wrap: wrap; }
   .join-form .bracket { display: none; }
