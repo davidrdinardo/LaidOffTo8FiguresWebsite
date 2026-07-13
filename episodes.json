@@ -1,8 +1,18 @@
 {
   "channel": "David DiNardo, MBA",
-  "updatedAt": "2026-07-13T08:22:17.254Z",
-  "count": 39,
+  "updatedAt": "2026-07-13T12:14:29.744Z",
+  "count": 40,
   "episodes": [
+    {
+      "num": 40,
+      "title": "How I Bought 10 Properties in 10 Years Using My Corporation (Canada)",
+      "duration": "14:01",
+      "url": "https://www.youtube.com/watch?v=6A4AbZsqeA8",
+      "videoId": "6A4AbZsqeA8",
+      "thumbnail": "https://i.ytimg.com/vi/6A4AbZsqeA8/maxresdefault.jpg",
+      "publishedAt": "2026-07-13T10:28:41Z",
+      "latest": true
+    },
     {
       "num": 39,
       "title": "A Flood Destroyed Her Fashion Business. She Rebuilt in People's Closets",
@@ -11,7 +21,7 @@
       "videoId": "rad1uFC6444",
       "thumbnail": "https://i.ytimg.com/vi/rad1uFC6444/maxresdefault.jpg",
       "publishedAt": "2026-07-08T14:56:19Z",
-      "latest": true
+      "latest": false
     },
     {
       "num": 38,
