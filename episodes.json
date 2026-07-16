@@ -1,8 +1,18 @@
 {
   "channel": "David DiNardo, MBA",
-  "updatedAt": "2026-07-16T14:11:24.924Z",
-  "count": 40,
+  "updatedAt": "2026-07-16T16:24:00.058Z",
+  "count": 41,
   "episodes": [
+    {
+      "num": 41,
+      "title": "Fares Elsabbagh: From Subsidized Housing to a $20M Construction Company",
+      "duration": "1:30:08",
+      "url": "https://www.youtube.com/watch?v=uwXypWkiuRM",
+      "videoId": "uwXypWkiuRM",
+      "thumbnail": "https://i.ytimg.com/vi/uwXypWkiuRM/maxresdefault.jpg",
+      "publishedAt": "2026-07-16T14:57:23Z",
+      "latest": true
+    },
     {
       "num": 40,
       "title": "How I Bought 10 Properties in 10 Years Using My Corporation (Canada)",
@@ -11,7 +21,7 @@
       "videoId": "6A4AbZsqeA8",
       "thumbnail": "https://i.ytimg.com/vi/6A4AbZsqeA8/maxresdefault.jpg",
       "publishedAt": "2026-07-13T10:28:41Z",
-      "latest": true
+      "latest": false
     },
     {
       "num": 39,
