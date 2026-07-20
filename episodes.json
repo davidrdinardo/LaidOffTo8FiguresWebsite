@@ -1,8 +1,18 @@
 {
   "channel": "David DiNardo, MBA",
-  "updatedAt": "2026-07-20T14:25:01.360Z",
-  "count": 41,
+  "updatedAt": "2026-07-20T16:38:30.306Z",
+  "count": 42,
   "episodes": [
+    {
+      "num": 42,
+      "title": "Why I Fired My Marketing Agency and Became a Media Company",
+      "duration": "9:07",
+      "url": "https://www.youtube.com/watch?v=aYL91yaCwlM",
+      "videoId": "aYL91yaCwlM",
+      "thumbnail": "https://i.ytimg.com/vi/aYL91yaCwlM/maxresdefault.jpg",
+      "publishedAt": "2026-07-20T15:36:29Z",
+      "latest": true
+    },
     {
       "num": 41,
       "title": "Fares Elsabbagh: From Subsidized Housing to a $20M Construction Company",
@@ -11,7 +21,7 @@
       "videoId": "uwXypWkiuRM",
       "thumbnail": "https://i.ytimg.com/vi/uwXypWkiuRM/maxresdefault.jpg",
       "publishedAt": "2026-07-16T14:57:23Z",
-      "latest": true
+      "latest": false
     },
     {
       "num": 40,
