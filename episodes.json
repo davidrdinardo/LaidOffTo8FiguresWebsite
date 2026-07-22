@@ -1,8 +1,18 @@
 {
   "channel": "David DiNardo, MBA",
-  "updatedAt": "2026-07-22T18:14:34.721Z",
-  "count": 42,
+  "updatedAt": "2026-07-22T20:16:41.021Z",
+  "count": 43,
   "episodes": [
+    {
+      "num": 43,
+      "title": "Jean-Luc Boissoneault: He Trained Billionaires. Then Built a Yurt to Meditate 3 Hours a Day.",
+      "duration": "1:30:16",
+      "url": "https://www.youtube.com/watch?v=186OuQd-b1c",
+      "videoId": "186OuQd-b1c",
+      "thumbnail": "https://i.ytimg.com/vi/186OuQd-b1c/maxresdefault.jpg",
+      "publishedAt": "2026-07-22T18:48:17Z",
+      "latest": true
+    },
     {
       "num": 42,
       "title": "Why I Fired My Marketing Agency and Became a Media Company",
@@ -11,7 +21,7 @@
       "videoId": "aYL91yaCwlM",
       "thumbnail": "https://i.ytimg.com/vi/aYL91yaCwlM/maxresdefault.jpg",
       "publishedAt": "2026-07-20T15:36:29Z",
-      "latest": true
+      "latest": false
     },
     {
       "num": 41,
