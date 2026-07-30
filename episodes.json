@@ -1,8 +1,18 @@
 {
   "channel": "David DiNardo, MBA",
-  "updatedAt": "2026-07-30T18:23:06.154Z",
-  "count": 43,
+  "updatedAt": "2026-07-30T20:19:40.252Z",
+  "count": 44,
   "episodes": [
+    {
+      "num": 44,
+      "title": "Martin DeSouza: 1.7 Million Views in 30 Days: The Science of Going Viral",
+      "duration": "2:07:11",
+      "url": "https://www.youtube.com/watch?v=l_VwpG5ePnQ",
+      "videoId": "l_VwpG5ePnQ",
+      "thumbnail": "https://i.ytimg.com/vi/l_VwpG5ePnQ/hqdefault.jpg",
+      "publishedAt": "2026-07-30T19:18:47Z",
+      "latest": true
+    },
     {
       "num": 43,
       "title": "Jean-Luc Boissoneault: He Trained Billionaires. Then Built a Yurt to Meditate 3 Hours a Day.",
@@ -11,7 +21,7 @@
       "videoId": "186OuQd-b1c",
       "thumbnail": "https://i.ytimg.com/vi/186OuQd-b1c/maxresdefault.jpg",
       "publishedAt": "2026-07-22T18:48:17Z",
-      "latest": true
+      "latest": false
     },
     {
       "num": 42,
