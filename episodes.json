@@ -1,8 +1,18 @@
 {
   "channel": "David DiNardo, MBA",
-  "updatedAt": "2026-08-07T13:19:40.482Z",
-  "count": 44,
+  "updatedAt": "2026-08-07T15:00:57.923Z",
+  "count": 45,
   "episodes": [
+    {
+      "num": 45,
+      "title": "Chris Dore: AI Made Building Easy. Getting Customers Is the New Moat.",
+      "duration": "1:40:05",
+      "url": "https://www.youtube.com/watch?v=P7Jb-9IiAo0",
+      "videoId": "P7Jb-9IiAo0",
+      "thumbnail": "https://i.ytimg.com/vi/P7Jb-9IiAo0/maxresdefault.jpg",
+      "publishedAt": "2026-08-07T14:55:47Z",
+      "latest": true
+    },
     {
       "num": 44,
       "title": "Martin DeSouza: 1.7 Million Views in 30 Days: The Science of Going Viral",
@@ -11,7 +21,7 @@
       "videoId": "l_VwpG5ePnQ",
       "thumbnail": "https://i.ytimg.com/vi/l_VwpG5ePnQ/hqdefault.jpg",
       "publishedAt": "2026-07-30T19:18:47Z",
-      "latest": true
+      "latest": false
     },
     {
       "num": 43,
