@@ -1,8 +1,18 @@
 {
   "channel": "David DiNardo, MBA",
-  "updatedAt": "2026-08-14T16:01:13.511Z",
-  "count": 45,
+  "updatedAt": "2026-08-14T17:56:06.831Z",
+  "count": 46,
   "episodes": [
+    {
+      "num": 46,
+      "title": "If I Lost Everything Today: My Exact First 90 Days",
+      "duration": "10:27",
+      "url": "https://www.youtube.com/watch?v=IbVzYe1A0MA",
+      "videoId": "IbVzYe1A0MA",
+      "thumbnail": "https://i.ytimg.com/vi/IbVzYe1A0MA/maxresdefault.jpg",
+      "publishedAt": "2026-08-14T16:38:51Z",
+      "latest": true
+    },
     {
       "num": 45,
       "title": "Chris Dore: AI Made Building Easy. Getting Customers Is the New Moat.",
@@ -11,7 +21,7 @@
       "videoId": "P7Jb-9IiAo0",
       "thumbnail": "https://i.ytimg.com/vi/P7Jb-9IiAo0/maxresdefault.jpg",
       "publishedAt": "2026-08-07T14:55:47Z",
-      "latest": true
+      "latest": false
     },
     {
       "num": 44,
