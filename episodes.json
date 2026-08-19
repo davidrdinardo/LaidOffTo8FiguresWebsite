@@ -1,8 +1,18 @@
 {
   "channel": "David DiNardo, MBA",
-  "updatedAt": "2026-08-19T16:38:43.384Z",
-  "count": 46,
+  "updatedAt": "2026-08-19T17:32:38.159Z",
+  "count": 47,
   "episodes": [
+    {
+      "num": 47,
+      "title": "Hugh: He Ran a Law Firm. Then Built a $3M-Per-Location Swim School Empire.",
+      "duration": "1:12:11",
+      "url": "https://www.youtube.com/watch?v=_kOsU7-EFao",
+      "videoId": "_kOsU7-EFao",
+      "thumbnail": "https://i.ytimg.com/vi/_kOsU7-EFao/maxresdefault.jpg",
+      "publishedAt": "2026-08-19T17:28:14Z",
+      "latest": true
+    },
     {
       "num": 46,
       "title": "If I Lost Everything Today: My Exact First 90 Days",
@@ -11,7 +21,7 @@
       "videoId": "IbVzYe1A0MA",
       "thumbnail": "https://i.ytimg.com/vi/IbVzYe1A0MA/maxresdefault.jpg",
       "publishedAt": "2026-08-14T16:38:51Z",
-      "latest": true
+      "latest": false
     },
     {
       "num": 45,
