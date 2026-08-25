@@ -114,12 +114,15 @@ function initSearch() {
 
   const open = () => {
     overlay.hidden = false;
+    openBtn.setAttribute("aria-expanded", "true");
     setTimeout(() => input.focus(), 50);
     runSearch("");
   };
   const close = () => {
     overlay.hidden = true;
     input.value = "";
+    openBtn.setAttribute("aria-expanded", "false");
+    openBtn.focus(); // return focus to where the overlay was opened from
   };
 
   const runSearch = (q) => {
