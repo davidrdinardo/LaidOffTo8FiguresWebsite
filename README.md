@@ -59,11 +59,13 @@ Options in `youtube.config.json`: `maxEpisodes` (cap), `minDurationSeconds`
 - **Episodes** — handled by the YouTube sync above. To tweak the fallback shown
   before the first sync, edit `FALLBACK_EPISODES` at the top of `script.js`.
 - **Copy** — the story, contact, and join sections live in `index.html`.
-- **Social links** — replace the `#` placeholders in the Contact section.
-- **Email signup** — the form in `script.js` (`initJoin`) is front-end only.
-  Wire the `TODO` to your provider (ConvertKit, Beehiiv, Mailchimp, etc.).
+- **Social links** — YouTube / Spotify / Instagram / TikTok URLs are in the
+  Contact section of `index.html` (and mirrored in the JSON-LD `sameAs` list).
+- **Email signup** — the form posts to Beehiiv. To change providers, update the
+  form `action` in `index.html` (see `initJoin` in `script.js`).
 - **Colors / fonts** — tweak the CSS variables in `:root` (`--accent`, etc.).
-  Display type uses the system Helvetica/Arial stack; labels use Space Mono.
+  The big intro headline uses Anton (Google Fonts); body copy uses the system
+  Helvetica/Arial stack; labels use Space Mono.
 
 ## Deploy
 

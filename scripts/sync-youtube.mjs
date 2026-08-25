@@ -174,16 +174,44 @@ async function main() {
     latest: i === 0,
   }));
 
-  const payload = {
-    channel: title,
-    updatedAt: new Date().toISOString(),
-    count: episodes.length,
-    episodes,
-  };
-  await writeFile(join(ROOT, "episodes.json"), JSON.stringify(payload, null, 2) + "\n");
-  console.log(`✔ Wrote episodes.json (${episodes.length} episodes).`);
+  // Skip the write when nothing but the timestamp would change — otherwise the
+  // hourly Action commits (and redeploys the site) every run for no reason.
+  const outFile = join(ROOT, "episodes.json");
+  let previous = null;
+  try { previous = JSON.parse(await readFile(outFile, "utf8")); } catch { /* first run */ }
+  const unchanged =
+    previous &&
+    previous.channel === title &&
+    JSON.stringify(previous.episodes) === JSON.stringify(episodes);
+
+  if (unchanged) {
+    console.log(`✔ episodes.json already up to date (${episodes.length} episodes).`);
+  } else {
+    const payload = {
+      channel: title,
+      updatedAt: new Date().toISOString(),
+      count: episodes.length,
+      episodes,
+    };
+    await writeFile(outFile, JSON.stringify(payload, null, 2) + "\n");
+    console.log(`✔ Wrote episodes.json (${episodes.length} episodes).`);
+    await updateSitemapLastmod();
+  }
 
   await updateEpisodeStructuredData(episodes);
+}
+
+/* ---- Keep sitemap <lastmod> current when content changes ------------- */
+async function updateSitemapLastmod() {
+  const file = join(ROOT, "sitemap.xml");
+  let xml;
+  try { xml = await readFile(file, "utf8"); } catch { return; }
+  const today = new Date().toISOString().slice(0, 10);
+  const out = xml.replace(/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/, `<lastmod>${today}</lastmod>`);
+  if (out !== xml) {
+    await writeFile(file, out);
+    console.log(`✔ Updated sitemap.xml lastmod -> ${today}.`);
+  }
 }
 
 /* ---- Inject per-episode JSON-LD into index.html --------------------- */
