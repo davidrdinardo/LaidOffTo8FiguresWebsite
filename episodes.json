@@ -1,8 +1,18 @@
 {
   "channel": "David DiNardo, MBA",
-  "updatedAt": "2026-08-31T13:26:24.477Z",
-  "count": 47,
+  "updatedAt": "2026-08-31T19:55:50.952Z",
+  "count": 48,
   "episodes": [
+    {
+      "num": 48,
+      "title": "Throw Out Your Business Model: The 20/60/20 Rule for 2026",
+      "duration": "9:33",
+      "url": "https://www.youtube.com/watch?v=WVFnsJ-DVX0",
+      "videoId": "WVFnsJ-DVX0",
+      "thumbnail": "https://i.ytimg.com/vi/WVFnsJ-DVX0/maxresdefault.jpg",
+      "publishedAt": "2026-08-31T19:04:25Z",
+      "latest": true
+    },
     {
       "num": 47,
       "title": "Hugues: He Ran a Law Firm. Then Built a $3M-Per-Location Swim School Empire.",
@@ -11,7 +21,7 @@
       "videoId": "_kOsU7-EFao",
       "thumbnail": "https://i.ytimg.com/vi/_kOsU7-EFao/maxresdefault.jpg",
       "publishedAt": "2026-08-19T17:28:14Z",
-      "latest": true
+      "latest": false
     },
     {
       "num": 46,
