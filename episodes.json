@@ -1,8 +1,18 @@
 {
   "channel": "David DiNardo, MBA",
-  "updatedAt": "2026-09-02T23:59:34.285Z",
-  "count": 48,
+  "updatedAt": "2026-09-03T04:15:04.489Z",
+  "count": 49,
   "episodes": [
+    {
+      "num": 49,
+      "title": "Gustavo Sanchez: 40% of Your Revenue Is Going to Voicemail",
+      "duration": "1:25:26",
+      "url": "https://www.youtube.com/watch?v=Yj-7ul5HmvI",
+      "videoId": "Yj-7ul5HmvI",
+      "thumbnail": "https://i.ytimg.com/vi/Yj-7ul5HmvI/maxresdefault.jpg",
+      "publishedAt": "2026-09-03T01:24:38Z",
+      "latest": true
+    },
     {
       "num": 48,
       "title": "Throw Out Your Business Model: The 20/60/20 Rule for 2026",
@@ -11,7 +21,7 @@
       "videoId": "WVFnsJ-DVX0",
       "thumbnail": "https://i.ytimg.com/vi/WVFnsJ-DVX0/maxresdefault.jpg",
       "publishedAt": "2026-08-31T19:04:25Z",
-      "latest": true
+      "latest": false
     },
     {
       "num": 47,
