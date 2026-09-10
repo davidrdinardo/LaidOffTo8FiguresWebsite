@@ -1,8 +1,18 @@
 {
   "channel": "David DiNardo, MBA",
-  "updatedAt": "2026-09-10T14:14:32.539Z",
-  "count": 49,
+  "updatedAt": "2026-09-10T18:16:38.541Z",
+  "count": 50,
   "episodes": [
+    {
+      "num": 50,
+      "title": "Graham Barlow & Shauna Tragnam: Distribution Is the Only Moat Left",
+      "duration": "1:33:15",
+      "url": "https://www.youtube.com/watch?v=ZyExl_mXvYM",
+      "videoId": "ZyExl_mXvYM",
+      "thumbnail": "https://i.ytimg.com/vi/ZyExl_mXvYM/maxresdefault.jpg",
+      "publishedAt": "2026-09-10T17:05:51Z",
+      "latest": true
+    },
     {
       "num": 49,
       "title": "Gustavo Sanchez: 40% of Your Revenue Is Going to Voicemail",
@@ -11,7 +21,7 @@
       "videoId": "Yj-7ul5HmvI",
       "thumbnail": "https://i.ytimg.com/vi/Yj-7ul5HmvI/maxresdefault.jpg",
       "publishedAt": "2026-09-03T01:24:38Z",
-      "latest": true
+      "latest": false
     },
     {
       "num": 48,
