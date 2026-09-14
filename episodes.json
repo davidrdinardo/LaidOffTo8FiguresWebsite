@@ -1,8 +1,18 @@
 {
   "channel": "David DiNardo, MBA",
-  "updatedAt": "2026-09-14T13:50:43.771Z",
-  "count": 50,
+  "updatedAt": "2026-09-14T19:13:11.506Z",
+  "count": 51,
   "episodes": [
+    {
+      "num": 51,
+      "title": "Stop Hiring Employees. Here's Why I Only Hire Contractors Now",
+      "duration": "5:53",
+      "url": "https://www.youtube.com/watch?v=7FtJVIx5wFo",
+      "videoId": "7FtJVIx5wFo",
+      "thumbnail": "https://i.ytimg.com/vi/7FtJVIx5wFo/maxresdefault.jpg",
+      "publishedAt": "2026-09-14T15:43:46Z",
+      "latest": true
+    },
     {
       "num": 50,
       "title": "Graeme Barlow & Shawna Tregunna: Distribution Is the Only Moat Left",
@@ -11,7 +21,7 @@
       "videoId": "ZyExl_mXvYM",
       "thumbnail": "https://i.ytimg.com/vi/ZyExl_mXvYM/maxresdefault.jpg",
       "publishedAt": "2026-09-10T17:05:51Z",
-      "latest": true
+      "latest": false
     },
     {
       "num": 49,
