@@ -1,8 +1,18 @@
 {
   "channel": "David DiNardo, MBA",
-  "updatedAt": "2026-09-17T13:19:33.263Z",
-  "count": 51,
+  "updatedAt": "2026-09-17T18:06:41.429Z",
+  "count": 52,
   "episodes": [
+    {
+      "num": 52,
+      "title": "Antonios Assaad: Pro Soccer, a Five-Year Ban, and the Week That Rewired My Life",
+      "duration": "54:29",
+      "url": "https://www.youtube.com/watch?v=3D9wdZoz_J8",
+      "videoId": "3D9wdZoz_J8",
+      "thumbnail": "https://i.ytimg.com/vi/3D9wdZoz_J8/maxresdefault.jpg",
+      "publishedAt": "2026-09-17T13:49:26Z",
+      "latest": true
+    },
     {
       "num": 51,
       "title": "Stop Hiring Employees. Here's Why I Only Hire Contractors Now",
@@ -11,7 +21,7 @@
       "videoId": "7FtJVIx5wFo",
       "thumbnail": "https://i.ytimg.com/vi/7FtJVIx5wFo/maxresdefault.jpg",
       "publishedAt": "2026-09-14T15:43:46Z",
-      "latest": true
+      "latest": false
     },
     {
       "num": 50,
