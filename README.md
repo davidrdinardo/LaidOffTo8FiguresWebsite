@@ -29,7 +29,12 @@ python3 -m http.server 8000
 
 Episodes populate automatically from your YouTube channel. A GitHub Action
 (`.github/workflows/sync-youtube.yml`) runs hourly, calls the YouTube Data API,
-and writes `episodes.json` — which the site reads on load. No manual editing.
+and writes `episodes.json`. It also pre-renders the episode list, an inline
+data block, and per-episode structured data straight into `index.html`, so
+search engines and link previews see the titles without running JavaScript.
+No manual editing. To re-render `index.html` from the existing
+`episodes.json` without calling the API (e.g. after changing the row
+markup in `scripts/sync-youtube.mjs`), run `node scripts/sync-youtube.mjs --offline`.
 
 **One-time setup:**
 

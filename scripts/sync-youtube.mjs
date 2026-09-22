@@ -20,8 +20,11 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const API = "https://www.googleapis.com/youtube/v3";
 
 const KEY = process.env.YOUTUBE_API_KEY;
-if (!KEY) {
-  console.error("✖ YOUTUBE_API_KEY is not set. Add it as a repo secret.");
+// `--offline` skips the API and re-renders index.html from the existing
+// episodes.json (handy after changing the markup templates below).
+const OFFLINE = process.argv.includes("--offline");
+if (!KEY && !OFFLINE) {
+  console.error("✖ YOUTUBE_API_KEY is not set. Add it as a repo secret (or run with --offline).");
   process.exit(1);
 }
 
@@ -153,6 +156,13 @@ function fmtDuration(total) {
 /* ---- Main ------------------------------------------------------------- */
 async function main() {
   const cfg = await loadConfig();
+  if (OFFLINE) {
+    const prev = JSON.parse(await readFile(join(ROOT, "episodes.json"), "utf8"));
+    console.log(`▸ Offline: re-rendering index.html from episodes.json (${prev.episodes.length} episodes).`);
+    await updateEpisodeList(prev.episodes);
+    await updateEpisodeStructuredData(prev.episodes);
+    return;
+  }
   const { uploads, title } = await getUploadsPlaylist(cfg);
   console.log(`▸ Channel: ${title || "(unknown)"}  uploads=${uploads}`);
 
@@ -198,6 +208,7 @@ async function main() {
     await updateSitemapLastmod();
   }
 
+  await updateEpisodeList(episodes);
   await updateEpisodeStructuredData(episodes);
 }
 
@@ -211,6 +222,67 @@ async function updateSitemapLastmod() {
   if (out !== xml) {
     await writeFile(file, out);
     console.log(`✔ Updated sitemap.xml lastmod -> ${today}.`);
+  }
+}
+
+/* ---- Replace the text between two HTML comment markers --------------- */
+function replaceBetween(html, START, END, inner) {
+  const s = html.indexOf(START);
+  const e = html.indexOf(END);
+  if (s === -1 || e === -1 || e < s) return html;
+  return html.slice(0, s) + START + inner + END + html.slice(e + END.length);
+}
+
+function escapeHtml(str) {
+  return String(str).replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+  })[c]);
+}
+
+/* ---- Pre-render the episode list into index.html --------------------
+   Crawlers and link previews don't run script.js, so the titles live in
+   the HTML itself. Episodes past INITIAL_VISIBLE get `hidden`; script.js
+   reveals them on VIEW MORE and reads the inline JSON for search.
+--------------------------------------------------------------------- */
+const INITIAL_VISIBLE = 6;
+
+function episodeRow(ep, i) {
+  const hidden = i >= INITIAL_VISIBLE ? " hidden" : "";
+  const latest = ep.latest ? '<span class="ep-latest">LATEST</span>' : "";
+  return (
+    `      <li${hidden}>\n` +
+    `        <a class="episode-row" href="${escapeHtml(ep.url)}" target="_blank" rel="noopener" data-num="${ep.num}" title="${escapeHtml(ep.title)}">\n` +
+    `          <span class="ep-num">${String(ep.num).padStart(2, "0")}</span>\n` +
+    `          <span class="ep-title">${escapeHtml(ep.title)}</span>\n` +
+    `          <span class="ep-meta">${escapeHtml(ep.duration || "")}${latest}</span>\n` +
+    `        </a>\n` +
+    `      </li>\n`
+  );
+}
+
+async function updateEpisodeList(episodes) {
+  const file = join(ROOT, "index.html");
+  let html;
+  try { html = await readFile(file, "utf8"); } catch { return; }
+
+  const rows = "\n" + episodes.map(episodeRow).join("") + "        ";
+  let out = replaceBetween(html, "<!-- EPISODES_LIST_START -->", "<!-- EPISODES_LIST_END -->", rows);
+
+  const remaining = Math.max(0, episodes.length - INITIAL_VISIBLE);
+  const viewMore = remaining
+    ? `<button type="button" class="view-more">VIEW MORE (${remaining})</button>`
+    : `<button type="button" class="view-more" hidden>VIEW MORE</button>`;
+  out = replaceBetween(out, "<!-- VIEW_MORE_START -->", "<!-- VIEW_MORE_END -->", viewMore);
+
+  const data = episodes.map(({ num, title, duration, url, latest }) => ({ num, title, duration, url, ...(latest ? { latest } : {}) }));
+  // "</" can't appear inside a <script> body; JSON.stringify never emits it unescaped after this.
+  const json = JSON.stringify(data).replace(/<\//g, "<\\/");
+  out = replaceBetween(out, "<!-- EPISODES_DATA_START -->", "<!-- EPISODES_DATA_END -->",
+    `\n  <script id="episodes-data" type="application/json">${json}</script>\n  `);
+
+  if (out !== html) {
+    await writeFile(file, out);
+    console.log(`✔ Rendered ${episodes.length} episodes into index.html.`);
   }
 }
 

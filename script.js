@@ -2,9 +2,13 @@
    Laid Off To 8 Figures — interactions
    ========================================================= */
 
-/* ---- Fallback episode data -------------------------------------------
-   Shown only if episodes.json hasn't been generated yet. Once the YouTube
-   sync (GitHub Action) runs, episodes.json overrides this automatically.
+/* ---- Episode data ------------------------------------------------------
+   The sync script (scripts/sync-youtube.mjs) pre-renders the episode list
+   into index.html and embeds the same data in <script id="episodes-data">,
+   so crawlers see the titles and the page paints without a fetch. This file
+   only reveals hidden rows on VIEW MORE and powers search. If the inline
+   data is missing (first run before any sync), we fall back to fetching
+   episodes.json and rendering client-side.
 --------------------------------------------------------------------- */
 const FALLBACK_EPISODES = [
   { num: 34, title: "The Layoff", duration: "1:53:06", latest: true },
@@ -17,7 +21,6 @@ const FALLBACK_EPISODES = [
 const INITIAL_VISIBLE = 6; // episodes shown before "VIEW MORE"
 
 let episodes = FALLBACK_EPISODES;
-let visible = INITIAL_VISIBLE;
 
 /* ---- Helpers ---------------------------------------------------------- */
 function escapeHtml(str) {
@@ -26,34 +29,41 @@ function escapeHtml(str) {
   })[c]);
 }
 
-/* ---- Load episodes.json (falls back gracefully) ----------------------- */
-async function loadEpisodes() {
+function readInlineEpisodes() {
+  const el = document.getElementById("episodes-data");
+  if (!el) return null;
   try {
-    const res = await fetch("episodes.json", { cache: "no-cache" });
-    if (!res.ok) return;
-    const data = await res.json();
-    if (Array.isArray(data.episodes) && data.episodes.length) {
-      episodes = data.episodes;
-    }
+    const data = JSON.parse(el.textContent);
+    return Array.isArray(data) && data.length ? data : null;
   } catch {
-    /* offline or file missing — keep fallback */
+    return null;
   }
 }
 
-/* ---- Render episodes -------------------------------------------------- */
+async function fetchEpisodes() {
+  try {
+    const res = await fetch("episodes.json", { cache: "no-cache" });
+    if (!res.ok) return null;
+    const data = await res.json();
+    return Array.isArray(data.episodes) && data.episodes.length ? data.episodes : null;
+  } catch {
+    return null; /* offline or file missing */
+  }
+}
+
+/* ---- Client-side render (fallback only) ------------------------------ */
 function renderEpisodes() {
   const list = document.getElementById("episode-list");
   if (!list) return;
 
-  const shown = episodes.slice(0, visible);
-  list.innerHTML = shown.map((ep) => {
+  list.innerHTML = episodes.map((ep, i) => {
     const meta = ep.latest
       ? `<span class="ep-meta">${escapeHtml(ep.duration || "")}<span class="ep-latest">LATEST</span></span>`
       : `<span class="ep-meta">${escapeHtml(ep.duration || "")}</span>`;
     const href = ep.url || "#episodes";
     const ext = ep.url ? ' target="_blank" rel="noopener"' : "";
     return `
-      <li>
+      <li${i >= INITIAL_VISIBLE ? " hidden" : ""}>
         <a class="episode-row" href="${escapeHtml(href)}"${ext} data-num="${ep.num}" title="${escapeHtml(ep.title)}">
           <span class="ep-num">${String(ep.num).padStart(2, "0")}</span>
           <span class="ep-title">${escapeHtml(ep.title)}</span>
@@ -62,25 +72,24 @@ function renderEpisodes() {
       </li>`;
   }).join("");
 
-  // Toggle the VIEW MORE link based on remaining episodes
+  syncViewMore();
+}
+
+/* ---- VIEW MORE: reveal the hidden rows -------------------------------- */
+function syncViewMore() {
   const viewMore = document.querySelector(".view-more");
-  if (viewMore) {
-    if (visible >= episodes.length) {
-      viewMore.hidden = true;
-    } else {
-      viewMore.hidden = false;
-      viewMore.textContent = `VIEW MORE (${episodes.length - visible})`;
-    }
-  }
+  if (!viewMore) return;
+  const hiddenRows = document.querySelectorAll("#episode-list > li[hidden]").length;
+  viewMore.hidden = hiddenRows === 0;
+  if (hiddenRows) viewMore.textContent = `VIEW MORE (${hiddenRows})`;
 }
 
 function initViewMore() {
   const viewMore = document.querySelector(".view-more");
   if (!viewMore) return;
-  viewMore.addEventListener("click", (e) => {
-    e.preventDefault();
-    visible = episodes.length; // reveal all
-    renderEpisodes();
+  viewMore.addEventListener("click", () => {
+    document.querySelectorAll("#episode-list > li[hidden]").forEach((li) => li.removeAttribute("hidden"));
+    syncViewMore();
   });
 }
 
@@ -195,7 +204,17 @@ document.addEventListener("DOMContentLoaded", async () => {
   initJoin();
   initYear();
   initViewMore();
-  renderEpisodes();      // paint fallback immediately
-  await loadEpisodes();  // then upgrade to live YouTube data
+
+  const inline = readInlineEpisodes();
+  const prerendered = document.querySelector("#episode-list > li") !== null;
+  if (inline && prerendered) {
+    episodes = inline;   // HTML already painted by the sync script
+    syncViewMore();
+    return;
+  }
+  // Fallback: nothing pre-rendered yet — render client-side.
+  episodes = inline || FALLBACK_EPISODES;
   renderEpisodes();
+  const fetched = await fetchEpisodes();
+  if (fetched) { episodes = fetched; renderEpisodes(); }
 });
