@@ -61,7 +61,7 @@ function renderEpisodes() {
       ? `<span class="ep-meta">${escapeHtml(ep.duration || "")}<span class="ep-latest">LATEST</span></span>`
       : `<span class="ep-meta">${escapeHtml(ep.duration || "")}</span>`;
     const href = ep.url || "#episodes";
-    const ext = ep.url ? ' target="_blank" rel="noopener"' : "";
+    const ext = /^https?:/.test(href) ? ' target="_blank" rel="noopener"' : "";
     return `
       <li${i >= INITIAL_VISIBLE ? " hidden" : ""}>
         <a class="episode-row" href="${escapeHtml(href)}"${ext} data-num="${ep.num}" title="${escapeHtml(ep.title)}">
@@ -143,7 +143,7 @@ function initSearch() {
       ? matches
           .map((e) => {
             const href = e.url || "#episodes";
-            const ext = e.url ? ' target="_blank" rel="noopener"' : "";
+            const ext = /^https?:/.test(href) ? ' target="_blank" rel="noopener"' : "";
             return `
         <li>
           <a href="${escapeHtml(href)}"${ext}>

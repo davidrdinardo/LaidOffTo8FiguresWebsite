@@ -652,3 +652,189 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
   /* the universal selector can't override html's own rule, so repeat it here */
   html { scroll-behavior: auto; }
 }
+
+/* Episode pages ------------------------------------------------------- */
+.header-link {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+.header-link:hover { color: var(--fg); }
+
+.episode {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: clamp(6rem, 14vw, 9rem) var(--gutter) clamp(3rem, 6vw, 5rem);
+}
+.crumbs {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+}
+.crumbs a:hover { color: var(--fg); }
+.episode-kicker {
+  font-family: var(--mono);
+  font-size: clamp(0.72rem, 1vw, 0.85rem);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+.episode-title {
+  font-weight: 700;
+  font-size: clamp(2rem, 5.2vw, 4.4rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  margin: 0 0 clamp(1.5rem, 3.5vw, 2.5rem);
+  text-wrap: balance;
+}
+
+.player {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.player iframe, .player-poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.player-poster {
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  display: block;
+}
+.player-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.8);
+  transition: filter 0.25s, transform 0.4s;
+}
+.player-poster:hover img { filter: brightness(0.95); transform: scale(1.02); }
+.player-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(64px, 8vw, 96px);
+  height: clamp(64px, 8vw, 96px);
+  display: grid;
+  place-items: center;
+  background: var(--accent);
+  color: #0a0a0a;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  padding-left: 0.3rem;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+.player-poster:hover .player-play { transform: translate(-50%, -50%) scale(1.06); }
+
+.episode-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+.episode-btn {
+  display: inline-block;
+  background: var(--fg);
+  color: #0a0a0a;
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  padding: 0.9rem 1.5rem;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.episode-btn:hover { background: #fff; }
+.episode-btn.ghost {
+  background: none;
+  color: var(--fg);
+  border: 1px solid var(--line);
+}
+.episode-btn.ghost:hover { border-color: var(--fg); }
+
+.episode-notes { padding: clamp(3rem, 6vw, 5rem) 0 0; }
+.episode-body {
+  max-width: 68ch;
+  color: #c7c5c1;
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.7;
+}
+.episode-body p { margin: 0 0 1.2rem; }
+.episode-body a { color: var(--fg); border-bottom: 1px solid var(--muted-2); transition: border-color 0.2s; }
+.episode-body a:hover { border-color: var(--accent); }
+.episode-body .muted { color: var(--muted); }
+
+.episode-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  margin-top: clamp(3rem, 6vw, 5rem);
+}
+.episode-nav a, .episode-nav .nav-empty {
+  background: var(--bg);
+  padding: 1.4rem 1.5rem;
+  display: grid;
+  gap: 0.5rem;
+  min-width: 0;
+  transition: background 0.2s;
+}
+.episode-nav a:hover { background: var(--bg-soft); }
+.episode-nav .nav-label {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+}
+.episode-nav .nav-title {
+  font-weight: 700;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.episode-nav .next { text-align: right; }
+
+.episode-join { padding: clamp(3rem, 6vw, 5rem) 0 0; }
+.episode-join .join-headline {
+  font-weight: 700;
+  font-size: clamp(2rem, 4.5vw, 3.6rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  margin: 0 0 1rem;
+}
+.episode-join-copy {
+  color: #c7c5c1;
+  max-width: 52ch;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+}
+.episode-join .intro-cta { margin-top: 0; }
+
+@media (max-width: 520px) {
+  .episode-nav { grid-template-columns: 1fr; }
+  .episode-nav .next { text-align: left; }
+  .episode-nav .nav-empty { display: none; }
+}

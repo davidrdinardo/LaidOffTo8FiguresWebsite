@@ -12,12 +12,13 @@
  *   overridden by env vars YOUTUBE_HANDLE / YOUTUBE_CHANNEL_ID.
  */
 
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile, writeFile, mkdir, readdir, rm } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const API = "https://www.googleapis.com/youtube/v3";
+const SITE = "https://laidoffto8figures.com";
 
 const KEY = process.env.YOUTUBE_API_KEY;
 // `--offline` skips the API and re-renders index.html from the existing
@@ -126,13 +127,14 @@ async function addDurations(videos, minDurationSeconds) {
   const ids = [...byId.keys()];
   for (let i = 0; i < ids.length; i += 50) {
     const batch = ids.slice(i, i + 50);
-    const data = await api("videos", { part: "contentDetails", id: batch.join(",") });
+    const data = await api("videos", { part: "contentDetails,snippet", id: batch.join(",") });
     for (const v of data.items || []) {
       const secs = isoToSeconds(v.contentDetails.duration);
       const ep = byId.get(v.id);
       if (ep) {
         ep.seconds = secs;
         ep.duration = fmtDuration(secs);
+        ep.description = v.snippet?.description || "";
       }
     }
   }
@@ -158,9 +160,14 @@ async function main() {
   const cfg = await loadConfig();
   if (OFFLINE) {
     const prev = JSON.parse(await readFile(join(ROOT, "episodes.json"), "utf8"));
-    console.log(`▸ Offline: re-rendering index.html from episodes.json (${prev.episodes.length} episodes).`);
-    await updateEpisodeList(prev.episodes);
-    await updateEpisodeStructuredData(prev.episodes);
+    console.log(`▸ Offline: re-rendering site from episodes.json (${prev.episodes.length} episodes).`);
+    const before = JSON.stringify(prev);
+    assignSlugs(prev.episodes, prev.episodes);
+    if (JSON.stringify(prev) !== before) {
+      await writeFile(join(ROOT, "episodes.json"), JSON.stringify(prev, null, 2) + "\n");
+      console.log("✔ Stored slugs in episodes.json.");
+    }
+    await renderSite(prev.episodes, false);
     return;
   }
   const { uploads, title } = await getUploadsPlaylist(cfg);
@@ -172,6 +179,10 @@ async function main() {
   // Newest first
   videos.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
+  const outFile = join(ROOT, "episodes.json");
+  let previous = null;
+  try { previous = JSON.parse(await readFile(outFile, "utf8")); } catch { /* first run */ }
+
   const total = videos.length;
   const episodes = videos.map((v, i) => ({
     num: total - i, // newest gets the highest number
@@ -181,14 +192,13 @@ async function main() {
     videoId: v.videoId,
     thumbnail: v.thumbnail,
     publishedAt: v.publishedAt,
+    description: v.description || "",
     latest: i === 0,
   }));
+  assignSlugs(episodes, previous?.episodes || []);
 
   // Skip the write when nothing but the timestamp would change — otherwise the
   // hourly Action commits (and redeploys the site) every run for no reason.
-  const outFile = join(ROOT, "episodes.json");
-  let previous = null;
-  try { previous = JSON.parse(await readFile(outFile, "utf8")); } catch { /* first run */ }
   const unchanged =
     previous &&
     previous.channel === title &&
@@ -205,24 +215,207 @@ async function main() {
     };
     await writeFile(outFile, JSON.stringify(payload, null, 2) + "\n");
     console.log(`✔ Wrote episodes.json (${episodes.length} episodes).`);
-    await updateSitemapLastmod();
   }
 
-  await updateEpisodeList(episodes);
-  await updateEpisodeStructuredData(episodes);
+  await renderSite(episodes, !unchanged);
 }
 
-/* ---- Keep sitemap <lastmod> current when content changes ------------- */
-async function updateSitemapLastmod() {
-  const file = join(ROOT, "sitemap.xml");
-  let xml;
-  try { xml = await readFile(file, "utf8"); } catch { return; }
-  const today = new Date().toISOString().slice(0, 10);
-  const out = xml.replace(/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/, `<lastmod>${today}</lastmod>`);
-  if (out !== xml) {
-    await writeFile(file, out);
-    console.log(`✔ Updated sitemap.xml lastmod -> ${today}.`);
+async function renderSite(episodes, changed) {
+  await updateEpisodeList(episodes);
+  await updateEpisodeStructuredData(episodes);
+  await writeEpisodePages(episodes);
+  await writeSitemap(episodes, changed);
+}
+
+/* ---- Slugs: URL for each episode page, stable across runs ------------
+   Reuses the slug an episode already had in the previous episodes.json so
+   URLs never change when a title gets edited on YouTube.
+--------------------------------------------------------------------- */
+function slugify(str) {
+  let s = String(str)
+    .normalize("NFKD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/['’]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  if (s.length > 72) s = s.slice(0, 73).replace(/-[^-]*$/, ""); // cut at a word boundary
+  return s || "episode";
+}
+
+function assignSlugs(episodes, previous) {
+  const known = new Map(previous.filter((e) => e.slug).map((e) => [e.videoId, e.slug]));
+  const used = new Set();
+  for (const ep of episodes) {
+    let slug = known.get(ep.videoId) || slugify(ep.title);
+    if (used.has(slug)) slug = `${slug}-${ep.videoId.toLowerCase()}`;
+    used.add(slug);
+    ep.slug = slug;
+    ep.pageUrl = `${SITE}/episodes/${slug}/`;
   }
+}
+
+/* ---- Sitemap: homepage + one entry per episode ----------------------- */
+async function writeSitemap(episodes, changed) {
+  const file = join(ROOT, "sitemap.xml");
+  const today = new Date().toISOString().slice(0, 10);
+  let homeLastmod = today;
+  if (!changed) {
+    try {
+      const prev = await readFile(file, "utf8");
+      const m = prev.match(/<loc>https:\/\/laidoffto8figures\.com\/<\/loc>\s*<lastmod>(\d{4}-\d{2}-\d{2})<\/lastmod>/);
+      if (m) homeLastmod = m[1];
+    } catch { /* first run */ }
+  }
+  const urls = [
+    `  <url>\n    <loc>${SITE}/</loc>\n    <lastmod>${homeLastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>`,
+    ...episodes.map((ep) =>
+      `  <url>\n    <loc>${ep.pageUrl}</loc>\n    <lastmod>${(ep.publishedAt || today).slice(0, 10)}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>`),
+  ];
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>\n`;
+  let existing = "";
+  try { existing = await readFile(file, "utf8"); } catch { /* none */ }
+  if (xml !== existing) {
+    await writeFile(file, xml);
+    console.log(`✔ Wrote sitemap.xml (${urls.length} URLs).`);
+  }
+}
+
+/* ---- Episode pages: episodes/<slug>/index.html ----------------------- */
+function linkify(escaped) {
+  return escaped.replace(/https?:\/\/[^\s<]+[^\s<.,;:!?)\]]/g, (u) =>
+    `<a href="${u}" target="_blank" rel="noopener">${u.replace(/^https?:\/\/(www\.)?/, "")}</a>`);
+}
+
+function descriptionToHtml(desc, videoId) {
+  const text = String(desc || "").replace(/\r\n?/g, "\n").trim();
+  if (!text) return "          <p class=\"muted\">Show notes coming soon. Watch the full episode above.</p>";
+  const paras = text.split(/\n{2,}/).map((p) => p.trim()).filter(Boolean);
+  return paras.map((p) => {
+    let html = escapeHtml(p);
+    html = linkify(html);
+    // Timestamps like 12:34 or 1:02:03 at the start of a line -> seek links
+    html = html.replace(/^(\d{1,2}:\d{2}(?::\d{2})?)(?=\s)/gm, (t) => {
+      const parts = t.split(":").map(Number);
+      const secs = parts.length === 3 ? parts[0] * 3600 + parts[1] * 60 + parts[2] : parts[0] * 60 + parts[1];
+      return `<a href="https://www.youtube.com/watch?v=${videoId}&t=${secs}s" target="_blank" rel="noopener">${t}</a>`;
+    });
+    html = html.replace(/#(\w+)/g, '<span class="muted">#$1</span>');
+    return "          <p>" + html.replace(/\n/g, "<br />\n          ") + "</p>";
+  }).join("\n");
+}
+
+function metaDescription(ep) {
+  const first = String(ep.description || "").replace(/\r\n?/g, "\n").split(/\n{2,}/)[0]
+    .replace(/https?:\/\/\S+/g, "").replace(/\s+/g, " ").trim();
+  const base = first || `Episode ${ep.num} of Laid Off To 8 Figures: ${ep.title}. Real founders on building 8-figure businesses, hosted by David DiNardo.`;
+  return base.length > 158 ? base.slice(0, 155).replace(/\s+\S*$/, "") + "…" : base;
+}
+
+function humanDate(iso) {
+  if (!iso) return "";
+  return new Date(iso).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
+}
+
+function isoDuration(d) {
+  const parts = String(d || "").split(":").map(Number);
+  if (parts.some(Number.isNaN) || !parts.length) return undefined;
+  const [h, m, s] = parts.length === 3 ? parts : [0, parts[0], parts[1]];
+  return `PT${h ? h + "H" : ""}${m}M${s}S`;
+}
+
+function episodeJsonLd(ep, meta) {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "PodcastEpisode",
+        "@id": `${ep.pageUrl}#episode`,
+        name: ep.title,
+        url: ep.pageUrl,
+        episodeNumber: ep.num,
+        description: meta,
+        ...(ep.publishedAt ? { datePublished: ep.publishedAt } : {}),
+        ...(ep.thumbnail ? { image: ep.thumbnail } : {}),
+        ...(isoDuration(ep.duration) ? { timeRequired: isoDuration(ep.duration) } : {}),
+        partOfSeries: { "@type": "PodcastSeries", "@id": `${SITE}/#podcast`, name: "Laid Off To 8 Figures", url: `${SITE}/` },
+        author: { "@type": "Person", "@id": `${SITE}/#person`, name: "David DiNardo" },
+        associatedMedia: { "@id": `${ep.pageUrl}#video` },
+      },
+      {
+        "@type": "VideoObject",
+        "@id": `${ep.pageUrl}#video`,
+        name: ep.title,
+        description: meta,
+        thumbnailUrl: ep.thumbnail ? [ep.thumbnail] : undefined,
+        uploadDate: ep.publishedAt,
+        duration: isoDuration(ep.duration),
+        contentUrl: ep.url,
+        embedUrl: `https://www.youtube.com/embed/${ep.videoId}`,
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+          { "@type": "ListItem", position: 2, name: "Episodes", item: `${SITE}/#episodes` },
+          { "@type": "ListItem", position: 3, name: ep.title, item: ep.pageUrl },
+        ],
+      },
+    ],
+  }, null, 2).replace(/<\//g, "<\\/");
+}
+
+function navLink(ep, kind) {
+  if (!ep) return `<span class="nav-empty" aria-hidden="true"></span>`;
+  const label = kind === "prev" ? "&larr; PREVIOUS EPISODE" : "NEXT EPISODE &rarr;";
+  return `<a class="${kind}" href="/episodes/${ep.slug}/" rel="${kind}"><span class="nav-label">${label}</span><span class="nav-title">${escapeHtml(ep.title)}</span></a>`;
+}
+
+async function writeEpisodePages(episodes) {
+  const template = await readFile(join(ROOT, "scripts", "episode-template.html"), "utf8");
+  const dir = join(ROOT, "episodes");
+  await mkdir(dir, { recursive: true });
+  const keep = new Set(episodes.map((e) => e.slug));
+  let written = 0;
+
+  for (let i = 0; i < episodes.length; i++) {
+    const ep = episodes[i];
+    const older = episodes[i + 1]; // list is newest-first
+    const newer = episodes[i - 1];
+    const meta = metaDescription(ep);
+    const vars = {
+      TITLE: escapeHtml(ep.title),
+      META_DESCRIPTION: escapeHtml(meta),
+      CANONICAL: ep.pageUrl,
+      THUMB: ep.thumbnail || `https://i.ytimg.com/vi/${ep.videoId}/maxresdefault.jpg`,
+      VIDEO_ID: ep.videoId,
+      NUM: String(ep.num),
+      NUM_PADDED: String(ep.num).padStart(2, "0"),
+      DATE_ISO: (ep.publishedAt || "").slice(0, 10),
+      DATE_HUMAN: humanDate(ep.publishedAt),
+      DURATION: escapeHtml(ep.duration || ""),
+      DESCRIPTION_HTML: descriptionToHtml(ep.description, ep.videoId),
+      JSONLD: episodeJsonLd(ep, meta),
+      PREV_LINK: navLink(older, "prev"),
+      NEXT_LINK: navLink(newer, "next"),
+      YEAR: String(new Date().getFullYear()),
+    };
+    const html = template.replace(/\{\{(\w+)\}\}/g, (_, k) => (k in vars ? vars[k] : ""));
+    const pageDir = join(dir, ep.slug);
+    await mkdir(pageDir, { recursive: true });
+    const file = join(pageDir, "index.html");
+    let existing = "";
+    try { existing = await readFile(file, "utf8"); } catch { /* new */ }
+    if (existing !== html) { await writeFile(file, html); written++; }
+  }
+
+  // Remove pages for episodes that no longer exist (deleted / private videos).
+  for (const name of await readdir(dir)) {
+    if (!keep.has(name)) {
+      await rm(join(dir, name), { recursive: true, force: true });
+      console.log(`✔ Removed stale episode page: episodes/${name}/`);
+    }
+  }
+  if (written) console.log(`✔ Wrote ${written} episode page(s) under episodes/.`);
 }
 
 /* ---- Replace the text between two HTML comment markers --------------- */
@@ -251,7 +444,7 @@ function episodeRow(ep, i) {
   const latest = ep.latest ? '<span class="ep-latest">LATEST</span>' : "";
   return (
     `      <li${hidden}>\n` +
-    `        <a class="episode-row" href="${escapeHtml(ep.url)}" target="_blank" rel="noopener" data-num="${ep.num}" title="${escapeHtml(ep.title)}">\n` +
+    `        <a class="episode-row" href="/episodes/${ep.slug}/" data-num="${ep.num}" title="${escapeHtml(ep.title)}">\n` +
     `          <span class="ep-num">${String(ep.num).padStart(2, "0")}</span>\n` +
     `          <span class="ep-title">${escapeHtml(ep.title)}</span>\n` +
     `          <span class="ep-meta">${escapeHtml(ep.duration || "")}${latest}</span>\n` +
@@ -274,7 +467,7 @@ async function updateEpisodeList(episodes) {
     : `<button type="button" class="view-more" hidden>VIEW MORE</button>`;
   out = replaceBetween(out, "<!-- VIEW_MORE_START -->", "<!-- VIEW_MORE_END -->", viewMore);
 
-  const data = episodes.map(({ num, title, duration, url, latest }) => ({ num, title, duration, url, ...(latest ? { latest } : {}) }));
+  const data = episodes.map(({ num, title, duration, slug, latest }) => ({ num, title, duration, url: `/episodes/${slug}/`, ...(latest ? { latest } : {}) }));
   // "</" can't appear inside a <script> body; JSON.stringify never emits it unescaped after this.
   const json = JSON.stringify(data).replace(/<\//g, "<\\/");
   out = replaceBetween(out, "<!-- EPISODES_DATA_START -->", "<!-- EPISODES_DATA_END -->",
@@ -306,8 +499,9 @@ async function updateEpisodeStructuredData(episodes) {
       position: i + 1,
       item: {
         "@type": "PodcastEpisode",
+        "@id": `${ep.pageUrl}#episode`,
         name: ep.title,
-        url: ep.url,
+        url: ep.pageUrl,
         ...(ep.publishedAt ? { datePublished: ep.publishedAt } : {}),
         ...(ep.thumbnail ? { image: ep.thumbnail } : {}),
         partOfSeries: {
