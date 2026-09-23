@@ -168,26 +168,92 @@ function initSearch() {
   });
 }
 
-/* ---- Newsletter (custom form -> Beehiiv via hidden iframe) ------------ */
+/* ---- Newsletter (custom form -> Beehiiv submit API) ------------------
+   Posts JSON to the same endpoint Beehiiv's own embed uses, so we get a
+   real answer back and only say "you're in" when Beehiiv accepted the
+   address. If the request fails (network, bot check), we send the reader
+   to Beehiiv's hosted form instead of pretending it worked.
+--------------------------------------------------------------------- */
+const BEEHIIV_SUBMIT = "https://embeds.beehiiv.com/api/submit";
+
 function initJoin() {
   const form = document.getElementById("join-form");
   const note = document.getElementById("join-note");
   if (!form || !note) return;
+  const button = form.querySelector("button[type=submit]");
+  const buttonHtml = button ? button.innerHTML : "";
+  const idle = note.textContent;
 
-  form.addEventListener("submit", (e) => {
+  const setNote = (text, cls) => {
+    note.textContent = text;
+    note.className = "join-note" + (cls ? " " + cls : "");
+  };
+  const setBusy = (busy) => {
+    if (!button) return;
+    button.disabled = busy;
+    button.innerHTML = busy ? "SENDING\u2026" : buttonHtml;
+  };
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
     const email = form.email.value.trim();
-    const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    if (!valid) {
-      e.preventDefault(); // block the POST; show error
-      note.textContent = "Please enter a valid email.";
-      note.className = "join-note err";
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setNote("Please enter a valid email.", "err");
+      form.email.focus();
       return;
     }
-    // Valid: let the form POST to Beehiiv (targets the hidden iframe so the
-    // page doesn't navigate), then show confirmation.
-    note.textContent = "You're in — check your inbox to confirm.";
-    note.className = "join-note ok";
-    setTimeout(() => form.reset(), 50);
+
+    setBusy(true);
+    setNote("Sending\u2026", "");
+
+    let ok = false;
+    let message = "";
+    try {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 12000);
+      const res = await fetch(BEEHIIV_SUBMIT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        signal: controller.signal,
+        body: JSON.stringify({
+          external_embed_id: form.dataset.embedId,
+          publication_id: form.dataset.publicationId,
+          email,
+          captcha_token: null,
+          utm_source: "laidoffto8figures.com",
+          utm_medium: "website",
+          utm_campaign: "join-form",
+          referrer: location.href,
+          slim: false,
+          user_agent: navigator.userAgent,
+        }),
+      });
+      clearTimeout(timer);
+      let data = {};
+      try { data = await res.json(); } catch { /* non-JSON body */ }
+      ok = res.ok && data.success !== false;
+      message = data.message || "";
+      if (!ok && res.status === 403) message = "";
+    } catch {
+      ok = false;
+    }
+
+    setBusy(false);
+    if (ok) {
+      setNote("You\u2019re in \u2014 check your inbox to confirm.", "ok");
+      form.reset();
+      return;
+    }
+    if (message && /email|address|valid|already/i.test(message)) {
+      setNote(message, "err");
+      return;
+    }
+    // Couldn't reach Beehiiv from here: hand off to their hosted form.
+    const fallback = new URL(form.action);
+    fallback.searchParams.set("email", email);
+    window.open(fallback.href, "_blank", "noopener");
+    setNote("Couldn\u2019t sign you up from here \u2014 we opened Beehiiv\u2019s form in a new tab.", "err");
+    setTimeout(() => setNote(idle, ""), 8000);
   });
 }
 

@@ -71,8 +71,11 @@ Options in `youtube.config.json`: `maxEpisodes` (cap), `minDurationSeconds`
 - **Copy** — the story, contact, and join sections live in `index.html`.
 - **Social links** — YouTube / Spotify / Instagram / TikTok URLs are in the
   Contact section of `index.html` (and mirrored in the JSON-LD `sameAs` list).
-- **Email signup** — the form posts to Beehiiv. To change providers, update the
-  form `action` in `index.html` (see `initJoin` in `script.js`).
+- **Email signup** — the form posts JSON to Beehiiv's embed submit API
+  (`https://embeds.beehiiv.com/api/submit`, same endpoint Beehiiv's own embed
+  uses) with the embed and publication IDs set as `data-` attributes on the
+  form in `index.html`. Success/error text comes from Beehiiv's response; if
+  the request fails, the reader is sent to Beehiiv's hosted form instead.
 - **Colors / fonts** — tweak the CSS variables in `:root` (`--accent`, etc.).
   The big intro headline uses Anton (Google Fonts); body copy uses the system
   Helvetica/Arial stack; labels use Space Mono.

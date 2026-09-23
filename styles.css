@@ -540,6 +540,7 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
 }
 .join-form button:hover { background: #fff; }
 .join-form button:active { transform: scale(0.97); }
+.join-form button:disabled { opacity: 0.6; cursor: wait; }
 .join-note {
   font-family: var(--mono);
   font-size: 0.74rem;
@@ -550,7 +551,6 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
 }
 .join-note.ok { color: var(--accent); }
 .join-note.err { color: #ff6b6b; }
-.bh-sink { display: none; }
 
 /* Footer --------------------------------------------------------------- */
 .site-footer {
