@@ -2,9 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://laidoffto8figures.com/</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://laidoffto8figures.com/episodes/alex-lawson-food-bank-kid-to-17-employees-to-the-mayors-race/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://laidoffto8figures.com/episodes/im-38-heres-exactly-how-i-became-successful-in-10-minutes/</loc>
