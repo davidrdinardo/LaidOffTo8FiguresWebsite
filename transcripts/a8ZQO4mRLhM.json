@@ -1,0 +1,52 @@
+{
+ "videoId": "a8ZQO4mRLhM",
+ "num": 18,
+ "source": {
+  "kind": "youtube-captions",
+  "projectId": null,
+  "compositionId": null
+ },
+ "guest": null,
+ "summary": "Two weeks before Taxifi's March 1 launch, David DiNardo demos the feature that lets self-employed users upload their 2024 T1 so OCR fills in their profile and business details automatically. He explains the four onboarding steps for a sole proprietor, why users should get their prior return and bank connection ready before signing in, and the founders-rate waitlist discount.",
+ "takeaways": [
+  "Taxifi onboarding for a sole proprietor has four steps in year one: complete your profile, set up your business, connect your bank for income and expenses, and authorize the CRA.",
+  "Uploading your 2024 tax return lets OCR pull the profile and business fields automatically, so you do not answer questions or fill in forms; you just verify what the system found.",
+  "Before you sign in, get your prior-year return from your accountant or download it from Wealthsimple or TurboTax so you are not searching mid-session.",
+  "With last year's return and a bank connection in hand, David says the whole tax process should take under 15 minutes, likely under 10.",
+  "Bookkeeping is done by a human training the AI model, with the goal of fully automating bank-statement categorization so users never print 12 months of statements for an accountant again.",
+  "Joining the waitlist at taxifi.ai gives $100 off, a 50% discount, and locks in the founders rate for the first year."
+ ],
+ "speakersVerified": false,
+ "segments": [
+  {
+   "start": 0,
+   "speaker": "David DiNardo",
+   "text": "This app is meant to simplify things. God. There's two things you need to do. We are two weeks away from launching Taxifi March 1st. It's in the middle of February and I can't wait to show you this feature that we just implemented, tested, and it's going to make your life way easier while you do your taxes. This app is meant to simplify things. Think of well simple but for taxes. We want to make it so easy that any self-employed individual can come on and get their taxes done. This is phase one and this is one of the features that we implemented. So here you can see you'll be greeted with our sign-in page. Once you're signed in, there'd be two different channels that you can go after"
+  },
+  {
+   "start": 76,
+   "speaker": "David DiNardo",
+   "text": "Go through. One is a sole proprietorship and one is an individual. So, if you have a small business that you have to claim your total income and expenses, you would click your sole proprietorship channel and then you'd be entered into the actual app. And as you could see on the left hand side, there's the overview all the way to the authorized the CRA. So, there's four steps that you got to do for the first year. And then every year after that, it's going to get easier. One of the steps is complete your profile. Where we go through and ask you all your profile information, your first name, last name, information about you to get your taxes done. The second category is your business. So, what do you do for business? What's your business number, home office, vehicle, like items that we need to in order to complete your taxes, your income and expenses, that's where you connect your bank, and then we do all the bookkeeping for you. So, this is where we have a human training our AI model to eventually automate that process so that we scan your bank, pull out all your total income, all your expenses so you don't have to do anything. Gone are the days where you're going to have to go to an accountant, print out your 12 month bank statements,"
+  },
+  {
+   "start": 151,
+   "speaker": "David DiNardo",
+   "text": "Go through every entry, figure out what your bookkeeping is, tell your tax preparer in order for him to do the taxes. We're going to streamline everything. And then the fourth thing is authorize CRA. So we have to get access to your CRA. So you have to give us authorization. And this is a one-time thing that you have to do the first year. But this feature I'm talking about today is all about uploading your previous tax return. And it's filling out the first two categories, complete your profile and your business. So once you upload your 2024 taxes, it goes through your taxes and it pulls all the information so that we can get your 2025 taxes done. So before you enter the app, there's two things you need to do. Grab or reach out to your previous accountant and tell them to send you your last year's tax return, 2024 taxes. Or if you've done your taxes through a Wealthsimple or TurboTax, you can go online and then they have it stored where you can download it. Download it before you come on the app so it's easier and not you're not searching for anything. If you have your previous 2024 taxes as well as your bank, all your taxes will be done in less than 15 minutes. I would say less than 10 minutes to be quite honest with"
+  },
+  {
+   "start": 226,
+   "speaker": "David DiNardo",
+   "text": "You. So this feature is very simple. So you come on and you click upload your previous return. I have my previous return already ready to go. All I do is download and what we call OCR is going through all your tax information and just pulling what we need to get your taxes done. So we don't have to ask you any questions. You don't have to fill out any forms. You don't have to do anything. You just have to upload and let the system do its work. And that's the whole premise about this whole concept. Making things simple. Think about Wealthsimple but for taxes. Simplify your taxes so you never have to think about taxes again. Once it's done, it pulls all my information and pulls all the field necessary for us to complete your taxes. We made it so easy that all you have to do up front is get your tax return. And we're going to provide so much education of where to find your tax return, how to find it, so that when you come on the site, you're ready to go. We've tested this feature and so far the users that have been using it love it because it just simplifies them. It's eliminates the"
+  },
+  {
+   "start": 302,
+   "speaker": "David DiNardo",
+   "text": "Question of what did I do the previous year? Let the system tell you what you did the previous year and then you just have to verify it. This is one of many features that we were implementing. And again, I've been in this industry for 15 years. I've talked to the users. I've talked to everyone for so long that I know what the pain is and I'm continuing to work with clients and a focus group to make sure that we're giving products that work for you. Can't wait till March 1st. Here's one feature. Can't wait for you to log in and use it. Right now, we're offering $100 off, so 50% if you enter the waitlist. Links are all over my bio. You can go to taxifi.ai today to join the waitlist. It's a 50% discount just for entering your name and signing up. And all those individuals will be on the founders rate to make it even easier for the first year. So that you can help test it, help implement it, and spread the word."
+  },
+  {
+   "start": 364,
+   "speaker": "David DiNardo",
+   "text": "Look forward to talking with you on March 1st."
+  }
+ ]
+}

@@ -1,0 +1,383 @@
+{
+ "videoId": "MGVW-NRrPrk",
+ "num": 23,
+ "source": {
+  "kind": "youtube-captions",
+  "projectId": null,
+  "compositionId": null
+ },
+ "guest": "Pierce Ujjainwalla",
+ "summary": "Pierce Ujjainwalla, co-founder and CEO of Ottawa-based Knak, an AI campaign-creation platform used by enterprise marketing teams, describes how a two-day company hackathon with Claude Code changed how his roughly 150-person team builds product. He walks David DiNardo through running Knak as a side project for almost five years, the toxic-culture stretch that showed up in eNPS scores, why taking money from Insight Partners was one of his best decisions, and where AI is pushing email and lifecycle marketing next.",
+ "takeaways": [
+  "Pierce's hackathon lesson: with Claude Code, product requirements, design and engineering happen simultaneously, so a year-long roadmap should compress by 5x to 10x and a month-long task should now be scoped as a week.",
+  "Knak developers have shifted from writing code to reviewing it; Pierce is re-pointing sprint estimates because a 10-point story may now be a one-point story.",
+  "Pierce built both his companies as side projects: he cut his salaried job to four days at 80% pay to start a consulting firm, and ran Knak for nearly five years on the side until three large customers closed in one month.",
+  "Knak's early eNPS was around 100 (a good score is roughly 40); it fell as the company grew because Pierce hired the wrong leaders and then kept jumping back in, and fixing it meant changing people, working with an Enneagram coach and joining a TEC Canada peer group.",
+  "Pierce uses the interview process from the book 'Who' by Geoff Smart and still does the final interview for senior hires; a six-person people-and-culture team with two recruiters supports a company nearing 150 staff.",
+  "Knak sells mostly to US companies with $500 million or more in revenue, and most pipeline still comes from inbound demo requests on the website; outbound and partnerships are the channels being built now.",
+  "Pierce's hill to die on: email will stay a critical channel because it is the only list you fully own, while open rate is the metric he trusts least since Apple and security bots inflate it."
+ ],
+ "speakersVerified": false,
+ "segments": [
+  {
+   "start": 0,
+   "speaker": "Speaker",
+   "text": "At 24 years old, I was let go of my corporate job. By 34, I was financially free with an 8 figureure net worth. This podcast is all about taking adversities and turning them into financial success stories. I'm going to ask for one small favor, and that's for you to click subscribe. Now, let's get to the journey. Welcome, Pierce. Thank you. Thanks for coming. I know you're a busy guy. Over 100 employees doing your thing at Knak. AI is coming pretty fast and furious. Across the board. Has it impacted your business or what are you thinking in regards to AI right now? Yeah, it's it's unbelievable. Every night I go on X and I'm just like, what is happening now? I've never seen I've been in tech my whole life and I've never seen something move as fast as this. It's hard to keep up honestly. We just spent the last two days at Knak in an AI hackathon. Oh, cool. And so literally the whole company we we you know people came up with ideas on what to work on and we got"
+  },
+  {
+   "start": 76,
+   "speaker": "Speaker",
+   "text": "Into teams of like three to five people and just spent two days like building stuff out with with Claude like building out stuff with the marketing tools. It's the hardest part is just finding the time to experiment. And when you're experimenting as a founder, does shiny object syndrome is it like how do you match idea with execution with strategy? Like when you're doing the hackathon, I'm just thinking of your mind just be like, \"Wow, there's an opportunity there, there's an opportunity there.\" Like how do you stay strategic with all this noise? I think I myself had like 20 ideas that I would like to work on."
+  },
+  {
+   "start": 128,
+   "speaker": "Speaker",
+   "text": "But you know, I wanted I wanted all the employees to come up with their I wanted to hear the ideas of our team to so I only submitted two of the 20. I think it's like anything you just have you have to focus. But to me it's like the experimenting of the tools right now. I actually think it's good to just try like as many as you can. So like yesterday I was trying ElevenLabs which is something where yeah you can write anything and then it'll give you like a professional voice over which alone is crazy. I'm in marketing. So, I remember having to pay voice actors like thousands of dollars to do it and like, hey, change your pitch here and that. You can do it all online now. And that's, you know, I tried one of those. I tried like a video creation application, a couple of them. And I think really like you you need to just be trying things out. That's the phase we're in. And then you you see like, oh, this is good at that. This one,"
+  },
+  {
+   "start": 207,
+   "speaker": "Speaker",
+   "text": "It's not there yet. Sometimes that's the outcome as you just realize like, oh, it's it's not as good as I thought it was. And you're running your business. You're already you have a family. How many hours a day do you are you spending on trying new ElevenLabs and trying new AI tools and making sure that you're up to speed on all this stuff? Not as much as I would like to be perfectly honest. Like I I think I probably spend at least half an hour to an hour a day just keeping my pulse on things usually through X. So seeing what people are talking about, reading, watching videos, it's less personally right now about experimenting. I'm happy I had the last two days to do it, but like I feel you have to make the time. I I'm in a position where a lot of people on the Knak team are experimenting. They're showing me what they're doing. We really encourage them to do that."
+  },
+  {
+   "start": 278,
+   "speaker": "Speaker",
+   "text": "I don't personally h do it as much myself, but like I'll find something on X and then I'll be like, \"Hey got, you know, marketing team, check this out. Tell me what you think. Is it real?\" Because that that that I think is the big part you everything is like, \"Oh, it'll do anything for you.\" A big part of it is validating if it actually can do it. And the validation process that you're seeing these apps go through now. Are they are they there yet? Are they getting close to Yeah. Oh, yeah. Like I would say even in the last two or three weeks there's been like a huge leap forward where Yeah. Maybe maybe last year was that the February 5th. Yeah. I released I think this Claude Opus 4.5 and now there's Claude Opus 4.6. This is the Anthropic models are so much better, right? I always think of it in like terms of video games. Like the first video games that came out were really bad and now you"
+  },
+  {
+   "start": 357,
+   "speaker": "Speaker",
+   "text": "Play video games that are close to reality that we're getting closer and closer to that. But the the incremental improvements are happening so fast. And that's what I'm hearing from my developers too. Like from three months to now to six months ago like it's now moving at an exponential rate every day. You're seeing the same thing. Yeah. Like I have to share this story. So in in my hackathon group, I was with a lot of our AI developers at Knak. Could you tell us about the hackathon? Like what is it like? Yeah. Yeah. So it's basically it was just two dedicated days for the whole company where everybody signs up for a project that interests them and we all just work together on it. So brainstorm the idea, figure out what we're going to build. So like in my group, we built an integration directly into ChatGPT that would essentially use our application like the Knak application right within ChatGPT. And so you know we talked about hey"
+  },
+  {
+   "start": 438,
+   "speaker": "Speaker",
+   "text": "What exactly do we want it to do? What's the goal? And I watched our developer write out the prompt in Claude Code. M so basically you start with hey this is our goal this is what we wanted to do and there's and Claude comes up with like okay here's the plan here's how I would do that so we reviewed the plan we gave it feedback and then he was like okay I'm going to let it run let's go eat pizza for lunch I'm like what what do you mean like yeah it's going to do all the work while we're gone like this This is mindblowing things. It's funny. I'm laughing because I had the same experience with my developer. I did all the requirements of what we want to implement and I was asking him for feedback. He's like, let's just add ask Claude for the feedback. He'll give us better like instead of collaborating and really think he's like just send it to who? I kept in the group. I'm like, when do we do the work, right? You know, like I'm like, where's where's the hard part? Where's the work part"
+  },
+  {
+   "start": 515,
+   "speaker": "Speaker",
+   "text": "Where we're going to like it's going to be hard? And where is that? There was it's all good. So, it was it was just full of creation versus doing. Yeah. Like I would say the hardest part was we had to every group had to make a video like a 60-second video to show the company what they did and that there's not like a Claude Code for video yet. I tried. Are you going to create one? There are companies that are trying to make this and that's like I was experimenting with those But you can't just take like a script like I I used ChatGPT to come up with like a script or a Super Bowl type ad of what we built and like it would be nice to just take that and say make this commercial that doesn't exist. Well, and that's a good point. Development's happening exponentially, but distribution isn't happening as fast as development. Right. And I think that it will I I just"
+  },
+  {
+   "start": 590,
+   "speaker": "Speaker",
+   "text": "Think that right now these the race is like on development. How do we how do we do AI development and that's where all the models are focusing like a ton of time all their resources on. But I mean eventually if they're like hey okay that's solved. What's the next thing? Oh, it's like video creation. Let's do that now. Right. And I I'm sure that that will be where it goes eventually. And now, and I saw this on X2 where the speed of development is happening first. Once development gets automated fully, then everything else will come from it because now you can automate developing. Right. Right. And I think it's like with this new release, it's very close. Like I have, you know, developers on our team who they're making almost all their code through Claude Code and their job is now like reviewing code versus writing it."
+  },
+  {
+   "start": 662,
+   "speaker": "Speaker",
+   "text": "So, I I asked one of them this week. I'm like, \"Hey, what's like do you feel like you're losing your skills, your coding skills, because you're not writing it?\" And he's like, \"No, I I'm still reviewing it all and checking it, but it's a diffy different process than a month ago.\" And you as a founder now are seeing this. The first thing that goes through my mind is okay, do I have to get them more work? Do I how does that business relationship go first? And then the second question I have is junior people or people starting out like they don't have the understanding of being able to review the code or have that experience."
+  },
+  {
+   "start": 713,
+   "speaker": "Speaker",
+   "text": "Yeah. What's your thought? Yeah. On the more work thing, I think it's actually like the old way that you used to develop software is is changed, right? It used to be like product gets the requirements and comes up with a requirement dock and then designers design it all and then the engineers come and they build it. It's like all of those three things. Can happen simultaneously with like a Claude Code and Lovable. So, we're in the process right now of like changing the whole way that that we build product and I think it's going to collapse down the time for all of those. So what we what what we used to be able to do in like a year-long road map should be like I don't know what the multiple is if it's five times or 10 times or more than that amount of thing that you could build. Wow. Yeah."
+  },
+  {
+   "start": 787,
+   "speaker": "Speaker",
+   "text": "So you're just expediting speed is everything right now. Yeah. Like I think essentially like if you have a hundred software developers it could be like you have a thousand or 10,000. So it becomes more about like what you need to build what your goals are and trying to make it all work together. Your other question was around I forgot your talent juniors. Oh yeah. So I think the advantage that the junior developers have is that they don't have like a preconceived notion of this is how I used to do it. They're very like adaptable. We had one group in the hackathon with like couple of co-op students and some of our new developers and like they were they were killing it."
+  },
+  {
+   "start": 854,
+   "speaker": "Speaker",
+   "text": "I I I know a lot of people are talking about like oh how are they going to learn? How are they going to get to be better developers? I don't know the answer of that. I'm not I'm not like technical enough. I don't like to know. But I I think it's just they have an advantage too, which is like they're not stuck in their ways. I think the worst the people who need to really work the hardest are the ones who have been doing stuff like the old pre AI engineering methods for like 20 years, right? It's very different to like shift to this new way of building. And now going back to the 100 developers equals actually a thousand developers because they're a lot more efficient or effective through these through these applications."
+  },
+  {
+   "start": 910,
+   "speaker": "Speaker",
+   "text": "You as the the the owner, the founder are building these product road maps for the year. Do it before the year starts. Yeah. Yeah. Like how do we just did it? Right. So you just did it. What's your mindset of like we can add more stuff like 100%. Like add everything and see what Yeah. Now it's like if if you know whatever took you a month, you can't keep it at a month, right? It needs to be like a week now. So I want to try and compress all of the timelines down. But I that's it's all new, right? I think it's going to be uncomfortable for people and and lots of people be like, \"It's impossible to to do that.\" But I think people take as much time as you give them, right? If you give them a month, it'll take a month. If you give them the two days, it'll take two days. So, and that was my follow-up question to accountability. Like how do you I mean when I ran my accounting company it was here's the metrics you have to hit here's you know the training around it here's all this because everything was set up"
+  },
+  {
+   "start": 989,
+   "speaker": "Speaker",
+   "text": "On it when we don't know how fast things are being developed to then the new release of these new models could 10x the production of this model yeah I think like how do you keep up with the human resource around everything too I think in a lot of off were development processes that like teams will take on like a certain amount of points of work. That's that's how we do it anyways. It's like hey this thing is five points or 10 points and that was a measure of how big the project was. So now like you need to now factor that in into the points that something takes."
+  },
+  {
+   "start": 1034,
+   "speaker": "Speaker",
+   "text": "So maybe before something that was 10 points is actually one now. We're still I think trying to figure out exactly like how much that has changed. But that's one way that you can do it. And I I I love that. To that point collaboration like how do you how did you build your culture where you can have these open conversation? It sounds like you're h you you're able to have these open conversations with developers and you guys are all figuring it out together. Yeah, is change management are you are you facing a lot of culturally shifts on on stuff or your culture has embraced it? Yeah. Like I'm a big believer in like core values and so we have like a lead with transparency is one one embrace the growth mindset is another get done is another. So I think the those are three that they're all take calculated risks is another one like basically our whole culture has been built around like moving fast experimenting with things."
+  },
+  {
+   "start": 1112,
+   "speaker": "Speaker",
+   "text": "So this isn't that different for us like it's a different tool but it's not different in terms of how we've always worked. And tell us a little bit about what Knak is. Yeah, so Knak is an AI campaign creation platform and what that means is like if you're a big company and you're trying to run your digital campaigns. So for us, we think of a campaign as like emails, marketing emails and landing pages. At at enterprise companies, they're they have big teams of people who are building these out and they're promoting like events, they're promoting content, they're doing newsletters, right? And they use the Knak platform to build out all of those digital assets. Knak is essentially like the creation layer within their company. Where all of that work happens."
+  },
+  {
+   "start": 1181,
+   "speaker": "Speaker",
+   "text": "And you've been doing it for you just celebrated your 10 year anniversary. 10 years. Yeah. We're coming up on 11 in in April. And I want to know more about how you got to Knak and and where you are now and a little bit of the background story because I think people also see the big sign on Prince of Wales and you know the the podcast and where you are now. But I'd love to go back to how you got started. But before we do that, we talk about speed and we talked about a lot of your core values is, you know, break do like get stuff done, right? The speed in Canada versus the speed in the US right now. How are you keeping because the culture right now is especially in Ottawa, it's not as entrepreneurial and not everyone is thinking to win and move so quickly and knowing what's out there and and really escalating that. Yeah. How do you have that mindset where you're not just competing with Canadian companies, you're competing with US companies who are raising millions and millions of dollars and are moving so"
+  },
+  {
+   "start": 1259,
+   "speaker": "Speaker",
+   "text": "Quick. How do you keep that culture and how do you how do you compete with with a different culture? Yeah, I don't know. I don't I think in Ottawa it's almost impossible to really know like the speed of some of these AI companies and and how many hours they're putting in and like you know I've heard stories of the Lovables of the world like you know they're they're working like 16hour days seven days a week I don't think in Ottawa like that I I've accepted that it's not possible to build that kind of culture in Ottawa. I just think there's too many like external factors forces against doing that."
+  },
+  {
+   "start": 1315,
+   "speaker": "Speaker",
+   "text": "I think being in a government town makes it really hard to do that cuz like these are polar opposites of peace. Yeah. So we try and find people who are really looking to you know live in like a high growth fastpaced software company. But that means different things for different people. And I think in Ottawa that means something different than like the Bay Area. You know, I I was talking to my investor gets all of their CEOs together every year, and I was talking to a founder from Israel, and he was telling me like, \"Oh, our culture is so bad. Like, people go home at 5:00, there's no one in the office after that.\" I was just like, that's very different. Yeah. I'm like, I would love that. Yeah. Yeah."
+  },
+  {
+   "start": 1381,
+   "speaker": "Speaker",
+   "text": "Yeah. No, and to to your point, I just had a get together. I went to university in the States on a soccer scholarship. So, all the soccer guys got together a couple weeks ago. All Americans, a lot of investment bankers, wealth creation guys. Even seeing them, I mean, physically they look awful. Like, they don't definitely don't take care of themselves. Eyes are are black and all that, but I'm like, \"How's your how's everything going in your work?\" It's amazing. Like, we've never made so much money, you know, this year, last year. Like they're just going all in on their businesses and spending that 14 16 hours or whatever to win and to really take AI to the next level and take all these businesses that they're part of to the next level. And I I I see this culture that we're in fortunate for a balance of life, but the other way from a a tech forward competing perspective, it is very nerve-wracking too to to be Yeah. Yeah. I have a lot of thoughts on this. Like when I started my company, that was"
+  },
+  {
+   "start": 1459,
+   "speaker": "Speaker",
+   "text": "Me. Like I worked crazy hours, but it like I it didn't feel like work. I loved it. I love what I was doing. And I also didn't have kids at that time, you know? So, I Yeah, I feel like you have to be driven to do it like in full transparency. That's not me anymore. Like I'm not pulling 16-hour days and I I don't really want to either at the stage that I'm at but you you know you look at the numbers for like Canadian GDP growth and efficiency and we're we have problems in Canada for that and I think the general culture is very it's the complete opposite of like the American culture of how hard they work. And when you're meeting with you're traveling to the States a lot for for work. What are you seeing? Yeah. Like we have a lot of customers in the Bay Area and it's just it's a different world than here."
+  },
+  {
+   "start": 1539,
+   "speaker": "Speaker",
+   "text": "They just have an urgency, right? And I think the I think one of the benefits of being a company in the Bay Area is that you you see everyone else the progress they're making. You hear the stories. You see how hard they're working and so like it's very much in your face and you everything that whole ecosystem it's like you know you get up you go to the office you're you know you're meeting with people from your company or other tech companies you go for drinks after work you go out for dinner with other people from other companies that doesn't happen in Ottawa your whole life revolves around there for sure and and everyone you're surrounded by is in this like especially now this AI space which is like it's like a time warp and what are the what's the conversations there about AI?"
+  },
+  {
+   "start": 1606,
+   "speaker": "Speaker",
+   "text": "I think it's I think they there's just like a lot of curiosity about what people are doing, how it's helping them, what tools they're using, who's getting funded, what, you know, what's the hot company to work at that people want to get into, you know, who got acquired. That's the other thing I think they they see a lot more oh the success stories of people who have actually done it and I think that that is also another driver too but I agree there's also some downsides to that takes a toll on it takes a toll yeah hard to have like you know raise a family and balance I think means different things to different people but I would say in Canada our balance balance is kind of more skewed to yeah, like personal balance versus work balance. I think we're better than Europe."
+  },
+  {
+   "start": 1673,
+   "speaker": "Speaker",
+   "text": "I I think they're on a I I was in Paris couple summers ago and my wife and I were on vacation. And we went out for lunch and there was like a business meet two guys meeting behind us and like my wife and I took like an hour and a half lunch and we're like all right we're done. We're going to leave. They were still ordering desserts and more coffee. You know, I do part of me loves that. I love that they could do that. I'm just I'm not wired that way. And when we talk about wired, were you did you come from an entrepreneurial family? How did you become an entrepreneur? Yeah, my both my parents like had their own businesses. So, I definitely saw that growing up. Like my dad was a doctor, but he had his own practice. My mom was like a psychologist and she had her own practice. So they were both running their own businesses. So what that was something that was just kind of normal to me. And you were born and raised in Ottawa. I was born in North Bay. And then I"
+  },
+  {
+   "start": 1749,
+   "speaker": "Speaker",
+   "text": "Moved to Ottawa like when I was one or something. Okay. So early on for the most part. I've lived in a few other places, but always come back. Always come back here. And went to school in Ottawa. Yeah, I went to Carleton. I did international business at Carleton. That's where I discovered marketing and I was like, \"Oh, I love I love marketing.\" What do you love about marketing? I love that it combines like a creative element with numbers because I I those were like two things that I always enjoyed. And I and so when when I was like, \"Oh, you can actually like combine those two things and that's a career.\" That I don't know. It's the first class I took that I was like genuinely excited about."
+  },
+  {
+   "start": 1808,
+   "speaker": "Speaker",
+   "text": "It's funny you say that because creation and numbers are two different sides of the brain. Yeah, I know. And when I'm when I ran in my accounting company, I was always numbers and creating became so difficult. Yeah. Yeah. And then the last three years, I was creating, but I wasn't doing any numbers. And now that I'm doing going back to running a an accounting company or tax business, I'm my mindset's always going back to the numbers versusation. So that's that's a Yeah, that's an interesting I think like I don't know maybe I get bored really quickly. So I feel like doing the creative part is like using one part of my brain and then I like to go to the other side. And you know, to me, what I loved about marketing is creating that campaign and trying to do different things to connect with people and then launching it and then looking at the numbers and trying to figure out like, hey, why did that correlate? Why did that work or why did that not work? And like what was the thing that did work? Okay, how do I bring that into"
+  },
+  {
+   "start": 1887,
+   "speaker": "Speaker",
+   "text": "The next thing? And do you feel like those are your two com really competitive advantage while being an entrepreneur? Or do you stay in those two lanes a lot? I think my advantage I I think it it's helpful that I can do both do numbers and do the creative side like I can be analytical and creative. I think too just for what I do, I've always loved technology and so because I've genuinely love it. It's like doesn't feel like work. Like even this researching AI, I'm always looking into it. It's not cuz I'm like, \"Oh, I gotta right. I got to stay on top of it.\" Like I Yeah, I'm curious about what's happening. And so putting all of that together, and I I always say like the businesses that I've started are things that I am genuinely like curious or passionate about. And so that's given me a lot of energy to continue to like push the envelope forward"
+  },
+  {
+   "start": 1965,
+   "speaker": "Speaker",
+   "text": "And being curious and cur and being curious and motivated and engaged for 10 years in your business usually like the shiny object syndrome. Yeah. Yeah. I mean, and I told you I'm someone who gets bored quickly or like I never had a job for more than like two or three years, right? So, this is like very long for me. But it's at Knak I I'm still building the thing that I wish I had as a marketer, right? Like every day I'm still like, \"Hey, that's I'm still buil I wish I had this thing when I was a marketer.\" And so just continuing to see that. And I think as the company has grown, the company has been the thing that I've been really curious about. Like it's hard. As you add more people, there's like more challenges, more puzzles. I like to do I like to like solve problems. So as the companies got bigger, I feel like that alone is its own set of problems that you need to"
+  },
+  {
+   "start": 2040,
+   "speaker": "Speaker",
+   "text": "Solve. And do you look at everything like a problem that you need to solve? Too much though sometimes like if you ask the people that I work with like they'll show me something and they'll be like you know 99 amazing things but just my brain goes to like okay that could be better like this doesn't work. So I I've actually had to work on that to be honest because it's not it's hard to work with that kind of personality when you're depicking like you're Yeah. When you're when people can feel like oh he he doesn't see all the good things. He only sees the things that are wrong. And so I think that's actually just being aware of how you give people feedback and making sure that you acknowledge like to me I had to learn my brain is like acknowledging the good parts is a waste of time."
+  },
+  {
+   "start": 2106,
+   "speaker": "Speaker",
+   "text": "Okay, that's how I used to think because it's not helping us get to our ultimate goal. The the psychology around your mom. She was a psychologist. Did that help? You dip like I worked with actually the thing that really helped me with this was working with an Enneagram coach. Okay. What's that? It's like a personality type. Okay. It but it's like a very detailed. So there's nine different types that you can be. I'm a type eight active controller. Okay. And so knowing that, like my default is like being on a bullet train. And so it feels like I'm getting off the train if I'm like, hey, that was really good what you did, but actually we need to look at this thing. That that first part would feel like, oh, I'm I'm slowing down here, but what I'm actually doing is like building people up."
+  },
+  {
+   "start": 2169,
+   "speaker": "Speaker",
+   "text": "Giving them confidence, wanting them to continue to do better work. I didn't see that at first. Yeah. Because I do the same as you for sure. I see that one thing and I'm like, why don't we do that better type of thing? But the awareness that you have to learn as an entrepreneur too to be able to know where you stand too and keep on working on yourself. Yes. Because that person might not come to you next time and offer. Totally, man. Yeah. Yeah. Like I had I had this experience where I was at a trade show and you know in the in the and that's the thing when you're an entrepreneur you you use the only way that you build a big company is that you did everything like you I had to do everything back in the day. So like at the trade shows I would be the one at the booth. I'd be the one pitching people, trying to sell people."
+  },
+  {
+   "start": 2231,
+   "speaker": "Speaker",
+   "text": "And you know, you go to these shows, we spend like half a million dollars at some of these shows. It's a big investment for us. And so I remember recently I was at the booth and I saw someone from like Fortune 100 company talking to one of our junior BDRs, which is like entrylevel sales job. And my instinct was like, I got to jump in there and like help him. But I was like, no, I'm going to get off the bullet train. And he did like an awesome job. Like he killed it. And after I was like, man, great job. You know, and I think for him that was like so much confidence for him, whereas before if I just went in there and like was like, I'll take it from here. How is he going to feel? Yeah. You've demotivated him and you don't know that like it would have just been an awkward conversation, too, like just jumping into a Yeah. Yeah. Totally. Who's this guy? Yeah. Get out of here. Yeah, I know. So, yeah, those are the"
+  },
+  {
+   "start": 2310,
+   "speaker": "Speaker",
+   "text": "Things that it's cool when you can recognize that in yourself and then change. Yeah. And I think too to add to your point, the business is your baby too. Yeah. Where it's like you want the control of it fortunately or unfortunately on a lot of situations because you're tied to everything. And going back to the mindset thing when you're pay like just from a a coping thing for other entrepreneurs when your first payroll run is $10,000 that feels a little overwhelming at the start. Then it becomes $50,000, then a hundred,000, then you're going to trade shows for half a million dollars. And to understand not to jump in when you are a numbers guy and you know how much you invested into this trade show for it to be perfect or or successful and be able to promote or encourage that individual to do his thing or her her thing in that interview. It's like how do you how do you hold everything on"
+  },
+  {
+   "start": 2386,
+   "speaker": "Speaker",
+   "text": "Your shoulders but let let it go too, right? Let things happen. Yeah. I I think like the only way that I can do that now is by failing before. So like I didn't I didn't used to operate like that and like our culture got pretty bad at one point. Okay. And and I saw what happens if you don't if you don't evolve yourself. When you mean bad, you mean toxic? Toxic. Yeah. Toxic. You know, people worrying about feeling like, oh, I can't take a risk because it's gonna be wrong and I'm gonna get fired and like living in fear, which was obviously not intentional, but but I think it's really key for leaders to like understand how they come off to other people. Was someone did someone come to you and say or did you just see Well, we saw it in like our eNPS. Okay."
+  },
+  {
+   "start": 2463,
+   "speaker": "Speaker",
+   "text": "So, like when we were small company, our eNPS like employment, employee net promoter score. So, like a good score is like 40, right? Like 50 is like we were 100 in our early days. Then as the company grew and what what I really needed to do was like let go of things like trust people. I didn't do that at first. And I also hired leaders that who who weren't the right leaders. And so then then it was like a spiral because I would give them the work I wanted to let go but they weren't the right people. They can do it at the level that we needed it to."
+  },
+  {
+   "start": 2511,
+   "speaker": "Speaker",
+   "text": "So then I would have to get in there, right? And then that kind of like snowballs big time. So I I think yeah, the biggest thing is hiring the right people. If you have the right people, then it's easy to be hands off, right? Because you trust them. They can, if you hire the right people, do it better than you could have. And so everything's good. But if you don't have the right people, you're going to notice that the work isn't at the level that you want it to be. And then you're going to want to jump in. Right? But even sometimes sometimes the work will you will have the right people. The work isn't what you want it to be, but they're new or they're learning or they just do it a different way than you would have done it. You got to give them time."
+  },
+  {
+   "start": 2564,
+   "speaker": "Speaker",
+   "text": "And I think another thing that's helped me is we have very clear goals, targets. I trust my leaders are hitting are going to hit their targets, right? How they get to them, that's on you. But I think that was that that was something that took a while to learn that. And then once you started seeing the eNPS score go down from Yeah. What it was, you looked at yourself first and then you No. That like the team Yeah. And honest I think there was Yeah. So if I go back, I think there was like, hey, it's clear there's some something has to change in the company and there were there were some people that probably didn't fit the culture that we were trying to build. So we needed to do that. But I think it was after that where I'm like, hey, there's probably still more that needs"
+  },
+  {
+   "start": 2641,
+   "speaker": "Speaker",
+   "text": "To get done. And and and then you started making decisions. Yeah. And that that was when I was I was like, \"Hey, someone introduced me to this coach a while ago, but I wasn't ready for it yet.\" Then I I had to come back to it. So a mentor, a coach, do you are you still do a coach? Yeah. So I I'm part of TEC Canada. Okay. So that's like a group of there's 14 entrepreneurs in my group. We meet up once a month. And and then there's a co there's like a chair. So he's my coach and then I had I had a separate like Enneagram coach. I've had like lots of coaches. I think that leadership you you never master it like you have to constantly different."
+  },
+  {
+   "start": 2701,
+   "speaker": "Speaker",
+   "text": "Yeah. And once you do like you know I think I was like good leader for like a 10 person company is very different than 50 then 100. Yeah we're getting close to 150 now. Like you have to evolve too or you need to hire someone else. And is that a big thing to relieve everything on your shoulders is to have the right people around you? Is that like one of the biggest levers for it like coaching wise or people? Running a running Yeah. Running a 150 person operation with Yeah. You gota like good people everywhere, right? Not just on your leadership team, like throughout the whole company. I I'm still when the culture got bad, I didn't I got out of interviewing. I was like, \"Okay, you guys do it.\" I'm still interviewing like I'm the final interview for What is your process still? I I read this book called Who?"
+  },
+  {
+   "start": 2771,
+   "speaker": "Speaker",
+   "text": "Okay. It's like it's by Geoff Smart. It's the process for or it's like the playbook for hiring a players. And there's a bunch of stuff in that book about like how to interview people so that it's not just like a gut feel. Like I think before I was hiring people on a gut feel. This makes it a bit more scientific. I do the same interview every single time. So you have the final say on every employee pretty much. Like you not Yeah. Like now I'm doing more senior roles, but yes."
+  },
+  {
+   "start": 2820,
+   "speaker": "Speaker",
+   "text": "I Yeah, I don't usually like block somebody, but I'll say like if it's really if I really feel strongly, then I will. But that doesn't happen much anymore. It's more like I'm like, \"Hey, this person I'm like strong yes for them or I'm like a yes or a no.\" But that's And do you have like a a people and culture individual human resource? Yeah. Yeah. So we have we have like a six person Okay. PNC team, but we have we have two recruiters. Yeah, that's I think it's super important to invest in that part of the business. And you from a client perspective, what's the range of clients that you usually work with and like how did you get in those boardrooms with these people to to prospect your your your app? Yeah. So we we sell mostly to like companies who are 500 million in revenue a year and up. Mostly in the US like we we have a lot of customers in the tech life sciences and financial"
+  },
+  {
+   "start": 2900,
+   "speaker": "Speaker",
+   "text": "Services space. My co-founder and I were marketers. Bill, we we built the business around inbound marketing and still to this day, most of our business comes from people who request a demo on our website. So that's how we're getting in. We're we're really trying to build out our outbound engine right now. We just hired someone who's really good at that and we're seeing some good initial signs there and and partnerships too. We're trying to build out that channel more and outbound meaning cold calling calling. Yeah. Email, cold call, LinkedIn. And where do you see marketing going going in the next 5 to 10 years?"
+  },
+  {
+   "start": 2954,
+   "speaker": "Speaker",
+   "text": "Yeah, it's a good question. Well, cold calling. I mean, that's I think I think where things are going is everything is going to be a lot more personalized. Like in the in the past it was like mass messaging. Everybody gets the same message and like it doesn't resonate for 95% of people and then for five it does. So where I think it's going is that the marketing engines will be way more informed about time and and context on the message that they send someone and channel. Some people might want to get emails, some people might want to get SMS, some people might want to get LinkedIn messages. So like if we talk about email customizing it to my preference. Yeah. So like imagine so this is another thing in our hackathon. So let's say you're in a sales cycle with Knak."
+  },
+  {
+   "start": 3021,
+   "speaker": "Speaker",
+   "text": "We're recording every every conversation right that you have with the salesperson. And so what we can do with that information is say hey you know David has like he seems to be focused on these problems like he's using this other technology stack he's in this industry. Now go into our library of other customer success stories, right? And find the best one for him to see and then write the message so that everything are the exact points that he is thinking about right now and and send that automatically like an hour after he talks to the salesperson. That's what it can do. So it's matching like the old way of marketing is you the marketer sets up a bunch of rules like if they do this then do that. With AI, what the biggest things that changed is that that logic, which used to be static, is now turning into like"
+  },
+  {
+   "start": 3101,
+   "speaker": "Speaker",
+   "text": "Something very dynamic where it's like, hey, we're not going to just do send them that thing. We're going to let it decide what it should send him and we're going to customize the message so that he has to read it. And then it looks at the numbers after. Yeah. And then starts and teaches it Yeah. To either alter it or double down on it. Yeah. My other prediction is that and I've seen this happen time and time again with marketers. Like whenever something gets easy, the marketer leans so far into that whatever is easy and then they move on to the next thing."
+  },
+  {
+   "start": 3148,
+   "speaker": "Speaker",
+   "text": "And for the people engaging with that, it gets like so repetitive and boring, right? Like I don't know if you remember when everyone started adding like chat bots to their website, right? And everyone did it, right? And then everyone what happens? You just ignore it. Yeah, you're like I see that everywhere. What I think the best marketing in the future will be the non AI marketing because it'll be different. Yeah, it will be genu and it it it won't be like perfect. You know, I think that's what we're headed towards. Everything looks so perfect. It looks like a, you know, like the most expensive agency made it. But when everything looks like that, I think you will be drawn more to the thing that's clearly like handmade."
+  },
+  {
+   "start": 3202,
+   "speaker": "Speaker",
+   "text": "It's funny you say that. On LinkedIn posts now I'm saying this is not generated by Yeah. Yeah. And one of my posts just went viral. Like I I never knew you can actually go viral on LinkedIn, but you can. What was the It got 800,000 eight. Yeah. 80,000 views in like 24 hours. And it was me taking a screenshot of my Slack channel of me giving one of the contractors a raise after thinking about it and me just like it took me two seconds to post. I took a screenshot. I wrote it like very authentically. Maybe there were spelling errors like like I just wrote it and sent it not thinking anything of it and it resonated with so many people versus just putting it I Typically, I would have taken the screenshot, put it in ChatGPT it, write out a perfectly scripted, but people are getting already so sick of that. Yeah. It's See how that prediction is it's it's there. Yeah. When everything looks the same, you just get desensitized to it and you're like, I've seen this. What do you think about and this is one of the reasons and we"
+  },
+  {
+   "start": 3280,
+   "speaker": "Speaker",
+   "text": "Talked about before the show of why I'm doing a podcast on onsite versus virtually. One of the biggest things is the clips, right? Being able to clip out in a high functioning production way a trailer clips to produce on my social media because not too many people are doing it. People are still doing it but 95% of people are not. So, It's easy, right? This is I I love that you do it in person because I I do think people can sense like the energy difference, the conversation. It's not just one Zoom screen to another, which again, I think people are just so over desensitized. And yeah, I I read something the other day that was saying how like experiences in the future are going to be even more valuable because everything, you know, you're so exposed to so much content, so many things that are like like dopamine triggers that you get"
+  },
+  {
+   "start": 3356,
+   "speaker": "Speaker",
+   "text": "Desensitized to it. That real experiences are only going to be more impactful. The Saunders Farm of the World and all the Halloween stuff that they're doing like I went this year and last year like it's busier and busier because people are now agreed with you. They want that experience. They want to go outside. They want the nature. They want It would be great. I I hope that we're both right about that. That like people get tired of their phones and the screens and they're like, you know what, I just want to get away from it. I do think also parents need to have time to invest in their like it's so easy now to scroll for an hour. Oh yeah. And we weren't we came from a generation that didn't was not grown up with their phones where my kids and probably your kids, they can pick up the phone and navigate a phone. Oh, it's crazy. My daughter shows me stuff. I'm like, I didn't I've had an iPhone my whole life. I didn't know it could do that."
+  },
+  {
+   "start": 3424,
+   "speaker": "Speaker",
+   "text": "Yeah, we just we just started doing no screen Wednesdays and Sundays with my kids because Yeah, they're they're on on it like I don't see them. And so it it's crazy like you take it away and like time slows down. Yeah. And are you noticing a difference with doing it? It's great. Like they play together again. Like they wanna hang out. They want to go outside. So I think it helps. So and you have two kids, a boy and a girl. Yeah. Wife's from Ottawa as well. Yeah."
+  },
+  {
+   "start": 3470,
+   "speaker": "Speaker",
+   "text": "What's next for you? Yeah, it's a good question. Like I have two companies. I'm, you know, they're going well. They're growing. I I see my role evolving still. To be even less kind of in the weeds of the business. I've never done like a physical business. I have two companies, but it's very abstract. Like I would like to do something that's more like we were just talking about like I don't know what it is yet but something more tangible. I don't know what it is but it's something that I'm kind of keeping an open mind to. And before we get into the lightning round, is there anything else that we missed in the conversation that you want to talk about or is it important to share for the younger generation, entrepreneurs, people that are scaling to where you're at now? I mean, yeah. Yeah. Any Yeah. So, I I think that there's like a myth out there that you need to like go"
+  },
+  {
+   "start": 3547,
+   "speaker": "Speaker",
+   "text": "All in on your business from day one. And I I do want to just share for me, I didn't do that on either of my companies. So, my first business, which is a consulting company, I still had a full-time job and I work with the CEO at the time, and I was like, \"Hey, I kind of want to try something. Can I get Fridays off and like take 20% away for my pay and I want to have Fridays off and he's like sure. And that's what I did. I started just on Fridays building my company and then I went down to two days a week and then I was making more money on my consulting job in a month than I was in in a year of my full-time job. And I was like, \"All right, I think I'm ready to quit my job and go all in on it.\""
+  },
+  {
+   "start": 3603,
+   "speaker": "Speaker",
+   "text": "And and the same thing with Knak. I ran Knak for like almost five years as like a side quest before we closed like three huge customers in a month. And I was like, \"Okay, something's there.\" So I just I would encourage people like it's scary to start a business. There's a lot of uncertainty. You really I feel very fortunate that both of mine worked out, but that's not normal. A lot of times it fails. And so having a fallback plan makes it a lot easier, I think, to like really go all in on it, too. So that would be one thing that I would share is and it it derisks you, right? So 20% of you taking the Friday off, Yeah. You can try it out, see what else is out there before going all in. Totally. And I I think if you don't do that, I just know for myself, I would be stressed out. Yeah. To the max. Like, oh, how am I going to pay my bills? What happens if I don't get this customer right then I think that customers can sense"
+  },
+  {
+   "start": 3684,
+   "speaker": "Speaker",
+   "text": "Desperation and that's like the last thing that you want to have you want to be able to go into things very confident and and in a way where it's like hey you don't have to hire me if you want to great but I don't need this either the fear of missing out is a huge energy play in sales for sure. Yeah. Where if you don't need the contract, you'll get the contract. Totally. Totally. Yeah. I think the other thing is like I don't know. I do believe there's like these energies and the universe and you you can know when you're in like the flow, right? And when you're in the right place and you have momentum in your business, you'll feel it. The customers will come and you want to do everything you can to like stay in the momentum, but you also have to be really honest with yourself when you're not there. Like there's a fine balance between just like keeping going. You definitely have to keep going even when things are hard, but you also have to admit when it's like, hey, you know what? There isn't anything there."
+  },
+  {
+   "start": 3765,
+   "speaker": "Speaker",
+   "text": "I I get it. Yeah, I I get that. And was there do you have a specific example in your life where you were in the flow? And yeah, like precoid Knak was like majorly in the flow and like we were just getting customers like every day and then every the world shut down and it was like oh man like you could feel like the wind coming out of our sales and it took it took probably a couple years to get it back and it was hard work and just being very having an open mind to like and and highly tuned to like hey where are we getting this from? What is working? What's resonating?"
+  },
+  {
+   "start": 3816,
+   "speaker": "Speaker",
+   "text": "And there has been other times where I've worked on something and like I really want it to work and it just it doesn't right and eventually you have to just like cut your losses and move on. Yeah. But when you fight against the universe or like the friction points, you won't win. You got to you got to really a lot easier when you're in it with it. Yeah. But sometimes it can be like you are fighting it and then you get into like a big flow where it's like, oh, there was something there. It's just really hard to get there. And that to me that's like the hardest part to know is like do you keep going or when's the time to like fold your hand and from your experience is it just trial and error of like understanding who you are and what you want and that Yeah. Yeah. You have to like take your ego out of it and and trust your gut. Yeah. That's hard. And and just be like, am I am I doing this to like prove a point or am I doing it because I think there is"
+  },
+  {
+   "start": 3892,
+   "speaker": "Speaker",
+   "text": "Something there? How do you take your ego out of it? Yeah, I think it's just asking yourself the question of like what's what's the true intention of why I'm like really set on something? And do you do something daily to get yourself into a flow state or is like do you work do you do yoga exercise or is it just you Yeah, I do I don't do yoga but I I work out. I don't know. I think that's an important part of it. Sometimes, yeah, like I I think just like going for walks can be really helpful. Getting yourself out of if you have a big decision, getting yourself out of like the usual flow of what you're doing can help because a lot of the noise around you could affect the right decision for you."
+  },
+  {
+   "start": 3953,
+   "speaker": "Speaker",
+   "text": "Yeah. Because and I think the other thing talking talking it out with people that's what I love about TEC my leadership group is like half of the meetings is just like issue processing because you get in your own head. Yeah. And you might think this is the problem I got to solve, right? But as you talk through it with people the problems. Yeah. It's your initial problem often isn't your the real thing that you need to get to. So TEC uses this like IDS framework. I think it's an EOS the yeah the IDS framework if I would highly recommend that to anyone who's like struggling with a big decision and you probably only need one or two other people to go through it with you but if you follow that format that's been like massive for me and do you follow the EOS structure we do like our weekly leadership meetings. We do the level 10 meetings. We we kind of adapt it because I find"
+  },
+  {
+   "start": 4029,
+   "speaker": "Speaker",
+   "text": "You get bored of it over time. Yeah. But we used to do like big rocks every quarter and the the goals at the end and Yeah. So I I think again if if someone hasn't done it, you what I think the best thing to do is do it and then just take out of it what works for you. Yeah. And you got to switch it up because we've done the level 10 meetings. People just you get bored, right? You want it to stay fresh, stay interesting, right? Yeah. The the repetition of it is good for a certain point and then okay, how do you think bigger and differently to change things up so the curiosity hits it? Yeah. Like the start is like good news, right? And I just remember it'd be like, \"Here we go. We're gonna spend 10 minutes hearing about everyone's kids and what sports they're in now.\" And I'm like, \"Listen, I love all your kids, but I like hearing that every week, you know, it it's just it's like anything. It gets repetitive.\" Yeah. Well, let's head into the lightning round questions."
+  },
+  {
+   "start": 4103,
+   "speaker": "Speaker",
+   "text": "Yeah. We talked about a few things, but let's let's dive deeper into them or higher level of them. What's a belief about marketing you changed your mind on in the last year? Yeah, I I think it's a good question. I think what I've changed my mind on is just how people will be willing to adopt AI in their marketing. Like I I never thought that it would be good enough honestly. Like to to do as much as it can. I really was like it's going to help with some parts, but I think as I see it evolve, it's like oh no, it is going to have a much bigger impact and produce much higher quality"
+  },
+  {
+   "start": 4184,
+   "speaker": "Speaker",
+   "text": "Outputs. When did that change for you? Like over the last couple of months recently has like the level the levels of how good it is like with very little prompting. It's amazing. Mhm. I didn't think it would ever get that good. Wow. What's a hill you'll die on about email or lif life cycle marketing? I think multiple times a year I hear email is dead. Email is dead for this reason or another. Like it never ends. The hill I will die on is that email, even with AI, will continue to be a relevant and critical channel."
+  },
+  {
+   "start": 4245,
+   "speaker": "Speaker",
+   "text": "It's funny you say that. I've had a lot of creators on this podcast and they're all main focus is email marketing and building email list. If you look right, like you look at social Yeah. Those are all controlled by algorithms who decide who gets to see your content. Yeah. Email is really the only one that you fully own your list and when you communicate to them and what you want them to see. And so that that's another reason I'm very bullish about it. And the other one is, you know, you book a hotel, you book an airplane ticket, you buy something. What where where do you get all that information? Right? That's email. What's the alternative? You're going to have like an app for every hotel, every airline, every store you shop at. People don't want that. They There needs to be a single channel for communication that's open. And I think that's that's why email has been as durable as it has been. And I'm going to add to that, I think it's going to"
+  },
+  {
+   "start": 4321,
+   "speaker": "Speaker",
+   "text": "Ex the value of a business if you have an email list versus a following list. Because if the algorithms on social media are going to content marketing or interest marketing, those followers could see your content one day and maybe not your content the other day. Where if you have 5,000 clients on your email list that are subscribed to you, right, that's true followers and true value. Yeah. And I mean, if you look at Twitter before Elon bought it, it was like clear that they were boosting some accounts and and suppressing others. And so we know it's possible to happen on the social platforms."
+  },
+  {
+   "start": 4375,
+   "speaker": "Speaker",
+   "text": "They like you one day and they don't the next. So that's why you will always own your email list and it costs you nothing to set to communicate or next to nothing to communicate. What's one marketing metric you trust the least? Yeah, I'll give an email one like open rate. Open rate is not something you can trust now. Apple suppresses opens. There's a lot of bots that open emails for security reasons. So open rate is like you can look at it directionally, but I it's no longer something that you can really like say, oh, it said it's 10%, so 10,000 people opened it. You can't look at that."
+  },
+  {
+   "start": 4434,
+   "speaker": "Speaker",
+   "text": "What's a hot take you have about VC funding? It's awesome. I've heard so many stories from founders who are like, \"Oh, they're the worst. You know, they ruined my company. They screwed me over. I wish I never did it.\" I honestly think it was one of the best decisions that we made. It 100% matters who you take the money from. We're very fortunate to work with Insight Partners who is like phenomenal. They've only helped us grow the business. They've been an amazing partner. So I I think that's my hot take, which is a lot of people say they regret it, say they wish they didn't do it. I I'm super happy that I did it. I was on the fence. We were a bootstrap company. We didn't need to take the money, but I'm glad we did it. Like having a top tier VC associated to your company helps with recruiting. Like we're able to get"
+  },
+  {
+   "start": 4509,
+   "speaker": "Speaker",
+   "text": "People that probably would have never joined like a small Ottawa company. But having a great VC that had invested into our company really help with that. They're super helpful with challenges that we have. They have a whole team of operators who will who you can call like talk to the best people in the world at specific problems. And were you referred to them or how did you build? They reached out to to me. We did like a big process in 2021 and talked to a bunch of investors and we really liked Insight and yeah, they're awesome. Nice. What's a book that shaped how you lead?"
+  },
+  {
+   "start": 4572,
+   "speaker": "Speaker",
+   "text": "Yeah. Like I don't know if it's any single book like I read a lot. But you know I I read like the the Steve Jobs book. I read Shoe Dog with Phil Knight. Like Marc Benioff has a book. Elon has a book. I feel like through all of those I pick up on little things and just get exposed to like a lot of different leaders. Bill McDermott who is the SAP CEO, you know, you you kind of I like to like take it's like the EOS thing. Read it. It's like, hey, that that feels natural. That doesn't I'm going to take from it what I think could help me. Five dysfunctions of a team is a really good book. Hard the hard thing about hard things by Ben Horowitz is another really good one."
+  },
+  {
+   "start": 4635,
+   "speaker": "Speaker",
+   "text": "It's hard to pick one. Sorry. Enterprise or startup? I love working at startups and I love selling to enterprises. Speed or perfection? Speed. Remote or in person? In person. Write first or design first? Design first. Big bet road map or small iterations? Big bet. Build or buy? Build. Meetings or memos?"
+  },
+  {
+   "start": 4682,
+   "speaker": "Speaker",
+   "text": "Memos. Email or landing pages? I'll go email. So, we have a closing tradition where we ask a last question. And the last question is always, if you left a sticky note on your first laptop before you got started, what would it say? Life is supposed to be fun, so don't waste it on something that you don't enjoy. And where can people get a hold of you? Yeah, you can find Knak at knak.com. knak.com. I'm on LinkedIn, Pierce U. My last name is long, so that usually you'll find me there. And I'm on X as well, marketing 101. Pierce, I really want to thank you for coming on the podcast. I've reached out to you about a couple months ago. I know how busy you are running your business and just being so in tune to technology, AI. You know, there's"
+  },
+  {
+   "start": 4760,
+   "speaker": "Speaker",
+   "text": "You are inspirational to a lot of founders, especially in Ottawa, who are growing tech companies. I mean to have 150 people raise money compete against you know North American in the world companies like go to the US like there's a there's a there's a lot there that a lot of entrepreneurs can take from and when I was doing research on your bio was just like was so you know going back to that you know having fun and and enjoying I was so looking forward to this conversation because there's not too many times in this area, you can speak with someone who's done it. A lot of people could talk about it, but you've done it and I would obviously love to have you back, you know, whenever you're available. Had a a lot of fun and and I just want to say thank you. Keep doing you, man. I'm glad. It's awesome that you're doing this kind of podcast and helping other founders and entrepreneurs, especially in Ottawa."
+  },
+  {
+   "start": 4822,
+   "speaker": "Speaker",
+   "text": "So, and thanks for doing it in person. Thanks Pierce. Share this with a friend so that they could be a part of this journey too. Keep watching for more."
+  }
+ ]
+}

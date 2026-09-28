@@ -1,0 +1,203 @@
+{
+ "videoId": "dkDvdePLRYE",
+ "num": 21,
+ "source": {
+  "kind": "youtube-captions",
+  "projectId": null,
+  "compositionId": null
+ },
+ "guest": null,
+ "summary": "David DiNardo walks coach and strategist Michaela through a live, start-to-finish demo of Taxifi on its March 1, 2026 launch day, filing a sole proprietor's 2025 Canadian return in about 15 to 20 minutes. Uploading last year's return prefills the personal, rental, home-office and vehicle sections, a Plaid bank connection feeds an AI model that categorizes a year of transactions, CRA authorization pulls the slips, and a CPA prepares and e-files the return after a Stripe payment and a T183 signature. David explains why off-the-shelf tools like QuickBooks Online and Xero overwhelm solopreneurs and lays out the goal of a one-click, fully automated return in year two.",
+ "takeaways": [
+  "Taxifi's version one covers 2025 returns for sole proprietors in every province except Quebec, includes the spouse's return for free, and can also prepare and submit the GST/HST return.",
+  "Uploading the full 2024 tax return takes under 30 seconds and prefills personal deductions, rental income and expenses, business details and the sales tax number as a reference point for 2025.",
+  "Home office and vehicle expenses are not prefilled because people move; the user enters total square footage and workspace size, and Taxifi calculates the business-use percentage.",
+  "Bank transactions come in through Plaid, and an AI model trained over the previous three months categorizes them as business, personal or meals, flagging only the handful it cannot resolve for the user to categorize or annotate.",
+  "In Ontario, David notes, you must register for a sales tax number once revenue passes $30,000, and an annual filer's 2025 remittance is due March 31, 2026.",
+  "After paying through Stripe, a tax professional prepares the return, the client signs the T183 online, and Taxifi e-files; a 24/7 chat in the app routes questions to the tax team.",
+  "David's year-two vision is a phone notification saying your taxes are done: with onboarding and CRA authorization complete, the AI reuses prior data so no manual steps remain."
+ ],
+ "speakersVerified": false,
+ "segments": [
+  {
+   "start": 507,
+   "speaker": "Speaker",
+   "text": "Today's a big day. Today marks March 1st where we're going live on YouTube and all the social medias to talk about Taxifi and the demo. There's a saying on the screen right now that says never think about taxes again. Michaela, you created the saying. What does it mean to you? It means a complete change from where we've been to where we're going and where we're capable of going now. This is a system that since I started working in accounting and tax in 2018 that I saw was ripe for change and that really was capable of it and now with AI that barrier any barrier any obstacle has been totally removed and now we get to actually be able to see a life where this could be possible and it is so exciting. Right. And what's your relationship with taxes? Pure hatred."
+  },
+  {
+   "start": 570,
+   "speaker": "Speaker",
+   "text": "So, tell me a little bit about you. Well, I in terms of that, in terms of taxes, you're a coach. You've been through this journey for the last 10 years in regards to tax time. Why is it such a dread? And why do you never want to think about taxes again? Oh man. You know, it was for me on this journey, it was something that my parents took care of. My dad took care of for a long time. And then I had a friend in university who took care of it and that was great. And then the then when it came time to me getting more having to be more involved in it, there was just a an immediate block like I don't want to learn this. I don't like it. I don't even know why we have to do this. I really think this is it just felt really archaic and unnecessary and created a lot of anxiety for me in the past few years when you get your taxes done. What is that process? Like the the Yeah. Like the [clears throat] feeling and the the back and forth and just the logistics of getting your cat taxes done. Yeah. Well, especially since transitioning into being a solopreneur"
+  },
+  {
+   "start": 649,
+   "speaker": "Speaker",
+   "text": "And having to manage my own expenses, moving out of the employee and into really think having to think about, yeah, what goes where and not wanting to just straight up not wanting to. When it comes time to do taxes, the the going back in and digging is just something I push off for as long as possible. And I hate that. I hate that I do that. I don't want to operate that way. There's just there's a huge block. And for me as a coach and a strategist, what I care about doing is talking to people and being with people and everything else just seems so like not I I want to say it it's so difficult and I don't even know if it is or not. I just know that it's not where I want to focus. And having to take that time and dig back into emails and look at the transactions. It just it was just absolutely not something I wanted to do or how I wanted to spend my time. And so I would push it off for so long and then when I would finally go to do it, it would take so much longer than maybe it even needed to because I had to go back so far because I hadn't kept up with it on a monthly basis. So what happens if I told you this app will solve all those"
+  },
+  {
+   "start": 727,
+   "speaker": "Speaker",
+   "text": "Problems? Like sign me up, give me the solution that because it has to be there. There's no way it needs to be this hard. This is also what I would be thinking. This feels so difficult and I don't think it needs to be. Why is it so hard? And can I ask you that? Like why do you think the tax system is so challenging and especially for people who have pretty straightforward returns? So I ran an accounting company for over 10 years and the biggest problem was the apps that you're using offtheshelf like QuickBooks Online, like Xero, like the apps out there are designed for accountants. So they make it so complicated for not only the solopreneur but the businesses that the business that's doing $10 million a year that needs the invoicing, the payroll, the job costing, all the bells and whistles. So when you log into the platform, it's very confusing and it's very overwhelming. So, one of the biggest reasons why I've created Taxifi is to simplify that approach so that you as a solopreneur can get their taxes and we remove all of the stuff that is so unnecessary. And this demo today is going to show how"
+  },
+  {
+   "start": 808,
+   "speaker": "Speaker",
+   "text": "Easy it is for someone to come in and get their taxes done. And the biggest thing is we want to create an app where you don't think about it until taxes until tax season and then you stop thinking about it so you can go create money and do what you love to do. Does that resonate with you so much? I'm like, yes, just let me do what I want to do and I want to be compliant. I want to pay taxes. I want to contribute to my community and economy. Absolutely. And and then and so you feel like you're a bad member of society by not following the process or not thinking thinking you're not capable of following the process. So I think that could really set me and a lot of people who operate that way free which is so cool. Do you think more people will start businesses if there's an easier solution in the back end? Oh my god, I hope so. And I think in this moment in time, as we know, the workforce is moving into a freelancer economy. They say by 2027, it will be close to 50% if not 51% of the workforce will be a freelancer. And so you kind of get thr and myself included, you get thrust into this role of accidental entrepreneurship where you are this"
+  },
+  {
+   "start": 889,
+   "speaker": "Speaker",
+   "text": "Owner and you have to operate with a business mindset that you just haven't had to up until that point. And so having a solution that sort of supports people in this transition, this natural transition that is occurring in the economy is a really special and supportive tool for those people. Totally agree and that is why we created this not only to solve the problem but also to stimulate more entrepreneurs to jump into being a solopreneur and not needing to worry about getting their taxes done so they can focus on just making money, doing what they love to do. And having that that you know in your in your mind that being able to be creative versus think about having to get your taxes done at the end of the year is probably very freeing to a lot of people as well. And knowing that while you're creating, while you're in your zone of genius, while you're you're delivering the gift that you're meant to to give to the world, that you're not ignoring something, right? You're not pretending like it doesn't exist, which I would say is my was my mo up until this point in time is just, you know, and then so"
+  },
+  {
+   "start": 968,
+   "speaker": "Speaker",
+   "text": "That lowgrade panic is eroding you in the background instead of really allowing you to be in your craft and be in your offer to the world without that. Like as long as you know that that's also being taken care of and that you are it that would feel so so good and and so grounding as you continue to grow also cuz sometimes I think it's an it's an inhibitor to growing as well because you know that this is festering in the background and it's well if I get more clients or if I grow even bigger then so will that problem which is I think really where we can help people. So enough talking about us. Show me. So let's go through it. So you come on our website taxifi.ai."
+  },
+  {
+   "start": 1018,
+   "speaker": "Speaker",
+   "text": "You could click on the right hand side and you start filing. Okay. Let me just scroll through here for a bit. Okay. So it's a one, two, three process built for creators and solopreneurs designed to simplify. The app built to be forgotten. How do you mean that? How does it actually get forgotten? So, that's a great question. After tax season, after you're done, you don't have to think about it. Your taxes are done and we don't want to see you till next year. And what would happen ne what's going to h and maybe this is you can say we can wait. What happens next year? So, I file this or I set up my account this year. I file and then what happens next year? Do you want to wait? We'll wait. Okay. I'm getting ahead of myself. I'm excited. Okay. So the the vision of it, I could talk about the vision of it is once we have all your information and the onboarding is completed, it literally is one click and your taxes are done. We want to get to the point where it's fully automated. Okay, I like the sounds of that. Okay, so I clicked start filing. Yep. I opened up into here and I'm going to go to sign up, not log in. Yeah. So, you"
+  },
+  {
+   "start": 1094,
+   "speaker": "Speaker",
+   "text": "Could either sign up or use your Google account. Okay. I'm gonna sign up by And so I'm a sole proprietor. You're a sole proprietor, but individuals can also if you're if you have a T4, you're an employee, you can also do this. You can also do this, but we're really gearing towards solopreneurs. The individuals also we offer for spouses. So if someone is a solopreneur and has a spouse, they can come in and get their taxes done as well. The spouse for free, that's included. Correct."
+  },
+  {
+   "start": 1152,
+   "speaker": "Speaker",
+   "text": "Awesome. Okay. So you go to the bottom there. Okay. So, it says complete my profile, but then this also says upload a previous tax return. Where should I start? You should start with uploading your previous tax return. Okay. So, this is the first screen where you can pull your previous tax year. So, for version one of this app, we're only focusing on 2025 taxes. As now is tax season. It's March 1st, 2026. So we you'd have to ask your accountant, go to Wealthsimple, go to TurboTax, wherever you got your 2024 taxes, you need the full tax return to get uploaded because this system now is going through your taxes and pulling out all the data we need to get your 2025 taxes. It takes less than 30 seconds to upload. And then once it uploads, it prefills all the user interfaces with all the information we need. Oh my goodness. Okay, so that happened super quick. It's a big document, too."
+  },
+  {
+   "start": 1219,
+   "speaker": "Speaker",
+   "text": "Okay, so I just click next. The return has been processed. Okay, and there's all my information. So all your information is being prepopulated. So you literally do not have to do anything. This is a big step and this has taken a lot of work to get to the point where we prefill all your taxes. So, I don't have a dependent, but if I did this process, pretty simple. It would be in there. Yep. Okay, great. Did I done Okay, I am I was born in Canada. So, I'm just going through the process. There's a few questions. Yeah. So these are for the first year. These are the questions we need to know in order to process the return. If you stop here, here's your personal deductions. This is what you claimed in 2024. Okay? So most likely you'll claim it in 2025."
+  },
+  {
+   "start": 1276,
+   "speaker": "Speaker",
+   "text": "I don't know the official stats, but a good portion of your return in 2024 is very similar to your return 2025. So this is just a reference that hey Michaela you did claim 1362 in medical receipts is it the same as last year or do you need is it less or more? This is where it's just a reference point of the previous year. Okay. And so if if I know oh that was a particular thing and this year I didn't have any medical expenses I'll just bring that down to zero and just edit the field like that. Correct. Okay. But if I have union dues that's typically pretty static. Charitable donations might go up or down and you would probably be conscious of that. Correct. Okay."
+  },
+  {
+   "start": 1325,
+   "speaker": "Speaker",
+   "text": "And that's my rental property. So, this is another great feature. We also upload your your rental property and your previous year rental property a lot. And if you go to the next screen, you'll see that your total income from 2024 comes in with all your expenses. So now you can see what you claim the previous year and then modify it accordingly based on on on the transactions. Okay. And for the demo here, would you like me to modify or leave? We could just leave it and pass it. Okay, great. And so once we're done the personal profile, we move into your business, who you are, Michaela, consultant, coach. So, does coach come up? Yeah. The previous year tax return, we claimed you as a consultant."
+  },
+  {
+   "start": 1379,
+   "speaker": "Speaker",
+   "text": "So, that's why consulting came up. Okay. As well as your the name of the business and your business number. So, all of this was pulled from the 2024 taxes. Okay. Amazing. And this number Yeah. Okay. So, that's your business, your sales tax number. And then the last question is, are you preparing your GST, HST? Did you already prepare it or do you need us to prepare it? And how does somebody know if they do need to claim GST? So, in Ontario, if you make over $30,000, you have to register for a sales tax number. Okay? If you're an annual filer, that remittance needs to be done by March 31st, 2026 for 2025. So, if you haven't submitted that to CRA, you should collect yes. And we can submit it for you. Okay. Yes."
+  },
+  {
+   "start": 1437,
+   "speaker": "Speaker",
+   "text": "Okay. Home office expenses. Okay. So, the square feet of the home is about 3,000. My workspace area is probably a third of that. So, it does an automatic calculation. Why we haven't prefilled the home office? Because people move and we we want to ask the user their total square feet of their home as well as their workspace which gives a percentage you use for business. So it's 33%. Then we pull all the previous years heating, electricity, anything that you claimed in 2024 we pull. So you could either modify it or keep it the same, however you want to do it as the user. But again, this is just a reference and then we can get your taxes done based on these numbers. Okay. If Yeah. Okay."
+  },
+  {
+   "start": 1489,
+   "speaker": "Speaker",
+   "text": "Would somebody just apply a particular percentage to increases yearover-year or would they have to go would would you suggest like I go in and I look at my heating bill for the year and my electricity bill for the year, all of those things get really nitty-gritty and come in and add it in. Yeah. So, it depends on the person. Some people like to use the previous numbers and modify it. Some people have a spreadsheet of all their income, all their expenses related with their home. It's whatever your preference is. Okay. Okay. So, leave this as is for right now and move forward. Okay. And that same thing goes with vehicle because you're a solopreneur. These are things you can claim on your business. So we want to give it presented in a very easy way for you to claim these expenses and deductions. Okay. So this was pulled from the previous year. Your total kilometers driven, what was driven for business, the percentage and then everything related with your vehicle as a solopreneur."
+  },
+  {
+   "start": 1554,
+   "speaker": "Speaker",
+   "text": "Okay. Okay. And if my here would be maybe a moment where I would increase the kilome check the kilometers and then probably keep the same number as driven for business and or it depends on the your year of 2025. Maybe you didn't have a car that year so it's reduced significantly. So again this is just a reference. You would still have to do the calculation. But at least you would know what you claimed in 2024. Okay. Okay. So, this is another user interface that we we added and we're connecting to people's banks and grabbing everything from their banks, but there's been situations where people in salons receive tips and cash and stuff that we would not know if it had didn't hit the bank. We need the user to tell us that that cash received was income and we need to claim it on their taxes. Okay. So, in the notes section, you would put I received $2,000 in cash on this date and then upload the receipt or invoice."
+  },
+  {
+   "start": 1632,
+   "speaker": "Speaker",
+   "text": "Also, if throughout the year there was something that happened in your tax situation that you want us to be aware of, this is the place where you could put it in. Okay? You could put any supporting documents. You could put up to 10 documents in there, put it in there, and our tax consultants, our professionals would be able to look at it to see if it applies to your tax situation. Okay. [snorts] Okay. So, so now you're done with your profile and your business and all that information. Let's do a pause. How was that first process? So easy. I can see that. I I if I wanted to go back in and look up more details on my home expenses or my vehicle expenses from how they would have shifted the year-over-year, I would maybe pause. Would that be okay? And go and find that information and come back to it. Yes, absolutely."
+  },
+  {
+   "start": 1691,
+   "speaker": "Speaker",
+   "text": "And or if you watch this demo and see the whole process, you can have everything ready so that when you come here, it'll be even easier to get your taxes done. Okay. Okay. And sorry, I just hit the overview button to see and I don't know why that's not that's probably fine. Oh, if you Okay. Yeah. So if you go back to overview or go to your income and expenses. Yeah. And then if you want to connect to Plaid. So Plaid is a software. So Plaid is a a third party software that Shopify uses, Venmo uses. It's one of the leading softwares where we connect to them as a third party. They have all the securities around it and we receive all the transactions associated with it. You're logging into that to connect to your bank."
+  },
+  {
+   "start": 1749,
+   "speaker": "Speaker",
+   "text": "While that login process is happening, let's go into the CRA and then we can talk more about Plaid in in the in in the later on. Okay. Okay. I see. Okay. And I is it CIBC? Yeah. Okay, I'm going to put my bank account. So, right now, you're going through the Plaid. You're you're answering you're putting in your card information and your password. Nothing. We don't have access to your banks at all. We're just receiving your transactions. So, that as a solopreneur, we need your total income and all your expenses. The typical scenario for accounting firms is you would send 12 months of bank statements and credit card statements and we would have to do all the bookkeeping at that point. Now, this is going to be done for you. So, we're building an AI model to go through all your transactions into categories for Michaela all your income and all your expenses associated with your business. Again doing all the bookkeeping all automatically. So, while it's loading, this takes a"
+  },
+  {
+   "start": 1825,
+   "speaker": "Speaker",
+   "text": "Little bit of time. Let's go to authorize CRA. Oh, it won't. So, maybe you can exit that like exit. Yeah. As it loads and I'll Yeah. So, do never do Yes. Exit. Okay. I'll do it on my end, but if you want to, okay, authorize CRA and you want to So, we've created a video where it's a step-by-step process where we're going to show you. So, we need to get access to your CRA because there's two parts of your taxes. One is to get the stuff CRA doesn't have, which is your bookkeeping, your home office, your vehicle, your deductions. The other step is CRA already has your T4 slips and a lot of other slips that you have to grant us permission so we can pull it into our system. This is a typical situation from an accountant to a client. Michaela, let's say you have a T4 slip, you work in the government and you're a creator on the side. Well, we need that T4 slip. Instead of you sending it to us, we can pull it from CRA. So, we've recorded that process where"
+  },
+  {
+   "start": 1904,
+   "speaker": "Speaker",
+   "text": "You can grant us access as a representative client. Okay. Awesome. So, this is how somebody goes through the process of authorizing Taxifi with their CRA account, correct? Okay. Then you go into justice. What? Yeah."
+  },
+  {
+   "start": 1997,
+   "speaker": "Speaker",
+   "text": "So, while we're loading, the bookkeeping and the AI model is doing its thing. The one big thing to note and it goes back to your first question. What does the future look like for Taxifi the first year? As you could see, we have to get authorization from CRA and there's a few extra clicks that need to happen. But once we have authorization the next year or the first year, the 2026 year, the future years, we do not need that authorization. So when we talk about that one click and your taxes are done, think about it as we have the onboarding done. Now we have all your information. Now AI is learning you as Michaela to understand your situation so that the future years it's literally going to categorize everything and have everything in place. And here's a perfect example as we just refresh the the screen and we logged in and if you look at your transactions I'm just going to go back just in case."
+  },
+  {
+   "start": 2076,
+   "speaker": "Speaker",
+   "text": "So we came here. So we've authorized the CRA. We've completed the profile and the business questions. And now the last thing to do is the transactions, income, and expenses. And this is where the AMI AI model is doing its trick. We're we've been training it for the last 3 months to really understand the transactions. So that if you look at the done column, Mhm. You'll see it went through all your your transactions and it categorized what was meal, what was personal, what was business related. So that when we do your taxes, we have all the related business stuff. Awesome. If it didn't recognize any expenses, this is where you would have to tell us those transactions. Okay. So it came back and it said, \"Hey, these seven transactions, we're not sure what's going on with them. You need to help us categorize them.\" Can do."
+  },
+  {
+   "start": 2141,
+   "speaker": "Speaker",
+   "text": "Okay. So, this was money coming back in. So, I'm going to mark that as income. Yep. This e transfer was a personal Facebook marketplace let's say. So I can click file as personal. Yep. This 473 I think is just a bank fee. And so if you go to more categorize it opens up a bigger list. Okay. Where it's right in the middle. Interest and bank charges. Okay. Yeah. Got it. So, it categorizes that. Now, for this one, WestJet, let's say you go and you want to tell us where you went there so that we can claim it as a business. You can actually write a note right here. Yep. And you can say went to California on a business trip for XYZ reason. So that we could also know that this travel was for business because you met this client. Okay. And you would just save the note and then close it. Okay. Oh, and then you would have to categorize it"
+  },
+  {
+   "start": 2217,
+   "speaker": "Speaker",
+   "text": "To travel. Okay. And then it would leave. Another thing is if you click on the ABM deposit. So both of them. Yep. Both of them. You can also automatically categorize multiple by clicking the three dots categorize and then these would be income. Once you're done those transactions, your bookkeeping is done. Okay. So once you're done all those transactions and those four fields, we have enough information to get your taxes done. So once that's done, you would go back in to the overview and you would pay to get your taxes done. So check out and file your taxes."
+  },
+  {
+   "start": 2272,
+   "speaker": "Speaker",
+   "text": "And I'm going to go through this process. So, if you want to pay for your return, this is where we're leveraging Stripe, and it's of the same process as you would go on to anyone else's Stripe account to process any vendor's information. So, we've partnered with Stripe because it's one of the leading payment processing platforms. Everything's secure. Everything's under their transactions in order to do it. [snorts] Postal code K2E 56."
+  },
+  {
+   "start": 2327,
+   "speaker": "Speaker",
+   "text": "Okay. So, if you want to just stay there. Mhm. So now the payment has been successful. You've done all the information you need. You've paid for the taxes. Now all the information gets processed by a tax professional. We have CPAs on staff. We have leading tax professionals to then take all your information and prepare your taxes. Once they have all the information, they prepare your taxes. And once they're done with their taxes, they will send you an email with your taxes done and one last signature and then it's all finished. Okay. So, you would receive this in your email. Mhm."
+  },
+  {
+   "start": 2375,
+   "speaker": "Speaker",
+   "text": "So, it comes it says at tax folder and then signature required on T183. Correct. Okay. Review document. Yep. So this is where you would come and sign your document. We've already pre-signed it. And then this would show you everything on your taxes and it would go through your taxes, everything there so that your taxes are completed. Once you see it, you review it, you would sign off on it, and then we would e-file your taxes. If something doesn't look right when when I'm reviewing it, when the customer is reviewing it, what should they do? That's a great question. On our website,"
+  },
+  {
+   "start": 2451,
+   "speaker": "Speaker",
+   "text": "You can there's two things. You can go back to the app and you can go to the chat on the bottom right. Okay. And you can ask any question you want on the app. Something looks wrong. Of my tax return. Should I get specific? You should give us as much information as possible. Okay, let's say my taxable income my taxable income was actually higher at $80,000. Let's just say."
+  },
+  {
+   "start": 2513,
+   "speaker": "Speaker",
+   "text": "So then I would receive that and we have staff 247 that would take a look at this and then we would look into your file. And it's not only your taxes, any part of that process where you have a question, ask it here. Okay? We're going to upload a lot of information that once we start getting more questions asked to us, we'll be able to pre-answer the questions and automate this process. But right now it's client to tax professional where we can give that human interaction and human response to the client. Okay. Okay. So the completed copy I did sign for it but the signing happens right in the right online."
+  },
+  {
+   "start": 2567,
+   "speaker": "Speaker",
+   "text": "Yes. Yes. Okay. So you sign for it. It's completed. Any questions you can ask is through the chat. In future phases we'll be offering more accessibility to it. But right now we can use the chat for any direct communication. Okay. Now your taxes are done. What a world. That was easy. I think that was 15 20 minutes tops and we were chatting. Wow. Wow. And think about when we talk about the future years, how much easier will be because now we have all your information. You don't have to do represent a client. Everything will be there. And the AI model next year when it does your transaction, it will look at the previous data and it'll get better and better in regards to personalize your experience throughout the app. Yeah. Okay. So, back to my question before we started the demo. How do you what do you think we should be able to see next year when we come in to log when we log in to do our taxes again? What would I be experiencing in year two?"
+  },
+  {
+   "start": 2643,
+   "speaker": "Speaker",
+   "text": "My vision is really you get a notification on your phone saying your taxes are done. That's the vision of it where you don't have to do anything. You just go out, do what you love doing, creating, building a business and never have to think about taxes again. And so the AI will be able to pick up on those changes automatically. A person wouldn't need to go in and say, my home expenses changed or my vehicle fuel consumption changed because it will already know. We're planning on automating all that. Wow. Rental income, everything. Wow. Big vision. Big vision. Super exciting. We're rolling across Canada. The only except for Quebec, every province but Quebec will be able to file your taxes as well as your sales tax."
+  },
+  {
+   "start": 2695,
+   "speaker": "Speaker",
+   "text": "Before we end off, do you have any other questions? I mean, I think I I think it's pretty self-explanatory. I know why this is crucial for me as a person to have. Why did you want to do this? Why is it important for you to help people like me or that help people keep creating and not worry about this? That's a great question. When you talk about this not being fun for you, well, it's fun for me. I love numbers. I love helping people. I love small businesses. I love just the whole solopreneur and entrepreneurship about everything and being able to fill a solve a problem for someone so that they can create more, build more and grow the economy per se and have more people have the opportunity to enter solopreneurship or entrepreneurship and not worry about taxes because you it's a lot more complicated than people or people know it's complicated but you could also simplify it and with the right tool and the right plat and"
+  },
+  {
+   "start": 2770,
+   "speaker": "Speaker",
+   "text": "The right people behind me I I'm convinced that this is only going to get better and we're going to be offering so much more to the end user so that they can go make money and also make sure that they're saving money on their taxes, not worrying about their their taxes, and they can just go out and and and do what they do best, and that's make money and create. Another thing is when I was running my accounting firm, there wasn't anything out there. I was so progressive when I ran my accounting company that I was on QuickBooks Online before people came onto QuickBooks Online before the pandemic, before everyone went onto the cloud. But I was relying on QuickBooks Online or these other out of the box platforms to innovate. I didn't have control of that. Now I have control of that. Now I can dictate the future of Taxifi in any which way possible. [snorts] So that's what I'm most excited for."
+  },
+  {
+   "start": 2835,
+   "speaker": "Speaker",
+   "text": "Amazing. Amazing. Well, I think we're all really lucky that you are doing what you are uniquely here meant to do, that we all get to benefit from that. And the more we can help other people do the same, the better off holistically the world will become if we're all really giving what it is that we're meant to give. And so, thank you for doing that. And thank you for joining. Awesome."
+  }
+ ]
+}

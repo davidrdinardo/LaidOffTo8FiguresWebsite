@@ -1,0 +1,46 @@
+{
+ "videoId": "kFpviGU2gIc",
+ "num": 14,
+ "source": {
+  "kind": "youtube-captions",
+  "projectId": null,
+  "compositionId": null
+ },
+ "guest": null,
+ "summary": "David DiNardo previews Taxifi one month before launch and explains the three things it does on day one: connect to your bank and auto-categorize bookkeeping, OCR your previous tax return so 2025 needs no data entry, and file your taxes automatically. He walks through why side-hustle income pushes employed creators into a 40% marginal bracket, and asks solopreneurs to join the wait list as testers for a $100 founders discount.",
+ "takeaways": [
+  "Taxifi's day-one offer: bank-connected auto-categorization, upload of your prior return to skip data entry, and automatic tax filing, aimed at creators and solopreneurs.",
+  "A $20,000 side business stacked on a $100,000 T4 salary is taxed on $120,000, so the marginal rate on that side income can be 40% rather than the 15% most people assume.",
+  "Taxifi is training an AI model with creator-specific rules to assign expenses with a probability score (a Staples purchase is 100% supplies) and flag what you can legitimately claim.",
+  "David's pricing target is about $200 for a solopreneur return, roughly five times cheaper than the thousands a CPA charges; incorporated and complex cases still get a human.",
+  "The launch plan: February for testers with real data, March 1 for the wider public; wait-list sign-ups lock in $100 off as a founders rate, with extra incentives for selected early adopters."
+ ],
+ "speakersVerified": false,
+ "segments": [
+  {
+   "start": 0,
+   "speaker": "David DiNardo",
+   "text": "Your marginal tax rate might actually be 40% versus 15%. You don't know that. It's very overwhelming. Where you can come on to my app, it connects with your bank and it does all the categorization for you. I'm making a lot more money as a creator, but don't realize you're taxed at 40%. We're developing an AI model to tell you, hey, this staple expense is 100% probability that it's supplies. We can train our AI model to do it all. One click and your taxes are done. In one month, we'll be launching Taxifi, the first and only app where you can come on the platform. It automatically categorizes all your bookkeeping. You can upload your previous tax return. You don't need to do any data entry for 2025 and we can automatically submit your taxes. Those are the three things that we're offering on day one. The future phases and my vision, it'll blow your mind what I'm thinking and what I'll eventually get to. But for phase one, if you're a creator or a solopreneur, it is actually very overwhelming for you to get your taxes done. And that's the problem I'm trying to solve. I'll give"
+  },
+  {
+   "start": 75,
+   "speaker": "David DiNardo",
+   "text": "You an example. If you're a creator or solopreneur and you work for someone, let's say you work in the government, you're employed, you're issued a T4 slip. Let's say that T4 slip in the government, you're issued $100,000. And let's say you're a creator on the side and you're running a small business. That small business is generating $20,000 a year. That 20,000 is actually added to that $100,000 of salary that you work in the government, which means you're taxed at 120,000, not taxed at 20,000. Your marginal tax rate might actually be 40% versus 15%. You don't know that. You wouldn't know that unless you're in it every day. So, you're actually saying, \"Oh, I'm making a lot more money as a creator, but don't realize you're taxed at 40%.\" So, do you have RRSP room? Can you put extra money into that to lower your taxes? These are all the things that you need to be aware of. Number one. Number two, imagine working for someone, being a creator, and then at the end of the year, you have to do all your categorization, all your bookkeeping. Take the last 12 months of bank statements that you generated money, categorize all the"
+  },
+  {
+   "start": 150,
+   "speaker": "David DiNardo",
+   "text": "Income, categorize all the expenses. When it comes to expenses, you don't know what you can claim or you can't claim because you're not knowledgeable to it. And then get the net income. And the net income is what is added on to your employment income. So you have to do all those things manually. Right now your only solution is to send it off to a bookkeeper. They do the categorization and then they send it to a tax preparer to get your taxes done or you do it. When you do it, you don't know a lot of the rules and it takes a lot of time and energy and you potentially won't do it because it's very overwhelming. Where you can come on to my app. It connects with your bank and it does all the categorization for you. And more importantly, it knows what to look for in your bank to determine what's an actual expense and what you can claim for your business. We're setting up rules for creators for solopreneurs to determine what deduction and expenses you actually can claim. We're developing an AI model to tell you, hey, this staple expense is 100% probability that it's supplies. So, let's put it in the supply category and claim it as an"
+  },
+  {
+   "start": 226,
+   "speaker": "David DiNardo",
+   "text": "Expense. We're training our AI model to do it all for you so you don't ever have to think about taxes again. That's the advantage. And on top of it, instead of paying thousands of dollars to go to a CPA and do it, we will do it for $200. We're going to do it for five times more affordable than what else is out there. There's a place where the CPA and the human come in where it gets a lot more complicated if you're incorporated. There's a lot of scenarios around there. But if you're a solopreneur, it is really your total income, all your expenses, plus your employment income, deductions, and credits. And we can train our AI model to do it all. I've been working very aggressively the last couple months to make sure that we have a product that works, tested, and ready to go. The next step in February is to get users on to test it. Actual raw data in order for that raw data and that user to test it properly so that when March 1st comes and more users come, we're ready to go. That's the next phase. So, all I'm asking for you right"
+  },
+  {
+   "start": 301,
+   "speaker": "David DiNardo",
+   "text": "Now is we're one month away. We need testers. You can join the wait list. If you join the wait list, you automatically get the $100 off as a founders rate. Already 50% clicking one button. If we select you as a tester and you're an early adopter, there's going to be even more incentives. It takes two seconds to do. The more testers we get, the better the product is. The better the product, the less you have to worry about taxes."
+  }
+ ]
+}

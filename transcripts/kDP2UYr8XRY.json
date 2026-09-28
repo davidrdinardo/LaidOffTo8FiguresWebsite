@@ -1,0 +1,98 @@
+{
+ "videoId": "kDP2UYr8XRY",
+ "num": 34,
+ "source": {
+  "kind": "youtube-captions",
+  "projectId": null,
+  "compositionId": null
+ },
+ "guest": null,
+ "summary": "David DiNardo ranks the AI apps he actually uses every day to build Taxifi, scoring each from 1 (best) to 4 (worst) after testing more than 100 tools over the past year. Claude, Manus and Perplexity Computer come out on top, ChatGPT gets a failing grade for acting like a yes-man, and he explains how Claude Design and Nano Banana replaced thousands of dollars in designer costs.",
+ "takeaways": [
+  "David ranks ChatGPT a 4 out of 4 for business use because it acts as a yes-man; he now uses it under 15 minutes a day for personal questions like pool setup.",
+  "Claude earns a 1: he prompts it to act like an Elon Musk-level executive that resolves objections before answering, to get execution-ready output instead of back and forth.",
+  "Claude Design (ranked 2) replaced his Figma workflow: Taxifi's first design iteration cost $7,000 and months, while he built 10 iterations of V2 himself in a week, saving an estimated 3 to 6 months.",
+  "Nano Banana (ranked 2) cut his thumbnail cost from $60 each to a flat $25 a month for all podcast, YouTube, Spotify and Instagram images.",
+  "ElevenLabs (ranked 2) cloned his voice from podcast audio, cutting a 30-second reel's voice-over from two hours to under 30 minutes, though it still sounds a little robotic.",
+  "Intercom's Fin gets a 3 only because he has not finished training it; Manus, an agent that audits Meta ads and websites while clicking through your screen, gets a 1.",
+  "Perplexity Computer built a working prototype overnight that Claude Code could not, because it leverages more connectors and tools without manual installation."
+ ],
+ "speakersVerified": false,
+ "segments": [
+  {
+   "start": 0,
+   "speaker": "David DiNardo",
+   "text": "If you want to make a ton of money in 2026, this episode's for you. I'm going to break down Taxifi's app stack and what I use to build Taxifi and what I use from an AI perspective every single day. There's going to be a ranking system for each one of the apps I talk about. One being the very best, four being the worst. And I'm going to give you the why. I've spent hours on AI in the past year to determine which apps work for me in 2026. And I'm convinced if you're starting a business or you're growing a business, this app stack that I use on an ongoing basis could help you in your business take your business to the next level. So, instead of doing all the research and figuring out what apps work for you, listen to this episode so you can leverage the apps that I use and that you can use, too. Taxifi is being built to automate bookkeeping and taxes for solopreneurs. You come on and it's a done for you service. So, my whole mindset is all about result as a service."
+  },
+  {
+   "start": 71,
+   "speaker": "David DiNardo",
+   "text": "I don't want individuals to come on and have to do their own categorization. AI needs to do it. I don't want people to even think about taxes. It's all going to be automated. There needs to be an output to an individual. And while I go through all my apps, that's how I'm framing and thinking about how these apps give me the output. So then I can execute in my business. The first app I'm going to talk about is ChatGPT. It's the OG of AI. It was the first one that came out and it changed everything in this world. The way we communicate, the way we get reports, the way we do research, the way we do everything. It came out in October 2022. And if you fast forward to today, from October 2022, the first month I logged on till now, I was spending two, three, four hours on this app doing all my research. Now I spend less than 10 minutes on it, less than 15 minutes. I ask it personal questions now, not business questions. I don't even consider it a part of my app ecosystem"
+  },
+  {
+   "start": 149,
+   "speaker": "David DiNardo",
+   "text": "And that's why I want to talk about it. So if I ranked ChatGPT out of four, one being the best and four being the worst and that's an F, I would give it a four. Why? In the last year, the other apps give result. This acts as a yes man. I don't want a yes man. I want someone or something or an AI to tell me the raw truth. Tell me that I'm not on the right path. Tell me that I'm not making the right decisions. I don't want it just to say yes, that makes sense. Keep going with it. It's an always yes, keep going. Yes, that makes sense. Which it doesn't validate anything because knowing that just proves that I don't know if I'm going in the right direction or the wrong direction. It's just going to be your yes man. So, if you're looking for an app in your personal life that you need quick research on and you need to like I'll give you an example. I'm summarizing my pool. I have a few pool questions. I use ChatGPT for that because it gives me a good breakdown on the setup on how to start a pool something very simple it does but once you get"
+  },
+  {
+   "start": 229,
+   "speaker": "David DiNardo",
+   "text": "Into more complex strategy questions stay far from it let's talk about claude anthropic all my data from ChatGPT in the last six months have moved to anthropic claude claude by far right now is the best business LLM, large language model to get you the result. And it all depends on your prompt. It all depends on how you say things. And I've had to rephrase a lot of the conversations I have with Claude because I want to get an output. I want to get a result. For example, yesterday I was playing around with it in regards to strategy. I told it that I wanted to execute this prompt like a Elon Musk executive and make sure before it gives me the result that it's answered any objections."
+  },
+  {
+   "start": 289,
+   "speaker": "David DiNardo",
+   "text": "Instead of it telling me a high level, I want it to think on its own before it gets me the result. I wanted to build the standard where it's a high executive giving my output. Why I reference Elon Musk is one of the best execution individuals in this world. Reference someone that's bigger than yourself that knows how to execute or whatever to give you the result. So needless to say, base it on the output. I want an execution play on this strategy. Figure out all the objections before you give it back to me. Not, hey, what do you think of this? And then there's the back and forth. Try to eliminate the back and forth and try to execute on the output. And that's how I'm doing it in my business, too. That's how every AI should be thinking about what's the output, what's the execution versus the back and forth. You got to work on the execution and the output. And Claude does it better than anyone. Right now, I'm using Claude by far the most. I would rank this a one because of how powerful it is. Third app I use on an ongoing basis, Claude Design just came out. If"
+  },
+  {
+   "start": 367,
+   "speaker": "David DiNardo",
+   "text": "You've been under a rock for the last couple of weeks, open your eyes because this is a huge game changer. And I'll give you an example. Claude Design is now replacing Figma. So, if you're building an app, how it typically goes is you go on Figma, you work with a product designer, you branch out, and you build the flow, and then there's a lot of back and forth that takes weeks. My first iteration with Taxifi cost me $7,000, and it took me a couple months to do. Yesterday or this week, I've been on Claude Design every day. My tokens have been running out like crazy. Why? I'm on version 10. Of my V2 release into the public. Meaning, I'm doing 10 different iterations to get to the V2 of Taxifi. Why? Because I can give it a prompt and it does the flow for me. It gives me the result of what the flow, what the customer journey would be from meta ads to checkout. And then it produces it and it gives me the scenarios of what the customer would experience at every step of the way. So I could test it. I could see what works. I know what the customer wants because"
+  },
+  {
+   "start": 445,
+   "speaker": "David DiNardo",
+   "text": "I've been doing it for the last 15 years. Now I can play with the different scenarios and think differently and start to iterate on it. So now I can use the product designer when I get it to the 80 percentile. The last 20% I'm going to still use a human. But that back and forth from the product designer to myself I've completely eliminated because now I'm doing the prompts. I'm figuring it out and I'm figuring out the flow. So this last week probably saved me 3 to 6 months of potential development time, cost and back and forth with product designers because of claw design. I would rank Claude Design probably a two, two and a half out of four, one being the very best. Why? Because it's still so early. But the bigger it iterates, the more it iterates, the better it's going to get. And this tool is definitely going to revolutionize Figma and be able for people like me that are non-technical founders to go on Claude, get the strategy, move to Claude design, build out the Figma, build out the process map, the customer journey, and"
+  },
+  {
+   "start": 523,
+   "speaker": "David DiNardo",
+   "text": "Then build the app. You can tell right away Claude is looking for that entrepreneur, that solopreneur from start to finish, and is eventually going to build that whole appstack for that person. It's so obvious. This third one is Nano Banana. I use Nano Banana like crazy. Nano Banana is an image generation tool. I used to pay $60 for every thumbnail for my podcast. Now I pay nothing. I pay $25 a month for everything. All podcasts, all image generation. You go on, you give it a prompt and it usually gets it right. The first prompt. Gone are the days where you need a designer. You need those back and forth. Use Nano Banana. It's been revolutionizing in my business because now I can do it all myself and it's just a prompt. All my thumbnails for YouTube, Spotify, Instagram, everything now comes from Nano Banana. And it's a very simple thing to do. I rank that from an image generation a two out of four. One being the very best. Why it's not a one? Because I still have to do iterations on it and it still takes time. If I get a VA to do it for me and can get the same"
+  },
+  {
+   "start": 602,
+   "speaker": "David DiNardo",
+   "text": "Results, great. But there's still some back and forth of what the right prompt is that I'd rather if there's an easier way to do it, I think it would be revolutionizing. And on top of it, it's just getting better and better. So the images now compared to and we fast forward in 6 months will be even better. So check that tool out. Another tool I use is ElevenLabs. ElevenLabs is a voice recognition tool. So I'll give you an example. I'm doing a reel. After a reel on Instagram or whatnot, you have to do a voice over. That voice over takes time to do because I don't do it every day. I'm starting, stopping, editing, all that. So, a real would take me two hours to do. Let's just say from getting the videos to doing the voice over. Now, getting the videos is one thing."
+  },
+  {
+   "start": 658,
+   "speaker": "David DiNardo",
+   "text": "The voice over through ElevenLabs is I sent it all my podcast. So, it gets my exact voice. Once it gets my exact voice, it then you write a script and it produces that voice over in less than a minute. Meaning my reel is 30 seconds long. My script I tell it saying, \"Hey, I went to this event. I did this. Give me a 30 second script as a voice over for my reel.\" I was speaking at the Wealth Genius conference. Throughout that journey, I took videos, collaged it into a reel, went to ElevenLabs, did a 30 secondond script, put it as a voice over. I was done that reel in less than a half an hour."
+  },
+  {
+   "start": 707,
+   "speaker": "David DiNardo",
+   "text": "So, I cut my time from two hours to less than a half an hour. The next time I probably could get it down to 15 minutes, so I can start producing more work leveraging ElevenLabs. I would still rank it two out of four. Why? Because you could still tell it's a little robotic. You could still tell it's not as humanized as me. The flaws and the the different tones of speaking, it's it's still a little too robotic. But if you want to get content out there and you're I'm a creator, but I'm not a full forge creator where I can leverage this tool to streamline my business and my reel and my content and it works for me. So if you're a moderate, let's just say creator, I think it would be a very good tool for you. The next tool that I use is Intercom Fin. So Fin is now a c customer service agent that if you are running an app and you're using intercom and by the way this is not sponsored by anyone. This is I'm telling you the raw truth of what I'm doing in my business and"
+  },
+  {
+   "start": 782,
+   "speaker": "David DiNardo",
+   "text": "What I'm seeing. Intercom is a chat platform a CRM that you can leverage for an app. Fin is an AI customer service agent that you can train to then respond to your customers. I give this a three out of four. Why? Because there's an education piece that needs to happen while building the customer service of Fin. And I'm not there yet. I think it can get to a one or two if I spent more time developing Fin. And I understand the concept of instead of a customer service asking a human, have predetermined content in Fin to train this AI agent to deliver the customer service. So if someone comes on your website and asks a question, Fin is responding based on the answers it gives it. It's turned on to my website. But I what I'm realizing is I'm jumping in a lot of conversations because I haven't trained it fully of my content because it's changing so much. So there's a lot of time and energy that has to go with training Fin in order to get the results you want."
+  },
+  {
+   "start": 845,
+   "speaker": "David DiNardo",
+   "text": "But the whole concept once it gets there, it could streamline a lot of things where people come in, ask any questions, and it's there right away. Another one is Manus. Manus is built by Meta. It's an AI agent. It goes and does work for you. So, if you want something done, you plug it in Manus and it goes out and it does it for you. So, there's a few levels of AI. There's the chat. That's level one. Get used to that using ChatGPT Claude Gemini. Level two is this AI agents and that's what a lot of more people are getting more accustomed to and Manus is one of them. So, first start with level one, but then graduate to AI agents. Once you get OpenClaw, which I haven't tried yet, into the agents, that's work done for you. That's where we're going in everything we do. We do."
+  },
+  {
+   "start": 908,
+   "speaker": "David DiNardo",
+   "text": "Manus is that. Manus is an AI agent doing work for you based on a prompt and scripts that you tell it to do and then it will redo it for you. So, think about anything you do on a repetitious basis. Manus can do it. Audit your meta ads. It goes in and it gives you a full report as it goes through and it's clicking around your screen doing it. Audit this, audit my website, which I did. And then it gives you scenarios and you can actually get it to do it. I rank Manus one out of four being very good and it's just going to get better. And this is where level two comes in for people. If you start leveraging this, you start making money. And this is the whole premise of this conversation. So look into it. Use it on an ongoing basis. The last one that I've been using the last couple weeks is Perplexity Computer. It acts like a computer and it does the job for you. I'll give you an example. We were building an app through Claude Code. Claude Code just wasn't getting it. We went to Perplexity and we tried it there. It built the whole prototype while we were sleeping. I told it, I want this result for it to do this. And it went out and it did it. It went"
+  },
+  {
+   "start": 990,
+   "speaker": "David DiNardo",
+   "text": "Through all my browsers, all my information, and it got everything done for me while I was sleeping. The prototype didn't work on Claude. It didn't work on the other apps. It worked on Perplexity because it is able to leverage more connectors, more tools without you installing it. It acts as a computer, guys. AI is not going anywhere. It's just going to keep on getting better and better. To indulge in all the AI apps takes a lot of time, a lot of energy, and a lot of focus. I've been very fortunate to put myself in a situation where I'm doing tons of research and taking time every day to level up in AI. I've tested over a hundred apps. I've spent hours getting to the point where I use these apps on an ongoing basis. I'm building taxify for a donefor you service and that's how the result of these apps should work a done for you outcome so that you can go and run your business. If you leverage these apps in any capacity I guarantee you you'll be 1% of the population and you'll take your business to the next level. You just got to go do"
+  }
+ ]
+}

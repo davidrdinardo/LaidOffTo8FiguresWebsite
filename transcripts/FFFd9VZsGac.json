@@ -1,0 +1,63 @@
+{
+ "videoId": "FFFd9VZsGac",
+ "num": 25,
+ "source": {
+  "kind": "youtube-captions",
+  "projectId": null,
+  "compositionId": null
+ },
+ "guest": null,
+ "summary": "David DiNardo shares a hard lesson from building Taxifi: more than 20 people signed up on launch day and not one completed the process, because people do not yet trust an AI app with their financial data the way they trusted a handshake with their accountant. He explains why trust has to be built before technology, and how he vibe-coded an entire sales funnel with Claude over a weekend so he can test messaging on social media and Meta ads instead of waiting on agencies.",
+ "takeaways": [
+  "Over 20 people signed up for Taxifi on day one and none finished onboarding; David's diagnosis is that the trust gap between a person and an AI app is bigger than any efficiency gain.",
+  "In a service business the relationship is person to person; with an AI product it is person to app to model, and the trust has to be rebuilt at each link before people will hand over bank and tax data.",
+  "David's blind spot was optimizing for speed, efficiency and accuracy when customers actually worry about AI, security and data first.",
+  "He built a complete sales funnel, landing pages and customer-journey mapping with Claude in six to eight hours over a weekend, and estimates a repeat would take two to four hours.",
+  "Rather than refining in a back room with a marketing agency, put drafts in front of the market through social polls and Meta ads and let consumer reaction decide the messaging.",
+  "Many AI companies are failing because they are tech-heavy and skip customer behaviour; mixing a human layer into the AI product may be what the market needs until it is ready.",
+  "His two rules for founders documenting a build: nail the customer journey first, then iterate quickly using vibe-coding tools, and spend 90 percent of the time listening to feedback and 10 percent talking."
+ ],
+ "speakersVerified": false,
+ "segments": [
+  {
+   "start": 0,
+   "speaker": "David DiNardo",
+   "text": "Over 20 people signed up on day one and not one went through the whole process. Why? Because trust is not there yet. And that's what I'm realizing with building a tech app. When I started my first business service-based, I would meet the person, shake their hand, and it would be a relationship between that person and me to get their taxes done. Now it's that person to this tech app, this tech app to an AI model. People already don't trust AI models. Who am I to tell people to go onto these apps or my app and go through the whole process in a more efficient way?"
+  },
+  {
+   "start": 48,
+   "speaker": "David DiNardo",
+   "text": "I have to build the trust first. And that was the whole last two weeks for me is how do I build a trust with audience? I've been doing it on social media for the last year. Podcast, videos every day, three times a day. My whole life was been around social media and building trust with the consumers. And I see my podcast. I see people view it, share it. I'm going to restaurants now and people are seeing the trailers and the clips because I've built trust over time. I started development January 1. It's March, middle of March now. I haven't built the trust for people to trust my the financial data to be put into an app to get their taxes done even though I know it's a better solution than anything out there. So, the moral of this podcast is trust. And when you're starting a business, that's what you got to do with people first."
+  },
+  {
+   "start": 108,
+   "speaker": "David DiNardo",
+   "text": "Why would they use it? And what trust have you built for them to use your product or service? I've been doing entrepreneurship for the last 15 years and I'm still learning. But guess what? There's solutions out there. Now, over the weekend, I built a whole sales funnel from start to end using Claude. I was vibe coding for six to eight hours to build landing pages, to build the process out, to build the consumers out, the consumer behavior out, to build everything out. Why? Because instead of going back and forth with a marketing agency or contractors to get to that result, instead of being in the back room collaborating on anything, put things out to the market and see what sticks. That's the power of social media right now."
+  },
+  {
+   "start": 162,
+   "speaker": "David DiNardo",
+   "text": "So instead of going through a whole collaboration process, nailing everything out, fine-tuning everything, I don't know what the consumer is going to resonate with. I was so focused on speed, efficiency, accuracy. My blind spots was AI, security, and data. People worry about that more than the other side. There's always two sides to every story. But when you're building a business now, instead of overthinking everything, use social media to your advantage. Use meta ads to your advantage. And that's what I'm doing. Okay. Now, I vibe coded this whole sales funnel. Now, I'm going to send it to my meta contractor and we're going to start testing the messaging out. Put it on social media. Get polls going, get votes going, see what resonates with people."
+  },
+  {
+   "start": 219,
+   "speaker": "David DiNardo",
+   "text": "That's the whole message here. Because if you don't get what the consumer is thinking about and really hit that pain to solve that problem, they're not going to buy your service. They're not going to buy your product. I can drive as much traffic to the app. But if I can't also figure out that customer journey from the app to when they buy to get them to trust me with their financial data, their bank data, all the information that I need to get their taxes done, they'll just go with the human. And that's why a lot of AI companies are failing right now. They're so techsavvy, tech heavy, they're not really nailing down the customer behavior and maybe mixing in a human layer with AI."
+  },
+  {
+   "start": 267,
+   "speaker": "David DiNardo",
+   "text": "Because maybe the market's not ready yet, and that's okay. But what I do know is the tech is moving quickly. And being able to build a whole sales funnel in less than a weekend, and if I wanted to do it again, it would probably take me two to four hours because now I know what to do. Think about it from an entrepreneurial perspective, how powerful that's going to be. Now, instead of collaborating and waiting for someone's schedule, a marketing expert's schedule to build everything out, I can just vibe code what I'm thinking, send it to that individual, and then we could test it with consumers. The turnaround time, the speed, the iteration process, everything moves so quickly."
+  },
+  {
+   "start": 314,
+   "speaker": "David DiNardo",
+   "text": "So, my lesson for this one as I'm documenting the journey with Taxifi, nail your customer journey out. Number one. Number two, iterate and keep on improving. Put things out there from a consumer perspective. Learn all the vibe coding apps. Take your time and really understand and use it for a collaboration process. Use it for speed. Use it so that you have a visual when you meet with your marketing expert. You can go through all the different scenarios and get that expert to give you an opinion. And now you've cut those six sessions into one. The speed of everything's moving. Leverage it and then get your consumer feedback on social media."
+  },
+  {
+   "start": 360,
+   "speaker": "David DiNardo",
+   "text": "Don't be shy to ask people to vote on different polls. Don't be shy to be okay with people giving you your honest feedback. Now, it's 90% listening, 10% talking. That's what I'm doing right"
+  }
+ ]
+}

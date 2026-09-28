@@ -1,0 +1,523 @@
+{
+ "videoId": "OtPl2SPxjHs",
+ "num": 31,
+ "source": {
+  "kind": "youtube-captions",
+  "projectId": null,
+  "compositionId": null
+ },
+ "guest": "Nish Patel",
+ "summary": "Nish Patel, an AI strategist and studio founder with no formal education past high school, argues that AI is \"middleware for the human imagination\" and that the real bottleneck is people, not the technology. He and David DiNardo work through why scale, speed and optimization are becoming commoditized, why a 100-true-customer business built on trust may beat a 100,000-customer platform, and how fresh grads, employees and business owners should each adapt before the \"AI blast radius\" reaches them.",
+ "takeaways": [
+  "Nish's framing: AI is probabilistic, not deterministic like CRMs and SaaS tools, so mastering the software matters less than unlocking your own curiosity, creativity and imagination.",
+  "The AI \"meteor\" hit on November 30, 2022; like the dinosaurs, most organizations will not die instantly but will be consumed as the blast radius expands to all machine-like work.",
+  "Scale, speed and continuous optimization are the natural terrain of machines and their cost trends toward zero, so durable value shifts to what cannot scale: deep human relationships and trust.",
+  "Nish is building his AI studio around roughly 100 true customers rather than thousands, drawing on Kevin Kelly's 1,000 true fans, Seth Godin's sell-more-to-the-same-people and Dunbar's 150-person trust limit.",
+  "After the SaaS sell-off following Claude Code's release, Nish predicts \"too big to fail\" gets replaced by \"too big to survive\" as small teams peel off niche customers from platforms like HubSpot.",
+  "For employees: use your employer's AI training on their dime and, if laid off, treat severance as startup funding (\"fired into funding\"); for owners: if you are not learning AI, the blast radius is coming for you.",
+  "Nish's sticky note: \"Follow your inner algorithm\" - know yourself, be yourself and show up as yourself, because a unique perspective is what AI cannot copy and commoditize."
+ ],
+ "speakersVerified": false,
+ "segments": [
+  {
+   "start": 0,
+   "speaker": "Speaker",
+   "text": "They're trying to figure out the tech, trying to master the technology, and they're taking that same approach we took to yesterday's technology. I see you on LinkedIn. You're very vocal about AI and what the future has. No formal education beyond high school. And I just got lucky throughout life. And AI is going to change everything. Human nature is not going to change all that much. When you talk about unlocking the human, is it because we have limited beliefs? But AI is a probabilistic technology. To me, it's a blank canvas of possibility. At 24 years old, I was let go of my corporate job. By 34, I was financially free with an 8 figure net worth. This podcast is all about taking adversities and turning them into financial success stories. I'm going to ask for one small favor and that's for you to click subscribe. Now, let's get to the journey. Nish, welcome."
+  },
+  {
+   "start": 59,
+   "speaker": "Speaker",
+   "text": "David, thanks for having me on. It's been a pleasure coordinating this with you and getting you on my podcast because I see you on LinkedIn. You're very vocal about AI and what the future has. But before we get there, who are you? That's a great question. My girlfriend asks me that question every now and then because she's she's an actress as in addition to being a realtor and often she has to stand in front of casting agents and they ask her describe yourself in 2 minutes. And she says, \"How do you describe yourself?\" And I'm at that stage of my life where I just go, \"I'm nish.\" that's it. But in terms of background, I'd say I've got a mut background."
+  },
+  {
+   "start": 106,
+   "speaker": "Speaker",
+   "text": "I often joke I'm not trained to do anything. No formal education beyond high school. And I just got lucky throughout life. That old adage or cliche, show up and good things will happen. I feel like that's been my MMO throughout life. People took chances on me that my resume and my pedigree hadn't earned yet. And what I've done throughout the course of my career, my life is I've had the chance to start companies sometimes, join other companies, and help people build out their vision, scale up their companies, done the occasional stint at larger organizations. Had you know failures along the way that I learned from couple of successes and exits along the way as well that I was fortunate to be part of. And I would say the one thing that really defines me other than showing up and doing the work is my my GPS is always set to curiosity and I'm always looking for what's next."
+  },
+  {
+   "start": 182,
+   "speaker": "Speaker",
+   "text": "I resonate with that a lot because I feel like I'm such a curious person. That was one of my core values in my last business is stay curious. What are you curious about AI right now? What I'm curious about AI like the technology is fascinating. I think the technology is magical, probably the easiest tech we've ever been given, but also at the same time the most complex. And to me, AI is middleware for the human imagination. And what I'm really curious about when it comes to AI, the part that fascinates me is not the tech, it's us. Cuz I think to unlock the value of AI, its full potential, it's really about unlocking our potential. And that's where I see most individuals, teams, organizations struggling is they're trying to figure out the tech, trying to master the technology. And they're taking that same approach we took to yesterday's technology where we would show up for a training class and somebody would teach us, okay, on this screen, here's the fields and here's what you input in each field. So somewhere downstream, you can output these types of things from this system."
+  },
+  {
+   "start": 260,
+   "speaker": "Speaker",
+   "text": "And that worked for yesterday's tech. CRM tools, any number of SaaS applications, they're all deterministic. But AI is a probabilistic technology. To me, it's a blank canvas of possibility. And what it needs more than anything else, it's it needs you, it needs me, it needs every individual's their individual fingerprint of their creativity, curiosity, and imagination to unlock its value beyond just the lowhanging productivity fruit that we can all get from AI right now immediately. But that value will get quickly commoditized. The real value, the real unlock is beyond those productivity benefits. It's what do you want to create today? What are you curious about today? And how do you want to translate that curiosity, that creativity, your unique imagination into new possibilities and new value? That is what I'm fascinated by. And when you talk about unlocking the human, is it because we have limited beliefs and like in the sense of we live in a box? Yep. And we're tunnneled visioned a lot where now AI could unblock a lot of our box."
+  },
+  {
+   "start": 339,
+   "speaker": "Speaker",
+   "text": "Yeah. It's it's ironic. I think the machines are now here [snorts] that will ironically allow us to be human again. M because and this wasn't because anyone was doing anything bad or nefarious or evil. And people often these days when they're talking about AI, they're saying, \"Well, I don't want to become a machine.\" The ironic thing is I think we've increasingly become machines over the last, you know, 50, 100 years. Maybe it started with Henry Ford in the assembly line or maybe it started with modern agriculture. And as our societies got bigger, like we increasingly needed to get more and more algorithmically organized as as societies, as organizations, as individuals and there was we set up incentive structures and we got rewarded for doing that. And through that we became more and more machine-like. So each of us comes into this world and I believe that every human comes into this world and to be human is to be creative to be human is to be curious to be human is to have infinite imagination right but then we go into factory schooling systems and factory work systems I think of the modern day organization as a"
+  },
+  {
+   "start": 415,
+   "speaker": "Speaker",
+   "text": "White collar assembly line and over time as much as leaders in organizations and in society at large talk about innovation and creativity and curiosity Most of us get put in these little tiny boxes on an org chart, right? And it's just like, well, just do what's in the box and then pass it off to the next box. So those natural flames of creativity, curiosity, and imagination, they get dowsted. I don't think they ever get extinguished cuz again, to be human is to be all those things. And I think now with AI, what we're struggling with is it is this blank canvas of possibility. And most people are trained, incentivized, oriented towards how do I use this to scale my output to go faster to continuously optimize it. And that's great. So, how do my emails sound better? How do I send out 10 campaigns instead of one or 100 campaigns instead of 10 or a thousand campaigns or whatever your domain of work is scale speed optimization and that's great but that's machine work that is the natural language and terrain of machines and machines are going to take that work. So, ironically, we've always been getting the seats"
+  },
+  {
+   "start": 494,
+   "speaker": "Speaker",
+   "text": "Ready and keeping them warm until the machines were ready to come in and do the machine work. So, you'll often hear me saying on stage or in fireside chats, let machines machines so humans can human. We should be inviting the machines in. And I understand there's fear, uncertainty, doubt around that because as we give up that machine work to the machines who are better at doing it, we're delegating not just the work but our value and our sense of identity because our identity is rooted in the value that we create. And now we've got this blank space, this blank canvas. And again, a lot of us haven't been following our curiosity, haven't been expressing our imagination. So, we almost need a factory default reset to our four-year-old selves when we're those annoying four-year-olds constantly asking why. And we would be given like Lego blocks and Play-Doh and Etch A Sketch. And we could just make things and then we would tear it apart and make something new. And that's what AI is. It's play-doh, Lego blocks, and Etch A Sketch all rolled into one for adults. And we need to have the courage and the bravery to meet the blank canvas"
+  },
+  {
+   "start": 572,
+   "speaker": "Speaker",
+   "text": "With our imaginations to let those ideas out and to leverage AI to shape that clay of our ideas into things that might see the light of day or may not. But yeah, it's a long-winded way of saying we have become increasingly machine-like as a society, as organizations, and as individuals. And the work now, ironically, is to go back to being human. That's the responsibility and accountability and it's the opportunity. I completely get everything what you everything you just said. To ask you another question around that. The entrepreneur could see the blank C canvas because he might be playing in that game for the last x amount of years. The person in the system that might be four lenses too far. Meaning there's different degrees of people to have that openness to get to that AI capability where you can create and be human."
+  },
+  {
+   "start": 648,
+   "speaker": "Speaker",
+   "text": "But the person that's in the system working in the system for the last 1015 years when we talk about robots commoditizing potential their work the fear monitoring goes crazy. Yes. What's your how does this person that's in the system get over here? So this is a fascinating conversation and one that's been coming up increasingly because part of the narrative around AI recently has been there's like two extremes like on one extreme people are saying the jobs are going to go away but it's fine. We'll have so much economic abundance people can just go home and they'll get universal universal basic income or some sort of dividend check every two weeks or whatever. We could talk about that cuz I don't think human beings will align with that. Agreed. And then two is others are saying well everyone can be an entrepreneur now and there's push back here on this end. People going well not everyone's meant to be an entrepreneur. And I've been thinking about that and I'd love your perspective on this as well because you're an entrepreneur. Is I I wonder if"
+  },
+  {
+   "start": 723,
+   "speaker": "Speaker",
+   "text": "Over the last like 20 30 years especially we've conflated the idea of entrepreneur with things like having to raise money and building a team and things like that right isn't entrepreneurship really just creativity I wonder about some of the quote unquote entrepreneurs today are they also going to have a hard time playing in this world because there's a lot of entrepreneurs who sort figured out like, oh, I'm good at raising money or I'm good at building a team and things like that. But in a world where like we can leverage AI now to hit well above our weight, where an individual or a small group of people can start to literally speak Vibe Code apps into existence. Do we need to go out and raise a bunch of money? Do we need to go out and build like massive teams? Is scale actually something that we should be pursuing or is it almost going to be counterproductive in a in a world of AI?"
+  },
+  {
+   "start": 791,
+   "speaker": "Speaker",
+   "text": "I do think so. Getting back to your question, I think for somebody who has been rooted in the system of algorithmic work and output for a little or a long time and that's how they're oriented, that's how they're wired, I don't think everyone's going to be able to step out of it. So, and I don't have a crystal ball, but I do think it is going to be a very messy, bumpy, potentially very chaotic transition before we get to the other side of this and figure out like what the new system looks like, how it operates. So I don't think everyone's going to be able to you know, embrace this opportunity because the reality is, and we should be honest about it, is that machine work, we're not going to be doing it any longer. Cuz the machines are better doing the machine work. And that's basic economics. The machines can do it 24/7. They don't get sick. Quality control is better for any number of other reasons. And the reality is is AI continues to evolve in terms of what it can do. Yeah."
+  },
+  {
+   "start": 867,
+   "speaker": "Speaker",
+   "text": "That more and more of the work that we're doing is going to be consumed by the machines. Even as we create new possibilities and new value over time that'll get copied, commoditized, codified and the machines will consume it. So, we're moving into a like a very different type of environment and world. None of us has a crystal ball. We don't know exactly how that's going to play out, but I am personally mid to long-term very optimistic. I am a short-term pragmatist. We're going to have quite a bit of chaos, I believe. But how can you not be optimistic and excited about the possibility of unleashing more human potential, more human creativity? Because I think ultimately that's what will happen in society is that you I anyone can leverage these tools to go I see something in the world that is a problem that is an opportunity and I think I have a way of fixing it and yesterday they wouldn't be able to take advantage"
+  },
+  {
+   "start": 943,
+   "speaker": "Speaker",
+   "text": "Of that like that spark of imagination would die before it even saw the light of day because they would have to marshall like resources, dollars, people, any number of other things. And this new economy that you know is still very much in its early days, I think more more of our human imagination will be able to be translated into possibility and into reality. And one thing I often find myself thinking about is like you and I live in an amazing world. It's not perfect. Not by any stretch of the imagination, but we are literally sitting here with sounds coming out of our mouths that we each understand. Like language is an amazing thing. We are recording this and any number of people in different parts of the world will end up listening to this. Everything that we experience on a day-to-day basis, the conveniences and everything else is a result of human imagination of individual and groups of humans sitting around the campfire and speaking"
+  },
+  {
+   "start": 1020,
+   "speaker": "Speaker",
+   "text": "Possibility and then creating and realizing that possibility. And you and I and the eight billion people on this planet today are benefactors of all those sparks of imagination that got translated into reality that came here before us. But how many of those sparks of imagination for the 100red billion that walked here before the 8 billion that are here today never see the light of day? And if AI truly is middleware for the human imagination, which I believe it is, like you and I, like the way it's progressed just in 3 years, it is mindblowing what we're able to do today versus 3 years ago or even 3 months ago. We are going to see an explosion of human imagination being realized. And I think we are going to live through like a golden age of innovation. It's not going to be easy. It is going to be messy. But, I, I'm betting on us."
+  },
+  {
+   "start": 1087,
+   "speaker": "Speaker",
+   "text": "And to think on the other side, you have Uber that came in. Yes. And essentially overnight replaced a lot of taxi drivers, a lot of drivers out there. Yes. This unlock of technology with the human does the money flow to the top where hey you're building an app you're commoditizing something and you reap the benefit of it but how about everyone else in the system that is potentially not doing it? Yeah. The not just the honest but the realistic answer is I don't know. You don't know. Nobody does. Here are some of the the ways I'm thinking about it of how it might play out. So, first of all, with Uber, and I'm going to talk about dinosaurs. Uber, the taxi companies didn't adapt."
+  },
+  {
+   "start": 1148,
+   "speaker": "Speaker",
+   "text": "They just sort of stood still. And when I say dinosaurs, we all think about the meteor, right, that hit 65 million years ago. And because of the way schooling systems work, the my assumption anyways growing up is oh the meteor hit and the dinosaurs immediately died. The reality of what happened is the meteor hit and dinosaurs caught in the immediate blast radius died, right? Like volcanoes, fire, earthquake, tsunamis, whatever else. It actually took quite a bit of time as that blast radius continued to expand and had second and third order implications for the rest of the dinosaurs to die off. It actually took like anywhere from hundreds to thousands to millions of years. And they died off because they didn't adapt. Like they maybe sensed some of the changes happening in the environment, but they didn't adapt. Some did. We call them birds today. And the same thing happened with is happening with AI. The AI meteor hit November 30th, what was it? 2022, a little over three years ago. And there are some caught in the immediate blast radius, customer support agents whose jobs are highly mechanized, step by step,"
+  },
+  {
+   "start": 1224,
+   "speaker": "Speaker",
+   "text": "Basically they're basically pre-algorithm, right? So of course AI is going to come for them first. But as AI's blast radius continues to expand, as it evolves, it will come for the rest of the machine work. And going back to Uber, the taxi companies didn't adapt. They stood still. They were the dinosaurs. And it didn't take millions of years. To your point, it took months or singledigit years. And the taxi business today, like having a medallion, isn't worth very much. And I think what we need to be so some of the things I think about is like who's going to reap the benefits of this. I think short term I think it's going to be a growing amount of inequality perhaps that the big will get more than their fair share of it just because of established advantages that they might have. But I also think that AI to me is not just middleware for the human imagination. It's the ultimate copy and commoditize machine."
+  },
+  {
+   "start": 1301,
+   "speaker": "Speaker",
+   "text": "It's going to change the dynamics of the playing field. A few months ago, we saw this huge selloff for all these SaaS stocks, right? People call it SaaSmageddon or the SaaS apocalypse. And basically that was a reaction to Claude Code came out and now people were literally speaking applications into existence. And what the market sensed, what smart investors sensed is, oh, like we've moved into this next phase with AI where we're like individuals and small teams are going to be able to do so much more with it just on their own."
+  },
+  {
+   "start": 1346,
+   "speaker": "Speaker",
+   "text": "So if we can, let's talk about some of these big tech companies for a second and what might happen. So their stock sold off. And a lot of people said, well, like nobody's going to vibe code a replacement for HubSpot or Workday or any of these other big platform apps. 100% agree. Not today. So, one vector might be like I've never written a line of code in my life and last year when I used Replit, it was a toy. I couldn't like I did What is Replit? Replit is a vibe coding platform like Lovable and things like that. So think of it as early Claude Code. So I would play with tools like replet and I could play at developing something but it's not anything I would be able to actually use or have like five other people use. Fine. Sort of got me exposed. Today, I've built multiple applications with Claude Code that I use and small groups of people use."
+  },
+  {
+   "start": 1412,
+   "speaker": "Speaker",
+   "text": "And somebody might go, \"Yeah, but like you're not going to put that on the App Store and like 100,000 people aren't going to download it.\" 100% agree. Where are we going to be in a year? Where are we going to be in 3 years? So, yes, today is somebody going to vibe code a replacement for an enterprise software application? No. But AI continues to evolve at a head spinning rate. The blast radius continues to expand. So that's one vector to think about. Will the big companies be able to hold on to their advantage? Two is people will then say, well, people aren't going to want to drop these enterprise platforms, right? They rely on it. Yeah. But they've been able to win and dominate their markets because of scale."
+  },
+  {
+   "start": 1460,
+   "speaker": "Speaker",
+   "text": "Like scale has been the thing that they can leverage. Is scale gonna matter as much moving forward? And here's what I mean by that. Like how many thousands of people use HubSpot? Like tens of thousands, hundreds of thousands of companies use HubSpot. But HubSpot is built sort of a generalized CRM tool like most SaaS applications are. It's generalized for customers that need CRM or maybe sort of look like this. And every tech company and every company generally wants to go and get as many customers as possible. But could you and I now go and find 20 HubSpot customers who actually want a CRM that does something much more specific, like a CRM for 20 companies that look exactly like this? And then do you and I have to go out and raise a lot of money to build that CRM system for them? No. Could we have a deeper relationship with those 20 companies? And have a better aligned road map"
+  },
+  {
+   "start": 1535,
+   "speaker": "Speaker",
+   "text": "For all 20 of them. Maybe now what if you and I did that and what if 10 other duos went out and did that and now you start to take away 20 customers here, 20 there, 20 here, 20 there from the whale that is HubSpot or any other large organization. How do the returns start to spread out then? Like coming out of the 2008 financial crisis, there is a line that came out that still echoes today about the big banks and financial services companies, too big to fail. I wonder in this AI shaped world if the line that will come out is too big to survive. Let's say I'm the CEO of HubSpot. Mhm."
+  },
+  {
+   "start": 1585,
+   "speaker": "Speaker",
+   "text": "Let's say you are vibe coding and you I have all the data for the client. I see that a 100 clients have just left because now I have all the data mechanisms of it. I ask why these 100 clients have left. If they're a specific industry, a specific niche following that specific pain, wouldn't you think HubSpot would just then rec recreate that in their platform if they're adaptive, if they're curious, if they have the same mentality as solopreneurs or conversations that we're having today, they could. So, that's an interesting you [clears throat] know, way to look at it. So now HubSpot might become actually not one company but multiple companies within it where it will have not one product or one platform but multiple products within it. But then it'll come back to what would be your incentive or my incentive to stay there and build that? Why wouldn't we just go out on our own and build it if we're able to build it? I I think you know and again right now I believe in this phase of how AI is going"
+  },
+  {
+   "start": 1662,
+   "speaker": "Speaker",
+   "text": "To get rolled out the narrative is the individual like the individual worker will bear the brunt of the burden of AI being this ultimate productivity unlock and the quote unquote big bad companies will just make all these layoffs and we're going to see that. We've seen some of that. I believe we will see more of that because that is what the current system is set up for and what it incentivizes. And there's been this term called super companies that has been trending more and more. I actually think it's that narrative is going to flip. I don't know if it'll be in a year, two years, three years, but at some point it's going to flip and it's going to be superhumans versus super companies because AI to me is we are each being given an Iron Man outfit of superpowers and they're becoming easier and easier to use. Like you and I could literally sit here, pop open a laptop and start to speak possibility into existence, into reality. So, let's fast forward like a year or two years, whenever it is, and HubSpot goes, \"you know what? Why don't we"
+  },
+  {
+   "start": 1738,
+   "speaker": "Speaker",
+   "text": "Actually just set up whole bunch of like, you know, teams of like five to eight people, and each one actually builds a product like a CRM product that's dedicated to this tightly defined type of customer. So, we don't have one ICP, we've got multiple ICPS. Cool. They've already got the infrastructure to do that. How are they going to incentivize people to stay in that environment? Why wouldn't we just go off and say, \"H, that's nice, but why don't I just go off and just build it on my own?\" Or, \"If I'm going to stay here, the paycheck every two weeks is nice. The benefits are nice, but I want a stake in the outcome from this. And so I think large organizations might end up looking more like startup incubators where small teams of people will organize around opportunities and problems. But that incentive model is going to have to be different because today's incentive structure is for a white collar assembly line. Yeah. If we move into a world like this and"
+  },
+  {
+   "start": 1814,
+   "speaker": "Speaker",
+   "text": "Companies are going to need to move into a world like this because I believe we're moving from an execution economy to what I think of as a regenerative economy because yesterday companies would find an advantage and then they would harvest that advantage by trying to achieve scale, speed and continuous optimization. Eventually others would copy their advantage and commoditize it forcing another cycle of innovation but it would be primarily through scale speed and continuous optimization but as we've already talked about that is the language and natural terrain of machines and unless only few companies get to use the machines like this is going to level the playing field. So if we're moving from an execution economy to a regenerative economy where we're going to have to create more continuous or persistent advantage across every facet of the business, then we're going to have to be organized differently. Like today's org chart is actually a detriment to AI. I believe most organizations who talk about their struggles with AI, again, they're trying to figure out how to get people to figure out the technology. You got to get people to figure themselves out. And you've also"
+  },
+  {
+   "start": 1894,
+   "speaker": "Speaker",
+   "text": "Got to change the way you're organized cuz AI is not going to realize its full potential or humans aren't going to realize their full potential within a within the confines of a traditional org chart. So what is an ideal or chart? I don't know yet, but I've been thinking about it as it's not going to be the white color assembly line. I don't know if traditional functions and job titles exist in 5 10 years because things will be in a continuous state of evolution and adaptation. So I think of it less as organizational design and more as organism design as something that is continuously evolving and adapting. Jack Dorsey, the CEO of Block and the former or the founder of Twitter X. He recently did a significant layoff, 40% of Block. And part of the reason was AI. And there's been lots of narrative around it. And he put out an article a couple of weeks ago that's in line with what I've been talking about for a couple years which is you know he's eliminating large swaths of middle"
+  },
+  {
+   "start": 1969,
+   "speaker": "Speaker",
+   "text": "Management cuz he's starting to navigate towards this idea of like the organization is a series of concentric circles right now but he said in an interview with Sequoia Capital famous VC firm out of the valley He said something that I've long believed is true. Once you start to think through the second and third order implications of AI, the economic consequences moving from an execution economy to needing to be in a regenerative economy, an execution company to a regenerative company. He said on this podcast and I think the podcast is co-hosted by the founder one of the two founders of HubSpot Brian Halligan. He said I don't know what an organization is going to be. I think ultimately that is the question that is going to have to be answered. It is not going to be today's organization like that is going away. It's it's basically already a dinosaur. The blast radius just hasn't caught up to all of them. And I think Jack Dorsey, I don't think he's got all the answers, but he's decided, I'm gonna start like figuring out how to adapt and I'm going"
+  },
+  {
+   "start": 2048,
+   "speaker": "Speaker",
+   "text": "To make mistakes along the way cuz he doesn't want to be consumed by the blast radius cuz he knows it's coming. This is an amazing conversation and you're bringing up so many points in regards to going back to SaaS products. What is a SaaS product? I think the simplest like software as a service it's like software that sits in the cloud that usually you pay a monthly fee for traditionally per user over the last few years we've increasingly trended towards like per transa per transaction and as you and I are both very well aware of like in an AI shaped economy it's moving towards you know pricing models moving around outcomes and in I believe you were at the SAAS NORTH conference there was a speaker there that talked about result as a service I don't know if you heard that presentation I didn't hear it but I heard the term and is that more the phase that we're going into where the outcome so HubSpot you go in it's a CRM you do the work in a platform essentially it's a humanized person that comes in and does still a"
+  },
+  {
+   "start": 2124,
+   "speaker": "Speaker",
+   "text": "Lot of the manual network where if HubSpot got put on its head now, if you're building a product, you're giving an outcome to the client, right? And that outcome would be, hey, I just took a client from start to finish in the sales journey and I got them to I closed them and that whole process was completed. Yeah. So, result as a service or outcome as a service. And there's been this other term that's been going around for the last year and a half. Not software as service, but service is software. So, cuz ultimately what somebody wants is an outcome. Did I get a lead that converted? Did I get a contract that, you know, the other party signed? Whatever it might be."
+  },
+  {
+   "start": 2177,
+   "speaker": "Speaker",
+   "text": "So I do think like that is becoming more prevalent. I think there's an opportunity for a window of time to create a lot of arbitrage opportunities around that to approach companies and go forget the software. You could even make the case for, you know, we can take over the the work that people are doing cuz a lot of the work that people were doing was basically inputting information into these SaaS products so some other information can be outputed downstream in support of an outcome. So yeah I think it's I think it's a it's a viable it's proven and I think it's going to be a growing way in which certain types of services slashs software is is priced but again you could do that for a while others will copy it and they will commoditize that value. So you can capture probably outsiz value right now while it's still relatively new and nent but eventually others will copy it and they will commoditize that value. I've begun"
+  },
+  {
+   "start": 2253,
+   "speaker": "Speaker",
+   "text": "To believe that in this world where AI's capabilities are going to continue to expand and they're doing so at a head spinning rate and as we as individuals, as teams, as organizations get more comfortable in using and wielding these AI superpowers and we're able to like speak new possibility into existence, copy and com commoditize what our competitor across the street is doing that the real value that you can make sustainable and have more of a a different type of scale which I think of as fewer customers more depth of relationship is the relationship is the human relationship. Paul Graham you know famous from Y Combinator one of the founders of Y Combinator he one of the most common things that's quoted about him is do things that don't scale especially at the start of you know setting out and finding out what your customers need and want. Do things that don't scale. I wonder if that's something we're just going to have to think about as our core operating model,"
+  },
+  {
+   "start": 2330,
+   "speaker": "Speaker",
+   "text": "Like do things that don't scale. And one thing I've been thinking about lately, and this sort of goes back to the whole notion of like is being a big company going to be counterproductive cuz right, [clears throat] AI is not just a copy and commoditized machine. It allows us to create make scale and speed available on demand. It makes those things abundant. And whatever we're producing. We've seen this in marketing, right? Like, oh, you want a hundred pieces of copy, click a button. A thousand, click the same button. A million, click the same button. Campaigns, click, click, click. So scale and speed are not going to be as valuable. That's because the cost of scale, speed, continuous optimization is going to trend towards zero. It's going to be abundant. It's going to be relatively more easy to access to gain. So that's not where the value is."
+  },
+  {
+   "start": 2388,
+   "speaker": "Speaker",
+   "text": "That's not how economics works. Economics like delivers value to the things that are hard to do, the things that are unique. And I do wonder, again, I don't have a crystal ball. Will it be more the the human connection, the relationships that will matter? And HubSpot having hundreds of thousands of customers, how can they possibly have a real deep human relationship with that many customers? They can't like all these companies talked about community and relationships and things like that, but they can't have real relationships. And I've been thinking about three three gentlemen lately around this, even as I'm building my own AI studio is, do I want a lot of customers or do I want fewer? So, Kevin Kelly has long talked about the idea of a 100 true fans. So, do I want like a thousand customers or 100 true customers? Seth Godin talks about sell more things to the same people. So, do I just want to sell one thing to 100 customers or do I want to develop a"
+  },
+  {
+   "start": 2464,
+   "speaker": "Speaker",
+   "text": "Relationship where they trust me, they know me, I know them, and I sell more things to them. And the relationship and the depth of relationship compounds as I create more valuable products for them over time. And then the third person is a I'll call him a scientist. He some might think of him as a cultural anthropologist but last name is Dunbar and he's famous for many things and one of them is something he wrote about tribes cuz once you get past 150 people it's hard to know everybody in quote unquote the community or the village. And that's when trust starts to erode. And I think trust stating the obvious here is sort of at a premium these days. And I believe in a world where you know we can literally spin up not just a million pieces of content and 10,000 campaigns and 100,000 vibecoded apps and deep fakes and everything else. I think trust like true human I know"
+  },
+  {
+   "start": 2540,
+   "speaker": "Speaker",
+   "text": "David, David knows me type of trust is going to be the thing that is most valuable and I think about that as what to build my company around like who are those 100 customers and not just my relationship with them and theirs with me but almost like that village of a 100 customers. So, do I get more deliberate and purposeful around who do I want to work with and why and why do they want to work with me? That's, you know, again, we're all sailing into the fog of like this unknown. But that might be a viable path. And the business models, software as a service, service is software, outcomes as a service, all that, those are business models. Those will be like ships like passing by the night and there will be next year's business model and the one after that. We're probably going to be moving into a time of like more rapid iteration on business models. But to me, I think the real business model, the one I'm trying to figure out and orient around for my own business is"
+  },
+  {
+   "start": 2615,
+   "speaker": "Speaker",
+   "text": "The relationship. It's trust. It's going deep with them and them going deep with me. Wow. The whole time you were talking, these are the things that went through my mind. One, your knowledge. To the amount of research you're doing and you're diving into. Can you talk about like before I ask all the secondary questions, are you spending an hour on this a day, two hours? Like are you is this your life in the sense of your curiosity is at a peak right now? Like even thinking about you're flipping business on its head completely. Yeah. And I love that so much. Like it resonates with me so much because I mean I went through my whole MBA program where it's do this, do this, do this, work in a corporate job. That whole system that we've been taught was always wrong."
+  },
+  {
+   "start": 2684,
+   "speaker": "Speaker",
+   "text": "The system in business of the hierarchies and the pay scales and the salaries that was wrong. People just lived into it. The pandemic changed the consumer behavior where, hey, I don't need to wake up at 7:00 a.m., go to work, come home, and this factory work type of mentality got flipped on its head in regards to that external factor that happened. People are going back to that because the organizations don't know how to adapt to the new norm. What you're talking about in my mind is like the next like five steps of where we're at now of like okay now we know and no one has a crystal ball but I get your message let's just say AI can commoditize everything eventually well if AI can commoditize everything."
+  },
+  {
+   "start": 2755,
+   "speaker": "Speaker",
+   "text": "This goes to the point of okay well if I have the Dunbar 150 or less where you have relationships with individuals and you can fulfill not only one or two needs but 15 needs then I guess your mind goes because I'm such a numbers person fortunately or unfortunately what value do you put to that and what price tag do you put to that in terms terms of like business model because yeah, we're always taught build a product, get as many customers as you as you possibly can, scale the crap out of it, right? Raise money, get your exit, and then do it again because you can't just be on a beach anymore and and and live your life. Like that's you have to have a purpose and whatnot. But you're saying there's different models out there that people can really think about."
+  },
+  {
+   "start": 2820,
+   "speaker": "Speaker",
+   "text": "I think those model So first of all going back to what you're saying about like you know the current or yesterday's model was wrong. I don't think it was wrong. I think it was what we needed for where we're at as societies and economies and things like that. Well, it goes back to landlines versus cell phones, right? In the sense of people built all this infrastructure for landlines and then cell phones came up and it bypassed the whole landline infrastructure. Yes. So, but we needed that like yesterday's system of like this assembly line org chart to marshall resources because it was it was really hard to create and deliver value to the market."
+  },
+  {
+   "start": 2876,
+   "speaker": "Speaker",
+   "text": "So we did need to have these mega corporations and things like hierarchy are actually innately human. Whether it's humans or primates like we need hierarchy. We need status. Power is a thing that we biologically and like evolutionarily we have like we have like they've been advantages. So that model wasn't wrong in my opinion. It was what was needed and necessary. And what I'm talking about I think that possibility was always there but it it's incredibly difficult. It's hard to do. I think the X factor now with AI getting injected in, it makes these possibilities within reach now. And part of this messy transition that we're going to go through is we're still predominantly in yesterday's system of how do we organize, how do we think about success, scale, as you were just talking about, like we're taught to scale as much as possible. And I'm"
+  },
+  {
+   "start": 2956,
+   "speaker": "Speaker",
+   "text": "Talking about a potentially a model that has a different type of scale, not breath, which to me might be brittle now. Cuz if like I could get copied and commoditized for the services and products I offer, like how do I hold on to a,000, 10,000, 100,000 customers versus 20 where I can truly deeply know them? So, it's a different type of scale. And your question around how do we like what does the pricing model look like in that world? I don't know. It's we're going to have to iterate our way through this. What does the pricing model look like? What does the valuation model look like? Right? Because I'm talking here more about like things that are a lot more ambiguous like what is the value of trust in these relationships? And is somebody going to want to say, \"Oh, Nish, you got a great company.\" how many customers do you have? 100."
+  },
+  {
+   "start": 3020,
+   "speaker": "Speaker",
+   "text": "Like if they're using yesterday's valuation model, they're probably looking for this. I think eventually there's a way of valuing like, oh, you've got 100 true customers. You've got real depth. You're selling multiple products. Their renewal rates are, you know, off the charts. So lifetime value is incredibly high. And we'll create different valuation models. We always figure out how to do that of how do we create new business models to align players in the market supply and demand and things like that will create new valuation models. But what I'm talking about here is to me feels directionally right in my gut feels right."
+  },
+  {
+   "start": 3072,
+   "speaker": "Speaker",
+   "text": "And I think most importantly for me it feels human like yeah that's the company I want to build. And does that go back to your at the beginning of the conversation figure out who you are? Yes. Your identity and then lay on the business model around Yeah, because I think and and why I I why that caught my attention is when you said it's you like that it's you. It's your gut. My gut would probably not say that because I'm a different person and that's what makes people so special. You're building a business model around your gut, your instincts, who you are. I think we talked a little bit about like entrepreneurs, right? And to me, entrepreneurship is really just an act of creativity. And an act of creativity is an expression of yourself. And I've long believed, you know, even before AI showed up, like entrepreneurship is you expressing yourself in whatever way you want, in the truth you want to see in the world. And it might be a truth around solving a problem, creating an"
+  },
+  {
+   "start": 3153,
+   "speaker": "Speaker",
+   "text": "Opportunity. And even in the way you operate, like how do you show up in a world like you've started businesses, those businesses are an extension of you like you're embedded in them. And to me, the best entrepreneurs care about that. Cuz they recognize, oh, this business has a name. You know, XYZ Inc. Or whatever it is, but it's you. It's an extension of you. At least when it's, you know, of a certain size. I've never been part of building something that's like a mega corporation."
+  },
+  {
+   "start": 3198,
+   "speaker": "Speaker",
+   "text": "Probably why I've never really thrived in those types of environments. It it it didn't feel like I was expressing myself. It didn't feel like I was part of a a living organism that I was that had a symbiotic relationship with. So the business is you and and when you're now designing new business models or thinking about this when you say you have a blank page, you really have a blank page in the sense of like you're I I'm just trying to go through that that that process that's in your mind for entrepreneurs, solopreneurs, individuals that that are working at the HubSpots like okay I want to break those down because those are three different types of individuals people that are working at in HubSpot while you're talking about the 20 to 100 clients that they see an opportunity and they go hey why don't I just go create that"
+  },
+  {
+   "start": 3275,
+   "speaker": "Speaker",
+   "text": "I think there's a huge midmarket there there's a huge play there where people have know the customers, know the market and now can leverage technology to adapt to it. Right? So when we talked about everything going to the top, I see a huge opportunity there for a lot of people in the organizations that might never wanted to be an or never knew how to be an entrepreneur. And I I honestly hate the word entrepreneur too because it sounds so aggressive in in so many different ways. It's like business person or someone that wants to create their own identity through business or creation or whatever it is. So, they're able to create monetary value to someone by working in an organization."
+  },
+  {
+   "start": 3327,
+   "speaker": "Speaker",
+   "text": "That's where I see a lot of people flourish if they and I I do think there's a business model out there to help these individuals get them over maybe the fear of starting or other types of psychology around going through that process to then potentially being a soul openreneur. Then I see the opposite side of okay these mega corpse they're going to want to hold and keep and yes fight and raise money. I mean, you look at Meta giving individuals a billion dollars to come on and help them develop and these AI architecture indivists, all these people, they're they have the cash, they're spending it, and they're just trying to monopolize everything at the end of the day. And then you have I'm going to say yourself where it's like okay you've been in business you've seen all aspects of business you have the curiosity you have the bandwidth and now you're saying why does your curiosity goes to a whole different level in my mind it's like why"
+  },
+  {
+   "start": 3406,
+   "speaker": "Speaker",
+   "text": "Does the organiza you're you're challenging the status quo on everything why does the organizations have to be like this why does the business models have to be like this? Why does the valuations have to be like this? Like my mind is not even there? Which I I appreciate even having this conversation now because now my mind is going a whole different direction to be like you're freaking right. Like instead of typing in chat GPT or Claude and being like what's the business model for my business? No. Get on a piece of white paper and be like, \"What do you see? Who are you? What do you want? And where do you see the business for yourself?\" And now reverse engineer backwards and be like, \"Okay, how do I get to this vision?\" not the predetermined vision that everyone thinks about of hey chat GPT give me the best valuation for my accounting company that I'm starting to maximize the the value to investors right but that's what we are rewarded for"
+  },
+  {
+   "start": 3483,
+   "speaker": "Speaker",
+   "text": "So just stepping back for a second and I failed to answer one of the previous questions you asked me, which is, you know, how much time do I spend thinking about this? You know, like where is all this coming from? Am I doing a whole bunch of research? I'm not doing a whole bunch of research. Like I've read a lot through my life. I had somebody actually say something to me out in San Francisco a few weeks ago that I don't think she realized how much of an impact it had on me. She was just like, \"I'm glad that you like she was talking to me and she's like, \"I'm glad you are here right now in these early days of AI cuz it feels like you were just getting ready for this to hit and for everything you've ever been doing and thinking about like all sort of coales around this moment.\""
+  },
+  {
+   "start": 3537,
+   "speaker": "Speaker",
+   "text": "And I feel like that myself. I feel that through this conversation, too. And you know and again like I don't think yesterday or today's like model is quote unquote bad. It's it's what it is. And we've actually become as societies and as individuals more and more algorithmically driven optimized like this is what success looks like, right? Like, oh, you go out and you start this type of company and if it's got this much of TAM or something like that, like go out and do the following things like run the playbook. And TAM for everyone is total adjustable market. Yeah. Or in any other domain you might be in, right? We even see it with like young people on Instagram, right? They scroll through and they see like these bodies, hairds, and lives of perfection."
+  },
+  {
+   "start": 3595,
+   "speaker": "Speaker",
+   "text": "And they feel like that's what I have to live and because of experiences through my life medical issues other life issues you know probably around my mid-30s I started to do a lot of work in terms of self-reflection as I was getting closer to official middle age started read going back to the books I read when I was younger like meditations by Marcus Aurelius read more philosophy and things like that And I spent a lot of time going inwards. So I spent a lot of time with myself really knowing myself. And you know some of the realizations that came out of that is like simple but profound when you really embrace it. And one of them is like we're all here for an astronomical blink of an eye. Like literally an astronomical blink of an eye. And do I want to be adapting to and chasing and the external algorithms and what others and what society says is success or do I want to be driven by my own inner algorithm? And because of that,"
+  },
+  {
+   "start": 3675,
+   "speaker": "Speaker",
+   "text": "You know, I've probably I know I have I've left lots of opportunity and dollars on the table, but I think the best compliments I ever get paid is when people say not to me but I hear them talking behind my back to others and they'll So Nish is genuine. He's authentic. He's real. What you see is what you get. So for me it's I took the time to know myself. And through that I think when you know yourself and like accept yourself like the good, the bad. There are parts of me that are ugly. But once you embrace it all, you're able to navigate through the world being driven more by your own inner algorithm versus being shaped and sculpted by the external algorithm. And if we're all here for an astronomical blink, like what a waste to take your marching orders from Instagram, LinkedIn, or anywhere else where, you know, people are putting their lives of perfection on or lives of theater on display."
+  },
+  {
+   "start": 3756,
+   "speaker": "Speaker",
+   "text": "And then yeah I'll spend a lot that's also given me you know both the mental space to think about like what is AI and what is it actually doing and how might it what might be the second and third order implications that's what I'm fascinated by you know by spending time on working on myself I also write a lot about human nature and AI is going to change everything. Human nature is not going to change all that much. So I often get asked for like what books do you think I should read? And I'll often say go and read like Robert Greene's books on human nature or other books on human nature. Go back and read Shakespeare because it's a good reflection on human nature. And that's how I end up coming to a lot of the things I I think about and because you know I write a couple of books along the way it allows me to go oh that thing I read like 15 years ago it's sort of connecting to this and when you go to San Francisco and other and other parts of the world does it spark"
+  },
+  {
+   "start": 3832,
+   "speaker": "Speaker",
+   "text": "Your curiosity even more like is not San Francisco not other places no. I'm saying when I'm in San Francisco, it doesn't spark my curiosity. Why? San Francisco bores me. The AI conversations there are the most boring conversations cuz it's more of this masters of the universe of how do we use it? Like these stories about the one person billion dollar company or the 10 person billion dollar company and it's all about like this like display of productivity porn. And it's like cool, but this is like amazing magical technology. What is the future we want to prompt with it? How is this going to make the world better? And like one person I heard on a podcast recently, Marc Andreessen, famous venture capitalist. He's a guy who built Netscape back when he was in college somewhere in Indiana, I think. So, brilliant guy. Could run laps around me for anything. Like knowledgebased. He was on a podcast and he was just like, \"I have no time for introspection.\" And, there's a lot of people that"
+  },
+  {
+   "start": 3908,
+   "speaker": "Speaker",
+   "text": "Were applauding that going and I'm like, \"No.\" Like I love the fact that what came out of San Francisco and what continues to come out is this amazing technology. But what bores me is all right but beyond the productivity porn beyond just the we're going to create a billion one person billion dollar company like why don't you want to build with others like where is the human in this? You know, a lot of the AI bros or tech bros are talking about, hey, don't worry. AI will create so much economic abundance that if you don't want to work, you won't have to. You can just go home. And that to me is a lack of introspection. It's a lack of understanding the human condition that we're here for an astronomical blink because there's two E's in employment."
+  },
+  {
+   "start": 3966,
+   "speaker": "Speaker",
+   "text": "One is the economic. I need a paycheck to pay for things. And maybe AI will create so much abundance we each get a dividend. Like Norway has an oil dividend for everybody. Cool. So economic stability. Great. But employment is also existential. Entrepreneurship is existential because it is through our work that we sculpt part of our identity. We discover who we are. What are we good at? That's why I think so many people are so bored with and pissed off at their jobs is they are doing that machine-like work. And again, on the other side of getting past the fear of AI, the struggle with the blank canvas of possibility is the opportunity to go back to being our human selves. And what we create allows us to sculpt ourselves, to be ourselves. I was doing this fireside chat at this company last year in Ireland. They had their global marketing team and this young woman relatively early in her career she said so Nish the machines are going to come and take most of the work I'm doing today. What's your career advice for me? And I get this from my"
+  },
+  {
+   "start": 4045,
+   "speaker": "Speaker",
+   "text": "Friends whose kids are in university and about to graduate. And I get this from adults of all ages. And the single best piece of advice I give to anybody is beyond embrace the blank canvas of possibility is know yourself, be yourself, show up as yourself. Because in a world where I believe AI is going to allow us to copy and commoditize most anything already a lot today much more in a year and in 10 years what will be valuable is you your perspective and what is it that you want to create and put out into the world in whatever form it's in and what you will do what I will do what the other eight billion people will do for each one of us that'll be different because our creativity, curiosity, and imagination is unique like fingerprints."
+  },
+  {
+   "start": 4098,
+   "speaker": "Speaker",
+   "text": "It's shaped by our backgrounds, our experiences, how we perceived experiences in our lives. But that's the opportunity. And that's why I'm so excited. But that's why San Francisco bores me. I host these dinners like these 10 to 15 person dinners in cities around North America, the UK and Europe where we get together and we have real talk, real conversations about AI. Sort of like this we just don't record them. And the ones where I have the most fun are the ones where people come with a open mind. Which I think is has always been important is more important than ever before. So when I've done it in Atlanta, New York, Toronto, London, places like that, it's a lot of fun. Because it's intellectually stimulating cuz you'll share your ideas, I'll share mine and like that's how we sort of like pingpong and then I'll go away thinking, oh like I never thought about it the way David's thinking about it and it'll"
+  },
+  {
+   "start": 4174,
+   "speaker": "Speaker",
+   "text": "Marinate and maybe not immediately but maybe at some point down the road it'll unlock something versus San Francisco honestly just it is just boring as sin. Like I could probably predict what everybody in the going to say. When you talk about the humanized approach, a big portion of building a business is teammates, building a team, building a tribe, continuing on that tribe. Now with a tool like AI and not maybe needing a big team and a big tribe to do it, does the tribe now convert to potential clients to build that community? Yeah. That's a great question. I think a lot of organizations over the last few years have been talking more and more about community primarily as sort of like a marketing channel, right? So, it sort of got bolted on to a lot of places. Oh, we have a community now."
+  },
+  {
+   "start": 4230,
+   "speaker": "Speaker",
+   "text": "Which is usually just a a Slack channel that yeah, you know, where you can hear crickets. And yeah, to me, community is not just the people that you're working in the business with. And I love the guys I'm working with. And I chose to work with them. They chose to work with me. And everybody that will come into the business, it'll be the same. Like, do I want to work with this person? I think that's more important than ever before because as we've talked about, people have options. They could just go off and do something else. And I do think about our customers being part of that community. Even right now with some of the products we're putting out there, like we're being diligent about like, you know, we're going broader in terms of like who do we want like trying this out and giving us feedback, but then who do we actually want to be working with and why? And it's not just about like the company."
+  },
+  {
+   "start": 4291,
+   "speaker": "Speaker",
+   "text": "20 years ago when I was building businesses, it was like, oh, like look at the logo that showed up, right? And I don't think about logos now. I think about like, oh, this individual, how are they wired? Is there psychoraphic that they're curious? What's their culture around like AI and their thinking around AI? Are they just going to do like 1 plus 1 equals two AI math of like oh I can replace these tasks i.e. These people with AI and if that's what they're looking to do, not a good fit with us cuz we want to help organizations and we're building things to help organizations use AI to unleash human potential and through that unleash value in the organization because that's where I think the opportunity is. So yeah, our community is those of us in the business and it's the customers that we're working with, specifically the people within those clients. Question we haven't had to answer yet is, are we working with the customer or the people within the customer? And if one of those people leaves, do we still want to work with the customer?"
+  },
+  {
+   "start": 4367,
+   "speaker": "Speaker",
+   "text": "We'll get to that point. It'll be something we'll have to deal with. But in the States and in China, everyone talks about the AI race to the best military, the best information, the best everything. Yep. That takes completely away from the humanized approach of what this tool can do. So you hear all the news out there that the US government's investing $500 billion to AI, China's investing, all these countries countries are investing. How does Canada stand up to all the algorithms right now are either in China or United States. Canada doesn't have any essentially."
+  },
+  {
+   "start": 4424,
+   "speaker": "Speaker",
+   "text": "Does that limit us? Is there less opportunity there? Could that be shut off one day? Do you think about it from a global perspective as well? So one way above my pay grade. Like geopolitics, macroeconomics, like this is game theory on steroids, right? So way above my pay grade. So take anything you here or anybody else might be listening to with a huge grain of salt. It's incredibly expensive to build out this infrastructure to and in terms of like the frontier models, yeah, it's it's US and and China. And I know like some people have talked about like open source, so every country can have sovereign AI and things like that."
+  },
+  {
+   "start": 4477,
+   "speaker": "Speaker",
+   "text": "I don't know if that will if that will work. I mean, did we create sovereign social media? No. It's basically a handful of American and a handful of couple of Chinese companies, right, that dominated globally. So I don't know how it plays out. I don't know if like as Canada as a quote unquote middle power coordinates with the other middle powers and can they amass enough resources to do something on their own. Perhaps the opportunity for countries like Canada is to think more about how do we invest into AI to unleash human potential? How do we take the 40 million plus people here today and enable them with AI to embrace AI as that blank canvas of possibility and to unleash human potential and if we could do that because that's where most countries aren't investing they're investing in the infrastructure and I understand that from a military point of view. And again above my pay grade there's already has been there"
+  },
+  {
+   "start": 4558,
+   "speaker": "Speaker",
+   "text": "Will continue to be seismic changes geopolitically. But when I've had a chance to speak to a member of parliament or anybody else in government, what I'm pushing for, what I'm advocating for is investing in AI. I don't even know if it's education and enablement, but it's helping people show up as humans to the blank canvas of possibility. Because I think that's where we can maybe hit above our weight and unlock amazing possibilities. Cuz I do think about like 40 million people. Even if we could get a fraction of that, you know, unlocking more of their imagination, expressing more of their imagination, what innovation might come out of that small innovation that will radiate locally and make a small ripple? What other ripples will that lead to? And then some people, what are the bigger bigger ripples it might lead to? That's where that's where my energy is. And maybe that's where Canada's energy should be because trying to keep up with the"
+  },
+  {
+   "start": 4639,
+   "speaker": "Speaker",
+   "text": "Quote unquote the two big dogs. I don't know if that's economically feasible. And two secondary questions. And what has stirred me to have a deeper conversation, a bigger conversation around the the bigger picture of things is last week I got my first referral from Claude. So enter prompts into Claude to grow my business and to ask questions and be my assistant at the end of the day. And someone came in and I'm like my first question with them is, you know, where'd you hear from us? And it could be meta ads, you know, organic social media, whatever it is. And he's like, \"Claude sent me here.\" It just got me thinking. I was like, \"Holy crap.\""
+  },
+  {
+   "start": 4689,
+   "speaker": "Speaker",
+   "text": "Kind of like happy. Yeah. But also scared too to be like, \"Okay, we understand how much information is going into these these tools.\" Now we also there's a degree of competition in regards to business right especially if you don't go in that business model what you're talking about of like the hundred and going deep and being specific with that but if you go scalability and there's another company in the states doing the very similar thing to me where the algorithm is there could be a very easy way for the algorithm to refer that client versus us. Correct. So that got me kind of thinking about that. The second question is when you go to parliament and you have those deeper conversations, is there a blank stare or is there openness to the human approach of AI? So I haven't gone to parliament."
+  },
+  {
+   "start": 4752,
+   "speaker": "Speaker",
+   "text": "I've had the chance to meet with a couple of MPs and talk about this. And what I will say is that there's been a, at least with the MPs I've had a chance to interact with, a sea change over the last 12 months where everybody was talking about AI couple years ago. Three years ago, not really paying attention to it. Couple years ago, sort of paying attention to it. And now, I've even done, one-on-one workshops with some of them. And what they walked away with and I've actually heard one who has repeated some of the things I've shared with you here today around curiosity, creativity, imagination. They see the human opportunity in it. And what they also understand now that they've put more hands-on keyboard and they're using it more themselves is they understand both the challenge in bringing people along for the ride where that fear and uncertainty might come from, where the issue with the blank canvas might be emanating from. And they also understand the opportunity for individuals, for organizations, for our society. And ultimately, our"
+  },
+  {
+   "start": 4833,
+   "speaker": "Speaker",
+   "text": "Parliamentarians are going to be shaping the laws, the regulations, the policies that will impact today and tomorrow, for many tomorrows to come. The lives that you and I and everybody else in this country lead. And there's very serious issues to deal with when it comes to AI. It's just not the economic. It's all the way from the economic to the existential. And we're not having, in my opinion, as many conversations as we need to. We're not having, you know, the right conversations. So I'm encouraged that there seems to be more parliamentarians who are starting to get genuinely curious about this. And they're coming at it from a place of party aside, political affiliation aside, I need to understand this because this is going to shape the country that will be that will emerge over the coming years and"
+  },
+  {
+   "start": 4908,
+   "speaker": "Speaker",
+   "text": "Decades. We talked about the human approach with AI. Does anything keep you up at night of what it the opposite of effect of it. You mean like some sort of Terminator Armageddon? Maybe not that extreme, but a day in the life extreme or I mean we t we hear a handful of companies control it and the rest of us have to sit at home and watch Netflix, right? And we talk about Yeah. No. For two reasons. One is if something like that comes to pass, it comes to pass. There is I don't spend a lot of time thinking about like the the extremes. And I honestly don't spend a lot of time thinking about like and trying to try and create certainty in the future. Cuz life taught me a long time ago that certainty is the illusion, uncertainty is the norm. And then two is I"
+  },
+  {
+   "start": 4986,
+   "speaker": "Speaker",
+   "text": "Don't spend a lot of time thinking about it because ultimately you know the world around me might change but I still get to go inwards. I still get to live in my head. I still get to have my own thoughts. I may not be allowed to navigate through the world the way that I want to, or desire to, but, I can navigate to wherever I want inside myself and sty my own thoughts. If the world became a dividend check to every individual, Mhm. Would that dehumanize the whole I think if it was a if it just stopped at the dividend check and that's it, like everybody go home. There was enough AI models for I mean I I've heard I forget who from a podcast like probably a Steven Bartlett AI podcast where imagine a state where an iPhone the iteration of an iPhone's every six months let's say where a new release happens well what happens if the speed"
+  },
+  {
+   "start": 5061,
+   "speaker": "Speaker",
+   "text": "Of AI gets to every three months a new iteration Yeah, once a month a new iteration. We will see that 25 times a day a new iteration where the human can't even keep up with the innovation out there. If that becomes a reality across the board for everything going back to the humanized we will opt out of it, right? So, one thing I think I don't know why I've been thinking so much about it over the last two, three years is Starbucks. And I'm I think I'm quite a few years older than you, but I still remember when I used to go to Silicon Valley when I was younger, California, when and I'd tell my friends, \"Oh, I'm going to go like hang out at a Starbucks, right?\" Because Starbucks was still like novel."
+  },
+  {
+   "start": 5118,
+   "speaker": "Speaker",
+   "text": "It was new. And it was that special place. We go to Starbucks, pop open the laptop, you know, do a couple of calls, you know, grab, you know, this coffee that was made by a barista. And then what did Starbucks pursue? Scale, speed, optimization. Today, there's a Starbucks on every corner. You could open up your app on the phone. We've all got it. There's 100 ingredients. You can make your caffeinated diabetes in a cup. Pick it up from the order head counter at the closest location to you, keep your headphones on, and not talk to another human. Starbucks is soul sucking. I go to Starbucks when it's convenient. If it's in the hotel lobby or right across the road, I just need my coffee."
+  },
+  {
+   "start": 5167,
+   "speaker": "Speaker",
+   "text": "They're shutting down locations. It's no longer the special place. Nobody talks about, \"Hey, do you want to like my girlfriend never says, do you want to go to Starbucks today?\" Like, nobody says that. Anymore. There's been an explosion of coffee shops, independent coffee shops, the last few years. They're small, they're independently run, they don't have 100 ingredients, they don't even have an app. They have maybe two types of milk and not 18. And you got to stand in line like savage. You end up talking to the person in front of you, behind you, the person behind the counter knows your name. And I sort of lost my train of thought. What was the question you asked?"
+  },
+  {
+   "start": 5214,
+   "speaker": "Speaker",
+   "text": "The one so if everyone becomes a div everyone has a div and humans I don't want to say don't have a purpose but don't have a means of innovation and creativity and oh so if we just keep innovating to the extreme there's like 25 versions of everything like every day or something like that I think Starbucks might be the canary in the coal mine. We've opted out of it, right? Cuz they constantly innovate. There's some new like coffee concoction that will come out every month, right? Like you know, you and I know in September like pumpkin spice everything will just hit like a craze. And then there'll be something around Thanksgiving, Chris, like whatever else, right? But the independent coffee shop, they're not selling you coffee innovation. What they're selling you is the thing that can't scale, right? Is they know David, they know your name."
+  },
+  {
+   "start": 5277,
+   "speaker": "Speaker",
+   "text": "They've created a sense of place, community perhaps at the coffee shop. So I think we will like even though perhaps and going back to you know my idea of the type of company I think I might want to build it's will those customers want perpetual innovation or will the value come more from like the relationship? They'll still want innovation, but will they constantly be looking across the road or is it going to be a different type of relationship? Like my girlfriend and I are in a committed relationship. Neither of us is looking across the road and going, \"Oh, like is there somebody else over there?\" It's like no, like we our relationship continues to get deeper and deeper and deeper and that's where the value comes from."
+  },
+  {
+   "start": 5333,
+   "speaker": "Speaker",
+   "text": "And so yeah, I think we would probably opt out of that sort of hyper innovation. They might like it in places like the Bay Area where they seem to you know, be enamored with like this constant conveyor belt of, okay, that's nice. What's next? That's nice. What's next? Like never actually investing into any sense of real depth of permanence. And I think about business, I mean, no one has a crystal ball, and I'll keep on repeating that like like you've repeated it a lot in this in the this podcast. Take everything with a grain of salt. No one knows what the future has. We just it's all assumptions and 95% assumptions are wrong at the end of the day. One thing when you talk about experiences, you go to Saunders Farm now, I don't know if you've been for the Halloween fest, it is jam-packed of people experiencing fear while they go through the park. And you could see people just light up with"
+  },
+  {
+   "start": 5409,
+   "speaker": "Speaker",
+   "text": "A whole bunch of different emotions while they're going. And it's getting busier and busier and busier every year. And I'm totally on board with what you said. I mean, the whole Starbucks thing is a perfect example of where AI is going. Yes. Scalability on all aspects. Then people get desensitized by it. And now I'm not going to a Starbucks for that experience anymore. I'm going strictly for commodity coffee that I would for convenience and coffee experience versus an individual Simply Biscotti where place yeah where it's you could sit down there's a lot more variations and it's I'd pay a premium for to get a whole different experience but that's where I would go do work versus a Starbucks that whole vibe has completely shifted. It it really has. People want again going back to what we're talking about human nature. Yeah. Humans need a sense of belonging."
+  },
+  {
+   "start": 5477,
+   "speaker": "Speaker",
+   "text": "Yeah. We always have like this world we inhabit that we think is the norm. It really is the exception to what was the norm for a very long time. And ultimately, you know, part of what we all need is connection, is belonging, is a sense of place. I remember when I was growing up, like you would know your neighbors. You would borrow like milk and sugar if you ran out. I think today if somebody knocked on somebody's door saying, \"Can I borrow some sugar? I ran out.\" They'd be calling the cops. And and maybe it's because as I'm talking about neighbors, like I live in the house I grew up in, so I've been walking through the same front door since I was 10 years old. Most of the neighbors are the same."
+  },
+  {
+   "start": 5532,
+   "speaker": "Speaker",
+   "text": "As it turns out, my girlfriend lives next door, too. So, I totally doubled down on the whole neighbor thing. But yeah, we want belonging. Simply Biscotti is a great example. Their coffee is good. They make their food inhouse. But I think what people love doing is it's this small intimate place where people can sit down. You see families, you see these elderly couples there. You see, you know, guys like you working away on their laptop or something. And everyone belongs. They're not all necessarily talking to each other, even though some are, but they belong. I never get a sense of belonging at Starbucks. I get a sense of, okay, here's [snorts] my coffee and hopefully there's an open seat. And the flip side of that is, you know, just to give people a sense of Simply Biscotti is a local coffee shop with pastries and food. They've been around for a while which they have a reputation from if I started a Simply Biscotti"
+  },
+  {
+   "start": 5608,
+   "speaker": "Speaker",
+   "text": "Today I would be curious of what the success rate to build that community is over the longevity of things like from an economics and a business perspective that business model would scare me. You got to have patience. You have to have patience but you also then have to have cash flow banking belief in not only today but in a few more years type of thing, right? Yeah. And it sort of goes back to like the algorithms of the systems that we all swim in, right? What do we incentivize and prioritize? What do we believe we need to be doing?"
+  },
+  {
+   "start": 5653,
+   "speaker": "Speaker",
+   "text": "That affects, you know, how we think about risk, how we think about success. And yeah, so if you were to start up your independent coffee shop today, it's going to take you a minute to get your feet under you. And how would you even charge for that experience? Like I don't know if you do charge for the experience. Maybe eventually you do of like just to be in the coffee shop it costs something like I I've like another sort of theory or prediction I've got is I our streets will be filled with self-driving cars over the coming years, right? Teslas, Waymos, whatever they are. I think they're a wonderful experience whenever I'm in Phoenix or out in California. I love taking Waymos."
+  },
+  {
+   "start": 5705,
+   "speaker": "Speaker",
+   "text": "But I also do think at some point there's going to be an app where I call my car. And it'll cost X to go from point A to point B. But there will also be the option to say, I want a human in the car today. They're not going to drive, but maybe I'm feeling lonely and I need a conversation. Maybe I'm going to the doctor's office and I just want to talk to somebody on my way there. Maybe I'm going to Greece, where I'm going in a couple of months, and I want somebody in the car that maybe grew up there and want to have a chat on the way to my appointment who can tell me what's not in the travel guides and things like that. And we'll pay 2x, 3x, 5x for that, right? Because it's the thing that is unique, rare, non-scalable."
+  },
+  {
+   "start": 5753,
+   "speaker": "Speaker",
+   "text": "And yeah, we're going to maybe you'll start a coffee shop and it'll be we have great coffee. We have great in-housemade pastries and cakes and things like that, but it also costs X dollars to sit in here. And I think that's where the business models get tricky. They can. Yeah, because I see so many I think a coffee shop's a perfect example that have the humanized experience. I I see more leave and shut down. Yes. Than more successful just because the economics don't work. And when we start commoditizing everything, it's like looking at that business model the way you're doing for the the 100 clients or whatever to go in depth."
+  },
+  {
+   "start": 5808,
+   "speaker": "Speaker",
+   "text": "I would love to have a collaboration session with you or I think it should be known. Okay. Well, this idea feels good and my gut says it's good. Now, how do we turn that into something that can support the business model financially? And I'd be curious to go back and forth with you in regards to like objections and, you know, planning these things out because there's rent, there's material, material's expensive, and coffee is expensive, and all these affordability things that are happening now are expensive until they start going down. Well, now would I pay double the price to go to a Simply Biscotti for the experience? Now it's a human behavior thing."
+  },
+  {
+   "start": 5858,
+   "speaker": "Speaker",
+   "text": "How do you market that different experience from Starbucks to simply if the coffee is very similar but the exper the experience is different? Because my b my mind is so trained. It's a coffee but this experience is just it's better. But would I actually pay for that experience? I don't know. I've been really maybe part of it goes back to what we were talking about before that coffee shop has to be an extension of you. What do you think a coffee shop should be? How do you think it should feel? How do you think it should function? Who do you want? Who do you see being there in your coffee shop? How do you want them to feel? And do you think that needs to exist in the world? And if the answer is yes, then I think everything else you could figure out. But that's where you got to start like, and I think that's always been true. I think it's more true than ever before now where even if you're building something that's like a pure digital business, like what do you think needs to exist and how do you want it to feel for yourself and for the people that you're going to serve?"
+  },
+  {
+   "start": 5932,
+   "speaker": "Speaker",
+   "text": "More important than ever before. And when would you start in that scenario start leveraging AI research and start using the tools like that seems like all of a that's a creative session where you have to look at yourself what you want. I use AI as part of my creative thinking, but it it always starts with me, right? It starts with you and then it evolves to because wouldn't you think the AI algorithm deflects? It doesn't know all of you, right? And I see the the deeper the more the questions I get deeper in my AI algorithm, it gets even more confused and it just throws it way off because it has such a it it has 80% of me right now because I I ask so many questions."
+  },
+  {
+   "start": 5981,
+   "speaker": "Speaker",
+   "text": "The 20% is where the meaning and everything is. It it's once it gets to that phase, it doesn't make sense anymore. Yeah, I think AI is really good to help you through concepting, ideation, things like that. And this reinforces what I'm always teaching others in terms of a healthy relationship and use of AI is we have to command AI. So, it's always got to start off with like our perspective, our point of view. And there will be a point where there's diminishing returns and it's just like I see some people stay within the chatterclaw interface for way too long and I'm like no, like here's where you just leave it and you've got to go and figure it out on your own. And you've got to make the final decisions. And that's where AI could be. There's a fine line between cognitive leverage and creative leverage and cognitive and creative atrophy where we allow it to drive us to decisions that sound smart and sound right."
+  },
+  {
+   "start": 6058,
+   "speaker": "Speaker",
+   "text": "But again going back to where we started off like what do you want to see in the world? And very often what we want to see in the world is not going to fit some pretty model or algorithm. It's just like I think this needs to exist. And that's why so much of what we have in the world is here that we get to benefit from because people didn't follow the algorithm. They didn't follow like the model. They were like, I think this needs to exist. I think it would be super cool if like people were able to do X. Or if I had a service that did Y for them and they went out and did it. And maybe that's faith."
+  },
+  {
+   "start": 6105,
+   "speaker": "Speaker",
+   "text": "We talked about a lot. Anything else? Anything that we didn't touch on that is kind of in your stomach and in your gut being like if I could share this to someone starting out in just graduated from university is starting out I think there's three people that I'm thinking about right now is someone just graduating two is someone working in an organization that sees opportunity and then third is that person in business right now that either has a business or wants to grow their business. Anything around those three individuals that you would Sure. So, I'll try and drop something for each one of those three. So, for the fresh grad or the soon-to-be grad, you're hearing lots of stories about entry-level positions are being eliminated. Again, to me, that's 1 plus 1 equals 2 AI math because a lot of entry-level positions are about doing real work, step-by-step work. What I think I'm 54, for the first time in my life, I wish I was 20 again, cuz I think there's going to be turbulence. There's going to be chaos for you career-wise, but I think there's a huge"
+  },
+  {
+   "start": 6185,
+   "speaker": "Speaker",
+   "text": "Opportunity waiting for you to grab. One thing I'm advocating organizations do is, a lot of development teams used to have like sidebyside programming. One person would be, coding, the other person would be looking, keeping an eye on the north star. I think there's an opportunity in organizations to think about doing a different type of sideby-side work. Entry level people, fresh grads, and those with experience, expertise, and some wisdom because they've been at it for a while. The fresh grads coming in with more blank canvas mind and thinking, they haven't built up habits and just biases that they don't even realize that, you know, people like me have over time because we're just used certain ways."
+  },
+  {
+   "start": 6237,
+   "speaker": "Speaker",
+   "text": "And then marrying them to the people with experience, expertise, and wisdom. Cuz one of the unlocks in organizations is we not just applying AI to the way we do things today but to actually treat tomorrow as day one. We have a blank canvas if the current process and the way of doing things didn't exist. How would we do it differently? And how would we because now we have this alien species technology called AI. So marry those people because I think in there you get 1 plus 1 equals three outcomes and it would turbocharge how much leverage and momentum and ROI a team and organization is able to get with AI. So that is like what I'm recommending to organizations and I do think we are going to start to see more of that. So if you're a fresh grad don't buy the current hype around you're not needed. I think you're going to be more needed and more valuable than ever before. And if that doesn't turn out to be true, then go out and build your own thing because now you've got like an AI iron man outfit and you could hit well above your weight. You'll make mistakes along the way, but go and do it. For the person working in an"
+  },
+  {
+   "start": 6316,
+   "speaker": "Speaker",
+   "text": "Organization who might be sitting there like going I'm afraid that they might replace me. If they're going to do it, they're going to do it. You have no choice over it. What you can't do is stand still. What you can't do is be like those dinosaurs who didn't adapt and just waited for the blast radius to catch up with them. Take advantage of being in the organization right now. They're all investing into your AI training, your AI adaptation. Take those AI tools, use them, and become Tony Stark because they are an Iron Man outfit of AI superpowers. Do it on their dime. And if the unfortunate reality of you getting fired comes to be, well, that severance is your funding. So, I think of it as fired in funding. You're funding to go out and do something where you can express your creativity and maybe start your own thing. That's not going to be true for everybody. And as we've talked about, I think unfortunately lots of people aren't going to want to adapt or able to adapt. What was the third? The entrepreneur that either has entrepreneur a big business either a you know a 100 person business a 50 person business yeah that is not leveraging AI right now is"
+  },
+  {
+   "start": 6396,
+   "speaker": "Speaker",
+   "text": "In a traditional space or whatever if you're not leveraging AI because you've made you've tried it and you've determined it's not going to be able to create value for you fine but if you're not leveraging AI because you know you don't want to take the time to learn it then you're a dinosaur. The blast radius is coming for you. Cuz AI is becoming the and this isn't just entrepreneurs. I say this to executives all the time because in large organizations most executives talk a lot about AI but they're not doing it. So they're not speaking the language of the new operating system. They're not speaking the same language as others in their organization who are adopting it and are evolving the way they're working and the way they're creating value."
+  },
+  {
+   "start": 6455,
+   "speaker": "Speaker",
+   "text": "So those leaders aren't going to be able to lead for very much longer in my opinion. Cuz it's going to the like that's going to catch up to them and same for the entrepreneurs it's going to catch up to them. And the other thing I would tell entrepreneurs is going back to copy and commoditize your organization every organization every team every individual has to become a perpetual innovation engine. You're going to have to create new advantage on a more regular cadence. Cuz AI any advantage you and I create today is going to get eaten by the machines or copied and commoditized by others at a quicker pace than yesterday. Yeah."
+  },
+  {
+   "start": 6505,
+   "speaker": "Speaker",
+   "text": "And that's both exciting and challenging. If you did have a crystal ball, what would the next five to 10 year five years and 10 years be? Oh wow. Like a crystal ball or a magic wand and I could just like make whatever happened happen. Crystal ball. I don't know about 5 years or 10 years. That's a long time with how quickly things are moving. I do think we are going to see quite a bit of job and economic disruption over the next one to two years. I think we're going to see a lot a lot of volatility. And I think we're going to be shocked by who falls by the wayside and who ends up winning. We have a closing tradition on this podcast where I asked one last question. If you could put a sticky note on your first laptop before you ever got started, what would it say?"
+  },
+  {
+   "start": 6573,
+   "speaker": "Speaker",
+   "text": "Follow your inner algorithm. Thank you so much for taking the time. What I've gotten from this conversation is so much wisdom. You know, there there's there's a difference between knowledge and wisdom. And I feel like I've resonated with a lot of your wisdom of finding who you are and, you know, looking at it from a a bigger picture than just AI, the human. And not too many people talk about the human aspect of it right now. It's all about what the tool can do. The productivity talked about the productivity porn. That's all you hear everywhere. And I think this was a really refreshing conversation for me and I hope for my audience too to there's a lot of opportunities out there and if you start with the human the opportunities go even further. And if you start with yourself, they go even further and deeper and more satisfying."
+  },
+  {
+   "start": 6639,
+   "speaker": "Speaker",
+   "text": "And that's I appreciate that so much. I appreciate you taking the time to come and spend time here. If people wanted to get a hold of you, what's the best way to get a hold of you? Look me up on LinkedIn. You will see my face if you search for Nish Patel or nishp is my LinkedIn handle and that's the best way to get a hold of me. Thanks Nish. All right. Thank you David. Appreciate it. Share this with a friend so that they could be a part of this journey too. Keep watching for more."
+  }
+ ]
+}

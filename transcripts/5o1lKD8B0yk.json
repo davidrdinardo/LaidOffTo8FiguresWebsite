@@ -1,0 +1,83 @@
+{
+ "videoId": "5o1lKD8B0yk",
+ "num": 2,
+ "source": {
+  "kind": "youtube-captions",
+  "projectId": null,
+  "compositionId": null
+ },
+ "guest": null,
+ "summary": "David DiNardo records a solo episode in the week he launched Taxifi, the app he built to solve the tax pain for creators after 15 years running an accounting company. He explains where the name came from, why the product targets the T2125 business return by connecting to the user's bank and CRA account, and why an AI product has to solve 95 percent of the problem before customers will trust it over a human. He also shares the nerves of running a waitlist launch for the first time, with the app due to go live March 1, 2026.",
+ "takeaways": [
+  "Taxifi targets one specific problem: creators filing the T2125 business return, with AI generating total income and expenses from a bank connection and pulling slips from the CRA so no separate bookkeeper is needed.",
+  "The name combines Tax and FI, the FI standing for finance, because David expects the product to expand from taxes into helping creators understand where their money is after it lands from Shopify, Stan Store and other platforms.",
+  "David's rule from a recent conference: an AI product must solve at least 95 percent of the problem end to end or the customer will go back to a human tax preparer.",
+  "Launch week ran on a schedule: the name and logo on Monday, early access waitlist on Tuesday, the first podcast episode on Wednesday, with more content Thursday and Friday.",
+  "AI got David's branding about 60 percent of the way; he still had to hire a professional designer, though the upfront AI research meant the designer delivered in a week instead of months.",
+  "Unlike a service business where you sell and then do the work, a product has to be designed for a specific person from A to Z, which is why he is using the waitlist for real-time feedback before the March 1, 2026 launch.",
+  "David commits to documenting the journey weekly and in the open, on the theory that helping even one person build an app or business in Canada is worth the vulnerability."
+ ],
+ "speakersVerified": false,
+ "segments": [
+  {
+   "start": 0,
+   "speaker": "David DiNardo",
+   "text": "Today I launched Taxifi to solve the tax pain for creators. I've been on this personal brand journey for the last year and what I can tell you, it's freaking hard. They're so good at making money, but once they generate money, what do they do afterwards? Now they have to understand the tax game. Having these conversations with creators, it always got me thinking about how to solve that problem. Today I launched Taxifi, the first app on the market to solve the tax pain for creators. I've been on this personal brand journey for the last year and what I can tell you, it's freaking hard. And I'm taking the last 15 years of experience building an accounting company and what I realized talking with a lot of creators is they're so good at making money, but once they generate money, what do they do afterwards? And when I was having these conversations with creators, it always got me thinking about how to solve that problem. Now running an accounting company for over 15 years, I realized there is a lot that goes in to solving or completing a tax"
+  },
+  {
+   "start": 77,
+   "speaker": "David DiNardo",
+   "text": "Return and really understanding the financial game. So these creators who understand distribution, editing, speaking, how to communicate online, now they have to understand the tax game. And I'll give you an example. This year was probably one of the hardest years of my career after being an entrepreneur for 15 years because the game changed for me. I was so good at numbers. I am so good at numbers. I am so good at finances. I am so good at taxes. Now, I was going to take that and just tell the world on different advantages, disadvantages, and different tax scenarios that happen that you can benefit from."
+  },
+  {
+   "start": 126,
+   "speaker": "David DiNardo",
+   "text": "Everything was in my mind, but then communicating it online is a completely different ballgame. Being able to articulate your thoughts in less than 60 seconds or have a hook and then distribute it and then edit it and then being in the right scene, the right place. Like there's so much that goes on into creating. And I never wanted to be a creator until I done it. I never would have been able to go online unless I started a business. I I ran it and I sold it. I I've seen the whole journey and you would think with all that knowledge you can go online and just within you know days become viral and build an audience that people you know want to pay attention to right now attention is so hard to get. So I resonate with these creators that really go allin on being a creator because it takes a mindset of how do you differentiate yourself? What platform are you using? What editing tools are you doing? How many posts are you doing a day? The quality of the post. There's so many things that go on into being a"
+  },
+  {
+   "start": 201,
+   "speaker": "David DiNardo",
+   "text": "Creator. But then once you generate money, what's next? How do you save on taxes? When to incorporate? When to stay as a sole proprietorship? There's so many other questions that come on. And when I was thinking about this full-blown scenario, the name Taxifi really resonated with me. And I'll tell you why. Tax and FI. And the reason why I wrote it Tax Fi instead of FY, one was FY was not available online. And two and more importantly FI was related with finance because I do believe there's a big portion of tax and in the future there's a big portion of finance people need to understand where their numbers are at selling through Shopify Stan Store there's so many different apps to generate money then it comes into your bank account what do you do with that money and that's where the finance piece will come in the future so that's how I got the name Taxifi. Now the name only means something and and why my previous business I named it Involta which was more brand. This I'm going after a"
+  },
+  {
+   "start": 277,
+   "speaker": "David DiNardo",
+   "text": "Specific person and solving a specific problem. So when you're building a tech company my preference is really nailing down exactly what the problem you're going to solve is. And I remember this from a conference I was at a month ago. In order to solve an AI problem, which this is AI-driven, you have to solve 95% of the problem for it to work. For a user to use it and not go back to the traditional way of potentially a human, a tax preparer or someone else because if you don't solve the problem in its entirety, they will eventually or the consumer will not buy it. So in my mind, I always had that in the back of my mind that I'm solving a specific problem. And this specific problem is for creators to solve the T2125."
+  },
+  {
+   "start": 334,
+   "speaker": "David DiNardo",
+   "text": "So the business tax return, you can go on to TurboTax. There's so many free apps out there to solve if you're just a personal tax individual that has a T4 slip. You can go and that's all automated. The next step is if you're a business, you have to file what's called a business return, which I need as a tax preparer your total income and all your expenses. In order to generate that, someone needs to do the bookkeeping. At the end of the year, why does the creator have to go do the bookkeeping? Why do you have to pay hundreds to thousands of dollars for someone else to do the bookkeeping? When you come on this app, we're going to connect to your bank and guess what? We have an AI system in the back that will generate your total income and all your expenses."
+  },
+  {
+   "start": 387,
+   "speaker": "David DiNardo",
+   "text": "So, that's solved. We're going to connect with your CRA. So, that's solved and we can pull all the slips from your CRA. And then we're going to ask some specific questions for you to make sure that your taxes are handled properly. And that's where I came up with the name Taxifi to really solve the tax pain for creators. And this week is an exciting week. Why? Because on Monday I launched the name. On Tuesday I launched the early access. And on Wednesday, I did my first episode of the podcast talking about the journey. So, there's a lot of content that I'm putting out to the world. And guess what? It is very nerve-wracking because this is the first time I've ever entered the early access waitlist type of model where I'm creating a waitlist knowing that my launch is March 1st, 2026."
+  },
+  {
+   "start": 443,
+   "speaker": "David DiNardo",
+   "text": "And this waitlist, I'm gonna go back and forth and talk with users on this waitlist to make sure I get the app right. And typically, you know, when you're entering a service-based business, it doesn't work like that. You just go and you don't have to create a product. You go, you sell, you do the work, and the human can handle multiple things. So you can just sell and the client just comes in and you get paid versus in a product you have to design it for a specific person and really take that product from A to Z. And this early access is going to be designed to get real time feedback and real-time answers so that we can design this app specific for you. To tell you that I'm not nervous and excited at the same time is an understatement. Launching something new, putting it in the public, and not knowing how to market it. I'm entering a new territory. And that's the exciting part. The nervous part is it is a lot of money creating an app, getting all the distribution before you can even sell it. And AI is there, but it's not there."
+  },
+  {
+   "start": 516,
+   "speaker": "David DiNardo",
+   "text": "I'll give you an example. When I was creating the branding and the name, I went into all these websites, AI generated logos, AI generated names, I did it all. And I spent weeks trying to figure out a logo that worked for me. I ended up not liking any of the logos and hiring a professional to nail down the logo I wanted. Now, doing that upfront research was great because it got me to really pinpoint exactly what I was looking for so that when I was able to communicate with a brand expert, they were able to understand my idea versus me giving them a whole bunch of ideas and them running with it and then that back and forth taking time. When I gave it to the designer, it took a week for a turnaround for the branding and the logo I wanted. If I didn't do the back-end research, I guarantee it would have take months and a lot more money. But AI is not there yet. If AI was there, I wouldn't have had to use a human. But I still used a human because it wasn't exactly what I wanted. And that was a kind of realization that AI and technology will eventually get there."
+  },
+  {
+   "start": 587,
+   "speaker": "David DiNardo",
+   "text": "We'll see. But right now, it's still very human reaction, human interaction. And even though this app is going to be AI-driven, I have to make sure that I solve the AI part because if it's not solving that full 95 to 100%, the customer will use someone else. And I take this branding as a perfect example of AI not solving the full 90. It probably got me to 60% and then I had to pay a human to get me to the 100%. And that's just the reality of where AI is right now. But going back to this week, Monday was the launch of the logo. Tuesday was the early access. Wednesday is an episode drop. And then Thursday, Friday, I have additional content."
+  },
+  {
+   "start": 634,
+   "speaker": "David DiNardo",
+   "text": "I'm talking about the journey. Throughout this journey, I am going to put everything in the open because I do think if I can help one person along on this journey, create an app or build a business, especially in Canada, I'm doing my job. And I think if I can open up this access to everyone to be a part of, it's going to make the app better. It's going to make the customer service and delivery exceptional where people want to buy the app. So, that's this week. There's a lot of raw emotions that are going on. Even just creating this episode, I've never spoken in 15 years about my business in this detail, week by week. And every week I'm going to be launching an episode to talk about the week, my emotion, how everything's going, and be real of where the industry is at, what I'm seeing, so that you get your information real time, and you can DM me if there's anything that you're seeing differently than than I'm seeing. But right now, AI is not there. I did Taxifi specific to solve a problem for creators and early access"
+  },
+  {
+   "start": 709,
+   "speaker": "David DiNardo",
+   "text": "And all the content is being initialized online and I am nervous as heck and that's completely normal with an excitement layer added to that. So keep on following along. This journey is going to be all about the app and creators and solving a problem for creators. So join me in next episode where I talk about the app even more and more importantly the journey to get to the launch of the app which will be March 1st 2026. Sex."
+  }
+ ]
+}
