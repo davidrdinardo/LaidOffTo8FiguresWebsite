@@ -1,0 +1,1472 @@
+{
+ "videoId": "C1c404BaQ48",
+ "num": 37,
+ "source": {
+  "kind": "descript",
+  "projectId": "48717c69-a205-4d4e-87b8-8d77fb4b17db",
+  "compositionId": null
+ },
+ "guest": "Stephen Lau",
+ "summary": "Stephen Lau, who won Yahoo's Website of the Week in 1996 and was David's first marketing call when he started his accounting firm in 2012, argues that SEO is not dead in the AI era but has changed shape: LLMs still draw their answers from published content, so a local business needs a far larger website that answers every question a customer could ask. He explains how his agency, rebranding from Salient Marketing to Salient AI, replaced its own project management and SEO software with in-house builds, and why it now runs short hourly experiments before committing clients to an AI project. The conversation widens into pressure on SaaS pricing, hiring for AI fluency, what students should do when junior jobs disappear, and Stephen's worry that most businesses and people are not adapting fast enough.",
+ "takeaways": [
+  "AI answers still come from content that exists online, so your website should be as large as possible, answering every question customers ask (including price) and comparing you to each competitor.",
+  "Expect website traffic to drop while searches for your company name rise; if you are the source of the answer, people type in your name.",
+  "Google and the LLMs rank local businesses on trust signals such as references on other sites, podcasts, reviews, and even pay-to-play award sites, so participate in them even when they seem dubious.",
+  "Run small paid experiments by the hour before committing; Stephen's clients signed on after seeing their existing software replicated in about three hours.",
+  "Just because AI can build something does not mean you should: weigh a $2,000 build against a $5-a-month subscription, but build your own when a vendor will not deliver the features or integrations your business needs.",
+  "When hiring or vetting a vendor, ask which AI plan they use; someone on the $200 plan is practicing every day and someone on the free tier is not.",
+  "Business owners do not have to do the AI work themselves, but they must see it in action and understand its impact so they can judge who to hire and whether they will survive the shift."
+ ],
+ "segments": [
+  {
+   "start": 0,
+   "speaker": "Stephen Lau",
+   "text": "At that time, SEO, search engine optimization. Is SEO still a thing now? A lot of people use AI to answer questions, and the answers still come from content that exists out there. If it's a local question, who's answering that local question? Should be you. So if you're not answering that question, then someone else is, your competitor."
+  },
+  {
+   "start": 15,
+   "speaker": "Stephen Lau",
+   "text": "If you wanna find the price, you're gonna scour till you get the price. So offer the price. So if someone came to you today and said, \"Hey, I need a new website,\" would your first reaction put them on a Claude Codex, or would it still be- So there's a problem So first, how do you win in the local market?"
+  },
+  {
+   "start": 34,
+   "speaker": "David DiNardo",
+   "text": "Stephen Lau, the OG of marketing, welcome. Thanks, David. So I started my business back in 2012, and you were my first call to get marketing going. I remember that. I remember back in the day, and, you know, thanks for calling. Yeah. You, I called you. You were all over, at that time, SEO, search engine optimization."
+  },
+  {
+   "start": 56,
+   "speaker": "Stephen Lau",
+   "text": "Is SEO still a thing now? You know, I just, I went to this conference, and for many years they said SEO is dead, right? It's like, who needs, who needs that anymore in the age of AI? What is SEO? Ah, it's search engine optimization, and, you know, it's the process of getting ranked on Google, right? But now I guess you can get ranked on any of the LLMs like ChatGPT, Perplexity, Claude, you know, AI mode on Google, whatever it is."
+  },
+  {
+   "start": 86,
+   "speaker": "Stephen Lau",
+   "text": "But I think SEO is not dead. I think today you need as many pages on your website as possible. In fact, worse than before. And I think it's about, you know- A lot of people use AI to answer questions, and the answers still come from content that exists out there. So if it's a local question, who's answering that local question?"
+  },
+  {
+   "start": 112,
+   "speaker": "Stephen Lau",
+   "text": "Should be you. So if you're not answering that question, then someone else is, your competitor. So that means your website has to be as large as possible, containing all the questions that people could possibly ask you, so your data is available for AI to answer your potential clients. So now, does it work on Google, you type in a question- Yes"
+  },
+  {
+   "start": 137,
+   "speaker": "David DiNardo",
+   "text": "Google gives you the result. You're not scrolling down, I'm not scrolling down anymore. Yeah. Are people still scrolling down? Well, people will scroll if they don't find what they want. Like, when you talk about ranking- Yes... When we started, everyone wanted to be ranked number one in Google. Sure. Is that still a thing?"
+  },
+  {
+   "start": 157,
+   "speaker": "Stephen Lau",
+   "text": "It still is, but the problem is, the problem is that when you go there right now, probably the first three or four are Google's ads. So where do the organic results end up? So then you'll see maybe three or four ads, and then you'll see maybe the map, and then you might see these organic results. So it's way further down the page, right?"
+  },
+  {
+   "start": 184,
+   "speaker": "Stephen Lau",
+   "text": "Not all the time, but there's a mix, obviously. And then now there's also AI mode. So AI mode will come in somewhere in between that, and then you can just chat with it, and so AI mode probably occurs maybe 15, 20% of the time, and also depending on the question. And so that's another way to get ranked as well in there."
+  },
+  {
+   "start": 207,
+   "speaker": "Stephen Lau",
+   "text": "And so you need to be in as many places as possible. But I think it's your business, your content, your effort which gets you found and recommended. You know, at one of the conferences I went to, I thought it was, like, really interesting, they said that your traffic's gonna drop. So when you go and look at your traffic analysis, whatever, it's gonna drop, over time."
+  },
+  {
+   "start": 231,
+   "speaker": "Stephen Lau",
+   "text": "But what's gonna happen is people typing in your name should go up. Why? Because you have the answer. So if the answer's given by your company, they're gonna probably click on the link or type in your company name to look for it, so and that's what it's all about, so. So building a brand is more important now than ever?"
+  },
+  {
+   "start": 251,
+   "speaker": "Stephen Lau",
+   "text": "It's always been important. It's always been important, but it's hard for local businesses because, you know, people move in and out of town. People will only engage you, like, maybe once they have a house. So, you know, if you're a windows company, there's no reason to call a windows company. There's no li- reason to listen to the ad on the radio or pay attention to the bus ads or in a magazine if you don't own a home."
+  },
+  {
+   "start": 273,
+   "speaker": "Stephen Lau",
+   "text": "Mm. So, you know, you're wasting your b- your branding money at the end of the day. So I think, so branding's super important, but for a local business, it's hard. For, like, a McDonald's, easy, 'cause if I'm in Ottawa, I travel someplace, there's McDonald's there. I move to a different city, there's McDonald's there, so my money goes further in branding."
+  },
+  {
+   "start": 297,
+   "speaker": "David DiNardo",
+   "text": "So we're in Ottawa. Yeah. How do you win in the local market?"
+  },
+  {
+   "start": 305,
+   "speaker": "Stephen Lau",
+   "text": "Well, I think from an SEO perspective, you need to have the largest website you could build, full of every question that would ever be asked of your business, comparisons to every one of your other competitors, and then participation in podcasts like this. And what causes the participation, then what happens with that?"
+  },
+  {
+   "start": 330,
+   "speaker": "Stephen Lau",
+   "text": "It gets pushed online and you get access that way from a trust perspective? Yeah, so it's all about, I think from Google or from any of these AIs, it is looking for trust signals. Like, so how do I know you're important as a business in your local area? I mean, let's think about the ways, you know. So are you being referenced by other websites?"
+  },
+  {
+   "start": 356,
+   "speaker": "Stephen Lau",
+   "text": "Are you on podcasts? Are you in social media? How are your reviews, right? How many other people are talking about you? So, and you know, truthfully, I was, I was very disappointed because, you know, when you go to Google or you, in some of the AIs and you like best whatever company you put into it, I was disappointed because S- one of the trust signals was an award site."
+  },
+  {
+   "start": 388,
+   "speaker": "Stephen Lau",
+   "text": "Is that, is that what local has come down to, these award sites that maybe you pay for or- Right... Or whatnot, and then they have some say in terms of you coming up? So, it's not a very good trust signal from my perspective. Mm. But if AI's using it as a trust signal, then you have to pay attention to it."
+  },
+  {
+   "start": 410,
+   "speaker": "Stephen Lau",
+   "text": "So you started your firm specifically around SEO. Uh- Branding, websites- I think-... Marketing... Yeah, I think a long time ago, I just, when the internet first came about, I just thought- How does someone find you? Forget about SEO, just how does someone find you? You know, how can you be discovered when no one knows about you?"
+  },
+  {
+   "start": 435,
+   "speaker": "Stephen Lau",
+   "text": "That's, that's the question. Mm. That's always been the question, right? And so back in the day, I got discovered by Yahoo. I got- What, what year was that? That was in, like- I don't wanna date you, but- Yeah. Yeah. Let's date myself then. So '96, '97. Okay. Right? So you've been at this game for 30 years. Yeah. Yeah, and I won the we- Yahoo!"
+  },
+  {
+   "start": 455,
+   "speaker": "Stephen Lau",
+   "text": "Website of the Week- Mm... Twice. And then, and then it's always been... And it's also before Google. That's before Google. Think about that, before Google. So, and it's always trying to get found with whatever's the newest thing. It doesn't matter, like even Facebook. How do I get found on Facebook? How to get found on Instagram."
+  },
+  {
+   "start": 474,
+   "speaker": "David DiNardo",
+   "text": "If you adopted early, then yeah, you're, you're gonna be a lot more popular because, you know, people like friends. Mm. If you have no friends, you just friend anyone, so. So back in 1996, you started, you posed the question yourself, how do you be found? Yes. That first 10 years was, what was, what was the way..."
+  },
+  {
+   "start": 498,
+   "speaker": "David DiNardo",
+   "text": "Like, I wanna kinda go through the evolution of where now we're going to AI dominance online- Yeah... And all the fear and opportunity around that as well. Yeah. So okay, so that's, that's good. I think, so let's talk about before internet. Yeah. So people were publishing articles, especially in science, and it was the same problem they had."
+  },
+  {
+   "start": 526,
+   "speaker": "Stephen Lau",
+   "text": "It's like, if I was a scientist, how could I find these articles that are being published? So, but I also don't wanna post my entire article, so they had this metadata at the top, the title, maybe a short description. So that's what came about from the search engines or whatever. How could we catalog these things so people could find them?"
+  },
+  {
+   "start": 547,
+   "speaker": "Stephen Lau",
+   "text": "So that's how search engines got started, right? So you could win on having a great title, or you could win on having a great description, right? Then everyone caught on, and then people started gaming that system, so then, you know, search engines had to get smarter, and so they had to take a look at your content, how popular you are."
+  },
+  {
+   "start": 568,
+   "speaker": "Stephen Lau",
+   "text": "So more and more information they needed just so that you can't game the system, right? There was an experiment that I had heard of. This one company tried to create a town that doesn't exist and see how AI could pick it up. Mm. So they used everything that they could, threw it at AI, and then suddenly this town was being referenced that doesn't even exist."
+  },
+  {
+   "start": 589,
+   "speaker": "Stephen Lau",
+   "text": "But slowly over time, started to disappear because AI suddenly realizes there's no connection. Mm. There is no such thing. Mm. Right? And so I think, I think that's- That's, that's what we have to do, with AI, is that we always have to contribute. We need more trust signals. That's the way we're gonna get found."
+  },
+  {
+   "start": 615,
+   "speaker": "Stephen Lau",
+   "text": "So in that first 10 years, yeah, we could game it. Well, I'm, if I'm going back to 1996- Yeah... That 10 years, is it the same approach to AI? That's a good question. That's, that's actually a good question because think about this. Let's just talk about Google for a moment. So they've developed a whole process to know about who gets found and whatnot."
+  },
+  {
+   "start": 642,
+   "speaker": "Stephen Lau",
+   "text": "It's proprietary. It's in their algorithm. It's in their patent, right? So- They, like me? You said who? Who, who proprietary? Oh, proprietary to Google. Okay. So Google's own algorithm- Yeah... To determine who comes up first. Right. It's in their patent as well, right? Okay. So, but with AI, it's kinda new. Think about when Google first started."
+  },
+  {
+   "start": 666,
+   "speaker": "Stephen Lau",
+   "text": "Right. It really was very rudimentary in terms of its search. Hmm. Right? So AI comes out, it's gonna be rudimentary today. So all the tricks that we used to game Google back in the day, we can game AI today because it's not as smart as Google. Hmm. So all the things you used to do to maybe try and rank better, you can do those things and still rank very well on AI."
+  },
+  {
+   "start": 692,
+   "speaker": "Stephen Lau",
+   "text": "Give me a couple. Okay. So, well, first, if you made something up, absolutely, right? If you now just try to find a way to add value to content and just push it out, maybe it can't tell, right? But sooner or later it's gonna tell, of course, like, as it gets better, but at the end of the day, like, these tricks work very well."
+  },
+  {
+   "start": 718,
+   "speaker": "David DiNardo",
+   "text": "So when you say increase your website, the load of your website, everything, is get content out there- Right... As fast as you can. Right. So- To not trick the system, but- Add value... Add value to it. Yeah. So if you've been around for several years, someone in your company must know all the questions that's ever been asked for your company, right?"
+  },
+  {
+   "start": 742,
+   "speaker": "Stephen Lau",
+   "text": "And so you need to answer those questions, and then also be real about the questions that people wanna know about. What do people wanna know about price? Well, a lot of business owners are like, \"Well, I don't wanna, I don't wanna put my price out there.\" But people will find it. Hmm. I mean, look at yourself."
+  },
+  {
+   "start": 758,
+   "speaker": "Stephen Lau",
+   "text": "Hmm. You're, if you wanna find the price, you're gonna scour till you get the price. Hmm. Right? So offer the price. Hmm. Offer the price, right? So all these questions have to be there. So that brings me to a good point then- If you, if your website is, like, maybe 30 pages and you're gonna grow to 1,000 pages in a short term, how do you manage that?"
+  },
+  {
+   "start": 783,
+   "speaker": "Stephen Lau",
+   "text": "How do you manage that? So, so maybe you have WordPress. Have you heard of Word- WordPress? Yeah. So it's just a, it's a free content management system, but it's kinda clunky, right? Especially when you get into lots of pages. So I think now you almost have to use something else. And what is that something else?"
+  },
+  {
+   "start": 806,
+   "speaker": "Stephen Lau",
+   "text": "So I think going back to 1996 and having a static HTML website. There's, there might be no need for the database, depending on the type of business that you are. And then, of course, if you don't use the database, you might not get hacked as often. And also, it's probably the fastest thing ever in terms of a website."
+  },
+  {
+   "start": 828,
+   "speaker": "Stephen Lau",
+   "text": "So speed matters online as well, right? So that might be some consideration. So then maybe Cowork or Codex, which are LLMs you use on your computers, maybe that becomes your content management system. Maybe, right? It's funny you say that. Everything I put into Claude, I just got my first client- Yeah"
+  },
+  {
+   "start": 857,
+   "speaker": "David DiNardo",
+   "text": "From Claude. And every prompt I've done about building my business, kinda use it as a business coach to get me feedback, and, Claude could potentially do some of the bookkeeping. You throw in a bank statement, it does the categorization. But then when it gets to the taxes, it's not at the point where it can file your taxes."
+  },
+  {
+   "start": 880,
+   "speaker": "Stephen Lau",
+   "text": "Will it ever get there? We'll see. I think it will. I think it will. It will. Like, I think, I think people just need to know how to use Claude. Like, so I think most people today, I would say 95% of people use AI as a chat function. Yeah. \"Hey, where can I find this?\" You know, \"What's the population of this country?\""
+  },
+  {
+   "start": 903,
+   "speaker": "Stephen Lau",
+   "text": "Or whatever it is. But some people go way deeper than that, right? They hook it up into their computers. They can have it program something. And so if you can do that means you can take the tax information from CRA, put it in the system, program something up, track your expenses, create an app- And there you go."
+  },
+  {
+   "start": 929,
+   "speaker": "Stephen Lau",
+   "text": "It can probably do your taxes for you, but you have to go beyond that. So it's like maybe I'm gonna participate in a sport. Yeah, I guess you could read a book before you play basketball, but you're not gonna do it well. You'll only get better at it if you practice. So that's the same with AI. You're not gonna get any better at it because it's way deeper than that."
+  },
+  {
+   "start": 953,
+   "speaker": "Stephen Lau",
+   "text": "So you might be like, \"Oh, Stephen just talked about, you know, turning my computer into some sort of programming thing. I don't know how to do that. I'm scared. I'm scared.\" So yeah, you don't do that, but that's, that's the next step. Like, you can create, you know, like as an example, we have some students that we teach AI to, and so the very first thing I tell them is, \"Why don't we make Space Invaders?"
+  },
+  {
+   "start": 979,
+   "speaker": "Stephen Lau",
+   "text": "Let's make Space Invaders.\" They're like, \"Oh, I don't know how to make Space Invaders.\" I'm like, \"Let's make Space Invaders.\" And then they do it, and they're like, \"This is a game I knew from the past, and I just made it. If I can make that, I can make anything else.\" So it's really just practice. And are you relooking at business in a whole different way?"
+  },
+  {
+   "start": 999,
+   "speaker": "Stephen Lau",
+   "text": "Like, you've been probably on WordPress for the last 15, 20 years, and now You're changing Right Evolving So, so imagine this. Let's, let's take, let's take a dentist as an example. So, website's important because it generates leads, so every s- every so often they might need to get their website redesigned."
+  },
+  {
+   "start": 1024,
+   "speaker": "Stephen Lau",
+   "text": "Well, with AI, if you had it set up properly, you could probably redesign that in one hour. Yeah. I just did it, so I believe you. Yeah. Yeah. And so do you need w- if it was in WordPress, probably take, like, a week- Right... Depending on how big your website is. So, so you think about that. Maybe you added new staff."
+  },
+  {
+   "start": 1048,
+   "speaker": "Stephen Lau",
+   "text": "Now you're just telling AI, it's like, \"Hey, this, so-and-so left our company. Can you look at my website to see where they've been referenced? Replace it with this new person. Here's the bio. Here's the picture. Hook it up for me.\" So suddenly it's doing that for you. So that's where it's gotten to so far. So if someone came to you today and said, \"Hey, I need a new website,\" would your first reaction put them on a Claude, a CoWork, Codex, or would it still be- So there's a-"
+  },
+  {
+   "start": 1082,
+   "speaker": "Stephen Lau",
+   "text": "A human?... There's a problem. There's a problem here, right? So first that idea of having Claude be your manager, first you have to get comfortable that you're gonna have Claude in your machine first. You're gonna need to get comfortable with the fact that you're gonna need to pay this monthly money now for this LLM to exist on your computer."
+  },
+  {
+   "start": 1105,
+   "speaker": "Stephen Lau",
+   "text": "And then, of course, you'll pay for someone that could set it up properly to do it, and that's great. But that disconnect about having to pay for that is the first step. Like, it's funny to me when someone says, \"Oh, Claude,\" or, \"ChatGPT or Gemini. Oh, it's $20 a month.\" It's like, oh, too expensive. Hmm."
+  },
+  {
+   "start": 1125,
+   "speaker": "Stephen Lau",
+   "text": "Right? So, so it's like, why is it too expensive? I don't get it. Like, you have this powerful tool that should be worth thousands and thousands of dollars a month, and you're gonna get it for 20 bucks. What is the issue? You know? So if you get over the fear of paying the monthly subscription- Yes. Then you just need to get trained so that you're comfortable, right?"
+  },
+  {
+   "start": 1148,
+   "speaker": "Stephen Lau",
+   "text": "'Cause you need to get comfortable to use it. So do you stop being a marketing agency versus a orchestrator? Yeah. Oh, so that's a good question, you know. So at least for my s- own company- And tell a, give us a little background about, like, a high level of your company now. Okay. So today, I think we're trying to rebrand it to something called Salient AI, because it's not like we're moving away from marketing."
+  },
+  {
+   "start": 1176,
+   "speaker": "Stephen Lau",
+   "text": "We're just now integrating, you know, sales and lead generation, as well as administrative functions that we can help you with using AI, right? And so, and I think that's a shift that I think agency or not, or different companies, you need to take a look at those three functions in your company with AI. So, and even at that, maybe finance falls into one of them."
+  },
+  {
+   "start": 1205,
+   "speaker": "Stephen Lau",
+   "text": "But that's administration. That's administration at the end of the day. So, you know, what is the use case within your company where you can either empower your staff to do better? 'cause if they can do more with AI, why wouldn't you want them to do that? You might wanna replace staff with AI. And so if you wanna do that, we could see if that's feasible."
+  },
+  {
+   "start": 1233,
+   "speaker": "Stephen Lau",
+   "text": "Yeah. I would try to dissuade you from doing that, of course, because it's better that if you have people that know your company already, if they have the capacity to use AI to grow your company, you're gonna grow quicker. Mm. Right? And then how do you just get more efficient overall, right? So just 'cause you can use AI to do anything, should you?"
+  },
+  {
+   "start": 1256,
+   "speaker": "Stephen Lau",
+   "text": "Mm. So you gotta take a look at the use case. So some of the things that we've come across, which I think probably could apply to a lot of people, is, like, maybe you have software that you use, you pay monthly money for. Could be 500 to $1,000 a month for it Should you make your own, right? Because then you'd be saving $1,000, 500 bucks, right?"
+  },
+  {
+   "start": 1280,
+   "speaker": "Stephen Lau",
+   "text": "I mean, ourselves, we just replaced our own project management system. We were paying $500 a month for it. And who did it? My staff did it. We empowered my staff to be able to do it on their own. Nice. Right? And then we got rid of... We do some SEO, so we have some tracking tools. We got rid of that completely as well."
+  },
+  {
+   "start": 1299,
+   "speaker": "Stephen Lau",
+   "text": "Another, like, $1,000 a month saved because we didn't need, didn't need the software anymore because we just have our own, right? But just because you can do it, should you, right? So I think that's the use case that most companies have to figure out. So what I suggest is you bring someone like myself, doesn't need to be us, and you ask questions like, \"What do I need?"
+  },
+  {
+   "start": 1326,
+   "speaker": "Stephen Lau",
+   "text": "What could I do?\" And then start investing a little bit of money as an experiment Right? Is it gonna be difficult, right? I think most companies do it anyways. Let's take a restaurant. Oh, should I... There's a new vendor for tomatoes. Yeah, let's buy a bag and test it out. So they're experimenting, right? Oh, you know what?"
+  },
+  {
+   "start": 1347,
+   "speaker": "Stephen Lau",
+   "text": "We, we got, we got appliances. Oh, I've been researching this other brand. We should carry it. That's another experiment. So this is the same thing. It's like you gotta create the use case to determine what you're gonna do with AI. Start small. See what it's like. You can stop at any time, right? So we've had clients who, they wanna redevelop their whole POS system."
+  },
+  {
+   "start": 1371,
+   "speaker": "Stephen Lau",
+   "text": "Maybe it's old. It's like, well, let's just start. How easy is it to do it? Because then you're gonna have the confidence if it moves along pretty quickly, you might say, \"yeah, it's only gonna cost us X dollars to develop it, but our return on investment is gonna be, we're gonna realize it in half the year.\""
+  },
+  {
+   "start": 1392,
+   "speaker": "Stephen Lau",
+   "text": "Hmm. But you're never even gonna get there if you don't experiment a little bit. So you have to experiment. So your business is really taking a full 180 approach of marketing as just one section of, hey, I'm gonna go into a small business or a business and see what their needs are and try to optimize it from start to finish."
+  },
+  {
+   "start": 1415,
+   "speaker": "Stephen Lau",
+   "text": "I think so, yeah. Just looking at it and say, \"Where can we save money? Where can we make more money?\" Yeah. \"And then where can we, like, empower people?\" Hmm. Right? So- Wow... You know, because, like even, I'm not gonna mention the name, but there's this one company where we completely built them an app for their dispatch business, right?"
+  },
+  {
+   "start": 1437,
+   "speaker": "Stephen Lau",
+   "text": "So everything that was going on in the company, suddenly they're now tracking appropriately. But then they asked the question, it's like, \"Can I get rid of my dispatch?\" I was like, now that I had involvement, I was like, \"Possibly.\" So we started experimenting, and we're- we developed an AI receptionist for them- Mm"
+  },
+  {
+   "start": 1457,
+   "speaker": "Stephen Lau",
+   "text": "So that AI receptionist could take orders. In fact, they cut off the phone calls because they didn't have the time to answer the phone calls. Everything had to be through text. Hmm. And so then now we're going backwards and we're saying we're gonna turn it on again, but it's gonna be the AI to take orders."
+  },
+  {
+   "start": 1476,
+   "speaker": "Stephen Lau",
+   "text": "Hmm. And then since we needed to connect the dispatch system with the website, we tossed the website from Shopify- Hmm... Simplified the whole thing so we could use the same database to power the AI receptionist. Now the AI receptionist is gonna take the orders, feed the orders into the dispatch system, so we don't need dispatch anymore, right?"
+  },
+  {
+   "start": 1499,
+   "speaker": "Stephen Lau",
+   "text": "It, it's crazy. And then after that, we're gonna expand it marketing-wise for every city in Canada. Mm-hmm. Right? So a separate website. So 200 websites, multiplying that system 200 times. Wow. So, you know, then you're like, \"Why do I need 200 websites?\" It's like, well, have you tried kind of marketing in Vancouver or Edmonton where you're not?"
+  },
+  {
+   "start": 1528,
+   "speaker": "Stephen Lau",
+   "text": "Google and the LLMs, they give preference to kind of local companies in that area, right? So what kind of presence do you have there? Do you have any signals that you're there? Why should AI and Google promote your company when you have no signals in that area? What happens if you're not a McDonald's and don't have locations across Canada, and you're a small business owner?"
+  },
+  {
+   "start": 1551,
+   "speaker": "Stephen Lau",
+   "text": "Well, that's what I mean. That's what I mean, right? Like, how do you-- Do you have to get a location in Vancouver? Well, that's a good question, too, right? That's a good question. The answer is maybe. It depends on the business, right? So let's, let's say if you're, if you're a restaurant, you're not gonna, you know, you need a physical location, right?"
+  },
+  {
+   "start": 1570,
+   "speaker": "Stephen Lau",
+   "text": "But if you're, if you're a paint company, do you need a physical location? I guess you could ship it. But then, you know, think about how paint is sold. Most people wanna kinda get it right there and then. So it's gonna be hard to succeed without a real location. So I think that's the first question that you have to ask."
+  },
+  {
+   "start": 1587,
+   "speaker": "Stephen Lau",
+   "text": "What happens if you're a service-based business? If you're a service-based business, what you have to do is you still need some sort of effort. You still need some sort of effort where you could get, I guess, you could get an address there that you have to prove to Google that is your address. If you're a service business that doesn't see people off the street, then you could get an office in a building."
+  },
+  {
+   "start": 1611,
+   "speaker": "Stephen Lau",
+   "text": "Mm-hmm. You could. If you don't want the office, you still need some sort of presence there because what are you gonna do? The things that we've seen in the past are on your website, you say you service Edmonton, so that's one page out of 100 pages. When the people that are in Edmonton, they have whole websites there obviously dedicated to Edmonton."
+  },
+  {
+   "start": 1632,
+   "speaker": "Stephen Lau",
+   "text": "Mm-hmm. So why would you win just because you threw up one page? It's a level of effort. So you have to compete with someone in Edmonton, with their website, with their content. Properly. Properly. Yes, properly. So you have to understand what that system is because we still run into thousands of people who are like, \"Oh, I wanna sell all over the world.\""
+  },
+  {
+   "start": 1653,
+   "speaker": "Stephen Lau",
+   "text": "I'm like, \"How are you gonna do that?\" Mm. You know? You multiply every city, multiply it by the number of competitors. Is that what you really wanna go up against? Right. Right? So there's no way around it because you don't control the market. Mm-hmm. So My mind is going like crazy because of the opportunity."
+  },
+  {
+   "start": 1680,
+   "speaker": "David DiNardo",
+   "text": "The opportunity to produce content is easier now than it's ever been. Yes. And so- And you going back to the HTT- like the- HTML, right in the beginning, like a standard website. Do you need something fancy when you have something fancy that could build it for you? Hmm. So. How important is design now and branding versus content?"
+  },
+  {
+   "start": 1702,
+   "speaker": "Stephen Lau",
+   "text": "Like, how would you rank the- Um-... The level of effort? So I'm, I'm biased. I'm biased. So someone's brand is very important to them, 'cause they feel like you built it, you know, this color should be green, like TD Bank green or CIBC burgundy or whatever it is. They built that, you know? So, but for a local business, I think it's a little bit different."
+  },
+  {
+   "start": 1725,
+   "speaker": "Stephen Lau",
+   "text": "You might think it's different, and of course, you know, people will disagree with me, obviously, but I've seen things where people don't care about the brand, they just care about the service. Mm-hmm. And they land on your page. As long as your page looks professional, right, professional, that's all, they'll call you."
+  },
+  {
+   "start": 1749,
+   "speaker": "Stephen Lau",
+   "text": "In fact, we've built websites where we had- we take a copy of a different kind of website, put it on, and start working on it, and all of a sudden we get a call for that business, but the content on the page is for another business, so someone didn't even bother to read it. Hmm. So, and if we look at analytics today, on average, some people spend less than 30 seconds on the website."
+  },
+  {
+   "start": 1773,
+   "speaker": "David DiNardo",
+   "text": "A lot. So do you think they're reading all this content that you're putting out? Do you think they're even reading down to the bottom of the page? Some do. Some do, but many just don't. Like, do you have the time? So, so with the amount of content that needs to be produced, you get the first click, that first 30 second for the person to book a call or do whatever."
+  },
+  {
+   "start": 1797,
+   "speaker": "Stephen Lau",
+   "text": "Does it look professional? You know, when I go and, say, if I want windows for my home- Mm... Do I need to learn all about windows? Do I need to learn what Energy Star is? Do I need to know what R-value is? Nah, I don't have the time. Right. I'm just gonna call the number. They know."
+  },
+  {
+   "start": 1822,
+   "speaker": "David DiNardo",
+   "text": "So When did this switch with AI and you moved from Salient Marketing to salient.ai- Yes... Or Salient AI? That's right. When has this evolved in your mind? Has it been three years prior to ChatGPT coming out where you started seeing senses of it? Or once ChatGT- ChatGPT came out, you're like, \"Oh, shit.\" I think, yeah, so that's a good question."
+  },
+  {
+   "start": 1853,
+   "speaker": "Stephen Lau",
+   "text": "We were using AI maybe three years ago, but it takes practice. Like, you know this, the longer you've been in something, you see something different- Mm-hmm... Or you see different angles on things, right? So, and then today we didn't, we definitely was not, we're not thinking the same way we did like three years ago."
+  },
+  {
+   "start": 1871,
+   "speaker": "Stephen Lau",
+   "text": "It's very different. In fact, it probably changes weekly now how we think. Wow. Right? I mean, I heard this other podcast. There was a person that works, worked at one of the LLMs, at Anthropic. She's like a developer there, and she said on the podcast, it's like, \"I feel, even at the LLM company, I feel like I'm walking on quicksand."
+  },
+  {
+   "start": 1896,
+   "speaker": "Stephen Lau",
+   "text": "It's changing every day. I don't even know what is coming up.\" So you gotta be agile. So then I think about myself, I'm like, oh my God, all these things are coming out so often. There is like, all of a sudden there's Cedance and Higgsfield and Renoise and all these companies, all different types. It's changing all the time."
+  },
+  {
+   "start": 1917,
+   "speaker": "Stephen Lau",
+   "text": "So I feel like I'm work- walking on quicksand. The ground is shifting as we're doing our work, and so, you know, even just a year ago, we're building software and we're spending thousands of dollars with developers. We've lost all that money. Lost it, completely lost it, because we don't need them anymore. We can just do our own."
+  },
+  {
+   "start": 1941,
+   "speaker": "Stephen Lau",
+   "text": "And when I say do our own, I still think you need programmers because they know a lot of things that maybe we don't know, as an example. Yeah. And so, but when we create the prototype, the prototype may help them to develop something a little bit more stringent. Yeah. So it could be security or whatever. Or you might not need security, right?"
+  },
+  {
+   "start": 1957,
+   "speaker": "Stephen Lau",
+   "text": "You might not need security as much if you're not trying to create software for other people, maybe just yourself. Mm-hmm. Like, I'm not sure, right? So the ground is definitely shifting, and I get, I get scared. I get scared myself because I just, I don't know what's coming. And so sometimes those people that are not necessarily know what's going on, I envy those people 'cause I know what's coming and they don't, so."
+  },
+  {
+   "start": 1981,
+   "speaker": "David DiNardo",
+   "text": "When was your aha moment of like, oh, this is real?"
+  },
+  {
+   "start": 1990,
+   "speaker": "Stephen Lau",
+   "text": "I think when we were able to take an idea and make it real in an hour. And how long ago was that? That was probably six months ago. Okay. So six months ago- Yeah... That February 14th update. Yeah. I think it was at the beginning of the year, that's where kinda... No, it was before that. It's before that, yes. You know, you could, you could do something."
+  },
+  {
+   "start": 2015,
+   "speaker": "Stephen Lau",
+   "text": "I mean, look, I said, you know, I get my students to build Space Invaders. So what does it take to build Space Invaders? Well, open up AI and say say, \"Can you build me Space Invaders? And I want, I want the aliens to shoot this type of missile, and I want my health points to be this much, and I wanna have shield, and I want these buttons to go left, right, and I want the space bar to fire.\""
+  },
+  {
+   "start": 2046,
+   "speaker": "Stephen Lau",
+   "text": "That's it. So when you actually see Space Invaders being built by that little thing that I just said, you're empowered that you can do anything. So six months ago when you had that aha moment-"
+  },
+  {
+   "start": 2062,
+   "speaker": "Stephen Lau",
+   "text": "What was... So, and you got that moment by creating something? Right, by creating something. We're, we're all using, I mean- Right... We were all using AI, but many of us were using AI. But as it progressed, you suddenly, it was able to do things. Like, oh, here's a good example. It's like, \"Hey, make me an image of David.\""
+  },
+  {
+   "start": 2083,
+   "speaker": "Stephen Lau",
+   "text": "Mm. And then David has six fingers- Right... And two heads. Right. And you're like- It's not there... It made it. Yeah Maybe six months from now it's better. Right. Who knows? Right. So as it progresses, all of a sudden you're more confident- Yeah... That it can build what you want. Yeah. And then you also get scared too."
+  },
+  {
+   "start": 2104,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Right? So. So at that turning point, before that you were really focusing on salient marketing, SEO, WordPress. In the last six months, your mind's probably s- completely switched to- Oh, yeah. It's, it's like, even just maybe I would say after trying out a few projects, 'cause you gotta try- Yes... Try some."
+  },
+  {
+   "start": 2128,
+   "speaker": "David DiNardo",
+   "text": "Then suddenly you realize that even if it's not perfect It's coming. It's coming. It's coming. And then so we can move, like, way faster. Way faster. And you're a very creative entrepreneur. Maybe. Who knows? You are. Yeah. I mean, you have multiple businesses. You've always been- Sure... Dabbling in different things."
+  },
+  {
+   "start": 2157,
+   "speaker": "David DiNardo",
+   "text": "I think you just have to be, I think, you know, when- Does this empower you to, you know, continue? Like, I always thought about business as, hey, you have one business, and you spend X amount of years on it, and you go all in. Well, I- AI's changing that narrative. I think so. I think so. Big time. Yeah, I think, I think- Try it"
+  },
+  {
+   "start": 2177,
+   "speaker": "Stephen Lau",
+   "text": "I think if you're in business, you have ideas. Can you imagine if you were able to make those ideas real very quickly? Mm. Right? I think that's, I think that's the thing that's here right now, you know? Here's a g- a good conversation. I'd s- it's AI related, but it goes beyond AI. So I was having a conversation with a robotics engineer."
+  },
+  {
+   "start": 2206,
+   "speaker": "Stephen Lau",
+   "text": "You know, so they would, they would be... His clients were, like, car, like, car manufacturers, whatever, so they'd bring in these big robots to build the cars and whatnot. But I was having a conversation with him because I was like, \"Well, could I, could I get into robotics?\" Like, did I go to school for that?"
+  },
+  {
+   "start": 2225,
+   "speaker": "Stephen Lau",
+   "text": "But could I get into it? So without knowing anything, I just thought, I said, \"Hey, okay, well, there's AI, and then there's these robots.\" So there's a robotic arm that you can buy, and realistically, $1,000 you could buy a decent one online, right? And then what you could do is you could go to NVIDIA if you want, and you can get this special computer."
+  },
+  {
+   "start": 2250,
+   "speaker": "Stephen Lau",
+   "text": "It's about 700 bucks. I think it's Orange Jetson, whatever. And you might not need that, need that. Maybe you're just using Claude or whatever it is. And then you hook up a camera to the robotic arm so that the robotic arm could see where it's going, and then you ask AI. It's like, \"Hey, I connected this, I've connected the robot arm, and I've connected the camera to the robot arm."
+  },
+  {
+   "start": 2275,
+   "speaker": "Stephen Lau",
+   "text": "Can you write me a program so that I could control this robot arm?\" Mm. \"And then it's also monitoring what it sees in the camera, and could you do, like, avoidance?\""
+  },
+  {
+   "start": 2292,
+   "speaker": "Stephen Lau",
+   "text": "You just, you just made something cool Mm. You- that's what it takes. So I was talking to a robotics engineer and he said, \"That's about it. You know, that's about it. You can go, you can even just go on YouTube, make it more sophisticated, but that's, that's really about it So whatever ideas you have, you could spend a little bit of time, and that's what I'm saying, just spend a little bit of your mental capacity to see if it's a possibility."
+  },
+  {
+   "start": 2321,
+   "speaker": "Stephen Lau",
+   "text": "This is every business owner. Whether you're starting a new business or whether you have your own business, is it a possibility? And I'm not talking about, like, companies of 1,000 people or whatever, 'cause there's policies that need to be made. I'm talking about- Small business... Smaller businesses. You could effectively, you know, make a right turn very quickly."
+  },
+  {
+   "start": 2344,
+   "speaker": "Stephen Lau",
+   "text": "So, if you're a big company, a whale making a left turn is very hard to do. Yeah. Right? But for a small business, you are more agile to do that. Do you think the advantage is for the small business right now? Well, yes. I think, I think the advantage is for any business if you take on AI, because whatever size you are, if you really adopted it very well, you could catapult yourself, right?"
+  },
+  {
+   "start": 2371,
+   "speaker": "Stephen Lau",
+   "text": "But for a b- small business to take on AI, I mean, you know, let's, let's take a, let's take a restaurant. Now the website could be built with AI. Now the inventorying system could be built with AI, right? I had this one client who was, like, really... It was, like, kind of interesting. To do the inventory just from the scratch, they just took a picture of their inventory room in high resolution, stuffed it into AI, and asked it to calculate how much items are still on the shelf."
+  },
+  {
+   "start": 2401,
+   "speaker": "Stephen Lau",
+   "text": "Hmm. And AI could see the brand and everything like that. It knows what's in each box, so it made an estimate as to what they had in the inventory. Which is still better than- Better than, yeah... Whatever we received on the accounting file. Right. It's, it's, it's crazy. So even for a restaurant, suddenly it's like, okay, how about coming up with, kind of a recipe?"
+  },
+  {
+   "start": 2427,
+   "speaker": "Stephen Lau",
+   "text": "How about coming out with, you know, redesigning the restaurant using AI? How about sourcing the materials- Hmm... That it came up with the design with? Find me the best of that product- Hmm... For the cheapest price. Hmm. Whatever it is. Hmm. Suddenly all of this thing is coming into, \"Hey, can you write me an app for my scheduling?"
+  },
+  {
+   "start": 2448,
+   "speaker": "Stephen Lau",
+   "text": "Here's the, what I have a problem with. Can you suggest something to me?\" So sched- like, it just permeates into everything. And when you talked about you removing your project management software, instead of paying $500 a month- Right... You're paying a monthly subscription on Claude to create something or...? No, no."
+  },
+  {
+   "start": 2468,
+   "speaker": "Stephen Lau",
+   "text": "In fact, in fact, once you create that software, then you're only paying for the hosting, 'cause it's gotta exist on a computer somewhere. Yeah. Right? So you're only paying hosting for that software now. It no longer uses AI. You used AI to create the software. It no longer needs the AI. What do you think about SaaS products?"
+  },
+  {
+   "start": 2487,
+   "speaker": "Stephen Lau",
+   "text": "And explain what a SaaS product is. So software as a service. So maybe you have an app that you downloaded that, you know, keeps track of your nutrition. You know, so every morning you take a snapshot of it, and it's like how many calories and how much protein and whatever, right? And then, and then by, at the end of the day, it tells you, and it tells you what you need to cut it down by if you wanna lose weight."
+  },
+  {
+   "start": 2518,
+   "speaker": "Stephen Lau",
+   "text": "So that's a SaaS software. Someone built it to this tool, and then is selling it to multiple people, right? Software as a service, right? So you could just build that app today using AI, and the AI component of it is the one that looks at the dish and determines what's on that dish and calculates the amount of nutrition on that plate."
+  },
+  {
+   "start": 2541,
+   "speaker": "Stephen Lau",
+   "text": "And what software would you use for that? Replit, Lovable? So okay, so maybe I'll explain a little bit here. So, so you could use any of the AIs to do it, right? But when you bring up Replit and Lovable, so just in case your audience doesn't know what that is. So just because you can build it on, say, on your desktop, and you're using Claude, well, where are you going to put that?"
+  },
+  {
+   "start": 2568,
+   "speaker": "Stephen Lau",
+   "text": "What kind of hosting do you need? Like, what do you... You know, you made it works on your machine, but is it gonna work on the internet? And so if you don't know that or it's too complicated for you, of course, you can use AI to help you with that. Then you would use tools that will provision your software or your idea right away."
+  },
+  {
+   "start": 2586,
+   "speaker": "Stephen Lau",
+   "text": "So if you use Lovable as an example, you're, like, creating your idea on there, and it's ready to go as soon as you built it already. The problem with it is that you're on Lovable, and so there are things in it that may be Lovable related, and are you able to leave Lovable easily? Hmm. So there you're constrained because maybe you need to build it later on bigger than it needs to be."
+  },
+  {
+   "start": 2614,
+   "speaker": "Stephen Lau",
+   "text": "Maybe there's functions that are not necessarily available on Lovable. They won't allow you that freedom, right? So you're stuck, right? I'm not saying it's not great. Right. It is great. It is great, for sure. But, but at the end of the day, I always like tools that you're not locked into. And what's a tool that you're not locked into?"
+  },
+  {
+   "start": 2635,
+   "speaker": "Stephen Lau",
+   "text": "Well, if you're, if you're programmed a soft- If you made your own software using Claude, you're not locked into Claude. Hmm. Swap that out and put Codex in there- Hmm... From OpenAI. Hmm. Makes no difference. You're not locked into it. You s- you already have your software. Hmm. Right? So what do you think about SaaS products?"
+  },
+  {
+   "start": 2657,
+   "speaker": "Stephen Lau",
+   "text": "They're in trouble. Some of them are in trouble, for sure. Like, if everyone, if everyone thought that it was easy to make that tool, and they could kind of like maintain that tool over time, SaaS products are gonna be... Like, SaaS companies are gonna be, like, in trouble, and they are some already. There's even cracks in, like, the enterprise software."
+  },
+  {
+   "start": 2683,
+   "speaker": "Stephen Lau",
+   "text": "You know, you might find, like, Microsoft selling off a division as an example. It's because maybe they see that the future of that is gonna go down very quickly in the future, right? So, you know, there's So going back to your app for nutrition. Yeah. Is the competition the individual creating it for themselves?"
+  },
+  {
+   "start": 2712,
+   "speaker": "Stephen Lau",
+   "text": "Is that, like, how they would be disrupted? Well, let me, let me- Instead of paying $9.99, you've created it in Claude with one prompt for yourself? Yeah. Or is it another company coming in and- I think it's all of those. So first, you'll have the nutrition app that that company itself suddenly will you start using AI and try to become leaner and more efficient and have new features, right?"
+  },
+  {
+   "start": 2744,
+   "speaker": "Stephen Lau",
+   "text": "'Cause you could survive. Can you imagine it's like, \"Oh, I don't need 100 programmers anymore.\" Right. \"I only need 20.\" Hmm. Right? So they're gonna, you know, bottom line's gonna go up, and then they're gonna add value by now programming faster. So, so they might survive, right? Depends on their brand. Like, if they trust your brand Then they're not necessarily gonna leave."
+  },
+  {
+   "start": 2769,
+   "speaker": "Stephen Lau",
+   "text": "Mm. Right? So if another one comes out that emulates it and they charge less, as an example, maybe you might switch to that one. Mm. Right? So as an example, imagine if you decided you wanted to compete against that nutrition app. That nutrition app right now is $10 a month. You build your own exactly the same, exactly the same, and you're like, \"It's, it's $4.99.\""
+  },
+  {
+   "start": 2798,
+   "speaker": "Stephen Lau",
+   "text": "Do you think it's gonna be a race to the bottom for everything? I don't... It's, it's weird. It's a weird answer. I think it's a weird question because it's not necessarily price, it's also about brand, right? But if it's suddenly seen as a commodity, yeah, it'll be a race to the bottom. But isn't everything a commodity?"
+  },
+  {
+   "start": 2819,
+   "speaker": "Stephen Lau",
+   "text": "Every type of service a commodity? No, because there's some services that are still very unique. With the age of AI, what's unique? Well, am I developing my own LLM? So, so I'll, I'll bring it back a little bit. So, you know, what's a commodity? What's not a commodity? What can I start today? What can't I start today?"
+  },
+  {
+   "start": 2837,
+   "speaker": "Stephen Lau",
+   "text": "If I was a, if I was a, an entrepreneur, what business could I get into right now if I don't have any money? Oh, I could be a painter. All I need is a paintbrush. But what if I said, \"Well, car is a commodity. I wanna build a car company.\" Could I? I'd probably need a billion dollars to start. Mm. So it's not really achievable."
+  },
+  {
+   "start": 2860,
+   "speaker": "Stephen Lau",
+   "text": "Mm. Right? So not everything is commodity. Mm. That's fair. But how about... Right. How about software, though? So- All software. Okay, so that's, that's interesting too, because then you're, you might be protected. So I recently went to a conference in Toronto for Toronto Tech Week, and it was about payments and AI."
+  },
+  {
+   "start": 2882,
+   "speaker": "Stephen Lau",
+   "text": "So like Moneris. Mm. Are you familiar with Moneris? Yeah, but you can explain it to- Yeah. So Moneris is, it's a payment gateway in Canada used by some of the banks, TD and Royal Bank as an example. You can just buy Moneris, and that's what powers your transactions with credit card, right? They're Canada's, one of Canada's only companies that developed in Canada for Canada used by the banks, right?"
+  },
+  {
+   "start": 2906,
+   "speaker": "Stephen Lau",
+   "text": "And so what they were discussing at this meeting is, like, what is Moneris going to do? Like, there's suddenly gonna be the Google Wallet, there's gonna be all these big companies with billions of customers, and we have Moneris with 40 million people in Canada. Do w- are they going to... Like, what's gonna happen?"
+  },
+  {
+   "start": 2928,
+   "speaker": "Stephen Lau",
+   "text": "Like, do we need our sovereignty with payment? We do. I think we do, right? So whatever the cost is, we need to maintain that, 'cause it's our only one, right? But that's a problem in itself. We, we need to have more of those because we need to have that. So whether there's protections like FIPA or these rules, someone can't just build these tools and suddenly just dominate."
+  },
+  {
+   "start": 2951,
+   "speaker": "David DiNardo",
+   "text": "It's difficult. See what I mean? Do you agree with that? Well, I do. I do because, you know, what if, what if suddenly, you know, we're using Google and Trump doesn't like us and tells Google to shut off our access to our government data or medical records and whatever it is, and they comply? What softwares are we already on?"
+  },
+  {
+   "start": 2979,
+   "speaker": "Stephen Lau",
+   "text": "We're already on Gmail. We're already on Google. We're already on Cloud. Yes, but there might be rules. Like Microsoft as an example, the servers for Microsoft could be in Canada, and so even though Microsoft could be an American company, the data centers are in Canada, and so we could just grab our in- our information."
+  },
+  {
+   "start": 2998,
+   "speaker": "Stephen Lau",
+   "text": "I guess what's better for the consumer? Like, if Moneris has a monopoly and- At the moment, yes... And they can- But you have choice, too. Like, if you choose a different bank, you know, you can use Clover or whatever, you know. So you have some choice, but... And, and it's, it's, it's like the airline. Should we have our own airline, Air Canada?"
+  },
+  {
+   "start": 3018,
+   "speaker": "Stephen Lau",
+   "text": "Should we, should we fund Air Canada, you know? You have other choice. You, you can use WestJet- Porter... You can use Porter, other airlines of all types, you know, but do we need our own? We do need our own. Mm. So going back to the SaaS questions, 'cause I think it's so important right now for builders and entrepreneurs to think..."
+  },
+  {
+   "start": 3042,
+   "speaker": "David DiNardo",
+   "text": "I mean, I was at the SaaS NORTH conference here in Ottawa, so was you, and one of the co- one of the speakers came out and said pretty aggressively, \"SaaS is dead.\" Yes. RaaS, result as a service, is next. Well, here, let me... It's, this is a good question to ask. I don't think a lot of people ask the question."
+  },
+  {
+   "start": 3062,
+   "speaker": "Stephen Lau",
+   "text": "And I get calls on the phone as well. People call up, \"Hey, we use AI to do this, you know. Try out our software.\" Then I'm like, \"Okay.\" How much did you invest in security? Now you're selling to me, like, will my insurance company pay me if your tool screws up? How much insurance do you have? Do you even have insurance?"
+  },
+  {
+   "start": 3091,
+   "speaker": "Stephen Lau",
+   "text": "Did you build this in your basement and started selling this tool? So I think as a business, you need-- you know, you may not care, many businesses may not care until it's too late. So the right question that has to be asked is like, okay, well, who developed it? How much insurance do they have in case something happens, right?"
+  },
+  {
+   "start": 3109,
+   "speaker": "Stephen Lau",
+   "text": "Is it, is it 24/7? Is it 99% uptime, right? You know, like, what are these... How was it built in the first place? Did someone just build it in a basement and just started selling it 'cause they could? Of course, anyone can do that. But how stable is it? So those are the questions you're asking sellers of AI right now?"
+  },
+  {
+   "start": 3134,
+   "speaker": "Stephen Lau",
+   "text": "Sellers of any tool But you didn't probably ask that for SaaS. Would you have asked that question for- You-... Your project management software? Of course. Of course. You kinda gotta look at it. It's like, what are the privacy? Where is it hosted? You know, what is the uptime? You have to ask those questions, you know."
+  },
+  {
+   "start": 3155,
+   "speaker": "Stephen Lau",
+   "text": "So who asks those questions? Fortune 500 companies do. Mm. Are you as big as us? 'Cause if you're smaller than us and I'm relying on you, if you break, I break. Mm. So I need to be at, you need to be at the same level, right? So for a small business, most of the time they're just running, you know, 100 miles an hour, so it's like, \"Oh, that's cool."
+  },
+  {
+   "start": 3176,
+   "speaker": "Stephen Lau",
+   "text": "Let me just grab that one.\" If you're Shopify, are you nervous? Shopify is a brand. Shopify is a brand, and I think the value of Shopify is the fact that, you know, they have Shop Pay. So it's very easy as a, as a consumer of, you know, products with Shopify, it's very easy. If I go to another Shopify site and I immediately go to their, go to checkout, it's like my information's there already."
+  },
+  {
+   "start": 3204,
+   "speaker": "Stephen Lau",
+   "text": "So they've built this scenario where they have the customer's information, make it easier for me. So that's the value. So- Mm... If, as a, as if I need e-commerce, should I, you know, should I invest in Shopify? And I think, I think that you have to r- ask the right questions, you know. So- Because I think of Shopify like WordPress a little bit, where- Well, you know- Why can't I create my own online business in Claude?"
+  },
+  {
+   "start": 3239,
+   "speaker": "Stephen Lau",
+   "text": "Well, you could. Right. You could. So then if you were building your own online business in Claude, and then you're like, \"Well, where's the payments coming from?\" So you might say, \"Well, Stripe.\" Right. And, and you're like, \"Okay, I gotta connect my website to this financial system to collect credit cards. I don't know how to do that.\""
+  },
+  {
+   "start": 3256,
+   "speaker": "Stephen Lau",
+   "text": "Well, you just ask Claude. Right. \"Hey, Claude-\" Connect the- \"... Do you have the instructions to connect my website to, Stripe?\" Says, \"Yes.\" It's like, \"Go get an account, put in the information here, and I'll make it for you.\" And then you're like, \"Oh, can I store the information?\" It's like- Well, you know, you could, but do you have PCI compliance to say, \"It would be easier if you just Stripe stores your informa- Yeah"
+  },
+  {
+   "start": 3284,
+   "speaker": "Stephen Lau",
+   "text": "The credit card information,\" so then liability decreases or whatever. And then you're like, \"Oh, how about subscription? Can you do that?\" It knows all of those things already. So you could do it. You could do it, but should you? So the... I go back to the same thing. Just 'cause you could do anything with AI, should you?"
+  },
+  {
+   "start": 3302,
+   "speaker": "Stephen Lau",
+   "text": "And unpack that. Should you? Why should- why wouldn't you? So, okay, so as an example, you know, maybe the development time is gonna be much more than paying $5 a month. Imagine if it costs you $2,000 to develop the system and you're paying $5 a month. Should you? Maybe not. Mm. Right? So it's not only about money, but then you're paying $5 a month, and whenever you ask that company, it's like, \"Hey, I need this, I need this function,\" and they never listen to you."
+  },
+  {
+   "start": 3339,
+   "speaker": "Stephen Lau",
+   "text": "Now your business is being affected because you can't move forward. Mm. So maybe you should develop that. Maybe you want deeper integration. Mm. Right? Maybe there's, there's some friction in your company that's not related to AI. Mm. Maybe you have field staff that you need to connect to on a, you know, continual basis, and the software that you, that you use right now doesn't have a, an app."
+  },
+  {
+   "start": 3364,
+   "speaker": "Stephen Lau",
+   "text": "Mm. Maybe you need to find that software company. Maybe you need to build your own, whatever. There's a, there's another company we're building this for as well. So they got two pieces of software, one's their CRM, and another one is for their, WSIB, verification. Mm. Right? So they're like, \"Why can't those two be in the same place?"
+  },
+  {
+   "start": 3388,
+   "speaker": "Stephen Lau",
+   "text": "My projects are in one tool, and my projects are in the other tool.\" Mm. \"And they're not talking to each other.\" Mm. So then it's like, well... And also the quoting system is not in this tool. So we did an experiment first. So we started working by the hour to see where we could get to. And where we could get to in three hours, they were confident to move ahead with the project 'cause they saw that we could develop the software almost exactly the same in three hours."
+  },
+  {
+   "start": 3421,
+   "speaker": "Stephen Lau",
+   "text": "So now time is gonna be spent fine-tuning and working it because they were confident that the process was simple. Mm. And when you, when someone calls you and engages with your service, do you charge them by hour, by result? Like, how is your mindset thinking around that now? Well, I think, I think the experiment portion's by the hour."
+  },
+  {
+   "start": 3444,
+   "speaker": "Stephen Lau",
+   "text": "Okay. This gives the client confidence, like they can stop. Like, it's like using a lawyer. Yeah. You go into the lawyer, it's like, \"I just wanna meet with you for an hour.\" Mm. Maybe you get confident with the lawyer. It's like, \"Okay, you should handle my case.\" Mm. Now that it's gonna go to court, it's, you know, it's not by the hour anymore."
+  },
+  {
+   "start": 3460,
+   "speaker": "Stephen Lau",
+   "text": "It's this. So I think the experimentation process is by the hour. It has to be. And then the result is...? Well, there is no result. There is no result until you're confident you wanna move forward. So you meet for an hour. Yeah. You try things for a few hours. You look at it, and then it's like, okay, well, it's maybe it's not gonna take that long."
+  },
+  {
+   "start": 3482,
+   "speaker": "Stephen Lau",
+   "text": "Then we could kind of forecast and say, \"You're probably between this price and this price.\" Right? And then ongoing, it's like now you maintain... You're gonna maintain that software now. Right? Whatever happens to it, you have to maintain it, right? And why I'm saying that is, like, developers out there, I'm thinking of them- Incredibly right now, if you charge by the hour to develop and the app gets, Claude gets smarter and smarter each day- Yep"
+  },
+  {
+   "start": 3514,
+   "speaker": "Stephen Lau",
+   "text": "You're gonna go from a 40 hours to a 10 hours to a five hour. You could. You could. Just like how long did it take to create Space Invaders before? Probably like thousands and thousands of hours, right? And then we could just create Space Invaders right now in one minute So then how would you price a website and an expansion plan?"
+  },
+  {
+   "start": 3536,
+   "speaker": "David DiNardo",
+   "text": "And like, h- I'm thinking of builders that are moving towards... I don't know if the pricing strategies are gonna change in the next six months, a year, three years, five years. Yeah. So you're right. Like, like, people can charge any price, you know? There's people sell websites for $500, and people sell the same website for tens of thousands of dollars."
+  },
+  {
+   "start": 3559,
+   "speaker": "David DiNardo",
+   "text": "Because if you came to me and you're way more efficient, and you're selling me a website for $500, I think the pricing psychology would be like, I'd be nervous- Yeah... By paying $500 because there's a lot of offshore individuals that would probably price and quote at that, and the result wouldn't be your result."
+  },
+  {
+   "start": 3579,
+   "speaker": "David DiNardo",
+   "text": "If you priced me at $2,000- Yes... Or $3,000, I'd probably feel more comfortable right now- Yes... In 2026. I- Will that change in a year or two years? I don't know. I think, I think here's the issue right now. So, and it's the same issue that we faced back in 1996 to 2000 to 2005 or whatever, so that 10-year period."
+  },
+  {
+   "start": 3604,
+   "speaker": "Stephen Lau",
+   "text": "It's very important to know what happened back then. It's not like they were teaching internet in school, so there were very few people that are very knowledgeable about this kind of stuff. And so today, it's the same thing with AI. Yeah. Are they st- are they still- are they teaching AI in school properly, right?"
+  },
+  {
+   "start": 3623,
+   "speaker": "Stephen Lau",
+   "text": "So, and then when would they graduate? So if you had this idea about, oh, there's all these companies doing AI, whatever it is, well, who's the real expert? Who's the real expert? So you need to know the real expert. You need to trust that individual, right? At the end of the day, who's gonna be going to war for you?"
+  },
+  {
+   "start": 3644,
+   "speaker": "Stephen Lau",
+   "text": "That's all. And do you think the consumer behavior will still trust Stephen or trust Salient AI, or Salient AI? Well, I mean, think about it this way. Of course, of course, you know, I... Here's a good way to answer that one. I think to the knowledgeable, the people who pay should dictate who they need to use. So back in the day, I guess Arlene Dickinson had, acquired one of our companies, and so while working for that company, we had one, we had, uh- I'm not gonna mention clients, but we had one big client that was paying a lot of money."
+  },
+  {
+   "start": 3691,
+   "speaker": "Stephen Lau",
+   "text": "And then one day it was on the news that we landed another big client. So the first big client was like, \"I pay good money, and I wanna make sure I still got these two team members on my team,\" 'cause they're paying good money. So they didn't wanna use the company. They knew the company enough that those two people are the senior people that they wanted, and when they pay that price, they want those two people."
+  },
+  {
+   "start": 3718,
+   "speaker": "Stephen Lau",
+   "text": "That's it. So it's like going to a law firm. It's like, \"Oh, someone's... I want, I wanna use one of the partners. I wanna use the partner. I pay good money, I wanna use one of the partners. I don't want, 'Who's that?' I don't want that person. I want this.\" Hmm. So you gotta know the right questions to ask. And this is very important even with agencies as an example."
+  },
+  {
+   "start": 3738,
+   "speaker": "Stephen Lau",
+   "text": "You meet with someone, they're smooth, but who's working on my stuff? Hmm. Is it some student or is it the senior person? 'Cause it- Or is it an AI agent? Or is it an AI agent? That's right. Are you still charging me $100, $150, $200 an hour for this computer to do it? So the business owner needs to ask the right questions."
+  },
+  {
+   "start": 3766,
+   "speaker": "Stephen Lau",
+   "text": "Yeah. Where do you see AI in the next six months? Yeah. I don't know. I'm not developing it, but I was listening to another podcast and he talked about the direction that some of these AI companies are taking. Some, it's going to be like they know where it's going. They have this roadmap, right? But that roadmap can be affected by how people use it."
+  },
+  {
+   "start": 3794,
+   "speaker": "Stephen Lau",
+   "text": "'Cause if many people are using it in a certain way, they're gonna probably move in that direction because it's like human behavior dictates that, and maybe they didn't think about that. So they move in the direction that where they get the most value. So I might have an idea on where it's going to go, but maybe human behavior will also dictate that."
+  },
+  {
+   "start": 3819,
+   "speaker": "Stephen Lau",
+   "text": "Where do you think it's gonna go? Well, I think it's just gonna be adopted more and more, and- I think a lot more jobs will disappear realistically. Now, Jeff Bezos says no. Yeah. Jeff Bezos says there are gonna be more jobs- I heard that... With AI. Yeah. But I don't, I don't think so. I don't think so."
+  },
+  {
+   "start": 3847,
+   "speaker": "Stephen Lau",
+   "text": "There's a, there's a recent scenario that came up. I had to... There's this field called bioinformatics, okay? So what that is there's a science, so it could be biology or whatever, that you would need to take in school, and then there's computer science, and then there's mathematics. So it's a combination of all those three, right?"
+  },
+  {
+   "start": 3870,
+   "speaker": "Stephen Lau",
+   "text": "To be able to analyze scientific data, and then, you know... Yes, to be able to analyze scientific data and get the result of what it actually means, right? So I was tasked with creating a bioinformatics pipeline to take information from a paper and validate it. It's like, what do I know? I didn't-- I'm, I'm not in bioinformatics."
+  },
+  {
+   "start": 3898,
+   "speaker": "Stephen Lau",
+   "text": "But with Claude or any other AI, I was able to do that quite easily actually. And so all of a sudden, that whole field of career, what is gonna happen to that field? That's just one aspect of it. That's just one aspect of it. Do you think unemployment... There's been talks unemployment going up to 20, 30, 40% I mean, it could, it could happen."
+  },
+  {
+   "start": 3935,
+   "speaker": "Stephen Lau",
+   "text": "It could happen. But, you know, one of the things I hope, that I always hope for is that I hope that your life is meaningful. I don't want you to be born To work in a factory where you're doing the same thing every day. I'm stamping this thing every single day. That's my life. You weren't born to do that."
+  },
+  {
+   "start": 3959,
+   "speaker": "Stephen Lau",
+   "text": "You were born to do something else, right? So And on the flip side, what do you think of universal when the government pays you a certain amount of money every month because all the money is gonna go to- Yes. Yeah. So I get that. And they, we need a whole new structure, you know? They... I've, I've heard some, you know, discussions about, you know, governments getting involved, and suddenly there's a cost to use AI."
+  },
+  {
+   "start": 3990,
+   "speaker": "Stephen Lau",
+   "text": "So when you use AI, it's gonna cost just as much money as you using a human person. Right. And the reason why is so that you could get that universal payment. Mm. Someone has to pay for it, otherwise it all goes into profit. Yeah. And then how is profit gonna pay the regular Joe so that they can afford housing and food?"
+  },
+  {
+   "start": 4012,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Well, last week Fable 5 came out. Yep. And Fable 5 got quickly disconnected. Right. The government seems like it's starting to put their hands in stuff, in a good way, security way. Depends on which country you're in. Is it still operated in the States? Of course it is. So, you know, So Fable 5 is a Mythos level product."
+  },
+  {
+   "start": 4046,
+   "speaker": "Stephen Lau",
+   "text": "So Anthropic's came out with Mythos 5, I think, and it was a... They warned people, they warned the government that this is like, this is a tool that could assess vulnerabilities in, like, anyone's software. And so they didn't release it to the public. They talked to the government. They only released it to the top companies, 100 companies that are trusted United States companies, so that they could use the tool to their benefit, and funded them like $100 million in funding to use the product."
+  },
+  {
+   "start": 4081,
+   "speaker": "Stephen Lau",
+   "text": "Because once they start using it, then they start to pay fees, obviously, right? So that's great for America. Is that great for Canada? Maybe, if we're affiliated with the Americans. But is that, is that good for UK? I don't know. As long as they have a relationship with the United States, right? So, you know, this idea that countries own this product is interesting."
+  },
+  {
+   "start": 4107,
+   "speaker": "Stephen Lau",
+   "text": "And you could, you could swap that product out, AI, swap it out with rockets- Mm... Go to space, whatever, right? So are you at a dis- at a disadvantage 'cause you can't go to space? For sure. For sure. Are you at a disadvantage if you don't have your own AI? For sure. For sure. So even when you look at the landscape and you're like, \"Okay, well, United States creates AI."
+  },
+  {
+   "start": 4127,
+   "speaker": "Stephen Lau",
+   "text": "Who else creates AI?\" Russia creates AI, China creates AI. Who else?"
+  },
+  {
+   "start": 4135,
+   "speaker": "David DiNardo",
+   "text": "So Fable 5- Yes... Is now, is still active in the States? Uh- Or did they shut it down there too? I didn't read the whole article, but, so what they did was they s- I think, I think it said something like"
+  },
+  {
+   "start": 4154,
+   "speaker": "Stephen Lau",
+   "text": "Only Americans can use it And if you were an American company and you had non-Americans in your company using it, that would not be allowed. So then I think Anthropic was like, \"Well, we can't manage this.\" Mm-hmm. \"We just gotta shut it down.\" Because I be- I was playing with it when the day it was released, and I was like, \"Wow,\" like, \"This is-\" Way better- Yeah"
+  },
+  {
+   "start": 4182,
+   "speaker": "David DiNardo",
+   "text": "Than the last version- Of course... Of AI. Of course, yes. And now I'm, my mind is, you know, it, for you, it happened six months ago. I think now every day I'm blown away with how fast things are moving and me, you know, building Taxifi now, I can't keep up with the development. It's, it's all about lead gen, it's all about marketing, it's all about organic social- Yes"
+  },
+  {
+   "start": 4210,
+   "speaker": "Stephen Lau",
+   "text": "media. It's all about the distribution and the trust. It is. Like, like, as an ex- I think we talked about it for your software. It's like, I, you know, I think I might have asked you, are you afraid that someone else will just make it? Yeah. 'Cause they can. And yeah, that's, that is a concern, for sure. For sure. So then it's about your brand."
+  },
+  {
+   "start": 4231,
+   "speaker": "Stephen Lau",
+   "text": "It's about, you know, during this period where you can, if you get out to market as fast as possible, and say you did a lot of marketing and you could gain, say, 100,000 clients- Yeah... In the next six months. Well, it's more than likely you're now gonna keep those 100,000 people in the next six months, as long as you're making sure your product is not a commodity."
+  },
+  {
+   "start": 4252,
+   "speaker": "David DiNardo",
+   "text": "Right. Because then you, then someone can, will just buy you. Yeah. But if you don't get as many clients as possible, then someone else will build it and they'll try the same thing until there's many options in the market. You've changed throughout the last 25, 30 years of entrepreneurship, and you've seen the future, let's just say, or the fear of missing out propelled you to change your whole business model, because that's hard to do."
+  },
+  {
+   "start": 4285,
+   "speaker": "David DiNardo",
+   "text": "And I wanna preface that, 'cause there's a lot of small business owners that listen to this, and to change a business model that is working is probably one of the hardest things to do for something that could work- Yeah... But it's not a concrete, nailed down approach. Well, I mean- And you're not only changing your mindset, you're changing your staff, your challeng- like, all that costs money, even if it's an hour or two hours to build a video game to get them bought in."
+  },
+  {
+   "start": 4316,
+   "speaker": "Stephen Lau",
+   "text": "Yep. You have business owners looking at cashflow, you have business owners knee-deep in paperwork. For sure. What's your advice to them? Well, look, I don't think every business owner is the same. I mean, we have clients that say, \"If I'm not way ahead in front of my computers, I'm dead. I don't care what my staff says."
+  },
+  {
+   "start": 4338,
+   "speaker": "Stephen Lau",
+   "text": "I don't care what anyone says. It's like I just have to be, to be the best, I just need to be in front. That means part of my time is to go into research. I gotta try everything, do everything.\" That's just your policy. Mm-hmm. That's cool. If you don't even, if you don't do that, I mean, you stand the chance of being eclipsed, you know?"
+  },
+  {
+   "start": 4360,
+   "speaker": "Stephen Lau",
+   "text": "So I think I'm guilty of that myself, in that it's busy. Yeah. It's busy. And so- But do you find it's, like, a controlled busy? Like, I feel like I'm busier, but I feel so much more confident that I have this w- this tool- Well, well, that's what I was gonna say. I was, gonna say, it's like, okay, I wanna go from, you know, I wanna go from A to D, but I have all these barriers."
+  },
+  {
+   "start": 4390,
+   "speaker": "Stephen Lau",
+   "text": "But with AI, I can go from A to D very quickly now. Yeah. You know? And I think, I think, I think business owners have to realize that that is, that is possible. Yeah. Nothing's standing in their way. And the other thing is, their staff can help. It's just, I've seen it too many times. I don't know why some businesses don't trust their staff."
+  },
+  {
+   "start": 4414,
+   "speaker": "Stephen Lau",
+   "text": "Mm. But their staff could do more. The staff wants to do more, you know? I think I was talking to, it's, it's, it's like a, so, let me see here. This guy, Phil, and he's on one of my networking groups there, and he empowers his staff of 100 to go try different things. And he was telling a story that his HR manager, no programming experience, built this tool that increased the efficiency of their office Feels like amazing Yeah Amazing."
+  },
+  {
+   "start": 4450,
+   "speaker": "Stephen Lau",
+   "text": "So again, you don't- I don't think you need to know how to do it because there's someone that already knows how to do it. It's AI. You just have to know how to direct it Mm So, no, I think the key takeaway here is don't be scared. Rediscover your passion because business is different today Yeah In five years, where do you see it?"
+  },
+  {
+   "start": 4481,
+   "speaker": "Stephen Lau",
+   "text": "Well, it's that thing that you talked about where unemployment rate is really high, and that's like, well, you know, should we do something like Star Trek? You know, Star Trek is this utopia- Mm... Scenario. You know, you could do whatever you wanna do, doesn't matter what, because your food and your lodgings are taken care of."
+  },
+  {
+   "start": 4502,
+   "speaker": "Stephen Lau",
+   "text": "Mm. So do what you want, right? Mm-hmm. And everyone is like, doesn't dog it necessarily because, like, they're like, they're taught, like, if you could do anything, would you just wanna sit around? Not really. Maybe you sit around for a year, but then you wanna do something else. If you could... So, so the whole idea is to go to that is gonna be huge turmoil in the beginning 'cause we have to disrupt all our financial systems- Yeah"
+  },
+  {
+   "start": 4529,
+   "speaker": "Stephen Lau",
+   "text": "Our societal systems, whatever it is to get to that, so it's gonna be turmoil. So, you know, we can even take a look at, you know, if you take a look at, say, you know, more established nations, you know, 'cause United States and Canada are new nations. Mm. New nations. You know, it was, it was like whereas the established nations like Spain, Portugal, whatever, they've been around for, like, way more time, and so you look at those countries and you're like, \"Where are they at today?\""
+  },
+  {
+   "start": 4558,
+   "speaker": "Stephen Lau",
+   "text": "So if you see unemployment rate is very high, which it is, you know, you see these things are there, it's like, how come there's no riot? Mm. Why is there no riot yet, you know? Because, I mean, if you were there, an unemployment rate for, you know, young people is at 25%. I mean, are you not mad? Mm. Right? So forget about that a moment."
+  },
+  {
+   "start": 4583,
+   "speaker": "Stephen Lau",
+   "text": "You bring it over here. Man, we got that much ma- more room to go. Right. Like, when we get to 25%, then we'll be at their level for young people, and then what will happen? Right. So right now I'm gonna say nothing because if they're doing nothing, then in five years, if it's at 25%, I guess we'll be doing nothing."
+  },
+  {
+   "start": 4602,
+   "speaker": "Stephen Lau",
+   "text": "Right. Where do you see for yourself? So maybe I'll answer it in a different way. I tell my elders who've been around longer or business people who are older than me, I'm like, \"Geez, you've, you've established, I mean, you lived through the golden years. You know, you were able to buy a home, send your s- your kids to school, whatever it is, and you were able to see the world in less turmoil."
+  },
+  {
+   "start": 4628,
+   "speaker": "Stephen Lau",
+   "text": "Things didn't burn down yet, the climate was good, whatever. You lived your golden years, you know?\" And then I look at myself, I'm like, \"Okay, I'm kinda not that far behind, but I'm into the turmoil stage,\" right? Things are getting ruined, right? And then those that are younger than me, I'm like, \"I don't know. I don't know."
+  },
+  {
+   "start": 4649,
+   "speaker": "Stephen Lau",
+   "text": "I don't know where it's gonna be at,\" you know? But, but, you know, but- When, when people say it's the golden age is now, what's your response to that? Well, it depends on your frame of mind, obviously. It's, it's the golden age is for you because maybe you're thinking it's awesome and you have a path."
+  },
+  {
+   "start": 4668,
+   "speaker": "Stephen Lau",
+   "text": "Maybe you're into AI and it's like, this is the golden time, right? But if you just go beyond that, maybe it isn't the golden time. Mm-hmm. Right? Maybe, maybe it's like, is your food as nutritious as it was before? Right. Is, is can you travel to places that haven't burnt down or it's too hot? Mm. Or can you go to places where you're still welcome?"
+  },
+  {
+   "start": 4687,
+   "speaker": "David DiNardo",
+   "text": "Mm. Right? Because they're suffering, and then you go to that country and you're privileged. Yeah. Right? So, you know, what's gonna happen? So that, and you've talked a lot about podcasts and, you know, experimenting AI and, you know, the step-by-step to get you where you definitely have a grasp of where AI is going and you're utilizing it every day."
+  },
+  {
+   "start": 4716,
+   "speaker": "David DiNardo",
+   "text": "Is there a certain podcast that you recommend other than this one, for y- audiences to- Uh-... Go to? Like, are you listening to a, you're going to Tech Week in Toronto, you're going to, I don't know if you're going to Startup Week. Like, you're doing all these things- Yes... To be at the forefront and get educated on what AI is and how to actually utilize it, and it's, it's really a blank canvas."
+  },
+  {
+   "start": 4741,
+   "speaker": "Stephen Lau",
+   "text": "Do you recommend people going to all these conferences, doing podcasts- Uh-... Reading books? Like, what's the one, two, three step for, that you would recommend? Okay. So first, at the events, so I wanna correct you on the events. Just because I go to these events doesn't mean I'll re- meet the right people that are doing, you know- It's like, will I be able to learn something?"
+  },
+  {
+   "start": 4764,
+   "speaker": "Stephen Lau",
+   "text": "Right. Right? You're, you're not going there to sell, you're going there to learn. Maybe both. Right. I don't know. But, but am I gonna be able to meet someone at my caliber, or am I gonna meet someone that's just fiddling with AI? Mm. So if I go to a hackathon, and so what a hackathon is that, you know, there's a bunch of people, there's, there's, maybe there's a prize, and they're to make something with software or AI in a certain period of time, and then they compete against one another."
+  },
+  {
+   "start": 4791,
+   "speaker": "Stephen Lau",
+   "text": "I mean, I went, I've been to a few hackathons. I'm like, \"Did I learn anything? No. Was some stuff cool? Sure. Is it, is it, can it be commercialized? Maybe not. So did I learn anything? Maybe not.\" Mm. Right? So now I'm... I think for those that are getting into AI, yeah, go to events because then you'll start to open your mind."
+  },
+  {
+   "start": 4817,
+   "speaker": "Stephen Lau",
+   "text": "I think it's first opening your mind. And then the second is, like, I can recommend a podcast, but you shouldn't listen to the latest episode. It's too advanced. You have to go back 100 episodes. Mm. Start there first because it's too complex. And what influencer or creator are you- well, and I say this, like, obviously, I think it depends on the vehicle."
+  },
+  {
+   "start": 4843,
+   "speaker": "Stephen Lau",
+   "text": "So if I go for a walk every morning, I'll turn on podcasts. I like to listen to Everyday AI. Okay. But You know, if you turn it on today, it's too much. Like you won't even- Yeah... You won't even know what the hell's going on. Right. You have to go back about 100 episodes. Right. Right. So I think- So that's more of a news, get you caught up on what's going on in AI."
+  },
+  {
+   "start": 4867,
+   "speaker": "Stephen Lau",
+   "text": "It's about the latest thing. Yeah. So is he gonna tell you that this button does this thing in ChatGPT? No, because that was 100 episodes ago. Right. Is he gonna tell you how to best use ChatGPT with the new things coming out or use case? Sure. So it's not necessarily news, and he breaks it up because it's not..."
+  },
+  {
+   "start": 4890,
+   "speaker": "Stephen Lau",
+   "text": "He'll have like news Fridays. Mm. He'll go over what news occurred during the week, and then it's like live Wednesdays where he'll talk about a real use case that he'll just do live, you know. And then every other day is like other scenarios or whatever. So kinda good to listen in on. So that's kinda keeping you up to date on AI."
+  },
+  {
+   "start": 4912,
+   "speaker": "Stephen Lau",
+   "text": "Is there any other podcast or book that you recommend? So I think you need to join a group. If you're in AI, you need to join a group where there are many people watching out, right? And so, you know, like I'm part of a group, but it would be beyond... Like you can't, you can't be like, \"Well, how do you use this thing in ChatGPT?\""
+  },
+  {
+   "start": 4934,
+   "speaker": "Stephen Lau",
+   "text": "Oh, yeah. It's not a question that anyone answers, right? So, so all of those people are like, you know, if the group's like at least 10 people, then all of a sudden everyone's doing something different with AI. Mm. So just because I use Claude doesn't mean I'm very good at Claude with graphics, as an example- Right"
+  },
+  {
+   "start": 4953,
+   "speaker": "Stephen Lau",
+   "text": "Because I'm, maybe I don't play as much, right? Like, so it depends. It depends. So I think, I think like joining a group is good. I think making the investment... In fact, here's a, here's a nice one. I met this project manager who is not in a job situation right now, and so when I talked to him, I thought he was extremely knowledgeable, but he lacked AI experience."
+  },
+  {
+   "start": 4982,
+   "speaker": "Stephen Lau",
+   "text": "So then I told him, I'm like, \"You just need to, I think you need to read and learn, but I think you need to sit in front of someone that is already using AI in a-\" In an advanced fashion. Like, it needs to just be in front of that individual so that they see it in action, right? 'Cause once you see it, then you kinda get it, right?"
+  },
+  {
+   "start": 5004,
+   "speaker": "Stephen Lau",
+   "text": "So he was willing to pay for that, and I think that, I think you have to be willing to pay. Like in fact, I encourage people now, it's like, well, if they're not teaching it in school, and if you're comfortable, so depending on what your comfort level is and where to get a job, then I might not recommend school for you."
+  },
+  {
+   "start": 5024,
+   "speaker": "Stephen Lau",
+   "text": "Hmm. But I might recommend that you go volunteer for a company or pay to work at a company- Yeah... So that you can, first you get that on your CV, and second you're involved in working in it. Right. Right? And then, and then stop it with the fact that, you know, it costs $20. Yeah. You know? Like, you know, pet peeve of mine is that if you're in, if you're building websites or you're a web designer, and you just graduate out of school, I'm like, if you don't have your own domain name and you don't have your own website, I'm like, \"Ah.\""
+  },
+  {
+   "start": 5056,
+   "speaker": "Stephen Lau",
+   "text": "Yeah. Like you shouldn't, you shouldn't be in this field. Yeah. Like, you know? So, so if you're in AI, you better have, you know... I'm like, \"Which plan do you have?\" Hmm. \"Oh, I got the $200 plan.\" Okay. Yeah. Okay. So then I already know your capacity. Yeah. If you're like, \"Well, I have the $20 plan\"- Or, yeah, or the free version."
+  },
+  {
+   "start": 5074,
+   "speaker": "Stephen Lau",
+   "text": "Or the free version- Yeah... Then I'm like- Yeah... I don't think we need to talk- Right... 'cause you're not, you're not using it to its capacity. If you're at the $200 plan and you're in an interview, I know you're fooling around at it, with it every day. Yeah. Every day. So, you know. It's funny because I'm having conversations with people, they're like, \"Oh, I just noticed one thing in Claude about something that...\""
+  },
+  {
+   "start": 5101,
+   "speaker": "David DiNardo",
+   "text": "I was like, \"Oh, yeah, that was like a year and a half ago- Yes... I was able to do that.\" Like, you for- kinda forget where people are at in their AI journey. That's right. And I think with business owners, if you're not at the forefront, you have to learn it. The business owner has to be the pioneer. Uh- Okay. So, I mean- just like you- Yeah"
+  },
+  {
+   "start": 5126,
+   "speaker": "Stephen Lau",
+   "text": "Okay? Did you build that game before you passed it on to someone else to build it? Of course. Right. 'Cause I need to know it. I need to know it first. Exactly. Do, do I need to continue to do it? Not necessarily. No, but you have the foundation now. Some- So now, so some f- now you can, you know, put the pieces together with the right people around you."
+  },
+  {
+   "start": 5148,
+   "speaker": "Stephen Lau",
+   "text": "Well, you don't wanna be duped. I say this, you don't want to be duped, 'cause you might talk to different vendors or whatever it is, and so you have to be knowledgeable enough so you can evaluate whether the company you might hire is good or not. Right. And this isn't, it's not only AI. Yeah."
+  },
+  {
+   "start": 5165,
+   "speaker": "Stephen Lau",
+   "text": "Like, it could be like, are you hiring a painter? Right. Are you sure you know the right questions to ask the painter? Right. You know, so I think, I think that's the extent of what the business owner needs to know, unless they wanna know more, so they know how, why, and who to hire, and what's important."
+  },
+  {
+   "start": 5184,
+   "speaker": "Stephen Lau",
+   "text": "So what's next for Stephen? Uh- Do you wanna grow your team? Do you wanna grow your clients? Do you- I don't wanna grow my team. I think, I think there's, there's a couple of good examples already where there's been, like, billion-dollar evaluations, and companies started with just two people and only have two people."
+  },
+  {
+   "start": 5205,
+   "speaker": "Stephen Lau",
+   "text": "How big is your team now? We're six people. So. So take on more capacity based on making AI more efficient within? Yes. So I'm always encouraging my staff to learn more AI. Learn it, try it, play with it, and I can see some already naturally graviting, gravitating towards it. I mean, the other day I was talking to one of our graphic designers, and he's like, \"I made something."
+  },
+  {
+   "start": 5235,
+   "speaker": "Stephen Lau",
+   "text": "Let me show you.\" Right? And then I'm watching it, and he made, he made, like, a 25-minute video editorial. Wow. Documentary. Wow. And I was like, I was like, \"Oh.\" Like, \"How did you do this?\" I'm like, \"How did you do this?\" 'Cause he didn't pay anyone to do it. So he's just, \"Oh, I just used these free tools.\" But what was more important was, to me, was that not that he used the free tools- That he did it"
+  },
+  {
+   "start": 5261,
+   "speaker": "Stephen Lau",
+   "text": "Was he had the creativity- Yeah... To put this together using the free tools. Yeah. So then I know his capacity. Mm. His capacity is really amazing. So keep the team, empower the team. Yes. The team has to wanna move, you know, in that direction. If they don't move- It's just not the right fit... It's not, it's not gonna be the right fit."
+  },
+  {
+   "start": 5284,
+   "speaker": "David DiNardo",
+   "text": "What type of clients are you looking for?.. Who is your ideal client? I think my ideal client is, uh-"
+  },
+  {
+   "start": 5297,
+   "speaker": "Stephen Lau",
+   "text": "So I think it's different now. I think I'm just looking for clients that I work well with. Mm-hmm. We have the right mindset, right? If I can't do it, I'll tell them, so that's cool. But, but it's a, it's a matter of it's like I'm just part of their team now. Hmm. You know? And- What does that mean? So as an example, very..."
+  },
+  {
+   "start": 5318,
+   "speaker": "Stephen Lau",
+   "text": "Maybe you're familiar with this, but say you work for a corporation and you're the VP, and you trust certain people in your organization. You move to another organization, you're kind of poaching those people to come with you, so, 'cause you trust them. You know they can deliver. Yeah. So these are the people that you wanna bring along."
+  },
+  {
+   "start": 5329,
+   "speaker": "Stephen Lau",
+   "text": "So as a business owner, you have to know that, too. Who are the people that you can bring along? Mm-hmm."
+  },
+  {
+   "start": 5342,
+   "speaker": "Stephen Lau",
+   "text": "So I just wanna be part of their teams. 'Cause at the end of the day, when they, when you can do so many things with AI, they're just gonna trust the people on their team to make it happen. It's like, oh, I know that, say I know that this company, it's only supposed to take one hour to do it. They're not taking a whole week to do it."
+  },
+  {
+   "start": 5361,
+   "speaker": "Stephen Lau",
+   "text": "Right. So you need, you need that trust. It's funny you say that. Like, the whole subcontractor"
+  },
+  {
+   "start": 5371,
+   "speaker": "David DiNardo",
+   "text": "Is that instead of employees, is it, is it, is that where small businesses are moving to, where, \"Hey, I'm gonna hire Stephen as the, AI arm in my organization,\" versus, \"Here's the vision. Hey, Stephen, you have a team of six people that have capacity of XYZ,\" versus me hire something internal to develop them?"
+  },
+  {
+   "start": 5401,
+   "speaker": "Stephen Lau",
+   "text": "I think that's a, that's a loaded question for sure, 'cause, like first let's just say you, like you are already knowledgeable about AI. S- you know, you're, you're pretty good at it, right? Yes. Okay. So, so now you can an- actually answer the question, should I hire or should I find a subcontractor? Because now instead of seeing black and white when you hire a contractor, they can do it, they can't do it, now you're seeing these grays."
+  },
+  {
+   "start": 5435,
+   "speaker": "Stephen Lau",
+   "text": "You're able to be like, \"Hey, that one can do this one. This one can do this one, but they're not so good at that.\" So then when you see those grays, you're able to pick better. And then when you hire, it's the same thing. Like even that one question that I ask if we're hiring someone is like, \"What plan of AI do you use?\""
+  },
+  {
+   "start": 5454,
+   "speaker": "Stephen Lau",
+   "text": "It's like, \"Oh, I use the free one.\" Well, that's not really very good. So it's the right questions, I think. I think that's what's important. And, you know, I always think it's always better to hire someone, as long as you can keep them busy all the time. Well, and that's the thing, like your six staff, you're gonna increase capacity 10X, 15X, 20X, however fast AI keeps on evolving."
+  },
+  {
+   "start": 5481,
+   "speaker": "David DiNardo",
+   "text": "Now it becomes like for you, okay, well-"
+  },
+  {
+   "start": 5488,
+   "speaker": "Stephen Lau",
+   "text": "Do you get 10 more clients a month to manage the salaries if- It depends. I think, I think we're still in this weird phase. We are, yeah. We're in this weird phase, so it's difficult. Like I said, it's like quicksand. Yeah. So it's a very weird stage. We'll have clients that will ask for more value, right? But they don't really know- But the value is more people."
+  },
+  {
+   "start": 5511,
+   "speaker": "Stephen Lau",
+   "text": "Like- No, more activity. More activity. They want more activity, right? So that would be correct, right? Can I get more activity for the price that I pay? Right. Really, that's what it boils down to. In fact, even when I talk to programmers at working companies with AI, like I was talking to my neighbor. My neighbor is like, using AI for six years, you know?"
+  },
+  {
+   "start": 5534,
+   "speaker": "Stephen Lau",
+   "text": "And so he says that... And he's a programmer, and he says that, \"Yeah, you know, times have changed. It's just that, you know, with AI, there's a greater expectation to do more.\" Mm. Which I get it, I get it, because you c- if you finish a task in one hour, you got seven hours left in the day. Well, do something else."
+  },
+  {
+   "start": 5552,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Right? And they want, and people wanna do something else. They wanna- Yeah... Contribute to value towards that. That's right. That's right. So Stephen, did I miss anything throughout this conversation, like that you wanna share about AI, about your business, about you, about the economy, about a new individual starting a business, or not knowing to work for someone, work for a organization, to embrace it themselves?"
+  },
+  {
+   "start": 5580,
+   "speaker": "David DiNardo",
+   "text": "I mean, there's a lot of talk about students. You talked about students and how you're teaching them, and I think it's our job to mentor people as well because we have the experience, and now it's a open playing field with AI to be like, how do we take our experience a whole different level and whole different capacity?"
+  },
+  {
+   "start": 5600,
+   "speaker": "Stephen Lau",
+   "text": "Yeah. I think, well, first for students, I would say there's this, there's a gap in the marketplace. They talk about it. It's like there's no more... It's hard to get... There's no more junior positions. But if there's no more junior positions, how does someone wanting to get into that be qualified to be in an intermediate position, right?"
+  },
+  {
+   "start": 5620,
+   "speaker": "Stephen Lau",
+   "text": "So, and actually what happened was, maybe this is the right mindset and maybe I'm wrong, but you know, you gotta volunteer or you gotta, you gotta do something so you get this experience. So one of my developers, he's in Canada, he was working at Walmart, and he decided that after seeing the projects that we were doing, and he's a programmer, he just wasn't able to get a job, right?"
+  },
+  {
+   "start": 5650,
+   "speaker": "Stephen Lau",
+   "text": "But after he saw what we were doing, he made me an offer. He was like, \"Hire me for the same wage at Walmart until you see my value.\""
+  },
+  {
+   "start": 5666,
+   "speaker": "David DiNardo",
+   "text": "I think that's, like, I think that's such an important point because I won't hire someone right now, and I'll be completely honest, if I have to train them- Right... On how to do it. Like- Right... That's over. It's over. Like, it's- It's over... It's like, I remember 10, five years ago, seven years ago, it was three to six months before we made the employee billable to the client, and that six months is just eating the company's profit."
+  },
+  {
+   "start": 5698,
+   "speaker": "David DiNardo",
+   "text": "And they could leave. And they can leave. Yeah. Where now, as an employee or an individual wanting to work for yourself or myself, it's like, \"Okay, what's the...\" And then, what's the value, right? And if I don't have that value, then how do we make it work? And then once you have the value, then let's have bigger conversations."
+  },
+  {
+   "start": 5720,
+   "speaker": "David DiNardo",
+   "text": "Right. It's like, okay, now it's not $50,000 a year, maybe based on project or based on bonus, based on profitability. Whatever it is, I'm open to it- Yes... Because you're delivering a result to X amount of clients for the business, and- Right... You have the expertise for it. Right. Plus, you're way more valuable to be like, \"Hey, this relationship's not working out- Yeah"
+  },
+  {
+   "start": 5748,
+   "speaker": "Stephen Lau",
+   "text": "For whatever reason.\" Right. \"Let's work on it,\" or- Yeah, look, I even had this co-op student that came to work for us, and I'm not gonna mention any names or the school or whatever it is, but the program is terrible. It was, it was for social media. It was just a terrible program. He paid, I don't know, almost 20 grand for the program."
+  },
+  {
+   "start": 5774,
+   "speaker": "Stephen Lau",
+   "text": "One-year program, fast track social media, 20 grand. Garbage. Mm. Garbage, right? And everything in that course you could just learn online. Mm. And so when he came in, I had to retrain him, but he was a co-op student, so I just basically just train right there. \"Here, watch these videos, and then practice making whatever they did in those videos.\""
+  },
+  {
+   "start": 5797,
+   "speaker": "Stephen Lau",
+   "text": "And he practiced it, and then sooner or later, he got competent doing whatever I wanted him to do, right? But then I was like, I asked him, I'm like, \"Well, why didn't you just do this on your own? Why didn't you... Like, those videos, they're, they're not like yesterday, like from six months ago or whatever it is."
+  },
+  {
+   "start": 5816,
+   "speaker": "Stephen Lau",
+   "text": "Like, why didn't, why didn't you just do it?\" And this is, like, advice for anyone. It's like, he said that he didn't do it because first, maybe he didn't know that was the right one to watch. Second is that he didn't have the time to do it. And I was like, \"What do you mean?\" He's like, \"Well- He has like, I guess he works during the day or whatever for Uber."
+  },
+  {
+   "start": 5843,
+   "speaker": "Stephen Lau",
+   "text": "He gets home and he has his family. So because he paid for the course, that was his education time, which he allocated aside. So when I... You know, for his degree, he needed to have the co-op program, so he's able to set this time to learn that thing. So I'm like, \"Oh, it's catch-22 here.\" You know what I mean? Like he needs-- You need to really set aside the time to train."
+  },
+  {
+   "start": 5865,
+   "speaker": "Stephen Lau",
+   "text": "So if you're not in a job situation right now, you have to be doing the thing that gets you the job. And then if you can't do it because you might need to be spoon-fed, then you need to go to school or you need to volunteer at some company that is doing that. And, and I say this as well, like Like, as a company, you cannot offer internships because that's illegal, right?"
+  },
+  {
+   "start": 5890,
+   "speaker": "Stephen Lau",
+   "text": "So, but someone can volunteer for your company. But I think for those people that are looking to volunteer to companies, they are valuable too. They need to ask what they're gonna be working on. Right. If, if they go into a company and they're like, \"Well,\" someone tells them, it's like, \"Okay, go over there, file these things.\""
+  },
+  {
+   "start": 5905,
+   "speaker": "Stephen Lau",
+   "text": "Yeah. It's like, \"Well, wait a minute, I thought you said I was gonna work on these projects.\" Right. \"Well, then I'm out of here,\" or whatever. Yeah. For sure. So, so they have as much power- Yeah... To be able to choose because they're gonna work on that as hard as they can, right? But that's also the company's responsibility to give them the right opportunities internally so they can learn."
+  },
+  {
+   "start": 5924,
+   "speaker": "Stephen Lau",
+   "text": "What do you think of post-education, universities, colleges? Uh- Where do you see that going? Well, I think, I think it's the same thing. And I think there's, there's some post-graduate programs that are necessary. Mm. As an example, they're necessary, so you know, certain fields like, you know, being a doctor- Yeah"
+  },
+  {
+   "start": 5945,
+   "speaker": "Stephen Lau",
+   "text": "Nurse, whatever. So you got this practical stuff. But same thing, if it's in one of these softer fields, I think that, I mean, AI's right there, so it's... You gotta be careful. You gotta, you gotta be really careful. Because I don't even know if I'm hiring someone now, I don't know if I'm looking at the degree anymore."
+  },
+  {
+   "start": 5968,
+   "speaker": "Stephen Lau",
+   "text": "Oh, oh. So yeah, actually I was gonna... I'm glad you brought that up. So if you wanna work for the government or some very structured organization where they cannot evaluate you and they have to use some sort of process, yeah, you need, you need these degrees behind your name or whatever it is."
+  },
+  {
+   "start": 5987,
+   "speaker": "Stephen Lau",
+   "text": "Because these organizations, the person evaluating you is not the person that knows actually your knowledge. Yeah. Right? So like Elon Musk is like, \"I don't care if you went to school. Just need to show me your stuff.\" Right. You know? So I think within the field of programming and AI, I think that's absolutely the case."
+  },
+  {
+   "start": 6008,
+   "speaker": "Stephen Lau",
+   "text": "You need to show your stuff. Yeah. If you don't show your stuff, you are not gonna get hired. Yeah. Right? And same with marketing. Like, you can have a marketing degree. If someone came with a marketing degree or a personal brand with a website, social proof, talking about their journey, who am I gonna choose?"
+  },
+  {
+   "start": 6028,
+   "speaker": "Stephen Lau",
+   "text": "Personal brand. Yeah, maybe. Well, I have more information on that person- Yeah... To make a... They've, they've been there and done it. They're going through it, so they can relate to it versus the theory part. Yeah. Well, it depends on who you're hiring, because I think this is important. Like st- back to my, if you were to hi- if you were hiring a, someone from bioinformatics, would you?"
+  },
+  {
+   "start": 6054,
+   "speaker": "Stephen Lau",
+   "text": "'Cause you have AI, right? If you were hiring someone for, you know, maybe they gotta be good at Google AdWords. Well, I don't know. I think if you're using Codex It can look at Google AdWords and it can make recommendations, download things, do whatever. It ain't perfect yet, but I could see It getting closer"
+  },
+  {
+   "start": 6082,
+   "speaker": "David DiNardo",
+   "text": "It's getting closer, for sure. So then, you know, if you went and took that course, is it valuable? And I guess also, how do you market yourself to differentiate yourself from your competitors? And I'll give you an example. I was looking for an accountant. I got 500- Right... Resumes for accounting roles, and now with AI, 80% look the exact same."
+  },
+  {
+   "start": 6116,
+   "speaker": "Stephen Lau",
+   "text": "Right, right. They, they... You used AI to make their resumes? Yeah. Yeah, yeah. So right there, I'm looking at myself. I'm, like, getting overwhelmed because of all these applicants- Yes... Where I'm like, \"Okay, what is different in these resumes that stand out?\" That's what you gotta focus on. So, so it's... What's interesting is that you're bringing up this question, but it's the same thing what- that we started the original conversation off at the beginning of this podcast."
+  },
+  {
+   "start": 6148,
+   "speaker": "Stephen Lau",
+   "text": "You're overwhelmed now by this content. This content may have been generated with AI. You might use AI to then evaluate that content was generated by AI. So what if everything on the internet one day is, like, being generated by AI? Yeah. Like, who the... How, how do, how do you deal with this? Yeah. It's crazy."
+  },
+  {
+   "start": 6166,
+   "speaker": "David DiNardo",
+   "text": "And I think that's where- Being authentic, building trust. Like, I feel like whoever owns the distribution channel, like you even said it for Shopify, yeah, okay, maybe they don't have the tech, but they have the brand. Like Amazon, same thing. Amazon. Costco. Costco, like- Right... They have the brand. The brand, the process."
+  },
+  {
+   "start": 6186,
+   "speaker": "David DiNardo",
+   "text": "And that's where I'm nervous about small business owners because in order to get to that brand of Amazon, that's a lot of time, that's a lot of money, that's a lot of- Sure... Resources. Yeah. So you can compete on an operation scale, but also how do you compete from a brand perspective? Right. And I think how you can compete is to build these 100-page websites and 1,000-page websites to get you on the same map as- Right"
+  },
+  {
+   "start": 6216,
+   "speaker": "David DiNardo",
+   "text": "Costco to show up there. Right. And then you have to connect with a creator or connect- Mm... With a distributor or partner with someone that can get you from more of a brand awareness on the social, the trust, and all that aspect. And to be fully frank, that's exactly why I'm doing social media, building all this podcast."
+  },
+  {
+   "start": 6242,
+   "speaker": "David DiNardo",
+   "text": "You definitely need time, you definitely need money, so it's not for the junior person- Right, right... Or the small business owner. But the, one of the biggest reasons why I'm doing it is for, to authentic, trust, get my face out there so I can compete with the Costcos or the bigger brands that are spending millions and millions of dollars, but they don't have that individual going to podcasts or doing the things that we can do now."
+  },
+  {
+   "start": 6269,
+   "speaker": "Stephen Lau",
+   "text": "Well, here's a question for you. What if you were an avatar? What if, what if, what if this podcast is totally AI? You know what I mean? That's... Then, then what? So to that question, and we talked about it before we even started filming this podcast, about networking events and, you know, different types of ideas that you were thinking about connecting people."
+  },
+  {
+   "start": 6300,
+   "speaker": "David DiNardo",
+   "text": "I think it's gonna go two extremes. One, content. Then these posts are not AI-generated content. It's me maybe typing my true interaction with Stephen. Like, I even now on LinkedIn, the highest engaged posts are me writing my message that is misspelled maybe, Grammarly- Has it come down to that?"
+  },
+  {
+   "start": 6330,
+   "speaker": "David DiNardo",
+   "text": "I think it's gonna go to that extreme. Yeah. I think it's gonna be both sides of extreme. So it finding something real? So it's AI trying to find something real? Or people could sniff through the realness and ta- wanna talk to the Stephens or wanna talk to the Davids. Yeah. Possibly. I mean- I think one of the biggest reasons why I'm doing this podcast in person is because there's a different energy talking to them in person than talking virtually."
+  },
+  {
+   "start": 6362,
+   "speaker": "David DiNardo",
+   "text": "Yeah. An avatar to replace a virtual podcaster? 100%. Yeah. It, it depends. I mean Right. Getting, it'll get closer and closer to it. Yeah. Someone creating an event- Yeah... Where we just went to, you know, Invest Ottawa event where you're handshaking people. So your comfort, your comfort is what it boils down to?"
+  },
+  {
+   "start": 6386,
+   "speaker": "David DiNardo",
+   "text": "Yeah. So your comfort that you saw someone in person, they were live, they were real, they were... That's what it boils down to? I think you have to. I, and I think the two ways to run a business right now is AI-driven native or Saunders Farm experience, haunted houses, plu- you know, pumpkin carving. Like, people going to actual physical places and getting that experience."
+  },
+  {
+   "start": 6414,
+   "speaker": "Stephen Lau",
+   "text": "Sure. Anyone in the middle- Oof, it's, yeah, it's difficult... It's gonna be, it's gonna be, very noisy for them. Yes. Yes. So I agree with you, and, you know, the only thing I can say is maybe now we talked a little bit about, you know, what should students do or whatever. Maybe what should the business owner do."
+  },
+  {
+   "start": 6439,
+   "speaker": "Stephen Lau",
+   "text": "I think, I think the business owner needs to understand, the power of AI a little bit. Not just, \"Hey, what's the weather like today?\" Or whatever. Nothing like that, right? I think they really need to see in person what someone can do with AI- Yeah... In a short period of time, and then they'll suddenly realize This is, this is a big change."
+  },
+  {
+   "start": 6468,
+   "speaker": "Stephen Lau",
+   "text": "It's a big change. This is a big change. They just need to know that them going to do an errand is gonna be less important than them learning this thing right now. They don't have to do AI. They just need to understand its full impact, because they'll understand their, I guess whether they're gonna survive or not."
+  },
+  {
+   "start": 6490,
+   "speaker": "David DiNardo",
+   "text": "Hmm. And then, and then they'll... Or they'll understand how they can thrive. Yeah. So. Well, I- we've been speaking for an hour and 15 minutes, so I really appreciate it. Is there anything else I missed that you thought about prior to this conversation, or you think would be valuable for the audience? I think we've covered a lot, and, you know, I'm, I'm trying very hard to be not pessimistic."
+  },
+  {
+   "start": 6522,
+   "speaker": "Stephen Lau",
+   "text": "Hmm. You know what I mean? But it's sometimes very difficult. What are you pessimistic on? I feel like this conversation you're more optimistic. Well, it's optimistic for those people who think it's golden. Yeah. You know? Which means that you have this vision and see that opportunity or whatever it is. But, but if we go back and say, you know, let's just say 98% of people are not using AI properly, like it's gonna be problems."
+  },
+  {
+   "start": 6552,
+   "speaker": "Stephen Lau",
+   "text": "Hmm. It's gonna be major problems. And so, you know, I think that- if there's too much unemployment, who cares what we're selling? People can't afford it I heard that narrative, the other day Yeah Of like, \"Well, who's gonna pay for-\" Who's gonna pay for what? Yeah. To support you, right? So I get it. Is there a window, you think?"
+  },
+  {
+   "start": 6580,
+   "speaker": "Stephen Lau",
+   "text": ".. Are we in the window? We're... So I think someone told me about this book, I can't remember the name. They talk about these, they're called turnings. Like we're in the fourth turning or whatever it is, so you know, it's the age of the civilization, right? So maybe I'll break it down, something simple."
+  },
+  {
+   "start": 6599,
+   "speaker": "Stephen Lau",
+   "text": "Maybe that's too complicated, so I'll just maybe ask it as a simple question. It's like, how much would you pay for a burger? How much do you think it's, when it's too much? Is it 20 bucks? Is it 30 bucks? Well- Is it 40 bucks? It's funny because we were at Italian festival this weekend, and I got a drink and it was $15."
+  },
+  {
+   "start": 6619,
+   "speaker": "Stephen Lau",
+   "text": "Yeah. A little drink, and I'm like, \"This is too much.\" Right. Right? Like $6, $7, okay. Yes. But double that, it's... That's, this is, so this is what we've come to. Yeah. It's, I don't see how we can get out of it. Unless we all decided that we were gonna bring it down a notch. Yeah. Your house goes down by half, same as everything else goes down by half."
+  },
+  {
+   "start": 6642,
+   "speaker": "Stephen Lau",
+   "text": "Right. Whatever, right? Right. So, so I'm talking about deflation, you know? Yeah. But you know, that means everyone else to do, has to do it. Yeah. Are they going to? I don't know. So you know, is these philosophers, have they already thought about the way that civilization works, so civilization has to fall, you know, for a new one to come about?"
+  },
+  {
+   "start": 6665,
+   "speaker": "David DiNardo",
+   "text": "Maybe. Right. And that's why maybe we're in the fourth turning. I don't know. Right. I don't know. Yeah, something definitely has to change because it's not, it's not affordable. It's not- It's not affordable... It's not. I mean, I went to the World Cup, this weekend. I got my tickets for $400. Right. Now they're $2,700 American, 'cause I got into the draft- Phew"
+  },
+  {
+   "start": 6690,
+   "speaker": "David DiNardo",
+   "text": "So I got lucky, I did whatever. Now they were $2,700 a ticket. Right. Four tickets, you're at 10 grand. Right. And the stadium was packed, and I'm like, \"Where's this mon- Like the numbers don't make sense for anything. Um- Well, it depends on who's in that stadium. Maybe it's the 25,000 people who are well-to-do. Or the 70,000, 'cause that's how many."
+  },
+  {
+   "start": 6716,
+   "speaker": "Stephen Lau",
+   "text": "70,000. So it's not that much if you think about it, 'cause they all fly in. But I think people are craving experiences- Hmm... And rather spend $10,000 on a World Cup ticket than maybe go on a vacation or- Well, how about, how about the blue dot? The blue dot, which is, you know, Ticketmaster. Are these events sold out?"
+  },
+  {
+   "start": 6736,
+   "speaker": "Stephen Lau",
+   "text": "Right. Not, not anymore. Yeah. Not anymore. They just, yeah. Right? So, yeah, 'cause if prices go up, then you can only spend on what you need. Yeah. You don't have time for what a lot of businesses are offering, which are just- extra services. Yeah. Massage, you're, you know, eating out at a restaurant- Yeah... You really need to, you know?"
+  },
+  {
+   "start": 6759,
+   "speaker": "Stephen Lau",
+   "text": "The extra $20 ChatGPT subscription, right? Like- Yes... The add-ons are what people are avoiding. Yes. And I get it, I get it. You know, even like, say my, you know, some of my family members, I ask them if they have, you know, ChatGPT or whatever it is, it's like they say they can't afford it. And I get it. Yeah. I get it."
+  },
+  {
+   "start": 6785,
+   "speaker": "Stephen Lau",
+   "text": "So I gotta like, I have to think about it as well as like, well, I could afford it, but maybe is my business doing well enough to do it or am I privileged? Right. You know? It's one of those things maybe. I gotta really take a closer look at it, right? So because there are people that maybe they can't."
+  },
+  {
+   "start": 6803,
+   "speaker": "Stephen Lau",
+   "text": "Yeah. And I do think inequality with AI is gonna go even... We- It, it's already, I think, bad now. It's bad now. I think it's gonna, the middle class is gonna start getting disseminated, and it's gonna be really rich and like the inequality. Yeah, it's already there. Yeah. It's already there. So, you know, but like I said, if you just take a look at these nations that are older than ours- Yeah"
+  },
+  {
+   "start": 6833,
+   "speaker": "David DiNardo",
+   "text": "We have a lot more room to go before there's an uprising. Right. So there you go. Well, thanks Stephen for coming. There's one last question, kinda closing tradition here. If you left a sticky note on your first laptop before you ever got started, what would it say?"
+  },
+  {
+   "start": 6855,
+   "speaker": "Stephen Lau",
+   "text": "Jeez, that's a, that's a tough one"
+  },
+  {
+   "start": 6862,
+   "speaker": "Stephen Lau",
+   "text": "I think it would be if I could give my advice to my younger self, I would just say keep learning, keep innovating, don't be scared. Thank you, Stephen. If people wanted to get ahold of you, what's the best way to get ahold of you? Just, call my phone number [phone number removed] or email me Stephen, S-T-E-P-H-E-N, or any variations of Stephen or Steve @salientai.ca."
+  },
+  {
+   "start": 6896,
+   "speaker": "David DiNardo",
+   "text": "Thanks, Stephen"
+  }
+ ]
+}

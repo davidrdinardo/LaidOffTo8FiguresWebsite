@@ -77,12 +77,7 @@
         <a class="episode-btn ghost" href="https://open.spotify.com/show/7FDLtIIMu8IdIlA7lkpPda" target="_blank" rel="noopener">LISTEN ON SPOTIFY <span aria-hidden="true">&rarr;</span></a>
       </div>
 
-      <section class="episode-notes">
-        <div class="section-label"><span>01</span> SHOW NOTES</div>
-        <div class="episode-body">
-{{DESCRIPTION_HTML}}
-        </div>
-      </section>
+{{EPISODE_SECTIONS}}
 
       <nav class="episode-nav" aria-label="More episodes">
         {{PREV_LINK}}
@@ -90,7 +85,7 @@
       </nav>
 
       <section class="episode-join">
-        <div class="section-label"><span>02</span> JOIN</div>
+        <div class="section-label"><span>{{JOIN_NUM}}</span> JOIN</div>
         <h2 class="join-headline">One email,<br />every week.</h2>
         <p class="episode-join-copy">New episodes a day early, one concrete move from each guest, and what David's testing. Free, unsubscribe anytime.</p>
         <a href="/#join" class="intro-cta">SUBSCRIBE TO THE NEWSLETTER <span aria-hidden="true">&rarr;</span></a>

@@ -795,7 +795,93 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
 }
 .episode-btn.ghost:hover { border-color: var(--fg); }
 
-.episode-notes { padding: clamp(3rem, 6vw, 5rem) 0 0; }
+.episode-section { padding: clamp(3rem, 6vw, 5rem) 0 0; }
+.episode-lede {
+  max-width: 68ch;
+  color: var(--fg);
+  font-size: clamp(1.15rem, 1.6vw, 1.45rem);
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+.takeaways {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 68ch;
+  counter-reset: tk;
+}
+.takeaways li {
+  counter-increment: tk;
+  position: relative;
+  padding: 0.9rem 0 0.9rem 3rem;
+  border-top: 1px solid var(--line);
+  color: #d8d6d2;
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.55;
+}
+.takeaways li:last-child { border-bottom: 1px solid var(--line); }
+.takeaways li::before {
+  content: counter(tk, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 1.05rem;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+.tx-details { max-width: 76ch; }
+.tx-summary {
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fg);
+  padding: 1rem 0 1rem 1.4rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+.tx-summary::-webkit-details-marker { display: none; }
+.tx-summary::before {
+  content: "+";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  transition: transform 0.3s ease;
+}
+.tx-details[open] .tx-summary::before { transform: rotate(45deg); }
+.tx-meta { font-weight: 400; color: var(--muted); margin-left: 0.8rem; letter-spacing: 0.08em; }
+.tx-body { padding-top: 1.5rem; }
+.tx-note { font-size: 0.85rem; margin: 0 0 1.5rem; }
+.tx-body p {
+  color: #c7c5c1;
+  font-size: clamp(0.98rem, 1.15vw, 1.1rem);
+  line-height: 1.7;
+  margin: 0 0 1.1rem;
+}
+.tx-time {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-right: 0.7rem;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+.tx-time:hover { color: var(--accent); border-color: var(--accent); }
+.tx-speaker {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fg);
+  margin-right: 0.7rem;
+}
 .episode-body {
   max-width: 68ch;
   color: #c7c5c1;

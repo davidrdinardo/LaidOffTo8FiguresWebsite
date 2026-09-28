@@ -304,7 +304,11 @@ function descriptionToHtml(desc, videoId) {
   }).join("\n");
 }
 
-function metaDescription(ep) {
+function metaDescription(ep, tx) {
+  if (tx?.summary) {
+    const sum = String(tx.summary).replace(/\s+/g, " ").trim();
+    return sum.length > 158 ? sum.slice(0, 155).replace(/\s+\S*$/, "") + "…" : sum;
+  }
   const first = String(ep.description || "").replace(/\r\n?/g, "\n").split(/\n{2,}/)[0]
     .replace(/https?:\/\/\S+/g, "").replace(/\s+/g, " ").trim();
   const base = first || `Episode ${ep.num} of Laid Off To 8 Figures: ${ep.title}. Real founders on building 8-figure businesses, hosted by David DiNardo.`;
@@ -323,7 +327,7 @@ function isoDuration(d) {
   return `PT${h ? h + "H" : ""}${m}M${s}S`;
 }
 
-function episodeJsonLd(ep, meta) {
+function episodeJsonLd(ep, meta, tx) {
   return JSON.stringify({
     "@context": "https://schema.org",
     "@graph": [
@@ -339,6 +343,8 @@ function episodeJsonLd(ep, meta) {
         ...(isoDuration(ep.duration) ? { timeRequired: isoDuration(ep.duration) } : {}),
         partOfSeries: { "@type": "PodcastSeries", "@id": `${SITE}/#podcast`, name: "Laid Off To 8 Figures", url: `${SITE}/` },
         author: { "@type": "Person", "@id": `${SITE}/#person`, name: "David DiNardo" },
+        ...(tx?.guest ? { actor: tx.guest.split(/\s*&\s*/).map((name) => ({ "@type": "Person", name })) } : {}),
+        ...(tx?.summary ? { abstract: tx.summary } : {}),
         associatedMedia: { "@id": `${ep.pageUrl}#video` },
       },
       {
@@ -364,6 +370,58 @@ function episodeJsonLd(ep, meta) {
   }, null, 2).replace(/<\//g, "<\\/");
 }
 
+/* ---- Transcript data: transcripts/<videoId>.json (optional) --------- */
+async function loadTranscript(videoId) {
+  try {
+    const raw = await readFile(join(ROOT, "transcripts", `${videoId}.json`), "utf8");
+    const tx = JSON.parse(raw);
+    if (!Array.isArray(tx.segments) || !tx.segments.length) return null;
+    return tx;
+  } catch {
+    return null;
+  }
+}
+
+function fmtTimestamp(secs) {
+  const h = Math.floor(secs / 3600), m = Math.floor((secs % 3600) / 60), s = secs % 60;
+  const pad = (n) => String(n).padStart(2, "0");
+  return h ? `${h}:${pad(m)}:${pad(s)}` : `${m}:${pad(s)}`;
+}
+
+function sectionLabel(n, text) {
+  return `        <div class="section-label"><span>${String(n).padStart(2, "0")}</span> ${text}</div>`;
+}
+
+/* Builds the numbered content sections of an episode page: summary and
+   takeaways (when a transcript file exists), show notes, transcript. */
+function episodeSections(ep, tx) {
+  const out = [];
+  let n = 1;
+
+  if (tx?.summary) {
+    out.push(`      <section class="episode-section episode-summary">\n${sectionLabel(n++, "IN THIS EPISODE")}\n        <p class="episode-lede">${escapeHtml(tx.summary)}</p>\n      </section>`);
+  }
+  if (Array.isArray(tx?.takeaways) && tx.takeaways.length) {
+    const items = tx.takeaways.map((t) => `          <li>${escapeHtml(t)}</li>`).join("\n");
+    out.push(`      <section class="episode-section episode-takeaways">\n${sectionLabel(n++, "KEY TAKEAWAYS")}\n        <ol class="takeaways">\n${items}\n        </ol>\n      </section>`);
+  }
+
+  out.push(`      <section class="episode-section episode-notes">\n${sectionLabel(n++, "SHOW NOTES")}\n        <div class="episode-body">\n${descriptionToHtml(ep.description, ep.videoId)}\n        </div>\n      </section>`);
+
+  if (tx) {
+    const words = tx.segments.reduce((a, s) => a + String(s.text).split(/\s+/).length, 0);
+    const showSpeakers = tx.speakersVerified === true;
+    const paras = tx.segments.map((s) => {
+      const t = Number(s.start) || 0;
+      const speaker = showSpeakers && s.speaker ? `<span class="tx-speaker">${escapeHtml(s.speaker)}</span>` : "";
+      return `            <p><a class="tx-time" href="https://www.youtube.com/watch?v=${ep.videoId}&t=${t}s" target="_blank" rel="noopener" aria-label="Play from ${fmtTimestamp(t)}">${fmtTimestamp(t)}</a>${speaker}${escapeHtml(s.text)}</p>`;
+    }).join("\n");
+    out.push(`      <section class="episode-section episode-transcript" id="transcript">\n${sectionLabel(n++, "TRANSCRIPT")}\n        <details class="tx-details">\n          <summary class="tx-summary">Read the full transcript <span class="tx-meta">${words.toLocaleString("en-US")} words · ${ep.duration || ""}</span></summary>\n          <div class="tx-body">\n            <p class="tx-note muted">Transcribed automatically and lightly cleaned up; timestamps open the video at that moment.</p>\n${paras}\n          </div>\n        </details>\n      </section>`);
+  }
+
+  return { html: out.join("\n\n"), next: n };
+}
+
 function navLink(ep, kind) {
   if (!ep) return `<span class="nav-empty" aria-hidden="true"></span>`;
   const label = kind === "prev" ? "&larr; PREVIOUS EPISODE" : "NEXT EPISODE &rarr;";
@@ -381,8 +439,12 @@ async function writeEpisodePages(episodes) {
     const ep = episodes[i];
     const older = episodes[i + 1]; // list is newest-first
     const newer = episodes[i - 1];
-    const meta = metaDescription(ep);
+    const tx = await loadTranscript(ep.videoId);
+    const meta = metaDescription(ep, tx);
+    const sections = episodeSections(ep, tx);
     const vars = {
+      EPISODE_SECTIONS: sections.html,
+      JOIN_NUM: String(sections.next).padStart(2, "0"),
       TITLE: escapeHtml(ep.title),
       META_DESCRIPTION: escapeHtml(meta),
       CANONICAL: ep.pageUrl,
@@ -394,7 +456,7 @@ async function writeEpisodePages(episodes) {
       DATE_HUMAN: humanDate(ep.publishedAt),
       DURATION: escapeHtml(ep.duration || ""),
       DESCRIPTION_HTML: descriptionToHtml(ep.description, ep.videoId),
-      JSONLD: episodeJsonLd(ep, meta),
+      JSONLD: episodeJsonLd(ep, meta, tx),
       PREV_LINK: navLink(older, "prev"),
       NEXT_LINK: navLink(newer, "next"),
       YEAR: String(new Date().getFullYear()),
