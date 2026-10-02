@@ -177,32 +177,61 @@ a { color: inherit; text-decoration: none; }
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   padding: var(--gutter);
-  background:
-    radial-gradient(120% 80% at 50% 40%, rgba(40,40,42,0.5) 0%, rgba(10,10,10,0) 60%),
-    var(--bg);
+  overflow: hidden;
+  background: var(--bg);
 }
-.intro-inner { max-width: 1200px; }
+/* Full-bleed photo (generated with Higgsfield) with a dark wash on the left
+   so the headline sits on near-black and the red light stays on the right. */
+.intro-photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.intro-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 68% 50%;
+}
+.intro-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(10,10,10,0.94) 0%, rgba(10,10,10,0.82) 32%, rgba(10,10,10,0.35) 60%, rgba(10,10,10,0.05) 100%),
+    linear-gradient(180deg, rgba(10,10,10,0.55) 0%, rgba(10,10,10,0) 28%, rgba(10,10,10,0) 70%, var(--bg) 100%);
+}
+.intro-inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
 .intro-eyebrow {
   font-family: var(--mono);
   font-size: clamp(0.65rem, 1.3vw, 0.95rem);
   letter-spacing: 0.38em;
-  color: var(--muted);
+  color: #9a9a9a;
   margin: 0 0 clamp(0.9rem, 2.5vw, 1.8rem);
-  padding-left: 0.38em; /* balance the letter-spacing */
 }
 .intro-title {
   font-family: "Anton", "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
-  font-size: clamp(2.8rem, 11.5vw, 10.5rem);
+  font-size: clamp(2.8rem, 10vw, 9.5rem);
   line-height: 0.9;
   letter-spacing: 0.005em;
   text-transform: uppercase;
   margin: 0;
+  max-width: 13.5ch;
   color: var(--fg);
+  text-shadow: 0 2px 24px rgba(0,0,0,0.6);
 }
 .intro-title .accent { color: var(--accent); }
 .intro-sub {
@@ -210,6 +239,7 @@ a { color: inherit; text-decoration: none; }
   font-weight: 500;
   font-size: clamp(1rem, 2.3vw, 1.7rem);
   color: #d8d6d2;
+  max-width: 34ch;
   margin: clamp(0.9rem, 2.5vw, 1.8rem) 0 0;
 }
 .intro-cta {
@@ -654,11 +684,18 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
   .ep-meta { display: none; }
   .menu { top: 4rem; }
   /* Mobile: compact banner (no full empty screen) so episodes follow closely */
+  /* Mobile: photo still fills the banner; text sits at the bottom over a dark fade */
   .intro {
-    min-height: auto;
-    justify-content: flex-start;
+    min-height: 78svh;
+    justify-content: flex-end;
     padding: clamp(6.5rem, 22vw, 8.5rem) var(--gutter) clamp(1.5rem, 6vw, 2.5rem);
   }
+  .intro-photo img { object-position: 80% 40%; }
+  .intro-photo::after {
+    background:
+      linear-gradient(180deg, rgba(10,10,10,0.6) 0%, rgba(10,10,10,0.15) 30%, rgba(10,10,10,0.55) 60%, rgba(10,10,10,0.96) 100%);
+  }
+  .intro-title { text-shadow: 0 2px 18px rgba(0,0,0,0.8); }
   .intro .scroll-down { display: none; }
   /* episodes hero: top-align with a small gap, not a huge void */
   .hero { min-height: auto; align-items: flex-start; padding-top: clamp(1.5rem, 6vw, 2.5rem); }

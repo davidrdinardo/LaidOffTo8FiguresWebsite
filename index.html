@@ -41,6 +41,8 @@
 
   <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" as="image" href="/img/hero-2200.jpg" media="(min-width: 861px)" fetchpriority="high" />
+  <link rel="preload" as="image" href="/img/hero-1280.jpg" media="(max-width: 860px)" fetchpriority="high" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <meta name="theme-color" content="#0a0a0a" />
@@ -1082,6 +1084,10 @@
   <main id="top">
     <!-- Intro splash -->
     <section class="intro" id="intro">
+      <picture class="intro-photo" aria-hidden="true">
+        <source media="(max-width: 860px)" srcset="/img/hero-1280.jpg" />
+        <img src="/img/hero-2200.jpg" alt="" width="2200" height="1232" fetchpriority="high" decoding="async" />
+      </picture>
       <div class="intro-inner">
         <p class="intro-eyebrow">LEARN HOW REAL FOUNDERS BUILD</p>
         <h1 class="intro-title">LAID OFF TO 8 <span class="accent">FIGURES</span></h1>
