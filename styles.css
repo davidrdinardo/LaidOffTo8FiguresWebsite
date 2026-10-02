@@ -245,6 +245,29 @@ a { color: inherit; text-decoration: none; }
     radial-gradient(60% 50% at 30% 80%, rgba(255,59,29,0.06) 0%, rgba(8,8,8,0) 60%),
     linear-gradient(180deg, #161618 0%, #0a0a0a 100%);
 }
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 72% center;
+  opacity: 0;
+  filter: saturate(0.85) contrast(1.05);
+  transition: opacity 0.45s ease;
+  will-change: opacity;
+}
+.hero-photo.is-in, .hero-photo:only-of-type { opacity: 0.6; }
+/* legibility overlay: fade the photo into the dark left column + bottom edge */
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, #0a0a0a 0%, rgba(10,10,10,0.92) 28%, rgba(10,10,10,0.55) 55%, rgba(10,10,10,0.25) 100%),
+    linear-gradient(180deg, rgba(10,10,10,0.35) 0%, rgba(10,10,10,0) 30%, rgba(10,10,10,0.15) 70%, #0a0a0a 100%);
+}
 /* faux spotlight / table silhouette */
 .hero-bg::after {
   content: "";
@@ -647,6 +670,12 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
 
 /* Responsive ----------------------------------------------------------- */
 @media (max-width: 860px) {
+  .hero-photo { object-position: center 30%; }
+  .hero-photo.is-in, .hero-photo:only-of-type { opacity: 0.35; }
+  .hero-bg::before {
+    background:
+      linear-gradient(180deg, rgba(10,10,10,0.55) 0%, rgba(10,10,10,0.75) 45%, #0a0a0a 100%);
+  }
   .about-grid, .contact-grid, .join-grid { grid-template-columns: 1fr; }
   .contact-grid { gap: 2.5rem; }
   .join-grid { gap: 2rem; }

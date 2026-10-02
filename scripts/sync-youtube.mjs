@@ -506,7 +506,7 @@ function episodeRow(ep, i) {
   const latest = ep.latest ? '<span class="ep-latest">LATEST</span>' : "";
   return (
     `      <li${hidden}>\n` +
-    `        <a class="episode-row" href="/episodes/${ep.slug}/" data-num="${ep.num}" title="${escapeHtml(ep.title)}">\n` +
+    `        <a class="episode-row" href="/episodes/${ep.slug}/" data-num="${ep.num}" data-thumb="${escapeHtml(ep.thumbnail || "")}" title="${escapeHtml(ep.title)}">\n` +
     `          <span class="ep-num">${String(ep.num).padStart(2, "0")}</span>\n` +
     `          <span class="ep-title">${escapeHtml(ep.title)}</span>\n` +
     `          <span class="ep-meta">${escapeHtml(ep.duration || "")}${latest}</span>\n` +
@@ -529,7 +529,14 @@ async function updateEpisodeList(episodes) {
     : `<button type="button" class="view-more" hidden>VIEW MORE</button>`;
   out = replaceBetween(out, "<!-- VIEW_MORE_START -->", "<!-- VIEW_MORE_END -->", viewMore);
 
-  const data = episodes.map(({ num, title, duration, slug, latest }) => ({ num, title, duration, url: `/episodes/${slug}/`, ...(latest ? { latest } : {}) }));
+  // Hero background: the latest episode's YouTube thumbnail (script.js swaps it on hover)
+  const latest = episodes[0];
+  const heroPhoto = latest?.thumbnail
+    ? `<img class="hero-photo" id="hero-photo" src="${escapeHtml(latest.thumbnail)}" alt="" width="1280" height="720" decoding="async" fetchpriority="high" />`
+    : "";
+  out = replaceBetween(out, "<!-- HERO_PHOTO_START -->", "<!-- HERO_PHOTO_END -->", heroPhoto);
+
+  const data = episodes.map(({ num, title, duration, slug, thumbnail, latest }) => ({ num, title, duration, url: `/episodes/${slug}/`, thumb: thumbnail || "", ...(latest ? { latest } : {}) }));
   // "</" can't appear inside a <script> body; JSON.stringify never emits it unescaped after this.
   const json = JSON.stringify(data).replace(/<\//g, "<\\/");
   out = replaceBetween(out, "<!-- EPISODES_DATA_START -->", "<!-- EPISODES_DATA_END -->",

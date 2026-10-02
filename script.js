@@ -64,7 +64,7 @@ function renderEpisodes() {
     const ext = /^https?:/.test(href) ? ' target="_blank" rel="noopener"' : "";
     return `
       <li${i >= INITIAL_VISIBLE ? " hidden" : ""}>
-        <a class="episode-row" href="${escapeHtml(href)}"${ext} data-num="${ep.num}" title="${escapeHtml(ep.title)}">
+        <a class="episode-row" href="${escapeHtml(href)}"${ext} data-num="${ep.num}" data-thumb="${escapeHtml(ep.thumb || "")}" title="${escapeHtml(ep.title)}">
           <span class="ep-num">${String(ep.num).padStart(2, "0")}</span>
           <span class="ep-title">${escapeHtml(ep.title)}</span>
           ${meta}
@@ -91,6 +91,45 @@ function initViewMore() {
     document.querySelectorAll("#episode-list > li[hidden]").forEach((li) => li.removeAttribute("hidden"));
     syncViewMore();
   });
+}
+
+/* ---- Hero thumbnail preview -------------------------------------------
+   The hero shows the latest episode's YouTube thumbnail. Hovering (or
+   keyboard-focusing) an episode row crossfades the hero to that episode's
+   thumbnail; it stays on the last one hovered.
+--------------------------------------------------------------------- */
+function initHeroPreview() {
+  const bg = document.querySelector(".hero-bg");
+  const list = document.getElementById("episode-list");
+  if (!bg || !list) return;
+  if (window.matchMedia("(hover: none)").matches) return; // touch: keep the latest
+  let current = bg.querySelector(".hero-photo")?.getAttribute("src") || "";
+  let pending = null;
+
+  const show = (src) => {
+    if (!src || src === current) return;
+    current = src;
+    const img = new Image();
+    img.className = "hero-photo";
+    img.alt = "";
+    img.decoding = "async";
+    pending = img;
+    img.onload = () => {
+      if (pending !== img) return; // a newer hover won
+      const old = bg.querySelectorAll(".hero-photo");
+      bg.appendChild(img);
+      requestAnimationFrame(() => img.classList.add("is-in"));
+      old.forEach((el) => {
+        el.classList.remove("is-in");
+        setTimeout(() => el.remove(), 450);
+      });
+    };
+    img.src = src;
+  };
+
+  const rowOf = (e) => e.target.closest && e.target.closest(".episode-row");
+  list.addEventListener("mouseover", (e) => { const r = rowOf(e); if (r) show(r.dataset.thumb); });
+  list.addEventListener("focusin", (e) => { const r = rowOf(e); if (r) show(r.dataset.thumb); });
 }
 
 /* ---- Menu toggle ------------------------------------------------------ */
@@ -270,6 +309,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   initJoin();
   initYear();
   initViewMore();
+  initHeroPreview();
 
   const inline = readInlineEpisodes();
   const prerendered = document.querySelector("#episode-list > li") !== null;
