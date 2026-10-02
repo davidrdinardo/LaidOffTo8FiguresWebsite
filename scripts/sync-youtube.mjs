@@ -535,6 +535,15 @@ async function updateEpisodeList(episodes) {
   out = replaceBetween(out, "<!-- EPISODES_DATA_START -->", "<!-- EPISODES_DATA_END -->",
     `\n  <script id="episodes-data" type="application/json">${json}</script>\n  `);
 
+  // Intro: episode count in the eyebrow and a "latest episode" line under the buttons.
+  out = replaceBetween(out, "<!-- INTRO_EYEBROW_START -->", "<!-- INTRO_EYEBROW_END -->",
+    `THE PODCAST &middot; ${episodes.length} EPISODES WITH REAL FOUNDERS`);
+  const newest = episodes.find((e) => e.latest) || episodes[0];
+  if (newest) {
+    out = replaceBetween(out, "<!-- INTRO_LATEST_START -->", "<!-- INTRO_LATEST_END -->",
+      `<span class="ep-latest">LATEST</span><a href="/episodes/${newest.slug}/">EP ${newest.num} &middot; ${escapeHtml(newest.title)}</a>`);
+  }
+
   if (out !== html) {
     await writeFile(file, out);
     console.log(`✔ Rendered ${episodes.length} episodes into index.html.`);

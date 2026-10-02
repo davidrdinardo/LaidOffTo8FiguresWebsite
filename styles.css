@@ -242,20 +242,51 @@ a { color: inherit; text-decoration: none; }
   max-width: 34ch;
   margin: clamp(0.9rem, 2.5vw, 1.8rem) 0 0;
 }
-.intro-cta {
-  display: inline-block;
+.intro-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
   margin-top: clamp(1.6rem, 4vw, 2.6rem);
+}
+.intro-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7em;
   background: var(--fg);
   color: #0a0a0a;
   font-family: var(--mono);
   font-weight: 700;
   font-size: clamp(0.78rem, 1.1vw, 0.9rem);
   letter-spacing: 0.14em;
-  padding: 1rem 2rem;
-  transition: background 0.2s, transform 0.1s;
+  padding: 1rem 1.6rem;
+  border: 1.5px solid var(--fg);
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.1s;
 }
-.intro-cta:hover { background: #fff; }
+.intro-cta:hover { background: #fff; border-color: #fff; }
 .intro-cta:active { transform: scale(0.97); }
+.intro-cta--yt { background: var(--accent); border-color: var(--accent); color: #fff; }
+.intro-cta--yt:hover { background: #ff5a40; border-color: #ff5a40; }
+.intro-cta--yt .play {
+  width: 0; height: 0;
+  border-style: solid;
+  border-width: 0.38em 0 0.38em 0.62em;
+  border-color: transparent transparent transparent currentColor;
+}
+.intro-cta--ghost { background: transparent; color: var(--fg); border-color: rgba(244,243,241,0.55); }
+.intro-cta--ghost:hover { background: rgba(244,243,241,0.1); border-color: var(--fg); }
+.intro-latest {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: clamp(1.2rem, 3vw, 1.8rem) 0 0;
+  font-family: var(--mono);
+  font-size: clamp(0.72rem, 1vw, 0.85rem);
+  letter-spacing: 0.04em;
+  color: #c9c7c3;
+}
+.intro-latest .ep-latest { margin: 0; flex: none; }
+.intro-latest a { color: inherit; border-bottom: 1px solid rgba(244,243,241,0.3); }
+.intro-latest a:hover { color: var(--fg); border-bottom-color: var(--accent); }
 
 /* Hero ----------------------------------------------------------------- */
 .hero {
@@ -686,11 +717,11 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
   /* Mobile: compact banner (no full empty screen) so episodes follow closely */
   /* Mobile: photo still fills the banner; text sits at the bottom over a dark fade */
   .intro {
-    min-height: 78svh;
+    min-height: 92svh;
     justify-content: flex-end;
     padding: clamp(6.5rem, 22vw, 8.5rem) var(--gutter) clamp(1.5rem, 6vw, 2.5rem);
   }
-  .intro-photo img { object-position: 80% 40%; }
+  .intro-photo img { object-position: 80% 30%; }
   .intro-photo::after {
     background:
       linear-gradient(180deg, rgba(10,10,10,0.6) 0%, rgba(10,10,10,0.15) 30%, rgba(10,10,10,0.55) 60%, rgba(10,10,10,0.96) 100%);
@@ -703,7 +734,9 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
 }
 
 @media (max-width: 520px) {
-  .intro-cta { display: block; text-align: center; padding: 1rem 1.2rem; }
+  .intro-actions { gap: 0.6rem; }
+  .intro-cta { flex: 1 1 calc(50% - 0.3rem); justify-content: center; text-align: center; padding: 0.95rem 0.8rem; font-size: 0.74rem; letter-spacing: 0.1em; }
+  .intro-latest { align-items: flex-start; line-height: 1.4; }
   .site-footer { flex-direction: column; align-items: flex-start; }
   .join-form { flex-wrap: wrap; }
   .join-form .bracket { display: none; }
