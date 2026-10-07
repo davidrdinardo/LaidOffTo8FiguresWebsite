@@ -499,16 +499,38 @@ function escapeHtml(str) {
    the HTML itself. Episodes past INITIAL_VISIBLE get `hidden`; script.js
    reveals them on VIEW MORE and reads the inline JSON for search.
 --------------------------------------------------------------------- */
-const INITIAL_VISIBLE = 6;
+const INITIAL_VISIBLE = 5;
+
+/* Homepage rows show a short label, like a guest list: the guest's name from
+   the transcript file, or a hand-written label from labels.json for solo
+   episodes. The full title stays in the link's title/aria-label and on the
+   episode page. */
+async function loadLabels() {
+  try { return JSON.parse(await readFile(join(ROOT, "labels.json"), "utf8")); } catch { return {}; }
+}
+function trimTitle(title) {
+  const head = title.split(/[:|.—–]/)[0].trim();
+  if (head.length >= 8 && head.length <= 34) return head;
+  if (title.length <= 34) return title;
+  const words = title.split(/\s+/); let out = "";
+  for (const w of words) { if ((out + " " + w).trim().length > 30) break; out = (out + " " + w).trim(); }
+  return out + "\u2026";
+}
+async function episodeLabel(ep, labels) {
+  if (labels[ep.videoId]) return labels[ep.videoId];
+  const tx = await loadTranscript(ep.videoId);
+  if (tx && tx.guest) return tx.guest;
+  return trimTitle(ep.title);
+}
 
 function episodeRow(ep, i) {
   const hidden = i >= INITIAL_VISIBLE ? " hidden" : "";
   const latest = ep.latest ? '<span class="ep-latest">LATEST</span>' : "";
   return (
     `      <li${hidden}>\n` +
-    `        <a class="episode-row" href="/episodes/${ep.slug}/" data-num="${ep.num}" title="${escapeHtml(ep.title)}">\n` +
+    `        <a class="episode-row" href="/episodes/${ep.slug}/" data-num="${ep.num}" title="${escapeHtml(ep.title)}" aria-label="Episode ${ep.num}: ${escapeHtml(ep.title)}">\n` +
     `          <span class="ep-num">${String(ep.num).padStart(2, "0")}</span>\n` +
-    `          <span class="ep-title">${escapeHtml(ep.title)}</span>\n` +
+    `          <span class="ep-title">${escapeHtml(ep.label || ep.title)}</span>\n` +
     `          <span class="ep-meta">${escapeHtml(ep.duration || "")}${latest}</span>\n` +
     `        </a>\n` +
     `      </li>\n`
@@ -520,6 +542,9 @@ async function updateEpisodeList(episodes) {
   let html;
   try { html = await readFile(file, "utf8"); } catch { return; }
 
+  const labels = await loadLabels();
+  for (const ep of episodes) ep.label = await episodeLabel(ep, labels);
+
   const rows = "\n" + episodes.map(episodeRow).join("") + "        ";
   let out = replaceBetween(html, "<!-- EPISODES_LIST_START -->", "<!-- EPISODES_LIST_END -->", rows);
 
@@ -529,7 +554,7 @@ async function updateEpisodeList(episodes) {
     : `<button type="button" class="view-more" hidden>VIEW MORE</button>`;
   out = replaceBetween(out, "<!-- VIEW_MORE_START -->", "<!-- VIEW_MORE_END -->", viewMore);
 
-  const data = episodes.map(({ num, title, duration, slug, latest }) => ({ num, title, duration, url: `/episodes/${slug}/`, ...(latest ? { latest } : {}) }));
+  const data = episodes.map(({ num, title, label, duration, slug, latest }) => ({ num, title, label, duration, url: `/episodes/${slug}/`, ...(latest ? { latest } : {}) }));
   // "</" can't appear inside a <script> body; JSON.stringify never emits it unescaped after this.
   const json = JSON.stringify(data).replace(/<\//g, "<\\/");
   out = replaceBetween(out, "<!-- EPISODES_DATA_START -->", "<!-- EPISODES_DATA_END -->",

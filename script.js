@@ -18,7 +18,7 @@ const FALLBACK_EPISODES = [
   { num: 30, title: "Seven Figures", duration: "2:15:52" },
 ];
 
-const INITIAL_VISIBLE = 6; // episodes shown before "VIEW MORE"
+const INITIAL_VISIBLE = 5; // episodes shown before "VIEW MORE"
 
 let episodes = FALLBACK_EPISODES;
 
@@ -64,9 +64,9 @@ function renderEpisodes() {
     const ext = /^https?:/.test(href) ? ' target="_blank" rel="noopener"' : "";
     return `
       <li${i >= INITIAL_VISIBLE ? " hidden" : ""}>
-        <a class="episode-row" href="${escapeHtml(href)}"${ext} data-num="${ep.num}" title="${escapeHtml(ep.title)}">
+        <a class="episode-row" href="${escapeHtml(href)}"${ext} data-num="${ep.num}" title="${escapeHtml(ep.title)}" aria-label="Episode ${ep.num}: ${escapeHtml(ep.title)}">
           <span class="ep-num">${String(ep.num).padStart(2, "0")}</span>
-          <span class="ep-title">${escapeHtml(ep.title)}</span>
+          <span class="ep-title">${escapeHtml(ep.label || ep.title)}</span>
           ${meta}
         </a>
       </li>`;
