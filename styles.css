@@ -86,10 +86,11 @@ a { color: inherit; text-decoration: none; }
 }
 
 .wordmark {
-  font-family: var(--display);
-  font-weight: 700;
-  font-size: clamp(1.05rem, 1.7vw, 1.4rem);
-  letter-spacing: -0.025em;
+  font-family: "Anton", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.15rem, 1.9vw, 1.55rem);
+  letter-spacing: 0.02em;
+  line-height: 1;
 }
 .wordmark .accent-word,
 .footer-mark .accent-word { color: var(--accent); }
@@ -215,7 +216,9 @@ a { color: inherit; text-decoration: none; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(10,10,10,0.25) 0%, rgba(10,10,10,0) 30%, rgba(10,10,10,0.1) 55%, rgba(10,10,10,0.72) 100%);
+  background:
+    radial-gradient(55% 40% at 18% 88%, rgba(255,59,29,0.10) 0%, rgba(255,59,29,0) 70%),
+    linear-gradient(180deg, rgba(10,10,10,0.25) 0%, rgba(10,10,10,0) 30%, rgba(10,10,10,0.1) 55%, rgba(10,10,10,0.72) 100%);
 }
 
 .hero-inner {
@@ -226,6 +229,20 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* Episode list --------------------------------------------------------- */
+/* brand line above the list */
+.hero-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0 0 clamp(1rem, 2.2vw, 1.6rem);
+  font-family: var(--mono);
+  font-size: clamp(0.68rem, 0.95vw, 0.8rem);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #a9a7a3;
+}
+.hero-tag-bar { width: 2.2rem; height: 2px; background: var(--accent); flex: none; }
+
 .episode-list {
   list-style: none;
   margin: 0;
@@ -253,7 +270,8 @@ a { color: inherit; text-decoration: none; }
   position: relative;
   top: -0.4em;
 }
-.ep-num::before { content: "— "; }
+.ep-num::before { content: "— "; color: var(--accent); }
+.episode-row:hover .ep-num { color: var(--fg); }
 
 .ep-title {
   flex: 0 1 auto;
@@ -297,9 +315,30 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 4px solid transparent;
 }
 
+.hero-foot {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: clamp(1.2rem, 2.5vw, 2rem);
+}
+.hero-listen {
+  margin: 0;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 1.4rem;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+}
+.hero-listen span::after { content: " \2192"; }
+.hero-listen a { color: var(--fg); border-bottom: 1px solid var(--muted-2); padding-bottom: 0.25rem; transition: color 0.2s, border-color 0.2s; }
+.hero-listen a:hover { color: var(--accent); border-color: var(--accent); }
+
 .view-more {
   display: inline-block;
-  margin-top: clamp(1.2rem, 2.5vw, 2rem);
+  margin-top: 0;
   background: none;
   border: none;
   border-bottom: 1px solid var(--muted-2);
@@ -619,6 +658,9 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
   /* durations hide on phones; the LATEST tag follows the name */
   .ep-meta { display: inline-flex; font-size: 0; gap: 0; position: relative; top: 0.6em; }
   .ep-meta .ep-latest { font-size: 0.7rem; }
+  .hero-foot { flex-direction: column; align-items: flex-start; gap: 1.1rem; }
+  .hero-tag { letter-spacing: 0.12em; }
+  .hero-tag-bar { width: 1.4rem; }
 }
 
 @media (max-width: 520px) {
