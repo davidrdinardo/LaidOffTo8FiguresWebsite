@@ -279,8 +279,9 @@ a { color: inherit; text-decoration: none; }
   text-overflow: ellipsis;
   font-weight: 500;
   font-size: clamp(2rem, 5.2vw, 5rem);
-  line-height: 1.0;
-  letter-spacing: -0.035em;
+  line-height: 1.02;
+  letter-spacing: -0.012em;
+  word-spacing: 0.02em;
   color: #ededeb;
   margin: 0;
   transition: color 0.2s;
