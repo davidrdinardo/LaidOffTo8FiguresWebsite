@@ -253,7 +253,10 @@ async function loadOverrides() {
   return OVERRIDES;
 }
 function applyOverrides(episodes, overrides) {
+  const fixes = Object.entries(overrides._replace || {});
+  const fix = (s) => fixes.reduce((acc, [a, b]) => acc.split(a).join(b), s || "");
   for (const ep of episodes) {
+    if (fixes.length) { ep.title = fix(ep.title); ep.description = fix(ep.description); }
     const o = overrides[ep.videoId];
     if (!o) continue;
     if (o.title) ep.title = o.title;
@@ -289,6 +292,7 @@ async function writeSitemap(episodes, changed) {
   }
   const urls = [
     `  <url>\n    <loc>${SITE}/</loc>\n    <lastmod>${homeLastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>`,
+    `  <url>\n    <loc>${SITE}/about/</loc>\n    <lastmod>2026-10-07</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>`,
     ...episodes.map((ep) =>
       `  <url>\n    <loc>${ep.pageUrl}</loc>\n    <lastmod>${(ep.publishedAt || today).slice(0, 10)}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>`),
   ];

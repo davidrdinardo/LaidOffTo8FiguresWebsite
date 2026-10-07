@@ -977,3 +977,36 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
   .episode-nav .next { text-align: left; }
   .episode-nav .nav-empty { display: none; }
 }
+
+/* About page ----------------------------------------------------------- */
+.about-hero {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+.about-hero .episode-title { margin-bottom: clamp(1.2rem, 2.5vw, 1.8rem); }
+.about-hero .episode-lede strong { color: #ededeb; font-weight: 500; }
+.about-photo { margin: 0; max-width: 420px; justify-self: end; }
+.about-photo img { display: block; width: 100%; height: auto; }
+.timeline { list-style: none; margin: 0; padding: 0; max-width: 76ch; }
+.timeline li {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+  color: #d8d6d2;
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.55;
+}
+.timeline li:last-child { border-bottom: 1px solid var(--line); }
+.tl-year { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.1em; color: var(--accent); padding-top: 0.35em; }
+.tl-text a { color: #ededeb; border-bottom: 1px solid var(--muted-2); }
+.tl-text a:hover { border-color: var(--accent); }
+.about .big-link { margin-top: 1rem; margin-bottom: 0; }
+@media (max-width: 860px) {
+  .about-hero { grid-template-columns: 1fr; }
+  .about-photo { order: -1; max-width: 70vw; justify-self: start; }
+  .timeline li { grid-template-columns: 3.5rem 1fr; gap: 1rem; }
+}
