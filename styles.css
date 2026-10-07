@@ -368,21 +368,17 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
 
 .section-label {
   font-family: var(--mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.2em;
-  color: var(--muted);
+  font-size: clamp(0.68rem, 0.95vw, 0.8rem);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #a9a7a3;
   margin-bottom: clamp(2rem, 5vw, 4rem);
   display: flex;
   align-items: center;
   gap: 0.8rem;
 }
-.section-label span { color: var(--accent); }
-.section-label::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: var(--line);
-}
+.section-label::before { content: ""; width: 2.2rem; height: 2px; background: var(--accent); flex: none; }
+.section-label span { display: none; }
 
 .accent { color: var(--accent); }
 .muted { color: var(--muted); }
@@ -401,7 +397,12 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
 }
 
 /* About ---------------------------------------------------------------- */
-.about { background: var(--bg); border-top: 1px solid var(--line); }
+.about, .contact, .join {
+  background:
+    radial-gradient(70% 55% at 50% 0%, rgba(58,58,60,0.28) 0%, rgba(10,10,10,0) 70%),
+    var(--bg);
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
 .about-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
@@ -409,10 +410,11 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
   align-items: start;
 }
 .about-headline {
-  font-weight: 700;
-  font-size: clamp(2rem, 5vw, 4.2rem);
-  line-height: 1.02;
-  letter-spacing: -0.03em;
+  font-weight: 500;
+  font-size: clamp(2rem, 4.6vw, 4.2rem);
+  line-height: 1.08;
+  letter-spacing: -0.012em;
+  color: #ededeb;
   margin: 0;
 }
 .about-body p {
@@ -434,7 +436,6 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
 .text-link:hover { opacity: 0.7; }
 
 /* Contact -------------------------------------------------------------- */
-.contact { background: var(--bg-soft); border-top: 1px solid var(--line); }
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -442,16 +443,19 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
   align-items: end;
 }
 .contact-headline {
-  font-weight: 700;
-  font-size: clamp(2rem, 5.5vw, 4.6rem);
-  line-height: 0.98;
-  letter-spacing: -0.03em;
+  font-weight: 500;
+  font-size: clamp(2rem, 4.6vw, 4.2rem);
+  line-height: 1.08;
+  letter-spacing: -0.012em;
+  color: #ededeb;
   margin: 0;
 }
 .big-link {
   display: inline-block;
+  font-weight: 500;
   font-size: clamp(1.1rem, 2.2vw, 1.8rem);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
+  color: #ededeb;
   border-bottom: 1px solid var(--line);
   padding-bottom: 0.3rem;
   margin-bottom: 2rem;
@@ -476,7 +480,6 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
 .social a:hover { color: var(--fg); padding-left: 0.3rem; }
 
 /* Join ----------------------------------------------------------------- */
-.join { background: var(--bg); border-top: 1px solid var(--line); }
 .join-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -484,10 +487,11 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
   align-items: start;
 }
 .join-headline {
-  font-weight: 700;
-  font-size: clamp(2.4rem, 6vw, 5rem);
-  line-height: 0.98;
-  letter-spacing: -0.04em;
+  font-weight: 500;
+  font-size: clamp(2rem, 4.6vw, 4.2rem);
+  line-height: 1.08;
+  letter-spacing: -0.012em;
+  color: #ededeb;
   margin: 0;
 }
 .join-whats-label,
@@ -512,7 +516,7 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
   max-width: 44ch;
 }
 .join-list li::before { content: "—"; position: absolute; left: 0; color: var(--accent); }
-.join-list strong { color: var(--fg); font-weight: 700; }
+.join-list strong { color: #ededeb; font-weight: 500; }
 
 .join-form-wrap {
   margin-top: clamp(2.5rem, 6vw, 4.5rem);
@@ -522,14 +526,14 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
 }
 .join-form {
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
+  align-items: baseline;
+  gap: 1.5rem;
   border-bottom: 1px solid var(--line);
   padding-bottom: 0.7rem;
   transition: border-color 0.2s;
 }
 .join-form:focus-within { border-color: var(--fg); }
-.join-form .bracket { font-family: var(--mono); font-size: 1.3rem; color: var(--accent); }
+.join-form .bracket { display: none; }
 .join-form input {
   flex: 1;
   min-width: 0;
@@ -537,27 +541,27 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
   border: none;
   outline: none;
   color: var(--fg);
-  font-family: var(--mono);
-  font-size: clamp(1rem, 1.6vw, 1.3rem);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(1.3rem, 2.4vw, 2rem);
+  letter-spacing: -0.01em;
 }
 .join-form input::placeholder { color: var(--muted-2); }
 .join-form button {
   flex: none;
-  background: var(--fg);
-  color: #0a0a0a;
+  background: none;
+  color: var(--fg);
   border: none;
+  border-bottom: 1px solid var(--muted-2);
   font-family: var(--mono);
-  font-weight: 700;
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
-  padding: 0.95rem 1.7rem;
+  font-weight: 400;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  padding: 0 0 0.25rem;
   cursor: pointer;
-  transition: background 0.2s, transform 0.1s;
+  transition: color 0.2s, border-color 0.2s;
 }
-.join-form button:hover { background: #fff; }
-.join-form button:active { transform: scale(0.97); }
+.join-form button:hover { color: var(--accent); border-color: var(--accent); }
 .join-form button:disabled { opacity: 0.6; cursor: wait; }
 .join-note {
   font-family: var(--mono);
@@ -584,7 +588,7 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
   letter-spacing: 0.08em;
   color: var(--muted);
 }
-.footer-mark { color: var(--muted-2); font-family: var(--display); font-weight: 700; font-size: 0.95rem; letter-spacing: -0.02em; }
+.footer-mark { color: var(--muted); font-family: "Anton", "Helvetica Neue", Arial, sans-serif; font-weight: 400; font-size: 1rem; letter-spacing: 0.02em; }
 .back-top { transition: color 0.2s; }
 .back-top:hover { color: var(--fg); }
 
@@ -666,7 +670,7 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
   .site-footer { flex-direction: column; align-items: flex-start; }
   .join-form { flex-wrap: wrap; }
   .join-form .bracket { display: none; }
-  .join-form button { flex: 1 0 100%; margin-top: 0.9rem; padding: 0.9rem; }
+  .join-form button { flex: 1 0 100%; margin-top: 0.9rem; text-align: left; }
 }
 
 @media (prefers-reduced-motion: reduce) {
