@@ -986,6 +986,7 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
   align-items: start;
 }
 .about-hero .episode-title { margin-bottom: clamp(1.2rem, 2.5vw, 1.8rem); }
+.title-suffix { color: var(--muted); font-size: 0.55em; letter-spacing: 0.02em; vertical-align: 0.15em; }
 .about-hero .episode-lede strong { color: #ededeb; font-weight: 500; }
 .about-photo { margin: 0; max-width: 420px; justify-self: end; }
 .about-photo img { display: block; width: 100%; height: auto; }
