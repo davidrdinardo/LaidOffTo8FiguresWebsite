@@ -720,7 +720,7 @@
     },
     {
       "num": 2,
-      "title": "full video",
+      "title": "Week 1 of Building Taxifi in Public: Why I Launched a Tax App for Creators",
       "duration": "12:21",
       "url": "https://www.youtube.com/watch?v=5o1lKD8B0yk",
       "videoId": "5o1lKD8B0yk",
@@ -728,8 +728,11 @@
       "publishedAt": "2025-12-15T15:11:36Z",
       "description": "Publishing this episode scared me more than I expected.\n\nThis is Week 1 of building Taxifi in public, a one-click, judgment-free tax filing app for Canadian creators and solopreneurs.\n\nIn this episode, I break down:\n\nwhy I chose the name Taxifi\n\nhow we opened early access (and who it’s for)\n\nwhat it felt like to ship this into the world (excitement, nerves, doubt)\n\nwhy I think tax prep is fundamentally broken for creators, and what we’re rebuilding instead\n\nTaxifi is what I’m building after a decade in accounting and two exits: a simpler tax experience designed for creators in Canada.\n\nThe app officially launches March 2, 2026. Until then, I’m dropping one episode every week with raw, honest updates on what it’s really like to build a product in public.\n\nEarly access waitlist at founder rates: https://stan.store/taxifi",
       "latest": false,
-      "slug": "full-video",
-      "pageUrl": "https://laidoffto8figures.com/episodes/full-video/"
+      "slug": "building-taxifi-in-public-week-1",
+      "pageUrl": "https://laidoffto8figures.com/episodes/building-taxifi-in-public-week-1/",
+      "redirectFrom": [
+        "full-video"
+      ]
     },
     {
       "num": 1,

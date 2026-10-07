@@ -1,0 +1,8 @@
+{
+  "_comment": "Per-video overrides applied by scripts/sync-youtube.mjs after the YouTube fetch. title replaces the YouTube title on the site; slug fixes the page URL; redirectFrom lists old slugs that get a redirect stub so existing links keep working.",
+  "5o1lKD8B0yk": {
+    "title": "Week 1 of Building Taxifi in Public: Why I Launched a Tax App for Creators",
+    "slug": "building-taxifi-in-public-week-1",
+    "redirectFrom": ["full-video"]
+  }
+}

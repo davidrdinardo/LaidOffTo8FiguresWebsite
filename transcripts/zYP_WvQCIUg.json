@@ -1,0 +1,133 @@
+{
+ "videoId": "zYP_WvQCIUg",
+ "num": 57,
+ "source": {
+  "kind": "descript",
+  "projectId": "4c283baf-799c-4301-8802-c28c218f17e7",
+  "compositionId": "c17eb918-6350-4742-b639-a91d919c6796"
+ },
+ "guest": null,
+ "summary": "David DiNardo walks through the after action review his seven-person Taxifi team ran at the end of September, a four-question debrief borrowed from the military. He explains how to set up the meeting, why a facilitator and a no-blame rule matter, and shares real examples from the review, from an AI categorization target that slipped to a client goal missed because a one-year-old company has none of the goodwill his previous firm took a decade to build.",
+ "takeaways": [
+  "An after action review is four questions in order: what was supposed to happen, what actually happened, why was there a difference, and what will we do differently going forward.",
+  "Appoint one facilitator, keep the whole meeting to 60 to 90 minutes, and give each question 15 to 20 minutes before attention drops off.",
+  "Spend roughly 40 percent of the meeting on the last question, because that is where the action items, accountability and next month's plan come from.",
+  "The review only works once blame is off the table; the first few sessions are about building enough psychological safety that a bookkeeper, developer and HR lead will each say what they actually see.",
+  "Taxifi's September review surfaced that its AI categorization was meant to hit an 80 to 90 percent probability score, and that the team never defined its ideal client as planned.",
+  "On missed sales targets, David's diagnosis is goodwill: his previous business had ten years of referrals, Taxifi has one, so expectations for new clients had to be reset.",
+  "Keep the group between 7 and 15 people, run it at the end of every month, and let the team design the fixes themselves rather than handing down a top-down plan."
+ ],
+ "speakersVerified": false,
+ "segments": [
+  {
+   "start": 0,
+   "speaker": "David DiNardo",
+   "text": "It's September 30th, and we just completed our first after action review as a team. What's an after action review? I actually have my notes from our meeting, and I think it's so important to share some of it so that you guys, as business owners, could take this practice back to your organization and implement it."
+  },
+  {
+   "start": 20,
+   "speaker": "David DiNardo",
+   "text": "What is a, what we call an AAR, after action review? It's a structured discussion. There's four questions. It's learned from specific events. Everyone has a voice, and there's no judgment. So you're, you're ripping off, doing the psychology safety, ripping off any layers to really get to the bare bones of what's going on with your employees and getting everyone aligned."
+  },
+  {
+   "start": 48,
+   "speaker": "David DiNardo",
+   "text": "And it's forward-looking, not about assigning blame. So you have to get to the place where your team is feeling comfortable with having an open conversation. The first one, the first few, because you're building it with your team and you have to be-- you have to get people to discuss what's going on in the organization in their lens."
+  },
+  {
+   "start": 73,
+   "speaker": "David DiNardo",
+   "text": "So you have to remove all those layers. Once you remove all those layers, that, as a business owner, is where you're gonna get the biggest bang for your buck because people start telling you things that you don't think of because you're not in it every day. So you bring people that are, from my situation, a bookkeeper, an accountant, a developer, a human resource individual, all the different aspects of your business, you bring them together."
+  },
+  {
+   "start": 103,
+   "speaker": "David DiNardo",
+   "text": "The bookkeeper is gonna think about it differently than the AI expert, than the accountant, than the developer, and those are the opin-opinions you want. It's not to cause blame that the bookkeeper is upset with the AI a- AI developer for not doing something that they wanted a month ago. It's putting everything on the table so that you can have those conversations with your team to effectively keep on growing The first question you have to ask yourself or ask the team, and you should have a facilitator."
+  },
+  {
+   "start": 137,
+   "speaker": "David DiNardo",
+   "text": "You guys should have one person that's facilitating, asking questions. You want it to be an hour, an hour and a half, maybe two hours, but after an hour and a half, peoples s- stop paying attention and it becomes too long. So keep it very, specific, narrow, and aligned. Every question should be 15 to 20 minutes."
+  },
+  {
+   "start": 163,
+   "speaker": "David DiNardo",
+   "text": "It could get into longer tangents, so that facilitator is very vital in order to facilitate this. Remember, this is done in... Where we got this was in the military. So after every deployment, exercise, whatnot, the team comes together and they start breaking down how things went to improve it for the next one."
+  },
+  {
+   "start": 188,
+   "speaker": "David DiNardo",
+   "text": "So it's an open conversation about how the training went, how the exercise went, how everything is, so that you know exactly what's going on across your team, and that's exactly what you gotta do in business. Get everyone aligned on the vision and bring everyone together to get to that endpoint. So the first question you have to ask yourself or ask the team is what was supposed to happen?"
+  },
+  {
+   "start": 218,
+   "speaker": "David DiNardo",
+   "text": "So it's September 30th, what was supposed to happen that month? Were you supposed to, from a sales perspective, get 10 clients? Were you supposed to, develop this feature? Were you supposed to do the bookkeeping and sales tax for this client? Were you supposed to do whatever? So everyone has a chance to talk about what they were supposed to do that month that lasted for us fifteen to twenty minutes, and we had over fifteen, different things that came up."
+  },
+  {
+   "start": 253,
+   "speaker": "David DiNardo",
+   "text": "One of them was AI categorization. What was supposed to happen was the AI categorization that we're implementing should be-- have a probability score of eighty, ninety percent. So everyone knows what they have to do, it's just talked about. The second question is what was supposed to happen? What actually happened?"
+  },
+  {
+   "start": 273,
+   "speaker": "David DiNardo",
+   "text": "So what actually was implemented in that month? Going back to the categorization, so the bookkeeping in regards to Taxifi. Did that act- actually happen, or were there bugs that pre- prevented it from happening? Was the developer and the AI developer and the back-end developer not aligned, and, the back-end developer had other priorities and didn't help execute the categorization?"
+  },
+  {
+   "start": 303,
+   "speaker": "David DiNardo",
+   "text": "Like, you see how different things get... Different things start not getting aligned with how things go? Because some people-- a lot of people are just very tunnelled vision, and when you're tunnelled vision, you don't look at the whole picture. So having these conversations of, \"Oh, what actually did happen?"
+  },
+  {
+   "start": 323,
+   "speaker": "David DiNardo",
+   "text": "Did we get the categorization right, or was there something wrong?\" Everyone goes through their scenario and talks about what actually did happen. For example, we did not describe our ideal client. We told ourselves that this month we were gonna nail out our ideal client. That actually did not happen, so we put that there."
+  },
+  {
+   "start": 346,
+   "speaker": "David DiNardo",
+   "text": "We had an open conversation about it. Not to share judgment, blame, anything, it's just to build that trust so that we can keep on implementing in the following month and know where we stand. The third question is, why was there a difference? And that's big. Like- Why didn't it happen? Was it a technical issue?"
+  },
+  {
+   "start": 371,
+   "speaker": "David DiNardo",
+   "text": "Was it more complicated than we thought it was gonna be? Did we not have the experience for it? One of ours, it was, getting clients is a perfect one. In my previous business, it took 10 years to build goodwill. This business is a year old. We're not gonna have the referral system that we took... That I took 10 years to build in the other business."
+  },
+  {
+   "start": 396,
+   "speaker": "David DiNardo",
+   "text": "So clients are not gonna be just at our f- front steps saying, \"Hey, come on to Taxifi.\" No one knows about Taxifi. So the fact that why was there a difference of maybe us trying to land 10, 15, 20 clients versus only landing five? Well, we don't have the goodwill yet. That's something that's permitting us from moving forward."
+  },
+  {
+   "start": 418,
+   "speaker": "David DiNardo",
+   "text": "So now we know that, and we can define clearer expectations the following month. And then the final question is: What will you do differently going forward? And this is a big one. It's now you take all of that whole conversation, and now people within the organization could be entrepreneurs and be like, have a say of what we would do differently."
+  },
+  {
+   "start": 441,
+   "speaker": "David DiNardo",
+   "text": "Hey, maybe I will m- the AI developer and the backend developer will meet once a week to discuss both of their situations, both of th- both of their development, and then they'll implement a solution. It's crazy as a business owner to see what ideas come from actually having conversations and bringing everyone into the room, and them finding the solution and feeling empowered to go out with their team and implement it."
+  },
+  {
+   "start": 478,
+   "speaker": "David DiNardo",
+   "text": "And that's what, i- everything happens at the end. So if your meeting's an hour, save 40% of that meeting, so 40 minutes, for the last question, 'cause that's where all the action items come. That's where the discussion comes. That's where the accountability comes. That's where you're having conversations, and they're going off and doing it, and you're, as a business owner, staying quiet and letting them find out solutions that work for their schedules and them as humans."
+  },
+  {
+   "start": 512,
+   "speaker": "David DiNardo",
+   "text": "So if your meeting's an hour, 40% goes to that. The other 60% go to the other three questions. You'll be surprised how many actionable items come from that you don't even have to do anything about. It's not a top to bottom approach. It's a bottom to top approach, where now people are creating their schedules and execution for the following month."
+  },
+  {
+   "start": 534,
+   "speaker": "David DiNardo",
+   "text": "And then the next month, you talk about October and then November, and you keep on moving forward, and you're gonna see the progression each month, while you do this. So go do it. After action, at the end of each month, discuss the topics about the month, the, that current month, and then do it every month with your, a small team across all organizations."
+  },
+  {
+   "start": 558,
+   "speaker": "David DiNardo",
+   "text": "We're seven people now, so if you have seven people, it works perfectly. Don't have it too big. I would stay between 7 and 15. So s- make smaller teams, in order to execute y- execute it, and it'll be super effective for you."
+  }
+ ]
+}

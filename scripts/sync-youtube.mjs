@@ -162,6 +162,7 @@ async function main() {
     const prev = JSON.parse(await readFile(join(ROOT, "episodes.json"), "utf8"));
     console.log(`▸ Offline: re-rendering site from episodes.json (${prev.episodes.length} episodes).`);
     const before = JSON.stringify(prev);
+    applyOverrides(prev.episodes, await loadOverrides());
     assignSlugs(prev.episodes, prev.episodes);
     if (JSON.stringify(prev) !== before) {
       await writeFile(join(ROOT, "episodes.json"), JSON.stringify(prev, null, 2) + "\n");
@@ -195,6 +196,7 @@ async function main() {
     description: v.description || "",
     latest: i === 0,
   }));
+  applyOverrides(episodes, await loadOverrides());
   assignSlugs(episodes, previous?.episodes || []);
 
   // Skip the write when nothing but the timestamp would change — otherwise the
@@ -242,11 +244,30 @@ function slugify(str) {
   return s || "episode";
 }
 
+/* overrides.json: hand-set title / slug / redirects for the odd video whose
+   YouTube title is wrong (EP 2 was uploaded as "full video"). */
+let OVERRIDES = null;
+async function loadOverrides() {
+  if (OVERRIDES) return OVERRIDES;
+  try { OVERRIDES = JSON.parse(await readFile(join(ROOT, "overrides.json"), "utf8")); } catch { OVERRIDES = {}; }
+  return OVERRIDES;
+}
+function applyOverrides(episodes, overrides) {
+  for (const ep of episodes) {
+    const o = overrides[ep.videoId];
+    if (!o) continue;
+    if (o.title) ep.title = o.title;
+    if (o.slug) ep.slug = o.slug;
+    if (o.redirectFrom) ep.redirectFrom = o.redirectFrom;
+  }
+}
+
 function assignSlugs(episodes, previous) {
   const known = new Map(previous.filter((e) => e.slug).map((e) => [e.videoId, e.slug]));
   const used = new Set();
+  const overrides = OVERRIDES || {};
   for (const ep of episodes) {
-    let slug = known.get(ep.videoId) || slugify(ep.title);
+    let slug = overrides[ep.videoId]?.slug || known.get(ep.videoId) || slugify(ep.title);
     if (used.has(slug)) slug = `${slug}-${ep.videoId.toLowerCase()}`;
     used.add(slug);
     ep.slug = slug;
@@ -468,6 +489,22 @@ async function writeEpisodePages(episodes) {
     let existing = "";
     try { existing = await readFile(file, "utf8"); } catch { /* new */ }
     if (existing !== html) { await writeFile(file, html); written++; }
+  }
+
+  // Redirect stubs for renamed pages (overrides.json redirectFrom).
+  for (const ep of episodes) {
+    for (const old of ep.redirectFrom || []) {
+      if (old === ep.slug) continue;
+      keep.add(old);
+      const stubDir = join(dir, old);
+      await mkdir(stubDir, { recursive: true });
+      const target = `${SITE}/episodes/${ep.slug}/`;
+      const stub = `<!DOCTYPE html>\n<html lang="en"><head><meta charset="UTF-8"><title>${escapeHtml(ep.title)}</title>\n<link rel="canonical" href="${target}">\n<meta http-equiv="refresh" content="0; url=${target}">\n<meta name="robots" content="noindex">\n</head><body><p>This episode moved to <a href="${target}">${target}</a>.</p></body></html>\n`;
+      const stubFile = join(stubDir, "index.html");
+      let existing = "";
+      try { existing = await readFile(stubFile, "utf8"); } catch { /* new */ }
+      if (existing !== stub) { await writeFile(stubFile, stub); console.log(`✔ Redirect: episodes/${old}/ → ${ep.slug}/`); }
+    }
   }
 
   // Remove pages for episodes that no longer exist (deleted / private videos).
