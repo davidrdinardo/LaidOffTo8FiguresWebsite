@@ -1,6 +1,6 @@
 {
   "channel": "David DiNardo, MBA",
-  "updatedAt": "2026-10-06T17:07:25.073Z",
+  "updatedAt": "2026-10-07T20:04:49.929Z",
   "count": 57,
   "episodes": [
     {
@@ -729,10 +729,10 @@
       "description": "Publishing this episode scared me more than I expected.\n\nThis is Week 1 of building Taxifi in public, a one-click, judgment-free tax filing app for Canadian creators and solopreneurs.\n\nIn this episode, I break down:\n\nwhy I chose the name Taxifi\n\nhow we opened early access (and who it’s for)\n\nwhat it felt like to ship this into the world (excitement, nerves, doubt)\n\nwhy I think tax prep is fundamentally broken for creators, and what we’re rebuilding instead\n\nTaxifi is what I’m building after a decade in accounting and two exits: a simpler tax experience designed for creators in Canada.\n\nThe app officially launches March 2, 2026. Until then, I’m dropping one episode every week with raw, honest updates on what it’s really like to build a product in public.\n\nEarly access waitlist at founder rates: https://stan.store/taxifi",
       "latest": false,
       "slug": "building-taxifi-in-public-week-1",
-      "pageUrl": "https://laidoffto8figures.com/episodes/building-taxifi-in-public-week-1/",
       "redirectFrom": [
         "full-video"
-      ]
+      ],
+      "pageUrl": "https://laidoffto8figures.com/episodes/building-taxifi-in-public-week-1/"
     },
     {
       "num": 1,
