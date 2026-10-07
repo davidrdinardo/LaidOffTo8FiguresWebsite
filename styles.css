@@ -988,6 +988,9 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
 .about-hero .episode-title { margin-bottom: clamp(1.2rem, 2.5vw, 1.8rem); }
 .title-suffix { color: var(--muted); font-size: 0.55em; letter-spacing: 0.02em; vertical-align: 0.15em; }
 .about-hero .episode-lede strong { color: #ededeb; font-weight: 500; }
+.about-now { margin-top: 1.2rem; color: #d8d6d2; }
+.about-now a { border-bottom: 1px solid var(--muted-2); }
+.about-now a:hover { border-color: var(--accent); }
 .about-photo { margin: 0; max-width: 420px; justify-self: end; }
 .about-photo img { display: block; width: 100%; height: auto; }
 .timeline { list-style: none; margin: 0; padding: 0; max-width: 76ch; }
