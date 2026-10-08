@@ -1,0 +1,863 @@
+{
+ "videoId": "JOJP0sxShJ0",
+ "num": 58,
+ "source": {
+  "kind": "descript",
+  "projectId": "8334f794-e9aa-49b7-ae58-379ceb102cd9",
+  "compositionId": "c9e6dfe7-b5d6-4baa-9df1-d2d9a0f181a3"
+ },
+ "guest": "Sergey Poltev",
+ "summary": "Cybersecurity entrepreneur Sergey Poltev, who runs a managed IT, AI and cybersecurity firm and wrote Hack Proof: A Guide to Cybersecurity for Your Business, walks David DiNardo through how small and medium businesses should adopt AI without getting hacked. He lays out his Simplify, Secure, Scale method, explains shadow AI audits, AI usage policies, phishing simulations and the cyber-insurance fine print that gets claims denied, and describes the three-person flash team he says every company needs before rolling out AI. The conversation matters because he argues technical debt and unmanaged AI agents can wipe out a company's valuation, while human-in-the-loop controls and a written AI policy are cheap to put in place early.",
+ "takeaways": [
+  "Sergey's Three S model: Simplify your tech stack first, then Secure it, then Scale with AI, because every extra tool and device costs more to protect.",
+  "Start with a shadow IT / shadow AI audit to learn which tools employees are actually uploading company data into, then write an AI usage policy that names the tools, the data each can touch, and who approves outputs before they go public.",
+  "Sergey's numbers: three out of four cyberattacks are now AI related, a breach sits undetected for about 200 days on average, and unaddressed technical debt can knock 50 percent off a company's valuation in an acquisition.",
+  "Cyber insurance only pays about 60 percent of the time, per Sergey, and paying a PCI non-compliance fee on your merchant statement can be used to void your coverage, so read the policy prerequisites and prove employee training.",
+  "Run phishing simulations and cybersecurity awareness training (CAT); Sergey sees failure rates fall from roughly 50 percent to 10 percent over a year, and a 5 to 10 dollar per month password manager closes the most common hole.",
+  "Before deploying AI, assemble a three-role flash team: an AI coder, a business process mapper and a data analyst who knows where the data lives, then upskill existing staff into those roles.",
+  "Keep a human in the loop for anything an agent does that moves money or sends messages, and add a call-back verification step for payment requests, just as 2FA became normal for logins."
+ ],
+ "speakersVerified": false,
+ "segments": [
+  {
+   "start": 0,
+   "speaker": "David DiNardo",
+   "text": "Or shadow IT is when you're learning about IT tools, but more and more we see fraud happens, and I've seen this time and time with business owners, it's like once you have one employee or 10 employees, they're all under your umbrella. I think the hardware is another thing. Like we, I don't want it to be stuck to my phone screen."
+  },
+  {
+   "start": 19,
+   "speaker": "David DiNardo",
+   "text": "I wanna be able to communicate with it. I think Canadians too don't realize the value we have by Cybersecurity vest. Branding. This is you. Yeah. Thanks for having me here. Tell me a little bit about your story and, like, who you are and how you got to this place. Sure, of course. Well, my name is Sergey."
+  },
+  {
+   "start": 45,
+   "speaker": "David DiNardo",
+   "text": "I run, a couple IT companies. I'm a tech entrepreneur. I've always been fascinated with technology and computers, and, when I got my first computer, it was... I was a teenager. I was about 12 years old, and, I got my first computer. My mom bought it for me, and I had- it broke. I had to fix... Like, I was tinkling with this, and she says, \"No more."
+  },
+  {
+   "start": 67,
+   "speaker": "David DiNardo",
+   "text": "I'm not buying any parts. You're gonna have to learn how to fix it.\" And that's how I started understanding how computers work. Then s- became computer guru in my local neighborhood. And, really, at the end of the day, that's what got me into my profession. I went to study computer science in Russia, one of the top schools for IT and cybersecurity."
+  },
+  {
+   "start": 91,
+   "speaker": "David DiNardo",
+   "text": "In fact, if you look at the statistics for cybercrime, Russia is number one, Ukraine number two, China number three for cyberattacks in the world. And, so it's because they have good schools. Like it's math-heavy. And there's no regulation. There's, like, really,.. People are allowed to hack publicly u- a- as long as it's not within the country."
+  },
+  {
+   "start": 120,
+   "speaker": "David DiNardo",
+   "text": "So that's why there's so much education, and I've been growing up studying IT, cybersecurity, playing with computers, watching other guys, hacking, learning about all those things. I was, really deeply evol- involved in that. But I made my career on the opposite side. How do I kn- now that I know all this information, how do I use this to protect businesses, right?"
+  },
+  {
+   "start": 145,
+   "speaker": "David DiNardo",
+   "text": "So my mission is to keep clients, keep people safe from cybercriminals. We call them back act- a- back, bad actors. We call them hackers as well, and my... I wrote a book called Hack Proof: A Guide to Cybersecurity for Your Business. And now we're,.. It was published, what? Two, three years ago."
+  },
+  {
+   "start": 164,
+   "speaker": "David DiNardo",
+   "text": "Now we're looking more into AI, and, in fact, three out of four cyberattacks right now are AI related, so we can chat more about that. And AI is a wild west right now. Like, people... I even see myself. I'm going on Claude and I'm like, \"Allow this permission. Allow this permission.\" I don't... You know, I'm, like, now reading everything, but you're..."
+  },
+  {
+   "start": 190,
+   "speaker": "David DiNardo",
+   "text": "It's like opening up your-... Computer to do everything. And from a business perspective, it scares the shit out of me too. Of course. Yeah. I work with- Like with co-work now too, and all of that... I work with businesses mainly, yeah, small and medium, cl- are clients. I ca- I call those businesses kinda hacker sweet spot because- Yeah"
+  },
+  {
+   "start": 213,
+   "speaker": "David DiNardo",
+   "text": "You're t- still small to implement any technology and hire IT and cybersecurity teams, but you're already large enough to lose something, maybe retain earnings and reputation. So I kinda work with, like, 10-plus employees. My a- my average client around 25 employees, and that's where I think it's very important to learn how to properly implement AI."
+  },
+  {
+   "start": 237,
+   "speaker": "David DiNardo",
+   "text": "As my, business evolves into more from fixing technology to more advising how to leverage, you know, technology for growth of your business, I would recommend a couple of things. Yes, we're definitely gonna talk about, like, permissions and access control, and I'll give you some analogies on that. But I would start..."
+  },
+  {
+   "start": 259,
+   "speaker": "David DiNardo",
+   "text": "I'll give you my methodology, how I usually work with businesses. I call it three S. It's my model. It's written on my business door. Simplify, number one, secure, number two, and scale, three. So when companies hire me and kinda, \"Sergey, can you take a look at security?\" I, before I do anything, I'll go and look into their..."
+  },
+  {
+   "start": 280,
+   "speaker": "David DiNardo",
+   "text": "Okay, let's go back a little bit. Let's, let's look at simplifying your technology before if you, if you're gonna have too much tech, too much software, and too much hardware, it's gonna be more expensive for you to secure it. So first is analysis, and I, we do so-called, and there's an industry term you need to look up."
+  },
+  {
+   "start": 300,
+   "speaker": "David DiNardo",
+   "text": "It's called, shadow IT or shadow AI. What is this? It's, it's basically understanding what tools are currently used in your organization, not just you as a founder, but also for across your whole team. So we do a lot of those shadow IT or shadow IT is when you're learning about IT tools. But more and more we see shadow AI requests, which is basically, \"Hey, help me understand what tools are being used in my organization by my staff.\""
+  },
+  {
+   "start": 330,
+   "speaker": "David DiNardo",
+   "text": "And so where are the people saving or uploading our corporate data into what tools? Because there's so many of them now. Right. Well, majority of them, like, we see five tools. But we also see, some tools that's not really been approved at all. That's not our top five major tools. We see, you know, employees uploading, the information to some weird tools."
+  },
+  {
+   "start": 355,
+   "speaker": "David DiNardo",
+   "text": "It's very important to create some kinda, like, AI governance and policy within your organization. It's not that hard. It's not, like, too complicated. Like, every company, well, maybe not now, but have, like, - the policy for, let's say bring your own device or even HR policies like when do not wear flip-flops at work."
+  },
+  {
+   "start": 379,
+   "speaker": "David DiNardo",
+   "text": "So we need to create policies for AI usage. I see many companies just lacking at that. Yeah. I used to, promote, password use policies, which is still very important, but now we're looking into more of those tools. Yeah. Yeah. Go ahead. Yeah. I mean, when you talk about policies too, I'm thinking- You have the business, you have ChatGPT and Claude."
+  },
+  {
+   "start": 405,
+   "speaker": "David DiNardo",
+   "text": "How do you create policies with employees to be like, \"This is proprietary to the business\"? You know, client information, it's all that. Claude and ChatGPT are simplifying things. \"Hey, I'm gonna put some of this document in here to create an email to send to the client.\" Like, where does the privacy and policy start and stop, and what have you seen people do?"
+  },
+  {
+   "start": 434,
+   "speaker": "David DiNardo",
+   "text": "Yeah, of course. What do you advise clients? Well, once you learn what tools are being used, so there's a couple things you need to know. Like, tools, once you know the tools, okay, the second layer is the data. What data? Where do we store data? Google Drive, you know, Dropbox. Where do we actually keep all of that stuff, all right?"
+  },
+  {
+   "start": 451,
+   "speaker": "David DiNardo",
+   "text": "So once you understand that, then you need to look into permissions, like who needs to have access to what. When you hire an int- like, a new staff, you're not gonna in- think about giving them a credit card. You're not gonna give them that card to spend on a large pur- Right... So you need to really come up, come up with the permissions level."
+  },
+  {
+   "start": 470,
+   "speaker": "David DiNardo",
+   "text": "And interesting thing that n- from IT perspective, those permissions are not just given to people, but also giving, given to agents, you know? Right. So, we're talking about the agentic AI, or the actual AI that can do things, act. So, we need to actually give those permissions to people. So think about, again, and that, and that's where really where IT comes in, is to, okay, understanding, you know, here, we're creating a policy now."
+  },
+  {
+   "start": 496,
+   "speaker": "David DiNardo",
+   "text": "We know where the data resides and who has access to what, especially lots of things now happening with people in the loop, so they need to approve before AI do anything. So, I would say, like, the easiest way to think about is to cr- create a document outlining, \"Here's the tools we use at work. It has access to the following data."
+  },
+  {
+   "start": 517,
+   "speaker": "David DiNardo",
+   "text": "This is where you need to keep the data,\" and, who has the, approval, like, permission level. So, here's this person ge- gets approval before it goes public. Especially now with the cyber incidents, before information goes public, like, you want somebody to approve it. And, like, I guess I'm making the assumption people would probably contact you when it's too late."
+  },
+  {
+   "start": 542,
+   "speaker": "David DiNardo",
+   "text": "Is that typically what happens? Or is, like, is there a lot of business owners that are very proactive with this approach? Or they've gotten hacked and they're like, \"Oh, crap, we gotta tighten things up\"? Yeah. Or their friends got hacked and it scares the crap out of them. Like, when you're starting now, especially there's a lot of entrepreneurs that listen to this that are younger, that wanna start an AI company, that don't even think about the fraud or potentially what can happen."
+  },
+  {
+   "start": 572,
+   "speaker": "David DiNardo",
+   "text": "And I could talk about my business too. It's like- There's one big thing that could take me down completely, and that's fraud. That's cyber, that's someone taking my data from all my clients and losing the trust. Like, that's front of mind. It wouldn't be front of mind if I wasn't an entrepreneur for 15 years and be like, \"Okay, this is a high-risk thing.\""
+  },
+  {
+   "start": 596,
+   "speaker": "David DiNardo",
+   "text": "You're now hearing cybersecurity attacks, throughout. There was someone on Steven Bartlett's podcast. I forge- he predicts what's gonna happen, and he predicted that the next big attack would be a cyber attack on financial institutions in the States. That was his prediction. And it makes sense."
+  },
+  {
+   "start": 622,
+   "speaker": "David DiNardo",
+   "text": "I mean, you can, if you can break- if you can get an agent to do what it's doing now, and now you get an agent to go after all these small businesses or whoever that do- might not have all the security in place, your business could be done in overnight. And I don't wanna fear monitor anyone- Yes... But it's the reality of it, and I think more people need to talk about it."
+  },
+  {
+   "start": 645,
+   "speaker": "David DiNardo",
+   "text": "And that's what I reached out to you is- Yes... I saw that episode, and I'm like, \"Oh, crap.\" Like, people need to be aware of what permissions they give them, what policies. Like, what are you seeing and advising clients now versus maybe five years ago or maybe two years ago? You talked about the shift in advisory."
+  },
+  {
+   "start": 666,
+   "speaker": "David DiNardo",
+   "text": "It's obviously with AI. Like, what are you advising clients now to do? Definitely the finance is the biggest risk because, again, if you think about the f- the mindset of a hacker, what are they doing it for? They're doing it for money- Yeah... At the end of the day. So they want to... That's why they're, they're asking for ransom and you pay me this much."
+  },
+  {
+   "start": 688,
+   "speaker": "David DiNardo",
+   "text": "But nowadays, it's a financial scam. They're the highest- Right... Risk. So what I'm thinking is, again, the... So the hackers are attacking organization by doing financial fraud, so we do need to educate people as well. Like, people are becoming still, especially newer staff, and, if we're not educating them, we're not bringing this awareness, we're not,.."
+  },
+  {
+   "start": 715,
+   "speaker": "David DiNardo",
+   "text": "We're putting ourselves at risk. In fact, this podcast is an awareness as well. Yeah. So thanks for this. Hoping many c- many c- businesses listening to this, they're gonna start educating their employees about AI risks, okay? And it's part of, cyber security, risk awareness. In fact, October, Cybersecurity, Awareness Month."
+  },
+  {
+   "start": 737,
+   "speaker": "David DiNardo",
+   "text": "And, are we in October? No, next month. Next month. Okay. Yeah. Exactly. So, and, it's very import- It's almost like a disease. You have to, you have- And when you talk about awareness, w- is it just education, meeting with the, your staff, sending newsletters? Like, I'm thinking of that business owner who doesn't know about security-"
+  },
+  {
+   "start": 756,
+   "speaker": "David DiNardo",
+   "text": "And doesn't know any about this, is, doesn't know what their employees are doing now because- Yes... There's so many tools out there. Like, what's awareness to you? It's, it's a training. Think about acronym CAT. Cybersecurity awareness training, so CAT. In fact, government provides free training as well. But the insurance company often require you to prove your, that you've done the training."
+  },
+  {
+   "start": 778,
+   "speaker": "David DiNardo",
+   "text": "So let's say you got hit and you lost $5 million, so insurance company can pay for it, but they're gonna say, \"Well, just prove to me that your employee's been trained.\" \"Oh, well, they watch the YouTube.\" No, it's not enough. You need to actually show them that you've trained them, they actually passed the test, whatsoever."
+  },
+  {
+   "start": 797,
+   "speaker": "David DiNardo",
+   "text": "So training involves, a regular, watching a video. So t- most typical is just to, come up with a course, and let employees watch the videos, and, often, w- do, we call it phishing simulation. So when there's a software, you can send every employee an email that looks like a real email, and if they click on that email, that means that they failed the test."
+  },
+  {
+   "start": 824,
+   "speaker": "David DiNardo",
+   "text": "So you can actually score employees and see who's, who's actually passed the test, who's not. And it's okay if somebody clicked on the link as long as they understand that, and then they c- they can take the training, so then when they click on the link again, you get improved. You know? So we oft- often see when we first start the training, we get, like, 50%, of failure rate, and then it goes to 80 and gets to 90."
+  },
+  {
+   "start": 850,
+   "speaker": "David DiNardo",
+   "text": "So over course of the year, everyone's gonna gets trained and understand those problems, about the... You know, when you click on the link, what happens is it's very simple example. If you save your passwords in the Chrome and you click on the link You're most likely gonna click on the link and it opens the Chrome-"
+  },
+  {
+   "start": 870,
+   "speaker": "David DiNardo",
+   "text": "And it executes the Chrome command to send all your passwords to a bad guy. Simple, simple, right? And people ask, \"Well, how secure is AI or how secure is my SaaS?\" Well, it's as secure as your password. Really simple. So people are like, \"Oh, okay, now I understand the risk.\" So just simple example like that."
+  },
+  {
+   "start": 888,
+   "speaker": "David DiNardo",
+   "text": "Okay, so I'm not supposed to click on the link. And also, how do we secure passwords? Well, that's another thing is part of your tech stack nowadays, we do recommend using a password manager, basically encrypted software where all your password reside. And it's, like, so it prevents from getting into the, you know, compromised."
+  },
+  {
+   "start": 909,
+   "speaker": "David DiNardo",
+   "text": "So essentially, password manager, it's very affordable nowadays. You can give it to every employee and share passwords securely and two-phase. Yeah, I use 1Password. That's great. And it's... I think it's, like, $7 a month. I know. It's- Roughly five to $10- Yeah... Any password manager. Yeah. So things like this at the businesses, I often talk to leaders and they say, \"Hey, we have that, but I have never used it.\""
+  },
+  {
+   "start": 931,
+   "speaker": "David DiNardo",
+   "text": "Or- Right... Or, \"I have, I- because it's just easier for me to do this.\" And I think it's a good point if we rewind a little bit. When you talk about insurance, I-- And I-- It's funny, when there's a claim with insurance, it's like, \"Oh, I should have done this.\" But people don't know that- If you have a cybersecurity insurance, there might be pre-req- pre- prerequisites for, in order to make sure that that's valid."
+  },
+  {
+   "start": 961,
+   "speaker": "David DiNardo",
+   "text": "Yes. Talk to your insurance company, make sure what those prerequisites are, and do them. Exactly. Or you just review your policy. You can kinda run it through AI as well to s- to see if there's any- anything that's missing or what you actually need to prove insurance companies before getting paid. IT companies do this all the time."
+  },
+  {
+   "start": 980,
+   "speaker": "David DiNardo",
+   "text": "Like, we're getting copies of insurance policies r- renewals and to just to read them and advise, \"Oh, hey, Mr. Client, this is something else ne- needed to be added.\" Now, here there's some kind of like, centralized management and things like that. So they're always adding and adding. They used to be insurance policies were like couple of pages."
+  },
+  {
+   "start": 999,
+   "speaker": "David DiNardo",
+   "text": "Now it's like 20 pages document what you actually need to have in place in order to, get paid. And you've seen situations where- Oh... They haven't got paid? Oh, yeah. It's statistically, it's actually about, 60% now where the companies are, being paid and, there's more and more cases where it's just not being paid."
+  },
+  {
+   "start": 1021,
+   "speaker": "David DiNardo",
+   "text": "And there's some automatic clause like, for example, if the company pr- processes the credit cards, so they need to be PCI compliant. It's... Compliance is another big thing in IT, right? So it's just a set of rules that you need to implement to prove like, that you are, you're secure. So PCI is one good example."
+  },
+  {
+   "start": 1041,
+   "speaker": "David DiNardo",
+   "text": "It's very simple. If you process credit cards, usually applies to retail, like if y- if you have a Stripe is a bit different, but if you, if you actually collect credit card numbers on your end, right? So how do you... So you need to have compliant, but if you look at your merchant statement and it says non-compliant fee, you know, and then it's $47 a month or something."
+  },
+  {
+   "start": 1065,
+   "speaker": "David DiNardo",
+   "text": "I've seen those merchant statements. The non-compliant fees are... It's not regulated. It could be $20, it could be $100. But it's a trick actually. So companies rather pay non-compliant fee than be compliant. But the trick is if you're actually paying non-compliant fee, you're automatically waiving your insurance policy."
+  },
+  {
+   "start": 1084,
+   "speaker": "David DiNardo",
+   "text": "So you're like saying like, \"Yeah, I'm non-compliant and I don't care.\" But, insurance companies can use this against you and say, \"Here, you're actually paying, you're not compliant, so we're not give you, any coverage.\" So y- it's very tricky. Insurance companies are in the business of not paying. Yeah. So you need to really understand that and review the policies and talk to your, like, IT advisor or somebody."
+  },
+  {
+   "start": 1109,
+   "speaker": "David DiNardo",
+   "text": "Yeah. And I think as business owners, so there's two awareness pieces that you gotta be aware of initially. One is what insurance policy do you have? Do you understand that? And second is being aware 'cause- Fraud happens, and I've seen this time and time with business owners, it's like once you have one employee or 10 employees, they're all under your umbrella."
+  },
+  {
+   "start": 1134,
+   "speaker": "David DiNardo",
+   "text": "So if they're not following this insurance policy, it doesn't matter if you're following it and you have a one password and you have password security. If there's one employee that's not doing it could wipe you guys all out. Yeah. It has to apply to everyone. Yeah. So Awareness. What's next? Well, another thing I w- I wanted to actually..."
+  },
+  {
+   "start": 1159,
+   "speaker": "David DiNardo",
+   "text": "Lots of people asking me, \"How do you use AI for good, and how is it being used now?\" Sure. I was just actually talking, to a business owner about, who's growing, and he's like, \"Sergey, how do we use AI? What do we do? What's the practical use of AI?\" And I find that before you start leveraging AI in the organizations, you need to assemble, they call it flash team or AI team."
+  },
+  {
+   "start": 1185,
+   "speaker": "David DiNardo",
+   "text": "So it's really compli- comprised of three people, three roles in a way, if you think about it. Y- You can, you could put it in one role, but ideally it should be three separate positions. Number one is AI, coder, programmer, somebody who understands, you know, how to put things together and do the coding."
+  },
+  {
+   "start": 1203,
+   "speaker": "David DiNardo",
+   "text": "Number two is somebody who understands business process, the mapping every single... Like, who knows business really well, in terms of, every single step. So we're looking at project management kinda thing, background. And third is the, a data specialist, data analyst who understands where the data resides."
+  },
+  {
+   "start": 1221,
+   "speaker": "David DiNardo",
+   "text": "And those three people typically, kinda like, work together, and somebody supervise them on the team. And I find that this is interesting because you do need to understand where the data resides and security of the data. You need to understand every single thing that happens. If somebody clicks on the button, what happens?"
+  },
+  {
+   "start": 1242,
+   "speaker": "David DiNardo",
+   "text": "And business mapping is very important. And then the coder will put everything together. So I find this is also kinda a new way of getting AI, im- implemented in the organizations if you have those three kinda roles. And then one-- And they also becoming a foundation for your I-, AI adoption in your organization."
+  },
+  {
+   "start": 1267,
+   "speaker": "David DiNardo",
+   "text": "And then that's where, l- next thing is really comes down to security and explaining, okay, data is here, education. So it's all kinda part of it. I don't know if you, get the idea, because lots of people are asking, \"Okay, we have these tools. How do we implement them?\" And if it's a larger organization, you can't just go and..."
+  },
+  {
+   "start": 1289,
+   "speaker": "David DiNardo",
+   "text": "You have to really understand the whole company and, map all the processes, the data, and then, and then AI coder will actually put together things. Now, if you don't have those technical people, and you are a small business owner-... And you're just operating, what do you recommend in those situations?"
+  },
+  {
+   "start": 1308,
+   "speaker": "David DiNardo",
+   "text": "Of course, well, first of all, you can upskill your employees. If you're just by yourself, it's different story. And maybe it's actually, we see a big uptick on, you know, solopreneurs- Yeah... Who just work by themselves and they're creating a product or, now especially with the bots, Grok Bot."
+  },
+  {
+   "start": 1327,
+   "speaker": "David DiNardo",
+   "text": "I don't know if you've seen- Yeah... OpenAI Dots just announced. I saw that yesterday. It's, well, Meta Muse and- Yeah... There's so many of those, agents that's designed to help, individuals as well. Yeah. So that's one story, but I'm, mainly I work with the smaller and medium organizations- Yeah"
+  },
+  {
+   "start": 1344,
+   "speaker": "David DiNardo",
+   "text": "Where they already have staff. Right. But the staff is, they, the owners come to me and say, \"Well, Sergey, we need to get AI implemented. What do we do?\" Right. \"Which tool should I buy?\" \"And how do I put it all together?\" Yeah. Like, and that's why I think, I think we're getting it wrong 'cause it's not just about the tool, it's about getting everyone aligned and understanding how, what AI's gonna do in this organization."
+  },
+  {
+   "start": 1368,
+   "speaker": "David DiNardo",
+   "text": "We almost need to flip the scri- script- Yeah... Like AI first. And then that's where AI education comes in. Most people thinking it's just a tool, but it's more than that. It's, it's the whole philosophy where how we operate as, in the organization. Do, does AI now keep you up at night in the sense of like- You've been doing this for 20, 30 years, since you were young."
+  },
+  {
+   "start": 1395,
+   "speaker": "David DiNardo",
+   "text": "Have you ever seen a time where security is scarier now... Than ever before? Or are you not feel- are you not there yet? Well, there is, generally positive person- Yeah... So I'm trying not to, you know, like go too- Change your mindset, yeah. Yeah. But, - Go into the dark side... Well, one thing is, like, I don't know if you know about crypto, cryptology and how, there's a post-quantum, era comes in."
+  },
+  {
+   "start": 1426,
+   "speaker": "David DiNardo",
+   "text": "So basically all cybersecurity is based currently on older technology, okay? Now post-quantum era where, essentially everything could be, especially with AI, like this is one of the... If I can translate all those scary, news about AI's gonna, you know, break everything, we're gonna all die, it's because the, old technology, is based on the older system, and now AI is gonna be s- already smart enough to unencrypt, decrypt, all the security."
+  },
+  {
+   "start": 1461,
+   "speaker": "David DiNardo",
+   "text": "However, there's a new, progress happening with the post-quantum era where the, is much more secure systems being evolved, but there's a switch happening between the old and the new, and in between there could be some massive cyber attacks happening. Like some, like the big bank will be s- will be, breached or government could be breached or something."
+  },
+  {
+   "start": 1487,
+   "speaker": "David DiNardo",
+   "text": "So right now it's a, it's a big ha- big change happening, big upgrade. And not upgrade on a, like, on a, on a foundational level. We're talking about, like, on the switches and all the, where the data center's running. Obviously the new data centers that's being built, they're all in the new systems. Right."
+  },
+  {
+   "start": 1504,
+   "speaker": "David DiNardo",
+   "text": "The older,.. So definitely it keeps me up at night knowing that. One thing is also I'm worrying about, like, physical infrastructure, right? So, we heard about Colonial Pipeline couple years ago when the gas was not available to people because the, the hack to the actual pipeline or the gas pipeline."
+  },
+  {
+   "start": 1526,
+   "speaker": "David DiNardo",
+   "text": "There's could be some... Obviously there's wars happening and, so all those things. In fact, my family still lives in Russia and, they can't use the internet. It's all because they're blocking all the signals and they can't even communicate. So that's kinda- It's, it's crazy to think we live in this age where we have self-driving cars and we still have wars and, people attacking."
+  },
+  {
+   "start": 1552,
+   "speaker": "David DiNardo",
+   "text": "So, but on the other side, we now have a better tools to protect ourselves. Like, if we're looking at, again, for small business owners, we now have software that allows us to scan our emails with AI, for example, right? So we can just put a little s- a filter, not like a spam filter like we used to have."
+  },
+  {
+   "start": 1573,
+   "speaker": "David DiNardo",
+   "text": "Now we have a 24/7 agent scanning your emails for security. So but just not every business owner knows how to put it all together, so it's, it's still important to talk to IT people. People say, \"Well, IT is gonna be gone,\" or a security job. No. I think the coding and some more automated jobs will be gone, but you still need to have an advisor."
+  },
+  {
+   "start": 1595,
+   "speaker": "David DiNardo",
+   "text": "You still need to have somebody you talk to, who puts together all this, the stack. In fact, IT is becoming liable now. In fact, like, I don't know if you've seen this, well, ye- was it yesterday, where US president had this meeting with this top AI leaders- Yeah... And they come up with the three big things."
+  },
+  {
+   "start": 1613,
+   "speaker": "David DiNardo",
+   "text": "Number one, they, they're now saying that the companies will be responsible, like the leaders of the companies will be responsible for AI damages if they, if they're not implementing it, correctly. The second is that the c- they're changing it to super intelligence now, because they don't wanna call it AI anymore."
+  },
+  {
+   "start": 1636,
+   "speaker": "David DiNardo",
+   "text": "And it's gonna be big thing on data centers, like they're gonna be building... It's a new era now. So but you can't just think about this as a negative part. It's gonna be, it's gonna be positive thing. It's, it's gonna be, like, I don't know, we're heading into this, era of where we don't need to work as much because the robots will come."
+  },
+  {
+   "start": 1658,
+   "speaker": "David DiNardo",
+   "text": "But there's always gonna be, that, like we've seen in the books and, how, AI's gonna take over. I honestly positive because, again, for businesses it's the best time ever now to create new products, improve our businesses. Mapping processes, improve them, hire those analysts, and converting your staff from older type of jobs into, like upskilling them."
+  },
+  {
+   "start": 1685,
+   "speaker": "David DiNardo",
+   "text": "And they all want. Like, I spoke with so many people, they just w- looking forward to become more productive with using new technologies than ever before. I think the, also the ages, like m- I've seen more and more people who wants to stay at the job and not retire and just learning this because it's all new."
+  },
+  {
+   "start": 1705,
+   "speaker": "David DiNardo",
+   "text": "For me, it's like I'm a, I'm a, like a, that kid who bought a, who got a computer in the beginning- Yeah... And was like, \"Wow, a new world to me.\" Now I'm seeing this as a new world again-... Happening, and I can create more. Like, I remember when I made my first website, and now I can make my first app with a click of the button, right?"
+  },
+  {
+   "start": 1724,
+   "speaker": "David DiNardo",
+   "text": "Then now you can create your video games now. In fact, they just released this little, the gaming controller with no games on it. You can actually create your game. You don't need to buy a, you know, hard- Like, you create your own game and, you just tell it, tell here what kind of game you want and you play."
+  },
+  {
+   "start": 1744,
+   "speaker": "David DiNardo",
+   "text": "So it's just, like the world is open now. Like, it's, it's more positive- Yeah... In my opinion. Yeah, and, when you were talking too, people that- have an AI company and security attached to it, you also think about valuations and, like, that's what it was going through my mind was like, wow, if you set it up properly at the beginning-"
+  },
+  {
+   "start": 1769,
+   "speaker": "David DiNardo",
+   "text": "You can also add your value based on the security and the infrastructure from the beginning than at the end. Like, if I'm now buying a business, well, that's one of the big questions I would ask is like, \"How's your security? Are you compliant?\" Like, \"Where's your data? How do you find your data? Where can I get your data?\""
+  },
+  {
+   "start": 1791,
+   "speaker": "David DiNardo",
+   "text": "Like, all the whole data questions, and doing it at the beginning would be so I mean, s- so, like, incredible, because it's probably a lot less work than doing it at the end Yeah. I call it technical debt. So most people, most company owners don't understand that. They don't see it. But, if I'm looking at your company, I can actually..."
+  },
+  {
+   "start": 1817,
+   "speaker": "David DiNardo",
+   "text": "Like, there's financial debt, right, in the bank on P&L, but there's a technical debt. Technical debt is when your technology's out of date, when you have cyber risk, maybe you got breached before. This all the technical debt. Yeah. I work with lots of PE firms and companies who acquire, specifically financial companies now, financial management, and, so they hire us to clean up the company before g- it gets merged with another company."
+  },
+  {
+   "start": 1842,
+   "speaker": "David DiNardo",
+   "text": "So... And the good news is really the checklist. It's almost like a checklist. It's not, it's not rocket science. Think about the compliance, like SOC 2 or ISO. It's just a massive list- Yeah... Of things that you need to implement. And with AI now, it's much easier to do, so it will actually show you can hire a consultant and get certified."
+  },
+  {
+   "start": 1867,
+   "speaker": "David DiNardo",
+   "text": "You don't need to have full-time employees to do that anymore. There's companies who, just makes it this... It becoming easier than before, you know? I remember... And technology's becoming cheaper in general. Like, look how, like we now have a- we now have super computers in our pocket, and now we have agents."
+  },
+  {
+   "start": 1887,
+   "speaker": "David DiNardo",
+   "text": "Like, you can have 37 agents on that computer sitting and do things for you, for $20 a month. Like, it's just insane. So again, I'm thinking that, you can, you can increase the value of your company, enterprise value, by removing that technical debt. If you think about that, how do you understand how much you're in debt?"
+  },
+  {
+   "start": 1910,
+   "speaker": "David DiNardo",
+   "text": "Let's say you're, to fix all of that because of these risks and everything, maybe you're, you're gonna lose 50% of your company valuation. Absolutely, agree with you. Before you start scaling to 20 employees or users, you want to start, setting everything up from the start. It's much cheaper this way."
+  },
+  {
+   "start": 1931,
+   "speaker": "David DiNardo",
+   "text": "It's much easier. Because again, if you think about, the, you know, even the hacker timeline, it's all starts with gathering data, and then there's a p- there's, - The hack, then there's a hacker sits in your system, then you recover. And the longer you're in that process, the more expensive it is."
+  },
+  {
+   "start": 1955,
+   "speaker": "David DiNardo",
+   "text": "So what if you prevent hacker to get into your system? Right. Some companies don't even know, if whether the hacker sits in your system. Did you know that on average it takes 200 days to detect a cyber breach? So there is a statistic. So when you get hacked, when you hire somebody, they actually tell you, \"I can tell you precisely when somebody got into your system.\""
+  },
+  {
+   "start": 1977,
+   "speaker": "David DiNardo",
+   "text": "And on average, it's, they sit for 200 days monitoring all your emails. So wh- wouldn't it be nice to just understand whether you have no- that you are safe and prevent that altogether? Like, a- and it'll be easier and... So that, I completely agree with you on the valuation side. When you're seeing, through your experience, what are you seeing right now?"
+  },
+  {
+   "start": 2000,
+   "speaker": "David DiNardo",
+   "text": "Is it hackers through emails, through,.. Like, what are the m- more c- what are the one or two more common things that-... You're seeing? Yeah. Phishing is num- still number one. Phishing with a P-H. It's the, it's where the email, comes in to the employee mails- mailbox. There's different types of phishing attacks."
+  },
+  {
+   "start": 2022,
+   "speaker": "David DiNardo",
+   "text": "Most common one's called whale phishing, when they target the individual. Typically, it's the CEO or the assistant or the man- somebody on the management team. Or brand-new hires. So they know specifically which, which person. So a new hire, when they come in, if they don't do proper onboarding, somebody can say, \"Well, I'm, we're an IT team."
+  },
+  {
+   "start": 2044,
+   "speaker": "David DiNardo",
+   "text": "We just want to reset your account, you know, password.\" And they, \"Yeah. Sure.\" They're, and they,.. And so essentially the email is, is number one. We now start seeing more, the, calls coming in, right? So just, you can now mimic the phone call- Right... From somebody, and have a conversation to reveal the password."
+  },
+  {
+   "start": 2069,
+   "speaker": "David DiNardo",
+   "text": "Remember, hacking is really, it's almost like psychology. It's, it's about, persuading people to give you the information. It's much easier just to give you the, the password, than hack into and find the password. So people get tricked in a way, and they're tricked at the time when it's least, they're, when they're least prepared, and they, oh, like again, brand new hire or you, like, let's say something, you need to do something urgently."
+  },
+  {
+   "start": 2099,
+   "speaker": "David DiNardo",
+   "text": "Like let's say email got- blocked and they need to reset the password, or the Uber, they need to travel and here's a Uber email saying that your credit card needs to be updated. And like, \"Oh, yeah, I need to update it.\" They don't think, you know? So it's just that- So they're going after the password."
+  },
+  {
+   "start": 2115,
+   "speaker": "David DiNardo",
+   "text": "Password. So- That's potentially what- Password is the keys to get access, so they... And they want enter, somebody enter that password on the clie- on their computer. We see biggest issues now, people think, \"Okay, yes, oh, I have a cloud.\" Like Microsoft 365 we see, or Google Workspace. Those are the two top, email and file systems, in a company."
+  },
+  {
+   "start": 2138,
+   "speaker": "David DiNardo",
+   "text": "And what I see is that, this new term called ransomware cloud. There's a ransomware when it runs on your computer, encrypts your files, but less and less people saving files on the f- on the computer. So ransomware cloud is where the actual Microsoft account gets ransomed. All the... Imagine you're opening up your Outlook and all your emails encrypted, encrypted, and only the subject is actually visible."
+  },
+  {
+   "start": 2164,
+   "speaker": "David DiNardo",
+   "text": "What's encrypted mean? Encrypted meaning the emails are not opening. Like, there's, there's nothing in the email. Only the subject line is e- exists, half of it, so people, they know, \"Oh, I know that email. It's a real email.\" But inside of it there's nothing. And there's one email on top, \"Hey, do you want to un-encrypt those emails?"
+  },
+  {
+   "start": 2184,
+   "speaker": "David DiNardo",
+   "text": "You, send me that Bitcoin.\" That's where we call it ransomware cloud. So where your files are in the cloud, but they're ransomed. So imagine losing- Send me the Bitcoin, so send me money in order to- Unlock it... Unlock, yeah. And now that they have access to your email cloud, they can actually send emails on your behalf as well."
+  },
+  {
+   "start": 2203,
+   "speaker": "David DiNardo",
+   "text": "Right. It... So they can email everyone saying, \"Here, this account got hacked.\" Now, what this means to organizations, reputational damage. Like imagine your, I don't know, 5,000 contacts in your system, they all receive the email, \"Hey, this account-\" Right... \"got hacked.\" Or they can say, \"Hey, click on this link.\" Now they get h- they get hacked as well."
+  },
+  {
+   "start": 2226,
+   "speaker": "David DiNardo",
+   "text": "Right. So, and I... It's just that reputation, but also the- Also liability. So if you think about this, if the client's data been accessed... Now, in US they have their, you must pay for credit protection for every of your, like the PII, personally identifiable information, which is really just a first name, last name."
+  },
+  {
+   "start": 2252,
+   "speaker": "David DiNardo",
+   "text": "And then there's also email and phone and... Because if that information goes online on dark web, the hackers can use it against and scam their personal, identity. So you have to pay a monthly fee to, companies that protect your, score and rating and finds whether you get hacked or not, whether you get scammed by, getting, a car loan or..."
+  },
+  {
+   "start": 2282,
+   "speaker": "David DiNardo",
+   "text": "So that, so let's say it's $30 a month, you can sign up for. There's many services that can monitor your credit rating. But imagine you have, 5,000 customers that you leaked information-... In the form of that attack. Now you have to pay 5,000 times $30 times 12 for at least for a year. Okay? So, and that's where it's important for you to be prepared and, like, okay, cyber insurance can pay for that."
+  },
+  {
+   "start": 2313,
+   "speaker": "David DiNardo",
+   "text": "They actually say that, \"So we will pay for a year of cy- of, credit protection.\" So, but it, regulations changes, maybe they're gonna want 24, but it's a lot of money, and the companies don't have that informa- they don't have that money. So, and that's why there's more and more businesses who are being basically shut down by cyber attack."
+  },
+  {
+   "start": 2334,
+   "speaker": "David DiNardo",
+   "text": "It's not because they, there's a mo- Like, yes, there's money in the bank, they can pay for it, and, or they, not pay and they try to recover, but then reputational damage- Yeah... And government. Breach and everything. And now we have AI threat, and again, the g- what I'm seeing in US, what's happening is the business is gonna be liable for any damage that AI makes."
+  },
+  {
+   "start": 2358,
+   "speaker": "David DiNardo",
+   "text": "The same idea, essentially. Right. So we need to be extremely careful. That was what happened yesterday. Yeah. Yeah. Yeah, absolutely. They say that businesses are now liable. We wanna make sure that they're protected. They're responsible for any data that's, if their AI is going to leak the data, so they're, they're responsible now for that."
+  },
+  {
+   "start": 2378,
+   "speaker": "David DiNardo",
+   "text": "And, there's... What- AI is so new, there's no regulation around it. Yeah. That's why they're putting that regulation right now, and it's gonna come to Canada, going to come to everywhere, but they're just starting it there. What are you seeing, do you do work in the States and Canada? Yes. That's cool. I work- I started working more in US now as well."
+  },
+  {
+   "start": 2395,
+   "speaker": "David DiNardo",
+   "text": "Yeah, so what are you seeing in the difference of businesses in the States who- They implement that much faster. The decision-making is going, goes much faster. They understand it more. I find, also specific industries, medical industries, like all the, new modern clinics, they, because they're, they're dealing with a lot of data- Yeah"
+  },
+  {
+   "start": 2417,
+   "speaker": "David DiNardo",
+   "text": "Personal data. They don't want that to be leaked. Right. In financial industries. Right. By like any, ID- Like most of our- Like, typically it's the, financial management, wealth management companies. They have actual regulation. They understand that they need it. But there's companies who are completely behind."
+  },
+  {
+   "start": 2436,
+   "speaker": "David DiNardo",
+   "text": "Like, construction industry, - Yeah... Are completely behind. They're one of the oldest... Like, they... And they're dealing with lots of transactions. They dealing, like, number-one threat to construction companies, that's where I work with a lot of auto construction association companies, is when they, receive email,.."
+  },
+  {
+   "start": 2454,
+   "speaker": "David DiNardo",
+   "text": "Or no, they send an email to pay, their bill, or on the other side. So essentially the client say, \"Ah, we paid your bill.\" It's like, \"No, you never paid.\" Oh, someb- and so somebody intersected that email and took the money, and now the owner is like, \"Oh, we not get, we didn't got paid,\" and the, and the vendor didn't, and send the money to somebody else."
+  },
+  {
+   "start": 2479,
+   "speaker": "David DiNardo",
+   "text": "So there's now two companies go, like- Right... \"Where the money went?\" Right. It happens all the time. Right. The email impersonation is a big thing nowadays, you know? When they, people think, \"Oh yeah, that's the real email.\" But there's small, simple thing that could be im- implemented. It's basically human in the loop."
+  },
+  {
+   "start": 2494,
+   "speaker": "David DiNardo",
+   "text": "Se- second protection, call this phone number. Goes back to that policy, you know? So how do we send money to somebody is here, we just need to add that extra step. That's all. Just like that 2FA. You know- Yeah... We didn't have that 2FA, now it's becoming normal. Right. So we need to do the same thing, in the financial transactions then."
+  },
+  {
+   "start": 2515,
+   "speaker": "David DiNardo",
+   "text": "Right. So looking at your whole business holistically and putting a layer of human interaction with it. Like the double authentication. Well, in the AI it still makes mistakes, so it can... Imagine if it,.. Well, you start a agent, and agent start emailing on your behalf, which is getting- Right"
+  },
+  {
+   "start": 2537,
+   "speaker": "David DiNardo",
+   "text": "Popular now, but what if he emails the wrong person? Just hallucinated. So you still need somebody to check on those things for you. Human i- we call it human in the loop. It's a, it's the,.. And it, I believe that's always gonna be like that. Like, we still need a human to review everything. Yeah."
+  },
+  {
+   "start": 2555,
+   "speaker": "David DiNardo",
+   "text": "It's gonna be still quite a bit until the AI is gonna replace humans. We still need humans. We need less humans, so I do think that, you know, that 80/20 rule may appear where AI's gonna do 80% of the work, we still need humans, but the, we need less humans for that. It's funny you say that because yesterday I sent my f- my agent sent its first email-"
+  },
+  {
+   "start": 2581,
+   "speaker": "David DiNardo",
+   "text": "Through my Gmail, and it scared the crap out of me. Because it kept on asking me, \"Do you wanna send this email to this person?\" And I said, \"No, deny, deny.\" And then I'm like, \"You know what? I wanna try it,\" so I accepted it. And it freaking did it. And I got a reply from it, and it just, I looked at it, I'm like, \"Oh my God.\""
+  },
+  {
+   "start": 2604,
+   "speaker": "David DiNardo",
+   "text": "Like, when we talk about permissions, you can now unleash these agents to not have a- Yes... Human in the loop. The more confident I get with AI, I feel like the less security I have, which scares me, which brings me back to the human in the loop. But I do, I could definitely see people, removing the human in loop, and it'd be very dangerous too."
+  },
+  {
+   "start": 2630,
+   "speaker": "David DiNardo",
+   "text": "It is, it is. So I-I've seen- It found the email, it drafted the email, it sent the email, it followed up with the email I've seen the case yesterday in mu- Facebook Muse, you know? So it actually contacted the... So I think the case was to buy a product on Facebook Marketplace. No, sell it. So the So the person- so it started communicating with the buy- potential buyers."
+  },
+  {
+   "start": 2659,
+   "speaker": "David DiNardo",
+   "text": "Yeah. And, so it still didn't recognize. Somebody wanted to, lowball the offer, right? And they say yes, and they gave the address of the where to pick it up. Like, the... So the agents actually s- so some stranger came to the, to the owner's home and said, like, \"Here, I'm here to pick up this thing for five bucks.\""
+  },
+  {
+   "start": 2681,
+   "speaker": "David DiNardo",
+   "text": "You know? And like, oh, my goodness, like, I just invited somebody who... And it was definitely not the right thing. Still, like, w- he didn't, like, agent didn't actually understand how to properly do it. So again, it's still new. Yeah. So I do think that there's human interaction still required. We just need to create very good process on how to le- leverage AI."
+  },
+  {
+   "start": 2705,
+   "speaker": "David DiNardo",
+   "text": "And look, a- agent can now review your invoice and analyze everything, but agent can now s- pay the invoice. So I think that's the, that's the chain- Yeah... The thing you need to do. Like, you can't let it pay until it's reviewed by a human. So, and there's so many more cases where, again, people are now used to the, the ch- chat and the research, and now we need to move into that, time of action when the agent acts on your behalf."
+  },
+  {
+   "start": 2741,
+   "speaker": "David DiNardo",
+   "text": "That's where the biggest thing comes in now- Yeah... Where you need to do this properly. You need to have,.. Again, go back to data, go back to policies. Yeah. So, yeah. And is that, is that the solution? Is it, is it policies? Is it, is- That's where it's all written down. Policies is really a document that governs your AI usage."
+  },
+  {
+   "start": 2766,
+   "speaker": "David DiNardo",
+   "text": "So and you need to constantly update it and evolve it as AI changes, right? It just talks about how AI is used in an organization. What is it allowed to do? What is not? Who's gonna be the human in the loop? How are we processing financial payments? And it's all gonna be part of that AI policy. And is that what you do as an advisor?"
+  },
+  {
+   "start": 2786,
+   "speaker": "David DiNardo",
+   "text": "You go into- Yes. So tell us what you do. So we do... So we're a managed IT service provider, where we do IT, AI, cybersecurity. Again, the goal is typically working with that three S model like I mentioned. Simplify, we go in and review everything first before we do any changes. Typically, we look at the shadow IT, shadow AI."
+  },
+  {
+   "start": 2808,
+   "speaker": "David DiNardo",
+   "text": "What tools are being used in the organization right now so the owner understands, oh, okay. And so it's not just AI tools like somebody signed up for Adobe Photoshop, but it's- They're using it and, but they're, they sign up for Figma and some other accounts, so why do we have so many different tools? So removing the tools and passwords, it's very important."
+  },
+  {
+   "start": 2828,
+   "speaker": "David DiNardo",
+   "text": "Putting together, like, password manager, understanding Microsoft 365 and Google Workspace accounts. We see more and more people, like, overpaying and not saving data correctly. So that's the first step, I think. The organizing IT, simplifying IT infrastructure is very important. Then security comes in."
+  },
+  {
+   "start": 2844,
+   "speaker": "David DiNardo",
+   "text": "It usually comes down to security policy, strengthening, like, the permission levels, where the data backup. Remember when I said, like, email, if it's gets encrypted, so you need to have that all backed up. Google and Microsoft by default is not backing up your emails. In fact, when you read the EULA agreement by, for Microsoft and Google, all they care about selling you the license and uptime guarantee."
+  },
+  {
+   "start": 2870,
+   "speaker": "David DiNardo",
+   "text": "You're still responsible for security and backup of your files. So people, most businesses don't know about that, so that's where IT company comes in and we connect your Microsoft or Google tenant to backup k- software, to monit- to security monitoring software. So we monitor every single email on the other s- like, a, with a separate software."
+  },
+  {
+   "start": 2889,
+   "speaker": "David DiNardo",
+   "text": "Still, many businesses still have offices, physical offices. That's another threat is, so we're putting firewalls, like physical devices. We see many businesses just have a modem, Bell, m- Rogers modem. If you work from home, it's okay, but if you have organization, you have 20 people in the office, it's important to put, like, physical security, network security in there."
+  },
+  {
+   "start": 2910,
+   "speaker": "David DiNardo",
+   "text": "And lastly, the AI and scaling. Because again, what I see the offices on the future is the... So we combining distributed workforce, physical workforce, and AI agent together. Right. So we need to work together, so we need to create these policies. We need to understand how we're leveraging AI, starting with AI policy and then the tools, implementing tools."
+  },
+  {
+   "start": 2933,
+   "speaker": "David DiNardo",
+   "text": "Many organization wants to implement even the physical AI. We see it in the clinics right now. They don't trust anything, any cloud-based tools. They want to run their own on-premise-... AI, local AI models. And we know that, you know, hardware is getting, well, it's expensive, getting better, in terms of pricing."
+  },
+  {
+   "start": 2954,
+   "speaker": "David DiNardo",
+   "text": "You can get Mac Mini M6, - 100 buck... You know, and yes, and you can actually host your own AI models on it and then communicate with the, with the s- with the, your internal systems. I find that,.. So there's a new tool called Buzz. You can actually integrate your AI agents with your human employees as well."
+  },
+  {
+   "start": 2977,
+   "speaker": "David DiNardo",
+   "text": "In Slack and Teams you can also integrate all that now. So we're gonna start seeing more and more agents in the organizations, and those agents interact with employees. Are you doing this for your organization? Yeah. Are you c- you connecting all that? We're implementing all of that now. We're playing with multiple different models, but our goal is to Like, we have this policy w- even, like, stunt- st- starting something small, like having two screens for your employees through two monitors."
+  },
+  {
+   "start": 3005,
+   "speaker": "David DiNardo",
+   "text": "One monitor is dedicated to a AI tool all the time. So if you're, like, old school boss and you wants to make sure, like, if you're using AI, just make sure that everyone has two screens and one screen dedicated to your AI usage. You know? And you can actually monitor that as well. And would you set up a different Mac Mini for the AI versus..."
+  },
+  {
+   "start": 3025,
+   "speaker": "David DiNardo",
+   "text": "Like, would it be one desktop? It's all how you want to implement that. You can create,.. If you're a Microsoft shop, like we see lots of Copilot usage, you're creating it separate and, you're, you're creating separate data and it's all hosted by Microsoft. It's kind of very secure. If you want to start, if you're thinking more proactive and thinking about the costs of, tokens and, -"
+  },
+  {
+   "start": 3049,
+   "speaker": "David DiNardo",
+   "text": "It's getting very expensive. Yeah. OpenAI just revealed new model, $500 a month. Now imagine that times your employees. Like-... And that's not, still not... There's, there's additional tokens you have to, you have to purchase. So, yeah, I mean, you can host your own AI models on, in your office, and connecting it to your data securely as well."
+  },
+  {
+   "start": 3072,
+   "speaker": "David DiNardo",
+   "text": "I think we're gonna start seeing more and more on that. I think companies of the future will have their own AI, hardware as well. But we see right now everybody's starting to build, because it's just developing so much faster and much more accessible, you can just subscribe for subscription, like GroqBot, and then GroqBot now have a business subscription, so you have all your employees, $30 a month."
+  },
+  {
+   "start": 3096,
+   "speaker": "David DiNardo",
+   "text": "It's much easier. But again, how do you do all of that? Again, go back to this. It doesn't matter what tool you use, what LLM you use, whether it's on-premise or cloud-based, the rules will apply, like the policy, the data, the business mapping. Remember that flash team I said? You don't have to hire a brand new team."
+  },
+  {
+   "start": 3116,
+   "speaker": "David DiNardo",
+   "text": "You can turn your existing team into that AI flash team. I just want us to know, I just wanna make sure that they have a basis of AI implementation. So when I come in, I say, \"Okay, you want AI in your organization? Who's gonna be doing all of that work? I'm not just gonna s- like, I don't have capacity to do AI for you."
+  },
+  {
+   "start": 3134,
+   "speaker": "David DiNardo",
+   "text": "I'm here as an advisor, but...\" So, and we see organizations now upskilling their employees. They're like, \"Okay, who wants to champion this thing?\" Like- and again, who is gonna be the coder? Who's gonna be the data analyst here? Who's gonna be the mapping? And usually when people are,.. You can def- define those roles in the organizations, or you can hire new ones."
+  },
+  {
+   "start": 3156,
+   "speaker": "David DiNardo",
+   "text": "You can hire offshore employees as well-... For these roles if you can't afford full-time local people. Where do you see the future- Oh, future's bright. I think it's gonna be abundance. We're looking at, like again, robots and, we can spend more time, do things that's really matter. You know, creating..."
+  },
+  {
+   "start": 3177,
+   "speaker": "David DiNardo",
+   "text": "I think business is gonna foc- need to focus more on impact they're creating. You know, kind of social enterprise model, not just the bottom line. Because again, there's... I'm, I'm positive because I'm seeing how AI can cure medical diseases and cancer. Again, that super computing, super intelligence now can, will allow us to do something that we couldn't do before."
+  },
+  {
+   "start": 3199,
+   "speaker": "David DiNardo",
+   "text": "In businesses, we need less employees. What reminds me is that, when Microsoft turned 50 years old just, recently, a year ago or somewhere around that, so there's, Facebook... Oh, sorry. Apple turned 50 recently, and Microsoft turned 50 recently. But when Microsoft turned 50, three CEOs were sitting in the room, Nadella, Bill Gates, and Paul A- not sure."
+  },
+  {
+   "start": 3226,
+   "speaker": "David DiNardo",
+   "text": "There was a third one. And they put a phone with the, copilot, and they were communicating. And they were talking about that particular topic, what's the next 50 years gonna look like in Microsoft? Again, I'm only mentioning Microsoft just for example, and we do... In business, Microsoft's still becoming a..."
+  },
+  {
+   "start": 3248,
+   "speaker": "David DiNardo",
+   "text": "Well, in enterprise, so if you have 20 employees or more, like Microsoft's still leading the game. And they were talking about how the each employee will have their own copilot, which is their own,"
+  },
+  {
+   "start": 3266,
+   "speaker": "David DiNardo",
+   "text": "Think about the, accountability partner. So the, regardless what role do you have in the organization, that partner or, like, that AI, like, if you remember Clippy in, Outlook and remember old, Microsoft, that little Clippy, it was designed to help you achieve your tasks. So for CEO, the, your goal is to grow the business, to lead the, to be a visionary, right?"
+  },
+  {
+   "start": 3295,
+   "speaker": "David DiNardo",
+   "text": "So the AI will help you with that. For coder, it will help be more productive. For, I don't know, salespeople, sales and marketing, it will... It's actually big on AI agents. Like, they can be reminded who to call every single day-... To close that deal, right? So I think the future of AI in business is gonna be more productivity, more..."
+  },
+  {
+   "start": 3316,
+   "speaker": "David DiNardo",
+   "text": "You need less people, but you need to rely more on agents, but agents are actually helping people achieve their roles, their goals, right? And but in life, I think, like, the self-driving cars, we're already reaping benefits of that. Even, like, there's new, like, air taxis now, or you can actually fly now using this new technology, and becoming more affordable."
+  },
+  {
+   "start": 3339,
+   "speaker": "David DiNardo",
+   "text": "Health benefits. I think people will have more time. Like universal income. Yeah. They actually call it high universal income. Oh, interesting. I guess, people can't really yet think about it, but I do see it. I see that we just need to be back, go back to what we used to do before. We didn't have computers, and we're living happy lives."
+  },
+  {
+   "start": 3362,
+   "speaker": "David DiNardo",
+   "text": "Now we're all staring in a screen. Yeah. And I think that people need to get more time back to themselves. Yeah. Get that human-to-human interactions. Yeah. So that's my... Maybe we'll, meet in two years and we'll chat more. And you seem really excited, like you're on top of... I mean, these, news events just came out 12 hours ago-"
+  },
+  {
+   "start": 3384,
+   "speaker": "David DiNardo",
+   "text": "Like 16 hours ago. Like, you're on top of... Like, are you spending an hour, two hours, three hours, or is just, like, is it constantly on your mind? Like, how, how do you stay on top of everything? It's- 'Cause there's so much news, and there's so much like, \"Oh, this new model came out, then Grok Bot, then Claude, then this, then that list.\""
+  },
+  {
+   "start": 3404,
+   "speaker": "David DiNardo",
+   "text": "Like, how do you stay on top of everything? Yeah. And so, well, t- obviously, X is, X gives you the biggest, the most up-to-date information, the fastest information. For me, following the bigger models and news in tech world, I'm a techie. That's my passion, right? So- And I like talk about it. I'm also, building my own podcast in technology news."
+  },
+  {
+   "start": 3427,
+   "speaker": "David DiNardo",
+   "text": "I think it's important to see, technology from a lens of another person, not just from you, just to, oh, who's this, who, like the influencers who are actually talking about it. But not just form o- one, decision based on just one video. Because again, we're looking at, like some- You need to look at and create your own decision."
+  },
+  {
+   "start": 3450,
+   "speaker": "David DiNardo",
+   "text": "For me, it's because people ask me those questions, right? So I need to be up to date, and ultimately, you need to be passionate about this. I am passionate. I'm seeing what's happening. I'm seeing the future. I'm a visionary. You know how in EOS you have a visionary-... You have implementer. So I'm seeing, like, five years ahead."
+  },
+  {
+   "start": 3469,
+   "speaker": "David DiNardo",
+   "text": "I think you can start seeing, as a CEO, or, like, leaders, they usually, faster thinking and little, little further down than their employees. And I think that's what, as leaders, we need to do, is I thi- I think we need to know what's happening and how, what impact is gonna cr- is gonna, will be created because of those tools."
+  },
+  {
+   "start": 3492,
+   "speaker": "David DiNardo",
+   "text": "So I think it's just, for me, it's natural. I like to, I like to... I don't do email newsletters, because otherwise I'll go crazy. But just, I would say weekly, on a weekly basis, nowadays in September, October, this is where technology revealing everything. There's new hardware coming out from, mu- from Meta, and Google."
+  },
+  {
+   "start": 3514,
+   "speaker": "David DiNardo",
+   "text": "Right. -huh. I think the hardware is another thing. Like we, I don't want it to be stuck to my c- phone screen. Yeah. I wanna be able to communicate with it, just having conversation with AI. There's gonna be massive progress in fitness as well. You can actually put a little,.. I have a fitness trainer now."
+  },
+  {
+   "start": 3532,
+   "speaker": "David DiNardo",
+   "text": "Sometimes she's not showing up, but I would like to get, like, a device. It will keep me accountable for working out, and not just tracking my, I'm using Google right now, as my band, but just giving me that encouragement to li- live, better. And so it's not just on the business side, it's also on the personal side."
+  },
+  {
+   "start": 3554,
+   "speaker": "David DiNardo",
+   "text": "How do you become better human? How do you create better impact? And that's what, you know, keeps me, positive all the time. It's not just negative. If I was negative then I would not talk here. I wouldn't, I rather talk about how it's gonna impact us. And people come to me, and Sergey, you know, change my mind, you know?"
+  },
+  {
+   "start": 3576,
+   "speaker": "David DiNardo",
+   "text": "How do I feel differently here? And, that's where I really happy to talk about, IT, AI topics. Well, it's, I think, a very exciting time for entrepreneurs, - Because I'm with you on that. I think there's gonna be an abundance. And, you know, just playing with all these apps right now, I think there's two things in my mind."
+  },
+  {
+   "start": 3599,
+   "speaker": "David DiNardo",
+   "text": "It's, it's, like, opportunity and scary. Like, there's no middle right now for me, where I think you gotta h- look at both sides, and that's where you come in and look at the other side because as entrepreneurs, we just giddy up and go type of thing. Yep. But the awareness piece, I hope people take this conversation."
+  },
+  {
+   "start": 3623,
+   "speaker": "David DiNardo",
+   "text": "You talked about a checklist. I'd love to peel back that checklist at a high level and give it away to the audience- Yeah... Of, like, hey, subscribe or watch this episode and you can get that checklist just so you can see at a high level what to check at. And then it also could be a call to action for you."
+  },
+  {
+   "start": 3644,
+   "speaker": "David DiNardo",
+   "text": "Let's create that resource. Yeah. I'll, I'll put together a simple plan on what needs to be implemented in business from both security and AI perspective. Yeah. I'll get that for you. Yeah, so that when we release the episode, people can have it and actually have a resource that they can use as a guidance just to make you g- I think just to think about, and then they can make a decision based on what they wanna do in the future."
+  },
+  {
+   "start": 3667,
+   "speaker": "David DiNardo",
+   "text": "But I think it would, it's very valuable. I want to also, I know we're wrapping up, and I wanna say thank you for following me, for probably six months now, maybe even longer. I really appreciate all the comments and the DMs and the support and, I mean, I think Canadian entrepreneurs need to help each other out."
+  },
+  {
+   "start": 3688,
+   "speaker": "David DiNardo",
+   "text": "And the fact that you're doing it on both sides, I, respect so much because you can see the different mindsets, the different, you know, my wife's originally from US-... So I see that side and I see our side and, or Canadian side, and it's like we're all one at the end of the day. And if, you know, I think Canadians too don't realize the value we have by starting in Canada and then have a huge market in the States to potentially sell to with Reefing, The Shred, The IRAM-"
+  },
+  {
+   "start": 3725,
+   "speaker": "David DiNardo",
+   "text": "All these other stuff that we have at our, at our disposal. And that's how I'm thinking for Taxifi. It's like, holy crap, there's so much opportunity here. Build here, sell over there type of thing. - Same. I do, I do agree with you on that. Yeah. And it's 40% over there. Yeah. Crazy. So, like- Oh, yeah... The margins, the numbers always look right."
+  },
+  {
+   "start": 3752,
+   "speaker": "David DiNardo",
+   "text": "So, before we kinda end, is there any- anything that you wanna share or talk about that we might have missed that you think would be helpful? Excuse me. - No, I think, I think this is a very important topic. Yeah. For companies who are deprived themselves from using AI may go out of business. Yeah. And, no, this is, this has been great discussion."
+  },
+  {
+   "start": 3778,
+   "speaker": "David DiNardo",
+   "text": "I would love to talk to anyone who's looking for more help on AI, and we'll definitely share some, valuable tips with you. Perfect. We have a last question. If you left a sticky note on your first laptop before you ever got started, what would, what would it say? Huh."
+  },
+  {
+   "start": 3800,
+   "speaker": "David DiNardo",
+   "text": "Like before? Yeah. Your first laptop, when you're, before you started your business. I would say I'm, I'm big on delegation now, but I think back, I used to do everything myself. So I would put a little sticky note saying-... \"You should only do what only you should do.\" So now with, especially now with AI, like we can delegate so much to AI and save a bunch of time."
+  },
+  {
+   "start": 3825,
+   "speaker": "David DiNardo",
+   "text": "Also delegate to our people. Right. So should only do what only you should do. Love it. Where can people get ahold of you? My website, sergeypoltev.com or sergey@sergeypoltev.com is my email, but, ultimately LinkedIn is my number one platform. Perfect. Thank you so much. Thanks, David"
+  }
+ ]
+}
