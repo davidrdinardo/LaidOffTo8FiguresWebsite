@@ -667,3 +667,5 @@ main().catch((err) => {
   console.error("✖", err.message);
   process.exit(1);
 });
+
+// touched 2026-10-08 to trigger a sync run
