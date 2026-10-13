@@ -1,0 +1,143 @@
+{
+ "videoId": "3nAIqMi7ahI",
+ "num": 59,
+ "source": {
+  "kind": "descript",
+  "projectId": "4fcc1c10-b6f8-4828-a072-6b133b0ff81d",
+  "compositionId": "acf8c4da-5ba6-4ba3-96c1-c73fab50c27d"
+ },
+ "guest": null,
+ "summary": "David DiNardo gives an October update on building Taxifi and the thinking behind every decision: the shift to monthly bookkeeping clients, an AI chat that answers any question about a client's books in real time, and why he now frames the product as result-as-a-service rather than software-as-a-service. He explains how building AI native across the whole company, not just the product, keeps speed and control in-house, and previews the self-serve version two launching in early November.",
+ "takeaways": [
+  "Start documenting your process publicly; David says sharing the raw build of Taxifi has done more to propel the business than anything he did quietly with his previous companies.",
+  "Taxifi moved from annual sole-proprietor work to monthly recurring bookkeeping, because real-time books are where clients actually feel the value.",
+  "One client went from the red to the green in three months simply by having full visibility of her numbers through the AI chat; knowing your numbers lets you cut roughly 10% of expenses without harming the business.",
+  "Think result-as-a-service, not software-as-a-service: every feature has to tie to a result for the client, like a filed tax return, or it doesn't get built.",
+  "Pick the lane the big AI players won't touch; a vertical like filing someone's taxes is safer ground than mass-produced horizontal tasks.",
+  "Marketing is the moat: David spends one to two hours every morning building content, and keeps SEO and the website in-house so a change is a prompt away.",
+  "Build AI native across the whole business, using the 10/80/10 model (10% human upfront, 80% AI doing the work, 10% human review), and the self-serve Taxifi v2 ships at the beginning of November."
+ ],
+ "speakersVerified": false,
+ "segments": [
+  {
+   "start": 0,
+   "speaker": "David DiNardo",
+   "text": "It's the beginning of October, and there's a lot that's happened with Taxifi, and I think I haven't done a video like this in the last couple months. I wanna recap of what's going on. There's a lot all over the place, and to share this journey with my audience is actually really cool because while I was building my previous businesses, I never shared the day in the life of my business, and I never documented each step of the way."
+  },
+  {
+   "start": 29,
+   "speaker": "David DiNardo",
+   "text": "And with Taxifi, just documenting and putting that content out there has been one of the best things to propel the business. So if you're a business owner out there, that's the first advice I would give you, is start documenting your process. Just talk about it. It's so raw and it's so real that people will resonate with it."
+  },
+  {
+   "start": 51,
+   "speaker": "David DiNardo",
+   "text": "What's happening with Taxifi is there's a lot going on. One is we've really focused on monthly clients now. We were going for sole proprietorships and annual clients, and we've really locked into the monthly reoccurring revenue, monthly clients, monthly bookkeeping, get them in, do their books on a real-time basis to deliver the value they want."
+  },
+  {
+   "start": 77,
+   "speaker": "David DiNardo",
+   "text": "That's the first thing The client. With that, we've developed a chat, an AI chat that can actually go into your file and get you any results you want for your business. I want my income statement for last month. I wanna know what my expenses are. Anything you need for your business can now be prompt, and it can be delivered in a real-time basis."
+  },
+  {
+   "start": 104,
+   "speaker": "David DiNardo",
+   "text": "I have one client that's using the chat every day or every week because they see the benefit of knowing where their numbers are at. She went from being in the hole and in the red to being in the positives and in the green within three months, 'cause now she has full visibility of where her books are."
+  },
+  {
+   "start": 127,
+   "speaker": "David DiNardo",
+   "text": "She has full visibility of what her expenses are, so she can catch everything today, not tomorrow, and not in three months. The power of that, and that's how I built my whole business, knowing my numbers and making decisions on that. I look at my bank, all my banks every morning, and I look at my financials every month."
+  },
+  {
+   "start": 150,
+   "speaker": "David DiNardo",
+   "text": "I know what I need from a cash flow perspective, where my expenses are going, and all my expenses are broken down into detail so I know which subscriptions I'm paying for and how much they're costing. You'd be so surprised looking at all the details, being able to cut 10% of your expenses without even harming your business just because you're aware of things, and that's exactly what's happening with this client, which is super cool."
+  },
+  {
+   "start": 178,
+   "speaker": "David DiNardo",
+   "text": "So we're building the chat. We're building the bookkeeping. We're building the backend. We're building the team. We're building the clients. We're building the partnerships. We're building so many things in real time and putting a team around you that can execute that and be able for me to be in front of a camera and have that availability to talk, to build content, to build my personal brand just shows that recruitment and building a talented team is one of the most important things to execute every time Also, venture capitalists, equity partner, equity investors are now looking at Taxifi."
+  },
+  {
+   "start": 220,
+   "speaker": "David DiNardo",
+   "text": "Why? Because they know AI is gonna change the game. They wanna be a part of it at the early stage. And if you're running any business right now, make sure it's AI native, because that value skyrocks, and right now is the time to execute it. So beyond everything I'm looking at, money, clients, development, it's speed of everything."
+  },
+  {
+   "start": 245,
+   "speaker": "David DiNardo",
+   "text": "Speed of getting out there and deploying something, speed of delivering the service you want, speed of everything. And while I'm building this, the only thing I'm thinking about is result as a service. Before it was software as a service, but now you have to think about what is the result you're giving the client."
+  },
+  {
+   "start": 264,
+   "speaker": "David DiNardo",
+   "text": "It's not the client coming in and it just being a platform that they do the work. What result are you giving for that client? Is the result their tax return filed? Then it's a RaaS product. There's a result to that client. And while you're building your business now, that's what you gotta think about, and that's what I'm thinking about."
+  },
+  {
+   "start": 285,
+   "speaker": "David DiNardo",
+   "text": "\"Okay, this feature, what does it do?\" Like, you have to really be intentional with every feature because Claude's coming out. ChatGPT, they're coming out with new models and new feature. GrokBot, now GrokBot is agents. Like, there's so many things that are coming out now that you have to be ahead of the game and really think, \"Okay, GrokBots comes out."
+  },
+  {
+   "start": 306,
+   "speaker": "David DiNardo",
+   "text": "Will they file someone's taxes?\" Maybe, but that's a bigger push in a vertical versus, hey, helping someone send emails out that is mass-produced. So, like, you also gotta think strategically of what are the big players doing and what they're not doing and what they won't touch, and be in that lane. So you gotta really think intentionally, and that's how I'm thinking about every feature that Taxifi is building."
+  },
+  {
+   "start": 331,
+   "speaker": "David DiNardo",
+   "text": "I've talked about this numerous time, the speed of development is crazy. We have three developers. The way they're moving, they're all caught up with the de- development. Marketing is the moat, and that's why I'm in front of the camera all the time. Build content. Even when sales, operations, you get pulled into so many directions, the front and center mind for me is every morning, an hour to two hours a day of building content."
+  },
+  {
+   "start": 362,
+   "speaker": "David DiNardo",
+   "text": "When you get bigger and you have a team and you do all the whatever, then that's a different story. But in order to really understand where things are going, you gotta do it. And here's another example what I'm doing in Taxifi. Instead of outsourcing SEO, so search engine optimization, lead generation websites, I'm doing it all in-house."
+  },
+  {
+   "start": 386,
+   "speaker": "David DiNardo",
+   "text": "It's taking a lot longer for me to figure it out, but guess what? Now I have full control of everything. And when I made a switch on the website, I was talking to an advisor, he's like, \"You should do this on your website.\" While I was talking, I made a prompt and it was done. He refreshed it and he was like, \"Holy shit.\""
+  },
+  {
+   "start": 405,
+   "speaker": "David DiNardo",
+   "text": "That's the speed that I want, and that's why having the control of not only your product, but your whole business, is so powerful, and that's my mindset. So every st- step of the way, I'm building AI native from my product to my website to the sales delivery to everything so that the speed is there, the turnaround time's there, and the value's there."
+  },
+  {
+   "start": 429,
+   "speaker": "David DiNardo",
+   "text": "What good is an AI native company if your product is AI native, but everything else isn't? We're launching version two of the app or the platform beginning of November Now it's gonna be self-serving. You can come on the app if you're a small business owner, pick the industry you're in, connect your banks, and the bookkeeping is done."
+  },
+  {
+   "start": 454,
+   "speaker": "David DiNardo",
+   "text": "It's done for you. And you can have humans overseeing it to make sure that it's done properly, making sure that any nuances is covered, and you relieve the stress or anxiety of not, of a computer doing it, but now it's a computer with AI. Remember the last podcast episode I did with, an individual?"
+  },
+  {
+   "start": 477,
+   "speaker": "David DiNardo",
+   "text": "10/80/10. 10% of human upfront, 80% of the AI doing the work, and 10% at the end. That's the bu- business model I'm thinking. So you see how I'm thinking? That business model with RaaS, with AI, like, there's a lot of layers in every decision that I'm doing, and someone that is in it right now will really understand it."
+  },
+  {
+   "start": 500,
+   "speaker": "David DiNardo",
+   "text": "Someone that's not... Keep on building it, and keep on thinking of the bigger pillars, and make decisions based on that. Make decisions based on being AI native. So if a decision comes that's not AI native, put it to this side and only focus on AI native, features, decisions, all that. Focus on results. Put that as a pillar."
+  },
+  {
+   "start": 523,
+   "speaker": "David DiNardo",
+   "text": "If a feature's not relating to a result, don't do it. And these are all the things that I'm doing in Taxifi now. And, what I can say is we're growing. There are VCs that are looking at us already, in such an early stage because it's an exciting time. Everyone wants to be in professional services or in AI delivering products to people."
+  },
+  {
+   "start": 547,
+   "speaker": "David DiNardo",
+   "text": "No one knows what that means. W- someone asked me, \"Where do you see yourself in a year?\" I can't answer that because every day is completely different. All I know is stay tuned for version two of Taxifi. It's gonna be a whole new look, feel, everything. Small business owners, get ready because there's gonna be a huge impact to helping you run your business and not worrying about all these other platforms, all these other friction points."
+  },
+  {
+   "start": 576,
+   "speaker": "David DiNardo",
+   "text": "You go out, make money, and don't worry about anything else."
+  }
+ ]
+}
