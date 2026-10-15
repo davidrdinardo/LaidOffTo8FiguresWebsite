@@ -1,0 +1,1138 @@
+{
+ "videoId": "1t37WRs-7fs",
+ "num": 60,
+ "source": {
+  "kind": "descript",
+  "projectId": "c920dabc-4249-4084-a4e0-353f1019062e",
+  "compositionId": "916f2822-b43e-47f9-9f45-7a9bd2711e09"
+ },
+ "guest": "Brian Claire",
+ "summary": "Brian Claire, founder of Ottawa's Blueprint Accounting, explains how he turned a Slack conversation into a working payroll-app prototype in about ten minutes using Claude and Cursor, then validated it with a survey of 50 to 60 accounting firms before paying an agency to build the real product. He walks through the twelve-month path from prototype to paying clients, the rebrand from Payday to Nooma after a trademark conflict with ADP, co-founder and shareholder-agreement lessons, and why he thinks the speed of AI development lets small teams compete with incumbents like Wagepoint.",
+ "takeaways": [
+  "Brian built the first Payday prototype in about ten minutes: he had Claude summarize a Slack thread with his co-founder into a prompt, then handed that prompt to Cursor, and the only cost was token credits.",
+  "A survey of roughly 50 to 60 accounting firms found they juggle five to six payroll platforms on average, which is why the multi-client dashboard (the Hub) got more interest than the payroll engine itself.",
+  "The timeline from idea to paying clients was about six months: two months of prototype and conversations starting July 1, four months with an Australian agency working roughly 35 hours a week, and live by January.",
+  "Payday was rebranded to Nooma after merging with developer Hugh's Nooma Track, partly because ADP owns a trademark on the word Payday.",
+  "On partnerships Brian says to be aligned on vision, get your own lawyer rather than relying on the company's counsel, and understand exit terms like shotgun clauses and four-year vesting with a one-year cliff.",
+  "Nooma's stated goal is to automate more than 80 percent of payroll prep with a human still reviewing every run; Brian frames it as letting one payroll specialist handle ten times the clients rather than replacing people.",
+  "Brian's closing sticky note is 'discipline over motivation', and his standing advice for anyone learning AI is to tinker with the tools directly and build a reusable prompt library instead of only watching videos."
+ ],
+ "speakersVerified": false,
+ "segments": [
+  {
+   "start": 0,
+   "speaker": "David DiNardo",
+   "text": "There was a huge advantage of being an early adopter to a big platform like QuickBooks. Like, I remember paying a dollar a subscription for five years I mean, getting clients, it was mainly networking, just trying to meet people, you know, around Ottawa, around Toronto as well, and trying to get connected that way, 'cause Tell me a little bit about yourself and how you got started in accounting, and how you started your accounting firm, and then we'll kinda progress from there."
+  },
+  {
+   "start": 24,
+   "speaker": "David DiNardo",
+   "text": "It's fine. Like, I can, I can be outgoing when I need to Brian, welcome. Thanks for coming on. We're gonna geek out on AI today. Let's do it. I see you on LinkedIn all the time. You've started businesses, you've been in accounting, you have been one of the very progressive accounting firms for a while now."
+  },
+  {
+   "start": 46,
+   "speaker": "David DiNardo",
+   "text": "And now you're starting a payroll app, you're working with a practice management tool, you're automating your accounting firm. Like, you're doing everything I'm doing, essentially, just in a different way. Tell me a little bit about yourself and how you got started in accounting, and how you started your accounting firm, and then we'll kinda progress from there."
+  },
+  {
+   "start": 68,
+   "speaker": "David DiNardo",
+   "text": "Yeah, I actually, got pushed to accounting by my mom. Okay. It's funny. Just do what Mom says, right? 'Cause I did psychology first- Okay... As a degree, and then I, wasn't doing anything, and my mom said, \"Why don't you try accounting? You're good with numbers.\" Those are completely two different- I know... Like- I, you might agree with this actually."
+  },
+  {
+   "start": 87,
+   "speaker": "David DiNardo",
+   "text": "The psychology part of working with clients, that has actually come in handy a lot. And in business school, they offer psychology in business- Yeah... And I took it, and it was, like, one of the best courses- Yeah... Because you can understand employees. Yeah. Yeah. Yeah. So you can analyze everything before it even happens."
+  },
+  {
+   "start": 105,
+   "speaker": "David DiNardo",
+   "text": "Yeah. And then you can do the work. Yeah. Exactly, yeah. So I did, I did my, psychology degree, I did my accounting degree, moved from Halifax to Ottawa. I had my first accounting job in 2010. Bounced around to a bunch of different companies. Like, I was at BlackBerry, Ottawa Hospital, couple, companies in defense and aerospace, and then decided I wanna do my own thing."
+  },
+  {
+   "start": 127,
+   "speaker": "David DiNardo",
+   "text": "So hung my shingle. That was 2018. Just started plugging away, trying to find clients, and since then just been growing and- So-... Lots of changes for sure, though. So were you, in those companies, an accountant? Yeah. Okay. So during that time you were, like, a staff accountant or- Yeah... Whatever. Yep, pretty much, yeah."
+  },
+  {
+   "start": 148,
+   "speaker": "David DiNardo",
+   "text": "I was, I was mainly in, like, financial planning and analysis, I would say. Okay. That was kinda the route I went 'cause I have a CMA. Okay. Obv- as you know, they're all CPA. Right. But, that's kinda the direction that pushes you when you go the CMA route. And then how did you get to public accounting?"
+  },
+  {
+   "start": 163,
+   "speaker": "David DiNardo",
+   "text": "Versus the private. I don't know. Crazy decision. Yeah. Like, that's-- usually people go from public to private. Yeah. Yeah. You went the complete opposite. Yeah, I don't know. Just conversations with some people that I knew back in, you know, probably 2015 to 2017. Like-... They're running their business, you know, get- not getting good service, that kind of thing, and I'm like, \"I could probably do this.\""
+  },
+  {
+   "start": 182,
+   "speaker": "David DiNardo",
+   "text": "\"Like, I could help people.\" As accountants, we like helping people. Right. Right? So ha- hang the shingle, go do something with, you know, with some employees and partners and whatnot, and see what I can do from there and help people. Was there an aha moment of when you were working at these places to be like, \"I need to start my own business\"?"
+  },
+  {
+   "start": 200,
+   "speaker": "David DiNardo",
+   "text": "Like, what was the-... \"Hey, I'm leaving this security to do com- something completely different\"? Yeah. Probably I just, I think most people that start a business, they wanna have, like, their own time and kind of do their own thing. That was probably what it was. Okay. I don't think there was anything really, Foreshadowing or-"
+  },
+  {
+   "start": 223,
+   "speaker": "David DiNardo",
+   "text": "Anything like that, I guess. Just I wanna have my own time. You know? Which is clearly not the case when you have clients. Yeah, I know. Like, and then public, and then- Yeah... Additional small businesses. I'm like, \"Ew.\" Yeah. You could free up your time as much as you want. Yeah. They're, they're contacting you."
+  },
+  {
+   "start": 239,
+   "speaker": "David DiNardo",
+   "text": "So- Yeah... So you made the move in 2018. Yep. I guess you went on... Did you go on QuickBooks Online w- at the beginning? Yeah, pretty much. I didn't have to go through the QuickBooks desktop issues or-... Or, like, trying to migrate clients from one to the other. It was just straight into all the online products, so didn't, didn't have those issues."
+  },
+  {
+   "start": 255,
+   "speaker": "David DiNardo",
+   "text": "I know you started before I did. Yeah. I started- You probably did... Yeah, I started in 2016, and it was-- The product just wasn't there yet. Yeah. So you're, you're not only dealing with customer complaints, you're dealing with the actual product not working yet. But foreseeing that it's gonna work and it's just- Yeah"
+  },
+  {
+   "start": 274,
+   "speaker": "David DiNardo",
+   "text": "A matter of time. I think I read a stat the other day. It took 15 years for accountants to move over to the cloud. Like, they started in 2010, and now, 2016-- 2026, they're finally like... Yeah, I think- More than 50% made it. Yeah, more, yeah. Like we have to. We have no choice but to move to the cloud. So- I mean, Intuit's sunsetting desktop, right?"
+  },
+  {
+   "start": 297,
+   "speaker": "David DiNardo",
+   "text": "Right. So. When's that happening? Probably in a, in a few years- Okay... But I think they made the announcement, like, earlier this year just saying, \"We're not putting anything else into desktop.\" And there was a huge advantage of being an early adopter to a big platform like QuickBooks. Like, I remember paying a dollar a subscription for five years."
+  },
+  {
+   "start": 314,
+   "speaker": "David DiNardo",
+   "text": "Yes, I remember that too. And then those dollars left, and my subscriptions went from, you know, $200 a month to- Yeah... $10,000 a month- Yeah... Because you were an early adopter. How pivotable-- Like, during that time when you were jumping in, what was your mindset, getting clients and, you know, being- Yeah... So innovative and being an early adopter to it?"
+  },
+  {
+   "start": 341,
+   "speaker": "David DiNardo",
+   "text": "I mean, getting clients, it was mainly networking, just trying to meet people, you know, around Ottawa, around, Toronto as well, and trying to get connected that way 'cause no one knew who I was, right? You kinda... If you don't have a network, you also have to build it, right? So a lot of it was doing some networking, getting out to different, conferences and events and shaking hands and- Did you like-"
+  },
+  {
+   "start": 364,
+   "speaker": "David DiNardo",
+   "text": "Looking people in the eye, all that good stuff... Did you like doing that? I don't mind it. Yeah, it's fine. Like, I can, I can be outgoing when I need to. Otherwise, you know, I'll sit in my office and-... Tinker away at stuff. Yeah, because it, like, there's two personality traits with accountants. There's- Yeah... You know- Oh, yeah"
+  },
+  {
+   "start": 379,
+   "speaker": "David DiNardo",
+   "text": "Get the work done, can stay at home and be on a computer for 12 hours, and then- Yeah... You know, the social aspect is probably the last thing that comes to m- to the mind. Yeah. So you were able to distinguish both of those. And why did you make an emphasis of kinda putting yourself out there rather than doing a digital marketing campaign and- Yeah, we- Getting it out that way, that way"
+  },
+  {
+   "start": 401,
+   "speaker": "David DiNardo",
+   "text": "We did do like some, I'll say digital marketing. It was like SEO on the website-... Basically posting blogs, like nothing too crazy. Didn't do, never, have never done ads. Actually, I think we did it once and- Didn't work out... Didn't, didn't work out, so we said let's turn that off. But, yeah, it was mainly the digital marketing was just around the website stuff."
+  },
+  {
+   "start": 419,
+   "speaker": "David DiNardo",
+   "text": "But I think like going out and, like understanding people in the community and kinda meeting them and seeing what their pain points are, that's probably what opened up some of the conversations. And then they're like, \"Oh, what do you do?\" \"Oh, I'm an accountant.\" It's like, \"Oh, great. I need an accountant.\""
+  },
+  {
+   "start": 433,
+   "speaker": "David DiNardo",
+   "text": "You know, you start to get connected that way. But, so those are probably the two, I guess. Now it's definitely more SEO, like I don't really go to events anymore. But you know, we get okay lead flow, I would say. Yeah, and referrals and all that come through. So when you're going through it, you were on QuickBooks Online, and then those events, did they help you build your app stack?"
+  },
+  {
+   "start": 457,
+   "speaker": "David DiNardo",
+   "text": "Or did you just do your own internal research? 'Cause I remember- Yeah... Going to a QuickBooks Online event and seeing the wage points and seeing all the payroll apps out there. Yep. And back in 2017, 2018, I think was my first year I went, there was 20 apps, and then every year there was 40, 60, 80. And then you go in a few years ago and there was overwhelmingly, an app- Yeah"
+  },
+  {
+   "start": 483,
+   "speaker": "David DiNardo",
+   "text": "Five apps per each- Oh, yeah... Service item. Yeah, I think definitely back in like 2018, 2019, there was less, as you said. And so you have like one or two, maybe three in each of the categories. Yeah. So it was a lot easier to go chat with the vendors. Probably the only two where I've actually purchased them at a conference was Ignition."
+  },
+  {
+   "start": 503,
+   "speaker": "David DiNardo",
+   "text": "Yeah. I saw Tom Maxwell do a presentation. Yeah. I'm like, \"I gotta get this software right now.\" Yeah. I'm like, I follow Tom to the booth, like sign up right then and there. The other one was- And for anyone who doesn't know, Ignition's a proposal software for- Yep... Specifically accountants. Yeah. They're starting to branch out to just service-based businesses."
+  },
+  {
+   "start": 518,
+   "speaker": "David DiNardo",
+   "text": "Okay. But yeah, they started with accountants. The other one was Dext. Okay. Which you're, you're familiar with, receipt capture- Yeah... All that fun stuff. We were on HubDoc. Dext has more features, so ended up switching that over and signing up. And that, I think that was at a conference as well."
+  },
+  {
+   "start": 532,
+   "speaker": "David DiNardo",
+   "text": "Are you guys still on Dext? Yeah. Oh, wow. Yeah. Yeah, so we used HubSpot. - Yeah... Never got into Dext, but yeah, I was curious about Dext and their market strategy because now with, you know, all the AI tools out there, I'm shocked it hasn't been, you know, replaced. And I guess the question right there is why wouldn't someone like you replace that for..."
+  },
+  {
+   "start": 559,
+   "speaker": "David DiNardo",
+   "text": "You're paying them thousands of dollars a month. They're a SaaS model. Yep. I just went to a SaaS North conference in Ottawa, and they're saying SaaS is dead. You have a tool that, you got tools that you can create it. Yep. Is it a use case? Yeah. I mean, I've thought about it for sure. Okay. Like, I've talked to some apps that, it's like an embedded platform and you kinda build on top of it."
+  },
+  {
+   "start": 583,
+   "speaker": "David DiNardo",
+   "text": "So I've, I've definitely had those conversations, but just from, I think it's, like, a cost perspective-... And actually managing the backend and all the-... Connections and the code and all that, just didn't make sense. So some of the apps it will, some of them it won't. Right. And then you gotta look at the economics towards it too, like- Yep"
+  },
+  {
+   "start": 600,
+   "speaker": "David DiNardo",
+   "text": "Do you wanna commercialize it or do you wanna- Yeah... Just do it, you know, internally? And before this conversation, we talked about shiny objects and gems. Ooh, boy. So it's all over the place. So those two apps are the ones that you purchased at an event and you still have them- Yep... Which is great. Yep."
+  },
+  {
+   "start": 620,
+   "speaker": "David DiNardo",
+   "text": "And then from 2018 to now, was it you just running your business? Like, what, you know, tell me kind of that journey a little bit. Yep. Yep. I ha- I've actually had two partners in the past. Okay. Unfortunately, it didn't work out- Okay... For one reason or another. We don't have to go there. Yeah. But, now I'm, I'm on my own, as a solo owner."
+  },
+  {
+   "start": 642,
+   "speaker": "David DiNardo",
+   "text": "We're a team of seven, but basically went from, you know, me and my original founder of two, we went all the way up to, I think, 12 people. I split off. I've grown from three to seven in the last three years, basically. Specific small business in Ottawa or across Canada? Across Canada, yeah. Most of our clients are in Ontario, though."
+  },
+  {
+   "start": 663,
+   "speaker": "David DiNardo",
+   "text": "Okay. Probably like Toronto and Ottawa are the bulk of them. We have, you know, one in Newfoundland, a couple in British Columbia, so we're Canada wide. Yeah. East to, yeah, coast to coast. Yeah. So while you're building that, you're seeing problems. What are the- what's the first problem you see? With, I mean it- with clients could be many things."
+  },
+  {
+   "start": 685,
+   "speaker": "David DiNardo",
+   "text": "I think probably payroll is one of them, which I'm sure we're gonna- we'll talk about that. But, you know, just the different tools around payroll for sure. There's so many of them. As you know, not a lot are geared for accounting firms. It's really running them at scale is what we need versus, you know, the, let's say the Wagepoints, ADPs, Ceridians, all those softwares."
+  },
+  {
+   "start": 706,
+   "speaker": "David DiNardo",
+   "text": "It's all for the small business running it one at a time, so. And I guess in Canada, I mean, ADP, Ceridian, they're more the old school type of models- Yeah... Where c-customers would actually go to that model and do it themselves. Is that- Yep. They, they wouldn't use an accountant? They, so they could. They both offer, the customer runs the payroll themselves, or you can pay for, like, a, we'll call it a concierge service- Okay"
+  },
+  {
+   "start": 733,
+   "speaker": "David DiNardo",
+   "text": "And they'll actually run the payroll for you, which is interesting. It's like managed payroll service. Okay. Yeah. And then Wagepoint started a few y- I mean, they were one of the first in Canada. Yeah. We were on Wagepoint as well. And, -"
+  },
+  {
+   "start": 751,
+   "speaker": "David DiNardo",
+   "text": "I mean, I guess they were their only players Really in Canada, servicing payroll Yeah, that was who I started with in my firm. It was like, \"We need-- We're offering a payroll service, we need a good platform.\" Wagepoint's a great platform for sure, so we put all of our clients on it. And payroll's such a tricky thing because it's, when it's in regards to employee pay, if you mess up anything- Oof"
+  },
+  {
+   "start": 776,
+   "speaker": "David DiNardo",
+   "text": "Yeah, you are in deep trouble. Yeah, that's an easy way to lose a client, for sure. Yeah. Yeah. That's a very easy way to lose a client. So you're building your practice, you're doing your thing, and then, not happy with the existing tools out there, so y- you create your own company. Yep. And what's that company called?"
+  },
+  {
+   "start": 796,
+   "speaker": "David DiNardo",
+   "text": "So it started, it was myself and Rachel Fish. This was actually almost a year ago to the day. Okay. We started Payday. Okay. And the whole premise of that was we wanted to help accountants scale their payroll practice. And I don't know if you're aware, but, like, in the US, it's probably similar in Canada, maybe not the same amount of numbers, but, like, 300,000 accountants have left the industry in the last few years."
+  },
+  {
+   "start": 816,
+   "speaker": "David DiNardo",
+   "text": "Accountants? Accountants, yeah, which is a crazy amount of people leaving, right? In Canada we obviously have a ton of laws changing, and then, the AI boom, right? So those three things coming together, we need to find a better way for accountants to manage payroll. So Rachel and I thought, \"I think we can do this."
+  },
+  {
+   "start": 832,
+   "speaker": "David DiNardo",
+   "text": "We can solve this for them.\" And so we came up with Payday, and the whole premise behind that was trying to build tools that actually help accountants scale their payroll practice. And let's ta- let's talk about those three things. Why do you think people are not entering the accounting and people are reti- I mean, people are retiring accounting- Yeah"
+  },
+  {
+   "start": 850,
+   "speaker": "David DiNardo",
+   "text": "And people are not entering it? Yep. Yeah, I mean, people retiring, can't really do anything about that. Yeah. Probably my guess would be people not entering is either the it's not interesting to them, or probably a lot of the noise that they're hearing about AI taking over accounting. I'm sure you've seen it."
+  },
+  {
+   "start": 866,
+   "speaker": "David DiNardo",
+   "text": "It's like, you know, AI experts expect that 99% of accounting will be covered. Right. Right? So that's a little scary to think about, but- Do you believe in that? I think it'll cover certain things for sure. Like what? Like the prep things, the transactional entries and whatnot. I mean, it's even some of the review, but there's just some knowledge that you probably can't automate."
+  },
+  {
+   "start": 889,
+   "speaker": "David DiNardo",
+   "text": "A lot of it, is definitely around, like, client relationships. You're not gonna have a good client relationship with a robot, right? So, I think automating that kind of stuff and then pushing people upstream to more of the advisory review, client relationship sorta stuff, I think that's where accountants will probably go towards."
+  },
+  {
+   "start": 908,
+   "speaker": "David DiNardo",
+   "text": "So the fear of AI replacing it. I remember going to a Xero conference back in 2019. And I forget the speaker. He put on this website, \"Will a robot take over your job?\" And he put accounting, and it was like 99% right. And I'm looking at that, I'm like... And this was back in 2019. I'm like, \"Is this guy for real?\""
+  },
+  {
+   "start": 932,
+   "speaker": "David DiNardo",
+   "text": "And then, like- Y- the pandemic hit and more people were coming online. Yep. And then AI comes in and I'm like always thinking of that presentation being like, \"Was this guy onto something for real?\" Like before it even happened. Yeah. And it's not only accounting. I think it's gonna, you know, there's, I think Claude or Anthropic put out a, that graph- Yep"
+  },
+  {
+   "start": 958,
+   "speaker": "David DiNardo",
+   "text": "Showing what industry and how far AI is now. And we'll, we'll post, we'll post that graph for people. But, yeah, AI is a huge aspect of it. I think salaries too for individuals coming in. Yeah. I mean, the starting salary is very low for a staff accountant, where the accounting firm is charging $300 an hour but paying very l- like a lot less than 50 probably"
+  },
+  {
+   "start": 987,
+   "speaker": "David DiNardo",
+   "text": "Less than 50 to the staff accountant. Yeah. Right? And you have to work your tail off to ever become partner. Like that whole partnership model is done. Yeah, it's brutal. It's, it's absolutely done. I don't think people are gonna wait 10, 15, 20 years before they become partner if they even become partner."
+  },
+  {
+   "start": 1007,
+   "speaker": "David DiNardo",
+   "text": "Right. So Payroll. So th- were those the three pains that you pushed you to start Payday? Like- Yeah, I mean, those were- From an economics perspective... Yeah, those were kind of the three main drivers. Obviously, some of the software we were using, we didn't feel like it was enough. And, like, me having my own accounting firm- Yeah"
+  },
+  {
+   "start": 1032,
+   "speaker": "David DiNardo",
+   "text": "Like, I see those pains- Yeah... Firsthand, right? And, Rachel had her own firm as well. She's super involved in the, in the industry too. So, you know, just kinda talking it through as like how can we help accountants with this? So that was where Payday came. So you're collaborating with an individual."
+  },
+  {
+   "start": 1049,
+   "speaker": "David DiNardo",
+   "text": "Yep. And you're like, \"There has to be a better way.\" Yep. Pretty much. Yep. So what was the first initial thought? The, what was the first thing you did to get that going? So I actually created a prototype using Cursor. It's an AI software, basically a, like a software engineer. And I took that, and I started showing some of my accounting friends, like, \"Is this something that looks interesting to you?\""
+  },
+  {
+   "start": 1072,
+   "speaker": "David DiNardo",
+   "text": "And it had, like, super basic HR module, obviously kind of a layout for how payroll would work, and then this dashboard that we call Payday Hub with the idea of you can bring all your clients in there regardless of software and just have that one view, to view everything across payroll. What did that cost you?"
+  },
+  {
+   "start": 1090,
+   "speaker": "David DiNardo",
+   "text": "Nothing. Other than cr- I guess other than token credits, right? So it cost you nothing, you built the prototype, and then you went to go have conversations. Yep. Those conversations with w- were with friends, like colleagues of yours? Yep. And how did you approach them? \"Hey, I have a prototype. I want you to have a look at it\"?"
+  },
+  {
+   "start": 1108,
+   "speaker": "David DiNardo",
+   "text": "Yeah, like, \"I trust you. You're a smart person. I know you know AI and, like, where this could potentially go. What do you think about this?\" And what are their, what were their initial reactions? \"I no longer have to have a spreadsheet to manage all this stuff? Like, it's, it's right there. That's awesome.\""
+  },
+  {
+   "start": 1124,
+   "speaker": "David DiNardo",
+   "text": "Payroll is payroll. Like, as long as the calculations are doing it correctly, it's really just the flow of how do you get from prep to approval, right? So that was, like, a pretty straightforward sell. But then i think it was more around the Hub that they were super interested in. So- Let's talk about the Hub."
+  },
+  {
+   "start": 1140,
+   "speaker": "David DiNardo",
+   "text": "What's the Hub? Yeah. You know, the idea is bring all the payrolls together 'cause through our problem validation, we figured out that- Through your what? Problem validation. Okay. We sent out, like a survey to accounting firms- Okay... Just to get some feedback. And, most of them on average told us they have five to six payroll softwares that they're using."
+  },
+  {
+   "start": 1160,
+   "speaker": "David DiNardo",
+   "text": "So you can imagine, like, the context switching, the learning of all the platforms. Like, all this stuff goes into just taking off time from actually doing the work. So you're now creating surveys, sending it off to your colleagues- Yep... To be like, \"This is-\" What is your exact pain point and problem? Yeah. How many people did you send that to?"
+  },
+  {
+   "start": 1181,
+   "speaker": "David DiNardo",
+   "text": "I think we probably got about 50 or 60 responses. So statistical significance is 40- Yeah.... Which is good. Okay. That's from a s- stat- statistics course that I had back in university. So yeah, we had probably, like, 50 to 60 responses and like I said, the average was, like, five to six payroll platforms that firms are using."
+  },
+  {
+   "start": 1201,
+   "speaker": "David DiNardo",
+   "text": "And I wanna emphasize this so much because when you're building AI, right now you spend just token money- Yeah... And your time and, email platform with quizzes that you just thought about- Yeah... To get responses for validation that this is s- something plausible. Yep. So now you have- The quiz, you have your prototype, you have the conversations, now what do you do?"
+  },
+  {
+   "start": 1224,
+   "speaker": "David DiNardo",
+   "text": "I'm gonna back up here actually. Okay. Perfect. The prototype that I built, it took 10 minutes. Okay. You just did a prompt? Yeah. I pretty much-- I was having a conversation over Slack with Rachel. Yeah. And I went over to, I think it was Claude, and I said, \"Summarize this,\" and it gave me, like, an initial prompt, and I'm like, \"Eh, let's tweak this and that,\" and you start to have the conversation back and forth."
+  },
+  {
+   "start": 1245,
+   "speaker": "David DiNardo",
+   "text": "And as we're having that conversation, I'm like, \"Okay, we'll keep talking about this. I'm gonna go prompt Cursor to go do something.\" Yeah. Right? And, like, 10 minutes later had this initial prototype, which is crazy. Yeah. 'Cause you think even back in, you know, 2019, like, we would have to pay a developer- Correct"
+  },
+  {
+   "start": 1260,
+   "speaker": "David DiNardo",
+   "text": "To do that, and that's probably tens of thousands of dollars. Yeah. And it's funny 'cause I'm doing that in Taxifi right now. Anytime there's new requirements, I'm just, I'm going into Perplexity- Yeah... I'm building the prototype, and I'm sending it to the developer. Then he knows exactly what the flow is- Yeah"
+  },
+  {
+   "start": 1276,
+   "speaker": "David DiNardo",
+   "text": "What I want, so it saves money from a development cost. Absolutely. And it's all in my mind. But communicating it without a visual, very difficult to do. Oh, yeah. So you're-- And it's funny you took it from Slack, because those are the raw conversations that need to be put into these platforms to get the real results out of it."
+  },
+  {
+   "start": 1297,
+   "speaker": "David DiNardo",
+   "text": "Yep. So less than 10 minutes, less than an hour, we'll give it that. Yeah. Let's call it an hour of, like- Right... Going back and forth, but then once that initial prompt was in, Cursor went. And I guess before you got accustomed to Cursor and all these AI apps, were you spending an hour, two hours a day on AI?"
+  },
+  {
+   "start": 1316,
+   "speaker": "David DiNardo",
+   "text": "Like, when ChatGPT first came out, what was your initial reaction to that? Yeah. Like, get me in there. Let me play with it, right? Like, I'm a tinkerer by nature. You know, we talked about shiny object syndrome. Like, I definitely see a new app, and I gotta go test it. I gotta go see if it'll help either, like, me and my firm or my clients or something, right?"
+  },
+  {
+   "start": 1338,
+   "speaker": "David DiNardo",
+   "text": "So definitely, like, get into ChatGPT, start having conversations with it. You know, definitely use-- we switched over to Claude a few months ago, but-... Definitely use it daily. And they're just asking questions. You know, I have other projects that I'm working on that I'll, I'll kinda go and build on top of those, so."
+  },
+  {
+   "start": 1353,
+   "speaker": "David DiNardo",
+   "text": "So now-- So you've been playing around with it for the last two years. Yep. So you kinda know what to prompt. It's all set up for you. Yeah, for the most part For the most- No, I'm not perfect. Yeah. You know? Yeah. No, and I'm just, I'm visualizing someone just starting out- Yeah... Maybe with, less experience, that that 10 minutes, they might feel intimidated by, \"Hey, why isn't my prototype working in 10 minutes?\""
+  },
+  {
+   "start": 1377,
+   "speaker": "David DiNardo",
+   "text": "But you did have a couple years of playing around with it before- Yeah... You did that prototype. Yeah, I mean, I find the easiest way is honestly just send a super basic question, no parameters around it, 'cause it'll just blabber on as you know, and-... And, like, explain something, and then you just start having the conversation."
+  },
+  {
+   "start": 1394,
+   "speaker": "David DiNardo",
+   "text": "If you get to a final product-... And it's something that can be reused, it's, it's basically just a, a prompt back to the AI to say, \"Hey, can you build me a prompt that I can reuse so I can get this answer every time?\" Right? And now you're just starting to build out your prompt library from there."
+  },
+  {
+   "start": 1410,
+   "speaker": "David DiNardo",
+   "text": "Right. And d- did you go on a course for prompting? I mean, they, everyone talks about prompting, engineering- Yeah. Yeah... And all that. Is it just you playing around with it? Yeah, just tinker. Like watch some YouTube videos, read some X threads or like Facebook or LinkedIn, that kind of stuff, and just tinker."
+  },
+  {
+   "start": 1429,
+   "speaker": "David DiNardo",
+   "text": "So now you have a prototype, you have user validation, then what? Then we started, doing a bit more marketing. So we work with, Journey, you know, Jordan Vickery and Trent McLaren. Do you know them? Trent used to work at Ignition. Okay. Yeah. But, they have a marketing agency that works with SaaS companies, so- Okay"
+  },
+  {
+   "start": 1449,
+   "speaker": "David DiNardo",
+   "text": "I already knew the two of them, so we got connected with them, and they're helping us with our marketing. And, Rachel and I did a, like a soft launch in Toronto around Accountex 2025. Okay. So we had like 30 or 40 people at Scaddabush. So this prototype, h- how, could you use it? Like h- what's next?"
+  },
+  {
+   "start": 1470,
+   "speaker": "David DiNardo",
+   "text": "Like do you have to hire a developer? Yep. So we, yeah, we did that soft launch, but then between, I think it was September 2025 to probably like dec- early December 2025- Four month- three, four months... Yeah, we ended up working with a developer to actually take the prototype and polish it, basically make it a real app."
+  },
+  {
+   "start": 1492,
+   "speaker": "David DiNardo",
+   "text": "And then just started onboarding people in like early December, early January. So the soft launch, you still used your prototype? No, we did have like, we were like two weeks out from actually having something that was usable, so we said we'll just show what we have. Definitely had some glitches for sure, as demos always go."
+  },
+  {
+   "start": 1511,
+   "speaker": "David DiNardo",
+   "text": "Yeah. I'm sure you're- Would you, would you recommend that? Yeah. Would you recommend waiting two weeks? I personally like showing things that we have-... Just to like get excitement and-... And talk about it. I mean, you can certainly talk about like a roadmap, which I'm sure- Yeah... Like you do with Taxifi, I'm sure."
+  },
+  {
+   "start": 1528,
+   "speaker": "David DiNardo",
+   "text": "Yeah. You know, it gets people interested for sure. I do feel showing something is a bit more, like people can understand and they see it and people can, yeah, like understand what you're doing. You know, prototypes can work for sure, as I'm, as I'm sure you've done when you were building Taxifi. You probably had some prototypes, right?"
+  },
+  {
+   "start": 1548,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Yeah. So, you know, as long as you can click through and show stuff. I know like people will show Figma files. Right? Which allows you to click through, but it's not actually an app. It's almost like a- slide deck. Right? But I like to show things, so. And, but showing it in front of people- Yep"
+  },
+  {
+   "start": 1567,
+   "speaker": "David DiNardo",
+   "text": "Different than one-on-one. Yeah. Versus, like, if th- is this gonna really work? Oh, yeah. There. Like, what was your mindset going into that room full of people that, you know, took time to get there and- Please work, please work, please work... And did it work? No, we actually had a glitch. Yeah. Okay. We were, we were showing our, onboarding flow."
+  },
+  {
+   "start": 1588,
+   "speaker": "David DiNardo",
+   "text": "Yeah. And, like, how do you actually take-... 10 clients and onboard them at the same time instead of, like, one by one, and there was a glitch. And I'm like, \"This, this is a glitch.\" Like, yeah, unfortunately it happened, but this is what it's gonna do, and this is what it does do. Like, just... I think it was, like, a Wi-Fi issue 'cause we were connecting to public Wi-Fi."
+  },
+  {
+   "start": 1604,
+   "speaker": "David DiNardo",
+   "text": "But- And how did it turn out? I mean, it was fine. Like, we got really good feedback. You know, things that we took from there we've definitely implemented in the product since then, and definitely the product has changed since then. Yeah, it's funny because when I was doing a live event to show Taxifi, I had one of my colleagues here, and I was like, while she's clicking around the buttons, I was like, \"Oh, is that gonna work?"
+  },
+  {
+   "start": 1628,
+   "speaker": "David DiNardo",
+   "text": "Is that gonna work?\" Like, I don't know if I tested that scenario or that scenario, and you start to worry a little bit because we're not developers. Like, this is... And this is the whole new way of being an entrepreneur is, okay, you started off as in psychology. Then you went to accounting. Yep. And now you're a tech founder."
+  },
+  {
+   "start": 1653,
+   "speaker": "David DiNardo",
+   "text": "Like- It's kinda crazy to think about, honestly. Kinda. It's really crazy. And I'm, I... Same with me. I mean, I went to school for my MBA, worked at the auto as a consultant. That was kind of the trajectory for me. Then started an accounting company, and now I'm a tech founder, and I'm like, \"Wait.\" I think a lot of people are gonna be able to skip maybe a lot of these steps to go right to tech founders."
+  },
+  {
+   "start": 1676,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Yeah. And, you know, even just your timeline of you started a year ago And from, so a year, it's, it's almost July, let's say call it July 1st. That actually was the date. Oh, July 1st? Yeah. Okay, so July to September- Yep... You're building the prototype and having conversations. Yep. So that's, you know, August, two months, really."
+  },
+  {
+   "start": 1702,
+   "speaker": "David DiNardo",
+   "text": "Yeah. And then within four months, like, those two months were conversations, four months of development- Yep... And then call it January 1st- We're live... You're live. Yep. And you have a paying client. And honestly, you can probably go faster than that. Right. Like, if you're an actual developer and you understand the code, you can easily spin something up on a weekend."
+  },
+  {
+   "start": 1726,
+   "speaker": "David DiNardo",
+   "text": "Wow. Yeah. And that's just the, be using AI- Yeah... Instead of actually sitting there and typing things out. Yeah, and you're also even talking about payroll, which has, needs security, like back end. Yep. Like, it's not a simple app. It's- No... The infrastructure needs to be really reliable. Yep."
+  },
+  {
+   "start": 1748,
+   "speaker": "David DiNardo",
+   "text": "Definitely. So, like, other people, like, we're talking about a receipt upload or, well, maybe you need security for that, but there's other apps out there that might not need as- Yeah... Intensive of infrastructure. Yep. Now, this developer, was he on it eight hours a day for four months? Like, just to give a premise of if people wanted to start a platform."
+  },
+  {
+   "start": 1773,
+   "speaker": "David DiNardo",
+   "text": "They, yeah, they were probably, it was a, it was an agency that we got introduced through. Okay. They're in Australia. Okay. But they were probably doing, like, 35 hours a week- Okay... At most. Okay. Some weeks less, like they take vacations and stuff. So what's, how does that work? You get the prototype, and you engage with an agency."
+  },
+  {
+   "start": 1795,
+   "speaker": "David DiNardo",
+   "text": "Yep. You meet with them, like, tell us a little bit about that process. Yeah, we were meeting weekly. I think it was on Mondays. How did you get ahold of these guys? How did you know them? So it was through the Journey team. Okay. Yeah, we got connected and they actually helped them build an app that they have now in the market."
+  },
+  {
+   "start": 1810,
+   "speaker": "David DiNardo",
+   "text": "Okay. And so we got connected to them that way, and then, yeah, it was just meeting weekly, you know, updates on what's going on, like what are the conversations we're having with accountants, what is something we maybe wanna take and put into a feature set within the app. And did they give you a timeline budget- Yeah"
+  },
+  {
+   "start": 1826,
+   "speaker": "David DiNardo",
+   "text": "Like all that- Yeah... With you guys? Yep. Exactly, yep. And were you, I mean, I don't wanna get into the numbers, but were you shocked on the cost, or it was under, like- Little bit. Yeah, and I, I wanna, I mean, I'll talk about it for myself, but it's still not cheap. Agreed. Yeah, like it's, you still need quite a bit of money to- Yeah"
+  },
+  {
+   "start": 1848,
+   "speaker": "David DiNardo",
+   "text": "To take that oppor- that, take that swing. Yeah. For sure. Especially if you're not a developer, right? Right. If you're a developer, you're gonna save. You're basically just paying your time and your tokens like I did- Right... With the prototype. Right. But when it's like you and I, we're clearly not developers."
+  },
+  {
+   "start": 1863,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Yeah, there's, it's a bit, a bit of extra cost there. And did you vet other companies, or you just knew this was the right agency for you guys? We talked to a few, yeah. We did have one originally. Unfortunately, it didn't work out. But, then we got connected to these guys and they already knew the ecosystem 'cause they've built apps that connect to, like, QuickBooks and Xero."
+  },
+  {
+   "start": 1881,
+   "speaker": "David DiNardo",
+   "text": "So they already knew that. So that was, that was really good to leverage that and kind of build faster that way. And when... Okay, so you're an, a tech founder, s- self-taught. Yep. Right? Yep. Like, no formal education- Yep... And no development. Same with me. Yep. When you're engaging with these individuals, does, like, what goes through your mind of, like, trust and backend- Yeah"
+  },
+  {
+   "start": 1909,
+   "speaker": "David DiNardo",
+   "text": "And, like, really technical stuff? Are they doing it right? Like-... How do you approach that? I'm a pretty trusting person. Like, we're all adults is the way I kind of view it, and if I'm paying someone to do something, I'm expecting them to deliver on, you know, what we've agreed on. So I think probably a little too trusting maybe."
+  },
+  {
+   "start": 1927,
+   "speaker": "David DiNardo",
+   "text": "But I also don't, I don't wanna go into their domain and try to tell them what they need to do 'cause I expect that because I'm paying them, they're the experts, so they know what should be what. But are they talking about how the architecture should work and the security around it and all that?"
+  },
+  {
+   "start": 1944,
+   "speaker": "David DiNardo",
+   "text": "Like, high level, I would say, 'cause when we start to get into the nitty-gritty, it's just stuff I'm not gonna know. Right. I could for sure take it back to Claude or ChatGPT and be like- Yeah... \"Hey, this is what the developer said. Like, what does that mean?\" Right. Like, explain it to me like I'm five. Right."
+  },
+  {
+   "start": 1956,
+   "speaker": "David DiNardo",
+   "text": "And like I do that stuff, for sure. Right. But, you know, some of it again is just that trust factor of, like, they're already a known entity- Yeah... 'cause they work with someone that I know, and so I'm trusting that they'll give us the same kind of respect and- Right... And trust around that, I guess. And why I ask that, because when I was building mine, I was fortunate the developers are in Ottawa, so I- Nice"
+  },
+  {
+   "start": 1979,
+   "speaker": "David DiNardo",
+   "text": "I've had conversations with them. And I- Tell them, \"Tell me how it is like if I was five years old.\" And- Yeah... They would repeat it and repeat it for me to understand it. Cool. But I still don't understand a lot of it. Like, it is- A lot of technical stuff It is a lot of technical stuff and- Yeah. I mean, there's things you probably picked up though"
+  },
+  {
+   "start": 2005,
+   "speaker": "David DiNardo",
+   "text": "And you're putting a lot of money towards it to where it's like you wanna have a grasp where you can communicate it. Yeah. But, it's kinda like opening the hood. You don't really know what's under the hood, which is kinda scary. Yep. That never crossed your mind though? Yeah, for sure. For sure it does."
+  },
+  {
+   "start": 2022,
+   "speaker": "David DiNardo",
+   "text": "I think, like you said, you just gotta ask the questions and try to understand as best as you can. I mean, the nice thing is, like, I do have some friends that are technical. They just, they didn't wanna leave their jobs, I guess. So, I can at least lean on them and be like, \"What does this mean? What is this person talking about?\""
+  },
+  {
+   "start": 2037,
+   "speaker": "David DiNardo",
+   "text": "And ask them questions, so that does help a bit, like if you have that kind of network. Other than that, like, Claude and ChatGPT I guess to try and understand it if you can't understand what they're saying. So, the four months of you developing it, you're meeting with them weekly. You're seeing the progress."
+  },
+  {
+   "start": 2054,
+   "speaker": "David DiNardo",
+   "text": "Yep. Are you now building a marketing campaign? Like, what's, what's happening in parallel now? Yeah. So, marketing's definitely going in parallel. So, I mentioned Journey, like we were working with them, kind of explaining what we're trying to build. And like they, again, they already have the domain expertise as well, not just marketing, but they've worked in the accounting industry and like sold tools to accountants."
+  },
+  {
+   "start": 2076,
+   "speaker": "David DiNardo",
+   "text": "So, that was nice to, for them to already understand our market that we're trying to sell to. And so we're, you know, we're doing webinars and, social posts and just regular cadence of things that are going on that we're just trying to build that brand up and help people understand. I mean, the nice thing was because we're selling into a market that I already know-"
+  },
+  {
+   "start": 2097,
+   "speaker": "David DiNardo",
+   "text": "Like Rachel and I already have really good connections in the industry. So, people already knew us-... And they already trusted us. So they're, and y- if you can't use the product, they can't use the product. Right. So like you're using it at your firm. Yep. And if it doesn't work, no one, it's not gonna work for anyone."
+  },
+  {
+   "start": 2115,
+   "speaker": "David DiNardo",
+   "text": "Yeah. And I mean, dog fooding's the best way. Yeah. Build something, use it yourself. Yeah. Give it to someone else to use, so. So, you're building the marketing campaign. What worked from your experience from a marketing campaign if someone wanted to start an app? Like would you recommend going an agency?"
+  },
+  {
+   "start": 2133,
+   "speaker": "David DiNardo",
+   "text": "Would you do a founders-led marketing, social media? I mean, you do post a lot on social media on yourself. Yep. What have you seen that you would do again or you wouldn't do again? I think for sure you gotta find where your target market goes and like where they spend their time. For us, it was LinkedIn."
+  },
+  {
+   "start": 2153,
+   "speaker": "David DiNardo",
+   "text": "That's a no-brainer. I mean, we could go to X, but that's kind of a dumpster fire in my opinion. So, like we were already on LinkedIn. As you said, I post a lot on LinkedIn, and like people know who I am generally inside of our ecosystem. So we were, you know, working with Journey. It's everything goes to LinkedIn."
+  },
+  {
+   "start": 2170,
+   "speaker": "David DiNardo",
+   "text": "Redirect to, like, our website or, like, signing up on a webinar, and then we're just capturing all that data. So I think probably the biggest one is find where the, where the fishing holes are for that specific target. And did you find out who your ideal client is? Like, is it a- an account with less than five employees, 10 employees, 20 employees?"
+  },
+  {
+   "start": 2188,
+   "speaker": "David DiNardo",
+   "text": "Do you build up from it? Like, did you go deep into the customer journey? Yeah, it probably started with smaller firms, I would say. Like, ones around, you know, my firm size. We're, like, seven employees who got, you know, probably 20 or so, clients on payroll. But if you think about payroll and the way that we're trying to scale it could really go up to, like, a big four firm- Yeah"
+  },
+  {
+   "start": 2209,
+   "speaker": "David DiNardo",
+   "text": "In theory, right? But, you know, we started, definitely started, talking with firms that are on the smaller side. You know, we have some right now in the, in the pipeline that are, like, 150 to 300 clients. Right? So, like, getting a lot bigger. Well, I guess, yeah, so if you get one client, that one client has 20 clients that are on- Yeah"
+  },
+  {
+   "start": 2226,
+   "speaker": "David DiNardo",
+   "text": "Payroll, so you actually have 20 clients- Yep... Using your platform. Yep, exactly. And then, like, I remember talking to the Wagepoint CEO, I forget his name. Exeo. Ben? Oh, Exeo. Shrad. Yeah. Yep. And he said the support calls were incredible. Are you finding that as well? We're, we haven't had too many phone calls, to be honest, which is surprising."
+  },
+  {
+   "start": 2247,
+   "speaker": "David DiNardo",
+   "text": "But, like, we're on Intercom-... For our support, so people will just message us directly through the app. And, you know, we have maybe one a day, one every other day, so, which is good, I think. But we're also not at the scale of, like, Wagepoint, where they've got-... Thousands and thousands of companies, so they probably have a lot more tickets than we would."
+  },
+  {
+   "start": 2263,
+   "speaker": "David DiNardo",
+   "text": "And who's handling... So now, while you're, while you're... And did you find that the flow from LinkedIn to having webinars and actually showing the product, was that the right flow for you guys? So far, I think so, right? Just to get more people on and, you know, we're starting to build out more, I guess, like, internal content, we'll say."
+  },
+  {
+   "start": 2286,
+   "speaker": "David DiNardo",
+   "text": "It's just the, you know, the help articles and stuff like that, so that when people do actually sign up, they can understand how to use the product. But I think initially, yeah, like- You gotta talk about it. If you're not talking about it, people aren't gonna know about it. So you find where the people are, start posting there."
+  },
+  {
+   "start": 2303,
+   "speaker": "David DiNardo",
+   "text": "The webinars were, they were okay. We're probably getting like 50 people per webinar. Oh, good. And that happens every couple weeks? Yeah, we, so we originally started with webinars and then, just through talking with Journey and figuring out our marketing cadence, we actually decided to start a Facebook group."
+  },
+  {
+   "start": 2320,
+   "speaker": "David DiNardo",
+   "text": "Okay. And so it's, I'm gonna butcher the name, I keep forgetting it, but- I think it's Canadian Payroll Practice Builders. Okay. Yeah. And then Rachel and I do a Facebook Live every, it's like two a month basically. Okay. And, we're just talking about payroll and like how to build payroll inside your practice."
+  },
+  {
+   "start": 2339,
+   "speaker": "David DiNardo",
+   "text": "Amazing. Yeah, so. And so you're getting... So your l- your flow is from LinkedIn to f- the Facebook page. Yep. And then doing a live talking about payroll and any updates and- Yep... Feedback. Yeah, we bring like other firm owners on- Nice... To like get their experience. So, you know, we had, who have we had? We had Holly Pang from Trust Us."
+  },
+  {
+   "start": 2362,
+   "speaker": "David DiNardo",
+   "text": "She was talking about working with lawyers. We're gonna have James Donovan on to talk about lead gen for payroll services. Okay. Yeah, so a kinda like different mix of people basically. And it's, it's once a month you said? Twice a month. Twice a month. Yeah. So like when's the next one, just so- July- Yeah"
+  },
+  {
+   "start": 2380,
+   "speaker": "David DiNardo",
+   "text": "July 8th I think it is. Okay. So this might not go out before July 8th, so then after July 8th, when's the- tail end of July. Tail end of July. Yeah. Okay. And is it an hour? Yeah, like 30 to 45 minutes. Cool. Yeah. That's awesome. Yeah. So now you are tweaking the lead gen, you're building the app. Were you- Surprised or not surprised with how fast it was being developed and the whole process within the four months before you launched it on January 1st?"
+  },
+  {
+   "start": 2416,
+   "speaker": "David DiNardo",
+   "text": "Like, what was that- you'll probably agree with this, but I wanted it to build, be built faster. Okay. I feel like every owner of an app wants it to be built like, you know, the next day basically. I think the way they were going about it, you know, made sense for how we would need to roll out some features, but for sure, I want it to build faster."
+  },
+  {
+   "start": 2436,
+   "speaker": "David DiNardo",
+   "text": "Do you think it could've been built faster? I don't know, honestly. Like I don't know what I don't know, so-... You know, I'm a, I'm a amateur vibe coder- Yeah... Let's say. So in my mind I'm like, \"Oh, I can just add that feature right now,\" right? But is, am I really capturing all the technical aspects of it?"
+  },
+  {
+   "start": 2453,
+   "speaker": "David DiNardo",
+   "text": "Probably not. Now, when they're asking you for additional requirements, are you still building the prototype out, or it now becomes more back and forth? Yeah, more back and forth for sure, and I think that's where Rachel and I started having discussions with a lot of our ideal client profile, like the accountants."
+  },
+  {
+   "start": 2470,
+   "speaker": "David DiNardo",
+   "text": "And figuring out what are some of those tools that they need, and then how do we translate that into like a product requirement document for the developer. Right. Right, and then you just kind of give it to them, they develop and kinda- Give them feedback and yep. And now are you, now that the infrastructure is built, are you seeing the speed of the development happen quicker?"
+  },
+  {
+   "start": 2493,
+   "speaker": "David DiNardo",
+   "text": "And why I say that's what I'm seeing big time right now for me. Yeah. So we've actually, we've changed the name as well. Okay. Right? So we went from Payday, and then we met, our new co-founder, Hugh. Okay. He lives in Toronto. He was building a very similar product, just a bit ahead of us 'cause he's an actual developer, so he can go and like do that stuff in a night, right?"
+  },
+  {
+   "start": 2516,
+   "speaker": "David DiNardo",
+   "text": "So a lot of the features that he built, we were gonna build. Ended up hitting it off and we said, \"Yeah, why don't we merge and we create this new product?\" And so we had to rebrand 'cause ADP unfortunately owns a trademark to the word Payday. Okay. And we don't wanna get sued by ADP. Right. Yeah. Yeah. You'd probably lose that one."
+  },
+  {
+   "start": 2532,
+   "speaker": "David DiNardo",
+   "text": "Yeah. So we rebranded to Nooma. Okay, which means? And, it was, it was like Hugh's original company was Nooma Track. Okay. And so we kind of, we just dropped the Track 'cause his original thesis was around, building time tracking and scheduling, and then he just kind of built more on top of that and became like a full-fledged platform."
+  },
+  {
+   "start": 2552,
+   "speaker": "David DiNardo",
+   "text": "So we just dropped the Track. Now it's Nooma. But we have, you know, a lot more, lot more features inside of the platform, so it's payroll. I keep touching the mic there. Payroll, a people platform, so like HRIS. - S- like a Bamboo HR type of thing? Yeah, kind of. Not as, not as robust, for sure."
+  },
+  {
+   "start": 2571,
+   "speaker": "David DiNardo",
+   "text": "Yeah. But, some of the, some of those HR features that you might need. So we have those two. We have time off, time tracking, and scheduling. Wow. Yeah, so it's like a full-fledged platform, basically. It's crazy how the scope gets increased pretty-... Pretty incre- like- Yeah... And that's exactly what happened with Taxifi."
+  },
+  {
+   "start": 2591,
+   "speaker": "David DiNardo",
+   "text": "We started small, and o- originally we were just starting as a sole proprietor, automate your taxes, and then we had to, we did the bookkeeping, and then I'm like, \"Oh, that's going pretty fast. Let's, let's do corporate.\" So we just finished our first corporate client through it. Nice. And it's, yeah, the speed of- Yeah"
+  },
+  {
+   "start": 2614,
+   "speaker": "David DiNardo",
+   "text": "Development is here. Oh, yeah. So even last night, Hugh built a feature in like a couple hours- Yeah... Where we had a discussion with a firm that we're trying to bring on, and they're like, \"I really wish you had this feature 'cause another software has it.\" And we're like, \"Okay. Well, let's, let's talk about that.\""
+  },
+  {
+   "start": 2632,
+   "speaker": "David DiNardo",
+   "text": "And then Hugh scoped it out, builds it in a couple hours, and we sent the guy a video. Haven't seen any message back yet 'cause we sent it like last night at midnight. But just the fact that he's able to do that, like you said, it's so fast, and like he knows how to build it 'cause he's a developer."
+  },
+  {
+   "start": 2646,
+   "speaker": "David DiNardo",
+   "text": "He's using Claude Code, for sure. And then just be able to like translate what that person wants, get it in the software, and now we have it. It's like super exciting but very scary. Yeah. Yeah. What's exciting about it and what's scary about it? It's, I mean, it's exciting for me to, from the tech side, to be able to like build this stuff so quickly."
+  },
+  {
+   "start": 2670,
+   "speaker": "David DiNardo",
+   "text": "And like get it out, 'cause I'm sure you've worked with software companies in the past that like went through your accounting firm. You know, their development time was months. Yeah. People do it in like two or one-week sprints- Yeah... But, you know, it takes months to actually build out a full feature product or a feature rather."
+  },
+  {
+   "start": 2687,
+   "speaker": "David DiNardo",
+   "text": "Now, like just this one example, it took them a couple hours, right? It wasn't like a huge feature, but it's just something that we needed to include. So that's super exciting. The scary part I guess is more for my accounting firm is like how is this all gonna replace some of the stuff that we're already doing?"
+  },
+  {
+   "start": 2704,
+   "speaker": "David DiNardo",
+   "text": "Which, we're talking about that internally anyways. Yeah. Yeah, but... Yeah. Where do you see... I mean, before we get to that- You've had partners in the past. Yep. You've had partners now. Yeah. What have you learned moving into this partnership? Definitely be aligned on vision. Definitely. If you're not aligned on vision, it's not gonna work."
+  },
+  {
+   "start": 2727,
+   "speaker": "David DiNardo",
+   "text": "And what's the vision for- So we, our main vision is we think we can automate a more, greater than 80% of payroll prep. Right? We want a c- we want the payroll specialist or the accountant or the bookkeeper to have hands-off, the payroll's prepped, and they just get a notification that says, \"It's ready for you to review.\""
+  },
+  {
+   "start": 2747,
+   "speaker": "David DiNardo",
+   "text": "And interestingly, I talked with one firm owner that just this week, I think it was yesterday, and he was saying he was having trouble with hiring just payroll specialists. Right. 'Cause they know, they really know the law-... Really well, but they're not the best at, like- Yeah... Ticking and tying things up- Yeah"
+  },
+  {
+   "start": 2762,
+   "speaker": "David DiNardo",
+   "text": "Like accountants are. Yeah. Right? And so if you think about that- Yeah... If the prep's already done- Yeah... They can just verify it and use that brain and knowledge- Yeah... From their training to just make sure it's good, and they don't have to tick and tie things. 100%. Even I remember running my firm, payroll was always to find someone that knew it, liked it, enjoyed it."
+  },
+  {
+   "start": 2784,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Where there might be one, but if that one could now do 200 clients versus 20 clients- Yep... You're gonna win. Yep. Okay, so vision is you have to be aligned with vision. Yep. I think the, like, personality and, like, how we collaborate with each other is probably the next biggest thing. Like, if one of them's an asshole and the other two are not it's probably not gonna work out, right?"
+  },
+  {
+   "start": 2810,
+   "speaker": "David DiNardo",
+   "text": "I think you do have to have some person- personality alignment there. Shareholder agreements. Oh, yeah. Yeah, like- Yeah, definitely. You gotta protect yourself- Yeah... No matter what, 100%. And what's the p- what are the top three thing, like shareholder agreements, go to a lawyer, everyone has their own lawyer, like- Yep"
+  },
+  {
+   "start": 2827,
+   "speaker": "David DiNardo",
+   "text": "Type of thing? Like- Yeah... How formalized should it get or should it not get? I would definitely have your own lawyer. Yeah. Yeah, like you can, you can certainly have an agreement where it's like we're gonna use one corporate lawyer, but they're only gonna be working from the perspective of the company."
+  },
+  {
+   "start": 2843,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Right? And even though you're a shareholder of it, like, yes, they're gonna try and protect you, but you may have your own things that you need to protect yourself. Right. So I would definitely get your own personal lawyer to review things and make sure that you're protected. And why I ask that, I mean, I tried a partnership once, and it didn't work out for me."
+  },
+  {
+   "start": 2862,
+   "speaker": "David DiNardo",
+   "text": "And- I've gone there too. Yeah. They get me every time. 'Cause it's, it's like a marriage. You really have to be- Yeah... Aligned. And maybe that- philosophy was how the old type of business were, where maybe you run it for the lot next 20, 30, 40 years and, but maybe it's gonna change too, where this business can get off the road in a year or five, six months."
+  },
+  {
+   "start": 2890,
+   "speaker": "David DiNardo",
+   "text": "Like, if you start another business, it probably could be faster. You can build up clients and maybe get acquired quicker. Like, the turnaround time for that relationship might not be the longevity anymore. Yeah, maybe. Yeah. Yeah. But you- I'd still protect yourself. Yeah, no, I'm, yeah, for sure. Yeah..."
+  },
+  {
+   "start": 2908,
+   "speaker": "David DiNardo",
+   "text": "Have a good exit clause is what I would say. Yeah. That's- Yeah... That's the big thing, like have an out. Yeah. Yeah. What outs have you seen w- That you would recommend? Like- Ooh, I think we're, we're getting into legal stuff here. Yeah. But, I mean, like, there's a bunch of stuff. You- there's, like, shotgun clauses- Yeah"
+  },
+  {
+   "start": 2928,
+   "speaker": "David DiNardo",
+   "text": "And drag along rights and all that kind of stuff that's generally included. I think, like, a way to value the company and know how you're gonna get paid out from it, or if it, you know, very common situation for, like, a tech startup is, like, vesting rights-... And cliffs. Right? So, you know, we have one where the typical is, like, four years vesting of all your shares, and there's, like, a one-year cliff, so you're waiting a year until they start vesting."
+  },
+  {
+   "start": 2956,
+   "speaker": "David DiNardo",
+   "text": "It's very common. But I think understanding that is super important, so that's where you gotta get a lawyer involved to help you understand it. And you know accounting. Would you also get an accountant involved to understand that- Yeah... Right. Yeah, definitely. Yeah, like, I'm not a tax accountant by any means."
+  },
+  {
+   "start": 2972,
+   "speaker": "David DiNardo",
+   "text": "Excuse me. I'm not a tax accountant by any means. I know more than the average person-... For sure, but, you know, I even engage the tax accountant around this, is like, how do I structure this in a way that, you know, down the road- Right... If we do sell, can I get my lifetime capital gains exemption, right?"
+  },
+  {
+   "start": 2989,
+   "speaker": "David DiNardo",
+   "text": "And sh- also setting up a trust and doing all those stuffs, like- Yep... Do you recommend it for every business, or? I think it depends. The accountant answer, it depends. Yeah. Right? You know, just a super simple example from my own firm is, like, we had a creator come to us, and she was making, you know, 800K in the first eight months, and she was a sole prop."
+  },
+  {
+   "start": 3013,
+   "speaker": "David DiNardo",
+   "text": "And we're like, \"You need to get a corp immediately. Get it structured with a holdco and kind of passing things back and forth between them.\" you know, that works for her. Family trust, another idea. Yeah. You know, I have a family trust that owns a few things. Yeah. Yeah, but I think it really depends on some of your personal goals and, like, corporate goals as well, as you probably do when you- Yeah, and it is, it is a f- it's a, it's a tough situation because you're putting a lot of money up front to set everything up- Yeah"
+  },
+  {
+   "start": 3041,
+   "speaker": "David DiNardo",
+   "text": "And hope that, you know, you do get the exit, and you do get the tax benefit of it. But I think doing exactly what you're doing, like verifying the product before you put- Yeah... Tons of money into it, try to do that as, as fast and- Yeah... Early as possible. And cheap as possible. And cheap as possible."
+  },
+  {
+   "start": 3063,
+   "speaker": "David DiNardo",
+   "text": "Before you start putting all this money in, 'cause once you're in, it's like you're in. You're in. Yeah. Yeah. So now you've moved from the agency to this developer, or you still have the development agency? No, they're, they're now, in the background. Like, there's some small things that they're helping with just to, like, clean things up and sort of hand things over, but Hugh's, like, full-on developer."
+  },
+  {
+   "start": 3083,
+   "speaker": "David DiNardo",
+   "text": "He's full-time doing this stuff and just crushing it. And it's crazy because you only need a few developers. Like, one developer- Yeah... Is like having 10 developers. You don't need- Yeah... A huge team anymore- Yeah... To do it. I think we're at four. Bet. Where we have a back-end individual, a front-end individual, an AI expert and another back end, and I'm just like, \"Wow, they're a lot faster than my lead flow right now.\""
+  },
+  {
+   "start": 3116,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Like, the way I always thought about it was, okay, let me get 10 leads. Now I need, like, 40 leads, 50 leads on everything. Yep. What's your perspective on pricing? So there's a whole conversation now in the market of, like, how to price the work. Tokens are getting discounted. There's a lot of hidden fees, and you go to an accounting company and say, \"Hey, I can automate 80% of your payroll person.\""
+  },
+  {
+   "start": 3149,
+   "speaker": "David DiNardo",
+   "text": "Their salary is $50,000. Technically, you should be charging them $30,000 a year. Yeah. But then you offer that to them, and they're like, \"no.\" Yeah. That's, that's something we've been discussing, like, specifically for Nooma, for sure, 'cause people have even come to us for managed services- Okay... Just asking if we'll do the payroll for them, which we can, 'cause I have an accounting firm."
+  },
+  {
+   "start": 3174,
+   "speaker": "David DiNardo",
+   "text": "Yeah. We can run it through there. But definitely from a,.. I don't wanna say people replacement, 'cause that's not what we're trying to do. We're trying to help them scale. There's not enough people to do it. It's- Anyways... Yeah, it's not e- for our industry, it's not a people replacement. Yeah."
+  },
+  {
+   "start": 3190,
+   "speaker": "David DiNardo",
+   "text": "There's not enough people to do it. Yeah. Yeah. But, like, we want... We definitely... We're, we're not trying to replace those people. Yeah. We want, like, that one person, if they're in a, running the payroll for everyone in a firm, we want them to do, like, 10X more. Right. Right? And manage that. And, you know, I think there's benefits there for the firm."
+  },
+  {
+   "start": 3205,
+   "speaker": "David DiNardo",
+   "text": "There's also benefits for that employee, 'cause if they're doing more, there's a higher margin for, on that one person. They could probably get paid more. Right. Right? But the other side of that is exactly what you said. So if we're able to offer, a payroll platform that can replace a person or make them more scalable, what does that mean from a value and cost perspective for the platform that we're offering?"
+  },
+  {
+   "start": 3228,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Right? It's n- I feel like it's no longer a, you know, $40 a month thing. Right. It's probably a lot higher. Right. Right? But we're still kind of playing around with that idea. Yeah. Anyways, definitely not something we're doing right now. Yeah. But it's for sure something on the horizon. Yeah. That's what I'm going through right now."
+  },
+  {
+   "start": 3245,
+   "speaker": "David DiNardo",
+   "text": "I, I'm trying to figure out the pricing, and I'm banging my head against the wall. Yeah. Because I don't know the true cost yet, and it's still very... There's still people involved in the back end doing the work, so, like- Yeah... There's not really a true cost yet. And then you, you look at the value you're giving."
+  },
+  {
+   "start": 3265,
+   "speaker": "David DiNardo",
+   "text": "Okay, yeah, you can give them 10X more, but do they have 10X clients to, for that individual too? Right. Yeah. So they're in their mind as a business owner and be like, \"Well, yeah, that's great, but now our-- I don't know if I can get an extra 100 clients with payroll and all the other stuff.\" So- Yeah... You're building up capacity."
+  },
+  {
+   "start": 3288,
+   "speaker": "David DiNardo",
+   "text": "Now, if it's a non-payroll person where they're doing multiple things, beautiful. Yeah. But if their only job is payroll. Yep. And I mean, it does also tie into, like, what are the goals of the firm? Yeah. Do they even wanna keep growing, right? But do you have these conversations? 'Cause we're going away from SaaS, right?"
+  },
+  {
+   "start": 3308,
+   "speaker": "David DiNardo",
+   "text": "Like- Yeah... They just come on your platform, where now you're having deeper conversations with these people. Oh, yeah. And it's not just this monthly subscription, and this is where SaaS is moving to kinda more results, and you're giving the results for them. Yep. Like, how do you scale that? That's a tough one to scale 'cause it is a, it is kind of a one-by-one conversation."
+  },
+  {
+   "start": 3330,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Right? Like, your firm would- Yeah... Have been different than my firm. Yeah. Even though they were, right? Yeah. You have a lot bigger- Yeah... A lot different pains than I- Yeah... Probably have as a seven-person firm. But if you think about the, I guess, the economics around it's, it's still pretty much the same."
+  },
+  {
+   "start": 3344,
+   "speaker": "David DiNardo",
+   "text": "The one person is gonna cost X. If we can increase their scalability by Y, then, you know, why is there not a difference for the value that you're receiving? Do you ever think it'll be self-serving versus, you know, an onboarding? Like, just, like, signing up for the product? Yeah. Or... Yeah, for sure. Yeah."
+  },
+  {
+   "start": 3362,
+   "speaker": "David DiNardo",
+   "text": "We'll, we'll definitely get to that. I think we'll for sure have to get some data around, like, the metrics and how people are using it, if it's actually helping them scale, which w- we're confident it is going to. But I don't think we'll ever get away from those conversations anyways 'cause we, like, we-- I think we have to have those conversations with the firms to understand what their goals are and, like, how does payroll play into that, and what are they expecting from a scaling perspective."
+  },
+  {
+   "start": 3388,
+   "speaker": "David DiNardo",
+   "text": "And what's your vision? So your vision is to eliminate 80% of the work for- Yep... That payroll run and whatnot. Yep. What's the- W- is the vision to be in Canada? What's, what's the, the global external vision? Yep. So definitely we gotta nail down Canada. I think that'll become the playbook for other countries."
+  },
+  {
+   "start": 3410,
+   "speaker": "David DiNardo",
+   "text": "Obviously, they're a little different, and the different nuances within them, but it'll, it- that'll become the playbook, and then in three years we wanna go to two additional English-speaking countries. So think like US, UK, Australia- Wow... New Zealand, something like that. Are you guys planning on raising money?"
+  },
+  {
+   "start": 3427,
+   "speaker": "David DiNardo",
+   "text": "We are. I- soon? I- Yeah. Okay. Awesome. We're actively having conversations. Oh, c- can you talk about that or no? No, this- we'll keep it hush-hush. Okay. You and I will talk separately. Okay. So you, you plan on raising to grow it, - Yeah... And to keep on expanding it. Yeah. So, you kinda said earlier, like, you don't need as many engineers, but, you know, part of our initial funding round is Hugh will probably have another engineer join, and then we can build the product faster."
+  },
+  {
+   "start": 3452,
+   "speaker": "David DiNardo",
+   "text": "Right. Yeah. So the money would go into extra product development and marketing? Like, are you splitting it 50/50 type of thing? Is that- There's, like, a few things going in there. Like, the, definitely the product development is around getting more AI features into it, right? But for sure on the marketing side, we're gonna do some more things like going to accounting conferences, maybe going to some specific direct consumer conferences."
+  },
+  {
+   "start": 3473,
+   "speaker": "David DiNardo",
+   "text": "So, like, one of the integrations we're working on is with Jobber. Okay. Right? Being able to take, say, their time and have it import automatically into-... Our product, and then payroll just runs itself. But doing things like that, and like g- like, I think this year they're starting their first conference, like a J- Jobber?"
+  },
+  {
+   "start": 3488,
+   "speaker": "David DiNardo",
+   "text": "Jobber-specific conference. Okay. What is Jobber for people? Jobber is like a, construction management app, I guess. Okay. Is that how you would share it? I honestly never used it. Oh, okay. Yeah. But yeah, like, a lot of, we'll say blue-collar jobs- Okay... I'd say, would use something like that, where they can create projects and kinda manage, you know, the revenue and the cost around it a- and have, team scheduling and pushing a lot of information out to their team members so they know, like, what site they have to go to."
+  },
+  {
+   "start": 3516,
+   "speaker": "David DiNardo",
+   "text": "Who's your main competitor? For payroll? Yeah. Okay. We have like Wagepoint, ADP. But is Wagepoint your competitor? 'Cause you're doing more human resource and people. Yeah. They still are, right? Okay. 'Cause a l- a lot of accountants use Wagepoint. Right. They're probably the biggest share, I would think."
+  },
+  {
+   "start": 3532,
+   "speaker": "David DiNardo",
+   "text": "In Canada? I think so. Okay. For accountants anyways. Right. I don't really have data behind that Right... But that would be my guess just from- Yeah... What I know. I would, I would agree. Yeah. Yeah. So yeah, they're, I mean, they're still a competitor 'cause they do have payroll. They've got like the People by Wagepoint app."
+  },
+  {
+   "start": 3547,
+   "speaker": "David DiNardo",
+   "text": "Okay. Right? So there's an opportunity there for them. But, you know, Payworks, Rise, Knit, like- Right... A lot of these softwares are out there. But they're also, as we talked about earlier, not geared towards accountants. Right. And how about on the US side? Is Gusto the, the big one? Yeah, Gusto, Rippling, OnPay."
+  },
+  {
+   "start": 3567,
+   "speaker": "David DiNardo",
+   "text": "Rippling. Yeah. Yeah. Yeah. Yeah, 'cause I think Gusto raised like 500 We're not raising 500 million yet. But- Yeah, you're going to have to, - Yeah, we're gonna have to catch up to that, I think. Yeah. Anything else in regards to the development of it and what you've noticed that you could share with someone that maybe wants to start a tech company or is in the m- i- is in the grind right now that you've- a lessons learned or any of that?"
+  },
+  {
+   "start": 3599,
+   "speaker": "David DiNardo",
+   "text": "I, like, the one thing I always say whenever I do even just presentations around software or, like, AI stuff is, like, you have to go tinker. You have to go play around in it. Like, I mentioned it earlier on the, kinda that idea of building a prompt library. You have to go tinker with the stuff, otherwise you're not gonna learn."
+  },
+  {
+   "start": 3616,
+   "speaker": "David DiNardo",
+   "text": "Like, you can go watch 100 million videos, however many you need to think that you understand how y- how to use it, and you probably will learn. But if you're not actually in there using it and trying to, like, build stuff, you're, you're not gonna learn-... Some of the best practices and how to manage this and, like, do things efficiently and build prototypes and all that."
+  },
+  {
+   "start": 3635,
+   "speaker": "David DiNardo",
+   "text": "Absolutely. And then I guess aligning yourself with co-founders that have a different skill than you. Yeah, for sure. Right? Yeah. You have, you're Hugh as a developer. Yep. You as kind of the middle- Yep... Individual, and then Ashley's more the front end, I'm assuming. Yeah. So, - Yeah, Rachel's doing the- Oh, Rachel, sorry."
+  },
+  {
+   "start": 3655,
+   "speaker": "David DiNardo",
+   "text": "Yeah, that's okay. Rachel's doing more of, like, the funding. So she's the CEO of Nooma. Okay. I'm the COO. Hugh's the CTO. Gotcha. Yeah, so, and very different skills- Yeah... But complementary. Yeah. Absolutely. Right? And Rachel came up in go-to-market. Like, she worked at Sage- Right... Doing a lot of, product marketing, that kind of stuff."
+  },
+  {
+   "start": 3673,
+   "speaker": "David DiNardo",
+   "text": "Right. And then Hugh, obviously, the developer, and then me being the, we'll say, the domain expertise. Do you think you can combine those roles into one now? I mean, this is what people are saying with AI is, like, you build out these personas and different, like, agents that can answer a lot of these questions, right?"
+  },
+  {
+   "start": 3691,
+   "speaker": "David DiNardo",
+   "text": "So could you? I mean, maybe. Probably, right? But then you're, you're solely relying on AI to do everything for you. And are you actually learning as you're going along, or are you just listening to someone telling you what to do? Right. Yeah, and I think the roles, I think those three roles are s- in so important and have so, like, just the direct focus 'cause I'm doing a f- a lot- Got lots of hats on and- Yeah."
+  },
+  {
+   "start": 3717,
+   "speaker": "David DiNardo",
+   "text": "And I'm like, I don't know if my... The problem I'm having now is I know I can do it with AI. So I don't wanna pay for someone else to do it just out of pure ego. But my time is just, you can tinker on one thing for hours- Oh, yeah. You-... And be like, \"Where the heck did the day go?\" Yeah. And then- Did I get anything out of it?"
+  },
+  {
+   "start": 3745,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Like, it, and then your mind just keeps on rolling. Oh, I can, you know, play- Oh, yeah... The puzzle game. Where do you see AI going? It's just gonna keep getting better for sure, right? There's these new models like you were talking about Fable 5 earlier, right? Like that came out through Anthropic."
+  },
+  {
+   "start": 3763,
+   "speaker": "David DiNardo",
+   "text": "They're just gonna keep getting better and better and better. And I mean, from the accounting ecosystem, for sure stuff's gonna not disappear, but it'll become more and more automated as we've seen over time anyways. Even just simple automation software. Like a lot of that's... You can use that to automate things."
+  },
+  {
+   "start": 3779,
+   "speaker": "David DiNardo",
+   "text": "AI just brings it up a level. Definitely on the software side, we've already seen it, like software developers being laid off unfortunately. You know, people are trying to get more efficient using AI and develop things faster, which we already know that that's possible. I don't know. Give me, give me a crystal ball and I'll tell you."
+  },
+  {
+   "start": 3798,
+   "speaker": "David DiNardo",
+   "text": "If you had that crystal ball, what would you say- Oof... In five years? Five years. On the accounting or software side or both? Both. Both? Okay. Accounting, I think the transactional piece, maybe not in five years, but will be mostly automated, like fully automated. And I think there's, there's probably a difference there in like USA versus Canada 'cause there's just different needs there I guess."
+  },
+  {
+   "start": 3825,
+   "speaker": "David DiNardo",
+   "text": "But yeah, I would expect transactional stuff to just... Not disappear, but be automated and that means that we have to go kinda upmarket or upskill ourselves. To what? An advisor relationship stuff. Like I think a lot of, a lot of companies sign on with a firm for the relationship side more than the accounting side."
+  },
+  {
+   "start": 3848,
+   "speaker": "David DiNardo",
+   "text": "And- Like they're not, they're not gonna sign on with someone that they don't like. And do you think that's just historical behavior? Maybe. Yeah, maybe it could be. I mean, maybe you can get what you need from a fully AI platform and you don't talk to anybody. Because you're building a payroll app-"
+  },
+  {
+   "start": 3864,
+   "speaker": "David DiNardo",
+   "text": "That is gonna be more efficient- Yeah... Than anything else out there. Yeah. And it's just gonna get better and better. You're gonna be at 80%, then it'll be 85. Yeah. Yeah. You know? Like it just eventually... That's the goal, right? Yeah. To help the business owner out because no one wants to do payroll- Yeah... At the end of the day."
+  },
+  {
+   "start": 3880,
+   "speaker": "David DiNardo",
+   "text": "I think like specifically for us, we don't wanna get to a situation where no one reviews it, like reviews a payroll, right? We need to have that human in the loop 'cause like right now AI's not there. Could it be in the future? There's self-dri- Probably... There's self-driving cars. Yeah. I mean probably, right?"
+  },
+  {
+   "start": 3898,
+   "speaker": "David DiNardo",
+   "text": "Probably could eventually. I don't think so yet. Yeah. You know, I think as the models get better, we'll have to keep an eye on that. But also like me being an accountant, I don't... This is just in my heart is like- Yeah... I don't wanna replace people. Yeah. You know? We, like, as we said, people are leaving the industry so it's harder to service clients."
+  },
+  {
+   "start": 3914,
+   "speaker": "David DiNardo",
+   "text": "But will it get there? I don't know. Maybe. And when you talk about transactional work, what do you mean by that for- Just like entering data. Basically like data entry, right? So someone buy, like gets some gas and they gotta expense it to the business. It's like someone has to enter that transaction."
+  },
+  {
+   "start": 3930,
+   "speaker": "David DiNardo",
+   "text": "Right? AI can probably handle that. I mean, mostly it can do- Like some of it now, so Where do you see the main players now, like Xero and QuickBooks Online going? That's, that's interesting. Xero's, I mean, as you know, Xero's been trying to continue to break into the North American market for a long time now."
+  },
+  {
+   "start": 3952,
+   "speaker": "David DiNardo",
+   "text": "I mean, I think they'll, they'll eventually be, like a firm with software. They're already offering it anyways. Oh, they are? Right? Like, QuickBooks has or Intuit has, QuickBooks Live, I think it's called. And even, like, the tax experts on TurboTax, like, they're already doing that. Right? So if they can even automate more and more and more of the transactional entry, then now they've already got this workforce of people that can service clients and now they'll have kinda both streams with software and service."
+  },
+  {
+   "start": 3982,
+   "speaker": "David DiNardo",
+   "text": "Do you think they'll go directly to the client? Oh, yeah. They already are. Yeah. I've, I've seen accountants, telling me, like, in just, just different masterminds that I'm in, where their client receives this, like, pop-up message inside their QuickBooks dashboard and it says like, \"Hey, we offer services for XYZ.\""
+  },
+  {
+   "start": 4000,
+   "speaker": "David DiNardo",
+   "text": "Wow. So it's happening. Oh, yeah. Oh, yeah. Because I guess if they automate the transactions, they can bypass the account. Yep. And then they can be a service plus software. Yep. Do you think, like, for your exi- for your, you guys too, are you thinking of software and service? Because service is harder to scale than the software."
+  },
+  {
+   "start": 4021,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Yeah. Yeah. I mean, like, even internally, I'm building, like a client intelligence platform. Right. Right? Could that be something we share externally? Maybe eventually. I don't know. Have to figure out some features around that. But the whole point of it is, to help us manage work better. Yeah. Right?"
+  },
+  {
+   "start": 4038,
+   "speaker": "David DiNardo",
+   "text": "Be more efficient and effective with it, and it's all built on AI anyways, so. Right. Because Intuit's stock just taking a beating. It is. Why? Y- yeah, I don't know, man. You tell me. Like- It's like-... People hear AI and they get scared and they, and there's sell-offs, right? Yeah. I mean, even you look at the sp- the SpaceX IPO."
+  },
+  {
+   "start": 4058,
+   "speaker": "David DiNardo",
+   "text": "Yeah. It went up to, like, 225, and now it's almost back down to what it IPO'd at. Okay. There's, there's sell-offs, right? Yeah. People are trying to get their money out. Yeah. Because, it's, it's crazy. You've been in this industry for over s- you know, 16 years now, I can't believe I'm-... It's been that long."
+  },
+  {
+   "start": 4076,
+   "speaker": "David DiNardo",
+   "text": "Intuit and Xero were the only competitors, and now when you're building apps at six months or a year and you have funding from the start, let's just say- Yep... You can now start competing with the big guys. And a- I mean, your mindsets too of, \"Hey, I'm gonna compete with Wagepoint and these firms like-\" Yep"
+  },
+  {
+   "start": 4100,
+   "speaker": "David DiNardo",
+   "text": "Two, three years ago, that would've never probably crossed your mind. Zero chance. W- what made it cross your mind? I think it's just the speed of development. Yeah. And I mean, the fact that, like I said, Rachel and I have a network already, so there's people that we can sell to and trust us. Like, that definitely helps, and that takes time to build up."
+  },
+  {
+   "start": 4120,
+   "speaker": "David DiNardo",
+   "text": "But I think it's just the speed of development, and a lot of these softwares were built before AI. So they have a ton of tech debt- Yeah... Right? That they need to now flip things and- Yeah... And change the coding and, like, help it match up to how these AI programs work. So, you know, being able to get to market quickly, show people that it's something that's worthwhile, like, I think that's gonna change the dynamics of, for every company."
+  },
+  {
+   "start": 4144,
+   "speaker": "David DiNardo",
+   "text": "Yeah, I agree. And from a software side, what do you think? We've talked about accounting side, software side."
+  },
+  {
+   "start": 4153,
+   "speaker": "David DiNardo",
+   "text": "Do, is Skynet a thing yet or- A what? Is Skynet a thing yet? No. Like \"Terminator\"? Oh. You know? No, I don't know, like, I mean, it's getting better and better and better. It's like, it's faster to develop. It'll just get faster and faster. I mean, I was seeing so- something recently where the, I think it was the guy that created Claude or Claude Code, he doesn't even prompt anymore."
+  },
+  {
+   "start": 4178,
+   "speaker": "David DiNardo",
+   "text": "He's built these loops- Oh, yes... Yeah, where it's just like it's prompting itself, but it has like these kind of- Right... Background instructions. Like, is a developer needed at that point? Right. Or are you just a, like a prompt engineer? Right. Right? It's getting wild. It's crazy. It's getting wild. And, I mean, Fable came out and then they continue- they discontinued it."
+  },
+  {
+   "start": 4202,
+   "speaker": "David DiNardo",
+   "text": "Yep. I was on it for a couple hours and I just couldn't... Like, I built a website through it, and usually you could see the AI websites. This one I was like, \"Well, it's not there yet, but it's getting close.\" Yep. It's getting real close. Yep. Which, if you're an entrepreneur, you're loving it right now."
+  },
+  {
+   "start": 4224,
+   "speaker": "David DiNardo",
+   "text": "Oh, yeah. Absolutely. It's like- Never a better time to build... It's never a better time to build. It's never-- I think the historical businesses are to be scared shitless, big businesses. I think a new en- entrant to the market, the 24-year-old that they're-... Calling you guys out, because if you can build a marketing and distribution s- strategy, build an audience, which is very difficult."
+  },
+  {
+   "start": 4250,
+   "speaker": "David DiNardo",
+   "text": "Yeah. I'm not dis- discrediting that. Yeah. But, you can partner with people like us, too, to, \"Hey, I have this audience. Go build stuff,\" right? Like, there could be- Yep... A lot more partnerships that are happening to get to market faster, because I also do think there's a window of time here. Yeah. Like, \"Hey, you're building a payroll app."
+  },
+  {
+   "start": 4275,
+   "speaker": "David DiNardo",
+   "text": "Another three people are building a payroll app. You're first to market. They're second, third, fourth.\" Yep. Now it's just the speed to get more clients. Yep. Yeah, it's gonna be a very competitive field. Yeah. Across, like, not just payrol- I think everything- Yeah... Is gonna get real competitive. That's interesting you mention distribution, 'cause I remember seeing something a few months ago."
+  },
+  {
+   "start": 4299,
+   "speaker": "David DiNardo",
+   "text": "I think it was through The Diary of a CEO. Okay. With Steven Bartlett. Yeah. And I swear he said something about, people or businesses are getting acquired more recently because of the distribution they have and not even the product or service they're offering. Yeah. Like, it's just I want access to your market- Yeah"
+  },
+  {
+   "start": 4315,
+   "speaker": "David DiNardo",
+   "text": "So that we can sell into it. Yeah. So to your point, it's like if you have that network- Yeah... It's gonna be a lot easier to scale your company. Actually, it's funny you said that. I got an email today from my first someone wants to do a brand deal with me. Nice. And I'm looking at it, I'm like, \"That's crazy.\""
+  },
+  {
+   "start": 4334,
+   "speaker": "David DiNardo",
+   "text": "Because now the audience that I've been building up, and it's, it's a lot of time and energy, and it-... You don't see the path. Like, in accounting and business, it's like, okay, you do a tax return, you get paid, it's transactional. Yeah. You go to the next one. But building an audience, it's like zero."
+  },
+  {
+   "start": 4352,
+   "speaker": "David DiNardo",
+   "text": "Like, there is a slow growth aspect to it. Yeah. Yeah. So seeing that was pretty cool. That is cool. I'm not sure if I'm gonna do it or not, but, - Think about it, right? Yeah. Do your, do your kinda SWOT analysis, pros, cons, all that f- Yeah... Stuff, right? Exactly. But, yeah, building and having conversations like this."
+  },
+  {
+   "start": 4371,
+   "speaker": "David DiNardo",
+   "text": "And the main reason for this podcast is, like, I want real conversations that are people- Yeah... Doing it and building it so that if someone wants to build something, they can take the... They can tinker- Yeah... Right? Yeah. With the actual conversations to go build out their product and make it better."
+  },
+  {
+   "start": 4390,
+   "speaker": "David DiNardo",
+   "text": "Yeah. We have a closing tradition on this show, where I ask, if you left a sticky note on your first laptop before you ever got started, what would it say? Discipline over motivation. You've listened to my podcast before. No. I've, I think I've seen one episode. Yeah. I think it was it with Kyle?"
+  },
+  {
+   "start": 4407,
+   "speaker": "David DiNardo",
+   "text": "Kyle, yeah. Or Sean maybe. Kyle. Yeah. Actually, I've seen those two, Sean and Kyle. Okay. But I actually have that on my- Actually, you should reach out to Sean. Yeah. And you could probably i- integrate. I should make that connection. Yeah, to Corfix. Yeah. Yeah. - 'Cause it'd be pretty cool... I, so they were a client of Blueprint before."
+  },
+  {
+   "start": 4423,
+   "speaker": "David DiNardo",
+   "text": "They did a Series A, and then- Okay... And then they, went to a larger firm. Okay. But yeah, so I knew all about Corfix. But yeah, I say discipline over motivation. Probably someone has said that before, I'm guessing. But I do actually have on the background of my laptop, I have, like, four sticky notes."
+  },
+  {
+   "start": 4438,
+   "speaker": "David DiNardo",
+   "text": "Okay. And one is discipline over motivation. And what does that mean to you? Just, like, the, just keep pushing. Like, be disciplined in the things that you need to do instead of being like, \"Oh, this sucks. Like, why do I... I don't wanna do this.\" But, like, it'll, it pays off over time, right? Right. The more you put into it, you know, the idea of, like, the 1% rule."
+  },
+  {
+   "start": 4455,
+   "speaker": "David DiNardo",
+   "text": "Right. Get 1% better every day. Right. And it compounds to, I forget what the percentage is at the end of the year. But, that's, that's the idea of discipline. Like, do, keep doing the same thing over and over and over, and you're just gonna get better at it, and it'll pay off in the end. And where can people get ahold of you?"
+  },
+  {
+   "start": 4470,
+   "speaker": "David DiNardo",
+   "text": "Probably LinkedIn. Okay. So Brian Claire. I think I, if you search me, it's probably just Brian C. But got my Blueprint hoodie on. Like, you'll see me in the, in the image. You find Nooma, - How do you spell that? Or- N-O-O-M-A. Okay. Yeah. All right. Nooma, noomahq.com is our domain. Okay. Yep."
+  },
+  {
+   "start": 4490,
+   "speaker": "David DiNardo",
+   "text": "And then Blueprint Accounting. Perfect. Yep. Thanks, Brian. Okay. Thanks."
+  }
+ ]
+}
