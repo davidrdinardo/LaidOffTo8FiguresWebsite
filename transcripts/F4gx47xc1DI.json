@@ -1,0 +1,1104 @@
+{
+ "videoId": "F4gx47xc1DI",
+ "num": 61,
+ "source": {
+  "kind": "descript",
+  "projectId": "912d542a-3f98-4025-8f9c-c7b5d2943a97",
+  "compositionId": "04f08e66-d8b3-47ed-9956-15163d9a3330"
+ },
+ "guest": "James Nguyen",
+ "summary": "James Nguyen, David's former banker at RBC and now co-founder and CEO of Ottawa quantum-security company Quantropi, explains how he raised more than $25 million US with no institutional VCs, most of it from angels who had watched him work for a decade. He walks through his framework for entrepreneurship, the call from serial entrepreneur Jeff York that pulled him out of banking, meeting his physicist co-founder, and the whiteboard session that put a banker's name on a quantum patent. The conversation closes on the gap between Canadian and US capital, why confidence comes from surviving do-or-die decisions, and his advice to get your family on board before you start.",
+ "takeaways": [
+  "Nobody drops millions of dollars on a phone call; the money James raised came from ten years in banking where people watched his thinking, work ethic and network.",
+  "Quantropi raised a bit over $25 million US: roughly $5 million in non-dilutive government grants and $20 million plus from angels, with no institutional VCs.",
+  "An entrepreneur recognizes a real problem, filters signal from noise, executes, and builds a team smarter than themselves; the company's biggest asset is time, not money.",
+  "If you have no network, you only need one person: find the few people whose superpower is knowing everyone and invest in those relationships.",
+  "With no technical or physics background, James locked himself in a room with his chief scientist and kept asking questions until a problem that could have killed the company was solved, and his name ended up on the patent.",
+  "Quantum computing checks a million rooms at once where today's computers check one at a time; AI finds patterns, quantum breaks locks.",
+  "James's view: Canadian investors write slower, smaller cheques at lower valuations than US investors, but he is building in Canada anyway.",
+  "Confidence comes from making do-or-die decisions and not dying, or dying and getting back up; and make sure your loved ones are on board before you start."
+ ],
+ "speakersVerified": false,
+ "segments": [
+  {
+   "start": 0,
+   "speaker": "David DiNardo",
+   "text": "James, welcome. Hey, David. Big company. Yeah. Raising tons of money. I've known you for a long time. How did you raise so much money already? You started in 2018, so you've been down this path for a while. But tell me a little bit about your journey and how you got here today. Sure. So I wasn't always a founder."
+  },
+  {
+   "start": 21,
+   "speaker": "David DiNardo",
+   "text": "The company I co-founded, Quantropi, was actually my first company I co- I founded, first time being in cybersecurity or even tech, and, first time being a CEO. So, before that, I was, a chief investment officer for a group of public and private companies, ps- predominantly in deep tech, also mining and energy storage, as well as, you know, kinda like, real estate projects and stuff like that."
+  },
+  {
+   "start": 46,
+   "speaker": "David DiNardo",
+   "text": "But before that I was also, a banker. So I was at RBC Royal Bank for close to 12 years. That's how I connected with you. Yes, exactly. For my first venture, I went to you- Yeah... And you knew the way around everything. And just talked to me like a business owner, and that was the complete different customer service I got from you-"
+  },
+  {
+   "start": 66,
+   "speaker": "David DiNardo",
+   "text": "To other, any other bl- banker, was like you understood the banking, but you understood the entrepreneur and you were able to connect things. So I give you kudos for that. Yeah. And I think that also- Yeah... Brings us into, like, how do you success-based fundraise, right? Because, before I was on the other side of the table, right?"
+  },
+  {
+   "start": 82,
+   "speaker": "David DiNardo",
+   "text": "I was lending money, right? Yeah. So people were pitching me, and I had to, you know, do my assessment. Is this a good deal? You know, what's the, you know, the risk factors? What's the key success factors? And then now jumping to a funder on the other side, right, I'm asking for money. So having that experience on understanding what people actually wanna know, right, or how do people perceive an opportunity really helps when you're asking for money."
+  },
+  {
+   "start": 105,
+   "speaker": "David DiNardo",
+   "text": "Well, and you now know how to structure your business-... To even ask that, that, for that cash or that money-... For your investment. Like, what are the key metrics that you look for or you set up in your business-... That other entrepreneurs can, could leverage so that they can e- eventually fundraise?"
+  },
+  {
+   "start": 123,
+   "speaker": "David DiNardo",
+   "text": "So there's, there's t- a few components to it, but I'll, I'll try to make it very simple, right? So, when people are investing into something, they're really investing into the founder or the team, especially if it's a concept type of business or if it's, you know, a new idea, right? Because the number one risk in a business really is management risk, right?"
+  },
+  {
+   "start": 144,
+   "speaker": "David DiNardo",
+   "text": "Because the, a great management can turn things around, and bad management could bring something from 100 to zero, right? So that's one of the key risks. And I'm talking, I'm putting my banker hat on right now-... Talking risk. The next key risk, right, you're looking at is financial risk. Right. Do they, do they understand how money works, right?"
+  },
+  {
+   "start": 161,
+   "speaker": "David DiNardo",
+   "text": "Are they gonna be to optimize the, every dollar that an investor gives them? Are they gonna spend, you know- that money in an optimal way to achieve the goals, right? And then I wanna talk about kind of, kind of working towards goals as a, as another topic probably that is really something big on itself."
+  },
+  {
+   "start": 178,
+   "speaker": "David DiNardo",
+   "text": "Then you also have business risk, right? Like market stuff, right? You know, what happens when a pandemic happens? What happens when your industry is getting hit? Or what happens when your industry is flying like AI? How do you optimize, or how do you pivot, or how do you even take advantage or plan enough ahead of time to make sure that you're able to mitigate some of those headwinds?"
+  },
+  {
+   "start": 197,
+   "speaker": "David DiNardo",
+   "text": "And when you talk about the first one, if we dive deeper into all three, the story-... Of the entrepreneur and the team-... And the idea, when is a good time to start fundraising and tell that story? Is it before you, have the product? Is it before you have revenue? Like, how did you know when to start fundraising-"
+  },
+  {
+   "start": 217,
+   "speaker": "David DiNardo",
+   "text": "To get it going? So I mentioned people were investing into the f- the founder or the founding team or the management team, right? So- That means that people have to know you. Yeah. They have to be able to have some sort of way to trust you, either from, you know, stuff that is, I call it, like, secondary, you know, market research, right?"
+  },
+  {
+   "start": 236,
+   "speaker": "David DiNardo",
+   "text": "They can check you online, check your LinkedIn profile, look at your credentials, see what you've done, you know, see how you've done as an entrepreneur in the past. Or they might, you know, call a friend and say, \"Hey, what do you think about this guy James,\" right? \"He's doing this company. He's trying to raise all this money,\" right?"
+  },
+  {
+   "start": 252,
+   "speaker": "David DiNardo",
+   "text": "\"What do you think?\" 'Cause... And that's really what's gonna happen, right? Especially in y- in your early fundraising days because, people really tr- do everything based on trust. So how do you build that trust, right? So when I... Like, people say, \"Well, how did you just make a phone call and this guy just put in millions of dollars?\""
+  },
+  {
+   "start": 270,
+   "speaker": "David DiNardo",
+   "text": "Right. Well, it wasn't that they would... I don't care how good you are, it doesn't matter what you say in that phone call, nobody's gonna drop millions of dollars, right? Just based on a phone call. Maybe you might get lucky, right? But if that guy does, he's a fool. Yeah. Right? So what happens, right? What make, what drives that?"
+  },
+  {
+   "start": 285,
+   "speaker": "David DiNardo",
+   "text": "I told you, I had over a decade career in- in banking. Yeah. Right? I've helped many people, right, save a lot of money. I also have helped many people make a lot of money. And, you know, and people have seen how I deal with challenges, right? Or how far I go beyond the regular banker to make things happen for that client or customer-"
+  },
+  {
+   "start": 304,
+   "speaker": "David DiNardo",
+   "text": "Or deal. And the... People start to recognize your thought process. People start to recognize, you know, your work ethics. People start to recognize your network, right? How... Like, 'cause sometimes you might maximize your own brainpower, your own resources, but your network, right, could be unlimited resources, and how do you kind of leverage that?"
+  },
+  {
+   "start": 323,
+   "speaker": "David DiNardo",
+   "text": "So for me, right, when I started this company, right, I had a network, that already built enough credibility or trust that people said, \"Hey, you know what? If James is in, you know what? I'm in.\" So I'll, I'll give you for example, right? So I was a chief investment officer for all these big companies, okay?"
+  },
+  {
+   "start": 342,
+   "speaker": "David DiNardo",
+   "text": "And I've never put a dollar in, right? And, when this opportunity for Quantropi came and I kind of preceded the company and really put in all my life savings into it, people were like, you know, scratching their head. \"This guy's never put money into anything else, and he's one of the smartest guys I know."
+  },
+  {
+   "start": 357,
+   "speaker": "David DiNardo",
+   "text": "There's gotta be something here.\" Right? And then people would call me and say, \"Hey, what are you doing?\" Like, \"Why are you putting so much money into this?\" So it's what, it w- so y- so it's that reputation, right, of your ability to make good decisions, okay, and help other people make money. So when you're, when you make a move, right, other people will say, \"Hey, there's gonna be something here.\""
+  },
+  {
+   "start": 378,
+   "speaker": "David DiNardo",
+   "text": "So when you build that reputation, it becomes strong enough, a lot of times you don't even have to go to fundraise. People want in, right? People wanna get in, right? People wanna say, \"Hey, I wanna be where this guy is, and I wanna go where he's going because, you know, I made so much money with just his advice,\" or, \"Maybe with just his introductions,\" or, \"Maybe with just with, you know what, being close to him.\""
+  },
+  {
+   "start": 398,
+   "speaker": "David DiNardo",
+   "text": "Right? And I've also done the same thing, too, with other people. If I-... I know a serial entrepreneur and-... I know this guy has the Midas touch, and I know he has basically a good head on his shoulders, right, you know, I'm gonna k- you know, keep my eyes and ears close. Yeah. I resonate with that so much because my previous business and now starting Taxifi, and I see colleagues of mine reaching out to me and being like, \"Hey, can I be a part of it?\""
+  },
+  {
+   "start": 424,
+   "speaker": "David DiNardo",
+   "text": "Yeah. \"Can I help you sell?\" Yeah. \"Can I do...\" Like, and I'm like, so that connected with me b- big time because I never thought about it that way. From like, well yeah, the journey, people have been following the journey without me communicating it or, you know, seeing it from afar, and now they... You see other op- the other opportunities that they're, they can bring- Yeah"
+  },
+  {
+   "start": 447,
+   "speaker": "David DiNardo",
+   "text": "To you, and then it's the whole connection piece, right? Like, oh, this person has a distribution of this industry. Well, let's bring them in- Yeah... And then scale faster or whatever. Money, could be a whole bunch of different things. Yeah, it's just like, you know, 'cause you're, we're all eating at the same table- Yeah"
+  },
+  {
+   "start": 463,
+   "speaker": "David DiNardo",
+   "text": "A lot of times, right? So you gotta bring something to the table. Yeah. Right? It's like a part- any partnership. Yeah. Right? 'Cause if you're not, then maybe that's not the right table to be at. Right. So every table that I'm at, I'm always asked the question, okay, what am I bringing to the table? How am I contributing?"
+  },
+  {
+   "start": 476,
+   "speaker": "David DiNardo",
+   "text": "Is this because it's, it's also my time. Yeah. Right? So if I'm not really adding much value here, I'm probably not gonna get much value, and I'm probably not... I probably could be investing my time with other relationships that can create a lot more value, and that value that you create gets more, gets valued at a lot higher, level than, you know, just sitting there and, you know, just, you know, basically, you know, talk- doing small talk and, you know, sp- spending some time to make friends."
+  },
+  {
+   "start": 500,
+   "speaker": "David DiNardo",
+   "text": "And on top of it, did you come from an entrepreneurial family? Or like how did you put your entrepreneurial hat on and really... You know, and the thing too I would also add from a trust perspective, you worked at the bank. There's a trust there. You're p- getting people's money. There's another trust. Like you've broken down a lot of layers of trust for people so that when you do make a move- Yeah"
+  },
+  {
+   "start": 524,
+   "speaker": "David DiNardo",
+   "text": "You're, you know, once someone trusts you with their money, they trust you with a lot of stuff, right? Yeah. Yeah. So I'll, I'll, I'll say like, you know, like- I'll answer that question in a few ways. So first off, what is an entrepreneur? Okay. An entrepreneur is a person that solves problems, right, and gets paid for it."
+  },
+  {
+   "start": 542,
+   "speaker": "David DiNardo",
+   "text": "Okay? So as you, as you mentioned, right, what made me different from other bankers was I didn't really take no for an answer. That's the first thing. If there was a problem, you know, either getting approved or getting a deal done, right, I would not give up, right? If it's a good deal-... Okay, and I believed in the deal, I will fight until I got that deal approved."
+  },
+  {
+   "start": 560,
+   "speaker": "David DiNardo",
+   "text": "And I'll find a way to make it happen. So first thing is, you know, you have to be a good problem solver. But to be a good problem solver, you have to recognize real problems, not this seems like a problem, right? And a lot of people, and if you could... That are experienced can recognize that, but even the most experienced ones still need to do the research, and the only way you can actually find out if a problem's a real problem is going out and asking around."
+  },
+  {
+   "start": 583,
+   "speaker": "David DiNardo",
+   "text": "And once you know that's a real problem, you gotta find the most efficient way to solve it. So that mindset that you talk about, that's the first mindset you need to have. Have you ever heard of, like, the signal and the noise? Yeah. Right? Is that what you're talking about, the noise versus- Yeah... The signal?"
+  },
+  {
+   "start": 596,
+   "speaker": "David DiNardo",
+   "text": "So yeah, so because the thing is, though, like let's say for example, noise, what is noise? Everybody's complaining, \"Oh, the economy is this,\" you know, \"The government is this,\" da, da, da. You know what? There's this war, there's that war, there's this gender, whatever the heck it is, right? Right. So, you know, that's noise."
+  },
+  {
+   "start": 614,
+   "speaker": "David DiNardo",
+   "text": "Okay? Right? The thing is, though, is that, you know what, you have to ask this, what, where do I stand or where do I fit in this and that? And so depending on your business, right, you gotta look at sig- some of that might affect your business. That's signal, right? And then how do you take that, influence, right, or that impact, okay, and turn it into something that, you know, you can leverage?"
+  },
+  {
+   "start": 636,
+   "speaker": "David DiNardo",
+   "text": "Okay? So either it be a first mover advantage, either it be, \"Hey, you know what? I can use the way things are trending,\" okay, \"to basically make my product more relevant to the problem I'm trying to solve.\" Okay? Or I can take, you know, advice that I'm hearing, you know, from, just a signal, and then go test it with my customers and say, \"Hey, does this really matter to you?\""
+  },
+  {
+   "start": 658,
+   "speaker": "David DiNardo",
+   "text": "Okay, \"Does this, you know, make sense to you? Or is this real? Like, are you feeling this too?\" And then you hear the customer tell you the answer, and your job is not really to come up with the solution right there. Your job is to listen to the customer and how there's... And it usually comes up with a lot of emotions, right?"
+  },
+  {
+   "start": 674,
+   "speaker": "David DiNardo",
+   "text": "And they'll tend to tell you how it should be solved. And then you might be thinking ahead. It's like, \"That doesn't make any sense. That's not how my software works, or that's not how my product works, or that's not how I run my restaurant. That's not how it should be.\" But the thing is, a lot of times that innovation happens when you're like, \"Okay, well, what if it could be that way?\""
+  },
+  {
+   "start": 690,
+   "speaker": "David DiNardo",
+   "text": "Or, \"How do I make it that way?\" And when you do that typically builds a new business, a new business concept, a new niche, right? Or even a edge, right, that allows you to be different from your competitors. And the bigger you get, how much more noise comes from that? Well, I think it's like this, right?"
+  },
+  {
+   "start": 708,
+   "speaker": "David DiNardo",
+   "text": "Noise always gets greater, right? But I think your filter has to get greater as well, right? So- Right... You know, like, I think, I think it's like, it becomes second nature. You know? Like I... If you have decades of experience. But I- but it's also you gotta be careful too, right? Ego's also your biggest killer."
+  },
+  {
+   "start": 724,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Right? So you gotta check that ego too. So you have to basically, you know, like be able to quickly filter out a lot of noise, right? But also once a year, you know, before New Year, you know, do a reflection, right? And check your ego and say, \"Hey, you know what? Is my assessment of how I assess things,\" right?"
+  },
+  {
+   "start": 743,
+   "speaker": "David DiNardo",
+   "text": "Yeah. You know, you know, still valid, right? Or is it just my ego this and that. And a good way to do that is having a good, like, you know, peer group. Yeah. Other leaders and this and that, and, you know, and then just hearing how they think as well, right? So I think you, the, you want, you wanna be very careful not to fall into that ego trap."
+  },
+  {
+   "start": 762,
+   "speaker": "David DiNardo",
+   "text": "So back to that original question of the, you said two parts. One is the problem-solving-... And signal noise. What's the second part? Like- Yeah, so for entrepreneur, right? The second part is of the problem, right? The second part is execution, okay? Because the thing is, okay, so now you, you recognize a problem, you recognize that you have a solution or you wanna solve that problem, okay?"
+  },
+  {
+   "start": 785,
+   "speaker": "David DiNardo",
+   "text": "But then the question comes to how will you execute? Because any co-founder, any management team member, any employee, any investor, right, is not gonna follow you or help you, or an advisor, if they don't know how you plan to execute, okay? Because let's say you have a plan of h- of execution and it's 100-- like it's a A+ plan, people will jump on, they don't know, they even find and say, \"I'm with you, man.\""
+  },
+  {
+   "start": 812,
+   "speaker": "David DiNardo",
+   "text": "Right? But if that plan of execution has a lot of gaps or holes, you know, it's like Swiss cheese, right? And people are giving you feedback, this and that, and you... A true entrepreneur, right, takes that feedback, implements it, you know, da, da, and gets better by the hour, right? And they build a business, okay?"
+  },
+  {
+   "start": 831,
+   "speaker": "David DiNardo",
+   "text": "And then that's the part too that I talked about earlier, where people look at how do you work, right? Because nobody's perfect and nobody expects you to be perfect or has all the answers from day one, but they wanna look at Do you know when you have the right answer? When you don't have the right answer, do you know what to do, right?"
+  },
+  {
+   "start": 846,
+   "speaker": "David DiNardo",
+   "text": "Right, you have a plan. Do you know how to ado- adapt that plan if it's not working? Okay. And how quickly do you fix that problem, right? And how quickly do you recover from downfalls, okay? How quickly are you jumping onto opportunities, right? So your ability to execute, okay? And then of course, not nobody's perfect in every way, so that's why you have to build a team, okay?"
+  },
+  {
+   "start": 867,
+   "speaker": "David DiNardo",
+   "text": "So once you f- find out there are these holes, are you a person that tries to literally pa- patch these holes that aren't in your expertise? Are you that entrepreneur that says, \"Hey, you know what? This is not worth my time,\" right? \"I'm gonna find...\" And plus, I can't even do that job that great. I'm gonna find someone that can do that job the best, right?"
+  },
+  {
+   "start": 884,
+   "speaker": "David DiNardo",
+   "text": "And I wanna make sure I can find that person. Oh, wait, but I also need money to find that person, or I need something else to find that person. And that's where that other part of executing comes into play, and is, you know what, plan, execute, hit a wall, right? Find a way to execute again to, to fill that gap."
+  },
+  {
+   "start": 901,
+   "speaker": "David DiNardo",
+   "text": "And it's sometimes it's money, sometimes it's people, right? Sometimes it's time, right? But the biggest challenge or blocker to execution is the big- the most of the time is your own mind. Limiting beliefs- Yeah... Or whatever. So you're now building this story. And this is the story that indirectly people know you know how to execute, you know how to problem solve."
+  },
+  {
+   "start": 923,
+   "speaker": "David DiNardo",
+   "text": "You're just now communicating that to more people. Well, I'm not really communicating it to more people. I'm communicating w- like we... Because the James they knew 10 years ago or even five years ago is not the James now. Yeah. So I always gotta bring back is, \"Hey, David, it's been a few years since we talked, you know, and you know me from back then."
+  },
+  {
+   "start": 943,
+   "speaker": "David DiNardo",
+   "text": "I just, I gotta really quickly update you and say, hey, I went from h- like where am I today, okay? And how I got to today. And then I gotta quickly tell you, right, wh- where I'm going in the next few years or even months.\" Because, right, you know, I wanna quickly find out is, you know what, is there something here for us?"
+  },
+  {
+   "start": 963,
+   "speaker": "David DiNardo",
+   "text": "Because if we're, we don't have, you know, a- alignment or maybe there's nothing there, I'm okay to grab a beer and just talk, you know- Right... To chat and this and that. That's no problem, right? But let's say for example, I see you as a potential partner, right? Or, you know, I see you as a potential investor, this and that."
+  },
+  {
+   "start": 977,
+   "speaker": "David DiNardo",
+   "text": "I wanna quickly let you know, right, what I'm about right now, what I'm a- and what I'm about to be about, okay? And does this interest you, okay? And then sometimes that discussion goes on for years, right? And you're following my story now. You may follow me on Instagram and LinkedIn, or you're, we're, we're chatting more often."
+  },
+  {
+   "start": 994,
+   "speaker": "David DiNardo",
+   "text": "And during those, that time, right, okay, then all of a sudden I'm raising a seed round right now. You've already talked to me for the past two years or 12 months or whatever, you know, and we've been keeping in touch, and you kind of understand more about why I'm doing this. Why does this matter? Why does it matter now, okay?"
+  },
+  {
+   "start": 1013,
+   "speaker": "David DiNardo",
+   "text": "And you truly get it, and you're like, \"Okay, you know what?\" So when I'm raising this round, I'm sending out the deck and I'm sending the term sheet, right, you're pretty much like- Bought in... Already bought in. Yeah. Right? And if you weren't interested, I probably wouldn't be talking about it after the first meeting."
+  },
+  {
+   "start": 1028,
+   "speaker": "David DiNardo",
+   "text": "Right. You get what I'm trying to say? Yeah, 100%. Okay. So then you... And then for the ones that are interested, you keep that, you know, basically relationship building. You keep that update. I think the key thing is, you know, constant communications, right? Accurate in- information. Always be honest."
+  },
+  {
+   "start": 1045,
+   "speaker": "David DiNardo",
+   "text": "Integrity's the biggest thing. And then, right, the right people stay. I mean, the right people in the sense they fit. Yeah. Right? Because you don't, because not all money is good money. Yeah. Right? You want smart money, and you want loyal money. Right? And, you know, the, that two-year span of where you're building your story-"
+  },
+  {
+   "start": 1063,
+   "speaker": "David DiNardo",
+   "text": "You're building your life and whatnot, like, what's the best way for an entrepreneur to keep people in tune to who... Like, everyone has a Rolodex. Your Rolodex is with X, Y, Z people, let's just say. Are you communicating through, are you picking up the phone and calling these guys and building relationships through, like, are you going to events?"
+  },
+  {
+   "start": 1088,
+   "speaker": "David DiNardo",
+   "text": "Are you going on social media? Are you doing events, social media? Like, what's, what's the best way to get out there and show people your story and communicate and so that they're, when a seed round does come, they're kind of reaching out to you versus you reaching out to them? Yeah. So, that's a very good question, and I wanna s- so, give you a few of my, secrets to the trade kind of thing."
+  },
+  {
+   "start": 1111,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Right? So, spec- you wanna ask specifically the fundraising? Yeah, like, or business or, like, partnerships, you know, a- anything to make you successful. Like, you're building equity with these people. Yeah. Right? Yeah. To then, once an announcement happens, they're approaching you potentially, not you approaching them."
+  },
+  {
+   "start": 1132,
+   "speaker": "David DiNardo",
+   "text": "Yeah. That's a different energy. That's a different, you know, conversation when someone comes knocking on your door versus you knock on their door. Yeah, so I'll, so I'll look, I'll say that you quickly have to identify in your network who are the market leaders, who are the circle of influences, okay?"
+  },
+  {
+   "start": 1149,
+   "speaker": "David DiNardo",
+   "text": "Like, basically the spoke in the wheel, right? Who, who really are the ones, right, that are your champions and, you know, that are gonna basically, you know what, be your cheerleader? Because don't forget, right, not everybody thinks like you, and not everybody's you think is gonna support you, right?"
+  },
+  {
+   "start": 1165,
+   "speaker": "David DiNardo",
+   "text": "So quickly get rid of the naysayers and non-supporters, right? And then focus on the people that actually wanna grow, actually wanna build, actually care about you, and wanna see you succeed. Like, that's first and foremost. If you can't, if you surround yourself with people that just wanna see you fail- It's never gonna work"
+  },
+  {
+   "start": 1181,
+   "speaker": "David DiNardo",
+   "text": "It's never gonna work, right? So what I'm saying is that, like, for me, right, when I was at the bank, I had, I worked with a lot of brokers, okay? So I always maintained that broker network, and there's a lot of good brokers, and there's a lot of bad brokers, right? But I always kept a, you know, mental note on, okay, this guy, right, he's a shark."
+  },
+  {
+   "start": 1198,
+   "speaker": "David DiNardo",
+   "text": "All right, this guy I know for sure, you know, he basically, and he's also got a reputation, right? Right? Like a James in the broker room. Right? And then, you know, I'll look at, hey, this person runs, you know, the, you know- basically this big business association. It could be the, you know, CEO of the Business Council of Canada, it could be the Canadian Council of Innovators, it could be basically, you know what, whatever business association, right?"
+  },
+  {
+   "start": 1223,
+   "speaker": "David DiNardo",
+   "text": "Those are the ones that you wanna be close with because you know what? They have access to basically- An audience... An audience that is the leader of that industry that potentially could be the one that you're focused on. Then you also have, you know, you know, network events are really, tricky because a lot of the time, right, it's, you're not gonna get a lot of ROI from it, from your time."
+  },
+  {
+   "start": 1247,
+   "speaker": "David DiNardo",
+   "text": "But the thing is, though, knowing the right people in those networking groups is more key. And then you also have other associations, right? Like, you have TEC, you have YPO, Young Presidents Organization. You have other things. There's a lot of things you can get into, right? But most founders and entrepreneurs, when they wanna start something, a lot of them don't have the network, a lot of them don't have the decades of experience, right?"
+  },
+  {
+   "start": 1270,
+   "speaker": "David DiNardo",
+   "text": "And if I wanted to focus the content today is how to help those people, right? And I think it's, you know, it comes down to you don't really need a lot, right? Like I'll give you for example, if you meet someone like me or someone that has been in this business, you need one person. That one person's network could be all you need."
+  },
+  {
+   "start": 1290,
+   "speaker": "David DiNardo",
+   "text": "Right. Right? 'Cause that person... I know, 'cause I... And I'll tell you why is because in my early days, 'cause I'm gonna talk to as if I didn't have those two decades of, of basically- Networking... Networking or experiences at. Right. Right? I was a... Like my first, there was like a handful of people, okay?"
+  },
+  {
+   "start": 1307,
+   "speaker": "David DiNardo",
+   "text": "And out of that handful of people there was like maybe two or three, okay, that knew like everyone in the freaking city. Okay? And out of those two or three there was like one guy that knew like all the investment guys, there was one guy that knew basically all the international guys. And so you really ought to figure out who's what, who's who and what their-"
+  },
+  {
+   "start": 1325,
+   "speaker": "David DiNardo",
+   "text": "Superpower is, and then, you know, it... And then you gotta re- really invest into those relationships. Remember, trust is not built overnight, but it can be lost in a second. Right. It may take 10 years to build that relationship. You can lose it overnight. So your reputation, your character, you know, your integrity, all that stuff is basically has to be the foundation."
+  },
+  {
+   "start": 1344,
+   "speaker": "David DiNardo",
+   "text": "But then you gotta invest into those relationships, okay, and then you also find a way to give back, and go back, and this how it's, it's all like a funnel, right? A circle, right? So how do you give back? Well, I don't have a, I don't have a network. I don't have any money. I don't have... How the hell am I gonna give back to this guy?"
+  },
+  {
+   "start": 1359,
+   "speaker": "David DiNardo",
+   "text": "It goes back to the foundation of entrepreneur, solving problems. This guy that's super connected, right, might have a problem that you can solve for him to thank him for introducing you to many people in his network. And then when he introduces those people, right, it could be a quick thing that he can solve, right?"
+  },
+  {
+   "start": 1377,
+   "speaker": "David DiNardo",
+   "text": "And with today's internet and technology, right, how do you solve that problem, right? You- it's either with, you know, knowhow, okay, capital, resources, or your physical labor and effort. So going back to my banking time, right, is what made me stand out was, you know, just running between my client's law firm, accounting firm, right, this, you know, and doing a lot of the legwork- You know?"
+  },
+  {
+   "start": 1407,
+   "speaker": "David DiNardo",
+   "text": "So that instead of this deal taking eight weeks-... It took two weeks. Right? And making, you know, doing a lot of that stuff, right? 'Cause the c- the client's, you know, the business owner, he's, he's so basically working 10 hours a day. Right. He's busy, this, that. So those are little things you gotta pick up on, right?"
+  },
+  {
+   "start": 1420,
+   "speaker": "David DiNardo",
+   "text": "And it's, you know, just helping people, and then when you help people, right, people remember that, right? Because a lot of people are not gonna remember what you s- told them. Right. But they're gonna remember that feeling, \"Oh my God.\" Yeah. \"I was really freaking stressed out that week.\" Yeah. \"And James, man, real- really, you know, pulled one, pulled one for me and then-\" Yeah"
+  },
+  {
+   "start": 1437,
+   "speaker": "David DiNardo",
+   "text": "Really helped me out.\" And then so the next time you c- when you actually need something, and, but you shouldn't do it to expect something in return. Yes. Yeah. Right? But when you need something down the road, they're like, \"Hey man, you know, you helped me out when you didn't expect anything.\" Yeah. \"I got you too.\""
+  },
+  {
+   "start": 1448,
+   "speaker": "David DiNardo",
+   "text": "Yeah. And it's funny because my first interaction with you years ago, I, I re- I've dealt with a lot of bankers. Yeah. But I remember you because you got on the phone and you were direct, \"We need to do this.\" \"This is the process, and you get me the stuff and we'll get it done,\" type thing. It was like-... Y- the confidence, the trust, the get shit done, like-"
+  },
+  {
+   "start": 1470,
+   "speaker": "David DiNardo",
+   "text": "You hit all those things versus another banker would be a whole different process of like-... \"Okay, send me this, send me that. Okay, we might be able to get it.\" Like, just the confidence of do it this way and we'll get it done type of thing versus nonchalantly. And I think that's big in entrepreneurship too."
+  },
+  {
+   "start": 1490,
+   "speaker": "David DiNardo",
+   "text": "It's like- And, you know, I would love to b- you know, break out this, the first seed round and how you raised money and, you know, your business and all that stuff. But, the confidence of, \"Hey, th- I'm having a conversation and, I know I could trust this person to do it.\" And was that your mindset when you started this business too?"
+  },
+  {
+   "start": 1517,
+   "speaker": "David DiNardo",
+   "text": "Of like, how long were you searching for the idea and, like, once you got this idea, and I'd love to kinda break through of 2018 or when it started- Yeah... Till now. Sure. I'll, well, I just realized I didn't answer your o- other questions. I wanna answer real quick 'cause I went rambling on earlier. Yeah."
+  },
+  {
+   "start": 1536,
+   "speaker": "David DiNardo",
+   "text": "But your other question is, like, h- how did I get into entrepreneurship from, like, you know, working 9:00 to 5:00 at the bank, right? So these are the things that made, that affected me, all right? So, the bank, you know, for me, I wanted to be able to help people. I wanted to be able to solve problems."
+  },
+  {
+   "start": 1550,
+   "speaker": "David DiNardo",
+   "text": "I found out at that time the bank was creating a lot of their own problems, right? Making these cook- cookie cutter- Yeah... Solutions, you know, checklist boxes, becoming very robotic. Yeah. I was much more, \"Hey, we gotta make it happen.\" Yeah. Right? And so for me, I, and then also at the time, blockchain technology was coming out."
+  },
+  {
+   "start": 1566,
+   "speaker": "David DiNardo",
+   "text": "I was like, \"Hey, man, I think, the world's going digital, especially in banking. I wanna jump on the next big thing,\" and that's how I got into blockchain and stuff like that. But in my last few years at the bank, I got to see, a lot of things. I got to see, you know, like the first Bitcoin account being opened in Ottawa."
+  },
+  {
+   "start": 1581,
+   "speaker": "David DiNardo",
+   "text": "I saw, like, you know, Bruce Linton with the tweet or Canopy Growth, right? They're breaking up, opening up a brand-new industry in cannabis. I got to see Shopify account being opened and how that did, you know? And I got to see a lot, a lot of entrepreneurs that were, you know, breaking barriers, okay? And they just went out and did it, okay?"
+  },
+  {
+   "start": 1599,
+   "speaker": "David DiNardo",
+   "text": "And the, the, at the bank it was always like, the answer was always no, okay? The answer was always no, we don't, that's not how we do things, and da, da. They say they wanna be innovative, but they're a bank, they're risk-averse, okay? And it is what it is, okay? So then for me it was, you know what? I'm like, what if there could be a way, right, to, to basically solve problems and help people and do things more?"
+  },
+  {
+   "start": 1622,
+   "speaker": "David DiNardo",
+   "text": "And I, and I th- and I thought I could do that as a banker, as their banker, and I was doing that. But I said to myself, \"How could I do that on a larger scale?\" So then, you know, I did some Brian Tracy's goal-based planning and I said, \"Okay, there's two things I wanna do with my life. I wanna better the planet, right?"
+  },
+  {
+   "start": 1638,
+   "speaker": "David DiNardo",
+   "text": "And I also wanna better the world for the people.\" And don't like, in the sense of like the digital economy. So then that's eventually how I got into, new material science like graphene. So, clean water, you know, using, graphene filtration technologies. And then, I got into, basically cybersecurity and against quantum, and have found a Quantropi."
+  },
+  {
+   "start": 1657,
+   "speaker": "David DiNardo",
+   "text": "But I was observing all these local hardware entrepreneurs, okay? Right? And talking to them, and this and that, and I'm saying, \"You know what? When I find my calling...\" And this is the thing. An entrepreneur, right, becomes an entrepreneur when they realize, \"This is my calling.\" Right? You know, it's just like when God, you know, you feel like God's talking to you know, and he whispers to you, and that's calling."
+  },
+  {
+   "start": 1682,
+   "speaker": "David DiNardo",
+   "text": "That's the thing, right? That's when I had my calling, right? I jumped on it, right? Basically burned all my boats, just jumped in it, you know, head deep into it, put in my life savings, and the rest is history kind of thing, right? So that's the thing too, right? So for me, right, seeing it, how other people were doing it, right?"
+  },
+  {
+   "start": 1702,
+   "speaker": "David DiNardo",
+   "text": "And also that disfa- dissatisfaction working in a corporate environment, right? And then just having that fire burning inside you, and then when that opportunity came, you ha- basically being fearless and jumping onto it. And almost delusional, but you just know it's your calling. And that's why as a banker, I've been thrown thousands of business ideas in front of me, you know?"
+  },
+  {
+   "start": 1723,
+   "speaker": "David DiNardo",
+   "text": "But they never really got to me. This one did. And it's funny you say that. Like, I'm seeing it with entrepreneurial- entrepreneurship too. It's like-... The wealth creation, the, prosperity, the It can get you everything essentially. But I feel like society keeps you in a box. Right? Like, work 9:00 to 5:00, get the pension, you know, live paycheck to paycheck, live in like a hamster wheel at the end of the day."
+  },
+  {
+   "start": 1752,
+   "speaker": "David DiNardo",
+   "text": "Until you start seeing the other side. Then you can't get that o- other side out of your mind. It's like the Shopifys and-... The Canopy or whatever, the Tweed. Now you're seeing these guys do billions of dollars in sales-... And you're looking at yourself and it's like, \"If they can do it, why can't I do it?\""
+  },
+  {
+   "start": 1770,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Well, the, and the funny part is that, you know, you don't need a degree to be an entrepreneur- No... But you need a degree to work for one. Right. Right. Right. So- Yeah... So that's, so that's kind of like, it's kinda like how society is like, it's kind of been structured and I think it's, but that's quickly changing."
+  },
+  {
+   "start": 1787,
+   "speaker": "David DiNardo",
+   "text": "Technology is, changing how we do things. So that's why it's like, I think right now is the best time to become an entrepreneur. Yeah, agreed. Yeah. So I'm not sure if you want me to jump into the company or- Yeah, so you had a calling. Yeah. You... And now what? Yeah, so- When was the calling?"
+  },
+  {
+   "start": 1805,
+   "speaker": "David DiNardo",
+   "text": "Yeah, so the calling was, you know, well, I'll tell you first. I, before I got the calling for Quantropi, I had a calling to get out of the bank. Like, literally, I had a call, right? So-... I had one of my, my current lead investor who prec- kind of preceded the company, Quantropi, with me, he's actually a serial entrepreneur in town."
+  },
+  {
+   "start": 1823,
+   "speaker": "David DiNardo",
+   "text": "His name is, Jeff York. You know, it's kind of like, you know, COCEO of Farm Boy. You know, sold it to Sobeys for, like, close to a billion dollars and, you know, he's right now the CEO of Altea. He's part owner of Ottawa Senators. So, I left the bank to work for, you know, him as his chief invest- investment officer for a few of his companies and, you know, and that's where, you know, I was able to help him solve some problems, help him raise some money, and then, you know, build a relationship, okay?"
+  },
+  {
+   "start": 1849,
+   "speaker": "David DiNardo",
+   "text": "And then we, led an investment round into a local startup that did, cybersecurity. And, you know, so he really sh- gave me the calling to leave the bank, but it wasn't becoming an entrepreneur. I was still working for somebody else, okay? And I was still helping him and this and that, but then that one thing led to another."
+  },
+  {
+   "start": 1868,
+   "speaker": "David DiNardo",
+   "text": "It's interesting how kind of dots connect down the road. Right. You look back and you're, \"Oh, that's how it connected.\" But basically, he gave me that push to leave my 9:00 to 5:00, okay? And then, you know, and to, because I, I got to work with a serial entrepreneur, and I think his influence and me being his chief investment officer and working closely with him, I really got to see entrepreneurship at a much closer lens."
+  },
+  {
+   "start": 1890,
+   "speaker": "David DiNardo",
+   "text": "And then from there, right, helped him lead an investment round into, a local s- cybersecurity company called Invade Technologies. Inmate Technologies, basically, help with, like, you know, your passwords, right? Kind of stuff, right? Once I did that investment round, you know, I met my current co-founder, Dr."
+  },
+  {
+   "start": 1908,
+   "speaker": "David DiNardo",
+   "text": "Randy Kwong, who's a quantum physicist. I eventually left that company's board, and then he chased after me. He's like, \"Man,\" like... And it's a funny story. He's like, \"You're my guy. You're my guy.\" I'm like, \"Randy, I'm, I'm happily married. I don't swing that way, but nice of you.\" But he's like, he's like, he's like, \"No, no.\""
+  },
+  {
+   "start": 1926,
+   "speaker": "David DiNardo",
+   "text": "He's like, \"I never seen anybody that can control a room like that can make something so complex technology-wise so simple and then can get basically everybody so hyped up a- about the opportunity,\" and da, da. He's like, \"You know, I got this big invention that I've, I've just, you know, filed a patent and, you know, I'm..."
+  },
+  {
+   "start": 1944,
+   "speaker": "David DiNardo",
+   "text": "I just don't know, like, who to talk to bec- because everybody I've talked to, like, they don't get me,\" 'cause he's so funny. This guy's, like, really smart but-... Not really good at communicating-... His thing. But anyways, I, I said, \"Okay, man. Sure.\" So six months is up. Six months of, like, you know..."
+  },
+  {
+   "start": 1962,
+   "speaker": "David DiNardo",
+   "text": "Sorry, I said basically, \"I'm sure. Okay, let... Tell me what it is.\" I still didn't understand in that moment what it was, but anyway, so I said, \"Randy, I'm really focused on this technology called blockchain. I think it's the future to basically, financial services, digital security, all that kind of stuff.\""
+  },
+  {
+   "start": 1976,
+   "speaker": "David DiNardo",
+   "text": "And then he fires back. He's like, \"Even blockchain,\" and this is, like, about a decade ago, \"is vulnerable to quantum attacks.\" Like, in 2017, early 2017 was the first time I heard the word quantum. At that time, you can... There's not even much stuff about it. So basically, after six months of, like, six months of, coffee, lunches, dinner, this and that, I still don't understand what the heck he's talking about."
+  },
+  {
+   "start": 1995,
+   "speaker": "David DiNardo",
+   "text": "Right? But for something, that calling came-... And I said, \"You know what? Like, forget it. I'm gonna, I wanna do it,\" right? So I put in a lot of money, okay? And then Jeff put all in, a lot of money as well, right? And then basically, you know, me and Randy co-founded the company in January 2018. So that's been almost, like, nine years ago."
+  },
+  {
+   "start": 2013,
+   "speaker": "David DiNardo",
+   "text": "So since then, we raised a bit over 25 million US in funding. We've developed a patent portfolio, 'cause we're an IP company, about 13 patents with nine more coming internationally granted. We became, you know, a, you know- Basically Best New Business, Deloitte Fast 50, Canada's Best Private Boards, many other accolades, right?"
+  },
+  {
+   "start": 2037,
+   "speaker": "David DiNardo",
+   "text": "And through being, the leader of the company has... I also got, like, Entrepreneur of the Year, 40 Under 40, that kind of stuff. But all these, you know, accolades don't really matter. So that's... If you want to ask what noise is, that's what noise is. What really matters was, you know what?"
+  },
+  {
+   "start": 2050,
+   "speaker": "David DiNardo",
+   "text": "Finding your calling, right? Just finding a real problem, okay? And this, and a really big problem. And I say this, and it, what really caught me was this was the biggest problem because all data and communications, from what I understood from him, were at risk to advancements in quantum and AI technologies, okay?"
+  },
+  {
+   "start": 2066,
+   "speaker": "David DiNardo",
+   "text": "And he had the best solution, and he convinced me of that, okay? He just didn't know, right, how to bring it to market- Right... 'cause he didn't know how to communicate it. He's like, \"How do I raise money? How to do this, how to do that?\" And that's where you find... He, so he did what I said earlier. He found the gap, and he found a way to execute to fill the gap by finding me."
+  },
+  {
+   "start": 2085,
+   "speaker": "David DiNardo",
+   "text": "And boy, was he smart-... Because then he found one guy, me, to fix all the other problems. Right? Finding people, finding money-... Finding customers, right? And he could sit happily, you know, in his office and just think. He's an inventor. Yeah, he's an inventor. Yeah. He's write, pu- he published, like, 45-plus peer review papers, da, da."
+  },
+  {
+   "start": 2104,
+   "speaker": "David DiNardo",
+   "text": "So that's what he did, right? And then, so I went out, raised the money, built the team. First person he brought on was our chairman of the board because I'm like, \"Hey, this is huge. This is gonna become a global company.\" I don't know how to do that. I've never been a CEO. I've never been a founder. I had to fill that gap, so I brought on a chairman of the board, ex-president of Nortel Networks up to 2013."
+  },
+  {
+   "start": 2124,
+   "speaker": "David DiNardo",
+   "text": "Built one of the biggest companies in the world, right? And then him and Randy kind of in- sold the network gear that builds today's whole digital infrastructure, and now they're back again with this team to preserve that legacy, right? And all this is Canadian tech, too. So from there, right, we built out the board again with Jeff and, you know, co-founder and some other key individuals, and then, you know, we brought in, like a A caliber management team, like, with, like, global experience."
+  },
+  {
+   "start": 2147,
+   "speaker": "David DiNardo",
+   "text": "You know, like, you know, top guy at Microsoft, top guy at Accenture, da, da. You know, so it's,.. You know, and because why? Because I didn't have the, the skill set that these people had. My superpower was, you know, I built a lot of strong relationships, okay? I could raise a lot of money, okay? And but I, you know, I had, and had to learn quickly, though."
+  },
+  {
+   "start": 2171,
+   "speaker": "David DiNardo",
+   "text": "And I think my biggest power is my learning agility. So what I didn't know, I could learn quickly, and if I couldn't learn that quickly, I made sure I found somebody else that could fill that gap. So if I, if I can't that, if I don't have confidence I'm gonna learn it quick enough to whatever, I'm gonna find somebody, right?"
+  },
+  {
+   "start": 2186,
+   "speaker": "David DiNardo",
+   "text": "Because people think their biggest asset is, you know, money. It's not. It's your time. And when you talk about your ego before- You must check your e- ego a lot, because a lot of people are-- don't bring people in Yeah... From like a po- there, it could be a huge power. Like, you're bringing in a lot of egos, a lot of powerful pe- Yeah"
+  },
+  {
+   "start": 2207,
+   "speaker": "David DiNardo",
+   "text": "Po- powerful in their domain. You know, also I think about, like, imposter syndrome. Like, you're in this meeting with a whole bunch of different people. Like, how do you feel and, like, how do you interact with, like, all these types of people that have done it, right? You're-- just left the bank, right? Now you have this billion-dollar idea, and now you're raising money, like, y- first time running a business, right?"
+  },
+  {
+   "start": 2235,
+   "speaker": "David DiNardo",
+   "text": "Usually, like... I saw Alex Hormozi talk in one of his clips. It's like someone asked is like, \"Do I start a business and do a million dollars, then move to the $5 million-... Or to the $10 million?\" And his response was like You go with whatever you feel passionate about and go after it as hard as you want."
+  },
+  {
+   "start": 2254,
+   "speaker": "David DiNardo",
+   "text": "Forget about what it is because you're learning no matter what you do, right? I went like the, \"Okay, I wanna start a service business. Now I'm starting a tech business.\" Like, I did that path where I probably could have just jumped into the tech potentially-... And skipped a lot of steps, right? You jumped right into a $100 million business, you know, coming out of banking, right?"
+  },
+  {
+   "start": 2281,
+   "speaker": "David DiNardo",
+   "text": "So- Yeah... How did you have a mindset for that? Yeah. Well, we're not a $100 million business yet, but, we're on the track to become something like that. Well, what did you raise? So I raised, tw- the $25 million plus I raised was, you know, about five plus where it was about non-dilutive funding, the government grants."
+  },
+  {
+   "start": 2298,
+   "speaker": "David DiNardo",
+   "text": "20 plus, million US was, believe it or not, no institutional VCs, all from angels, right? That was the, my network. And you know, but to, to answer your question is that people have to remember entrepreneurship is like sailing, okay? You say, \"Hey, I wanna get across the s- the ocean,\" okay? But you're sailing, so you're requiring the winds."
+  },
+  {
+   "start": 2320,
+   "speaker": "David DiNardo",
+   "text": "You don't tell God how to blow the winds. Yeah. You adjust your sails. I love that. You, you know what I mean? Yeah. Right? You adjust your sails, okay? And the thing is, to answer your question, how do I do the ego thing and, and dealing with... The thing is like this, right? If you're a true entrepreneur and you're a true leader, you're always gonna, if you're smart, hire people that are a lot smarter than you."
+  },
+  {
+   "start": 2342,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Right? And that's what I did, okay? So, you know, and I always remain humble and always, you know, wanna learn, right? And it, and I think it's, the key thing is, you know, you're dealing with all type A personalities. Yeah. First thing is, A, how do you have a good management cadence, and how do you communicate respectfully, efficiently, and this and that, right?"
+  },
+  {
+   "start": 2361,
+   "speaker": "David DiNardo",
+   "text": "So it's, it's, doesn't matter how much experience a person has, doesn't matter how much credentials they have, you know, every time there's a problem, okay, there's many ways to skin a cat. Yeah. Okay? And I'll give you for example. Okay, I'm, I'm gonna give you example, okay? Like, people will tell you that I'm probably, like, the weakest link at the company even though I'm the co-founder and CEO."
+  },
+  {
+   "start": 2387,
+   "speaker": "David DiNardo",
+   "text": "So we, one of the times when, the company- I think almost basically disappeared because we couldn't solve a problem, right? It was a techno- I'll just really summarize it. It was a technological problem, okay? And my co-founder, chief scientist, who was the re- the brains of the brain, said, \"There's no way we can solve this."
+  },
+  {
+   "start": 2406,
+   "speaker": "David DiNardo",
+   "text": "There's no way we can solve this.\" And I said to Randy, \"If we can't solve this, right, I can't go raise more money because this is th- this gap is a big risk to the business. How can I go raise money or ask people to put in money, right, if, right, you know, we don't fill this risk i- issue, right? And s- and make sure that our technology platform covers it.\""
+  },
+  {
+   "start": 2428,
+   "speaker": "David DiNardo",
+   "text": "It's not a money problem, it's a- Yeah... A technical problem. Yeah, technical problem. So then he said, \"There's no way, there's no way.\" Anyways, stayed in the office, and I said, \"We're not leaving this room on this whiteboard until, right, we solve this problem,\" okay? Okay, and all I did, right, with him is, \"Tell me why we can't solve this problem.\""
+  },
+  {
+   "start": 2447,
+   "speaker": "David DiNardo",
+   "text": "Da, da. No technical background, no quantum background, no physics background, no nothing, right? I just kept on pounding him with more questions and pounding him with questions, right? And then whiteboard and this and that. And, and I didn't need to understand what the heck he was talking about. But what I was trying to do, right, was up his level, right, in real time."
+  },
+  {
+   "start": 2469,
+   "speaker": "David DiNardo",
+   "text": "'Cause I said, \"We don't have time, so I wanna find a way. If you think you're only this smart and you can't think of a solution, I'm gonna try to make you this smart by opening-\"... You know, other c- gaskets in your brain, right? That quantum brain to try to figure out the solution, okay? So anyways, after a lot of time in that office and whiteboarding, okay, he had a eureka moment, and we found a solution, and that's how I became an inventor for the first time in my life, and my name got onto that patent."
+  },
+  {
+   "start": 2495,
+   "speaker": "David DiNardo",
+   "text": "Okay? Right? And what, why am I showing you this story, okay? It's because, okay, a lot of times you might have the smartest person, and he is the smartest person for that subject and topic, okay? But a lot of times, like I said to you earlier, he's his own worst enemy. Worst enemy, yeah. Okay? This person might be the CEO of a Fortune 500 company, raised billions of dollars, done this and done that, this and that, okay?"
+  },
+  {
+   "start": 2519,
+   "speaker": "David DiNardo",
+   "text": "But he may not... He might be too checked in his o- his old ways and not seeing the problem from a different angle. Yeah. Okay? So never underestimate what you can bring to the table-... If you are a really good problem solver. And it goes back to, right, if you're a really good problem solver, okay, you can sit at a table with, you know, a top global executive, you know what?"
+  },
+  {
+   "start": 2541,
+   "speaker": "David DiNardo",
+   "text": "A king. You can sit,.. The top, you know, c- commander of an army, okay? Because don't forget, okay, we're all just human, okay? We only see what we wanna see. So if you're able to see a problem from a different angle, okay, and then basically ask the right questions and then connect the r- the dots in a, in a different manner, right, you may have come up with, a different way to solve the problem."
+  },
+  {
+   "start": 2568,
+   "speaker": "David DiNardo",
+   "text": "Were you always like this? I don't know. I'll have to ask my mom, right? But she'd probably, you know,.. I don't know what she would say, to be honest. But, I, I think this hap- this developed over time where, you know, a lot of people just said to me, like, - You can't do it, James. That's impossible."
+  },
+  {
+   "start": 2589,
+   "speaker": "David DiNardo",
+   "text": "This and that. Or even like being in, you know, in certain relationships where you know what? Like, why are you doing this? Da, da, right? But I think what really drove me to kinda like level up was my two daughters, right? So when each daughter was born and where I'm holding them in my arms, right?"
+  },
+  {
+   "start": 2605,
+   "speaker": "David DiNardo",
+   "text": "You know, and I'm like, \"You know what? It's not about me anymore, right? It's about you.\" And to think that, hey, you know what? If I don't make... If I don't find a way to make certain things happen, right, it affects them. And I think that there, as a man, as a father, right, I think, you know, when you have kids, right, it pushes you beyond your current limits."
+  },
+  {
+   "start": 2626,
+   "speaker": "David DiNardo",
+   "text": "And what is q- quantum? So, you know, quantum's just a new technology, right? Just like phen- a phenomenon, right? So think of it this way. Like, today we operate in binary numbers, right? Or, or information bits, okay? Ones and zeros, true or false, black or red when we go to casino playing roulette, right?"
+  },
+  {
+   "start": 2646,
+   "speaker": "David DiNardo",
+   "text": "Two outcomes, okay? Right? If simply put, quantum, right, or a quantum state, okay, can be both of those outcomes at the same time. If you look at it, right, it stops, and it becomes zero or one, okay? So, you know, give you an example of like kinda the difference, right? Is like, so you know Waldo, the guy with the red and white hat?"
+  },
+  {
+   "start": 2669,
+   "speaker": "David DiNardo",
+   "text": "You know, so I was looking at that book with my daughter, Indigo, she on the weekend and find- trying to find Waldo. Well, if, give you an example. Waldo right now is running from a spy, okay? And he, and M said, \"Hey, run to the, the, the hotel with the most rooms you can find and hide in a room until we send backup.\""
+  },
+  {
+   "start": 2686,
+   "speaker": "David DiNardo",
+   "text": "He finds a hotel room with a million rooms, okay? If you use today's, you know, basic current technology, you know, even AI or whatever it is and that, you know- That this basically, you know, spy would have to check each room at a time to try to find Waldo. And if Waldo changed rooms in between, right, or went to a room that he already checked, forget about it."
+  },
+  {
+   "start": 2706,
+   "speaker": "David DiNardo",
+   "text": "And then in two hours when backup comes, spy's out of luck. Okay? Well, like I said earlier, quantum can check, can be both at the same time. Well, quantum will be able to check all these rooms, million rooms simultaneously in an instant. Okay? And that's really kind of the difference in power. Okay? Quantum, like, AI is very good at recognizing patterns, okay?"
+  },
+  {
+   "start": 2728,
+   "speaker": "David DiNardo",
+   "text": "But quantum is really, can solve certain problems much more ef- efficiently and faster because they have a lot more computing power, and they come from a different fundamental basis, right? And what's your, and what's your business model? So for our business, right, is, so for example, that, to go back to that story about the spy trying to get into that room, right?"
+  },
+  {
+   "start": 2749,
+   "speaker": "David DiNardo",
+   "text": "Well, right now, if you wanted to, if basically I wanted to make sure that the spy with that quantum power can get in, can't break into the room, I would need to upgrade that lock and key of the room to become quantum, right? Right now, right, there's, you know, physical ways to do it, this and that, and you know."
+  },
+  {
+   "start": 2767,
+   "speaker": "David DiNardo",
+   "text": "Basically think of it, I need a handyman to go, like change a lock, change a key, whatever. That would take forever, right? So our business model is basically let's upgrade all those locks and keys in the fastest manner, and the way to do that is with software. So we're able to provide quantum native, right, security, right, without any quantum hardware And are you in the Canadian market, you're a US market?"
+  },
+  {
+   "start": 2791,
+   "speaker": "David DiNardo",
+   "text": "Like, what, who's your customer? We're globally. We're headquartered here in Ottawa, Canada. You know, we're 100% Canadian company, you know, Diana company. So we are focused on geography-wise, mostly North America, Europe, Asia-Pacific, focused on really three market segments, enterprise, embedded markets like IoT, and then, government, but really defense."
+  },
+  {
+   "start": 2815,
+   "speaker": "David DiNardo",
+   "text": "Yeah. And like when you got the idea, and now how did you get it in your mind of like, \"Who's my customer? How do I research the customer? How do I raise money?\" Like, was it just one step and everything kinda, not everything fell into place, but you just took, you took the bigger picture and started breaking it down each day?"
+  },
+  {
+   "start": 2834,
+   "speaker": "David DiNardo",
+   "text": "Is that- Well, it goes back to, I didn't know, and I have no clue. So back to why I said, \"Okay, well first off, I need someone I can, that has done this before.\" Ex-president of Nortel Networks, Marco Bogani, our chairman, right? He was very influential, very helpful. I've also surrounded myself with key advisors, right?"
+  },
+  {
+   "start": 2856,
+   "speaker": "David DiNardo",
+   "text": "That knew this space very much. Okay, so you know, and we knew this big problem was coming, like, and it would come like a tsunami. We just didn't know when. But we knew it was gonna be, you know, the world thought it was decades away, but we believed it was gonna be within the decade, and we were right 'cause now Google, Microsoft, I- you know, all those guys believe the same timeframe as us, I see McKinsey, Gartner."
+  },
+  {
+   "start": 2874,
+   "speaker": "David DiNardo",
+   "text": "Now there's even like government mandates, like executive orders by like the Trump administration to say, \"We've gotta be ready by 2030,\" right? Kinda thing, right? So it's like we have that there, but back then, right, we didn't have that, right? But it took that kind of foresight and insight from, you know, me getting all that from advisors, board of directors, talking to customers, talking to other industry experts, right?"
+  },
+  {
+   "start": 2897,
+   "speaker": "David DiNardo",
+   "text": "And then finding a way to make sure that our business model, right, could survive, right, basically the market. When I say survive the market, what I mean by that is, like I said, we don't know when this is gonna happen, okay? So we gotta make sure that no matter when it happens, we're gonna basically win."
+  },
+  {
+   "start": 2915,
+   "speaker": "David DiNardo",
+   "text": "We don't know where it's gonna happen, okay? Meaning industry-wise, and we say, \"Okay, no,\" then we have to make sure that our business model is no matter where it happens first, we're gonna win. Okay? So that's why we basically, you know, built technology and IP to enable that. So we built a platform, okay?"
+  },
+  {
+   "start": 2932,
+   "speaker": "David DiNardo",
+   "text": "And we didn't f-focus on being like, being the best case, no, or, you know, coolest thing here. We focused on the things that we didn't, we, that we didn't think the market would change, right? So low cost, right? Scalability being software. You know, fast, right? Highly secure, you know, right? Easy to integrate, okay?"
+  },
+  {
+   "start": 2952,
+   "speaker": "David DiNardo",
+   "text": "Very agile. Like, so we focused on the things that we know people want, and then we put all those features into the platform. And then the platform, right, was built so that it could, you know, quick... Because it's software, we can dial up, dial down, you know, really adapt quickly. So no which way, no matter which way the markets swayed in five years or a decade or two decades, we're okay, right?"
+  },
+  {
+   "start": 2971,
+   "speaker": "David DiNardo",
+   "text": "We can adapt. And then we've said, \"Okay, well let's focus on the early adopters.\" And we went out, do market research, talked to customers, talked to industries to find out where the early adopters were, and that's where we decided it was gonna be enterprise, embedded markets like IoT and defense and government."
+  },
+  {
+   "start": 2985,
+   "speaker": "David DiNardo",
+   "text": "And then we built on top of the platform customized solutions and application for these markets by talking to customer, \"Hey, if-- So when this problem actually comes and this and that, how's the best way to serve you?\" You know, how do I make your life easier? What are the key areas that you wanna start protecting first?"
+  },
+  {
+   "start": 3004,
+   "speaker": "David DiNardo",
+   "text": "And is national defense one of the biggest areas right now for it? Yeah, so, I think, you know, yeah, defense's always looking for the highest capabilities. Yeah. Yeah, so we develop solutions for defense, like, tactical radio, tactical video communications. So, you know, we've- we did- when we were part of the NATO Diana program, we did the world's first quantum secure communication link between two NATO, sites, like Copenhagen and Halifax."
+  },
+  {
+   "start": 3027,
+   "speaker": "David DiNardo",
+   "text": "You know, our encryptions, you know, in these tactical radios that are the most battle-tested tactical radios on the planet, in the front lines in Ukraine, with this co- company called Hymira. We have a, quantum secure video encoder that compresses a video by, like, over 1,000 times, but it's quantum secure and very low latency and lightweight, so it fits virtually, you know, on any device or drone, UAV, good for space communications as well."
+  },
+  {
+   "start": 3050,
+   "speaker": "David DiNardo",
+   "text": "So we call our company, like, a dual use s- you know, software cybersecurity company. Dual use means that it has the defense application, but it's also very, you know, rapidly adoptable across civilian use, right? Just like the GPS back in the day-... Or internet. And where does AI sit in on this? Yeah, so, you know, AI is gonna really be able to guess, like..."
+  },
+  {
+   "start": 3071,
+   "speaker": "David DiNardo",
+   "text": "'Cause so look, before we get into AI, so information today is, simply put, is protected by a lock and a key, okay? So AI is gonna be able to really guess weak keys, and quantum's gonna be able to steal those keys, so then it, quantum AI breaks them, right? So then, basically you have to pr- prevent that from happening, right?"
+  },
+  {
+   "start": 3088,
+   "speaker": "David DiNardo",
+   "text": "So you need... And the b- and the reason why this is a problem is because we weren't made for a quantum AI era. We were made for a pre-era of that. Yeah. But now that's changing. Right. Right? So, and then how do you upgrade all that quickly and efficiently in the right way is the challenge, right?"
+  },
+  {
+   "start": 3105,
+   "speaker": "David DiNardo",
+   "text": "Because- People thought they had decades of time to prepare for this, but now they only have a few years. Right. So that, that compression of timelines is really the big problem. So where do you see your company next? - It's 2030, you said? Well, it's, you know, we think it's gonna happen before the end of the decade."
+  },
+  {
+   "start": 3122,
+   "speaker": "David DiNardo",
+   "text": "Like this, the t- when I say happen, meaning like when we think encryption, today's encryption's been rendered useless- Okay... Or we determine like Y2Q, like Y2K. Yeah. You know, the, that big shift there. But we, for us is that right now is, you know, we're, you know, we were pre-revenue. Like we sp- like we've been around like nine and a half years."
+  },
+  {
+   "start": 3140,
+   "speaker": "David DiNardo",
+   "text": "We first spent the first five years on rigorous IP product development, the next few years really on, you know, validating our platform, building up partnerships. So now we're going from like, you know, from pre-revenue to revenue. We're looking to go public, right? We, we're, we, you know, pursuing a US listing on the Nasdaq, and we're gonna go, to go raise a, a large, investment round, and, we'll see where that goes."
+  },
+  {
+   "start": 3163,
+   "speaker": "David DiNardo",
+   "text": "You know, 'cause, that's, that's al- that's also a big, heavy lift, right? Gotta do that, also run the business, and obviously we're always looking, you know, to sign on more customers and part- strategic partnerships, also strategic capital investors. So it's constant, right? It never ends. Can you do this in Canada or do you have to go to the States?"
+  },
+  {
+   "start": 3181,
+   "speaker": "David DiNardo",
+   "text": "Well, so the thing is, I think right now as a Canadian company, it's great that we have sovereign Canadian IP. You know, we recently deployed with Nokia in the National Quantum Testbed outside of Montreal, Umana, there. So this 100% Canadian AI sovereign secure solution. Okay? You know, we do have opportunities in the USA obviously, one of the biggest markets, and, you know, Europe as well as Asia Pacific."
+  },
+  {
+   "start": 3208,
+   "speaker": "David DiNardo",
+   "text": "Focused on telco enterprises really right now, and some defense opportunities. And w- what are you no- are you noticing a difference between the US investors and Canadian investors and how that's all working? Oh, yeah. I think, you know, we were looking at the Toronto Stock Venture Exchange, you know, originally and looking at Canada, and as much as things are happening very fast on the defense side and, you know, a lot of talk there and, and it, and really, they're really doing a great job at moving things, but it's even faster, it's still slow."
+  },
+  {
+   "start": 3240,
+   "speaker": "David DiNardo",
+   "text": "The capital markets in Canada, you know, is not easy. You know, and I think that if, you'll talk to any Canadian founder, any CEO that's raising capital, real capital, he's gonna tell you that, you know, it's a lot different down south, right? You're gonna get, faster checks, higher valuations, you know, different type of feedback, meaning probably, you know- More, I said more signal versus noise."
+  },
+  {
+   "start": 3268,
+   "speaker": "David DiNardo",
+   "text": "Right? And, and the thing, and it, I don't, it's just, it's just, it's just what it is. Yeah. You know, so I think it's like, I think there's a lot of, work that needs to be done, in Canada. I think, you know, I think we ha- we have really smart people that understand the problem. I think it's, you know, we need, everybody to come together, like at the venture capital level, you know, government level, institution level."
+  },
+  {
+   "start": 3294,
+   "speaker": "David DiNardo",
+   "text": "Even at, you know, with the angel networks that we have here, like, we have a lot of good organizations here in Canada. They're doing a good job and they recognize the problem and trying to fix it. But I think it's, you know- Even every Canadian entrepreneur needs to believe that Canada is gonna get better."
+  },
+  {
+   "start": 3314,
+   "speaker": "David DiNardo",
+   "text": "If we invest into Canada, they're gonna need to make sure that jobs stay here. You know, because, you know, if,.. Everybody's gotta play their part, right? So as much as I'm complaining how hard it is in the capital markets in Canada, right? But if I complain about it but I don't try to, you know, contribute or give back when I can or where I can, you know, you're part of the problem too."
+  },
+  {
+   "start": 3335,
+   "speaker": "David DiNardo",
+   "text": "How important is speed right now? Speed is always the number one, right? Because I go back to first is do you have the right idea, meaning you're solving a problem that actually matters. The second thing I told you was execution, right? So if you're slow, right... Well, first, if you're in, going, heading the wrong direction-"
+  },
+  {
+   "start": 3356,
+   "speaker": "David DiNardo",
+   "text": "Right, then you might go off a cliff. That's why the first one- Yeah.... That's number one, right? Two, right, if you're going the right direction, right, but if everybody's sprinting and you're walking, doesn't really matter. Right. Okay? And also, if you, if you have a first move advantage but you don't know how to monetize it or, or protect that position, you're also screwed."
+  },
+  {
+   "start": 3376,
+   "speaker": "David DiNardo",
+   "text": "So speed is very important, okay? So I think it's, you know... And the saying is, you know, you wanna go f- basically, you know, fast, right, well, you know, go alone, right? So, and if you wanna go far, go as a group or go together. That's true because, you know, in the beginning when you're entrepreneur and you're by yourself or you're a small team, you need to go as fast as you can."
+  },
+  {
+   "start": 3397,
+   "speaker": "David DiNardo",
+   "text": "Learn fast, fail fast, everything fast, right? Okay. But when you wanna go far, like I'm trying to do, you, then you really need to build up that team. And don't forget, as you grow the team, as you grow the investor, as you look at public markets, right, the complexity, the compliance, the cruelty of the processes, all that comes, then they become, you're not m- you know, you're, you're, you wanna move fast and you can't."
+  },
+  {
+   "start": 3420,
+   "speaker": "David DiNardo",
+   "text": "Or you're gonna be moving slower than you want to. Right? So I think it's,.. I think the key thing is, like, the b- the best entrepreneurs I know are the ones that are able to make quick decisions. Right? And they focus only on the decisions that have the highest impact to their business, okay?"
+  },
+  {
+   "start": 3438,
+   "speaker": "David DiNardo",
+   "text": "If it doesn't, like... And it d- you shouldn't be making a lot of decisions a day. You should be making very few decisions- True, yeah... But the ones that make the biggest impact on your business, right? And then, and then so, like, for myself, right, my number one job is strategy, always focus on the vision, North Star, you know, allocating capital where it needs to be, right?"
+  },
+  {
+   "start": 3457,
+   "speaker": "David DiNardo",
+   "text": "And making sure that's happening, strategy, that kind of stuff, right? You know, make sure that, we are always aligned, everybody understands what, why we're here, okay? Like, dr- driving the company culture, stuff like that. But- If it has, if it's like, I don't know, a piece of marketing collateral or if a piece of this and that, right?"
+  },
+  {
+   "start": 3480,
+   "speaker": "David DiNardo",
+   "text": "You know, I have to make sure I, that I can trust the people that I put into positions to make the decision to make those decisions. And if I can't, then you need to replace those people. And how do you weigh everything and put everything on your shoulders, like, and stomach things, like...? Well, I think it's like, as a leader, right?"
+  },
+  {
+   "start": 3495,
+   "speaker": "David DiNardo",
+   "text": "Like you have to eat last, you have to... When, you know, when shit hits the fan, you've really gotta be in front of the fan, right? And block it for your team, you know, making sure that you filter stuff from the board and stuff that comes down, or investors that come down. Yeah. You gotta filter that, because the only people that..."
+  },
+  {
+   "start": 3512,
+   "speaker": "David DiNardo",
+   "text": "The only way you're gonna solve your problem, get, or get out of a pit is by your team helping p- push you out, right? They'll, it like, you know. And then so you have to make sure that, you know... It's hard, okay? And I, and I, and I think that's why I think most of the entrepreneurs, right, are men, right?"
+  },
+  {
+   "start": 3532,
+   "speaker": "David DiNardo",
+   "text": "Because I don't recommend it to anybody, man. It's one of the hardest things, right? It's, it's like, you know, it's like Elon Musk says, it's like, you know, eating glass and staying out till today. Yeah. Or, or Sam Altman saying that, you know, they're a bit borderline delusional. Yeah. Right? Because the amount of pressure- Yeah"
+  },
+  {
+   "start": 3548,
+   "speaker": "David DiNardo",
+   "text": "Okay, on you is immense, right? You know, women can withstand a lot of pain. But I think men can withstand a lot of pressure. Yeah. Right? And then it's about making those crazy split moment decisions, okay, and just running with it, right? Like, we don't have, like you don't have time to even worry, right?"
+  },
+  {
+   "start": 3566,
+   "speaker": "David DiNardo",
+   "text": "It's do or die, right? And, and I've been in those moments, and it's... You asked about confidence. How do you have all that confidence? It's when you make those decisions and you don't die. Okay? Or you do die and you get back up. Okay? That's how you build those con- that confidence. So no pain, no gain, right?"
+  },
+  {
+   "start": 3583,
+   "speaker": "David DiNardo",
+   "text": "So don't... So, you know, yes, I've been, my first time as an entrepreneur, but trust me, in my life I've gone through a lot of up and downs. Right. Hit rock bottom many times, you know. And people that have invested in me long term, been with me or putting down the big bucks, they know that. They've seen it, and I think that's why they say, \"Hey, whatever happens, this guy's gonna find a way to turn it-\" Figure it out."
+  },
+  {
+   "start": 3603,
+   "speaker": "David DiNardo",
+   "text": "Or figure it out. And that's the thing, right? It's like, you know, there is immense pressure. So, if you're thinking about, hey, entrepreneur's gonna be a easy ride or a free ride or this and that, no, no. It's, it's, it's, it's probably... And again, like highly recommend you do, if you're gonna try this out, do it before you have a family."
+  },
+  {
+   "start": 3623,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Right? It's, because it, the, once you have a family, you have kids, you have other, these, all these obligations, the pressure is maybe two times more. You know, you have, the time you have is basically cut in like half or a few time, few fractions, right? And, but you still gotta make it happen."
+  },
+  {
+   "start": 3643,
+   "speaker": "David DiNardo",
+   "text": "I know the answer to it, but I'm gonna ask it. If you could change going back to a nine-to-five, would you do it? After talking about how much pressure it is, how hard it is, if someone says, \"Here's your job at the bank,\" would you go? Yeah. Oh, you would? If I was a CEO. There you go. Got me. Yeah, 'cause I, I would go back because, like I said, the only reason I felt I had to leave was I feel, felt I was making a difference."
+  },
+  {
+   "start": 3673,
+   "speaker": "David DiNardo",
+   "text": "Right? Well, and why I ask that, because a lot of entrepreneurs in, like, there's a pain tolerance that you just gotta get used to, and I've had a lot of fighters on this podcast too that are entrepreneurs. And the amount of grit that they have to get back up and just keep on fighting and fighting and fighting is the same mentality-"
+  },
+  {
+   "start": 3691,
+   "speaker": "David DiNardo",
+   "text": "You have to have as an entrepreneur. But you ask them, \"Hey, could I ever go work for someone again or work that nine-to-five or go ba- be put in that?\" And- Yeah... Their first response is, \"Heck no. I'd rather- Yeah... Put myself through that pain- Yeah... For whatever reason.\" Yeah. And one thing I'll probably share too is that, yeah, like, so when you get into these, like I told you gotta check your ego at the door when you head into these customer meetings, these management meetings."
+  },
+  {
+   "start": 3714,
+   "speaker": "David DiNardo",
+   "text": "You know what? You're, you're humble, you're listening, you're, you're, you're learning, right? So that you can h- best serve your team and your customers. But at the same time, you also need to check it at the door when you go home. Yeah. Right? So as a father, this and that, you know, I never, ever bring my work home, right?"
+  },
+  {
+   "start": 3729,
+   "speaker": "David DiNardo",
+   "text": "So when I step in that door at home, I'm a dad. Right? You know, da, da. Because I think it's, what most entrepreneurs don't realize is that, you know, if you... I don't believe in work-life balance, but if you don't know how to- Set... Manage your life- Yeah... You won't be able to manage a company, and vice versa."
+  },
+  {
+   "start": 3745,
+   "speaker": "David DiNardo",
+   "text": "Yeah. Right? Manage yourself. Yeah, manage yourself. Yeah. Like, and I think that's, you know, there's an expected level, and here I think this is the part that most people don't talk about entrepreneurship, but, I'll say that the, one of the biggest, factors that I look at an entrepreneur and I can tell if they're gonna be suc- succeeding on is their level of maturity."
+  },
+  {
+   "start": 3763,
+   "speaker": "David DiNardo",
+   "text": "Right? Their level of maturity, dealing with relationships, home life, work, this, that, you know, how they handle things, you know. And, that maturity doesn't come without pain, so. Well, I could talk to you all day. Yeah. And, I know you are a busy guy, and I really appreciate even just sending you the email to connect."
+  },
+  {
+   "start": 3783,
+   "speaker": "David DiNardo",
+   "text": "I think I got a response within a couple minutes-... Of like, \"Yeah, let's do it,\" and I really appreciate that, and I re- really appreciate the support and your time. I can't imagine also, like, how much stuff is going on in your life building this business, because you're at an opportunity where you see the future, you're going all in, and I think there's a lot of Canadian entrepreneurs that hopefully see this podcast."
+  },
+  {
+   "start": 3807,
+   "speaker": "David DiNardo",
+   "text": "Because a lot of people say you can't do it in Canada and you have to go to the States, but you're a proven fact that you didn't have anything, or you had a-... Very m- little amount, right? You've built it up through reputation and content and trust and integrity, connected with the right people. Found your idea, went all in on it financially, emotionally, physically, everything."
+  },
+  {
+   "start": 3830,
+   "speaker": "David DiNardo",
+   "text": "And now you're telling a story of like-... The next step is-... Being on Nasdaq and raising more money and taking a bigger swing and doing all these things, and you're from Ottawa, right? Like- Well, I think right now with the build buy Canada, you know, build- building in Canada back then was challeng- and it's getting easier, and I think it's gonna get even better."
+  },
+  {
+   "start": 3851,
+   "speaker": "David DiNardo",
+   "text": "I think there are some key government policies that I, if, for example, if they, you know, basically, made it a bit more easier around kinda like some of the taxes and this and that, and driving energy doing that right now. But I can tell you right now is probably, you know, right now with all the, the shift towards, you know what, s- being buy Canadian, be sovereign, this and that, now's a really great time to do, start up a business in Canada."
+  },
+  {
+   "start": 3878,
+   "speaker": "David DiNardo",
+   "text": "Yes, there's all these other challenges, right? But the thing is though, I think it's, depending on what, how you, how you think, but for me, being born and raised here, right, my network is here, my kids go here. I wanna, like, I'm doing all this for my kids, right? So I wanna make sure that my kids, right, and their legacy and all that kind of stuff here, there's something for them to always call home."
+  },
+  {
+   "start": 3898,
+   "speaker": "David DiNardo",
+   "text": "Right? And it's always gonna be home for us. So I think it's like, if, like I said earlier, if you... I know there's, I know, I know all the complaints, I know all the challenges we have, this and that, but I think it's, you know what, if you wanna be part of the noise, that's your choice, right? But if you wanna be part of the solution, right, check out the signals."
+  },
+  {
+   "start": 3914,
+   "speaker": "David DiNardo",
+   "text": "How does it apply to you, right? How do you build here? And we are staying here, but we're not only building here. Like, we're going global, right? Yeah. So look at export markets, look at basically other countries and partnerships you can do there, right? So when I say build in Canada, what I'm trying to say is that there's a, Canada has some of the top innovation, top best talent pools, best universities, right?"
+  },
+  {
+   "start": 3934,
+   "speaker": "David DiNardo",
+   "text": "So how do you do that and combine it with every other country's superpower, right? And then right now with this digital world, everybody can work remote. There's ways around it, okay? And of course, if taxes are a big thing, find a good accountant, right? Right? If, you know what, if f- finding funding is hard, right?"
+  },
+  {
+   "start": 3951,
+   "speaker": "David DiNardo",
+   "text": "Talk to the people that have done it before, right? Life is always gonna be hard, okay? And your problems are not gonna go away. They're only gonna get bigger. But you have to get better at solving them. And the thing is too, just to add to that point, there's a lot of noise of not building in Canada and needing to go to the States or wherever-"
+  },
+  {
+   "start": 3968,
+   "speaker": "David DiNardo",
+   "text": "To build. That's the signal and noise. You've built a very successful business, raised millions of dollars. That's... If you can get to where you were at, right, a lot of entrepreneurs, you're killing it, right? No, I wanna, I wanna, I wanna share something. So my perspective on that is, so my co-founder, chief scientist, if I went to the States, okay, he wasn't there."
+  },
+  {
+   "start": 3991,
+   "speaker": "David DiNardo",
+   "text": "Correct. I wouldn't have started this company. The, basically the founding fathers of AI were all Canadian. Yeah. Or basically- Montreal... Yeah, Montreal, right? Okay. So imagine though, right, if they met the right co-founder, like- Yes... James whatever, and they say, \"Hey, let's do this.\" Yes. Things might have been different."
+  },
+  {
+   "start": 4007,
+   "speaker": "David DiNardo",
+   "text": "So what I'm trying to say is that, you know, we have a lot of great things that's coming out of Canada. Yeah. Okay? And like I said, right, it's like, it's, you gotta find them. Okay, you gotta find those opportunities. You gotta build them, this and that, and, like, and right now we're leading the way in quantum as well, especially around quantum communications."
+  },
+  {
+   "start": 4026,
+   "speaker": "David DiNardo",
+   "text": "And we have Zanadu that just went there. We're doing a lot of great things in the tech space, right? So imagine, right, imagine, right, if some of these people, key individuals did go to the States that are actually originally from Canada, you know, it wouldn't have happened, right? So, and, and again, USA is a, it's a, it's a great country, right?"
+  },
+  {
+   "start": 4046,
+   "speaker": "David DiNardo",
+   "text": "Sort of doing phenomenally well, but I'm trying to say is that, like, people are always gonna find a reason, right, to justify, you know, their environment or their- Yeah... Situation. It could be true. But I think it's more important to find out how am I gonna change it, right? How am I, how am, how am I gonna be the best version of myself?"
+  },
+  {
+   "start": 4064,
+   "speaker": "David DiNardo",
+   "text": "How am I gonna be, make my company the best? Okay? And sometimes it is not good in Canada for certain businesses and certain sectors. Just like we know, like for example, like if you're opening, you know, maybe a restaurant and, you know, and there's like already 20 restaurants of the same kind, high competition, you don't wanna be opening it there."
+  },
+  {
+   "start": 4080,
+   "speaker": "David DiNardo",
+   "text": "There are situations where it doesn't make sense. Yeah. Tariffs, like- Yeah... There's other stuff that we might not, you might not have a control of, so you have to-... Really analyze- Yeah... The business, too. Yeah. Really appreciate you coming on. We ask a last closing question. If you left a sticky note on your first laptop before you ever get, got started-"
+  },
+  {
+   "start": 4102,
+   "speaker": "David DiNardo",
+   "text": "What would it say?"
+  },
+  {
+   "start": 4111,
+   "speaker": "David DiNardo",
+   "text": "I think I would say, Make sure, you know, all your loved ones are on board Have that community of Well, I mean, like that, what I mean by all your loved ones is that, you know, going into entrepreneurship, right, it takes a lot of toll on your health, your life, time, and this and that, okay? Just because you wanna do it, okay, just understand that your wife, your girlfriend, your kids, if your parents, you know, whoever in your life could be affected by it."
+  },
+  {
+   "start": 4145,
+   "speaker": "David DiNardo",
+   "text": "Even your investors, this and that. Like it's just, you just wanna make sure that, you know, for two reasons. One, right, you're not being yourself and you're just doing what you're doing and then this, and then expect everybody to get on this freaking rollercoaster with you. Two, right, you're gonna need that support."
+  },
+  {
+   "start": 4159,
+   "speaker": "David DiNardo",
+   "text": "You're gonna need, you know, your wife's support emotionally mostly, right? You're gonna need your kids to understand. You're gonna need this and that, and if you don't have that, high chance you won't make it. James, thank you so much for sharing your story. There's a lot of content and tidbits and stuff entrepreneurs can take from this."
+  },
+  {
+   "start": 4179,
+   "speaker": "David DiNardo",
+   "text": "The biggest thing I'm taking back from this is your problem-solving skills. Like, even when you talk about it's like there's barriers. I think your barrier is, like, out here of like, \"I am going to figure out it,\" and your mindset's like, \"I'm gonna climb over that wall, jump through the hoop, get punched in the face, keep walking."
+  },
+  {
+   "start": 4202,
+   "speaker": "David DiNardo",
+   "text": "Like, let's get in that room and find a solution.\" Even though it's way over your head, you're gonna figure it out, and you have that confidence and that demeanor to be in front of that person and be like, \"We're doing it.\" Yeah. And it probably portrays that energy to that person, being like, \"Okay, I can get through this blockage, and we'll figure it out together.\""
+  },
+  {
+   "start": 4223,
+   "speaker": "David DiNardo",
+   "text": "There's definitely a reason why you've been successful, and you surround yourself, and you check your ego at the door while bringing in the most powerful people probably around us, to help you take your business to the next level, and that's why you're killing it and are gonna keep on killing it."
+  },
+  {
+   "start": 4240,
+   "speaker": "David DiNardo",
+   "text": "So- Yeah... I'm a big supporter of that. I'll follow your journey completely. When you were in-- W- when you raise another hundreds of millions of dollars, I'd love you to come back on here and share those stories and give more feedback to, entrepreneurs starting out or going through that same journey, as you are, and I really appreciate that."
+  },
+  {
+   "start": 4259,
+   "speaker": "David DiNardo",
+   "text": "Well, thank you for the opportunity, David, and look forward to next time, man. All right. Thanks. Cool."
+  }
+ ]
+}
