@@ -1,8 +1,21 @@
 {
   "channel": "David DiNardo | Laid Off to 8 Figures",
-  "updatedAt": "2026-10-23T02:24:49.548Z",
-  "count": 61,
+  "updatedAt": "2026-10-26T18:42:30.104Z",
+  "count": 62,
   "episodes": [
+    {
+      "num": 62,
+      "title": "AI Replaced My Video Editor in 15 Minutes (Here's the Exact Setup)",
+      "duration": "7:05",
+      "url": "https://www.youtube.com/watch?v=1US5vG2L704",
+      "videoId": "1US5vG2L704",
+      "thumbnail": "https://i.ytimg.com/vi/1US5vG2L704/maxresdefault.jpg",
+      "publishedAt": "2026-10-26T18:38:13Z",
+      "description": "I paid an editor $1,000 to $1,500 a month for my podcast edits, reels and Shorts. Last week I sent the raw recording to Claude Code instead. Fifteen minutes later I had the full edit, three Shorts in my format, the thumbnail and the captions, plus an automation that posts them.\n\nThe setup is three apps I was already paying for: Descript, Claude Code and Higgsfield, about $300 a month. This episode is the honest version of what that means for me, for the editor I've worked with for years, and for anyone whose job is technical work AI can now do. The answer isn't to panic. Become the 1% premium version, or package the system and sell it to the business owners who will never set it up themselves.\n\n⏱ Chapters\n00:00 Someone Edited a Whole Video With Claude Code\n00:25 Fifteen Minutes Later, Everything Was Done\n00:56 I Gave Claude Code My Editor's Work as the Example\n01:23 The Three-App Setup: Descript, Claude Code, Higgsfield\n01:49 $300 a Month vs. $1,500 for an Editor\n02:22 The Barrier Is Completely Gone\n02:44 If You're an Editor, Sell the System\n03:13 100 Clients at $199 a Month\n03:36 I'd Pay $199 and Still Save 80%\n04:00 Why I'm Doing This Solo Video\n04:47 Nobody Argues With Saving $1,000\n05:19 Be the 1% or Sell to the Masses\n06:11 What Happens to My Editor Now\n06:43 Founders Have to Be Ahead of the Curve\n\n📬 Get in Touch with David\nInstagram: 📸 https://www.instagram.com/davidrdinardo\nLinkedIn: 💼 https://www.linkedin.com/in/davidrdinardo\nWebsite: https://laidoffto8figures.com\nEmail: me@daviddinardo.com\n\n🚀 Powered by\nTaxifi —\nAI-powered bookkeeping, tax & payroll for incorporated Canadian businesses. Visit https://taxifi.ai and use code LAIDOFFTO8FIGURES for 1 month FREE.\n\nThis content is for general information only and is not financial, tax or legal advice.\n\n#LaidOffTo8Figures #OttawaBusiness #AIEditing #ClaudeCode #Entrepreneur",
+      "latest": true,
+      "slug": "ai-replaced-my-video-editor-in-15-minutes-heres-the-exact-setup",
+      "pageUrl": "https://laidoffto8figures.com/episodes/ai-replaced-my-video-editor-in-15-minutes-heres-the-exact-setup/"
+    },
     {
       "num": 61,
       "title": "James Nguyen: How I Raised $25M With Zero VCs",
@@ -12,7 +25,7 @@
       "thumbnail": "https://i.ytimg.com/vi/l8FN8Tf3tyo/maxresdefault.jpg",
       "publishedAt": "2026-10-23T02:06:55Z",
       "description": "James Nguyen was my banker at RBC. Now he runs Quantropi, a quantum security company in Ottawa that raised over $25 million US with no VCs. Just angels. Just people who trusted him. He told me nobody drops millions on a phone call. You spend ten years earning that call.\n\nThat hit home. I got laid off in 2014. I built two seven-figure accounting firms the slow way, sold them both, and now I'm building Taxifi. James explains why reputation is the real fundraise, how he got his name on a quantum patent with zero physics background, and why he's staying in Canada to build it.\n\n⏱ Chapters\n00:00 My Banker Became a Quantum CEO\n04:12 Nobody Drops Millions on a Phone Call\n08:20 An Entrepreneur Solves Problems and Gets Paid\n12:42 Your Plan Can't Look Like Swiss Cheese\n18:52 You Only Need One Connected Person\n25:36 The Bank Always Said No\n30:05 Jeff York Pulled Me Out of RBC\n31:30 The Physicist Who Said \"You're My Guy\"\n38:01 $20 Million Raised, Zero VCs\n39:21 Locked in a Room Until the Whiteboard Cracked\n43:46 Quantum Explained With Where's Waldo\n53:28 Canadian Money Is Slow, US Money Is Fast\n58:00 Confidence Comes From Not Dying\n1:01:31 Check Your Ego at Your Own Front Door\n1:08:00 Get Your Loved Ones on Board First\n\n🤝 Connect with James\nInstagram: https://www.instagram.com/jnfinder\nQuantropi: https://www.quantropi.com\n\n📬 Get in Touch with David\nInstagram: 📸 https://www.instagram.com/davidrdinardo\nLinkedIn: 💼 https://www.linkedin.com/in/davidrdinardo\nWebsite: https://laidoffto8figures.com\nEmail: me@daviddinardo.com\n\n🚀 Powered by\nTaxifi —\nAI-powered bookkeeping, tax & payroll for incorporated Canadian businesses. Visit https://taxifi.ai and use code LAIDOFFTO8FIGURES for 1 month FREE.\n\nThis content is for general information only and is not financial, tax or legal advice.\n\n#LaidOffTo8Figures #OttawaBusiness #Fundraising #QuantumSecurity #Entrepreneur",
-      "latest": true,
+      "latest": false,
       "slug": "james-nguyen-how-i-raised-25m-with-zero-vcs",
       "pageUrl": "https://laidoffto8figures.com/episodes/james-nguyen-how-i-raised-25m-with-zero-vcs/"
     },
