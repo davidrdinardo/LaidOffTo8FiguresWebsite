@@ -4,5 +4,6 @@
   "channelId": "UCkawS1ZSCfr9cAcGgWRcZxg",
   "maxEpisodes": 200,
   "minDurationSeconds": 180,
+  "maxRemovalsPerRun": 2,
   "tidyTitles": true
 }

@@ -3,7 +3,12 @@ name: Sync YouTube episodes
 on:
   schedule:
     - cron: "0 * * * *" # hourly
-  workflow_dispatch: {} # manual "Run workflow" button
+  workflow_dispatch: # manual "Run workflow" button
+    inputs:
+      allow_removals:
+        description: "Allow removals: let this run delete episode pages the sync would otherwise refuse to remove"
+        type: boolean
+        default: false
   push:
     branches: [claude/laidoffto8figures-website-u7z4sl]
     paths:
@@ -32,6 +37,8 @@ jobs:
       - name: Sync episodes from YouTube
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          # Only a manual run with the box ticked may remove pages the guard would keep.
+          SYNC_ALLOW_REMOVALS: ${{ github.event.inputs.allow_removals == 'true' && '1' || '' }}
         run: node scripts/sync-youtube.mjs
 
       - name: Commit updated files if they changed

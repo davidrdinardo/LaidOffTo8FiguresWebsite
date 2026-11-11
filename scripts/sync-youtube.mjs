@@ -10,6 +10,11 @@
  *   YOUTUBE_API_KEY   (required)  API key, provided as a GitHub Actions secret.
  *   Channel is read from youtube.config.json (handle or channelId), and can be
  *   overridden by env vars YOUTUBE_HANDLE / YOUTUBE_CHANNEL_ID.
+ *
+ * Flags:
+ *   --offline          re-render the site from the existing episodes.json, no API calls.
+ *   --allow-removals   let this run remove episode pages the removal guard would
+ *                      otherwise refuse to delete (same as SYNC_ALLOW_REMOVALS=1).
  */
 
 import { readFile, writeFile, mkdir, readdir, rm } from "node:fs/promises";
@@ -24,6 +29,10 @@ const KEY = process.env.YOUTUBE_API_KEY;
 // `--offline` skips the API and re-renders index.html from the existing
 // episodes.json (handy after changing the markup templates below).
 const OFFLINE = process.argv.includes("--offline");
+// One-run override for the removal guard (see planRemovals below).
+const ALLOW_REMOVALS =
+  process.argv.includes("--allow-removals") ||
+  /^(1|true|yes)$/i.test(process.env.SYNC_ALLOW_REMOVALS || "");
 if (!KEY && !OFFLINE) {
   console.error("✖ YOUTUBE_API_KEY is not set. Add it as a repo secret (or run with --offline).");
   process.exit(1);
@@ -39,10 +48,18 @@ async function loadConfig() {
   }
   const handle = process.env.YOUTUBE_HANDLE || cfg.handle || "";
   const channelId = process.env.YOUTUBE_CHANNEL_ID || cfg.channelId || "";
-  const maxEpisodes = Number(cfg.maxEpisodes ?? 200);
-  const minDurationSeconds = Number(cfg.minDurationSeconds ?? 0); // >0 filters out Shorts
+  const number = (name, fallback) => {
+    const n = Number(cfg[name] ?? fallback);
+    if (!Number.isFinite(n)) {
+      throw new Error(`"${name}" in youtube.config.json must be a number (got ${JSON.stringify(cfg[name])}).`);
+    }
+    return n;
+  };
+  const maxEpisodes = number("maxEpisodes", 200); // cap on full episodes, applied after Shorts are filtered out; 0 = no cap
+  const minDurationSeconds = number("minDurationSeconds", 0); // >0 filters out Shorts
+  const maxRemovalsPerRun = number("maxRemovalsPerRun", 2); // most episodes one run may remove (see planRemovals)
   const tidyTitles = cfg.tidyTitles !== false; // default true
-  return { handle, channelId, maxEpisodes, minDurationSeconds, tidyTitles };
+  return { handle, channelId, maxEpisodes, minDurationSeconds, maxRemovalsPerRun, tidyTitles };
 }
 
 /* ---- Tidy a raw YouTube title for display ----------------------------
@@ -91,22 +108,39 @@ async function getUploadsPlaylist({ handle, channelId }) {
   };
 }
 
-/* ---- Fetch all playlist items ---------------------------------------- */
-async function getPlaylistVideoIds(playlistId, max) {
+/* ---- Fetch all playlist items ----------------------------------------
+   Reads the uploads playlist to the end. It holds every upload, Shorts
+   included, so it must not be cut short here: stopping after the newest N
+   items pushes the oldest full episodes out of the list as more Shorts are
+   posted. The maxEpisodes cap is applied in main(), after Shorts are gone.
+--------------------------------------------------------------------- */
+const MAX_PLAYLIST_PAGES = 400; // safety ceiling: 400 pages x 50 = 20,000 uploads
+
+async function getPlaylistVideos(playlistId) {
   const items = [];
   let pageToken = "";
+  let pages = 0;
   do {
+    if (pages >= MAX_PLAYLIST_PAGES) {
+      throw new Error(
+        `The uploads playlist did not end after ${MAX_PLAYLIST_PAGES} pages (${items.length} videos read). ` +
+        "Stopping instead of publishing a partial list; raise MAX_PLAYLIST_PAGES in scripts/sync-youtube.mjs if the channel really is that large."
+      );
+    }
     const data = await api("playlistItems", {
       part: "snippet,contentDetails",
       playlistId,
       maxResults: "50",
       ...(pageToken ? { pageToken } : {}),
     });
+    pages++;
     for (const it of data.items || []) {
       const title = it.snippet?.title || "";
       if (title === "Private video" || title === "Deleted video") continue;
+      const videoId = it.contentDetails?.videoId;
+      if (!videoId) continue;
       items.push({
-        videoId: it.contentDetails?.videoId,
+        videoId,
         title,
         publishedAt: it.contentDetails?.videoPublishedAt || it.snippet?.publishedAt,
         thumbnail:
@@ -116,9 +150,13 @@ async function getPlaylistVideoIds(playlistId, max) {
           "",
       });
     }
-    pageToken = data.nextPageToken || "";
-  } while (pageToken && items.length < max);
-  return items.slice(0, max);
+    const next = data.nextPageToken || "";
+    if (next && next === pageToken) {
+      throw new Error("YouTube returned the same playlist page token twice; stopping instead of looping.");
+    }
+    pageToken = next;
+  } while (pageToken);
+  return items;
 }
 
 /* ---- Hydrate durations (videos.list, batches of 50) ------------------ */
@@ -164,29 +202,42 @@ async function main() {
     const before = JSON.stringify(prev);
     applyOverrides(prev.episodes, await loadOverrides());
     assignSlugs(prev.episodes, prev.episodes);
+    // No API offline, so removals are judged only by how many pages would go.
+    const stale = await planRemovals({ previous: [], episodes: prev.episodes, cfg });
     if (JSON.stringify(prev) !== before) {
       await writeFile(join(ROOT, "episodes.json"), JSON.stringify(prev, null, 2) + "\n");
       console.log("✔ Stored slugs in episodes.json.");
     }
-    await renderSite(prev.episodes, false);
+    await renderSite(prev.episodes, false, stale);
     return;
   }
+  const outFile = join(ROOT, "episodes.json");
+  const previous = await readPrevious(outFile);
+
   const { uploads, title } = await getUploadsPlaylist(cfg);
   console.log(`▸ Channel: ${title || "(unknown)"}  uploads=${uploads}`);
 
-  let videos = await getPlaylistVideoIds(uploads, cfg.maxEpisodes);
-  videos = await addDurations(videos, cfg.minDurationSeconds);
+  // Whole playlist first, then drop Shorts, then cap: maxEpisodes counts full
+  // episodes only.
+  const listed = await getPlaylistVideos(uploads);
+  let videos = await addDurations(listed, cfg.minDurationSeconds);
 
   // Newest first
   videos.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
-  const outFile = join(ROOT, "episodes.json");
-  let previous = null;
-  try { previous = JSON.parse(await readFile(outFile, "utf8")); } catch { /* first run */ }
+  const total = videos.length; // every full episode on the channel
+  const overCap = cfg.maxEpisodes > 0 ? videos.slice(cfg.maxEpisodes) : [];
+  if (overCap.length) videos = videos.slice(0, cfg.maxEpisodes);
+  console.log(
+    `▸ Uploads: ${listed.length} videos, ${total} of them full episodes` +
+    (cfg.minDurationSeconds > 0 ? ` (${cfg.minDurationSeconds}s or longer).` : ".")
+  );
+  if (overCap.length) {
+    console.warn(`⚠ maxEpisodes (${cfg.maxEpisodes}) leaves out the ${overCap.length} oldest episode(s). Raise it in youtube.config.json to publish them.`);
+  }
 
-  const total = videos.length;
   const episodes = videos.map((v, i) => ({
-    num: total - i, // newest gets the highest number
+    num: total - i, // newest gets the highest number; counted before the cap, so the cap never renumbers
     title: cfg.tidyTitles ? cleanTitle(v.title) : v.title,
     duration: v.duration,
     url: `https://www.youtube.com/watch?v=${v.videoId}`,
@@ -198,6 +249,15 @@ async function main() {
   }));
   applyOverrides(episodes, await loadOverrides());
   assignSlugs(episodes, previous?.episodes || []);
+
+  // Stops the run here, before anything is written, if it would remove pages it shouldn't.
+  const stale = await planRemovals({
+    previous: previous?.episodes || [],
+    episodes,
+    cfg,
+    listedIds: new Set(listed.map((v) => v.videoId)),
+    overCapIds: new Set(overCap.map((v) => v.videoId)),
+  });
 
   // Skip the write when nothing but the timestamp would change — otherwise the
   // hourly Action commits (and redeploys the site) every run for no reason.
@@ -219,14 +279,134 @@ async function main() {
     console.log(`✔ Wrote episodes.json (${episodes.length} episodes).`);
   }
 
-  await renderSite(episodes, !unchanged);
+  await renderSite(episodes, !unchanged, stale);
 }
 
-async function renderSite(episodes, changed) {
+async function renderSite(episodes, changed, stale) {
   await updateEpisodeList(episodes);
   await updateEpisodeStructuredData(episodes);
-  await writeEpisodePages(episodes);
+  await writeEpisodePages(episodes, stale);
   await writeSitemap(episodes, changed);
+}
+
+/* episodes.json from the last run. Missing is fine (first run); unreadable is
+   not, because it holds every page's slug and losing it would rename pages. */
+async function readPrevious(file) {
+  let raw;
+  try { raw = await readFile(file, "utf8"); } catch (err) {
+    if (err.code === "ENOENT") return null;
+    throw err;
+  }
+  try { return JSON.parse(raw); } catch (err) {
+    throw new Error(`episodes.json is not valid JSON (${err.message}). Restore it from git before syncing: it holds the page URL of every episode.`);
+  }
+}
+
+/* ---- Removal guard ----------------------------------------------------
+   A removed episode page takes its search traffic with it, so the sync only
+   removes pages on its own when YouTube confirms the video is gone (deleted,
+   private or unlisted), and never more than maxRemovalsPerRun in one run.
+   Anything else stops the run before a single file is written:
+     - an episode whose video is still public should not have left the list
+       (that is a sync bug, an API hiccup or a config change, not a deletion);
+     - several episodes vanishing at once is more likely a fault than intent;
+     - page folders that match no episode mean the slugs were lost.
+   An intended clean-up goes through with --allow-removals, or
+   SYNC_ALLOW_REMOVALS=1 (the "Allow removals" box on a manual workflow run).
+   Returns the page folders under episodes/ that are safe to delete.
+--------------------------------------------------------------------- */
+async function planRemovals({ previous, episodes, cfg, listedIds = new Set(), overCapIds = new Set() }) {
+  const current = new Set(episodes.map((e) => e.videoId));
+  const missing = previous.filter((e) => e.videoId && !current.has(e.videoId));
+  const verdicts = missing.length ? await explainMissing(missing, { cfg, listedIds, overCapIds }) : [];
+
+  // What the clean-up would delete: everything under episodes/ that is not a
+  // current episode page or one of its redirect stubs.
+  const keep = new Set(episodes.flatMap((e) => [e.slug, ...(e.redirectFrom || [])]));
+  let names = [];
+  try { names = await readdir(join(ROOT, "episodes")); } catch { /* no pages yet */ }
+  const stale = names.filter((name) => !keep.has(name));
+  // Folders that belong to the missing episodes are accounted for above; the
+  // rest match nothing we know about.
+  const explained = new Set(missing.flatMap((e) => [e.slug, ...(e.redirectFrom || [])]));
+  const stray = stale.filter((name) => !explained.has(name));
+
+  const stillPublic = verdicts.filter((v) => !v.gone);
+  const max = cfg.maxRemovalsPerRun;
+  const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
+  const reasons = [];
+  if (stillPublic.length) {
+    reasons.push(`${stillPublic.length} of them ${stillPublic.length === 1 ? "is" : "are"} still public on YouTube, so ${stillPublic.length === 1 ? "its page" : "their pages"} should stay.`);
+  }
+  if (verdicts.length > max) {
+    reasons.push(`${plural(verdicts.length, "removal")} in one run is more than maxRemovalsPerRun (${max}).`);
+  }
+  if (stray.length > max) {
+    const shown = stray.slice(0, 8).map((name) => `episodes/${name}/`).join(", ");
+    reasons.push(`${plural(stray.length, "page folder")} under episodes/ match no episode and would be deleted (${shown}${stray.length > 8 ? ", …" : ""}). That usually means episodes.json lost its slugs: restore it from git rather than allowing this.`);
+  }
+
+  const lines = verdicts.map(({ ep, why }) => `    − EP ${ep.num} "${ep.title}" (${ep.videoId}): ${why}`);
+  if (!reasons.length) {
+    if (verdicts.length) {
+      console.log(`▸ Removing ${plural(verdicts.length, "episode")} that ${verdicts.length === 1 ? "is" : "are"} gone from YouTube:`);
+      for (const line of lines) console.log(line);
+    }
+    return stale;
+  }
+
+  const report = [
+    ...(verdicts.length ? [`  This run would remove ${plural(verdicts.length, "episode")} from the site:`, ...lines] : []),
+    "  Why this needs a decision:",
+    ...reasons.map((r) => `    • ${r}`),
+  ].join("\n");
+
+  if (ALLOW_REMOVALS) {
+    console.warn(`⚠ Removals allowed for this run (--allow-removals / SYNC_ALLOW_REMOVALS).\n${report}`);
+    return stale;
+  }
+
+  if (process.env.GITHUB_ACTIONS) {
+    // Shows on the run's summary page without opening the log.
+    console.log(`::error title=YouTube sync stopped: episode pages would be removed::${reasons.join(" ")} Nothing was written. See the log for the list and how to allow it.`);
+  }
+  throw new Error(
+    "Refusing to remove episode pages. Nothing was written.\n" +
+    report + "\n" +
+    "  If the removals are intended, run the sync once with removals allowed:\n" +
+    "    GitHub: Actions → Sync YouTube episodes → Run workflow → tick \"Allow removals\".\n" +
+    "    Locally: node scripts/sync-youtube.mjs --allow-removals"
+  );
+}
+
+/* Asks YouTube about episodes that dropped out of the list. With an API key,
+   videos.list returns public and unlisted videos; deleted and private ones
+   are simply absent from the response. */
+async function explainMissing(missing, { cfg, listedIds, overCapIds }) {
+  const found = new Map();
+  const ids = missing.map((e) => e.videoId);
+  for (let i = 0; i < ids.length; i += 50) {
+    const data = await api("videos", { part: "status,contentDetails", id: ids.slice(i, i + 50).join(",") });
+    for (const v of data.items || []) found.set(v.id, v);
+  }
+  return missing.map((ep) => {
+    const v = found.get(ep.videoId);
+    const listed = listedIds.has(ep.videoId);
+    const privacy = v?.status?.privacyStatus;
+    if (!v && !listed) return { ep, gone: true, why: "deleted or made private on YouTube" };
+    if (v && privacy && privacy !== "public") return { ep, gone: true, why: `set to ${privacy} on YouTube` };
+    let why;
+    if (overCapIds.has(ep.videoId)) {
+      why = `still public, but over the maxEpisodes cap (${cfg.maxEpisodes}); raise maxEpisodes in youtube.config.json to keep it`;
+    } else if (v && isoToSeconds(v.contentDetails?.duration || "") < cfg.minDurationSeconds) {
+      why = `still public, but now shorter than minDurationSeconds (${cfg.minDurationSeconds}s)`;
+    } else if (!listed) {
+      why = "still public, but missing from the channel's uploads list";
+    } else {
+      why = "still in the channel's uploads list, but YouTube returned no details for it";
+    }
+    return { ep, gone: false, why };
+  });
 }
 
 /* ---- Slugs: URL for each episode page, stable across runs ------------
@@ -453,11 +633,10 @@ function navLink(ep, kind) {
   return `<a class="${kind}" href="/episodes/${ep.slug}/" rel="${kind}"><span class="nav-label">${label}</span><span class="nav-title">${escapeHtml(ep.title)}</span></a>`;
 }
 
-async function writeEpisodePages(episodes) {
+async function writeEpisodePages(episodes, stale = []) {
   const template = await readFile(join(ROOT, "scripts", "episode-template.html"), "utf8");
   const dir = join(ROOT, "episodes");
   await mkdir(dir, { recursive: true });
-  const keep = new Set(episodes.map((e) => e.slug));
   let written = 0;
 
   for (let i = 0; i < episodes.length; i++) {
@@ -499,7 +678,6 @@ async function writeEpisodePages(episodes) {
   for (const ep of episodes) {
     for (const old of ep.redirectFrom || []) {
       if (old === ep.slug) continue;
-      keep.add(old);
       const stubDir = join(dir, old);
       await mkdir(stubDir, { recursive: true });
       const target = `${SITE}/episodes/${ep.slug}/`;
@@ -512,11 +690,10 @@ async function writeEpisodePages(episodes) {
   }
 
   // Remove pages for episodes that no longer exist (deleted / private videos).
-  for (const name of await readdir(dir)) {
-    if (!keep.has(name)) {
-      await rm(join(dir, name), { recursive: true, force: true });
-      console.log(`✔ Removed stale episode page: episodes/${name}/`);
-    }
+  // planRemovals() vetted this list before anything was written.
+  for (const name of stale) {
+    await rm(join(dir, name), { recursive: true, force: true });
+    console.log(`✔ Removed stale episode page: episodes/${name}/`);
   }
   if (written) console.log(`✔ Wrote ${written} episode page(s) under episodes/.`);
 }
