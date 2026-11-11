@@ -1,0 +1,98 @@
+{
+ "videoId": "LpdIjUUYm44",
+ "num": 64,
+ "source": {
+  "kind": "descript",
+  "projectId": "fb86c46c-cc38-4412-98f4-17c202b8dd93",
+  "compositionId": "70a551b3-763d-490e-ae58-6cd494798e48"
+ },
+ "guest": null,
+ "summary": "David DiNardo shares the three ideas he brought home from two days at SaaS North, a conference of founders, creators and AI experts. The loudest message at a tech conference was that distribution is the moat, not technology: AI can build the app from a prompt, so the advantage goes to whoever has a personal brand and an audience that looks nothing like everyone else's. The other two were moving customers from monthly to annual recurring revenue so they stay long enough to build the product with you, and building the best agent for your industry, because whoever owns the agent will own the industry.",
+ "takeaways": [
+  "Distribution is the moat, not technology. Five years ago it was technology first and distribution second; with AI building apps from a prompt, that order has flipped.",
+  "Founders at SaaS North are going all in on personal brand because people buy from people, and content is what separates you once everyone can build the same product.",
+  "One speaker showed five websites: four were AI-built and looked the same, and the fifth looked like nothing else. The one that is different is the one that gets distribution.",
+  "Generic outreach and AI slop are already being ignored. Your brand and content have to be completely different from your competitors', because the norm won't sell.",
+  "Get customers on annual recurring revenue instead of monthly, even if that means charging less and giving more, so they stay long enough to build the product with you instead of bouncing between platforms.",
+  "Build the best agent for your industry: something that connects to the customer's Slack, Gmail and other tools, gathers the information and produces the output for them.",
+  "The shift is from chat to agents, from asking a question to handing over work such as bookkeeping or a month of content, and whoever owns the best agent will own the industry."
+ ],
+ "speakersVerified": false,
+ "segments": [
+  {
+   "start": 0,
+   "speaker": "David DiNardo",
+   "text": "I went to SaaS North last week, two days, full conference, all creators, entrepreneurs, AI experts. One of the biggest topics was distribution. What is distribution? And all these entrepreneurs are going all in on building a personal brand. They know people buy from people. They know content is gonna be the moat."
+  },
+  {
+   "start": 24,
+   "speaker": "David DiNardo",
+   "text": "They want you to get in front of camera, like I've been doing this last year, and they want you to build an audience and distribution because they know AI is gonna replace technology. This was a tech conference, and they're saying distribution is the moat, not technology. You rewind that five years ago, it was technology and then distribution."
+  },
+  {
+   "start": 46,
+   "speaker": "David DiNardo",
+   "text": "Now, the script has flipped. It is distribution, then technology because they see the next step in AI and how you're gonna give it a prompt, and it's gonna build an app for you. But when you have the app, who's gonna distribute it? Who's gonna have that personal brand and that ability to take that technology and sell it?"
+  },
+  {
+   "start": 68,
+   "speaker": "David DiNardo",
+   "text": "One of the guests went on stage, and she showed five websites. Four of them were powered by AI. It said AI powered this, that, the other. They all resembled the same thing. The fifth website was a completely different look and feel. Guess which one's gonna get distribution? The four that look the same or the fifth that doesn't look anything like the others?"
+  },
+  {
+   "start": 94,
+   "speaker": "David DiNardo",
+   "text": "So if you take that concept and you apply it to business, and you want to separate yourself from your competitors, someone building a personal brand, getting in front of camera, and them buying from you versus all the other slop that's gonna happen with, \"Hey, now you can take this video and you can make 100 reels\", or email marketing."
+  },
+  {
+   "start": 120,
+   "speaker": "David DiNardo",
+   "text": "I'm already getting bombarded with emails of people wanting to be on this podcast, and they're so generic emails I don't even read them anymore. I don't even acknowledge them. You have to think about building a personal brand, about distribution, about content, and it has to be completely different than what your competitor has and others have."
+  },
+  {
+   "start": 144,
+   "speaker": "David DiNardo",
+   "text": "You have to think outside the box or else you're just gonna be the norm, and the norm won't sell. The second big thing that they talked about was instead of monthly recurring revenue, get people on annual recurring revenue. That was kinda the hot topic because you want to hook customers and get them on your platform for a long period of time so you keep on developing stuff with them versus them bounce from product to product, platform to platform, because there's gonna be so much competition out there."
+  },
+  {
+   "start": 179,
+   "speaker": "David DiNardo",
+   "text": "So really thinking about hooking clients on long-term and building relationships with them and getting them to build the product with you versus having a higher churn. So even charging less, giving more so that they're on the long-term contract with you versus a short-term, even if you have to give them more what they need."
+  },
+  {
+   "start": 200,
+   "speaker": "David DiNardo",
+   "text": "And then finally, the third one is if you're building a platform, an app, a service, whatever you're doing, build the best agent for that industry. Whoever has that best agent, you're gonna start seeing, \"Ask Stanley.\" Every business, you're gonna start seeing a name associated with it."
+  },
+  {
+   "start": 220,
+   "speaker": "David DiNardo",
+   "text": "That's the agent. What does that agent do? It connects to your Slack channel, your Gmail, other stuff, and it goes out and grabs information and then produces an output for you. Those agents are specific for whatever company they are. So there's a finance agent, a bookkeeping agent, an accounting agent, a content creation agent."
+  },
+  {
+   "start": 245,
+   "speaker": "David DiNardo",
+   "text": "You're gonna start seeing a lot of agents get created. And this presenter said, \"If you create the best agent for your business, you will be number one in that industry.\" Meaning now it's about hiring the best employees, but it's also about creating the best agent that can do a lot of the heavy lifting for your customers, and people resonate with that versus them have to do stuff."
+  },
+  {
+   "start": 272,
+   "speaker": "David DiNardo",
+   "text": "So while you're thinking of business, also think about what an agent can do, what will it do, what information it needs to do the work. And this is getting in the realm of a whole different business model. So a lot of people started with Chat. \"Hey, Chat, I want you to tell me what the weather was like.\""
+  },
+  {
+   "start": 293,
+   "speaker": "David DiNardo",
+   "text": "Now we're moving on to agents. \"Hey, Agent, can you finish my bookkeeping and submit a sales tax for me?\" Will it do that? I don't know. But that's the future. \"Hey, Agent, will you gather all my meetings, build out content strategy for the next month, and start creating content that I need to approve before you post it on LinkedIn?\""
+  },
+  {
+   "start": 314,
+   "speaker": "David DiNardo",
+   "text": "That's an agent going out, listening to your meetings, documenting and creating content every day for you versus you create it. These are little tricks that people are doing that they're talking about in these events that if you bring it back to your business, you'll be super successful. So again, three things that were highly talked about."
+  },
+  {
+   "start": 338,
+   "speaker": "David DiNardo",
+   "text": "Distribution is the moat. Build a personal brand. Connect with people on a long period of time and let them build the product with you, knowing that AI can build a lot faster and get exactly what you want as a customer. And three, build the best agent for your business, and whoever owns the agent will own the industry."
+  }
+ ]
+}
