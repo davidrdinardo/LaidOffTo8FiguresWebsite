@@ -59,8 +59,25 @@ markup in `scripts/sync-youtube.mjs`), run `node scripts/sync-youtube.mjs --offl
    episodes → Run workflow**. After it runs, `episodes.json` is updated and the
    site shows your real videos.
 
-Options in `youtube.config.json`: `maxEpisodes` (cap), `minDurationSeconds`
-(set e.g. `120` to hide Shorts).
+Options in `youtube.config.json`:
+
+- `minDurationSeconds` — videos shorter than this are left out (set e.g. `120`
+  to hide Shorts).
+- `maxEpisodes` — cap on the number of episodes, newest first. It counts full
+  episodes only: the sync reads every upload on the channel, drops the Shorts,
+  and then applies the cap. `0` means no cap. When a new episode would push an
+  already published one past the cap, the sync stops instead of deleting that
+  page (see below); raise the cap to keep every episode.
+- `maxRemovalsPerRun` — the most episodes one run may remove (default `2`).
+
+**Removed episodes.** A deleted page loses its search traffic, so the sync only
+removes an episode page by itself when YouTube confirms the video is gone
+(deleted, private or unlisted), and at most `maxRemovalsPerRun` per run. If an
+episode drops out of the list while its video is still public, or more episodes
+than that vanish at once, the run fails without writing anything and its log
+lists each episode and why. If the removal is intended, run the workflow once
+by hand with **Allow removals** ticked (Actions → Sync YouTube episodes → Run
+workflow), or locally with `node scripts/sync-youtube.mjs --allow-removals`.
 
 > Until the key + channel are set, the site shows the placeholder episodes in
 > `episodes.json` / the fallback list in `script.js`.
