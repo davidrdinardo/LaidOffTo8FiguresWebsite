@@ -1,23 +1,25 @@
 name: Sync YouTube episodes
-run-name: "Diagnostic (scratch branch, read-only): YouTube uploads report"
-
-# SCRATCH BRANCH ONLY. Temporary variant of the sync workflow that runs a
-# read-only diagnostic with the YouTube API key and commits its report to this
-# branch. It never runs the sync and never touches the site branch.
 
 on:
-  workflow_dispatch: {}
+  schedule:
+    - cron: "0 * * * *" # hourly
+  workflow_dispatch: {} # manual "Run workflow" button
+  push:
+    branches: [claude/laidoffto8figures-website-u7z4sl]
+    paths:
+      - "scripts/sync-youtube.mjs"
+      - "youtube.config.json"
+      - ".github/workflows/sync-youtube.yml"
 
 permissions:
   contents: write
 
 concurrency:
-  group: sync-youtube-diagnostic
-  cancel-in-progress: false
+  group: sync-youtube
+  cancel-in-progress: true
 
 jobs:
   sync:
-    if: github.ref_name == 'claude/busy-wozniak-rk77pi'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -27,20 +29,19 @@ jobs:
         with:
           node-version: 20
 
-      - name: Read-only YouTube diagnostic
+      - name: Sync episodes from YouTube
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-        run: node scripts/diagnose-youtube.mjs
+        run: node scripts/sync-youtube.mjs
 
-      - name: Commit the report to this scratch branch
-        if: always()
+      - name: Commit updated files if they changed
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A diagnostics
-          if git diff --cached --quiet; then
-            echo "No report to commit."
-          else
-            git commit -m "diag: YouTube uploads report (scratch branch only)"
+          if [[ -n "$(git status --porcelain episodes.json index.html sitemap.xml episodes)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A episodes.json index.html sitemap.xml episodes
+            git commit -m "chore: sync episodes from YouTube"
             git push
+          else
+            echo "No changes to sync."
           fi
