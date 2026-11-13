@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="{{THUMB}}" />
   <meta name="twitter:image:alt" content="{{TITLE}}" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -111,7 +112,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

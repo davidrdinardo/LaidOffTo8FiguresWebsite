@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/DzzdXvubIq4/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="3 Reasons It&#39;s Easier to Build a Business in Canada Than the U.S." />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -144,12 +145,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">David DiNardo makes the case that Canadian small business owners hold three structural advantages over founders in the U.S. and U.K.: a 12 percent small business corporate tax rate, universal healthcare that keeps group benefit costs far lower, and a much smaller share of the population starting businesses. Drawing on 15 years running his accounting company, he explains how retaining profit inside a corporation let him buy real estate every year for a decade and grow to a team of 40, and when a sole proprietor should incorporate.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Canada&#39;s small business corporate rate of about 12 percent compares with personal rates that can reach 54 percent, a spread of roughly 40 points that stays in the business if you keep growing it rather than paying yourself out.</li>
           <li>David&#39;s rule of thumb: stay a sole proprietor until roughly $100,000 in revenue, then incorporate, because the lawyer, accountant, banker and extra filings only pay off past that threshold.</li>
@@ -161,19 +162,19 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>Is it easier to build a business in Canada or the United States? In this video, I break down the 3 structural advantages that Canadian founders have over their American counterparts — from tax rates to healthcare to competition levels.</p>
-          <p>Everyone romanticizes building in Silicon Valley. But if you&<span class="muted">#39</span>;re a Canadian founder, you&<span class="muted">#39</span>;re sitting on three massive advantages most people never talk about:</p>
+          <p>Everyone romanticizes building in Silicon Valley. But if you&#39;re a Canadian founder, you&#39;re sitting on three massive advantages most people never talk about:</p>
           <p>1) A ~12% small business tax rate — you keep more of every dollar you make.<br />
           2) Universal healthcare — no crushing employee benefit costs like U.S. employers carry.<br />
           3) Less competition — roughly 1 in 10 Americans start a business vs. 1 in 20 Canadians, but the consumers are still there.</p>
-          <p>Fewer competitors, lower overhead, more retained profit. That&<span class="muted">#39</span>;s not luck — it&<span class="muted">#39</span>;s leverage. Here&<span class="muted">#39</span>;s how to actually use it.</p>
+          <p>Fewer competitors, lower overhead, more retained profit. That&#39;s not luck — it&#39;s leverage. Here&#39;s how to actually use it.</p>
           <p>CHAPTERS:<br />
           <a href="https://www.youtube.com/watch?v=DzzdXvubIq4&t=0s" target="_blank" rel="noopener">0:00</a> - Why Everyone Gets This Wrong<br />
-          <a href="https://www.youtube.com/watch?v=DzzdXvubIq4&t=75s" target="_blank" rel="noopener">1:15</a> - Advantage <span class="muted">#1</span>: Canada&<span class="muted">#39</span>;s Small Business Tax Rate<br />
-          <a href="https://www.youtube.com/watch?v=DzzdXvubIq4&t=200s" target="_blank" rel="noopener">3:20</a> - Advantage <span class="muted">#2</span>: Universal Healthcare = Lower Costs<br />
-          <a href="https://www.youtube.com/watch?v=DzzdXvubIq4&t=310s" target="_blank" rel="noopener">5:10</a> - Advantage <span class="muted">#3</span>: Less Competition, Same Market<br />
+          <a href="https://www.youtube.com/watch?v=DzzdXvubIq4&t=75s" target="_blank" rel="noopener">1:15</a> - Advantage #1: Canada&#39;s Small Business Tax Rate<br />
+          <a href="https://www.youtube.com/watch?v=DzzdXvubIq4&t=200s" target="_blank" rel="noopener">3:20</a> - Advantage #2: Universal Healthcare = Lower Costs<br />
+          <a href="https://www.youtube.com/watch?v=DzzdXvubIq4&t=310s" target="_blank" rel="noopener">5:10</a> - Advantage #3: Less Competition, Same Market<br />
           <a href="https://www.youtube.com/watch?v=DzzdXvubIq4&t=420s" target="_blank" rel="noopener">7:00</a> - How to Use These Advantages</p>
           <p>🎧 Laid Off to 8 Figures — new episodes weekly.<br />
           🔔 Subscribe: <a href="https://www.youtube.com/@davidrdinardo" target="_blank" rel="noopener">youtube.com/@davidrdinardo</a><br />
@@ -183,7 +184,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">1,264 words · 8:10</span></summary>
           <div class="tx-body">
@@ -233,7 +234,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

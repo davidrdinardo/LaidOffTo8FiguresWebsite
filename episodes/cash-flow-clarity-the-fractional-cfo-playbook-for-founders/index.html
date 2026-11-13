@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/xAbqrAEN5tE/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Cash Flow Clarity: The Fractional CFO Playbook for Founders" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Kyle Soutar, an Ottawa CMA and serial entrepreneur who runs the fractional CFO firm Soutar Capital and Consulting, walks David DiNardo through what a fractional CFO actually does for a business trying to grow from $1 million to $5 million or beyond. He lays out the order of operations for a founder: get the corporate structure right, systematize with written policies, niche the product, then scale on a quarterly goal cadence tied to life goals as much as business goals. Soutar also shares the morning routine, audiobook habit and &#39;impossible goal&#39; thinking he uses to keep his own mindset growing across roughly 70 entities.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>A fractional CFO gives a small or mid-sized business the strategic finance partner a large company pays $200,000 to $300,000 a year for, at a fraction of the cost, with Soutar&#39;s team meeting clients at least twice a month for tactical and financial reviews.</li>
           <li>Soutar&#39;s starting structure for a new business is an operating company owned by a holding company from day one; a family trust is expensive and can be plugged in later at the most strategic moment.</li>
@@ -169,7 +170,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>Most founders don’t need more spreadsheets — they need someone to translate the numbers into clear decisions.</p>
           <p>In this episode, I sit down with Kyle Soutar, CPA, CMA, founder of Soutar Capital &amp; Consulting, a boutique fractional CFO firm that helps founders get financial clarity, stronger cash flow, and a real strategy for growth and exits without hiring a full-time CFO. <br />
@@ -187,7 +188,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">15,379 words · 1:24:55</span></summary>
           <div class="tx-body">
@@ -301,7 +302,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

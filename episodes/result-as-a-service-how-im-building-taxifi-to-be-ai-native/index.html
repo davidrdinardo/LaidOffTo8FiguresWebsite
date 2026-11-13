@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/3nAIqMi7ahI/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Result as a Service: How I’m Building Taxifi to Be AI Native" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -144,12 +145,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">David DiNardo gives an October update on building Taxifi and the thinking behind every decision: the shift to monthly bookkeeping clients, an AI chat that answers any question about a client&#39;s books in real time, and why he now frames the product as result-as-a-service rather than software-as-a-service. He explains how building AI native across the whole company, not just the product, keeps speed and control in-house, and previews the self-serve version two launching in early November.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Start documenting your process publicly; David says sharing the raw build of Taxifi has done more to propel the business than anything he did quietly with his previous companies.</li>
           <li>Taxifi moved from annual sole-proprietor work to monthly recurring bookkeeping, because real-time books are where clients actually feel the value.</li>
@@ -162,7 +163,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>It’s October and a lot has happened with Taxifi, so this is the update I haven’t done in a couple of months. When I built my previous businesses I never documented a single step. This time I am, and it’s been one of the best things to propel the company.</p>
           <p>In this episode: why we moved from annual sole-proprietor clients to monthly bookkeeping, the AI chat that lets a client ask “what’s my income statement for last month?” and get it instantly (one client went from red to green in three months because she finally had visibility), why VCs are already looking at an early-stage company, and the two pillars every feature has to pass through now: is it AI native, and does it deliver a result? Software as a service is over. Result as a service is what I’m building. Version two launches at the beginning of November.</p>
@@ -195,7 +196,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">1,531 words · 9:40</span></summary>
           <div class="tx-body">
@@ -260,7 +261,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

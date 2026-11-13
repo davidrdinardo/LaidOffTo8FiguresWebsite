@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/zYP_WvQCIUg/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="The 4-Question Meeting I Stole From the Military" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -144,12 +145,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">David DiNardo walks through the after action review his seven-person Taxifi team ran at the end of September, a four-question debrief borrowed from the military. He explains how to set up the meeting, why a facilitator and a no-blame rule matter, and shares real examples from the review, from an AI categorization target that slipped to a client goal missed because a one-year-old company has none of the goodwill his previous firm took a decade to build.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>An after action review is four questions in order: what was supposed to happen, what actually happened, why was there a difference, and what will we do differently going forward.</li>
           <li>Appoint one facilitator, keep the whole meeting to 60 to 90 minutes, and give each question 15 to 20 minutes before attention drops off.</li>
@@ -162,10 +163,10 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>On September 30th my team at Taxifi ran our first After Action Review, a practice borrowed from the military where the team breaks down every deployment to improve the next one. I pulled out my notes from the meeting so you can take it back to your own business.</p>
-          <p>It&<span class="muted">#39</span>;s four questions: What was supposed to happen? What actually happened? Why was there a difference? What will we do differently? One facilitator, no blame, everyone has a voice, and 40% of the meeting goes to that last question because that&<span class="muted">#39</span>;s where the action items come from. I walk through real examples from our review, including why we landed five clients instead of fifteen, and why a bookkeeper, an accountant and an AI developer in the same room will see the same month completely differently.</p>
+          <p>It&#39;s four questions: What was supposed to happen? What actually happened? Why was there a difference? What will we do differently? One facilitator, no blame, everyone has a voice, and 40% of the meeting goes to that last question because that&#39;s where the action items come from. I walk through real examples from our review, including why we landed five clients instead of fifteen, and why a bookkeeper, an accountant and an AI developer in the same room will see the same month completely differently.</p>
           <p>Chapters<br />
           <a href="https://www.youtube.com/watch?v=zYP_WvQCIUg&t=0s" target="_blank" rel="noopener">00:00</a> We just ran our first After Action Review<br />
           <a href="https://www.youtube.com/watch?v=zYP_WvQCIUg&t=20s" target="_blank" rel="noopener">00:20</a> What an AAR is: four questions, no judgment<br />
@@ -194,7 +195,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">1,409 words · 9:35</span></summary>
           <div class="tx-body">
@@ -257,7 +258,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

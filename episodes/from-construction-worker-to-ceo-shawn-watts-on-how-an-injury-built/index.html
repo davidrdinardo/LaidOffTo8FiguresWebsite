@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/enGnb5Fng1o/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Shawn Watts: An Injury Ended His Construction Career. He Built Corfix Instead" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Shawn Watts spent ten years as a unionized ironworker in Ottawa before the flood of daily safety paperwork on job sites pushed him to build Corfix, a health-and-safety compliance and time-tracking platform for specialty trades contractors that now has 40 employees and customers across Canada and more than 20 US states. He tells David DiNardo how he went from zero salary in year one to a Series A, why a wasted first $150,000 build taught him to hire a technical lead in-house, and how he treats ADHD as the trait that lets him thrive in chaos. The conversation covers L-SPARK, raising from family, customers and government grants, and why the best time to raise money is when you don&#39;t need it.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Corfix started because job-site paperwork went from one document a week to three a day; Shawn saw crews faking a week of forms every Friday and knew a digital system could fix both the burden and the liability.</li>
           <li>Shawn made $0 his first year at Corfix after leaving a six-figure ironworker job with a full pension, paid himself $60,000 in year two, and only passed his old income in year three.</li>
@@ -168,7 +169,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>What does it take to go from the jobsite to the boardroom? Shawn Watts, founder &amp; CEO of Corfix, shares how decades of hands-on construction experience led him to build one of the most practical tools in the industry today. We talk startups, grit, and what most tech founders get wrong about the trades. 🔩</p>
           <p>🔔 Subscribe for weekly founder stories: <a href="https://www.youtube.com/@davidrdinardo" target="_blank" rel="noopener">youtube.com/@davidrdinardo</a><br />
@@ -178,7 +179,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">12,597 words · 1:10:36</span></summary>
           <div class="tx-body">
@@ -282,7 +283,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

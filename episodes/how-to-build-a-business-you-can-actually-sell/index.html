@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/FRbseEJqbzA/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="How to Build a Business You Can Actually Sell" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Markian Pergat, owner of Ottawa wood-restoration company Sand &amp; Stain, explains how he went from doing every deck himself to a hands-off business by building a ClickFunnels sales funnel, running Facebook ads and firing himself from one role at a time. He and David DiNardo compare the technician path with the entrepreneur path, break down why most brokered businesses never sell, and map out how AI agents, licensing and personal brands change what a boring home-services business can become.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Markian&#39;s three-month test: if you left your business for three months in peak season, would it collapse, stall or grow? Only the last answer means it is sellable.</li>
           <li>One winter of building a ClickFunnels landing page plus Facebook ads took Sand &amp; Stain from roughly $30,000 of solo work to over $100,000 booked before the season opened on May 1, which forced him to hire about 10 people at once.</li>
@@ -168,7 +169,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>Most owners say, “One day I’ll sell my business.”<br />
           Very few are building something anyone would actually buy.</p>
@@ -183,7 +184,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">16,132 words · 1:13:23</span></summary>
           <div class="tx-body">
@@ -285,7 +286,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

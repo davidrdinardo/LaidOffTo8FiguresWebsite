@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/V2nfvnRQ5tI/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="How to Build a High Trust Specialty Practice: Systems, Standards, and Reputation" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Dr. Rob Clark, the orthopedic surgeon behind Almonte Veterinary Services near Ottawa, explains how he built a referral practice doing only knees, hips and fractures at roughly 40% of the going rate while staying independent as corporate buyers pay 10 to 25 times earnings for vet clinics. David DiNardo, whose own dog Rob operated on, digs into the high-volume, low-cost model, the multi-week hiring process behind a 25 to 30 person team, and why owning the building and carrying no acquisition debt is the real competitive advantage. Rob also traces the path from a Thunder Bay high-school co-op to buying into the clinic in 2017 and paying it off during COVID.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Rob&#39;s model is high volume and low cost: Almonte charges about $4,000 for a dog knee surgery while Ottawa quotes run $10,000 to $12,000, and the case load that volume generates is what let him reach mastery, not the front-end margin.</li>
           <li>Vet clinics were selling to corporate consolidators at 10 to 14 times earnings and up to 25 times during COVID (Rob&#39;s numbers), and he argues that once a practice goes corporate it never returns to independent, so the seller is giving up both community goodwill and the future of the profession.</li>
@@ -169,7 +170,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>In this episode, I sit down with Dr. Rob Clark (@bigbadvet) to talk about the entrepreneurial side of building a specialty practice where the work is high stakes, the clients are emotional, and reputation is everything.</p>
           <p>We go beyond the clinical side and get into the real drivers of a great service business:</p>
@@ -186,7 +187,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">13,007 words · 1:16:48</span></summary>
           <div class="tx-body">
@@ -293,7 +294,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

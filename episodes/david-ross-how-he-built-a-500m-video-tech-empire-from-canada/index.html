@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/jnoiZ96L_wQ/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="David Ross: How He Built a $500M Video Tech Empire from Canada" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">David Ross, CEO of Ross Video, tells David DiNardo how he joined his father&#39;s near-bankrupt Ontario switcher company at 24, stopped a sale that was one signature away, and grew it into a 1,500-employee, $500M broadcast technology giant with 17% annual growth for 35 straight years and no outside capital. He explains the acquisition strategy behind 24 deals, why Ross Video became an employee-owned company, and why he thinks Canada is the best place to build a hardware and software business.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Ross Video has grown 17% a year for 35 consecutive years with no down years and no external capital, doubling roughly every five years; David&#39;s stated goal is to double again to $1B in revenue.</li>
           <li>The key to the company&#39;s success, in David&#39;s words, is hiring really smart people and not pissing them off, so innovators build inside the company instead of leaving to start their own.</li>
@@ -169,11 +170,11 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
-          <p>How do you build a $500 million technology company from Canada without selling out? In this episode of Laid Off to 8 Figures, I sit down with David Ross, CEO of Ross Video — a $500M+ revenue company powering live production for the world&<span class="muted">#39</span>;s biggest broadcasters, stadiums, and studios.</p>
+          <p>How do you build a $500 million technology company from Canada without selling out? In this episode of Laid Off to 8 Figures, I sit down with David Ross, CEO of Ross Video — a $500M+ revenue company powering live production for the world&#39;s biggest broadcasters, stadiums, and studios.</p>
           <p>We talked about building a global tech company from Canada, staying private in a world obsessed with exits, leadership lessons from decades at the top, and what most entrepreneurs get wrong about scaling.</p>
-          <p>In this interview you&<span class="muted">#39</span>;ll learn:<br />
+          <p>In this interview you&#39;ll learn:<br />
           → How Ross Video grew from a family business to $500M+ in revenue<br />
           → Why David chose to stay private instead of selling<br />
           → Leadership lessons from 30+ years running a tech company<br />
@@ -196,7 +197,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">18,470 words · 1:48:24</span></summary>
           <div class="tx-body">
@@ -333,7 +334,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

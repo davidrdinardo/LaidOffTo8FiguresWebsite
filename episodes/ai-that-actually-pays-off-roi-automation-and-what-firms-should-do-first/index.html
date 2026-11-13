@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/RlPGf_Ubhg8/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Julian White: Where AI Actually Pays Off in an Accounting Firm" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Julian White, founder of the Ottawa AI and automation consultancy Zentia AI, walks David DiNardo through a career that spans the dot-com bubble, a venture-backed mobile startup that stripped him of control, and twenty years of running a software services firm. He compares the JDS Uniphase crash to today&#39;s AI hype, explains how AI coding agents have collapsed months of work into hours, and describes the $995 automation audit he uses to find low-hanging fruit inside accounting and law firms. He also opens up about quitting alcohol after years as a high-functioning alcoholic and the balance-first routine that replaced it.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Julian&#39;s JDS Uniphase stock options were worth close to $10 million US on paper at the peak of the dot-com bubble, and he ultimately cashed out for about $1,500 after taking on roughly £150,000 of debt against the imagined windfall.</li>
           <li>Today&#39;s AI boom is a bubble that will likely see a stock-market correction, but unlike the dot-com era the underlying technology is real and is already replacing entry-level roles; Julian no longer hires interns and expects AI could put his own services company out of business in two to three years.</li>
@@ -169,7 +170,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>AI is everywhere right now, but most professional services firms still struggle to turn it into real results.</p>
           <p>In this episode, I sit down with Julian White, Founder and CEO of Zentia AI, where he helps accounting, legal, and engineering firms unlock ROI with AI and automation.</p>
@@ -184,7 +185,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">15,021 words · 1:24:14</span></summary>
           <div class="tx-body">
@@ -304,7 +305,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

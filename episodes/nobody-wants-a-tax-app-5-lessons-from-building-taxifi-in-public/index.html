@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/jcpe3_jU8UE/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Nobody Wants a Tax App: 5 Lessons From Building Taxifi in Public." />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -144,12 +145,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">David DiNardo reports from week three of building Taxifi in public, three months ahead of its March 2, 2026 launch, and shares the five lessons the first weeks taught him. He explains how EOS quarterly rocks keep him working on the business instead of in it, why he chose creators and sole proprietors as a single vertical, and why an app that does not deliver an outcome will not sell no matter how good the content is.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>David runs Taxifi on EOS: four to six quarterly rocks per person, anything new goes on the bench for next quarter, and he completed all six Q4 2025 rocks, including launching the website, early access and the corporate structure.</li>
           <li>Taxifi&#39;s stated vision is a $100 million business valuation within five years, and every website, development and marketing task is worked backwards from that and from the March 2, 2026 launch date.</li>
@@ -162,7 +163,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>This week’s Taxifi build update came with a few lessons I didn’t expect, and they’re changing how I think about the product.</p>
           <p>Here are the 5 biggest takeaways so far:</p>
@@ -178,7 +179,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">1,967 words · 13:25</span></summary>
           <div class="tx-body">
@@ -233,7 +234,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

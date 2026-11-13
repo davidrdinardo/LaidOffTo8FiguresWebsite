@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/pKFpsWNPRtg/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="From Promoter to Fighter: Ivan Grubisic and Clash of Cartier 2026" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Ivan Grubisic, a Canadian Armed Forces sniper turned recruiter who took up boxing at 38, and his coach Roberto join David DiNardo a week before Clash of Cartier, the Ottawa military boxing gala Ivan co-promotes and fights in. They break down how the volunteer coaching program turns soldiers into fighters, why sparring is a classroom rather than a contest, and how the event funds youth scholarships while showcasing the Ottawa military community.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Clash of Cartier started as a Governor General&#39;s Foot Guards 150th anniversary idea and is now in its fourth year, with 16 fighters on the card, roughly 450 to 500 attendees at the Rogers Centre, a pay-per-view stream around $20, and 28 applicants for four youth scholarship awards.</li>
           <li>Roberto&#39;s rule: you play soccer, but you cannot play boxing; the ring corrects emotion and ego immediately, which is why he treats sparring as a mirror and a classroom, not something you win.</li>
@@ -168,7 +169,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>Today’s episode is live with Ivan Grubisic a Clash of Cartier promoter and co-main event fighter as we go behind the scenes of the fourth annual Clash of Cartier, the sold-out charity boxing event taking place March 7, 2026 at Rogers Centre, Ottawa.</p>
           <p>We talk about the work it takes to build a night like this, the mindset behind stepping into the ring yourself, and why this event means more than boxing, with proceeds supporting the Governor General’s Foot Guards Regimental Association Youth Awards Program for youth connected to Canada’s military community.</p>
@@ -179,7 +180,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">11,831 words · 1:07:35</span></summary>
           <div class="tx-body">
@@ -290,7 +291,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

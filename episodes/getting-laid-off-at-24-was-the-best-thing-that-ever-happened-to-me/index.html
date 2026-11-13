@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/eYw2_KY4Nog/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Getting Laid Off at 24 Was the Best Thing That Ever Happened to Me" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -144,12 +145,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">David DiNardo recounts being laid off from the Ottawa Hospital at 24, shortly after finishing his MBA, and why he considers it the best thing that ever happened to him. The layoff pushed him into entrepreneurship and a promise never to let someone else control his trajectory. He shares four lessons from building and selling his business: being vulnerable in your personal brand, the tax advantage of dividends over salary in Canada, building your company as a sellable asset with the exit in mind, and enduring years of pain before the hockey-stick reward.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Being laid off at 24 pushed David into entrepreneurship and a promise to never again let someone else have more control over his life than he did.</li>
           <li>Vulnerability makes a personal brand relatable; a podcast is an easy way to have deeper conversations and clip out the vulnerable moments.</li>
@@ -161,7 +162,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>I got laid off at 24 from my &quot;dream job&quot; at the Ottawa Hospital — and it was the best thing that ever happened to me.</p>
           <p>In this solo episode, I break down the 4 things that took me from a layoff to financially free at 34: why being vulnerable builds your brand, the salary vs. dividends trap keeping Canadian employees from building wealth, building yourself as the asset, and why entrepreneurship is 7 years of pain before the hockey stick.</p>
@@ -169,7 +170,7 @@
           <a href="https://www.youtube.com/watch?v=eYw2_KY4Nog&t=0s" target="_blank" rel="noopener">00:00</a> Laid Off at 24: The Best Thing That Ever Happened to Me<br />
           <a href="https://www.youtube.com/watch?v=eYw2_KY4Nog&t=37s" target="_blank" rel="noopener">00:37</a> The Promise I Made Myself That Day<br />
           <a href="https://www.youtube.com/watch?v=eYw2_KY4Nog&t=44s" target="_blank" rel="noopener">00:44</a> Vulnerability Builds Your Personal Brand<br />
-          <a href="https://www.youtube.com/watch?v=eYw2_KY4Nog&t=80s" target="_blank" rel="noopener">01:20</a> Salary vs. Dividends: Why Employees Don&<span class="muted">#39</span>;t Build Wealth in Canada<br />
+          <a href="https://www.youtube.com/watch?v=eYw2_KY4Nog&t=80s" target="_blank" rel="noopener">01:20</a> Salary vs. Dividends: Why Employees Don&#39;t Build Wealth in Canada<br />
           <a href="https://www.youtube.com/watch?v=eYw2_KY4Nog&t=113s" target="_blank" rel="noopener">01:53</a> Build Yourself as the Asset<br />
           <a href="https://www.youtube.com/watch?v=eYw2_KY4Nog&t=145s" target="_blank" rel="noopener">02:25</a> Always Build With the Exit in Mind (1x vs 10x Multiples)<br />
           <a href="https://www.youtube.com/watch?v=eYw2_KY4Nog&t=186s" target="_blank" rel="noopener">03:06</a> 7 Years of Pain, Then the Hockey Stick<br />
@@ -187,7 +188,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">821 words · 4:16</span></summary>
           <div class="tx-body">
@@ -241,7 +242,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

@@ -50,17 +50,22 @@ function cleanText(t) {
     .replace(/(^|[.!?]\s+)([a-z])/g, (m, pre, ch) => pre + ch.toUpperCase());
 }
 
-function parse(txt) {
+function parse(txt, knownSpeakers = []) {
   const segments = [];
   const blocks = txt.replace(/\r\n?/g, "\n").split(/\n\s*\n/);
   let lastSpeaker = HOST;
+  // Only a known speaker (host, guest from meta.json) or Descript's generic
+  // "Speaker N" counts as a speaker line. Any capitalized word before a colon
+  // ("Question: …", "Taxifi: …") is ordinary transcript text, not a speaker.
+  const names = new Set(knownSpeakers.map((n) => n.toLowerCase()));
+  const isSpeaker = (name) => /^Speaker \d+$/.test(name) || names.has(name.toLowerCase());
   for (const block of blocks) {
     const m = block.trim().match(/^\[(\d{1,2}:\d{2}(?::\d{2})?)\]\s*([\s\S]*)$/);
     if (!m) continue;
     let text = m[2].trim();
     let speaker = lastSpeaker;
     const sp = text.match(/^([A-Z][\w.'-]*(?: [A-Z][\w.'-]*){0,3}|Speaker \d+):\s+([\s\S]*)$/);
-    if (sp) { speaker = sp[1]; text = sp[2]; lastSpeaker = speaker; }
+    if (sp && isSpeaker(sp[1])) { speaker = sp[1]; text = sp[2]; lastSpeaker = speaker; }
     text = cleanText(text);
     if (!text) continue;
     segments.push({ start: toSeconds(m[1]), speaker, text });
@@ -69,7 +74,9 @@ function parse(txt) {
 }
 
 const raw = await readFile(args.in, "utf8");
-const segments = parse(raw);
+let meta = {};
+if (args.meta) meta = JSON.parse(await readFile(args.meta, "utf8"));
+const segments = parse(raw, [HOST, meta.guest].filter(Boolean));
 if (!segments.length) {
   console.error("✖ No timestamped paragraphs found. Export from Descript with timecodes on paragraphs.");
   process.exit(1);
@@ -80,8 +87,6 @@ await mkdir(outDir, { recursive: true });
 const outFile = join(outDir, `${args["video-id"]}.json`);
 let existing = {};
 try { existing = JSON.parse(await readFile(outFile, "utf8")); } catch { /* new */ }
-let meta = {};
-if (args.meta) meta = JSON.parse(await readFile(args.meta, "utf8"));
 
 const out = {
   videoId: args["video-id"],

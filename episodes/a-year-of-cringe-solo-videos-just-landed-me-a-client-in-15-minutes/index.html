@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/qzO5iqP9UAk/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="A Year of Cringe Solo Videos Just Landed Me a Client in 15 Minutes" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -144,12 +145,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">David DiNardo explains how a year of solo podcast episodes he found too cringeworthy to watch back turned into a client who signed up for bookkeeping, accounting and tax in under 15 minutes. The prospect had compared three competitors, but chose David because he had already watched his reels and felt he knew him before the call. The episode argues that organic content is a five-to-ten-year play that builds relationships and distribution no paid ad campaign can match.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>A client found David through one of his reels, reviewed three competitors, and still signed with him in under 15 minutes because the relationship was already built through his content.</li>
           <li>It took roughly a year and 50 solo episodes before David could watch one of his own videos all the way through without cringing.</li>
@@ -162,10 +163,10 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
-          <p>I couldn&<span class="muted">#39</span>;t watch a full episode of my own solo videos for the first 50. Every second felt like cringe. This morning a client signed up for bookkeeping, accounting and tax on a monthly subscription after less than 15 minutes on a call, and when I asked how he found me, he said he saw one of my reels. He&<span class="muted">#39</span>;d already compared three competitors. He chose me because he felt like he already knew me.</p>
-          <p>This episode is about what a year of putting yourself out there actually does for your business, why the first year or two will feel awful, and why I&<span class="muted">#39</span>;m treating Taxifi and this podcast as a 10-year play.</p>
+          <p>I couldn&#39;t watch a full episode of my own solo videos for the first 50. Every second felt like cringe. This morning a client signed up for bookkeeping, accounting and tax on a monthly subscription after less than 15 minutes on a call, and when I asked how he found me, he said he saw one of my reels. He&#39;d already compared three competitors. He chose me because he felt like he already knew me.</p>
+          <p>This episode is about what a year of putting yourself out there actually does for your business, why the first year or two will feel awful, and why I&#39;m treating Taxifi and this podcast as a 10-year play.</p>
           <p>Chapters<br />
           <a href="https://www.youtube.com/watch?v=qzO5iqP9UAk&t=0s" target="_blank" rel="noopener">00:00</a> Thank me in five years<br />
           <a href="https://www.youtube.com/watch?v=qzO5iqP9UAk&t=26s" target="_blank" rel="noopener">00:26</a> How my newest client found me<br />
@@ -192,7 +193,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">1,362 words · 8:05</span></summary>
           <div class="tx-body">
@@ -254,7 +255,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

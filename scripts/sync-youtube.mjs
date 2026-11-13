@@ -182,8 +182,10 @@ async function addDurations(videos, minDurationSeconds) {
 }
 
 function isoToSeconds(iso) {
-  const m = iso.match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/) || [];
-  return (+(m[1] || 0)) * 3600 + (+(m[2] || 0)) * 60 + (+(m[3] || 0));
+  // P1DT2H3M4S: a day component appears on videos over 24h (long livestream
+  // VODs); without it such a video would read as 0s and be dropped as a Short.
+  const m = iso.match(/P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?)?/) || [];
+  return (+(m[1] || 0)) * 86400 + (+(m[2] || 0)) * 3600 + (+(m[3] || 0)) * 60 + (+(m[4] || 0));
 }
 function fmtDuration(total) {
   const h = Math.floor(total / 3600);
@@ -236,8 +238,22 @@ async function main() {
     console.warn(`⚠ maxEpisodes (${cfg.maxEpisodes}) leaves out the ${overCap.length} oldest episode(s). Raise it in youtube.config.json to publish them.`);
   }
 
+  // Episode numbers are remembered per video, like slugs, so a removal or a
+  // filter change never renumbers the episodes that stay. New videos number
+  // upward from the highest number ever assigned, oldest new video first.
+  const knownNums = new Map(
+    (previous?.episodes || [])
+      .filter((e) => e.videoId && Number.isFinite(e.num))
+      .map((e) => [e.videoId, e.num])
+  );
+  let nextNum = Math.max(0, ...knownNums.values());
+  const fresh = videos
+    .filter((v) => !knownNums.has(v.videoId))
+    .sort((a, b) => new Date(a.publishedAt) - new Date(b.publishedAt));
+  for (const v of fresh) knownNums.set(v.videoId, ++nextNum);
+
   const episodes = videos.map((v, i) => ({
-    num: total - i, // newest gets the highest number; counted before the cap, so the cap never renumbers
+    num: knownNums.get(v.videoId),
     title: cfg.tidyTitles ? cleanTitle(v.title) : v.title,
     duration: v.duration,
     url: `https://www.youtube.com/watch?v=${v.videoId}`,
@@ -341,9 +357,9 @@ async function planRemovals({ previous, episodes, cfg, listedIds = new Set(), ov
   if (verdicts.length > max) {
     reasons.push(`${plural(verdicts.length, "removal")} in one run is more than maxRemovalsPerRun (${max}).`);
   }
-  if (stray.length > max) {
+  if (stray.length) {
     const shown = stray.slice(0, 8).map((name) => `episodes/${name}/`).join(", ");
-    reasons.push(`${plural(stray.length, "page folder")} under episodes/ match no episode and would be deleted (${shown}${stray.length > 8 ? ", …" : ""}). That usually means episodes.json lost its slugs: restore it from git rather than allowing this.`);
+    reasons.push(`${plural(stray.length, "page folder")} under episodes/ match no episode and would be deleted (${shown}${stray.length > 8 ? ", …" : ""}). That usually means a slug changed without a redirectFrom, or episodes.json lost its slugs: fix that (or restore episodes.json from git) rather than allowing this.`);
   }
 
   const lines = verdicts.map(({ ep, why }) => `    − EP ${ep.num} "${ep.title}" (${ep.videoId}): ${why}`);
@@ -449,12 +465,24 @@ function assignSlugs(episodes, previous) {
   const known = new Map(previous.filter((e) => e.slug).map((e) => [e.videoId, e.slug]));
   const used = new Set();
   const overrides = OVERRIDES || {};
+  // Remembered and overridden slugs are claimed first, so a NEW video whose
+  // title happens to slugify to an existing episode's slug can never steal
+  // that published URL out from under it.
   for (const ep of episodes) {
-    let slug = overrides[ep.videoId]?.slug || known.get(ep.videoId) || slugify(ep.title);
+    let slug = overrides[ep.videoId]?.slug || known.get(ep.videoId);
+    if (!slug) continue;
     if (used.has(slug)) slug = `${slug}-${ep.videoId.toLowerCase()}`;
     used.add(slug);
     ep.slug = slug;
-    ep.pageUrl = `${SITE}/episodes/${slug}/`;
+  }
+  for (const ep of episodes) {
+    if (!ep.slug) {
+      let slug = slugify(ep.title);
+      if (used.has(slug)) slug = `${slug}-${ep.videoId.toLowerCase()}`;
+      used.add(slug);
+      ep.slug = slug;
+    }
+    ep.pageUrl = `${SITE}/episodes/${ep.slug}/`;
   }
 }
 
@@ -504,7 +532,9 @@ function descriptionToHtml(desc, videoId) {
       const secs = parts.length === 3 ? parts[0] * 3600 + parts[1] * 60 + parts[2] : parts[0] * 60 + parts[1];
       return `<a href="https://www.youtube.com/watch?v=${videoId}&t=${secs}s" target="_blank" rel="noopener">${t}</a>`;
     });
-    html = html.replace(/#(\w+)/g, '<span class="muted">#$1</span>');
+    // Style #hashtags. Only after whitespace/start and starting with a letter,
+    // so escaped entities (&#39;) and URL fragments (/page#section) stay intact.
+    html = html.replace(/(^|\s)#([A-Za-z]\w*)/g, '$1<span class="muted">#$2</span>');
     return "          <p>" + html.replace(/\n/g, "<br />\n          ") + "</p>";
   }).join("\n");
 }
@@ -594,7 +624,9 @@ function fmtTimestamp(secs) {
 }
 
 function sectionLabel(n, text) {
-  return `        <div class="section-label"><span>${String(n).padStart(2, "0")}</span> ${text}</div>`;
+  // A real heading, not a div: these labels are the only headings the episode
+  // content sections have, so screen readers navigate by them.
+  return `        <h2 class="section-label"><span>${String(n).padStart(2, "0")}</span> ${text}</h2>`;
 }
 
 /* Builds the numbered content sections of an episode page: summary and
@@ -778,15 +810,6 @@ async function updateEpisodeList(episodes) {
   out = replaceBetween(out, "<!-- EPISODES_DATA_START -->", "<!-- EPISODES_DATA_END -->",
     `\n  <script id="episodes-data" type="application/json">${json}</script>\n  `);
 
-  // Intro: episode count in the eyebrow and a "latest episode" line under the buttons.
-  out = replaceBetween(out, "<!-- INTRO_EYEBROW_START -->", "<!-- INTRO_EYEBROW_END -->",
-    `THE PODCAST &middot; ${episodes.length} EPISODES WITH REAL FOUNDERS`);
-  const newest = episodes.find((e) => e.latest) || episodes[0];
-  if (newest) {
-    out = replaceBetween(out, "<!-- INTRO_LATEST_START -->", "<!-- INTRO_LATEST_END -->",
-      `<span class="ep-latest">LATEST</span><a href="/episodes/${newest.slug}/">EP ${newest.num} &middot; ${escapeHtml(newest.title)}</a>`);
-  }
-
   if (out !== html) {
     await writeFile(file, out);
     console.log(`✔ Rendered ${episodes.length} episodes into index.html.`);
@@ -830,7 +853,9 @@ async function updateEpisodeStructuredData(episodes) {
   const block =
     START +
     '\n  <script type="application/ld+json">\n' +
-    JSON.stringify(jsonld, null, 2) +
+    // "</" can't appear inside a <script> body (a title containing "</script"
+    // would end the block early); escape it like the other inline JSON blocks.
+    JSON.stringify(jsonld, null, 2).replace(/<\//g, "<\\/") +
     "\n  </script>\n  " +
     END;
   const out = html.slice(0, s) + block + html.slice(e + END.length);

@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/COdM0mCzWmY/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Community Is the Product: How The Fitness Lab Builds Loyalty" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Adam Bracken, founder of The Fitness Lab in Ottawa, traces the studio from a franchise buy-in at 21 to four locations, a Lululemon merch partnership and a plan for 100 locations and $100 million in revenue across North America within ten years. He explains how giving away daily Instagram Live workouts for free during the pandemic, suspending every membership and topping up staff pay grew the community while competing gyms closed. David and Adam dig into the owner-operator equity model, strength-first programming and why community, not the workout, is the product.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Adam bought into a gym franchise at 21, sold his shares at 25 and opened The Fitness Lab in Manotick at 26, taking a five-kilometre, five-year non-compete just to get out; he says he earned about $9.72 an hour for the first few years.</li>
           <li>When his co-founder backed out the week the lease was due, Adam knocked on his cousin&#39;s door at 10 p.m. for the money rather than be the guy who announced a gym and never opened it.</li>
@@ -168,7 +169,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>Most people think building a fitness business is about programming better workouts.</p>
           <p>It’s not.</p>
@@ -185,7 +186,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">16,980 words · 1:26:33</span></summary>
           <div class="tx-body">
@@ -306,7 +307,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

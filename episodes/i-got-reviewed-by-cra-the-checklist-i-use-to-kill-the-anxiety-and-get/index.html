@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/MtOdDWQBq84/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="I Got Reviewed by CRA: The Checklist I Use to Kill the Anxiety and Get Through It" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -144,12 +145,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">David DiNardo walks through the CRA review of his own corporate return, triggered when the legal fees from selling his accounting firm pushed his professional-fees category from roughly $5,000 to $20,000 in a single year. He shares the step-by-step process he used to send the auditor every invoice and receipt within two days and get the expense approved without penalties or interest. The checklist is built for any incorporated Canadian business owner who wants to stop dreading a CRA letter.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>A big year-over-year swing in a single expense category, like professional fees jumping 4x, is what prompts CRA to ask for documentation, so unusual variances are the first thing to have backed up.</li>
           <li>Compare every expense category against the prior year at year-end and pull the invoice and receipt for each large entry then, not three years later when a letter arrives.</li>
@@ -161,7 +162,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>Getting a CRA review letter can spike your stress fast. I know the feeling, and in today’s episode I walk through the exact steps I use to stay calm, get organized, and respond properly when CRA comes knocking.</p>
           <p>This is my anxiety-reduction checklist:</p>
@@ -177,7 +178,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">1,238 words · 7:55</span></summary>
           <div class="tx-body">
@@ -227,7 +228,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

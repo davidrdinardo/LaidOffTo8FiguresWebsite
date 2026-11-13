@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/dkDvdePLRYE/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Taxifi Live Launch: File Your Taxes in 15 to 30 Minutes (Live Demo)" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -144,12 +145,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">David DiNardo walks coach and strategist Michaela through a live, start-to-finish demo of Taxifi on its March 1, 2026 launch day, filing a sole proprietor&#39;s 2025 Canadian return in about 15 to 20 minutes. Uploading last year&#39;s return prefills the personal, rental, home-office and vehicle sections, a Plaid bank connection feeds an AI model that categorizes a year of transactions, CRA authorization pulls the slips, and a CPA prepares and e-files the return after a Stripe payment and a T183 signature. David explains why off-the-shelf tools like QuickBooks Online and Xero overwhelm solopreneurs and lays out the goal of a one-click, fully automated return in year two.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Taxifi&#39;s version one covers 2025 returns for sole proprietors in every province except Quebec, includes the spouse&#39;s return for free, and can also prepare and submit the GST/HST return.</li>
           <li>Uploading the full 2024 tax return takes under 30 seconds and prefills personal deductions, rental income and expenses, business details and the sales tax number as a reference point for 2025.</li>
@@ -162,7 +163,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>We’re going live to officially launch Taxifi and show you exactly how it works, start to finish.<br />
           In this live demo, you’ll watch us run through the full Taxifi flow in real time: setting up your profile, uploading last year’s return for OCR, connecting your bank, and completing CRA authorization so your return can be prepared fast with minimal effort.</p>
@@ -179,7 +180,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">5,393 words · 48:31</span></summary>
           <div class="tx-body">
@@ -256,7 +257,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

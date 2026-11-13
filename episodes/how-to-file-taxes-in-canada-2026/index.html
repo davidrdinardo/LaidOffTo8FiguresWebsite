@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/9dtAHLgYqYk/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="How To File Taxes in Canada 2026" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Nadia La Russa, who has run tax firms since founding Signature Financial in Thunder Bay in 1997 and now serves about 8,000 clients across Thunder Bay and Ottawa&#39;s Hunt Club Tax with a team of nine, answers David DiNardo&#39;s rapid-fire questions on filing Canadian personal taxes for 2026. She covers the April 30 and June 15 deadlines, CRA authorization and My CRA account setup, common deductions like RRSPs, tuition, medical and the T2200 home office claim, why couples should file together, and how installments, capital gains and depreciation work on rental property. The practical rule for anyone with a side gig: set aside 30% of that income for CRA before April 30.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Everyone&#39;s tax payment is due April 30; only the filing deadline moves to June 15 for sole proprietors and their spouses, so a self-employed person who files late should still make an estimated installment payment by April 30 to limit the 7% annual interest CRA is charging in Q2 2026.</li>
           <li>Nadia&#39;s rule for side-gig income is to set aside or prepay 30% of it (closer to 35% on top of $150,000 of employment income), because unlike a paycheque no tax is withheld and it stacks on top of employment income at your marginal rate, which reaches 49% for high earners.</li>
@@ -169,13 +170,13 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
-          <p>How do you file taxes in Canada as a sole proprietor in 2026? In this video, I walk you through everything you need to know about filing your Canadian taxes — whether you&<span class="muted">#39</span>;re a freelancer, sole proprietor, or individual filer.</p>
-          <p>I sit down with Nadia from Hunt Club Tax and ask every tax question most Canadians are too afraid to ask. If you&<span class="muted">#39</span>;re filing your taxes this season, this video breaks it all down in plain English.</p>
-          <p>What you&<span class="muted">#39</span>;ll learn:<br />
+          <p>How do you file taxes in Canada as a sole proprietor in 2026? In this video, I walk you through everything you need to know about filing your Canadian taxes — whether you&#39;re a freelancer, sole proprietor, or individual filer.</p>
+          <p>I sit down with Nadia from Hunt Club Tax and ask every tax question most Canadians are too afraid to ask. If you&#39;re filing your taxes this season, this video breaks it all down in plain English.</p>
+          <p>What you&#39;ll learn:<br />
           → Step-by-step tax filing process for Canadian sole proprietors<br />
-          → Key 2026 tax deadlines you can&<span class="muted">#39</span>;t miss<br />
+          → Key 2026 tax deadlines you can&#39;t miss<br />
           → Common deductions freelancers and solopreneurs overlook<br />
           → How to avoid triggering a CRA review<br />
           → When to incorporate vs. stay as a sole proprietor<br />
@@ -184,7 +185,7 @@
           <a href="https://www.youtube.com/watch?v=9dtAHLgYqYk&t=0s" target="_blank" rel="noopener">0:00</a> - Introduction: Filing Taxes in Canada 2026<br />
           <a href="https://www.youtube.com/watch?v=9dtAHLgYqYk&t=120s" target="_blank" rel="noopener">2:00</a> - Key Deadlines for Sole Proprietors<br />
           <a href="https://www.youtube.com/watch?v=9dtAHLgYqYk&t=300s" target="_blank" rel="noopener">5:00</a> - Understanding Your Tax Obligations<br />
-          <a href="https://www.youtube.com/watch?v=9dtAHLgYqYk&t=600s" target="_blank" rel="noopener">10:00</a> - Common Deductions You&<span class="muted">#39</span>;re Missing<br />
+          <a href="https://www.youtube.com/watch?v=9dtAHLgYqYk&t=600s" target="_blank" rel="noopener">10:00</a> - Common Deductions You&#39;re Missing<br />
           <a href="https://www.youtube.com/watch?v=9dtAHLgYqYk&t=1080s" target="_blank" rel="noopener">18:00</a> - How to Avoid CRA Red Flags<br />
           <a href="https://www.youtube.com/watch?v=9dtAHLgYqYk&t=1500s" target="_blank" rel="noopener">25:00</a> - Sole Proprietor vs. Incorporating<br />
           <a href="https://www.youtube.com/watch?v=9dtAHLgYqYk&t=1800s" target="_blank" rel="noopener">30:00</a> - Tools to Simplify Your Filing<br />
@@ -198,7 +199,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">6,238 words · 36:23</span></summary>
           <div class="tx-body">
@@ -272,7 +273,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

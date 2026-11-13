@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/kFpviGU2gIc/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="30 Days to Launch: What You Get Day 1 in Taxifi (OCR, AI Categorization, File)" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -144,12 +145,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">David DiNardo previews Taxifi one month before launch and explains the three things it does on day one: connect to your bank and auto-categorize bookkeeping, OCR your previous tax return so 2025 needs no data entry, and file your taxes automatically. He walks through why side-hustle income pushes employed creators into a 40% marginal bracket, and asks solopreneurs to join the wait list as testers for a $100 founders discount.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Taxifi&#39;s day-one offer: bank-connected auto-categorization, upload of your prior return to skip data entry, and automatic tax filing, aimed at creators and solopreneurs.</li>
           <li>A $20,000 side business stacked on a $100,000 T4 salary is taxed on $120,000, so the marginal rate on that side income can be 40% rather than the 15% most people assume.</li>
@@ -160,7 +161,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>We are officially one month away from launching Taxifi on March 1, 2026 for creators and solopreneurs across Canada.</p>
           <p>In this episode, I walk through what you are getting on Day 1 and why this launch matters.</p>
@@ -178,7 +179,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">911 words · 5:35</span></summary>
           <div class="tx-body">
@@ -224,7 +225,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

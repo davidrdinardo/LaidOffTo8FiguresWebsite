@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/OtPl2SPxjHs/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Nish: AI Is Not Your Strategy. Leverage Is." />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Nish Patel, an AI strategist and studio founder with no formal education past high school, argues that AI is &quot;middleware for the human imagination&quot; and that the real bottleneck is people, not the technology. He and David DiNardo work through why scale, speed and optimization are becoming commoditized, why a 100-true-customer business built on trust may beat a 100,000-customer platform, and how fresh grads, employees and business owners should each adapt before the &quot;AI blast radius&quot; reaches them.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Nish&#39;s framing: AI is probabilistic, not deterministic like CRMs and SaaS tools, so mastering the software matters less than unlocking your own curiosity, creativity and imagination.</li>
           <li>The AI &quot;meteor&quot; hit on November 30, 2022; like the dinosaurs, most organizations will not die instantly but will be consumed as the blast radius expands to all machine-like work.</li>
@@ -168,7 +169,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>AI is changing everything.</p>
           <p>But the biggest mistake people are making is thinking AI is the strategy.</p>
@@ -196,7 +197,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">15,767 words · 1:51:12</span></summary>
           <div class="tx-body">
@@ -337,7 +338,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

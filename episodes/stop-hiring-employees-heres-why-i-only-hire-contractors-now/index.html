@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/7FtJVIx5wFo/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Stop Hiring Employees. Here&#39;s Why I Only Hire Contractors Now" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -144,12 +145,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">David DiNardo walks through the employee-versus-contractor decision every business owner now faces as AI models ship monthly instead of every six months. He weighs the trade-offs, from Ontario labour laws and SR&amp;ED credits to contractor premiums and lack of commitment, and explains why Taxifi is hiring only contractors so it can move fast and swap people per project. The episode is a push to rethink team structure now rather than wait for the old playbook to stop working.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>In Ontario, labour laws make letting an employee go slow and rule-bound, while a contractor can be released immediately.</li>
           <li>Contractors can cost 75 to 100 percent more than an employee salary, may not treat you as their primary client, and can leave whenever they want.</li>
@@ -162,13 +163,13 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
-          <p>Employees or contractors? It used to be a payroll question. With AI models dropping monthly instead of every six months, it&<span class="muted">#39</span>;s now a speed question — and in this solo episode I lay out exactly how I&<span class="muted">#39</span>;m answering it at Taxifi: contractors only, paid a premium, chosen per project, so I can move as fast as the tools do.</p>
-          <p>I walk through the real trade-offs — Ontario labour rules vs. the freedom to end a contract tomorrow, the 75–100% premium contractors cost, SR&amp;ED credits that favour employees, and why I&<span class="muted">#39</span>;m choosing speed anyway. Plus the two things that convinced me: a Claude Skills setup that erased four or five admin hours a month in an afternoon, and a &quot;weeks-long&quot; build my developer shipped in three to five hours on a Saturday. The old playbook is out. This is the honest restructuring conversation every founder needs to have now.</p>
+          <p>Employees or contractors? It used to be a payroll question. With AI models dropping monthly instead of every six months, it&#39;s now a speed question — and in this solo episode I lay out exactly how I&#39;m answering it at Taxifi: contractors only, paid a premium, chosen per project, so I can move as fast as the tools do.</p>
+          <p>I walk through the real trade-offs — Ontario labour rules vs. the freedom to end a contract tomorrow, the 75–100% premium contractors cost, SR&amp;ED credits that favour employees, and why I&#39;m choosing speed anyway. Plus the two things that convinced me: a Claude Skills setup that erased four or five admin hours a month in an afternoon, and a &quot;weeks-long&quot; build my developer shipped in three to five hours on a Saturday. The old playbook is out. This is the honest restructuring conversation every founder needs to have now.</p>
           <p>⏱ Chapters<br />
           <a href="https://www.youtube.com/watch?v=7FtJVIx5wFo&t=0s" target="_blank" rel="noopener">00:00</a> The Question Every Entrepreneur Has to Ask Now<br />
-          <a href="https://www.youtube.com/watch?v=7FtJVIx5wFo&t=17s" target="_blank" rel="noopener">00:17</a> You Can&<span class="muted">#39</span>;t Just Let an Employee Go<br />
+          <a href="https://www.youtube.com/watch?v=7FtJVIx5wFo&t=17s" target="_blank" rel="noopener">00:17</a> You Can&#39;t Just Let an Employee Go<br />
           <a href="https://www.youtube.com/watch?v=7FtJVIx5wFo&t=40s" target="_blank" rel="noopener">00:40</a> Are Your Employees Keeping Up With Your Business?<br />
           <a href="https://www.youtube.com/watch?v=7FtJVIx5wFo&t=79s" target="_blank" rel="noopener">01:19</a> Why Taxifi Only Hires Contractors Now<br />
           <a href="https://www.youtube.com/watch?v=7FtJVIx5wFo&t=118s" target="_blank" rel="noopener">01:58</a> Soft Skills vs. Technical Skills When AI Does the Technical<br />
@@ -193,7 +194,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">1,000 words · 5:53</span></summary>
           <div class="tx-body">
@@ -251,7 +252,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/a8ZQO4mRLhM/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Before You Use Taxifi: Upload Your 2024 T1 + Connect Your Bank (Quick Demo)" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -144,12 +145,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Two weeks before Taxifi&#39;s March 1 launch, David DiNardo demos the feature that lets self-employed users upload their 2024 T1 so OCR fills in their profile and business details automatically. He explains the four onboarding steps for a sole proprietor, why users should get their prior return and bank connection ready before signing in, and the founders-rate waitlist discount.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Taxifi onboarding for a sole proprietor has four steps in year one: complete your profile, set up your business, connect your bank for income and expenses, and authorize the CRA.</li>
           <li>Uploading your 2024 tax return lets OCR pull the profile and business fields automatically, so you do not answer questions or fill in forms; you just verify what the system found.</li>
@@ -161,7 +162,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>There are 2 things you need to do before you can get the full Taxifi experience:</p>
           <p>1) Have your 2024 tax return (T1) ready so you can upload it and pre-fill your 2025 return<br />
@@ -172,7 +173,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">1,002 words · 6:07</span></summary>
           <div class="tx-body">
@@ -219,7 +220,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

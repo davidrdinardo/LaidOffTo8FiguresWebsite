@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/5Ulaowuimxs/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Emilie: Why High Achievers Burn Out, and the Neuroscience of Rebuilding" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Emilie Wilcox, an Ottawa entrepreneur who owns four businesses and works as a professional coach, describes the 2024 burnout that left her unable to sit or stand for more than two minutes at a time, and how learning that her pain was neuroplastic rather than structural let her rebuild. She walks David through how the nervous system&#39;s fight-or-flight and rest-and-digest states work, why high achievers get stuck in the first one, and the daily practices she now uses to move between them. The two compare how entrepreneurs can grind when needed without sacrificing their health, and Emilie argues that perfectionism and procrastination are often safety mechanisms rather than personality traits.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Emilie&#39;s pain after her Labour Day 2024 collapse was neuroplastic: scans showed no structural damage, and her nervous system was producing pain to protect her, so she recovered through exposure therapy, sitting, driving and lifting for slightly longer each time.</li>
           <li>Emilie cites a Stanford estimate that about 48 percent of the population has symptoms better explained by the nervous system than by any structural issue, including IBS, chronic fatigue and anxiety; her own IBS disappeared once she learned to rest.</li>
@@ -168,16 +169,16 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
-          <p>Emilie Wilcox spent a decade as a partner in management consulting before a single question changed her path: what if the thing draining the highest performers isn&<span class="muted">#39</span>;t a mindset problem, but a nervous-system one?</p>
+          <p>Emilie Wilcox spent a decade as a partner in management consulting before a single question changed her path: what if the thing draining the highest performers isn&#39;t a mindset problem, but a nervous-system one?</p>
           <p>In this episode, Emilie breaks down the neuroscience of burnout, chronic pain, and stress — and why so many founders and executives misread their own warning signals as weakness instead of data. She shares her own story: a minor neck injury with no clear cause that left her unable to sit for more than two minutes a day for over six months, and the full recovery that followed in under a year.</p>
           <p>We get into:</p>
           <p>- Why &quot;constant urgency&quot; feels like success but quietly erodes capacity<br />
           - How chronic symptoms are signals, not failures<br />
           - What it actually takes to lead from a regulated nervous system<br />
           - Rebuilding performance after burnout — without slowing down for good</p>
-          <p>If you&<span class="muted">#39</span>;re building something and running on fumes, this one&<span class="muted">#39</span>;s for you.<br />
+          <p>If you&#39;re building something and running on fumes, this one&#39;s for you.<br />
           🎧 Listen on Spotify and all platforms.</p>
           <p>🔔 Subscribe for weekly entrepreneur interviews &amp; business growth strategies: <a href="https://www.youtube.com/@davidrdinardo" target="_blank" rel="noopener">youtube.com/@davidrdinardo</a></p>
           <p>👉 Connect with David DiNardo, MBA: <a href="https://linktr.ee/daviddinardo" target="_blank" rel="noopener">linktr.ee/daviddinardo</a><br />
@@ -190,7 +191,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">17,437 words · 1:35:36</span></summary>
           <div class="tx-body">
@@ -312,7 +313,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

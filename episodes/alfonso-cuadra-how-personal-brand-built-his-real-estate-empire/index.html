@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/uX6eeY5CxMo/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Alfonso Cuadra: How Personal Brand Built His Real Estate Empire" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Alfonso Cuadra, the self-styled &#39;Godfather of Real Estate,&#39; tells David DiNardo how he went from a war-torn refugee sleeping on Ottawa park benches to a teenage father, a $1 million debt at 24, and a multifamily portfolio of just under 1,000 doors across North America. He lays out the attention-trust-monetization ladder behind his daily YouTube brand, the refinance-every-five-years strategy that pulls equity out tax-free, and why he believes Canada is entering the greatest wealth transfer in history. Cuadra also explains the CMHC MLI Select program, why he skips small properties, and where he is buying in Canada and the US right now.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Cuadra&#39;s social media framework is attention, then trust, then monetization; trust comes from showing up consistently as the same person online and in real life, and it takes years to build and seconds to lose.</li>
           <li>Financial freedom, in Cuadra&#39;s definition, is the moment passive income surpasses monthly expenses; he hit that at 30 and says his portfolio is now ten times the size it was then.</li>
@@ -169,7 +170,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>Most people think personal brand is about visibility.<br />
           Alfonso Cuadra built his around something far more valuable: trust, authority, and leverage.</p>
@@ -183,7 +184,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">18,704 words · 1:54:01</span></summary>
           <div class="tx-body">
@@ -341,7 +342,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>
