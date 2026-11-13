@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/kDP2UYr8XRY/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="I Tested 100+ AI Apps to Build My Business — My Ranked Stack for 2026" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -144,12 +145,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">David DiNardo ranks the AI apps he actually uses every day to build Taxifi, scoring each from 1 (best) to 4 (worst) after testing more than 100 tools over the past year. Claude, Manus and Perplexity Computer come out on top, ChatGPT gets a failing grade for acting like a yes-man, and he explains how Claude Design and Nano Banana replaced thousands of dollars in designer costs.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>David ranks ChatGPT a 4 out of 4 for business use because it acts as a yes-man; he now uses it under 15 minutes a day for personal questions like pool setup.</li>
           <li>Claude earns a 1: he prompts it to act like an Elon Musk-level executive that resolves objections before answering, to get execution-ready output instead of back and forth.</li>
@@ -162,14 +163,14 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>What are the best AI tools for small business owners in 2026? I spent the last year testing over 100 AI apps to run and build Taxifi. Most got cut. These are the ones that actually deliver results — not a back-and-forth.</p>
-          <p>I rank each tool from 1 (best) to 4 (worst) and tell you exactly why. Whether you&<span class="muted">#39</span>;re a solopreneur, freelancer, or running a team, this is the AI tech stack that will save you time and money.</p>
-          <p>My filter is simple: result as a service. If a tool doesn&<span class="muted">#39</span>;t move me toward a finished output, it&<span class="muted">#39</span>;s gone.</p>
+          <p>I rank each tool from 1 (best) to 4 (worst) and tell you exactly why. Whether you&#39;re a solopreneur, freelancer, or running a team, this is the AI tech stack that will save you time and money.</p>
+          <p>My filter is simple: result as a service. If a tool doesn&#39;t move me toward a finished output, it&#39;s gone.</p>
           <p>The stack, in order:<br />
           ChatGPT — the OG, now a yes-man (why it ranks last for strategy)<br />
-          Claude — my <span class="muted">#1</span> for business strategy and execution<br />
+          Claude — my #1 for business strategy and execution<br />
           Claude Design — the Figma killer for non-technical founders<br />
           Nano Banana — every thumbnail, zero designers<br />
           ElevenLabs — my voice, my reels, in minutes<br />
@@ -193,7 +194,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">2,800 words · 17:43</span></summary>
           <div class="tx-body">
@@ -249,7 +250,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

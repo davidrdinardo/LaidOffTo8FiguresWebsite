@@ -21,7 +21,9 @@ permissions:
 
 concurrency:
   group: sync-youtube
-  cancel-in-progress: true
+  # Queue instead of cancel: an hourly firing must not kill a manual
+  # "Allow removals" run before it commits.
+  cancel-in-progress: false
 
 jobs:
   sync:

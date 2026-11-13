@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/3tzCNsF-r6E/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="How Boho and Glow Turned Candles Into a Community" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Emily Toffolo, founder of Ottawa candle and home-fragrance brand Boho and Glow, tells David DiNardo how she built an entirely organic business that has grown every year from her basement while raising two boys and later returning to a corporate job. She spent five to six months researching and testing before launch, took 45 orders on day one, landed her first wholesale account within weeks, and now supplies roughly 40 to 45 wholesale shops across Canada with no employees and no cold calls. The conversation is a practical playbook on brand consistency, seasonal launch timing, and daily Instagram habits for product founders.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Emily&#39;s number-one rule is brand consistency: she has never changed her logo or fonts in almost six years, and the placement of text and logo on packaging stays identical season to season so shoppers recognize Boho and Glow instantly.</li>
           <li>Before launching she spent a solid five to six months testing waxes, wicks, jars and oils (guided by supplier charts, then verified herself) while building the brand in parallel, so the cost was mostly time rather than money.</li>
@@ -168,7 +169,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>Emily Ann started Boho and Glow with a simple idea, create candles that feel like a moment of calm in a busy day. What began as small batches and late nights testing scents turned into a studio, a loyal customer base, and tens of thousands of people following every launch.</p>
           <p>In this episode we talk about how she built trust online, why she stayed committed when orders were slow, and the decisions that helped her grow from kitchen experiments to a full home fragrance brand. If you care about building a product people truly love, this conversation is for you.</p>
@@ -176,7 +177,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">9,404 words · 51:46</span></summary>
           <div class="tx-body">
@@ -273,7 +274,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

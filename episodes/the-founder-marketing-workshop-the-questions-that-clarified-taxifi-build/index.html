@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/il1J9YZ6lE0/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="The Founder Marketing Workshop: The Questions That Clarified Taxifi (Build in Public)" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -144,12 +145,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">David DiNardo shares the founder marketing framework he used to clarify Taxifi before launch: five questions covering vision and brand essence, audience and segments, category and competition, value promise, and brand voice. He works through each one with HVAC, plumbing and his own tax-app examples to show how the answers change who you market to and how, and explains why the exercise took him a month and why every new business owner should do it before launching.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Start with the problem that made you angry enough to build something, then write down exactly who you are solving it for; a residential family, a condo and a commercial client are three different customers even for the same furnace.</li>
           <li>Test brand essence with two prompts: if the app disappeared tomorrow, what gap would people feel, and if the app were a person, what three adjectives describe it?</li>
@@ -162,7 +163,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>If you’re starting a business, you need to get clear on the story, the customer, and the promise. This episode is me doing that in real time for Taxifi.</p>
           <p>I walk through the exact framework and questions I’m using to sharpen the brand and the marketing, and I think every founder should do the same:</p>
@@ -180,7 +181,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">1,613 words · 9:50</span></summary>
           <div class="tx-body">
@@ -231,7 +232,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

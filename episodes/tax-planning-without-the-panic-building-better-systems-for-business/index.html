@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/-6_ZivS5tKM/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Tax Planning Without the Panic: Building Better Systems for Business Owners" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Larry Hasson, tax partner at Ottawa accounting firm McIntyre &amp; Associates and co-founder of the tax-payment fintech Remitian, walks David DiNardo through how he coaches new business owners to budget for sales tax, income tax and installments so they are never blindsided by a tax bill. He then explains how a nagging problem with his own clients (and his physician wife) missing CRA payments grew from a proof-of-concept tool inside his firm into a venture-backed startup now regulated in Canada and the US, led by MindBridge founder Solon Angel as CEO. The conversation covers controlled growth, when to incorporate, expanding into the States, and why Canadian founders tend to think too small.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Larry&#39;s rule for new self-employed clients: money that flows into the business account is not yours until HST, income tax and next year&#39;s installments are set aside; transfer a budgeted amount to personal and leave the rest behind.</li>
           <li>Year two is the cash crunch, because you pay last year&#39;s income tax, HST, and start quarterly installments for the current year all at once, which is why owners feel like their tax rate is 80 to 90 percent.</li>
@@ -168,7 +169,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>Larry Hasson is a CPA, CA and Director at McIntyre &amp; Associates Professional Corporation in Ottawa, with a focus on tax planning, reorganizations, and business succession planning for clients including health care professionals.</p>
           <p>In this episode, we talk about what strong tax strategy actually looks like when you zoom out beyond filing, and how great operators build systems that reduce mistakes, stress, and expensive surprises.</p>
@@ -182,7 +183,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">11,390 words · 1:05:47</span></summary>
           <div class="tx-body">
@@ -283,7 +284,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

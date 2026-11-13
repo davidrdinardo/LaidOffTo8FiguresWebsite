@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/FNTY227C6yg/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Why Personal Brand Matters More in the AI Era" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Kyle Turk, founder of Meerkat Marketing and VP of Marketing at seoplus+, tells David DiNardo how he went from co-founding Faces Magazine with his brother in 2007 to running marketing at Welch LLP and Keynote Search, building Meerkat as a side business, and selling it to seoplus+ in August 2025. He lays out what actually works in marketing now that AI has flooded every channel with generic content: authenticity, founder-led content, LinkedIn for B2B, and paid ads for lead generation.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Kyle co-founded Faces Magazine in Halifax in 2007, franchised it to six cities, shrank back to two, and sold both to advertisers he already knew after seven years.</li>
           <li>He ran Meerkat Marketing as a side business for three to four years, mostly on referrals from friends, before going full-time in 2023; seoplus+ acquired it in August 2025 after years of mutual referrals built trust.</li>
@@ -168,7 +169,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>Why does personal branding matter more than ever in 2026? AI has made it easier than ever to create content — but it has also made it harder than ever to stand out. In this episode of Laid Off to 8 Figures, I sit down with Kyle Turk, VP of Marketing at seoplus+ and founder of Meerkat Marketing.</p>
           <p>We break down why personal brand, trust, and clear messaging matter more than ever in the age of AI, and what founders, creators, and business owners need to understand about marketing today.</p>
@@ -197,7 +198,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">12,483 words · 1:14:50</span></summary>
           <div class="tx-body">
@@ -304,7 +305,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

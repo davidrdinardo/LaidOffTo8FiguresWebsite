@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/OcPkerf1urM/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="AI Shipped It in 2 to 4 Hours: My First End-to-End Test as a Tech Founder: Building Taxifi in Public" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -144,12 +145,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">David DiNardo gives a build-in-public update on Taxifi 55 days before its March 1, 2026 launch: the first end-to-end test passed on January 5, a day ahead of the deadline his development team set over the holidays, and the 15-plus changes his team requested after reviewing the app were turned around in two to four hours. He lays out what the speed of AI-driven development means for business owners with teams resisting AI, why becoming a tech founder after 15 years running an accounting firm still requires technical fluency, and why building a culture of execution around deadlines matters more than hustle-culture debates.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Over 15 changes from the team&#39;s first review of Taxifi were fixed by the developers in two to four hours, a cycle that David says would have taken weeks or months of requirement documents and coding a few years ago.</li>
           <li>Business owners with a team of 30 that isn&#39;t adopting AI will be left behind; David advises identifying who is on board, having hard conversations with those who aren&#39;t, and doubling down on the people who are.</li>
@@ -161,7 +162,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>Today’s episode is a real build in public update from inside Taxifi.</p>
           <p>I ran our first true end-to-end test, found a bunch of changes that needed to happen, and then watched something wild: with AI in the workflow, those updates happened in real time. I’d prompt, the changes would happen, and within 2 to 4 hours we were in a totally different place.</p>
@@ -178,7 +179,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">1,563 words · 9:57</span></summary>
           <div class="tx-body">
@@ -230,7 +231,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

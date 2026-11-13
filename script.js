@@ -249,11 +249,19 @@ function initJoin() {
       return;
     }
     // Couldn't reach Beehiiv from here: hand off to their hosted form.
+    // window.open can be popup-blocked (the await may have spent the user
+    // activation), so check the handle and fall back to same-tab navigation.
     const fallback = new URL(form.action);
     fallback.searchParams.set("email", email);
-    window.open(fallback.href, "_blank", "noopener");
-    setNote("Couldn\u2019t sign you up from here \u2014 we opened Beehiiv\u2019s form in a new tab.", "err");
-    setTimeout(() => setNote(idle, ""), 8000);
+    const win = window.open(fallback.href, "_blank");
+    if (win) {
+      try { win.opener = null; } catch { /* cross-origin */ }
+      setNote("Couldn\u2019t sign you up from here \u2014 we opened Beehiiv\u2019s form in a new tab.", "err");
+      setTimeout(() => setNote(idle, ""), 8000);
+    } else {
+      setNote("Couldn\u2019t sign you up from here \u2014 taking you to Beehiiv\u2019s form\u2026", "err");
+      setTimeout(() => location.assign(fallback.href), 600);
+    }
   });
 }
 

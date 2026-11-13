@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/bY8ryAdq3CI/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="How to Sell Any Service: My Exact Sales Process in Under 10 Minutes" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -144,12 +145,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">David DiNardo lays out the two-call sales process he used to close nearly every client at his accounting firms and now runs at Taxifi: a discovery call where he listens 80% of the time to find the real pain point, then a proposal call within seven days where he presents bronze, silver and gold pricing. He explains why you never quote on the first call, how to space the three tiers so the middle package wins, the fast-action offer that gets the signature, and the $99 bronze-tier mistake he made with Taxifi&#39;s own pricing.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>The discovery call is 80% listening and 20% talking; talk more than you listen on call one and you lose the client, because they still don&#39;t know you.</li>
           <li>Never give a price on the discovery call. Ask for the information you need to build a proposal, then book the proposal call within seven days while the problem is still fresh.</li>
@@ -162,10 +163,10 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
-          <p>I&<span class="muted">#39</span>;m going to give you my whole sales process in under 10 minutes. This is the exact system I used to close basically every client that walked in the door at my accounting firms, and it&<span class="muted">#39</span>;s the same one we run at taxifi today. It works for any professional service — accounting, law, consulting, trades, subscription pricing.</p>
-          <p>Two calls. The first one you shut up and listen. The second one you talk, and you never give one price — you give three. I&<span class="muted">#39</span>;ll show you how to run the discovery call, why you never quote on call one, how to price bronze/silver/gold so the middle package wins, the fast-action kicker that gets the signature, and the pricing mistake I made with taxifi&<span class="muted">#39</span>;s own bronze tier that I just fixed.</p>
+          <p>I&#39;m going to give you my whole sales process in under 10 minutes. This is the exact system I used to close basically every client that walked in the door at my accounting firms, and it&#39;s the same one we run at taxifi today. It works for any professional service — accounting, law, consulting, trades, subscription pricing.</p>
+          <p>Two calls. The first one you shut up and listen. The second one you talk, and you never give one price — you give three. I&#39;ll show you how to run the discovery call, why you never quote on call one, how to price bronze/silver/gold so the middle package wins, the fast-action kicker that gets the signature, and the pricing mistake I made with taxifi&#39;s own bronze tier that I just fixed.</p>
           <p>⏱ Chapters<br />
           <a href="https://www.youtube.com/watch?v=bY8ryAdq3CI&t=0s" target="_blank" rel="noopener">00:00</a> My Whole Sales Process in Under 10 Minutes<br />
           <a href="https://www.youtube.com/watch?v=bY8ryAdq3CI&t=27s" target="_blank" rel="noopener">00:27</a> Zip Your Mouth: The 80/20 Discovery Call<br />
@@ -192,7 +193,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">1,216 words · 7:25</span></summary>
           <div class="tx-body">
@@ -252,7 +253,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

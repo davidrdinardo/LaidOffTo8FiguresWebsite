@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/MGVW-NRrPrk/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Pierce Ujjainwalla: He Built Knak From His Own Marketing Pain" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Pierce Ujjainwalla, co-founder and CEO of Ottawa-based Knak, an AI campaign-creation platform used by enterprise marketing teams, describes how a two-day company hackathon with Claude Code changed how his roughly 150-person team builds product. He walks David DiNardo through running Knak as a side project for almost five years, the toxic-culture stretch that showed up in eNPS scores, why taking money from Insight Partners was one of his best decisions, and where AI is pushing email and lifecycle marketing next.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Pierce&#39;s hackathon lesson: with Claude Code, product requirements, design and engineering happen simultaneously, so a year-long roadmap should compress by 5x to 10x and a month-long task should now be scoped as a week.</li>
           <li>Knak developers have shifted from writing code to reviewing it; Pierce is re-pointing sprint estimates because a 10-point story may now be a one-point story.</li>
@@ -168,7 +169,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>In this episode, I sit down with Pierce Ujjainwalla, co-founder and CEO of Knak and founder of Revenue Pulse. After building his career in the marketing trenches at IBM, SAP, NVIDIA, and Marketo, Pierce launched Knak in 2015 to make campaign creation easier for marketers. Today, Knak helps enterprise teams create emails and landing pages with no code, and the company has grown to serve hundreds of brands and tens of thousands of marketers.</p>
           <p>We get into what it takes to turn real industry experience into a scalable software company, how to build in a crowded market, and why creativity still matters when you’re growing fast. If you’re a founder, operator, or marketer building something from the ground up, this episode is for you.</p>
@@ -179,7 +180,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">10,867 words · 1:20:33</span></summary>
           <div class="tx-body">
@@ -292,7 +293,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

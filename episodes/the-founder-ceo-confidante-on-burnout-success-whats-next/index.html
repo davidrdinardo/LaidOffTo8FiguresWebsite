@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/sZE-JkYaML4/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Sheri Chiprout: What Founders Only Admit to Their Confidante" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Sheri Chiprout, an Ottawa founder and CEO confidante who once ran a makerspace, explains how losing her mother suddenly reset her career toward supporting founders through burnout and the &#39;what&#39;s next&#39; stage after success. She walks David DiNardo through her six-month one-on-one format, the alignment work she does instead of pure business coaching, the four founder types behind a quiz she is building, and why she thinks the loneliness epidemic is the next problem worth solving.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Sheri works in six-month containers: three 90-minute sessions a month plus one integration week off, homework after nearly every session, and voice-note access in between because &#39;all the magic happens in between&#39;.</li>
           <li>She calls the achiever&#39;s relentless output the &#39;machine gun effect&#39;; it never switches off, so aligned founders point it at things that fill them up while misaligned founders burn out.</li>
@@ -168,12 +169,12 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>You hit the goal. So why does it still feel empty?</p>
-          <p>Founder success and personal fulfillment aren&<span class="muted">#39</span>;t the same thing — and most founders learn that the hard way. In this episode of Laid Off to 8 Figures, I sit down with Sheri Chiprout, the Founder &amp; CEO Confidante behind Keep On Dreaming Up, who&<span class="muted">#39</span>;s spent 25+ years helping founders and CEOs build aligned, fulfilling lives without the burnout.</p>
-          <p>We get into why outer success doesn&<span class="muted">#39</span>;t automatically bring inner alignment, how to redefine your success metrics so they actually fit your life, growing without the burnout, and the &quot;what&<span class="muted">#39</span>;s next?&quot; moment that hits after you&<span class="muted">#39</span>;ve achieved the thing.<br />
-          If you&<span class="muted">#39</span>;re an operator who&<span class="muted">#39</span>;s made it and still feels the itch, this one&<span class="muted">#39</span>;s for you.</p>
+          <p>Founder success and personal fulfillment aren&#39;t the same thing — and most founders learn that the hard way. In this episode of Laid Off to 8 Figures, I sit down with Sheri Chiprout, the Founder &amp; CEO Confidante behind Keep On Dreaming Up, who&#39;s spent 25+ years helping founders and CEOs build aligned, fulfilling lives without the burnout.</p>
+          <p>We get into why outer success doesn&#39;t automatically bring inner alignment, how to redefine your success metrics so they actually fit your life, growing without the burnout, and the &quot;what&#39;s next?&quot; moment that hits after you&#39;ve achieved the thing.<br />
+          If you&#39;re an operator who&#39;s made it and still feels the itch, this one&#39;s for you.</p>
           <p>🔗 Connect with Sheri: sherizahava.com</p>
           <p>🎧 Also on Spotify &amp; Apple Podcasts: [link]</p>
           <p>👉 Subscribe for more conversations with founders and operators.<br />
@@ -189,7 +190,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">14,900 words · 1:26:07</span></summary>
           <div class="tx-body">
@@ -309,7 +310,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

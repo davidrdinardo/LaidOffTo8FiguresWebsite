@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/F87Cb-F_3ow/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="From Stylist to Business Builder: How Adamo DiNardo Built Hair by Adamo &amp; Co." />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Ottawa hair stylist Adamo DiNardo, owner of Hair by Adamo &amp; Co., walks David DiNardo through the business side of a career that started at age 14: opening a 700-square-foot salon on Preston Street after a phone call with his dad, packing 12 people into it within two and a half years, and signing a lease on a 3,000-square-foot space in the middle of the pandemic. He explains how he builds a culture of psychological safety with 17 staff, why he still works five days a week behind the chair, and how he is now carving out admin days to plan the next phase of growth.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Adamo started in salons at 14 and opened Hair by Adamo &amp; Co. in a 700-square-foot space on Preston Street after telling his dad he wanted something small; a space was offered within eight hours.</li>
           <li>The first location grew to 12 people in 700 square feet in two and a half years before he knocked through to the unit next door and doubled the footprint.</li>
@@ -168,7 +169,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>Adamo DiNardo is the stylist behind Hair by Adamo &amp; Co, an Ottawa area salon focused on healthy hair and professional cutting, styling, and coloring.</p>
           <p>In this episode, we go deep on the entrepreneurial journey behind building real success in a service business: craft, reputation, consistency, and the standards that turn first time clients into long term loyalty.</p>
@@ -182,7 +183,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">11,387 words · 1:07:27</span></summary>
           <div class="tx-body">
@@ -286,7 +287,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

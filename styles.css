@@ -374,9 +374,11 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
 .section-label {
   font-family: var(--mono);
   font-size: clamp(0.68rem, 0.95vw, 0.8rem);
+  font-weight: 400; /* also used on h2 headings — keep the label look */
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #a9a7a3;
+  margin-top: 0;
   margin-bottom: clamp(2rem, 5vw, 4rem);
   display: flex;
   align-items: center;
@@ -558,7 +560,7 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
   font-size: clamp(1.3rem, 2.4vw, 2rem);
   letter-spacing: -0.01em;
 }
-.join-form input::placeholder { color: var(--muted-2); }
+.join-form input::placeholder { color: #8b8985; }
 .join-form button {
   flex: none;
   background: none;
@@ -644,7 +646,8 @@ section { padding: clamp(4rem, 9vw, 9rem) var(--gutter); scroll-margin-top: clam
   padding: 0.4rem 0;
   outline: none;
 }
-.search-box input::placeholder { color: var(--muted-2); }
+.search-box input:focus-visible { border-color: var(--fg); outline: none; }
+.search-box input::placeholder { color: #8b8985; }
 .search-results { list-style: none; margin: 1.5rem 0 0; padding: 0; }
 .search-results li { padding: 0.6rem 0; border-bottom: 1px solid var(--line); }
 .search-results a { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }

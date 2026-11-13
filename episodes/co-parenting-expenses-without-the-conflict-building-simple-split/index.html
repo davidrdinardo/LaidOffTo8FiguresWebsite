@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/7JKqnALeUsg/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Nancy Gharib: She Built an App to End Co-Parenting Money Fights" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Nancy Gharib, founder of Simple Split, explains how her own divorce turned tracking kids&#39; expenses across two households into a bootstrapped fintech app, eight years in the making and now backed by partners in Dubai and the US ahead of a planned April 2026 mobile launch. She walks through pitching Arlene Dickinson in a thousand-person Clubhouse room, growing up in her Lebanese parents&#39; Ottawa grocery store, and how faith and identity shifts shaped the business. David and Nancy compare notes on building apps with Replit and Lovable, community-first products, and teaching teams to move from AI anxiety to AI confidence.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Simple Split started because divorce agreements don&#39;t make expense tracking easy: chasing receipts and money between two houses was a problem Nancy assumed she couldn&#39;t be the only one facing, and existing co-parenting apps were built for high-conflict custody, not finances.</li>
           <li>Arlene Dickinson told Nancy in a Clubhouse pitch room, &#39;don&#39;t change a thing about your pitch,&#39; and said she wished she&#39;d had the app during her own divorce, but told her to come back once she had customers.</li>
@@ -168,7 +169,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>Co-parenting finances can turn into receipts, screenshots, and text threads that create friction instead of clarity.</p>
           <p>In this episode, I sit down with Nancy Gharib, Founder of Simple Split, a tool built to make expense sharing easier for co-parents (and even roommates) by creating a simple, transparent system for tracking and splitting shared expenses. One of the most interesting parts: the workflow is designed to be effortless, including a text-based experience where you can “flip a text” and the system handles the rest.</p>
@@ -185,7 +186,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">13,419 words · 1:23:13</span></summary>
           <div class="tx-body">
@@ -302,7 +303,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

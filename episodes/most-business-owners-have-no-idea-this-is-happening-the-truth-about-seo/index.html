@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/4mLqStouVHU/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Brock Murray: Most Business Owners Have No Idea This Is Happening to Their SEO" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Brock Murray, co-founder of Ottawa marketing agency seoplus+, explains how search is shifting from Google rankings to AI tools like ChatGPT and Claude, and why his 50-person agency launched a generative engine optimization (GEO) service to help clients show up in AI answers. He and David compare notes on running AI agents inside a company, the coming rise in compute costs, the SaaS-to-results-as-a-service shift, and how a founder retreat changed the way Brock manages energy and burnout. The conversation ends with Brock&#39;s advice for young entrepreneurs: adopt a growth mindset, step out of the comfort zone, and trust your gut.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Brock&#39;s agency grew a two-location phone-repair client into more than 150 locations through SEO, and that account became the template for its ideal customer: multi-location businesses with 5 to 400 sites.</li>
           <li>Generative engine optimization (GEO) uses the same principles as SEO, which is why seoplus+ launched it as a service; Brock says right now is the easiest it will ever be to rank in AI tools because competition and algorithm sophistication are both low.</li>
@@ -168,14 +169,14 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
-          <p>99% of business owners are about to lose their <span class="muted">#1</span> source of customers — and they don&<span class="muted">#39</span>;t even know it yet.</p>
+          <p>99% of business owners are about to lose their #1 source of customers — and they don&#39;t even know it yet.</p>
           <p>For 20 years, every business in Canada played the same game: rank on Google, win the click, make the sale.</p>
           <p>That game just changed. Permanently.</p>
-          <p>I sat down with Brock Murray, Co-Founder &amp; COO of seoplus+ — one of Canada&<span class="muted">#39</span>;s most respected digital marketing agencies — to break down what&<span class="muted">#39</span>;s actually happening to search in the AI era, and what every business owner needs to do right now to not get left behind.</p>
-          <p>We get into what&<span class="muted">#39</span>;s really going on inside Google, the new SEO playbook nobody is teaching yet, where AI is quietly making business owners rich, and what every founder needs to do this week — not next year.</p>
-          <p>Brock has been in the trenches of search longer than almost anyone in Canada. This isn&<span class="muted">#39</span>;t theory. This is what he&<span class="muted">#39</span>;s seeing happen to real businesses, right now.</p>
+          <p>I sat down with Brock Murray, Co-Founder &amp; COO of seoplus+ — one of Canada&#39;s most respected digital marketing agencies — to break down what&#39;s actually happening to search in the AI era, and what every business owner needs to do right now to not get left behind.</p>
+          <p>We get into what&#39;s really going on inside Google, the new SEO playbook nobody is teaching yet, where AI is quietly making business owners rich, and what every founder needs to do this week — not next year.</p>
+          <p>Brock has been in the trenches of search longer than almost anyone in Canada. This isn&#39;t theory. This is what he&#39;s seeing happen to real businesses, right now.</p>
           <p>If you run a business — even a small one — this conversation will change how you think about the next 12 months.</p>
           <p>🔔 Subscribe for weekly entrepreneur interviews &amp; business growth strategies: <a href="https://www.youtube.com/@davidrdinardo" target="_blank" rel="noopener">youtube.com/@davidrdinardo</a></p>
           <p>👉 Connect with David DiNardo, MBA: <a href="https://linktr.ee/daviddinardo" target="_blank" rel="noopener">linktr.ee/daviddinardo</a><br />
@@ -188,7 +189,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">18,391 words · 1:24:25</span></summary>
           <div class="tx-body">
@@ -303,7 +304,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/1t37WRs-7fs/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Brian Claire: He Built a Payroll App Prototype in 10 Minutes" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -150,12 +151,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">Brian Claire, founder of Ottawa&#39;s Blueprint Accounting, explains how he turned a Slack conversation into a working payroll-app prototype in about ten minutes using Claude and Cursor, then validated it with a survey of 50 to 60 accounting firms before paying an agency to build the real product. He walks through the twelve-month path from prototype to paying clients, the rebrand from Payday to Nooma after a trademark conflict with ADP, co-founder and shareholder-agreement lessons, and why he thinks the speed of AI development lets small teams compete with incumbents like Wagepoint.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Brian built the first Payday prototype in about ten minutes: he had Claude summarize a Slack thread with his co-founder into a prompt, then handed that prompt to Cursor, and the only cost was token credits.</li>
           <li>A survey of roughly 50 to 60 accounting firms found they juggle five to six payroll platforms on average, which is why the multi-client dashboard (the Hub) got more interest than the payroll engine itself.</li>
@@ -168,7 +169,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>Brian Claire got pushed into accounting by his mom, bounced through BlackBerry, the Ottawa Hospital and defence firms, then hung his shingle in 2018 and built Blueprint Accounting into a seven-person firm serving clients coast to coast. Along the way he kept running into the same problem: payroll tools built for one business at a time, not for an accounting firm running fifty of them.</p>
           <p>So he summarized a Slack thread in Claude, pasted it into Cursor, and ten minutes later had a prototype. He showed it to accountant friends, surveyed 60 firms, found they were juggling five to six payroll platforms each, hired an agency to build it, launched to a room of 40 people with a live glitch, and signed his first paying client within six months. Then he merged with a developer who was building the same thing and rebranded to Nooma.</p>
@@ -235,7 +236,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">14,066 words · 1:14:54</span></summary>
           <div class="tx-body">
@@ -499,7 +500,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

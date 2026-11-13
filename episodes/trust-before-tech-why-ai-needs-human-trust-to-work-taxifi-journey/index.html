@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/FFFd9VZsGac/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="Trust Before Tech: Why AI Needs Human Trust to Work (Taxifi Journey)" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -144,12 +145,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">David DiNardo shares a hard lesson from building Taxifi: more than 20 people signed up on launch day and not one completed the process, because people do not yet trust an AI app with their financial data the way they trusted a handshake with their accountant. He explains why trust has to be built before technology, and how he vibe-coded an entire sales funnel with Claude over a weekend so he can test messaging on social media and Meta ads instead of waiting on agencies.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Over 20 people signed up for Taxifi on day one and none finished onboarding; David&#39;s diagnosis is that the trust gap between a person and an AI app is bigger than any efficiency gain.</li>
           <li>In a service business the relationship is person to person; with an AI product it is person to app to model, and the trust has to be rebuilt at each link before people will hand over bank and tax data.</li>
@@ -162,12 +163,12 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>AI is only as powerful as the trust behind it.</p>
-          <p>This week on the Taxifi journey, I&<span class="muted">#39</span>;m breaking down why we&<span class="muted">#39</span>;re building trust with users first; before layering in the intelligence.</p>
+          <p>This week on the Taxifi journey, I&#39;m breaking down why we&#39;re building trust with users first; before layering in the intelligence.</p>
           <p>No one wants to hand their taxes to a black box.</p>
-          <p>Building Taxifi — an AI-powered tax filing app — has taught me that AI is only as good as the trust users have in it. In this episode, I share why we&<span class="muted">#39</span>;re building trust-first and intelligence second.</p>
+          <p>Building Taxifi — an AI-powered tax filing app — has taught me that AI is only as good as the trust users have in it. In this episode, I share why we&#39;re building trust-first and intelligence second.</p>
           <p>🔔 Subscribe for weekly business &amp; AI insights: <a href="https://www.youtube.com/@davidrdinardo" target="_blank" rel="noopener">youtube.com/@davidrdinardo</a><br />
           👉 Connect with David: <a href="https://linktr.ee/daviddinardo" target="_blank" rel="noopener">linktr.ee/daviddinardo</a></p>
           <p><span class="muted">#AIForBusiness</span> <span class="muted">#TaxTech</span> <span class="muted">#Taxifi</span> <span class="muted">#StartupJourney</span> <span class="muted">#Entrepreneurship</span> <span class="muted">#ArtificialIntelligence</span></p>
@@ -175,7 +176,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">934 words · 6:16</span></summary>
           <div class="tx-body">
@@ -224,7 +225,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>

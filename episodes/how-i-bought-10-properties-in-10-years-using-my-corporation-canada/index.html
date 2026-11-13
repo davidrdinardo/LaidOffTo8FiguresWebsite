@@ -38,6 +38,7 @@
   <meta name="twitter:image" content="https://i.ytimg.com/vi/6A4AbZsqeA8/maxresdefault.jpg" />
   <meta name="twitter:image:alt" content="How I Bought 10 Properties in 10 Years Using My Corporation (Canada)" />
 
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -144,12 +145,12 @@
       </div>
 
       <section class="episode-section episode-summary">
-        <div class="section-label"><span>01</span> IN THIS EPISODE</div>
+        <h2 class="section-label"><span>01</span> IN THIS EPISODE</h2>
         <p class="episode-lede">David DiNardo explains the playbook he used to buy one rental property a year for ten years after being let go from his corporate job at 24. He funded the down payments with retained earnings from his Canadian operating company, which is taxed at roughly 12 percent instead of personal rates of up to 54 percent, and placed each property in its own holding company with its own bookkeeping file. The system gave him liability protection, monthly visibility into every property&#39;s numbers, and a structure that scaled cleanly as the portfolio grew.</p>
       </section>
 
       <section class="episode-section episode-takeaways">
-        <div class="section-label"><span>02</span> KEY TAKEAWAYS</div>
+        <h2 class="section-label"><span>02</span> KEY TAKEAWAYS</h2>
         <ol class="takeaways">
           <li>Fund real estate from corporate cash flow rather than salary: a Canadian small business keeps about $88,000 of every $100,000 earned, while the same income taken personally can lose 35 percent or more to tax before it reaches the down payment.</li>
           <li>Only buy a property if the rent covers the mortgage and all expenses with a reserve left over for capital expenditures like a roof or furnace, regardless of whether you put 5, 20, or 30 percent down.</li>
@@ -162,7 +163,7 @@
       </section>
 
       <section class="episode-section episode-notes">
-        <div class="section-label"><span>03</span> SHOW NOTES</div>
+        <h2 class="section-label"><span>03</span> SHOW NOTES</h2>
         <div class="episode-body">
           <p>At 24, I was let go from my corporate job. By 34, I was financially free — and along the way I bought 10 rental properties, one a year for 10 years. This is the exact playbook.</p>
           <p>In this solo episode, I break down the corporate structure that made it possible: why I bought every property through a corporation instead of personally (12.2% small business tax vs. up to 54% personal), the one-holding-company-per-property system, why cash flow is non-negotiable on every purchase, and the monthly bookkeeping habit that once caught a $400 water leak my tenant never reported.</p>
@@ -195,7 +196,7 @@
       </section>
 
       <section class="episode-section episode-transcript" id="transcript">
-        <div class="section-label"><span>04</span> TRANSCRIPT</div>
+        <h2 class="section-label"><span>04</span> TRANSCRIPT</h2>
         <details class="tx-details">
           <summary class="tx-summary">Read the full transcript <span class="tx-meta">2,190 words · 14:01</span></summary>
           <div class="tx-body">
@@ -269,7 +270,9 @@
         f.title = "YouTube video player";
         f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
         f.setAttribute("allowfullscreen", "");
+        f.tabIndex = -1;
         p.replaceChild(f, btn);
+        f.focus(); // keyboard focus was on the removed button; keep it on the player
       });
     })();
   </script>
