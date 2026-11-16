@@ -4,7 +4,7 @@ tt_overlay   -> TikTok / DOAC look: white rounded boxes, black UPPERCASE Inter B
 yt_overlay   -> YouTube Shorts look: white Inter Bold 118 px, one key word red (232,35,35), soft shadow, y_center 0.72
 label_overlay-> "LO8F" white pill + speaker name, top-left (60,110); composited for the WHOLE clip on both variants
 
-Fonts: Inter TTFs (extras/ttf from the Inter release zip). Set INTER to the "Inter-" prefix path.
+Fonts: Inter TTFs (extras/ttf from the Inter release zip, fetched by bootstrap.sh). Set INTER_PREFIX to the "Inter-" prefix path.
 """
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 import os, sys
@@ -12,9 +12,16 @@ INTER = os.environ.get('INTER_PREFIX', '/home/user/fonts/inter/extras/ttf/Inter-
 W, H = 1080, 1920
 
 def yt_overlay(lines, red_word, out, size=118, y_center=0.72):
-    """white bold lines, one (or several) words red, centred, soft shadow. lines: list of str"""
+    """white bold lines, one (or several) words red, centred, soft shadow. lines: list of str.
+    A line wider than 980 px shrinks the whole title until it fits (never below 86 px: shorten the line instead)."""
     im = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
-    f = ImageFont.truetype(INTER + 'Bold.ttf', size); lh = int(size * 1.12)
+    while True:
+        f = ImageFont.truetype(INTER + 'Bold.ttf', size)
+        widest = max(d.textlength(ln, font=f) for ln in lines)
+        if widest <= 980 or size <= 86: break
+        size -= 4
+    if widest > 1040: raise SystemExit(f'YouTube line too wide even at {size}px ({widest:.0f}px): shorten it')
+    lh = int(size * 1.12)
     total = lh * len(lines); y = int(H * y_center - total / 2)
     sh = Image.new('RGBA', (W, H), (0, 0, 0, 0)); sd = ImageDraw.Draw(sh)
     reds = red_word if isinstance(red_word, (list, tuple, set)) else [red_word]
@@ -29,6 +36,7 @@ def yt_overlay(lines, red_word, out, size=118, y_center=0.72):
         y += lh
     sh = sh.filter(ImageFilter.GaussianBlur(14))
     Image.alpha_composite(sh, im).save(out)
+    return size, widest
 
 def tt_overlay(lines, out, size=92, y_center=0.70, label=None):
     """DOAC style: one white rounded box per line, black uppercase bold text. Keep each line <= ~19 characters."""
@@ -55,9 +63,9 @@ def label_overlay(label, out):
     im = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im); draw_label(d, label); im.save(out)
 
 if __name__ == '__main__':
-    # usage: python3 hookstyle.py <key> "<TT line 1>|<TT line 2>[|line 3]" "<YT line 1>|<YT line 2>|<YT line 3>" "<red word>" "<Speaker Name>" [outdir]
+    # usage: python3 hookstyle.py <key> "<TT line 1>|<TT line 2>[|line 3]" "<YT line 1>|<YT line 2>|<YT line 3>" "<red word>[|<red word>]" "<Speaker Name>" [outdir]
     key, tt, yt, red, name = sys.argv[1:6]; outdir = sys.argv[6] if len(sys.argv) > 6 else '.'
     tt_overlay(tt.split('|'), f'{outdir}/hook_{key}_tt.png')
-    yt_overlay(yt.split('|'), red.split('|'), f'{outdir}/hook_{key}_yt.png')
+    size, widest = yt_overlay(yt.split('|'), red.split('|'), f'{outdir}/hook_{key}_yt.png')
     label_overlay(('LO8F', name), f'{outdir}/label_{key}.png')
-    print('wrote', f'hook_{key}_tt.png hook_{key}_yt.png label_{key}.png')
+    print('wrote', f'hook_{key}_tt.png hook_{key}_yt.png (size {size}, widest line {widest:.0f}px) label_{key}.png')
