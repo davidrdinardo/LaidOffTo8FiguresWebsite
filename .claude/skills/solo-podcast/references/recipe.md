@@ -19,7 +19,7 @@ Read back on Nov 16 2026 from Descript (Underlord, read-only), Higgsfield (gener
 |---|---|---|---|---|
 | 62, AI Replaced My Video Editor | `08a5b7b2-5d28-49d8-83a3-aa535ae3dd4b` | not recorded | `3df829ed-0066-49e3-8c40-84ac62370211` | `1US5vG2L704` |
 | 64, Distribution Is the Moat | `fb86c46c-cc38-4412-98f4-17c202b8dd93` | `30e41d43-ef82-414e-a24e-1b29cd2eb10a` | `70a551b3-763d-490e-ae58-6cd494798e48` | `LpdIjUUYm44` |
-| 65, The Conference Trick No One Does | `83506fe5-0091-4408-b379-97eb8a7499e1` | `3f05e712-f371-440a-9d78-b8b1849527a7` | `527828d4-d8d6-4f3e-93d1-3f14e297b811` | scheduled for Nov 17 2026, 12:00 pm; id not known when this was written |
+| 65, The Conference Trick No One Does | `83506fe5-0091-4408-b379-97eb8a7499e1` | `3f05e712-f371-440a-9d78-b8b1849527a7` | `527828d4-d8d6-4f3e-93d1-3f14e297b811` | `IYOGHzRXnMI` |
 
 When a setting is in doubt, ask Underlord to read it from one of these compositions (the read-only prompt below costs about 6–8 credits) and copy it.
 
