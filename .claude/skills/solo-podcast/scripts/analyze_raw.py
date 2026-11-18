@@ -39,6 +39,8 @@ while i < n:
     else: i += 1
 print(f'{p}: {dur:.1f} s, {len(cuts)} hard cuts found, face found in {100 * np.isfinite(a[:, 1]).mean():.0f} % of frames')
 print(f'side-camera stretches (source seconds): {", ".join(f"{s:.2f}-{e:.2f}" for s, e in wins) or "none"}')
+if wins and not cuts:
+    print('NOTE: no hard cuts were found, so these stretches are probably David leaning back, not a second camera (episode 65). Look at a frame from each before giving Underlord a second framing.')
 inwin = np.zeros(n, bool)
 for s, e in wins: inwin |= (a[:, 0] >= s) & (a[:, 0] < e)
 def framing(name, m):
