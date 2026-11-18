@@ -11,13 +11,20 @@ import sys, subprocess, re
 import numpy as np, cv2
 p = sys.argv[1]; FPS, W, H = 4, 640, 360
 det = cv2.FaceDetectorYN.create('/home/user/models/yunet.onnx', '', (W, H), 0.6, 0.3, 5)
-raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', p, '-vf', f'fps={FPS},scale={W}:{H}', '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-'], capture_output=True).stdout
-n = len(raw) // (W * H * 3); rows = []
-for i in range(n):
-    _, fc = det.detect(np.frombuffer(raw[i * W * H * 3:(i + 1) * W * H * 3], np.uint8).reshape(H, W, 3))
+# Frames are read from ffmpeg one at a time. Holding the whole recording in memory took 1.2 GB for seven minutes
+# and would not fit a long episode.
+dec = subprocess.Popen(['ffmpeg', '-v', 'error', '-i', p, '-vf', f'fps={FPS},scale={W}:{H}', '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-'], stdout=subprocess.PIPE)
+rows = []
+while True:
+    buf = dec.stdout.read(W * H * 3)
+    if len(buf) < W * H * 3: break
+    i = len(rows)
+    _, fc = det.detect(np.frombuffer(buf, np.uint8).reshape(H, W, 3))
     if fc is None: rows.append((i / FPS, np.nan, np.nan, np.nan, np.nan)); continue
     r = max(fc, key=lambda r: r[2] * r[3])
     rows.append((i / FPS, r[3] / H, (r[4] + r[6]) / 2 / W, (r[5] + r[7]) / 2 / H, ((r[11] + r[13]) / 2 - (r[5] + r[7]) / 2) / H))
+dec.wait(); n = len(rows)
+if n < FPS * 2: sys.exit(f'{p}: could not read video frames (got {n}). Is the download complete?')
 a = np.array(rows); dur = n / FPS
 h0 = np.nanmedian(a[:, 1])
 side = np.nan_to_num(a[:, 1], nan=h0) < 0.93 * h0          # wider camera = smaller face
