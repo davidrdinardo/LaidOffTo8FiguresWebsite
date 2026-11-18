@@ -8,10 +8,16 @@ Read back on Nov 16 2026 from Descript (Underlord, read-only), Higgsfield (gener
 - Long-form read-back, episode 62
 - Episode 65: what was built, and what went wrong once
 - Underlord briefs (pass 1, pass 2, read-only inspection)
-- Thumbnail prompt
-- YouTube copy: template and both real examples
+- Thumbnail prompt and template
+- YouTube copy: template and real examples
 - Instagram Reel caption
 - Spotify and LinkedIn (not recovered)
+- Approval message
+- Metricool request bodies that worked
+- Website transcript from a cloud session
+- Checks after posting
+- Card icons used so far
+- How long things take
 
 ## Reference projects
 
@@ -57,7 +63,9 @@ Use the episode 64 values (Studio Sound 70, music 4 %, no ducking, 4 s b-roll) u
 
 ## Episode 65: what was built, and what went wrong once
 
-Built Nov 16–17 2026 with this skill. David approved the plan, then approved every post in one message. He had not yet commented on the edit itself when this was written, so treat the episode 64 read-back as the approved look and this one as the latest example.
+Built Nov 16–17 2026 with this skill. David approved the plan, then approved every post in one message. He had not commented on the edit itself when this was written (Nov 18), so treat the episode 64 read-back as the approved look and this one as the latest example.
+
+Live: full episode `IYOGHzRXnMI` (Nov 17, 12:00 pm, custom thumbnail confirmed on YouTube), Short 1 `yI9ZhDDXyRw` and Short 2 `4gD9JoMJjLQ` on YouTube with their TikTok twins, the Reel (Nov 18, moved up to 6:37 am at David's request), the website page with transcript. Short 3 was scheduled for Nov 18, 11:00 am.
 
 Recording `David_Nov09_09-24-33_aa941892 _y55r5zzt (1)`, 7:06 raw → 6:11.5 edit (371.52 s), one camera throughout, echo 0.149 at worst (clean).
 
@@ -80,7 +88,7 @@ Recording `David_Nov09_09-24-33_aa941892 _y55r5zzt (1)`, 7:06 raw → 6:11.5 edi
 - Credits: pass 1 32.8, pass 2 23.2, b-roll swap 11.6, Shorts 15.5, 13.5 and 11.6. Total 108.
 - Thumbnail lines: "THE TRICK" / "NO ONE DOES".
 
-Shorts (tag "David DiNardo", framing zoom 1.03, pan x −0.0567, y −0.0150, none of them names the partner company):
+Shorts (tag "David DiNardo", framing zoom 1.03, pan x −0.0567, y −0.0150, none of them names the company kept generic):
 
 | Short | TikTok lines | YouTube lines (red word) | Length |
 |---|---|---|---|
@@ -100,6 +108,12 @@ Things that went wrong once on episode 65:
 - The 457 MB upload answered HTTP 400 with `--data-binary`; streaming with `-T` and an empty `Expect:` header on a new slot worked. The 30 MB Shorts went up with `put.sh` as usual.
 - The first title draft called the speaker a founder; in the recording he is not.
 - David asked "where is the thumbnail" after an approval message that carried the link in a table row.
+- The transcript's first commit carried the name that was meant to stay generic; it was replaced in a later commit, but the repo is public and its history keeps the first version. Replace before the first commit.
+- The episode page appeared about five hours after the episode. The sync workflow is scheduled hourly but GitHub ran it at 22:08 UTC; started by hand it finishes in 15 seconds.
+- Only the long-form had a check-in. Shorts 1 and 2 were confirmed published a day later, during the audit.
+- The raw recording, the full edit and the three Shorts were all published to unlisted Descript share pages. The raw one was republished as private on Nov 18; `publish_project` takes `access_level: "private"` and the download link still works.
+- `analyze_raw.py` held every frame in memory, about 1.2 GB for seven minutes. It now reads frames one at a time (282 MB, same results).
+- The sandbox had been wiped by Nov 18. `sandbox_sync.sh` put everything back with one command.
 
 ## Underlord briefs
 
@@ -139,9 +153,13 @@ Report every clip you placed with its actual start and end time, and confirm fro
 READ-ONLY request. Do not change, add, delete, rename or publish anything. Inspect composition <id> and report exact values read from the project: canvas, duration, scene start times; every track type with clip counts; camera scale/position per scene, Studio Sound intensity, gain, ducking; caption style, font, weight, size, colours, box, outline, shadow, position; music asset, range, gain, fades; each b-roll clip's start, duration and size; each image card's file name, start and duration; any intro/outro/title layers; transitions.
 ```
 
-## Thumbnail prompt
+## Thumbnail prompt and template
 
-Reference image (the approved template, David at the mic on black with two pendant lamps): Higgsfield media id `f9d8d776-9ce1-41a8-90a3-43c2b7cc8644`. Used unchanged for episodes 62 and 64 apart from the two lines:
+Reference image (the approved template, David at the mic on black with two pendant lamps, reading "AI Is CHANGING HOW" / "BUSINESSES GROW"): Higgsfield media id `f9d8d776-9ce1-41a8-90a3-43c2b7cc8644`, a 1670×942 PNG at `https://d2ol7oe51mr4n9.cloudfront.net/user_3CLxZGzAqms9f8ls8nQ54aDPtnw/f9d8d776-9ce1-41a8-90a3-43c2b7cc8644.png` (answered 200 on Nov 18 2026). If that media is ever gone, the published thumbnails are still on YouTube at `https://i.ytimg.com/vi/<video id>/maxresdefault.jpg` (1280×720, checked for episodes 62, 64 and 65): bring one in with `media_import_url` and use it as the reference. That fallback is untested.
+
+After the episode is live, fetch the same `i.ytimg.com` link for the new video in the sandbox and look at it: it should be the custom thumbnail, not a video frame.
+
+Used unchanged for episodes 62, 64 and 65 apart from the two lines:
 
 ```
 Recreate this exact YouTube thumbnail and keep EVERYTHING identical: the same man in the same pose at the same microphone, same black long-sleeve shirt, same dark studio with the two warm pendant lamps top-left and top-right, same wooden desk, same colours, same framing and crop, same text styling (extra-bold white uppercase geometric sans, left-aligned block on the left, vertically centred, line 1 bare, line 2 on a solid bright-red rectangle with square corners). Change ONLY the two text lines. Line 1 (bare white): "<LINE 1>". Line 2 (white on the red box): "<LINE 2>". Keep the text block entirely on the left half so it never touches the man. No other text, no logos, no watermark. The text must be spelled exactly: "<LINE 1>" / "<LINE 2>".
@@ -178,7 +196,7 @@ This content is for general information only and is not financial, tax or legal 
 
 Episode 64. Title: "Distribution Is the Moat: 3 Things I Learned at SaaS North". Opening: "I spent two days at SaaS North last week with founders, creators and AI experts. For a tech conference, the loudest message in the room surprised me: distribution is the moat, not technology. Five years ago you built first and sold second. Now AI can build the app from a prompt, so the winners are the people with an audience and a personal brand that looks nothing like everyone else's." / "In this episode I break down the three ideas I brought home: why distribution now comes before technology, why the smartest software companies are moving customers from monthly to annual and building the product with them, and why whoever builds the best agent for their industry is going to own it." Eleven chapters, from "00:00 What Every Founder at SaaS North Was Talking About" to "05:34 The Three Things to Take Home". Tags: SaaS North, distribution is the moat, personal brand, AI agents, annual recurring revenue, SaaS, founder content, content marketing, AI for business, entrepreneurship, startup advice, Ottawa entrepreneur, building a personal brand, David DiNardo, Laid Off to 8 Figures. Hashtags: #LaidOffTo8Figures #OttawaBusiness #SaaSNorth #PersonalBrand #AIAgents.
 
-Episode 65 (partner company kept generic at David's request). Title: "The Conference Trick No One Does (It Got Me the Speaker's Number)". Opening: "I use one trick at every conference and almost nobody else does it. Last week at SaaS North I picked a speaker whose company I wanted to partner with. I was the first one in the room and the last one out. When the Q&A opened I stood up, said my name and my company, and gave an honest testimonial about his product in front of about 50 people." / "In this episode I break down what happened next: why he remembered me when ten people were lined up to talk to him, how I left with his number and an intro to his content manager, and why I am not pitching the partnership yet. Going to the conference is the top of the funnel, the conversation is the middle, and the partnership is the bottom. If you skip the first two, the pitch never works." Fourteen chapters, from "00:00 The Trick I Use at Every Conference" to "05:46 Your Network Is the Biggest Thing You Build". Hashtags: #LaidOffTo8Figures #OttawaBusiness #Networking #Partnerships #SaaSNorth.
+Episode 65 (one company name kept generic at David's request). Title: "The Conference Trick No One Does (It Got Me the Speaker's Number)". Opening: "I use one trick at every conference and almost nobody else does it. Last week at SaaS North I picked a speaker whose company I wanted to partner with. I was the first one in the room and the last one out. When the Q&A opened I stood up, said my name and my company, and gave an honest testimonial about his product in front of about 50 people." / "In this episode I break down what happened next: why he remembered me when ten people were lined up to talk to him, how I left with his number and an intro to his content manager, and why I am not pitching the partnership yet. Going to the conference is the top of the funnel, the conversation is the middle, and the partnership is the bottom. If you skip the first two, the pitch never works." Fourteen chapters, from "00:00 The Trick I Use at Every Conference" to "05:46 Your Network Is the Biggest Thing You Build". Hashtags: #LaidOffTo8Figures #OttawaBusiness #Networking #Partnerships #SaaSNorth.
 
 Episode 62. Title: "AI Replaced My Video Editor in 15 Minutes (Here's the Exact Setup)". Opening: "I paid an editor $1,000 to $1,500 a month for my podcast edits, reels and Shorts. Last week I sent the raw recording to Claude Code instead. Fifteen minutes later I had the full edit, three Shorts in my format, the thumbnail and the captions, plus an automation that posts them." Fourteen chapters. Hashtags: #LaidOffTo8Figures #OttawaBusiness #AIEditing #ClaudeCode #Entrepreneur.
 
@@ -209,3 +227,96 @@ The original skill had wording rules for the Spotify description and the LinkedI
 
 - Spotify: the title, then the two YouTube description paragraphs, then three to five takeaways as plain sentences. No chapters, no hashtags.
 - LinkedIn: first person, a one-line hook, three short points from the episode, one line on why it matters to founders, the YouTube link last.
+
+Episode 65's drafts, written to those two lines, are in `copy/lo8f-ep65-copy.md`. Whether David used them as written is not known; ask him before treating them as the pattern.
+
+## Approval message
+
+One message, in this order. Links go on lines of their own so none can be missed.
+
+```
+Episode <NN> is built and sitting in Metricool as drafts. Nothing is live.
+
+Full episode (<m:ss>, loudness <before> → <after> LUFS): <CloudFront link>
+Thumbnail ("<LINE 1>" / "<LINE 2>"): <CloudFront link>
+Short 1, <title> (<seconds> s): TikTok <link> · YouTube <link>
+Short 2, ...
+Short 3, ...
+Copy file: attached.
+
+Proposed times (Toronto)
+<table: post, day and time>
+
+What changed from the plan
+<only real changes: a different title and why, clips swapped, credits used against the estimate>
+
+Say yes, or give changes. On your yes I release everything at those times, add the episode link to the Shorts once it is live, and push the transcript to the website.
+```
+
+## Metricool request bodies that worked
+
+`createScheduledPost` with `blogId "7590780"`, `date "<YYYY-MM-DDTHH:MM:SS±HH:MM>"` and `info` as a JSON string. Every body also carries `autoPublish true, descendants [], draft true, firstCommentText "", hasNotReadNotes false, mediaAltText [], shortener false, smartLinkData {"ids": []}, publicationDate {"dateTime": "<YYYY-MM-DDTHH:MM:SS>", "timezone": "America/Toronto"}` and one `media` link.
+
+- Full episode: `providers [{"network": "youtube"}]`, `videoThumbnailUrl "<thumbnail link>"`, `text` = the description, `youtubeData {"title": "...", "type": "video", "privacy": "public", "tags": [...], "category": "EDUCATION", "madeForKids": false}`.
+- YouTube Short: the same with `"type": "short"`, `videoCoverMilliseconds 1000` in place of the thumbnail, and the Short's YouTube render as `media`.
+- TikTok: `providers [{"network": "tiktok"}]`, the TikTok render, `tiktokData {"disableComment": false, "disableDuet": false, "disableStitch": false, "privacyOption": "PUBLIC_TO_EVERYONE", "commercialContentThirdParty": false, "commercialContentOwnBrand": false, "title": "<hook as a sentence>", "autoAddMusic": false, "photoCoverIndex": 0}`.
+- Reel: `providers [{"network": "instagram"}]`, Short 1's YouTube render, `instagramData {"type": "REEL", "collaborators": [], "showReelOnFeed": true}`.
+
+The reply gives each post an `id` and a `uuid`, and replaces `media` and the thumbnail with `static.metricool.com` copies. To release or change a post, call `updateScheduledPost` with that `id` and `uuid` and the whole body again (`draft false` to release), using the `static.metricool.com` links. Every update gives the post a new `id`; the `uuid` stays.
+
+## Website transcript from a cloud session
+
+The account-level `lo8f-website-transcript` skill describes the route through David's Mac and says a push from the cloud is blocked. From a cloud session with this repo attached the push worked on Nov 17 and 18 2026. The session's own branch is not the default branch, so the commit is made in a separate worktree:
+
+1. `export_transcript` of the "YouTube – Full Edit" composition: `format txt`, `include_speaker_labels changes`, `timecodes {on_paragraphs: true, on_speakers: true}`. Save the text exactly as returned, outside the repo (for example `<scratchpad>/ep<NN>/export.txt`), and fix the captioner's spellings with `sed -i` ("Taxify" → "Taxifi", "SaaS NORTH" → "SaaS North").
+2. Write `<scratchpad>/ep<NN>/meta.json`: `{"num": <NN>, "guest": null, "speakersVerified": false, "summary": "<2–3 sentences, third person, present tense>", "takeaways": ["<4–7 one-sentence items>"]}`. Keep them generic wherever the episode's copy is generic.
+3. Build, in a worktree at the head of the default branch:
+   ```
+   git fetch origin claude/laidoffto8figures-website-u7z4sl
+   git worktree add --detach <scratchpad>/site FETCH_HEAD && cd <scratchpad>/site
+   node scripts/transcript-from-descript.mjs --video-id <id> --in <export.txt> --meta <meta.json> --project-id <project uuid> --composition-id <composition uuid>
+   ```
+   It prints the segment count, the word count and the last timestamp, which should be within a minute of the episode's length (episode 65: 15 segments, 972 words, 346 s of 371).
+4. Replace any name David asked to keep generic, now, before anything is committed: `sed -i` on `transcripts/<id>.json`, then `grep -c` for the name must print 0. Phone numbers, personal emails and street addresses read out on air are replaced the same way.
+5. `node scripts/sync-youtube.mjs --offline`, then
+   ```
+   git add transcripts/<id>.json episodes/ index.html sitemap.xml
+   git commit -m "Transcript + summary for EP <NN>: <title>"
+   git push origin HEAD:claude/laidoffto8figures-website-u7z4sl
+   cd <repo> && git worktree remove --force <scratchpad>/site
+   ```
+   If the new episode is not in `episodes.json` yet, only the transcript file changes. That is fine.
+6. Start the sync so the page exists now instead of hours later: GitHub tool `actions_run_trigger` with `method run_workflow`, `workflow_id sync-youtube.yml`, `ref claude/laidoffto8figures-website-u7z4sl`. It finished in 15 seconds on Nov 18. `actions_list` (`list_workflow_runs`) then shows "Sync YouTube episodes" and "pages build and deployment" with conclusion `success`. Tested: the trigger, the run and the deployment listing. Not yet tested in one go: a brand-new episode appearing this way, although the scheduled run did exactly that for episode 65.
+7. Confirm the live page from the sandbox: `curl -s "https://laidoffto8figures.com/episodes/<slug>/?v=$(date +%s)" | grep -c "IN THIS EPISODE"` prints 1, and a `grep -c` for any replaced name prints 0. The slug is in `episodes.json` once the sync has run.
+
+## Checks after posting
+
+All of these ran on Nov 18 2026 against episode 65.
+
+- Metricool: `getScheduledPosts` for the day, brand 7590780, timezone America/Toronto. Each post's `providers[0]` carries `status` and, once `PUBLISHED`, `publicUrl` and the network's id. Report a link only when the status is `PUBLISHED`.
+- YouTube, from the sandbox: `curl -s "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=<id>&format=json"` returns the public title; `curl -s -o t.jpg https://i.ytimg.com/vi/<id>/maxresdefault.jpg` and a look through `image_paths` shows the thumbnail the public sees.
+- Website, from the sandbox: the `curl` in step 7 above.
+- GitHub: `actions_list` with `list_workflow_runs` shows whether the last "pages build and deployment" succeeded.
+
+## Card icons used so far
+
+`concept_cards.py` takes Font Awesome 6 free solid names and stops on a name that does not exist. These have rendered: bullhorn, calendar-days, robot, trophy, calculator, microchip, road-barrier, users, flag, people-group, chart-line, microphone, handshake, list-check, address-book, filter (a funnel).
+
+## How long things take
+
+Episode 65, a seven-minute recording. A step far outside these has probably stalled or been lost to a restart.
+
+| Step | Time |
+|---|---|
+| Publish, 720p | about 1.5 min |
+| Publish, 1080p full edit | about 3 min |
+| Publish, 1080p Short | about 1 min |
+| Underlord pass 1 | 2 min |
+| Underlord pass 2 (stock b-roll and cards) | 7 min |
+| Underlord b-roll swap, or one Short cut | about 1 min |
+| `analyze_raw.py` | 50 s |
+| `finish.sh` per Short (clips skill) | about 3 min |
+| Download of the 460 MB full edit into the sandbox | under 1 min |
+| `loudnorm2.py` | 1–2 min |
+| Upload of the full file | a few minutes |
+| Thumbnail generation, two variants | under 1 min |

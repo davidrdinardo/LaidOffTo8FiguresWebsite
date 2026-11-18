@@ -34,7 +34,7 @@ David approved this exact look on episode 63 (Craig Gauthier, Nov 1 2026): "the 
 | `put.sh` | Uploads both files and proves they landed. |
 | `facecheck.py` | Reports where the face sits and whether it changes size (camera-angle switches). |
 
-The Higgsfield sandbox cannot read this repo and is wiped after about a day idle. At the start of every job, write each script into `/home/user/skill/scripts/` with a heredoc (`cat > name <<'EOF'`), run `sha256sum` there and on the repo copies, and compare. Then `bash bootstrap.sh`.
+The Higgsfield sandbox is wiped after about a day idle. At the start of every job, run `bash .claude/skills/solo-podcast/scripts/sandbox_sync.sh` in the repo and run the one command it prints with `sandbox_exec`: it downloads every script from GitHub at the checked-out commit into `/home/user/skill/scripts/` (and the solo scripts into `/home/user/skill/solo/`), checks each against this checkout's sha256 and runs `bootstrap.sh` (tested Nov 18 2026; push first). If the repo is ever made private the downloads fail: then write each script there with a heredoc (`cat > name <<'EOF'`), compare `sha256sum` with the repo copies and run `bash bootstrap.sh`.
 
 ## Pipeline
 
@@ -63,7 +63,7 @@ Report: the new composition id, final duration, first and last words of each pie
 ```
 - Framing numbers in Descript's terms: pan = −(focal − 0.5) × scaled source size ÷ canvas size. Episode 64 (solo): front camera zoom 1.03, pan x −0.0814, y +0.0144; side camera zoom 1.19, pan x +0.2069, y +0.0571. Guest episodes: guest on the right of the wide frame → focal (0.55, 0.516); David on the left → (0.47, 0.50), scale 1.03. These hold only while the cameras and desk stay put: check with `facecheck.py` on the first cut of every new recording and adjust.
 - Don't trust the report on framing. Episode 64 Shorts 5 and 6 rendered as a letterboxed strip while Underlord said the crop was applied. The fix that worked in one job: "copy the video layer's size, position, zoom and pan from <good Short> onto every clip in <these compositions>".
-- `publish_project` 1080p → `download_url` (valid 24 h). One publish per project at a time; it normally takes a minute, occasionally ten. A publish can run while the next cut is being built.
+- `publish_project` 1080p with `access_level: "private"` → `download_url` (valid 24 h). Private keeps the cut off a public share page and the download works the same (tested Nov 18 2026). One publish per project at a time; it normally takes a minute, occasionally ten. A publish can run while the next cut is being built. Call `wait_for_job` with `wait_seconds: 45` and repeat: the default wait dies at the connector's 60-second limit.
 
 ### 3. Finish in the Higgsfield sandbox
 Work in `/home/user/shorts`, scripts in `/home/user/skill/scripts`.
