@@ -84,7 +84,7 @@ Write one file, `lo8f-ep<NN>-copy.md`, and send it with `SendUserFile`. Formats 
 
 ## 5. Shorts
 
-Hand over to `lo8f-tiktok-clips`: three by default, more only if the length supports it. Give it the camera stretches and framing numbers from step 1. The cuts go in the same Descript project, one Underlord job at a time, and each can run while the previous one publishes; a single-piece Short took about a minute and 12–16 credits. Leave the "Full episode:" line out of the YouTube Shorts drafts until the link exists, so a placeholder can never go live.
+Hand over to `lo8f-tiktok-clips`: three by default, more only if the length supports it. Every Short, Reel and TikTok runs about 30 seconds (David, Nov 18 2026); state the planned length of each in the plan. Give it the camera stretches and framing numbers from step 1. The cuts go in the same Descript project, one Underlord job at a time, and each can run while the previous one publishes; a single-piece Short took about a minute and 12–16 credits. Leave the "Full episode:" line out of the YouTube Shorts drafts until the link exists, so a placeholder can never go live.
 
 ## 6. Approval, then posting (Metricool brand 7590780, America/Toronto)
 

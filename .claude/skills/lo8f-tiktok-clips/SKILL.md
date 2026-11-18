@@ -11,7 +11,7 @@ David approved this exact look on episode 63 (Craig Gauthier, Nov 1 2026): "the 
 
 ## What a finished clip looks like
 
-- 1080x1920, 30 fps, 30–50 s, one idea, ends on the punchline. No intro, no outro, no music.
+- 1080x1920, 30 fps, **about 30 seconds**, one idea, ends on the punchline. No intro, no outro, no music. David set the length on Nov 18 2026: "I want all reels shorts and tiktok to be around 30 seconds". It applies to every clip on every network. (Claude's reading of "around": aim for 30 s, accept 25–35 s. Before that the range was 30–50 s, and the episode 65 Shorts ran 45, 41 and 37 s.)
 - **0.0–3.0 s, hook title** burned into the picture (this is the thumbnail: TikTok uses frame 0, YouTube picks a frame from this window):
   - **TikTok**: 2–3 lines, each in its own white rounded box, black UPPERCASE Inter Bold 92 px, centred, lower third (`y_center 0.70`). Max ~19 characters per line or it overflows 1080 px.
   - **YouTube**: 3 short lines, white Inter Bold 118 px, one key word in red (232,35,35), soft blurred shadow, `y_center 0.72`. No boxes.
@@ -41,7 +41,7 @@ The Higgsfield sandbox cannot read this repo and is wiped after about a day idle
 ### 1. Plan every clip in one pass
 - Get the transcript with timestamps (`export_transcript`, txt, `timecodes on_paragraphs`), or reuse the packaging session's `export.txt`. Read it; don't search keywords only.
 - Map the WHOLE episode to candidate clips before cutting the first one, and tell David the ceiling. About one distinct clip per minute of a solo episode: the six-minute episode 64 gave six clean Shorts, and Shorts 7–9 had to reuse lines.
-- Choose segments that stand alone: a contrarian claim, a number, a story with a last line. Check the Descript project's composition names ("Short N – title") and note which sentences each existing clip uses, so a new batch doesn't repeat them. If it must repeat, say so in the report.
+- Choose segments that stand alone: a contrarian claim, a number, a story with a last line. Pick them to land at about 30 seconds after cleanup: roughly 75–90 spoken words at David's pace (the 37 s episode 65 Short was 101 words). If a story needs longer, cut it to its hook and its last line instead of running long, or split it into two clips. Check the Descript project's composition names ("Short N – title") and note which sentences each existing clip uses, so a new batch doesn't repeat them. If it must repeat, say so in the report.
 - **Echo zones.** Some recordings carry room echo (autocorrelation peak at ~35–45 ms, strength > 0.3; clean is < 0.15). Never cut from a bad zone; David hears it instantly ("sounds like it echos"). Filtering doesn't fix it. Ep 63 bad zones: 180–630 s, ~1080 s, 5850 s to the end. `finish.sh` prints the echo strength of every cut.
 - **Camera-angle switches.** David's solo recordings are one file that cuts to a wider side camera for a few seconds at a time. A clip that includes such a stretch needs a second framing for it (step 2).
 
@@ -54,7 +54,7 @@ New composition name: "Short N – <Title>". Canvas 1080x1920 (9:16), 30 fps.
 Content: copy these pieces of the original recording into the new composition, in this order, joined with hard cuts:
 Piece A — starts on the words "<first words>" and runs through "<last words>". (Skip "<lead-in to drop>": the Short must START on the word "<word>".)
 Piece B — "<...>"
-Cleanup inside the pieces only: remove filler words and false starts; shorten any pause of 0.6 s or longer to about 0.3 s. Do not cut any real words. Target length 30–45 s.
+Cleanup inside the pieces only: remove filler words and false starts; shorten any pause of 0.6 s or longer to about 0.3 s. Do not cut any real words. Target length 28–33 s; if it comes out over 35 s, tell me the duration and which sentence could be dropped, and do not trim it yourself.
 Framing: the camera video must FILL the whole 1080x1920 canvas, no black bars. On every clip: layer box 1080 × 1920 centred at (540, 960), fill mode, zoom <Z>x, pan x <PX>, y <PY>. (Or: copy the video layer's size, position, zoom and pan exactly from composition "<a Short that rendered correctly>" (<id>).)
 Camera angle switch: between source media time <t0> s and <t1> s the picture cuts to a wider side camera. If any part of that range is inside this Short, split the clip exactly there (hard cuts) and on that piece ONLY use zoom <Z2>x, pan x <PX2>, y <PY2>. Tell me whether the range is in the Short and at what composition times.
 Audio: Studio Sound on at 70%.
