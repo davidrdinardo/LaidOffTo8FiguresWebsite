@@ -7,6 +7,7 @@ Read back on Nov 16 2026 from Descript (Underlord, read-only), Higgsfield (gener
 - Long-form read-back, episode 64
 - Long-form read-back, episode 62
 - Episode 65: what was built, and what went wrong once
+- Episode 67: a screen-share demo, and what it changed
 - Underlord briefs (pass 1, pass 2, read-only inspection)
 - Thumbnail prompt and template
 - YouTube copy: template and real examples
@@ -26,6 +27,7 @@ Read back on Nov 16 2026 from Descript (Underlord, read-only), Higgsfield (gener
 | 62, AI Replaced My Video Editor | `08a5b7b2-5d28-49d8-83a3-aa535ae3dd4b` | not recorded | `3df829ed-0066-49e3-8c40-84ac62370211` | `1US5vG2L704` |
 | 64, Distribution Is the Moat | `fb86c46c-cc38-4412-98f4-17c202b8dd93` | `30e41d43-ef82-414e-a24e-1b29cd2eb10a` | `70a551b3-763d-490e-ae58-6cd494798e48` | `LpdIjUUYm44` |
 | 65, The Conference Trick No One Does | `83506fe5-0091-4408-b379-97eb8a7499e1` | `3f05e712-f371-440a-9d78-b8b1849527a7` | `527828d4-d8d6-4f3e-93d1-3f14e297b811` | `IYOGHzRXnMI` |
+| 67, Taxifi V2 Is Here (screen demo) | `77634c03-6d3c-4343-9354-0747861d9359` | `bdba7cd8-d972-4ca3-89a6-c8dd8080cc08` | `4e770666-09ae-4178-a8e9-6ec5c8bd20e7` | added after posting |
 
 When a setting is in doubt, ask Underlord to read it from one of these compositions (the read-only prompt below costs about 6–8 credits) and copy it.
 
@@ -114,6 +116,36 @@ Things that went wrong once on episode 65:
 - The raw recording, the full edit and the three Shorts were all published to unlisted Descript share pages. The raw one was republished as private on Nov 18; `publish_project` takes `access_level: "private"` and the download link still works.
 - `analyze_raw.py` held every frame in memory, about 1.2 GB for seven minutes. It now reads frames one at a time (282 MB, same results).
 - The sandbox had been wiped by Nov 18. `sandbox_sync.sh` put everything back with one command.
+
+## Episode 67: a screen-share demo, and what it changed
+
+Built Nov 24 2026. The recording was not a talk to camera: 2:34 of David on camera, 12 minutes of an app screen share with David in a corner box, then 0:51 on camera. It came already assembled (corner box and a logo baked into the picture). David's instructions for it: "You make the decisions and do an audit so its perfect before editing it." He approved the posts in one message, after asking for a different thumbnail.
+
+**Audit before editing (do this for any recording that shows a screen).** Publish the original at 720p (private) and look at it before the plan is final:
+- A sheet of one frame every 30 s shows the layout: where the picture changes between camera and screen, and which corner the camera box sits in. `ffmpeg ... select='gt(scene,0.3)'` gives the exact change times. `analyze_raw.py` is meaningless on the whole file (it measures the small corner face); run it on the on-camera stretches only, cut out with `ffmpeg -t` / `-ss`.
+- Read every screen for things that should not be public: account or card numbers, login emails, addresses, other people's names. A text scan finds them all: `pip install --target /home/user/pylib rapidocr-onnxruntime` with `PYTHONPATH=/pkg/` (the sandbox's default `PYTHONPATH` includes a folder pip cannot read), then OCR one frame every 3 s and search the text for digit runs. About 2.5 s a frame on the standard sandbox.
+- Measure the sound (`loudnorm=print_format=summary`, `silencedetect`). This file was −24.1 LUFS with 40 pauses over 1.2 s, all during the demo.
+
+**Hide private rows before Descript, not after.** Captions and cuts go on top later, so the blur has to be in the source. What worked: publish the original at 1080p, crop a small template image of each line of text to hide, find it in every frame with OpenCV `matchTemplate` at half resolution (rows scroll, so a fixed box does not work; also match the top and bottom halves of the template for rows half off screen), pixelate and blur the hit, re-encode (`libx264 -preset veryfast -crf 15`), copy the audio across, and import the result as a NEW Descript project by direct upload. Then OCR the blurred file once a second over every stretch where the rows appeared and confirm zero hits. Use `size: "xl"` for the encode and split it into three background jobs: a background job is stopped at 15 minutes. The original upload stays untouched and unblurred; tell David it is his to delete.
+
+**Format changes for a screen demo.**
+- No punch-ins: a logo baked into the corner would be cut by the zoom.
+- B-roll and cards only where David is on camera (3 clips and 2 cards for 3.5 on-camera minutes). Nothing over the screen share.
+- Captions need two looks, split at the picture changes: the approved white look on camera, and over the light app screen size 52, a black box at 75 % opacity with rounded corners, width 900 px centred at (960, 950), so the text reads and stays clear of a camera box in either bottom corner. Underlord did this with three caption layers. Give it the picture-change times as source times and let it map them.
+- Pauses: "shorten every pause of 1.0 s or longer to about 0.4 s" (waiting on clicks is natural in a demo; 0.8 s is too aggressive).
+- Shorts come only from the on-camera stretches. The corner box is too small to crop. Measure the framing per stretch: the intro and outro of this recording needed different numbers (zoom 1.08, pan x +0.0355, y −0.0045 and zoom 1.10, pan x +0.1023, y +0.0037).
+
+**Numbers.** 15:23 raw → 14:03 edit. Loudness −21.7 → −14.1 LUFS, peak −0.8 dBFS. Descript credits 137 (pass 1 52, pass 2 27, a caption text fix 15, Shorts 12, 15, 15): a 15-minute recording costs about a quarter more than a 7-minute one, not double. Shorts 32, 34 and 26 s.
+
+**Things that went wrong once on episode 67.**
+- The Higgsfield connector ends a `sandbox_exec` call at 60 seconds whatever `timeout_seconds` says, and the command is killed with it. Anything longer (loudnorm on a 14-minute file, a trim plus re-encode, a `sleep` over 50 s) goes in `background: true`.
+- An upload slot requested about three minutes before the PUT answered 400. Request the slot when the file is ready and start the PUT at once. For a file that is still rendering, chain `render && curl -T` only if the slot is requested at the end, not the start.
+- Underlord "fixed" a typed question in the captions by leaving a stray quotation mark (`" "Hey`). It showed for seven seconds. Found on a frame of the final render, fixed with a text-only job and a re-render. Read the final transcript export for doubled punctuation before the 1080p render.
+- A Short ended three frames into the next picture (the cut landed on a picture change), and another opened on a blink, which is the TikTok cover. Both fixed in the sandbox before `finish.sh` (it accepts a local file): `-t` to trim the tail, and a `trim`/`loop` filter to hold the first open-eyed frame for 0.2 s.
+- Removing "like" as a filler also removed it where it meant "similar to" ("a software that is like …"). Say in the brief which "like" to keep.
+- The cloud container cannot reach `upload.higgsfield.ai`. A photo David attaches in chat gets to Higgsfield through Descript: `import_media` by direct upload into a one-file project with a composition the size of the photo, publish (private, 1440p), then in the sandbox take one frame of the download as a PNG and PUT that to a `media_upload` slot.
+
+**Thumbnail.** David did not like the template version for this episode ("I just dont like the thumbnail") and sent a studio headshot. He chose the option that keeps the template's layout (dark studio, two lamps, white line over a red box) with the person taken from his photo: both images passed as references, the prompt naming the first as layout and the second as the person, "No microphone, no desk, no stool". (Claude's reading: the layout rule stands; the photo can change when he supplies one. Offer two to four options in one message and put the recommended one in the draft.)
 
 ## Underlord briefs
 
