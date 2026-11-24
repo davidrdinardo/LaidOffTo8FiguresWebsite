@@ -1,8 +1,21 @@
 {
   "channel": "David DiNardo | Laid Off to 8 Figures",
-  "updatedAt": "2026-11-20T11:19:27.212Z",
-  "count": 66,
+  "updatedAt": "2026-11-24T21:24:13.314Z",
+  "count": 67,
   "episodes": [
+    {
+      "num": 67,
+      "title": "Taxifi V2 Is Here: AI Does Your Books, a Human Checks Every File",
+      "duration": "14:04",
+      "url": "https://www.youtube.com/watch?v=suCqYDh8MCs",
+      "videoId": "suCqYDh8MCs",
+      "thumbnail": "https://i.ytimg.com/vi/suCqYDh8MCs/maxresdefault.jpg",
+      "publishedAt": "2026-11-24T21:08:57Z",
+      "description": "Taxifi version 2 is live. We started building on January 1st, 2026, and every feature since then has been tested by paying users before we added the next one. Every small business owner I know has the same problem. They don't know where their books are at, and they just want to run their business. So I took everything I've learned doing this and put it in one app.\n\nIn this episode I walk through the whole thing on one of my own rental properties: connecting the bank through Plaid, seeing profit and cash flow in real time, how the AI categorizes transactions and what lands on your to-do list, asking Taxifi for a report, and bringing in a human when the AI doesn't know. AI on a platform can only take you so far, so a human verifies every file before it goes out the door. I also show document uploads and what's coming in version 3.\n\n⏱ Chapters\n00:00 Taxifi Version 2 Is Live\n00:28 Why I Built It\n01:15 10 Months of Building With Paying Users\n01:50 A Replacement for QuickBooks and Spreadsheets\n02:34 Signing Up: Incorporated or Sole Proprietor\n03:22 Connecting Your Bank Through Plaid\n04:01 Profit and Cash Flow in Real Time\n04:59 How the AI Categorizes Transactions\n06:12 E-Transfers and Your To-Do List\n07:57 Ask Taxifi: Reports on Demand\n09:19 When You Need a Human\n10:27 Documents, Tax Returns and Statements\n11:51 What's Coming in Version 3\n13:20 Built for Canadian Small Business\n\n📬 Get in Touch with David\nInstagram: 📸 https://www.instagram.com/davidrdinardo\nLinkedIn: 💼 https://www.linkedin.com/in/davidrdinardo\nWebsite: https://laidoffto8figures.com\nEmail: me@daviddinardo.com\n\n🚀 Powered by\nTaxifi —\nAI-powered bookkeeping, tax & payroll for incorporated Canadian businesses. Visit https://taxifi.ai and use code LAIDOFFTO8FIGURES for 1 month FREE.\n\nThis content is for general information only and is not financial, tax or legal advice.\n\n#LaidOffTo8Figures #OttawaBusiness #Taxifi #AIBookkeeping #CanadianSmallBusiness",
+      "latest": true,
+      "slug": "taxifi-v2-is-here-ai-does-your-books-a-human-checks-every-file",
+      "pageUrl": "https://laidoffto8figures.com/episodes/taxifi-v2-is-here-ai-does-your-books-a-human-checks-every-file/"
+    },
     {
       "num": 66,
       "title": "Live November 19",
@@ -12,7 +25,7 @@
       "thumbnail": "https://i.ytimg.com/vi/-VwdS0KtUg8/maxresdefault.jpg",
       "publishedAt": "2026-11-20T04:28:48Z",
       "description": "🔔 Subscribe for weekly founder interviews + solo breakdowns on AI, Canadian taxes & business strategy.\n\nI'm David DiNardo. Laid off from a hospital job → built & sold a 7-figure cloud accounting firm → now building Taxifi, an AI tax platform. This channel is the raw truth behind the highlight reel: how real founders actually build, scale, and exit in Canada.\n\nWhat you'll find here:\n→ Operator stories from scratch to 8 figures\n→ How to build, scale & exit a real business\n→ AI tools that actually move the needle\n→ Money, taxes, ownership & Canadian business strategy\n\n📬 Get in Touch with David\nInstagram: 📸 / https://www.instagram.com/taxifi.ai\nLinkedIn: 💼 / https://www.linkedin.com/in/david-dinardo-mba-42344599/\nWebsite: https://laidoffto8figures.com/\nEmail: ddinardo@laidoffto8figures.com\n\n🚀 Powered by\nTaxifi — AI-powered bookkeeping, tax & payroll for incorporated Canadian businesses. Visit https://taxifi.ai and use code LAIDOFFTO8FIGURES for 1 month FREE.\n\n#LaidOffTo8Figures #Entrepreneurship #CanadianBusiness #SmallBusiness #AITools",
-      "latest": true,
+      "latest": false,
       "slug": "live-november-19",
       "pageUrl": "https://laidoffto8figures.com/episodes/live-november-19/"
     },
