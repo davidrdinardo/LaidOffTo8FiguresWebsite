@@ -1,0 +1,198 @@
+{
+ "videoId": "suCqYDh8MCs",
+ "num": 67,
+ "source": {
+  "kind": "descript",
+  "projectId": "77634c03-6d3c-4343-9354-0747861d9359",
+  "compositionId": "4e770666-09ae-4178-a8e9-6ec5c8bd20e7"
+ },
+ "guest": null,
+ "summary": "David DiNardo walks through version 2 of Taxifi, the AI bookkeeping and tax platform he is building for Canadian small businesses. He shows the full flow on screen: signing up, connecting a bank, seeing profit and cash flow in real time, how transactions get categorized, asking the app for reports, and bringing in a human when the AI is not sure. He closes with what is planned for version 3.",
+ "takeaways": [
+  "Bookkeeping is a compliance requirement, so the goal is to make it fast, easy and cost-effective rather than something an owner has to think about.",
+  "When the AI is fully confident, a transaction is categorized automatically. Anything less lands on a to-do list with a suggested category for the owner to confirm.",
+  "E-transfers need the owner's input once. After that the app remembers the payee and categorizes it on its own.",
+  "Owners can ask Taxifi plain questions, such as last month's income and expenses, and get the answer with a PDF.",
+  "AI on a platform only goes so far. Humans still do the reconciliations and filings, and a person verifies every file before it goes out.",
+  "Owners who do not want to connect a bank can upload or scan statements instead.",
+  "Version 3 is planned to read uploaded documents, such as amortization schedules, and split principal from interest automatically."
+ ],
+ "speakersVerified": false,
+ "segments": [
+  {
+   "start": 0,
+   "speaker": "David DiNardo",
+   "text": "Welcome. Version two is now being launched. Over a month of development work, a lot of hard work, and I'm super excited to share it. I want the product to speak for itself because every small business owner goes through the same pains as every small business owner. They don't know where their books are at, they have to hire a bookkeeper, accountant, learn a software that is a QuickBooks Online or a Xero, but they just wanna run their business."
+  },
+  {
+   "start": 28,
+   "speaker": "David DiNardo",
+   "text": "And I've been doing this for so long that I really wanted to take my thought process of automating all the backend for small business owners so they could really focus on running their business versus doing the work on the backend. They can start making money instead of worrying about their books and making sure their back books are reconciled on a month-to-month basis."
+  },
+  {
+   "start": 52,
+   "speaker": "David DiNardo",
+   "text": "It's a compliance issue that CRA wants, so you have to do it, so why not make it fun, easy, and cost-effective? So I'm gonna just show you the app. I'm gonna just dive into it. AI is wild right now, where you can actually do whatever you want, build as many features as you want to deliver to small business owners."
+  },
+  {
+   "start": 75,
+   "speaker": "David DiNardo",
+   "text": "To give you a little update of where we're at, we started January 1st, 2026. It's been now over 10 months of development, and every time we develop, we have users to test it, validate it, before we add another feature on. This is so critical in the development of where we're at today because if it wasn't for our users, who are paying on a month-to-month basis, so there's real clientele getting their books done, getting their sales tax submitted to CRA, and getting their corporate tax done as well."
+  },
+  {
+   "start": 110,
+   "speaker": "David DiNardo",
+   "text": "We do it all for you, and I'm gonna show you how easy it is to get it done. If you use QuickBooks Online or you use spreadsheets or you use whatever, this is a replacement of it all. So, QuickBooks Online, you go in, you connect your bank, and then a bookkeeper technically does the bookkeeping for you."
+  },
+  {
+   "start": 129,
+   "speaker": "David DiNardo",
+   "text": "Here would be a very similar process, but instead of a bookkeeper do it, Taxifi does it. So you can see your books done in real time. We ask you specific questions, but those questions get answered in a very real-time manner, which you have access to it on your phone, on your desktop, everywhere. So, you come onto Taxifi.ai, so it's with an I at the end, not the Y."
+  },
+  {
+   "start": 154,
+   "speaker": "David DiNardo",
+   "text": "Once you come in, you'll be able to sign in. You can either sign up through Google, or you can sign up through your username and password. The first question we ask, are you incorporated or are you a sole proprietor? A lot of people, if you don't know what you are from a corporate structure perspective, this dictates the whole customer journey."
+  },
+  {
+   "start": 176,
+   "speaker": "David DiNardo",
+   "text": "So if you don't know this question, just reach out to your accountant or colleague to determine if you're incorporated or you're a sole proprietor. Every year-end for a sole proprietor is December 31st. For corporations, it varies. This is another important question to determine when your year-end is. The typical year-end is December 31st, but it could be different, so just making sure you have that available for when we get started."
+  },
+  {
+   "start": 202,
+   "speaker": "David DiNardo",
+   "text": "Once you continue, this is where the magic will happen. We use the same third-party app called Plaid, that QuickBooks Online uses, Xero uses, all the major platforms. We have zero access to your bank. We're just grabbing the transactions so we can do our job. That's it. So I'm going to now get off screen."
+  },
+  {
+   "start": 225,
+   "speaker": "David DiNardo",
+   "text": "I'm gonna connect my account. Once I connect my account, I'm gonna show you what the next steps is. The first thing you'll see right off the bat in real time, what your total profit is and what your expenses are. So this is your profit. This is one of my rental properties. This is the profit from January 1st till now, all automatically done."
+  },
+  {
+   "start": 250,
+   "speaker": "David DiNardo",
+   "text": "I then get to see per each month the revenue, so money that has hit the bank account in real time, and it's even showing me from November 1st to November 19th I also get to see money out. So if I toggle through the money out, I'm able to see in real time how much money the business is spending on an ongoing basis."
+  },
+  {
+   "start": 277,
+   "speaker": "David DiNardo",
+   "text": "And this gives you visibility of where your cash flow is at, where your money's at, and where things are going. It even shows you from November 1st to November 19th how much money has hit your bank thus far. So you have a running total of it. You have a running total of what is going in and out of your bank in real time."
+  },
+  {
+   "start": 299,
+   "speaker": "David DiNardo",
+   "text": "And the magic happens to get to the high-level numbers. You're gonna see the bank is connected, and while the bank is connected we get all your transactions. If the AI has 100% accuracy or confidence level, the done button will show it already categorized. So we know that account fee of $6 is interest and bank charges."
+  },
+  {
+   "start": 330,
+   "speaker": "David DiNardo",
+   "text": "So it'll automatically charge it. You don't have to do anything. The questions that we don't know and don't have a high probability on, that's less than 100, shows up on your to-do. And it automatically gives a good estimated guess of what the actual bookkeeping expense or income is. So if you could see City of Ottawa, that's property tax, occupancy expenses."
+  },
+  {
+   "start": 356,
+   "speaker": "David DiNardo",
+   "text": "So all you have to do is go through them, or up here, if all of them are correct, it takes you two seconds to go and confirm it. Confirm all at once. Then it gives you a list of all the unknowns. E-transfers, we need your help on. We only get notification that it's an e-transfer or a transfer. You need to tell us what it is."
+  },
+  {
+   "start": 387,
+   "speaker": "David DiNardo",
+   "text": "So for example, this one is an e-transfer of $3. You can either write a note if you don't know where to categorize it, and we have accountants on the back end that take the note and categorize it for you. And this is where you also have a platform, but a human in the background verifying everything. You can mark it as income, you could put it as personal, or you can choose a category."
+  },
+  {
+   "start": 415,
+   "speaker": "David DiNardo",
+   "text": "So I know this one is interest and expense, bank charges, so I'm gonna choose that. And then it automatically goes in the Done column. Here it is, the $3 interest and bank charges. And you go through the list, and what our AI also does is if an e-transfer comes in from this company, Mechanical, it will remember that this is a mechanical and it's maintenance and repairs."
+  },
+  {
+   "start": 443,
+   "speaker": "David DiNardo",
+   "text": "So if you ever e-transfer that contractor again, it would recognize it, and it would put it under the Done column. So this has taken a full year, and I have eight transactions that I'm not aware of. Moving forward, those eight transactions will get categorized, so next month it'll be less and less, where it's virtually automated."
+  },
+  {
+   "start": 464,
+   "speaker": "David DiNardo",
+   "text": "So that when you get to see your numbers on an ongoing basis, this number is 100% accurate, and this number is 100% accurate. So then what happens is you can ask Taxifi any reports you need to run your business. \"Hey, what was my total expenses and income for last month?\""
+  },
+  {
+   "start": 493,
+   "speaker": "David DiNardo",
+   "text": "Anything that hits our database, we're able to pull for you. So here is my total income, here is my expenses, and that was the net. It also prints off or pulls a PDF so that you can take a look at it, you can send it to your colleagues, your workers, you can have those conversations. We're eventually gonna be able to export to Excel so you can start manipulating more information on it."
+  },
+  {
+   "start": 518,
+   "speaker": "David DiNardo",
+   "text": "You can also ask, \"What was my total insurance cost for 2026?\" Any question you have, it'll give a automatic response to in a very streamlined perspective, in a fast, real-time way. Because that's what business owners need. That's what I need. That's how I've been successful, is I know my numbers, so I know what my subscription costs are."
+  },
+  {
+   "start": 549,
+   "speaker": "David DiNardo",
+   "text": "I know everything in my business so that I can cut costs, increase revenue, and make more money, and this is what the app provides: real-time financial clarity. Now, what happens if the AI doesn't know something? What happens if I need a human involved? All you have to do is toggle that human section and it pops up a message to my team."
+  },
+  {
+   "start": 574,
+   "speaker": "David DiNardo",
+   "text": "Bookkeepers, accountants, me, all get notified, and we jump on a call with you, we answer it through a chat. We are the support that your business needs. If you need to get on a Zoom call, we can get on a Zoom call. If you need to have a question of where this transaction goes, you can just let us know here if you want more explanation."
+  },
+  {
+   "start": 598,
+   "speaker": "David DiNardo",
+   "text": "This is a real-time chat with a team of professionals that are able to take this platform to a whole another level. 'Cause I'm a true believer that AI on a platform can only take you so far. You still need humans to do the reconciliation, submit the sales tax, submit the corporate tax, and have that judgment to file your taxes."
+  },
+  {
+   "start": 620,
+   "speaker": "David DiNardo",
+   "text": "I'm putting my name on each file. I want it verified by a human before it goes out the door. Version two has come a long way, where now we have real-time dashboard, a human section, Ask Taxifi, where you can ask it any specific questions you want, and you can also upload documents. So you'll be able to see in real time what returns are completed."
+  },
+  {
+   "start": 645,
+   "speaker": "David DiNardo",
+   "text": "You have access to your corporate tax returns, so you don't have to be chasing your accountant for that corporate return if you need a mortgage or financing. You can also upload statements. If you're not comfortable with connecting your bank, I totally respect that."
+  },
+  {
+   "start": 663,
+   "speaker": "David DiNardo",
+   "text": "We built a feature where you can connect the bank, or you can upload your bank and credit card statements, and what our tool does is grabs all the information and puts it in our platform so that we can do the bookkeeping. We just also built a feature where you can actually scan documents. So people that still get paper statements, you can scan it, and you can upload it, and we can parse it out and do the bookkeeping."
+  },
+  {
+   "start": 689,
+   "speaker": "David DiNardo",
+   "text": "So this gives a good option to some of the banks in Canada do not connect to this platform. This is an alternative route to get the data so we can do your bookkeeping. So you get to see your corporate returns in real time, you can upload statements, and all those other statements that we need to get your bookkeeping done, you would upload here."
+  },
+  {
+   "start": 711,
+   "speaker": "David DiNardo",
+   "text": "Version three, you'll be able to have an agent grab those documents and automatically automate even more stuff like amortization if you have mortgages, getting the amortization schedule so that every transaction cross-references the document with the transaction to parse out the principal and interest."
+  },
+  {
+   "start": 733,
+   "speaker": "David DiNardo",
+   "text": "I don't want to get too technical here, but these are the things that we're looking for in the future, and we're placing them here for the now so that in the future, we get the documents, and we can do what we do best, and that's get your books done. As you know, once the books are done on an ongoing basis, the magic of this is your year-end becomes way easier."
+  },
+  {
+   "start": 755,
+   "speaker": "David DiNardo",
+   "text": "We have all the information, we're doing the reconciliations, we're doing the sales tax, we're doing everything. We need a few other informations, like your CRA login, your business information, and your profile information so that we have your full picture, and then a human takes that and actually does your tax return."
+  },
+  {
+   "start": 776,
+   "speaker": "David DiNardo",
+   "text": "In your income and expense column, you see how it says eight to review? We give you a thread of, we can't finish your tax return until you give us all the information to get your taxes done. So these are small steps to be an organizer for you, be a back office for you, do everything for you so that you can go make money, and you never have to worry about your books or taxes again."
+  },
+  {
+   "start": 800,
+   "speaker": "David DiNardo",
+   "text": "So that is a demo of version two. But this is super exciting time for Canadian small business owners. That's our main target market is the SMB community across Canada. It's an alternative to everything out there."
+  },
+  {
+   "start": 816,
+   "speaker": "David DiNardo",
+   "text": "Technology is moving so fast, so I'm taking all my years of experience in it, putting it in this app, and delivering an outcome for the small business owner so that they never have to think about this again. Thank you for watching. I really appreciate it. Thank you for watching my journey throughout this."
+  },
+  {
+   "start": 833,
+   "speaker": "David DiNardo",
+   "text": "I wanna thank my whole team. They're working extremely hard to get to the point where we're delivering such an amazing outcome to the small business community. So thank you."
+  }
+ ]
+}
