@@ -32,6 +32,8 @@ This skill was rebuilt on Nov 16 2026 after the original vanished from David's a
 - **Solo means first person.** No guest block, no collaborator tag, no "X on Laid Off to 8 Figures". The clip tag reads "David DiNardo".
 - **Thumbnails come from Higgsfield**, from his approved template. No other tool, no invented layout.
 - **Nothing on a recurring schedule.** One-off scheduled posts and one-off check-ins only.
+- **A recording that shows a screen is audited first.** Episode 67 was a screen-share demo: look at the picture and read every screen for private details before the plan is final, hide them in the source before Descript, and change the format (no punch-ins, b-roll only on camera, boxed captions over the screen, Shorts from the on-camera parts). The steps are in `references/recipe.md` under "Episode 67".
+- **Sandbox calls end at 60 seconds.** Run anything longer with `background: true` and poll.
 - **Expect the session to restart.** The worker restarted about eight times during episode 65. Descript jobs and sandbox background jobs keep running through a restart, so note every job id, composition id, media id and link as it appears, and after a restart check what finished (`wait_for_job`, the sandbox `.bg/*.log` files, `ls`) before starting anything again. A tool call that comes back with "did not run" may have run. A message from David that reappears word for word right after a restart may be a redelivery (Claude's guess: one message arrived about seven times); answer it once.
 
 ## Before you start
