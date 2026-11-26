@@ -198,3 +198,22 @@ You never have to think about it again.
 Comment EPISODE for the full episode.
 
 #LaidOffTo8Figures · #OttawaBusiness · #Taxifi · #SmallBusiness · #Bookkeeping · #Entrepreneur · #AITools · #CanadianBusiness · #FounderLife · #BusinessGrowth
+
+---
+
+## Where everything went live (confirmed PUBLISHED in Metricool on Nov 26 2026)
+
+| Post | When (Toronto) | Link |
+|---|---|---|
+| Full episode | Nov 24, 4:00 pm | https://www.youtube.com/watch?v=suCqYDh8MCs |
+| Short 1, YouTube | Nov 24, 5:00 pm | https://www.youtube.com/shorts/2KilStCwbRI |
+| Short 1, TikTok | Nov 24, 5:02 pm | https://www.tiktok.com/@davidrdinardo/video/7711862043225165077 |
+| Reel 1 | Nov 24, 6:00 pm | https://www.instagram.com/reel/DgJF2JEgmal/ |
+| Short 2, YouTube | Nov 24, 8:00 pm | https://www.youtube.com/shorts/sOzBqQKfClc |
+| Short 2, TikTok | Nov 24, 8:02 pm | https://www.tiktok.com/@davidrdinardo/video/7711908524015570196 |
+| Short 3, YouTube | Nov 25, 11:00 am | https://www.youtube.com/shorts/Wi-htcaBUdg |
+| Short 3, TikTok | Nov 25, 11:02 am | https://www.tiktok.com/@davidrdinardo/video/7712141803809492245 |
+| Reel 2 | Nov 25, 5:00 pm | https://www.instagram.com/reel/DgLjqIoNc0T/ |
+| Reel 3 | Nov 26, 5:00 pm | https://www.instagram.com/reel/DgOIi-Ggp1k/ |
+
+David asked on Nov 24 for one Instagram Reel a day (the three Shorts on three days) instead of a single Reel.
